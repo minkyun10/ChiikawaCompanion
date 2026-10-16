@@ -1,0 +1,17 @@
+Use case: stylized-concept / character identity-preserving reference-sheet extension.
+Input image 1 is the approved Hachiware model sheet and sole identity/style reference.
+Create ONE new high-resolution landscape character direction sheet showing FOUR diagonal walking directions, arranged as a spacious two-by-two grid on a clean opaque white background. Title "HACHIWARE — DIAGONAL VIEWS". Small, accurate labels below each full-body drawing:
+upper left: "UP-LEFT" with a small ↖ arrow;
+upper right: "UP-RIGHT" with a small ↗ arrow;
+lower left: "DOWN-LEFT" with a small ↙ arrow;
+lower right: "DOWN-RIGHT" with a small ↘ arrow.
+
+These are genuine rotated three-quarter CHARACTER VIEWS for a desktop pet walking on the screen. The up directions show rear three-quarter views walking away from the viewer; the down directions show front three-quarter views walking toward the viewer. Do not merely rotate or tilt a flat front drawing in the image plane.
+
+UP-LEFT: rear-left three-quarter pose facing away toward the upper-left; show the back and a little of the side, the near arm and a small blue tail, no face pointing at the camera.
+UP-RIGHT: corresponding rear-right three-quarter pose facing away toward the upper-right, anatomically consistent.
+DOWN-LEFT: front-left three-quarter pose facing diagonally toward the lower-left; both large glossy eyes visible in perspective, far eye slightly compressed, muzzle/mouth shifted left, pink hatched cheeks.
+DOWN-RIGHT: corresponding front-right three-quarter pose facing toward the lower-right.
+
+Lock the exact approved design: one continuous plump white pear-shaped head/body silhouette, no separate head, no neck, no belly line, no long torso, extremely tiny stubby arms and feet; rounded-point triangular dusty-blue ears and cap-like crown with white parted central fringe; large glossy black oval eyes with white highlights; tiny w-shaped mouth with a dot below; pink oval cheeks with three short dark hatches; small blue bean-like cat tail. Same clean slightly irregular black outline and flat pastel colors as the input, not a generic cat, not realistic and not 3D.
+All four characters have the same overall height, volume, ear proportions and line weight. Gentle mid-step stance, one tiny foot lifting, small natural arm swing. Keep the body upright, feet oriented toward the travel direction. Orthographic model-sheet framing; consistent camera elevation. No props, clothing, extra characters, food, speech bubbles or watermark. Large clear silhouettes, generous gutters. This is an addition to the existing model sheet, not a redesign.

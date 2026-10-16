@@ -1,0 +1,16 @@
+{
+  "artwork" : "first image body and foot proportions; regenerated fixed front\/rear bodies",
+  "body_height_pixels" : 192,
+  "cycle_milliseconds" : 1360,
+  "directions" : 4,
+  "foot_geometry" : "one fixed broad rounded outline; no per-side or per-phase scaling",
+  "foot_path_bounds" : "{{-23.378293432230901, -28.700189153979217}, {41.378293432230905, 33.700189153979217}}",
+  "foot_stroke_pixels" : 4.2000000000000002,
+  "frames_per_direction" : 12,
+  "half_cycle_offset_frames" : 6,
+  "maximum_left_right_trajectory_error_pixels" : 1.4210854715202004e-14,
+  "preview_frames" : 12,
+  "review_status" : "pending user review",
+  "runtime_applied" : false,
+  "trajectory_matches_reference" : true
+}

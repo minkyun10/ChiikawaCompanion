@@ -1,0 +1,44 @@
+BUILT-IN IMAGE GENERATION — 12-FRAME HACHIWARE WALK ASSETS
+
+CARDINAL GENERATION (v2)
+
+Use case: stylized-concept
+Asset type: transparent production sprite atlas for a native desktop pet.
+Primary request: draw true TWELVE-FRAME seamless walk cycles of the approved Hachiware character, with real intermediate arm/foot poses for smoother animation.
+Input image 1: identity and exact front / left-side / back model reference only. Do not reproduce its layout, guide lines or typography.
+
+Output: ONE SQUARE transparent PNG, preferably 1536 x 1536, exactly SIX columns by SIX rows, 36 complete isolated characters. Invisible equal cells of 256 x 256. No captions, words, numbers, grid lines, backdrop, floor, shadows or glow. Keep all white fur fully opaque. Each sprite about 175px tall, centered with large transparent gutters on all four sides; every ear, foot and tail inside its cell.
+
+Read in normal reading order, left to right then next row:
+Rows 1 and 2 together: ONE 12-frame FRONT VIEW walk toward the viewer. Row 1 frames 1-6, row 2 frames 7-12.
+Rows 3 and 4 together: ONE 12-frame LEFT SIDE PROFILE walk to screen-left. Row 3 frames 1-6, row 4 frames 7-12. Profile has one visible large eye and tail behind to the right.
+Rows 5 and 6 together: ONE 12-frame BACK VIEW walk away from the viewer. Row 5 frames 1-6, row 6 frames 7-12. NO face visible, blue small tail on back.
+
+A continuous walk cycle across the TWO rows of each view. The second row continues the SAME motion, camera angle, body size and lighting. DO NOT restart the cycle after 6. Twelve chronological poses: left foot contact, sinking weight, left support with right foot lifting, passing, right foot forward, rising, right foot contact, sinking weight, right support with left lifting, opposite passing, left foot forward, rising toward first contact. Tiny stubby feet alternate. Gentle opposite arm swing and tiny tail sway. Body upright with subtle one-to-two-pixel bob, no large jumps or squashing. Frame 12 loops seamlessly to frame 1. Keep the head silhouette, facial features and volume as stable as possible; only the limbs and tiny body bob animate. Twelve frames must show progressive distinct poses, not six drawings copied twice.
+
+Identity lock: the approved continuous rounded white pear-shaped head/body without a separate head, neck or belly line; short extremely tiny arms and feet; rounded pointed dusty-blue ears merging into a parted blue crown; original large glossy black oval eyes with two white highlights, eyebrow dots, small w-mouth and dot beneath, pink cheeks with three short dark hatches; tiny blue bean-shaped tail. Clean slightly hand-drawn black outline, flat pastel colors and flat 2D kawaii illustration. No redesign, generic cat anatomy, clothing, props, text, perspective changes, pixel art or 3D rendering. Match the supplied model and proportions throughout all 36 sprites.
+
+CARDINAL CORRECTION (final v3)
+
+Use case: identity-preserve
+Asset type: correction to a transparent animation sprite atlas.
+Image 1 is the EDIT TARGET: a six-column, six-row Hachiware sprite atlas. Preserve its exact canvas size, six-by-six arrangement, all 36 characters, poses, orientation, registration, expression, black outline, white fur, blue ears and existing transparent background.
+Make ONE narrowly targeted anatomical correction:
+In the SIDE-VIEW WALK CYCLE (rows 3 and 4), some frames have a dusty blue oval near the lower front foot/belly. This is an erroneous blue foot / second tail. Remove that erroneous blue patch, replacing it with the appropriate tiny WHITE foot and white body area, with the same black outline style. Both feet and both hands must be white in EVERY side-view frame. There must be exactly one small blue tail behind the body at the RIGHT side; keep the existing legitimate right-side tail.
+Keep all front-view sprites (rows1-2) and back-view sprites (rows5-6) unchanged. Do not invent any new body parts, do not change the animation layout or copy frames, no captions, no grid, no shadows. Preserve transparency and the approved identity.
+
+DIAGONAL GENERATION (final v2)
+
+Use case: stylized-concept
+Asset type: transparent 12-frame diagonal walk-cycle sprite atlas.
+Input image 1: approved character identity, proportions, line art and colors.
+Input image 2: approved diagonal orientation reference. Use the LEFT-facing front three-quarter and rear three-quarter designs only, without its labels or arrows.
+Primary request: ONE transparent PNG sheet, SIX columns by FOUR rows, 24 complete isolated Hachiware sprites. Prefer 1536x1024, 256px square invisible cells. Each character about 175px tall with generous transparent padding. No grid, text, arrows, shadows, ground or backdrop. White fur remains opaque.
+
+Rows 1 + 2 are ONE continuous TWELVE-frame REAR LEFT THREE-QUARTER walk diagonally away toward screen upper-left. Row 1 is frames 1-6; row 2 continues frames 7-12. Mostly back, little side, face hidden, blue tail on the right as in the orientation reference.
+Rows 3 + 4 are ONE continuous TWELVE-frame FRONT LEFT THREE-QUARTER walk diagonally toward screen lower-left. Row 3 is frames 1-6; row 4 continues frames 7-12. Both glossy eyes visible in perspective, tiny muzzle shifted left, original pink cheeks. Keep the exact same heading all twelve frames, not turning between frames.
+
+Twelve chronological walk-cycle poses: left-foot contact, sinking weight, left support / right-foot lift, passing, right-foot forward, rising, right-foot contact, sinking weight, right support / left-foot lift, opposite passing, left-foot forward, rising smoothly to the initial pose. Natural tiny arm counter-swing, stubby white feet alternate, small blue tail sways subtly. All feet and hands are WHITE; only the tail and ears/crown are blue. No floating blue patches, blue feet, detached limbs or extra tails.
+Keep head and facial features nearly fixed while the tiny limbs move progressively, extremely subtle 1-2px body bob, no huge bounce. Second row of each cycle CONTINUES the first, not a separate 6-frame cycle. Twelve distinct progressive limb poses with smooth frame12-to-frame1 looping.
+
+Maintain approved Hachiware: ONE plump continuous pear-shaped white head/body silhouette, no neck, no separate head, no belly line, no long torso; very tiny arms and feet; rounded pointed dusty-blue cat ears and cap crown with parted white central fringe; large glossy black oval eyes with white highlights, tiny w-mouth and dot below, small brow dots and pink oval cheeks with dark hatches. Clean slightly irregular black outlines, flat pastel 2D illustration. Absolutely consistent head shape, facial geometry, body width, volume and line weight across sprites. Do not redesign, change style, add props, clothes, food, labels, pixel art or 3D. Runtime will mirror these LEFT views for rightward travel, so only the two specified left-facing headings are needed.

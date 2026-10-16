@@ -1,0 +1,85 @@
+{
+  "updated_at": "2026-10-16T12:44:09.601146+00:00",
+  "files": [
+    {
+      "path": "Iterations/before-gutter-fix/friends.png",
+      "bytes": 125602,
+      "sha256": "79fb81d78b27c1d634b8c11a1fb82ee6d1d126e3f22b53f5576c52de8c3db91b"
+    },
+    {
+      "path": "Iterations/before-gutter-fix/hachiware-12-frame-walk.gif",
+      "bytes": 382229,
+      "sha256": "35b6ac85c99bd493d2d76244e7f051a522a65e90b3016efedbf3ad0c2352c69b"
+    },
+    {
+      "path": "Iterations/before-gutter-fix/hachiware-sprite-preview.png",
+      "bytes": 256070,
+      "sha256": "1cc9d3f7c9f4d59a42ad4ed52cee29e5f8bfbf55f44625f637d375427a3c06e7"
+    },
+    {
+      "path": "Iterations/before-gutter-fix/hachiware-walk.png",
+      "bytes": 113171,
+      "sha256": "d5992b6bb41de5cb6abf6c33f426577505bb235609e8e1032375195c8a63a8a0"
+    },
+    {
+      "path": "Iterations/before-gutter-fix/icon.png",
+      "bytes": 257854,
+      "sha256": "fadb9924edc62d95697cdefc883dbb54e597c528d87278bf12af3ed433319587"
+    },
+    {
+      "path": "PackDiagonalAtlas.swift",
+      "bytes": 1307,
+      "sha256": "db1bfeec05568c609f2091e4bae1cdb5e92ad9368dac1ed0b8ac39465bf762f2"
+    },
+    {
+      "path": "README.txt",
+      "bytes": 829,
+      "sha256": "f9157856dfad0d0f8955325b2200de3dfcc564036cfce66cb4b6cf2a958102c5"
+    },
+    {
+      "path": "RuntimeAssets/hachiware-cardinal-walk-approved-v5.png",
+      "bytes": 1629263,
+      "sha256": "c3b03bfe42f0501dcfaac2f442fe4d59242fd242a8f502737fb513ea21c0715c"
+    },
+    {
+      "path": "RuntimeAssets/hachiware-diagonal-matched-walk-v5.png",
+      "bytes": 105017,
+      "sha256": "a5130282ebbaf905423aab8843c7e22f52e514b429f0438dd830c493c18eac40"
+    },
+    {
+      "path": "RuntimeAssets/hachiware-diagonal-walk-12-v2.png",
+      "bytes": 1758422,
+      "sha256": "1a24baf6cb5373c02cdb54e508fa608f7d0f4ac051e4a6bfbab164ca7dc9e94d"
+    },
+    {
+      "path": "RuntimeAssets/hachiware-sprites-v1.png",
+      "bytes": 1737619,
+      "sha256": "ac8776b7c831c2bf0ccc265a42736411f37a4c88ac8c53c6622f02455ba39935"
+    },
+    {
+      "path": "diagonal-all-directions-candidate-atlas.png",
+      "bytes": 204059,
+      "sha256": "c1e6d559e074bae045c71af5a92b560e6dd1add70631371efff0114d8ec16830"
+    },
+    {
+      "path": "hachiware-applied-artwork-v5.png",
+      "bytes": 273169,
+      "sha256": "5d0f3f13809fe8bd7d9023bcdf6142befb673a833d62dbefeb3bfdc07720c0c0"
+    },
+    {
+      "path": "hachiware-applied-eight-directions-v5.gif",
+      "bytes": 429441,
+      "sha256": "2a7c8741715cb6de25fc07bfb29e897711f9443bae30bae155f1ad7ad6b0184d"
+    },
+    {
+      "path": "user-approved-cardinal-walk.png",
+      "bytes": 1629263,
+      "sha256": "c3b03bfe42f0501dcfaac2f442fe4d59242fd242a8f502737fb513ea21c0715c"
+    },
+    {
+      "path": "validation.json",
+      "bytes": 956,
+      "sha256": "a3f3ef4443d40a067fd0d8db150ef0bd7715194c3afbb2af48147f822e7e391a"
+    }
+  ]
+}

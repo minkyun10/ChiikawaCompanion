@@ -1,0 +1,21 @@
+Tool: built-in image_gen (reference image input)
+Reference: user-provided images.png
+Background: white, opaque
+Note: unseen rear, top and side anatomy is a design inference from the supplied front reference.
+
+Use case: stylized-concept.
+Asset type: a clean production character turnaround / model reference sheet, one finished raster image.
+Input image 1 is the sole character identity and drawing-style reference. Create a character sheet of THIS exact Hachiware design, not the earlier desktop application's interpretation.
+
+Preserve the reference closely: a very round, pear-shaped white body with head and torso flowing into each other, no visible neck, extremely short stubby legs and arms; two large triangular blue cat ears with softly rounded points; dusty muted blue cap-shaped marking across the crown with a white central inverted-V/parted fringe; a tiny curved blue cat tail; large glossy black oval eyes with small white highlights, the same tiny w-shaped mouth, pink oval cheeks with three short black hatch marks. Confident, slightly irregular hand-drawn black outlines, flat white / muted blue / pink color fills. Keep the original cute proportions. No clothing, no accessories. Remove the food on a stick and all handwritten Japanese text and the arrow from the reference.
+
+Layout: high-resolution landscape white character reference sheet, 3 panels on the upper row and 2 centered panels on the lower row, with generous margins, five distinct non-overlapping full-character drawings. Each panel has a short crisp English label:
+Top row, left to right: "T-POSE", "FRONT", "BACK".
+Bottom row, left to right: "TOP", "SIDE".
+Small clean overall title: "HACHIWARE — CHARACTER SHEET".
+T-POSE: straight-on orthographic front view, the two SHORT arms extended directly sideways horizontally in a clear T-pose, feet together, symmetric. Keep arms stubby, do not introduce human-length arms.
+FRONT: straight-on front view in a relaxed neutral pose, tiny arms at sides, looking straight ahead, same face as reference.
+BACK: strict rear view in the same neutral pose, no visible face, coherent blue crown marking, visible small blue tail. Infer the unseen anatomy conservatively from the reference.
+TOP: a real strict 90-degree overhead orthographic view looking down at the head and body; front direction points toward the bottom of the panel. Show the crown, ear placement, small arm/foot protrusions and tail as they would project from above. This must look visibly different from the front view; do not draw a front face and call it top.
+SIDE: strict right-facing orthographic profile, only the near eye visible, tiny mouth on profile, coherent ear/crown/tail placement. Do not use a three-quarter view.
+Front, rear and side views must have matching total character height, body size, ear height and foot baseline; T-pose has the same body dimensions. Use very faint unobtrusive alignment lines behind the front/back row if useful. Orthographic, no perspective distortion, no dramatic lighting, no 3D rendering, no gradients, no scenery, no extra characters, no watermark. Keep all five views consistent enough to guide future animation and modeling. White background, not transparent.

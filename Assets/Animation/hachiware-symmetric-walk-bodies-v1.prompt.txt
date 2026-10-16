@@ -1,0 +1,15 @@
+Use case: identity-preserve
+Asset type: fixed body layers for deterministic 2D skeletal walking animation, NOT an animation frame sequence.
+Input image 1: approved Hachiware identity and front/side/back reference.
+Input image 2: approved diagonal orientation reference.
+
+Create ONE transparent PNG, landscape, preferably 1536 x 1024, arranged in THREE equal columns by TWO equal rows. Exactly FIVE isolated fixed body drawings, one in each of the first five cells; the bottom-right sixth cell must be completely EMPTY transparent. No captions, labels, grid, guides, arrows or shadows.
+Top row left to right: FRONT; LEFT SIDE PROFILE; BACK.
+Bottom row left to right: FRONT LEFT THREE-QUARTER (facing lower-left); REAR LEFT THREE-QUARTER (facing upper-left); EMPTY.
+
+CRITICAL RIGGING REQUIREMENT: These are ONLY the head-and-body core with ears, face, cheeks and the normal single blue tail. REMOVE ALL ARMS, HANDS, LEGS AND FEET from every drawing, including any internal U-shaped arm marks. Lower body ends in a clean rounded oval. No foot bumps at the bottom, no side arm bumps, no detached hands or feet anywhere. This is intentional: identical limbs will be attached and animated by software, so absolutely NO existing limbs may remain visible. Keep the continuous plump pear-shaped head/body, never add a neck or separate head. Tail remains attached and motionless.
+Every drawing is upright, calm neutral expression, NO mid-step pose, no lean, no squash, no bob. Matching overall height and volume. Character about 350px tall within each 512px square cell, with wide transparent gutters on all four sides and no clipping.
+
+Preserve the approved identity precisely: rounded white pear-shaped continuous head/body; dusty-blue rounded pointed cat ears merging into the parted blue cap crown; front and front-three-quarter faces have large glossy black oval eyes with white highlights, tiny eyebrow dots, a very small w-mouth and dot beneath, pink cheeks with three tiny dark hatches. Side profile has only one visible glossy eye, cheek and little muzzle. Back and rear-three-quarter have NO face or eyes. Tiny dusty-blue bean-shaped tail in the same correct position as the references: behind the body, on the right for the left-facing views, low center on the straight back view.
+Style: clean consistent slightly hand-drawn black outline, flat white fill and flat pastel blue/pink, no texture, no shading, no 3D, no pixel art, no props or clothes. Preserve white fur as fully opaque, and make all space outside the silhouettes genuinely transparent.
+This is a technical component sheet, not a redesign, not a walking sprite atlas. The FIVE fixed body layers must have stable clean silhouettes and exact matching character identity.

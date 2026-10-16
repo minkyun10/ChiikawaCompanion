@@ -1,0 +1,2000 @@
+{
+  "created_at": "2026-10-16T12:08:58.617148+00:00",
+  "operation": "copy; originals preserved",
+  "image_file_count": 254,
+  "unique_image_content_count": 212,
+  "supporting_file_count": 29,
+  "image_bytes": 92150411,
+  "symmetric_walk_runtime_applied": true,
+  "files": [
+    {
+      "kind": "image",
+      "source": "Source/AppliedWalk-v5/Iterations/before-gutter-fix/friends.png",
+      "archive_path": "AppliedWalk-v5/Iterations/before-gutter-fix/friends.png",
+      "bytes": 125602,
+      "sha256": "79fb81d78b27c1d634b8c11a1fb82ee6d1d126e3f22b53f5576c52de8c3db91b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/AppliedWalk-v5/Iterations/before-gutter-fix/hachiware-12-frame-walk.gif",
+      "archive_path": "AppliedWalk-v5/Iterations/before-gutter-fix/hachiware-12-frame-walk.gif",
+      "bytes": 382229,
+      "sha256": "35b6ac85c99bd493d2d76244e7f051a522a65e90b3016efedbf3ad0c2352c69b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/AppliedWalk-v5/Iterations/before-gutter-fix/hachiware-sprite-preview.png",
+      "archive_path": "AppliedWalk-v5/Iterations/before-gutter-fix/hachiware-sprite-preview.png",
+      "bytes": 256070,
+      "sha256": "1cc9d3f7c9f4d59a42ad4ed52cee29e5f8bfbf55f44625f637d375427a3c06e7"
+    },
+    {
+      "kind": "image",
+      "source": "Source/AppliedWalk-v5/Iterations/before-gutter-fix/hachiware-walk.png",
+      "archive_path": "AppliedWalk-v5/Iterations/before-gutter-fix/hachiware-walk.png",
+      "bytes": 113171,
+      "sha256": "d5992b6bb41de5cb6abf6c33f426577505bb235609e8e1032375195c8a63a8a0"
+    },
+    {
+      "kind": "image",
+      "source": "Source/AppliedWalk-v5/Iterations/before-gutter-fix/icon.png",
+      "archive_path": "AppliedWalk-v5/Iterations/before-gutter-fix/icon.png",
+      "bytes": 257854,
+      "sha256": "fadb9924edc62d95697cdefc883dbb54e597c528d87278bf12af3ed433319587"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/AppliedWalk-v5/PackDiagonalAtlas.swift",
+      "archive_path": "AppliedWalk-v5/PackDiagonalAtlas.swift",
+      "bytes": 1307,
+      "sha256": "db1bfeec05568c609f2091e4bae1cdb5e92ad9368dac1ed0b8ac39465bf762f2"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/AppliedWalk-v5/README.txt",
+      "archive_path": "AppliedWalk-v5/README.txt",
+      "bytes": 829,
+      "sha256": "f9157856dfad0d0f8955325b2200de3dfcc564036cfce66cb4b6cf2a958102c5"
+    },
+    {
+      "kind": "image",
+      "source": "Source/AppliedWalk-v5/RuntimeAssets/hachiware-cardinal-walk-approved-v5.png",
+      "archive_path": "AppliedWalk-v5/RuntimeAssets/hachiware-cardinal-walk-approved-v5.png",
+      "bytes": 1629263,
+      "sha256": "c3b03bfe42f0501dcfaac2f442fe4d59242fd242a8f502737fb513ea21c0715c"
+    },
+    {
+      "kind": "image",
+      "source": "Source/AppliedWalk-v5/RuntimeAssets/hachiware-diagonal-matched-walk-v5.png",
+      "archive_path": "AppliedWalk-v5/RuntimeAssets/hachiware-diagonal-matched-walk-v5.png",
+      "bytes": 105017,
+      "sha256": "a5130282ebbaf905423aab8843c7e22f52e514b429f0438dd830c493c18eac40"
+    },
+    {
+      "kind": "image",
+      "source": "Source/AppliedWalk-v5/RuntimeAssets/hachiware-diagonal-walk-12-v2.png",
+      "archive_path": "AppliedWalk-v5/RuntimeAssets/hachiware-diagonal-walk-12-v2.png",
+      "bytes": 1758422,
+      "sha256": "1a24baf6cb5373c02cdb54e508fa608f7d0f4ac051e4a6bfbab164ca7dc9e94d"
+    },
+    {
+      "kind": "image",
+      "source": "Source/AppliedWalk-v5/RuntimeAssets/hachiware-sprites-v1.png",
+      "archive_path": "AppliedWalk-v5/RuntimeAssets/hachiware-sprites-v1.png",
+      "bytes": 1737619,
+      "sha256": "ac8776b7c831c2bf0ccc265a42736411f37a4c88ac8c53c6622f02455ba39935"
+    },
+    {
+      "kind": "image",
+      "source": "Source/AppliedWalk-v5/diagonal-all-directions-candidate-atlas.png",
+      "archive_path": "AppliedWalk-v5/diagonal-all-directions-candidate-atlas.png",
+      "bytes": 204059,
+      "sha256": "c1e6d559e074bae045c71af5a92b560e6dd1add70631371efff0114d8ec16830"
+    },
+    {
+      "kind": "image",
+      "source": "Source/AppliedWalk-v5/hachiware-applied-artwork-v5.png",
+      "archive_path": "AppliedWalk-v5/hachiware-applied-artwork-v5.png",
+      "bytes": 273169,
+      "sha256": "5d0f3f13809fe8bd7d9023bcdf6142befb673a833d62dbefeb3bfdc07720c0c0"
+    },
+    {
+      "kind": "image",
+      "source": "Source/AppliedWalk-v5/hachiware-applied-eight-directions-v5.gif",
+      "archive_path": "AppliedWalk-v5/hachiware-applied-eight-directions-v5.gif",
+      "bytes": 429441,
+      "sha256": "2a7c8741715cb6de25fc07bfb29e897711f9443bae30bae155f1ad7ad6b0184d"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/AppliedWalk-v5/manifest.json",
+      "archive_path": "AppliedWalk-v5/manifest.json",
+      "bytes": 2882,
+      "sha256": "9b7b6dc13a26bd45567e74c0eec37630e2245b98e4d56b67020e6ada43d23d76"
+    },
+    {
+      "kind": "image",
+      "source": "Source/AppliedWalk-v5/user-approved-cardinal-walk.png",
+      "archive_path": "AppliedWalk-v5/user-approved-cardinal-walk.png",
+      "bytes": 1629263,
+      "sha256": "c3b03bfe42f0501dcfaac2f442fe4d59242fd242a8f502737fb513ea21c0715c"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/AppliedWalk-v5/validation.json",
+      "archive_path": "AppliedWalk-v5/validation.json",
+      "bytes": 956,
+      "sha256": "a3f3ef4443d40a067fd0d8db150ef0bd7715194c3afbb2af48147f822e7e391a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v2/GeneratedOriginals/exec-2dc43ae2-b85b-4077-8be4-24d03f476624.png",
+      "archive_path": "DiagonalWalk-v2/GeneratedOriginals/exec-2dc43ae2-b85b-4077-8be4-24d03f476624.png",
+      "bytes": 1185769,
+      "sha256": "be97dd2d46ae92ee90ad30bf284cd54e1bff09bd832aa25d7caf186aef8916b8"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v2/GeneratedOriginals/exec-3eb487e3-f0d3-4594-a8d3-38c252fbf120.png",
+      "archive_path": "DiagonalWalk-v2/GeneratedOriginals/exec-3eb487e3-f0d3-4594-a8d3-38c252fbf120.png",
+      "bytes": 1192625,
+      "sha256": "1aab80cbe7205f6ea92c6e2296866ef86a4f78c5ff5ed15b67c760d649daa17f"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v2/GeneratedOriginals/exec-7438059c-81b0-491d-b1b1-7f875b9c90d3.png",
+      "archive_path": "DiagonalWalk-v2/GeneratedOriginals/exec-7438059c-81b0-491d-b1b1-7f875b9c90d3.png",
+      "bytes": 1082216,
+      "sha256": "aa7f1bf013e51e7c1c5bdbaaac1475507288a975471677a3dcf1161770f29216"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/DiagonalWalk-v2/Prompts/back-cycle-v2.prompt.txt",
+      "archive_path": "DiagonalWalk-v2/Prompts/back-cycle-v2.prompt.txt",
+      "bytes": 2157,
+      "sha256": "e7bfcc2e38600834c1b85630a55b039af18ff7a3aedb23b1b6faa7837c5c381c"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/DiagonalWalk-v2/Prompts/back_opposite-v2.prompt.txt",
+      "archive_path": "DiagonalWalk-v2/Prompts/back_opposite-v2.prompt.txt",
+      "bytes": 1817,
+      "sha256": "c07a9a179e9c7d6a0b04d5481ae48454d2592d34a242a14f30c77900c2117893"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/DiagonalWalk-v2/Prompts/front-cycle-correction-v2.prompt.txt",
+      "archive_path": "DiagonalWalk-v2/Prompts/front-cycle-correction-v2.prompt.txt",
+      "bytes": 1821,
+      "sha256": "f02d63e18055402f9478f0f418f60498233fdec97bf2eb5a32722404fa8905f4"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/DiagonalWalk-v2/Prompts/front-cycle-v2.prompt.txt",
+      "archive_path": "DiagonalWalk-v2/Prompts/front-cycle-v2.prompt.txt",
+      "bytes": 3028,
+      "sha256": "e692efc7f0beb207147aa2bdc73018f72c2e4b14e5555a2456bed04a423ea032"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/DiagonalWalk-v2/Prompts/front_opposite-v2.prompt.txt",
+      "archive_path": "DiagonalWalk-v2/Prompts/front_opposite-v2.prompt.txt",
+      "bytes": 2166,
+      "sha256": "dda0c853f745f7b2fe5e2406eda682442c639af9d397f6a567e3f42019e7b017"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/DiagonalWalk-v2/Prompts/keyposes-v2.prompt.txt",
+      "archive_path": "DiagonalWalk-v2/Prompts/keyposes-v2.prompt.txt",
+      "bytes": 2445,
+      "sha256": "11a9c357f1bd934b05f1ce9f568aed72642c4a6ba684e02e164e0977738d08c5"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/DiagonalWalk-v2/Prompts/right-foot-forward-v3.prompt.txt",
+      "archive_path": "DiagonalWalk-v2/Prompts/right-foot-forward-v3.prompt.txt",
+      "bytes": 1402,
+      "sha256": "58aef0178b9599365dc243a230fedfad70f62d6ea2e748dbc56c6b4cd5b87370"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v2/References/user-right-foot-forward-request.png",
+      "archive_path": "DiagonalWalk-v2/References/user-right-foot-forward-request.png",
+      "bytes": 102148,
+      "sha256": "d49bd416440a4f823fe6b778f422c91d02a94b68697558c6affd6b1f7739f0c7"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v2/References/user-selected-diagonal-overview.png",
+      "archive_path": "DiagonalWalk-v2/References/user-selected-diagonal-overview.png",
+      "bytes": 590812,
+      "sha256": "a79e209762a99d688b68f1b761389b9683b8cfe20dd64072b51d822afbbf4f0c"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v2/References/user-selected-front-diagonal.png",
+      "archive_path": "DiagonalWalk-v2/References/user-selected-front-diagonal.png",
+      "bytes": 216970,
+      "sha256": "f7c60e7d50450d7e06f2b56a275736d44fc30e50aba91e3ee0d1ce72cf64b59c"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v2/Review/hachiware-diagonal-back-opposite-foot-v2.png",
+      "archive_path": "DiagonalWalk-v2/Review/hachiware-diagonal-back-opposite-foot-v2.png",
+      "bytes": 1082216,
+      "sha256": "aa7f1bf013e51e7c1c5bdbaaac1475507288a975471677a3dcf1161770f29216"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v2/Review/hachiware-diagonal-front-opposite-foot-v2.png",
+      "archive_path": "DiagonalWalk-v2/Review/hachiware-diagonal-front-opposite-foot-v2.png",
+      "bytes": 1192625,
+      "sha256": "1aab80cbe7205f6ea92c6e2296866ef86a4f78c5ff5ed15b67c760d649daa17f"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v2/Review/hachiware-diagonal-right-foot-forward-v3.png",
+      "archive_path": "DiagonalWalk-v2/Review/hachiware-diagonal-right-foot-forward-v3.png",
+      "bytes": 1514480,
+      "sha256": "f23a828ed131ab92894ae8c81c5abe245d824b2d3fc8fc078726304cd706bf70"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v2/Review/initial-keypose-comparison-v2.png",
+      "archive_path": "DiagonalWalk-v2/Review/initial-keypose-comparison-v2.png",
+      "bytes": 1185769,
+      "sha256": "be97dd2d46ae92ee90ad30bf284cd54e1bff09bd832aa25d7caf186aef8916b8"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/DiagonalWalk-v2/manifest.json",
+      "archive_path": "DiagonalWalk-v2/manifest.json",
+      "bytes": 3301,
+      "sha256": "11846c742f92c477dcc6616343eae0be622b9a6a13f14497b8da54c2001f7716"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/DiagonalWalk-v4/DiagonalWalkPreview.swift",
+      "archive_path": "DiagonalWalk-v4/DiagonalWalkPreview.swift",
+      "bytes": 13041,
+      "sha256": "7e4fa37ff846e252d2f3b0e86dc323ad8c06623dc3d9d97ccdbc6930bde4ac45"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/GeneratedOriginals/exec-b70a862e-2934-410a-a191-934212002008.png",
+      "archive_path": "DiagonalWalk-v4/GeneratedOriginals/exec-b70a862e-2934-410a-a191-934212002008.png",
+      "bytes": 815169,
+      "sha256": "abd0cfbcc0cac1b5d7d60ee2d15763c690ac71999563aa1ec15ba9860e7f7799"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/DiagonalWalk-v4/Prompts/fixed-bodies-v4.prompt.txt",
+      "archive_path": "DiagonalWalk-v4/Prompts/fixed-bodies-v4.prompt.txt",
+      "bytes": 1887,
+      "sha256": "35b28958c5876351f36e0bf1a96609ecb9c3f92bcd7051c9d2b5e6382fb4d73c"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/DiagonalWalk-v4/README.txt",
+      "archive_path": "DiagonalWalk-v4/README.txt",
+      "bytes": 1316,
+      "sha256": "9cc6d28109fe3753b14178ce6b8406c70641b2ecf706abec0f02cd4dac7d99ac"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/References/character-and-foot-size.png",
+      "archive_path": "DiagonalWalk-v4/References/character-and-foot-size.png",
+      "bytes": 597697,
+      "sha256": "7762cfc770d360c37e81d9ca9e9a4185b0fedbd3b4801408ae8f85afbb86bfe8"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/References/matched-twelve-frame-motion.png",
+      "archive_path": "DiagonalWalk-v4/References/matched-twelve-frame-motion.png",
+      "bytes": 231560,
+      "sha256": "51705a53cb5829dcf9ccc4ccb85ceafa242b15d666639b9f10ed1c14ad9f9b83"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/down-left-01.png",
+      "archive_path": "DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/down-left-01.png",
+      "bytes": 54257,
+      "sha256": "d3fb80e84a457bae6fbd9786dfc3cf5eee1599ca8e1312d85002ed1d12e4e913"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/down-left-02.png",
+      "archive_path": "DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/down-left-02.png",
+      "bytes": 54156,
+      "sha256": "e409ab394e510fcee743179fb45be98240d5101504c8e5d04e672a39b099e1da"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/down-left-03.png",
+      "archive_path": "DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/down-left-03.png",
+      "bytes": 54029,
+      "sha256": "ca327894f803c2360ec1995f31bc6f25451e38bd9e500e84df4c05279db6b368"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/down-left-04.png",
+      "archive_path": "DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/down-left-04.png",
+      "bytes": 53625,
+      "sha256": "befa2f1643a65ac63ab21fd550b853258c43242e7b6a0352826d49f02ebb6b8c"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/down-left-05.png",
+      "archive_path": "DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/down-left-05.png",
+      "bytes": 53757,
+      "sha256": "623982ff1312bfc8a6c9c3c151302b9a8b7df76cf3f82cda4161ab6eb4861fe0"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/down-left-06.png",
+      "archive_path": "DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/down-left-06.png",
+      "bytes": 53840,
+      "sha256": "58341f70badada65481284ef0ba98f0901abd7f4d4123b907a4bdf9f730c0399"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/down-left-07.png",
+      "archive_path": "DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/down-left-07.png",
+      "bytes": 53989,
+      "sha256": "096fbe71ec152747e49ea07aae187695cbb2b351463dc97854f57556e4b391bc"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/down-left-08.png",
+      "archive_path": "DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/down-left-08.png",
+      "bytes": 53928,
+      "sha256": "985c191ceec7ee66eafcbcd06391c98234d39d3e0242826f3b74dead14e25849"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/down-left-09.png",
+      "archive_path": "DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/down-left-09.png",
+      "bytes": 53899,
+      "sha256": "150a14a7883f96178fd4c9841fc6a7f2fee0c0f9bd31ace24f928af557258257"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/down-left-10.png",
+      "archive_path": "DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/down-left-10.png",
+      "bytes": 53605,
+      "sha256": "e14af17ad402b560e9091bda8a3816d3e1a4bc44764e343c34914978ff528f3e"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/down-left-11.png",
+      "archive_path": "DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/down-left-11.png",
+      "bytes": 53986,
+      "sha256": "03e45a510418e7778526fccc5d59ee0a1f669e77cd9d3d836298839f942d29a5"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/down-left-12.png",
+      "archive_path": "DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/down-left-12.png",
+      "bytes": 54100,
+      "sha256": "d5b662b09c627398eb315cdb2d9468fa5d95deb0054cf9f6bf780a1505d30b2e"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/down-right-01.png",
+      "archive_path": "DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/down-right-01.png",
+      "bytes": 54252,
+      "sha256": "75ca81b52e01a4e6becac2a0dd1162d7dcf990fd529781f959b95335753c524c"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/down-right-02.png",
+      "archive_path": "DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/down-right-02.png",
+      "bytes": 54117,
+      "sha256": "b0e6406c375c5e6a85d7d5a2a86948312845534227eb6900b826e38a3173116c"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/down-right-03.png",
+      "archive_path": "DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/down-right-03.png",
+      "bytes": 54022,
+      "sha256": "c75094a204e673bdd5f0e6b3d5750a0e633d63b1a82ef26f7b380257777d801d"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/down-right-04.png",
+      "archive_path": "DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/down-right-04.png",
+      "bytes": 53632,
+      "sha256": "61fa8d127904de639d973a1f17eaee6b1d911013bfefbd88ef543e19b632b426"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/down-right-05.png",
+      "archive_path": "DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/down-right-05.png",
+      "bytes": 53717,
+      "sha256": "5290f51a5f9d8cf9935bd1bd1a9318fbc936a1c3ec9d8470adc7a7e80fd0fe26"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/down-right-06.png",
+      "archive_path": "DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/down-right-06.png",
+      "bytes": 53872,
+      "sha256": "92788d543ce322bac0d8cbcd1ab2e880c3fab5af681dfb84b49fa59455c68dc3"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/down-right-07.png",
+      "archive_path": "DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/down-right-07.png",
+      "bytes": 53945,
+      "sha256": "809c4df3b8c716ebcc826e1024d559f9f1b4f589197d0bdeb08794e46e7542ea"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/down-right-08.png",
+      "archive_path": "DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/down-right-08.png",
+      "bytes": 53901,
+      "sha256": "eb7ea15363b2e505812f66bce27207d2caebaba2646fe9c7fcdf9c722e819f84"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/down-right-09.png",
+      "archive_path": "DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/down-right-09.png",
+      "bytes": 53845,
+      "sha256": "85bc2580b5f2774f9abb692ee3378d0406d0a83a5515fc4b65c1116e924de541"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/down-right-10.png",
+      "archive_path": "DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/down-right-10.png",
+      "bytes": 53526,
+      "sha256": "d3e86e4b8fc6025f7c6cca2d974f51ffe908249ba030c04889ce1ce45962c5f5"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/down-right-11.png",
+      "archive_path": "DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/down-right-11.png",
+      "bytes": 53956,
+      "sha256": "f51d61e57ec3f31268298a5c12f2aff57e0c0fc55eeef3aa4cb76c6bb168cc0c"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/down-right-12.png",
+      "archive_path": "DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/down-right-12.png",
+      "bytes": 54054,
+      "sha256": "d891483009b571dea0e0b43aeef882e0c87b64d5e7f0c737fdbd203bc8b43598"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/up-left-01.png",
+      "archive_path": "DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/up-left-01.png",
+      "bytes": 48181,
+      "sha256": "ed2283d1ea43392f0c64f0dfede2c1ff7c95e6d641ed347a63651bc50ed2d4cd"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/up-left-02.png",
+      "archive_path": "DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/up-left-02.png",
+      "bytes": 48067,
+      "sha256": "0ab7bfaf770ae18eb35372986c92a93e08bcb958efdbfd47d85bd97e014b4d23"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/up-left-03.png",
+      "archive_path": "DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/up-left-03.png",
+      "bytes": 48002,
+      "sha256": "c07573573d7609464913f9964a9ee5b2d94938474eb903d74427b3b24db6ef75"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/up-left-04.png",
+      "archive_path": "DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/up-left-04.png",
+      "bytes": 47554,
+      "sha256": "db5e9aa97e3337ab18f24901c5c3bb2df63696fd3161877373ba797215a1e708"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/up-left-05.png",
+      "archive_path": "DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/up-left-05.png",
+      "bytes": 47871,
+      "sha256": "b4badad11948dd1b0085005022f7006fe5e662cf30b70da1e1b2b7810d1dbaa6"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/up-left-06.png",
+      "archive_path": "DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/up-left-06.png",
+      "bytes": 47901,
+      "sha256": "7002ccaa67338ac47c3e4d6b90cbd66c671d19771533f25d1359e68d4f43ef14"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/up-left-07.png",
+      "archive_path": "DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/up-left-07.png",
+      "bytes": 47911,
+      "sha256": "4014b1eeebcf29b56b3fa60129006853d29ab109fee6ebcf3d839d3151b6f8a1"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/up-left-08.png",
+      "archive_path": "DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/up-left-08.png",
+      "bytes": 47833,
+      "sha256": "7628069c4f87ac7f8201f12a66cebb35320689ece53296aa8f63e97d03cdec72"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/up-left-09.png",
+      "archive_path": "DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/up-left-09.png",
+      "bytes": 47785,
+      "sha256": "4bd434007b906b48f6683c3be4e821a9345b024d2ddf208d71bdc498fe94fb69"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/up-left-10.png",
+      "archive_path": "DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/up-left-10.png",
+      "bytes": 47468,
+      "sha256": "c46ef38ea12698d8a475a7db20be21edcdbc27754145fa1f0790bd3ff2bdc4f4"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/up-left-11.png",
+      "archive_path": "DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/up-left-11.png",
+      "bytes": 48060,
+      "sha256": "e18692f3bac57e2ffa47c607fc30350c385e82d0210fc9f2c5a9fb2fec523d69"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/up-left-12.png",
+      "archive_path": "DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/up-left-12.png",
+      "bytes": 48107,
+      "sha256": "376f872895d8b93f3d2e034ce928095f566e90190d20c0a93c9ee33df9eb8803"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/up-right-01.png",
+      "archive_path": "DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/up-right-01.png",
+      "bytes": 48322,
+      "sha256": "bbe63dc0677d66ad5f5b260920b110db39cf4354e1f4dc7d6e82ceea9f6d41c7"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/up-right-02.png",
+      "archive_path": "DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/up-right-02.png",
+      "bytes": 48203,
+      "sha256": "81d4a1186d1c7aee36946431bbd7e285d85afb827f7aa30a780aa21aefe0d1ff"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/up-right-03.png",
+      "archive_path": "DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/up-right-03.png",
+      "bytes": 48061,
+      "sha256": "414c0af54b179f979dcf2bd0860017e36fe2ae1381ea0358a01c32a2d21e9c05"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/up-right-04.png",
+      "archive_path": "DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/up-right-04.png",
+      "bytes": 47680,
+      "sha256": "d6f388f2060304442d3dee275d95922dc6200a6938d81d45163ba92c655df089"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/up-right-05.png",
+      "archive_path": "DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/up-right-05.png",
+      "bytes": 47999,
+      "sha256": "137dc517d75353e959002636e31978095d9f388b1654b235cf2e9b35ee3ef9e7"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/up-right-06.png",
+      "archive_path": "DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/up-right-06.png",
+      "bytes": 48033,
+      "sha256": "c3302de2e493ca8a7f307639675106bb6aa089745db5b5a1207f755c57903813"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/up-right-07.png",
+      "archive_path": "DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/up-right-07.png",
+      "bytes": 48055,
+      "sha256": "846ded94a600b1af30e513cca86d78d6d7bd798f537b4e6a188917d64c1fb049"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/up-right-08.png",
+      "archive_path": "DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/up-right-08.png",
+      "bytes": 48013,
+      "sha256": "67cd4c15d2b120e90e0d6d8f3ecc7afc997b24ee362ceb3e118167a8f6ae62f8"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/up-right-09.png",
+      "archive_path": "DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/up-right-09.png",
+      "bytes": 47847,
+      "sha256": "839006ff5635472d1bec142fcb4af0bfabe1a0194da08f07a90be94917c6b6ad"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/up-right-10.png",
+      "archive_path": "DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/up-right-10.png",
+      "bytes": 47618,
+      "sha256": "14a12a019de5c415c0d781060520abf3fd53d61291e666523edf1830d1d8988b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/up-right-11.png",
+      "archive_path": "DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/up-right-11.png",
+      "bytes": 48148,
+      "sha256": "72cb2706b510821de129ad2dbd6ff96d73f791f4f2c78bc4a9f0e9b34001e336"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/up-right-12.png",
+      "archive_path": "DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/Frames/up-right-12.png",
+      "bytes": 48290,
+      "sha256": "c74ab3e74c144db900eaa431eebf671bfd7d3cafbc8debb695a900d2814005c4"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/hachiware-diagonal-front-12-v4.png",
+      "archive_path": "DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/hachiware-diagonal-front-12-v4.png",
+      "bytes": 181923,
+      "sha256": "94f55583bb882625f3620a9467c90388867a085721001db7498ce07923593742"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/hachiware-diagonal-matched-walk-v4.png",
+      "archive_path": "DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/hachiware-diagonal-matched-walk-v4.png",
+      "bytes": 474495,
+      "sha256": "0e1ef88e6be333ea29f3e2c8b35c798907afc06b34f7a983ef3d13bb25afb1c7"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/hachiware-diagonal-opposite-step-check-v4.png",
+      "archive_path": "DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/hachiware-diagonal-opposite-step-check-v4.png",
+      "bytes": 176582,
+      "sha256": "a36cf9f7c78cb05961e0e848fce8feb8a4530a02c9c514d037acf2edb44b1f42"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/hachiware-diagonal-rear-12-v4.png",
+      "archive_path": "DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/hachiware-diagonal-rear-12-v4.png",
+      "bytes": 170119,
+      "sha256": "811529dee48d9e4518d4d490b5115495ca18a5bde7c6cd9e6d01feb16ea3107f"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/hachiware-diagonal-walk-preview-v4.gif",
+      "archive_path": "DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/hachiware-diagonal-walk-preview-v4.gif",
+      "bytes": 90308,
+      "sha256": "e6071dc20afcd5a075ec3e5535260ca8cb55cffa7cb8d0f1c673e459e4d35fa5"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/review-validation.json",
+      "archive_path": "DiagonalWalk-v4/Review/Draft-before-foot-proportion-match/review-validation.json",
+      "bytes": 1040,
+      "sha256": "8d24886d729a6898bd8fffe34a2b19b8f11029d1e49336020fce2df16fd095d4"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Final/Frames/down-left-01.png",
+      "archive_path": "DiagonalWalk-v4/Review/Final/Frames/down-left-01.png",
+      "bytes": 54036,
+      "sha256": "f32c826e9f5462c0b30a67af40266639e4bfc11f919ccd1426617418dea1f7e8"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Final/Frames/down-left-02.png",
+      "archive_path": "DiagonalWalk-v4/Review/Final/Frames/down-left-02.png",
+      "bytes": 54000,
+      "sha256": "dd431c578ca5423448e19e562e2d7448da935c7781bf2dd7d81ebad99aba18df"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Final/Frames/down-left-03.png",
+      "archive_path": "DiagonalWalk-v4/Review/Final/Frames/down-left-03.png",
+      "bytes": 53843,
+      "sha256": "4479c2fef421a4a1ab2036b3eeddee0a68181d46d939c26e2aa6870cb5f78098"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Final/Frames/down-left-04.png",
+      "archive_path": "DiagonalWalk-v4/Review/Final/Frames/down-left-04.png",
+      "bytes": 53518,
+      "sha256": "4745518ab6d4079066eb3f45a229c2edefd0af8f5c88bfadcc62584d2661ef44"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Final/Frames/down-left-05.png",
+      "archive_path": "DiagonalWalk-v4/Review/Final/Frames/down-left-05.png",
+      "bytes": 53586,
+      "sha256": "944a623923706e5e92dfb219c200acb39db3197843ab7a2009b39adecacfad53"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Final/Frames/down-left-06.png",
+      "archive_path": "DiagonalWalk-v4/Review/Final/Frames/down-left-06.png",
+      "bytes": 53682,
+      "sha256": "14e75aa0e3c3b5625df8eb2c9d15d55d7a00ce0ad947c1ac19d2e5cda3202a96"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Final/Frames/down-left-07.png",
+      "archive_path": "DiagonalWalk-v4/Review/Final/Frames/down-left-07.png",
+      "bytes": 53813,
+      "sha256": "036ad6e433e13cc2d5994506e0fcafba87f744d52748efc2899adbb5612ba544"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Final/Frames/down-left-08.png",
+      "archive_path": "DiagonalWalk-v4/Review/Final/Frames/down-left-08.png",
+      "bytes": 53718,
+      "sha256": "c28c2c095a92e6457c8b8f4b52337dc231a732c59250e13b79da3e850239ae79"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Final/Frames/down-left-09.png",
+      "archive_path": "DiagonalWalk-v4/Review/Final/Frames/down-left-09.png",
+      "bytes": 53669,
+      "sha256": "e2fe85cf94f7707a03f77a376021151aef298bc6606c9326df83585149fd21b4"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Final/Frames/down-left-10.png",
+      "archive_path": "DiagonalWalk-v4/Review/Final/Frames/down-left-10.png",
+      "bytes": 53414,
+      "sha256": "22c93ad2a11a44e6889d6f01e054c13d2829ebae76299efa5934c581e545d154"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Final/Frames/down-left-11.png",
+      "archive_path": "DiagonalWalk-v4/Review/Final/Frames/down-left-11.png",
+      "bytes": 53850,
+      "sha256": "9894d80d3165c49bdbc8ece963f41e420bf00beebdb53136ee3f1d62a0660331"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Final/Frames/down-left-12.png",
+      "archive_path": "DiagonalWalk-v4/Review/Final/Frames/down-left-12.png",
+      "bytes": 53933,
+      "sha256": "f0416506413e540cfa0670085a0336fec6b9967460941c6da390349915c4baa0"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Final/Frames/down-right-01.png",
+      "archive_path": "DiagonalWalk-v4/Review/Final/Frames/down-right-01.png",
+      "bytes": 53949,
+      "sha256": "ff7d86f0847a2174b9d07f53476d55c95f7b792cc2355279db62b699832cb261"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Final/Frames/down-right-02.png",
+      "archive_path": "DiagonalWalk-v4/Review/Final/Frames/down-right-02.png",
+      "bytes": 53925,
+      "sha256": "d0177d447fd8bd8565407a45ff676b5491c55f7b6dc6adc405eedb9dc33a704d"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Final/Frames/down-right-03.png",
+      "archive_path": "DiagonalWalk-v4/Review/Final/Frames/down-right-03.png",
+      "bytes": 53837,
+      "sha256": "dc592f15fed5b83349c18cf4b2168afbbc23782ba47d09bad25ad093088d6d72"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Final/Frames/down-right-04.png",
+      "archive_path": "DiagonalWalk-v4/Review/Final/Frames/down-right-04.png",
+      "bytes": 53478,
+      "sha256": "d8c7ac8a69ad4be2117e682c505d1e897ba00820c1de25beac1b0147cff14fc1"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Final/Frames/down-right-05.png",
+      "archive_path": "DiagonalWalk-v4/Review/Final/Frames/down-right-05.png",
+      "bytes": 53543,
+      "sha256": "0ec9e038e051583c49d508853baa90417a8ab08f8af43e0f868c851a4ca0ce32"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Final/Frames/down-right-06.png",
+      "archive_path": "DiagonalWalk-v4/Review/Final/Frames/down-right-06.png",
+      "bytes": 53641,
+      "sha256": "ea58faaad3ccf0560104ba5202e785adb3651748e3f1b171136b4d7e82055e5d"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Final/Frames/down-right-07.png",
+      "archive_path": "DiagonalWalk-v4/Review/Final/Frames/down-right-07.png",
+      "bytes": 53775,
+      "sha256": "2b1a10f36929c1c1b470eda98036cb861f015182c467744192fd1c88ca7c9950"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Final/Frames/down-right-08.png",
+      "archive_path": "DiagonalWalk-v4/Review/Final/Frames/down-right-08.png",
+      "bytes": 53688,
+      "sha256": "675347076b2fb9cf9c942d12ab55265df4ca072c1bc037f52a2a59f6e10a0b8c"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Final/Frames/down-right-09.png",
+      "archive_path": "DiagonalWalk-v4/Review/Final/Frames/down-right-09.png",
+      "bytes": 53658,
+      "sha256": "e34e1f2ebc719349ac02a8ee8df7329221f517253254de9b12ed1a3ecdbf341b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Final/Frames/down-right-10.png",
+      "archive_path": "DiagonalWalk-v4/Review/Final/Frames/down-right-10.png",
+      "bytes": 53343,
+      "sha256": "499638386c7da42c13134e9d55346c585d05a4745b1b9f477bf594f29bb97fbc"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Final/Frames/down-right-11.png",
+      "archive_path": "DiagonalWalk-v4/Review/Final/Frames/down-right-11.png",
+      "bytes": 53761,
+      "sha256": "c955357f677541b8fd900922576950cb25fdc1fc9ee76480e80f53304e29a2f4"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Final/Frames/down-right-12.png",
+      "archive_path": "DiagonalWalk-v4/Review/Final/Frames/down-right-12.png",
+      "bytes": 53871,
+      "sha256": "a0fef2ec9f8a6321b6663bb2a49311c1ad596d975ebe5f7363485b80268d4fce"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Final/Frames/up-left-01.png",
+      "archive_path": "DiagonalWalk-v4/Review/Final/Frames/up-left-01.png",
+      "bytes": 47951,
+      "sha256": "ae32c9bdcc50ba55adcdd5c5d4878d60ef93221339a0cc92a607db204db93cba"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Final/Frames/up-left-02.png",
+      "archive_path": "DiagonalWalk-v4/Review/Final/Frames/up-left-02.png",
+      "bytes": 47891,
+      "sha256": "16f5bb5b5bd512c0349078333a94c5e6802d6410848125161b634fc6889ee7c8"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Final/Frames/up-left-03.png",
+      "archive_path": "DiagonalWalk-v4/Review/Final/Frames/up-left-03.png",
+      "bytes": 47828,
+      "sha256": "61a6df679472e06e4bd1dcd144db88ff341f6f7b689537d254a6e56584d1566c"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Final/Frames/up-left-04.png",
+      "archive_path": "DiagonalWalk-v4/Review/Final/Frames/up-left-04.png",
+      "bytes": 47376,
+      "sha256": "dc9a2cbbf52bf4343b7931ae19a6609fb27b091dc917c3dcf14522663bc578fb"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Final/Frames/up-left-05.png",
+      "archive_path": "DiagonalWalk-v4/Review/Final/Frames/up-left-05.png",
+      "bytes": 47648,
+      "sha256": "a49c7fe9b8caa3f209a235d2058a6a60d8bc131ad2aafc92fb72dc0c04938001"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Final/Frames/up-left-06.png",
+      "archive_path": "DiagonalWalk-v4/Review/Final/Frames/up-left-06.png",
+      "bytes": 47723,
+      "sha256": "3983eeaebfd05bee145b2d068f457e968fe9b03d82b567064c7236c157ea8de2"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Final/Frames/up-left-07.png",
+      "archive_path": "DiagonalWalk-v4/Review/Final/Frames/up-left-07.png",
+      "bytes": 47722,
+      "sha256": "65ce6efa0103f02acb92593d97b5569b9959f621dc49b4b511dc4ab5cc676d70"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Final/Frames/up-left-08.png",
+      "archive_path": "DiagonalWalk-v4/Review/Final/Frames/up-left-08.png",
+      "bytes": 47613,
+      "sha256": "179d5b1ea0741396c830b08f815712b187c5e2ee9aaef4b9cbf4de8f469d171a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Final/Frames/up-left-09.png",
+      "archive_path": "DiagonalWalk-v4/Review/Final/Frames/up-left-09.png",
+      "bytes": 47638,
+      "sha256": "f59095a0baa6328532113c1ae1437e5080b38f9467207db5d83873c1a37e105c"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Final/Frames/up-left-10.png",
+      "archive_path": "DiagonalWalk-v4/Review/Final/Frames/up-left-10.png",
+      "bytes": 47276,
+      "sha256": "45b656d4166b1a3c6c301e648d04e126195a8b2429787c4cbff0a00c33dfa96b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Final/Frames/up-left-11.png",
+      "archive_path": "DiagonalWalk-v4/Review/Final/Frames/up-left-11.png",
+      "bytes": 47807,
+      "sha256": "2089dd0e5c556430cc5e8f33ca7ce52b86403d380425fc5b1157d59e88f961e6"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Final/Frames/up-left-12.png",
+      "archive_path": "DiagonalWalk-v4/Review/Final/Frames/up-left-12.png",
+      "bytes": 47890,
+      "sha256": "f541f5ff32328ee192531ce16634e8ba3024696f27bc2996050767e64377a3fb"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Final/Frames/up-right-01.png",
+      "archive_path": "DiagonalWalk-v4/Review/Final/Frames/up-right-01.png",
+      "bytes": 48149,
+      "sha256": "4d576636aa3be5634c70723b877f74e640c6c7ae332243c77be5fd311d73c86e"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Final/Frames/up-right-02.png",
+      "archive_path": "DiagonalWalk-v4/Review/Final/Frames/up-right-02.png",
+      "bytes": 48064,
+      "sha256": "3f81a4399f816e76919cb40bfeb00041436268ecbd43eb87ee80f4fa46e4651c"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Final/Frames/up-right-03.png",
+      "archive_path": "DiagonalWalk-v4/Review/Final/Frames/up-right-03.png",
+      "bytes": 47921,
+      "sha256": "1fdfffaddfaa700947fbc6e712bdc8d92398d318e2221d1b28dd2e2a6dfe6cdb"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Final/Frames/up-right-04.png",
+      "archive_path": "DiagonalWalk-v4/Review/Final/Frames/up-right-04.png",
+      "bytes": 47596,
+      "sha256": "e91463f31c28f95d8ffa150a49386d30d10d32741687a4037eadd961968d7d9a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Final/Frames/up-right-05.png",
+      "archive_path": "DiagonalWalk-v4/Review/Final/Frames/up-right-05.png",
+      "bytes": 47761,
+      "sha256": "2ae32f0f0b3d20cebd328ff9c334d9516c383ebee8c2a3a5043e44aafc9d541b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Final/Frames/up-right-06.png",
+      "archive_path": "DiagonalWalk-v4/Review/Final/Frames/up-right-06.png",
+      "bytes": 47863,
+      "sha256": "55ea725ce667d1460e59450f531e864ad180afedf2abc59a400c3fb4dcd53c0c"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Final/Frames/up-right-07.png",
+      "archive_path": "DiagonalWalk-v4/Review/Final/Frames/up-right-07.png",
+      "bytes": 47876,
+      "sha256": "9df27d0d511b95f4ee256edb00aff6d4e4d0e236638a22c6a9a997f5335d233e"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Final/Frames/up-right-08.png",
+      "archive_path": "DiagonalWalk-v4/Review/Final/Frames/up-right-08.png",
+      "bytes": 47831,
+      "sha256": "56b6400cbc6aab837f6eff069d41321dfb95c90ab7154e923a5ff1e5e80bbe67"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Final/Frames/up-right-09.png",
+      "archive_path": "DiagonalWalk-v4/Review/Final/Frames/up-right-09.png",
+      "bytes": 47719,
+      "sha256": "ca3f8a1624e821b010948dec3ae60ca6fa12e2bf6af64b605d667ff729b1879e"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Final/Frames/up-right-10.png",
+      "archive_path": "DiagonalWalk-v4/Review/Final/Frames/up-right-10.png",
+      "bytes": 47453,
+      "sha256": "17929e1f9581437fd25edbb16a8eadffccbea230c7a2a5d98068217e9c33ca57"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Final/Frames/up-right-11.png",
+      "archive_path": "DiagonalWalk-v4/Review/Final/Frames/up-right-11.png",
+      "bytes": 47925,
+      "sha256": "9efda7e16f05d2e8758aee03388ed238e084eccd36debd03da4279f43820c221"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Final/Frames/up-right-12.png",
+      "archive_path": "DiagonalWalk-v4/Review/Final/Frames/up-right-12.png",
+      "bytes": 48044,
+      "sha256": "2b98b5d6e502fe5381ae855b99fbfac2ced8ec0947e90bdb468d7af7d05b9323"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Final/hachiware-diagonal-front-12-v4.png",
+      "archive_path": "DiagonalWalk-v4/Review/Final/hachiware-diagonal-front-12-v4.png",
+      "bytes": 180324,
+      "sha256": "ea255dab07e24ee6055f339345802b008ffe5184b5080a53229c6f9f564f6225"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Final/hachiware-diagonal-matched-walk-v4.png",
+      "archive_path": "DiagonalWalk-v4/Review/Final/hachiware-diagonal-matched-walk-v4.png",
+      "bytes": 466927,
+      "sha256": "0a16349702f0209d1696b1d8c72a661afbe62058873ae44620a8361f91334105"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Final/hachiware-diagonal-opposite-step-check-v4.png",
+      "archive_path": "DiagonalWalk-v4/Review/Final/hachiware-diagonal-opposite-step-check-v4.png",
+      "bytes": 175302,
+      "sha256": "7aac22553c0ecc0f1f3c8f13bdf3c2bacab1ea8823cb2bbbf6675f237668ee91"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Final/hachiware-diagonal-rear-12-v4.png",
+      "archive_path": "DiagonalWalk-v4/Review/Final/hachiware-diagonal-rear-12-v4.png",
+      "bytes": 168121,
+      "sha256": "9f26fe528fce647637f1752bcd575b0ee6da1985814a139b4b0765e3df2c752b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Final/hachiware-diagonal-walk-preview-v4.gif",
+      "archive_path": "DiagonalWalk-v4/Review/Final/hachiware-diagonal-walk-preview-v4.gif",
+      "bytes": 86335,
+      "sha256": "2cea01139886d8f5bd4d953be2ca2041ad8ea696db913c4448a26d66e191591c"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/DiagonalWalk-v4/Review/Final/review-validation.json",
+      "archive_path": "DiagonalWalk-v4/Review/Final/review-validation.json",
+      "bytes": 1328,
+      "sha256": "f3738bf0de6fc3f5d837b8b6d9cd7bffeeb8339057388e4cc845f7ac2712a9e6"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Frames/down-left-01.png",
+      "archive_path": "DiagonalWalk-v4/Review/Frames/down-left-01.png",
+      "bytes": 54512,
+      "sha256": "fe43639fc48a7e571d222fbc1f8f204e725c3eec998827827b5dcd9292b29544"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Frames/down-left-02.png",
+      "archive_path": "DiagonalWalk-v4/Review/Frames/down-left-02.png",
+      "bytes": 54369,
+      "sha256": "626a63b8d83492b929673d0533f15b44e1e09e40d4c60e89f4334e49ebe81a40"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Frames/down-left-03.png",
+      "archive_path": "DiagonalWalk-v4/Review/Frames/down-left-03.png",
+      "bytes": 54305,
+      "sha256": "5ff5fb62857380402446705536068f305f687b3174544273b64735243ec5ea6d"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Frames/down-left-04.png",
+      "archive_path": "DiagonalWalk-v4/Review/Frames/down-left-04.png",
+      "bytes": 53936,
+      "sha256": "3934aeb0a276572e266875770af56e2ad8486c63a60464f0a98244f8f81063ee"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Frames/down-left-05.png",
+      "archive_path": "DiagonalWalk-v4/Review/Frames/down-left-05.png",
+      "bytes": 53881,
+      "sha256": "879da919382670aa6a6adc0b6eaeae9a353f702d458b4089846b440abe9df4a7"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Frames/down-left-06.png",
+      "archive_path": "DiagonalWalk-v4/Review/Frames/down-left-06.png",
+      "bytes": 53965,
+      "sha256": "f72dd08c6f37fe415ba51b7e9c0b315509e70a5924c429a190ac153dca9f51cd"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Frames/down-left-07.png",
+      "archive_path": "DiagonalWalk-v4/Review/Frames/down-left-07.png",
+      "bytes": 54151,
+      "sha256": "c4b231d5328a9c923b6d749aa6f114739f98b7a5285e53e44cd7c620d1a538b5"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Frames/down-left-08.png",
+      "archive_path": "DiagonalWalk-v4/Review/Frames/down-left-08.png",
+      "bytes": 54121,
+      "sha256": "b9d2079323a4a8e35017d95de806d800ee8b3b3b535a0e88612ddd07bce96ccf"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Frames/down-left-09.png",
+      "archive_path": "DiagonalWalk-v4/Review/Frames/down-left-09.png",
+      "bytes": 54050,
+      "sha256": "281bd1367bd4a72e0ad17a7da95ed555957300fc2eae19d385b046c8b13b8c21"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Frames/down-left-10.png",
+      "archive_path": "DiagonalWalk-v4/Review/Frames/down-left-10.png",
+      "bytes": 53815,
+      "sha256": "0dda489070f9b759dbefcee68b0f37c3561e2329b38fb0f6c23009da3cb123ce"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Frames/down-left-11.png",
+      "archive_path": "DiagonalWalk-v4/Review/Frames/down-left-11.png",
+      "bytes": 54124,
+      "sha256": "c0bacbd04f156dffe4d45863315e3b6ead7a1af0ca36191ade574a5f3712a84a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Frames/down-left-12.png",
+      "archive_path": "DiagonalWalk-v4/Review/Frames/down-left-12.png",
+      "bytes": 54254,
+      "sha256": "fdb4e96124f3608bfa16478d2618e17080801da18c28cd21cc6066cf78252ed7"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Frames/down-right-01.png",
+      "archive_path": "DiagonalWalk-v4/Review/Frames/down-right-01.png",
+      "bytes": 54441,
+      "sha256": "1f3e1090150bc10359e5a19e301ab470f77608e8744d5bb91f423accc44265f5"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Frames/down-right-02.png",
+      "archive_path": "DiagonalWalk-v4/Review/Frames/down-right-02.png",
+      "bytes": 54428,
+      "sha256": "58acf4c765bbde87033f3516587262a31ea71c0656a56dbf780d5ad83e0b28c4"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Frames/down-right-03.png",
+      "archive_path": "DiagonalWalk-v4/Review/Frames/down-right-03.png",
+      "bytes": 54264,
+      "sha256": "ff37fc19da26a090f93aa59cadbd19c0db59ac9c66be8d6bd54fff227e558c55"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Frames/down-right-04.png",
+      "archive_path": "DiagonalWalk-v4/Review/Frames/down-right-04.png",
+      "bytes": 53965,
+      "sha256": "062003fc74c2745956f9381b49a0a4fa63a476f4075c01af705b4616cae22f1b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Frames/down-right-05.png",
+      "archive_path": "DiagonalWalk-v4/Review/Frames/down-right-05.png",
+      "bytes": 53935,
+      "sha256": "eb403d767ce5d17fcc4d21aa1222999087a99e4bf8a66d18832baa1ce5c7af58"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Frames/down-right-06.png",
+      "archive_path": "DiagonalWalk-v4/Review/Frames/down-right-06.png",
+      "bytes": 53971,
+      "sha256": "f9ecb311c7626bcf552b28440122ce1a1a532bb4e2e848af674be00498002bea"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Frames/down-right-07.png",
+      "archive_path": "DiagonalWalk-v4/Review/Frames/down-right-07.png",
+      "bytes": 54142,
+      "sha256": "94cc2e3e40b6f579632fa91a91c14bda2df051d01776963e18ffe0bea27d24da"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Frames/down-right-08.png",
+      "archive_path": "DiagonalWalk-v4/Review/Frames/down-right-08.png",
+      "bytes": 54095,
+      "sha256": "4af41d532f39ffdbd0668d9d1a7eb60b834787e9ac030e0990071f7907a20682"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Frames/down-right-09.png",
+      "archive_path": "DiagonalWalk-v4/Review/Frames/down-right-09.png",
+      "bytes": 54031,
+      "sha256": "93d9e6300a3f2ade331a2155ef5c0d8f06dca8c070a4477e47d2657b079c6645"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Frames/down-right-10.png",
+      "archive_path": "DiagonalWalk-v4/Review/Frames/down-right-10.png",
+      "bytes": 53837,
+      "sha256": "f1182084bddded5c705c701dab68eb4673365a4e0a1a87421445662710745ad0"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Frames/down-right-11.png",
+      "archive_path": "DiagonalWalk-v4/Review/Frames/down-right-11.png",
+      "bytes": 54120,
+      "sha256": "f220e2c343e5534bb719e3b2b6b8d1319352b58c97450329aac299269c334b63"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Frames/down-right-12.png",
+      "archive_path": "DiagonalWalk-v4/Review/Frames/down-right-12.png",
+      "bytes": 54267,
+      "sha256": "c64cd36a1bcc0759fb3eda8735092036773e87ccaa9111ec1b835ef14b7a40d9"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Frames/up-left-01.png",
+      "archive_path": "DiagonalWalk-v4/Review/Frames/up-left-01.png",
+      "bytes": 48418,
+      "sha256": "9fe4478cc08b31253e00bbc6285c670d75514d9325c2e217b2e593746936c1a8"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Frames/up-left-02.png",
+      "archive_path": "DiagonalWalk-v4/Review/Frames/up-left-02.png",
+      "bytes": 48350,
+      "sha256": "47ed7e0c68ff0a3cfc40a8aa13274c57ff74952f00d4582ecfe11683d133d435"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Frames/up-left-03.png",
+      "archive_path": "DiagonalWalk-v4/Review/Frames/up-left-03.png",
+      "bytes": 48201,
+      "sha256": "8f9ef6998d50eef5aa7f077d6eef3c74d3826da9a6e5d0ca5ef13e44fc7fdda1"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Frames/up-left-04.png",
+      "archive_path": "DiagonalWalk-v4/Review/Frames/up-left-04.png",
+      "bytes": 47839,
+      "sha256": "44a4e9e499a6b01ad56fc9e1abb5cfa4fa47490f45f121a51c070f84edf5bcfd"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Frames/up-left-05.png",
+      "archive_path": "DiagonalWalk-v4/Review/Frames/up-left-05.png",
+      "bytes": 48065,
+      "sha256": "12c3fa22d74b6810091cc80bc9aec4c28872fefbc5bf0d25d15d6942dcdc28eb"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Frames/up-left-06.png",
+      "archive_path": "DiagonalWalk-v4/Review/Frames/up-left-06.png",
+      "bytes": 48015,
+      "sha256": "60d8101765893e05148960aab8546c259b264716de6c1ebe59b9a8e24363c93c"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Frames/up-left-07.png",
+      "archive_path": "DiagonalWalk-v4/Review/Frames/up-left-07.png",
+      "bytes": 48142,
+      "sha256": "d92de046d87a8c18e32b79ffb02ba080072d9488c510633a831ef59f88b5b1ab"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Frames/up-left-08.png",
+      "archive_path": "DiagonalWalk-v4/Review/Frames/up-left-08.png",
+      "bytes": 47963,
+      "sha256": "ed406e28a7c3d4e6572326018377b775a1f3994254ffc4ae3c930758036b37b5"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Frames/up-left-09.png",
+      "archive_path": "DiagonalWalk-v4/Review/Frames/up-left-09.png",
+      "bytes": 47975,
+      "sha256": "0595e323eaeb9ee3f996fff238d432782197bd22b276bdf9a4d48dba7b791eed"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Frames/up-left-10.png",
+      "archive_path": "DiagonalWalk-v4/Review/Frames/up-left-10.png",
+      "bytes": 47723,
+      "sha256": "9e9ef18cc54191a7cdaa6d05b2b4c5d7a55f407f602c8d76cb504da9248d4a32"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Frames/up-left-11.png",
+      "archive_path": "DiagonalWalk-v4/Review/Frames/up-left-11.png",
+      "bytes": 48292,
+      "sha256": "5c0ba465a07f56f9a38b46716e89ea3e473048d7df22e6ea1d9006021b936431"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Frames/up-left-12.png",
+      "archive_path": "DiagonalWalk-v4/Review/Frames/up-left-12.png",
+      "bytes": 48384,
+      "sha256": "262f604afef7da69e54350d8dd35782dce22c8623243fc62d1bb9096ea5cb7a0"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Frames/up-right-01.png",
+      "archive_path": "DiagonalWalk-v4/Review/Frames/up-right-01.png",
+      "bytes": 48578,
+      "sha256": "ec55a1db221dc4e27328d16c55adcc5433319d66fa3546b9fe63ec388e7b674d"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Frames/up-right-02.png",
+      "archive_path": "DiagonalWalk-v4/Review/Frames/up-right-02.png",
+      "bytes": 48436,
+      "sha256": "54b2661479464a2a88f8c9017d515d041ae435e7c499325c05f0e9edfb94b5f5"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Frames/up-right-03.png",
+      "archive_path": "DiagonalWalk-v4/Review/Frames/up-right-03.png",
+      "bytes": 48318,
+      "sha256": "bf541206986e0ac523a3162df60dca58040276a4a83d6ed19ea2da5a42e82974"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Frames/up-right-04.png",
+      "archive_path": "DiagonalWalk-v4/Review/Frames/up-right-04.png",
+      "bytes": 47945,
+      "sha256": "36ba2a72fce8dd456872cae38d1ade10a5bb2ffbf61e6291f8038243b3172ab1"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Frames/up-right-05.png",
+      "archive_path": "DiagonalWalk-v4/Review/Frames/up-right-05.png",
+      "bytes": 48161,
+      "sha256": "c5a019669a3a67a1fc103803a79d14019f9a29aadceb46cd9928b2fe25e7fa37"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Frames/up-right-06.png",
+      "archive_path": "DiagonalWalk-v4/Review/Frames/up-right-06.png",
+      "bytes": 48189,
+      "sha256": "c3f8a6810b579f08e18bd2baf1c34d40466140674455c1ed2af99904ead94f04"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Frames/up-right-07.png",
+      "archive_path": "DiagonalWalk-v4/Review/Frames/up-right-07.png",
+      "bytes": 48292,
+      "sha256": "92cfe9d157a60723b7e18fda4cc28e99181245f108dbb0f7249f63b43bcc949f"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Frames/up-right-08.png",
+      "archive_path": "DiagonalWalk-v4/Review/Frames/up-right-08.png",
+      "bytes": 48124,
+      "sha256": "da98a7df8921a81d43a773440fb39b7b0be8df6c6c3f5ac666002f3de11e1b8f"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Frames/up-right-09.png",
+      "archive_path": "DiagonalWalk-v4/Review/Frames/up-right-09.png",
+      "bytes": 48089,
+      "sha256": "c44294749ed656400015f41373e1e7257dadcb629c7365f316b92a522b939df0"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Frames/up-right-10.png",
+      "archive_path": "DiagonalWalk-v4/Review/Frames/up-right-10.png",
+      "bytes": 47834,
+      "sha256": "153050721166448f0e4aad350d674a6200bbe67509f82d96cb23fbfe8e1ccf0c"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Frames/up-right-11.png",
+      "archive_path": "DiagonalWalk-v4/Review/Frames/up-right-11.png",
+      "bytes": 48436,
+      "sha256": "c61a533b5d14c072b686fa37630f8dd7a8bbb2b0a056812386d0bc1760c99e63"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/Frames/up-right-12.png",
+      "archive_path": "DiagonalWalk-v4/Review/Frames/up-right-12.png",
+      "bytes": 48461,
+      "sha256": "055606f5ada3b0a3d5194682e9cd5ae4fd87d561e5763f375f152b8c9c1f42f9"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/hachiware-diagonal-fixed-bodies-v4.png",
+      "archive_path": "DiagonalWalk-v4/Review/hachiware-diagonal-fixed-bodies-v4.png",
+      "bytes": 815169,
+      "sha256": "abd0cfbcc0cac1b5d7d60ee2d15763c690ac71999563aa1ec15ba9860e7f7799"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/hachiware-diagonal-front-12-v4.png",
+      "archive_path": "DiagonalWalk-v4/Review/hachiware-diagonal-front-12-v4.png",
+      "bytes": 182519,
+      "sha256": "e11624c56c00627e7f0aa0c68442b6668c9480be7b8ce1934af0e49b1902b811"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/hachiware-diagonal-matched-walk-v4.png",
+      "archive_path": "DiagonalWalk-v4/Review/hachiware-diagonal-matched-walk-v4.png",
+      "bytes": 474987,
+      "sha256": "9f639a023d7d42ba0acaf32449729fc1efeb6bf230cd6aecb6f153ac09ab7bfc"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/hachiware-diagonal-opposite-step-check-v4.png",
+      "archive_path": "DiagonalWalk-v4/Review/hachiware-diagonal-opposite-step-check-v4.png",
+      "bytes": 177031,
+      "sha256": "3f451893d7bdf90ed65da623b17982113596578d3526d9baed76bac482ecbedb"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/hachiware-diagonal-rear-12-v4.png",
+      "archive_path": "DiagonalWalk-v4/Review/hachiware-diagonal-rear-12-v4.png",
+      "bytes": 170514,
+      "sha256": "01f6378be065f6415207d3a99b5d69b155e4323413955ed1ac63b68ab2071e44"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DiagonalWalk-v4/Review/hachiware-diagonal-walk-preview-v4.gif",
+      "archive_path": "DiagonalWalk-v4/Review/hachiware-diagonal-walk-preview-v4.gif",
+      "bytes": 93693,
+      "sha256": "57649a5d26b56e573bdcd2cebfa9aae8ad55115bdbe91b23454200b759cd9c24"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/DiagonalWalk-v4/Review/review-validation.json",
+      "archive_path": "DiagonalWalk-v4/Review/review-validation.json",
+      "bytes": 699,
+      "sha256": "18083889d16fe428b7b939d12f6e075a946d5b01dec42a012f90ab6609b832ff"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/DiagonalWalk-v4/manifest.json",
+      "archive_path": "DiagonalWalk-v4/manifest.json",
+      "bytes": 30542,
+      "sha256": "b51a4845b5c0edcce56498bc9ef63158a9401f6f4ad0b810a3c42174f690a47e"
+    },
+    {
+      "kind": "image",
+      "source": "Source/GeneratedOriginals/exec-1e74567d-854f-4889-b499-0706d195e7c2.png",
+      "archive_path": "GeneratedOriginals/exec-1e74567d-854f-4889-b499-0706d195e7c2.png",
+      "bytes": 1742461,
+      "sha256": "e549b7416cb5766667d2e1e4d0aad4a6905a84f11072cae8214fd757a595f66c"
+    },
+    {
+      "kind": "image",
+      "source": "Source/GeneratedOriginals/exec-2dc43ae2-b85b-4077-8be4-24d03f476624.png",
+      "archive_path": "GeneratedOriginals/exec-2dc43ae2-b85b-4077-8be4-24d03f476624.png",
+      "bytes": 1185769,
+      "sha256": "be97dd2d46ae92ee90ad30bf284cd54e1bff09bd832aa25d7caf186aef8916b8"
+    },
+    {
+      "kind": "image",
+      "source": "Source/GeneratedOriginals/exec-33ebd29c-1041-4244-9ac5-3e025a909c04.png",
+      "archive_path": "GeneratedOriginals/exec-33ebd29c-1041-4244-9ac5-3e025a909c04.png",
+      "bytes": 1627194,
+      "sha256": "cd41bf4f46e29a15d6412016afccd8475c9d279c4b8993b22c3ec40b208faf19"
+    },
+    {
+      "kind": "image",
+      "source": "Source/GeneratedOriginals/exec-38a4ad71-c701-4ba7-a9a1-bb2c2d251781.png",
+      "archive_path": "GeneratedOriginals/exec-38a4ad71-c701-4ba7-a9a1-bb2c2d251781.png",
+      "bytes": 1247640,
+      "sha256": "f17301b9445f92ac70b8c41944d442260869d5e3ba8c0c32630c8c4ac1b58aa4"
+    },
+    {
+      "kind": "image",
+      "source": "Source/GeneratedOriginals/exec-3eb487e3-f0d3-4594-a8d3-38c252fbf120.png",
+      "archive_path": "GeneratedOriginals/exec-3eb487e3-f0d3-4594-a8d3-38c252fbf120.png",
+      "bytes": 1192625,
+      "sha256": "1aab80cbe7205f6ea92c6e2296866ef86a4f78c5ff5ed15b67c760d649daa17f"
+    },
+    {
+      "kind": "image",
+      "source": "Source/GeneratedOriginals/exec-73ffa3dc-0290-487b-95aa-ef872d1fccda.png",
+      "archive_path": "GeneratedOriginals/exec-73ffa3dc-0290-487b-95aa-ef872d1fccda.png",
+      "bytes": 1489955,
+      "sha256": "2338c27f29acdf85b3ec0c941d20ddc31bf7d68b932f6ec362753f9c2419b63a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/GeneratedOriginals/exec-7438059c-81b0-491d-b1b1-7f875b9c90d3.png",
+      "archive_path": "GeneratedOriginals/exec-7438059c-81b0-491d-b1b1-7f875b9c90d3.png",
+      "bytes": 1082216,
+      "sha256": "aa7f1bf013e51e7c1c5bdbaaac1475507288a975471677a3dcf1161770f29216"
+    },
+    {
+      "kind": "image",
+      "source": "Source/GeneratedOriginals/exec-7515fb8c-2086-4b3a-ac2e-2651f3ccf71a.png",
+      "archive_path": "GeneratedOriginals/exec-7515fb8c-2086-4b3a-ac2e-2651f3ccf71a.png",
+      "bytes": 1218269,
+      "sha256": "69b6182d09b80a466ae2f1294da66e08f7575718678c4575f30610eb3a85f15f"
+    },
+    {
+      "kind": "image",
+      "source": "Source/GeneratedOriginals/exec-ad3d4673-937d-4425-af39-21f501956760.png",
+      "archive_path": "GeneratedOriginals/exec-ad3d4673-937d-4425-af39-21f501956760.png",
+      "bytes": 1665235,
+      "sha256": "2d161364f08bc596b3fe9d91cbd653e7bc06a54b6622442eda33e83f17136fd2"
+    },
+    {
+      "kind": "image",
+      "source": "Source/GeneratedOriginals/exec-b70a862e-2934-410a-a191-934212002008.png",
+      "archive_path": "GeneratedOriginals/exec-b70a862e-2934-410a-a191-934212002008.png",
+      "bytes": 815169,
+      "sha256": "abd0cfbcc0cac1b5d7d60ee2d15763c690ac71999563aa1ec15ba9860e7f7799"
+    },
+    {
+      "kind": "image",
+      "source": "Source/GeneratedOriginals/exec-c8dfc9b7-2bd2-40ab-8981-3e41285f8fb5.png",
+      "archive_path": "GeneratedOriginals/exec-c8dfc9b7-2bd2-40ab-8981-3e41285f8fb5.png",
+      "bytes": 1296985,
+      "sha256": "c26e28f31d986e4f293d413c333358cd7116e2c0b90eaeec9c2176558a2a6ff8"
+    },
+    {
+      "kind": "image",
+      "source": "Source/GeneratedOriginals/exec-cb3f9d2a-16bf-45ee-a72f-9f5704e87ebf.png",
+      "archive_path": "GeneratedOriginals/exec-cb3f9d2a-16bf-45ee-a72f-9f5704e87ebf.png",
+      "bytes": 1290237,
+      "sha256": "a8d2d88fda86ce32314d2b664cd1efa856975483ec02ada07a83fbba0de7db75"
+    },
+    {
+      "kind": "image",
+      "source": "Source/GeneratedOriginals/exec-d893050c-cc59-4e52-b520-db67b758ff31.png",
+      "archive_path": "GeneratedOriginals/exec-d893050c-cc59-4e52-b520-db67b758ff31.png",
+      "bytes": 1620174,
+      "sha256": "ce9219ff272970b55e8550e5fc2f0a21c0bd0704e4446909618d16050fd082c4"
+    },
+    {
+      "kind": "image",
+      "source": "Source/GeneratedOriginals/exec-ddf5ccb0-24f8-4939-b9f9-ef26110cc9cf.png",
+      "archive_path": "GeneratedOriginals/exec-ddf5ccb0-24f8-4939-b9f9-ef26110cc9cf.png",
+      "bytes": 1737619,
+      "sha256": "ac8776b7c831c2bf0ccc265a42736411f37a4c88ac8c53c6622f02455ba39935"
+    },
+    {
+      "kind": "image",
+      "source": "Source/GeneratedOriginals/exec-e053a6f9-4f22-4267-846d-b4a0e170dd0a.png",
+      "archive_path": "GeneratedOriginals/exec-e053a6f9-4f22-4267-846d-b4a0e170dd0a.png",
+      "bytes": 1514480,
+      "sha256": "f23a828ed131ab92894ae8c81c5abe245d824b2d3fc8fc078726304cd706bf70"
+    },
+    {
+      "kind": "image",
+      "source": "Source/GeneratedOriginals/exec-e25b655d-f888-492f-a1c0-bf18a619efce.png",
+      "archive_path": "GeneratedOriginals/exec-e25b655d-f888-492f-a1c0-bf18a619efce.png",
+      "bytes": 1758422,
+      "sha256": "1a24baf6cb5373c02cdb54e508fa608f7d0f4ac051e4a6bfbab164ca7dc9e94d"
+    },
+    {
+      "kind": "image",
+      "source": "Source/GeneratedOriginals/exec-f8bd50ee-31c9-4bbc-b0c4-17d762e16b7c.png",
+      "archive_path": "GeneratedOriginals/exec-f8bd50ee-31c9-4bbc-b0c4-17d762e16b7c.png",
+      "bytes": 1584907,
+      "sha256": "83f5490f5489b56e54837d1ff956a15ddda931eba202c4468d76ba3482e726c1"
+    },
+    {
+      "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/hachiware-cardinal-walk-12-v3.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/hachiware-cardinal-walk-12-v3.png",
+      "bytes": 1627194,
+      "sha256": "cd41bf4f46e29a15d6412016afccd8475c9d279c4b8993b22c3ec40b208faf19"
+    },
+    {
+      "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/hachiware-cardinal-walk-approved-v5.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/hachiware-cardinal-walk-approved-v5.png",
+      "bytes": 1629263,
+      "sha256": "c3b03bfe42f0501dcfaac2f442fe4d59242fd242a8f502737fb513ea21c0715c"
+    },
+    {
+      "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/hachiware-diagonal-matched-walk-v5.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/hachiware-diagonal-matched-walk-v5.png",
+      "bytes": 105017,
+      "sha256": "a5130282ebbaf905423aab8843c7e22f52e514b429f0438dd830c493c18eac40"
+    },
+    {
+      "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/hachiware-diagonal-walk-12-v2.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/hachiware-diagonal-walk-12-v2.png",
+      "bytes": 1758422,
+      "sha256": "1a24baf6cb5373c02cdb54e508fa608f7d0f4ac051e4a6bfbab164ca7dc9e94d"
+    },
+    {
+      "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/hachiware-sprites-v1.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/hachiware-sprites-v1.png",
+      "bytes": 1737619,
+      "sha256": "ac8776b7c831c2bf0ccc265a42736411f37a4c88ac8c53c6622f02455ba39935"
+    },
+    {
+      "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/hachiware-walk-bodies-v1.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/hachiware-walk-bodies-v1.png",
+      "bytes": 1290237,
+      "sha256": "a8d2d88fda86ce32314d2b664cd1efa856975483ec02ada07a83fbba0de7db75"
+    },
+    {
+      "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/hachiware-sprites-v1.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/hachiware-sprites-v1.png",
+      "bytes": 1737619,
+      "sha256": "ac8776b7c831c2bf0ccc265a42736411f37a4c88ac8c53c6622f02455ba39935"
+    },
+    {
+      "kind": "supporting",
+      "source": "Assets/Animation/Review/SymmetricWalkPreview.swift",
+      "archive_path": "Project/Assets/Animation/Review/SymmetricWalkPreview.swift",
+      "bytes": 14741,
+      "sha256": "c8a0bf3a50537542c94af6676315ecc314c79383ccad84bf1a17217f0cea071c"
+    },
+    {
+      "kind": "image",
+      "source": "Assets/Animation/Review/hachiware-symmetric-cardinal-sheet-v1.png",
+      "archive_path": "Project/Assets/Animation/Review/hachiware-symmetric-cardinal-sheet-v1.png",
+      "bytes": 223388,
+      "sha256": "76c90187e7f283015bba8849ffb067d61504dedc46b9421088b9e1840fe1d620"
+    },
+    {
+      "kind": "image",
+      "source": "Assets/Animation/Review/hachiware-symmetric-diagonal-sheet-v1.png",
+      "archive_path": "Project/Assets/Animation/Review/hachiware-symmetric-diagonal-sheet-v1.png",
+      "bytes": 231548,
+      "sha256": "45e0f6c010268ff8d82b3132808bb76d9986268b700956a99d94ecc7c20675cf"
+    },
+    {
+      "kind": "image",
+      "source": "Assets/Animation/Review/hachiware-symmetric-walk-atlas-v1.png",
+      "archive_path": "Project/Assets/Animation/Review/hachiware-symmetric-walk-atlas-v1.png",
+      "bytes": 494491,
+      "sha256": "4d21f19cbe1a16edee4d0a821bf35c54ffdd3f3c7c2c394d4c03f6e6001dfdc9"
+    },
+    {
+      "kind": "image",
+      "source": "Assets/Animation/Review/hachiware-symmetric-walk-preview-v1.gif",
+      "archive_path": "Project/Assets/Animation/Review/hachiware-symmetric-walk-preview-v1.gif",
+      "bytes": 162252,
+      "sha256": "c94339266afce352ed27ee8446dc3f6f98141956c86135046454b31464d11708"
+    },
+    {
+      "kind": "supporting",
+      "source": "Assets/Animation/Review/review-validation.json",
+      "archive_path": "Project/Assets/Animation/Review/review-validation.json",
+      "bytes": 1062,
+      "sha256": "1caca3e7998c669cf5f5b829acca4593af00220e723aaf995eab67526ba981c2"
+    },
+    {
+      "kind": "image",
+      "source": "Assets/Animation/hachiware-cardinal-walk-12-v2.png",
+      "archive_path": "Project/Assets/Animation/hachiware-cardinal-walk-12-v2.png",
+      "bytes": 1584907,
+      "sha256": "83f5490f5489b56e54837d1ff956a15ddda931eba202c4468d76ba3482e726c1"
+    },
+    {
+      "kind": "supporting",
+      "source": "Assets/Animation/hachiware-cardinal-walk-12-v2.prompt.txt",
+      "archive_path": "Project/Assets/Animation/hachiware-cardinal-walk-12-v2.prompt.txt",
+      "bytes": 2801,
+      "sha256": "6ee682141660bfe6c693ad3b9b8a3cc9022c3f05b46c7f014fbbcda1eca5c1b5"
+    },
+    {
+      "kind": "image",
+      "source": "Assets/Animation/hachiware-diagonal-walk-v1.png",
+      "archive_path": "Project/Assets/Animation/hachiware-diagonal-walk-v1.png",
+      "bytes": 1742461,
+      "sha256": "e549b7416cb5766667d2e1e4d0aad4a6905a84f11072cae8214fd757a595f66c"
+    },
+    {
+      "kind": "supporting",
+      "source": "Assets/Animation/hachiware-diagonal-walk-v1.prompt.txt",
+      "archive_path": "Project/Assets/Animation/hachiware-diagonal-walk-v1.prompt.txt",
+      "bytes": 3729,
+      "sha256": "1379a962427b7cf847449d8158408307f2eb3d8ccdf3ad980d5de632bcabaafd"
+    },
+    {
+      "kind": "supporting",
+      "source": "Assets/Animation/hachiware-sprites-v1.prompt.txt",
+      "archive_path": "Project/Assets/Animation/hachiware-sprites-v1.prompt.txt",
+      "bytes": 3186,
+      "sha256": "1f379f3eb6e23973a894ce1c65aa7d4b645f9f1d90879b507d5a5262a241ecf5"
+    },
+    {
+      "kind": "supporting",
+      "source": "Assets/Animation/hachiware-symmetric-walk-bodies-v1.prompt.txt",
+      "archive_path": "Project/Assets/Animation/hachiware-symmetric-walk-bodies-v1.prompt.txt",
+      "bytes": 2734,
+      "sha256": "02d437928f7875d4eb018bf0b99295de45725305eaae370fab68d6aab6248a2d"
+    },
+    {
+      "kind": "supporting",
+      "source": "Assets/Animation/hachiware-walk-12-prompts.txt",
+      "archive_path": "Project/Assets/Animation/hachiware-walk-12-prompts.txt",
+      "bytes": 6888,
+      "sha256": "d377f6d9bc264aea2ea2d80323473529af9f0d968bad00a96e4221459f321ed9"
+    },
+    {
+      "kind": "image",
+      "source": "Assets/ReferenceSheets/hachiware-diagonal-directions-v1.png",
+      "archive_path": "Project/Assets/ReferenceSheets/hachiware-diagonal-directions-v1.png",
+      "bytes": 1218269,
+      "sha256": "69b6182d09b80a466ae2f1294da66e08f7575718678c4575f30610eb3a85f15f"
+    },
+    {
+      "kind": "supporting",
+      "source": "Assets/ReferenceSheets/hachiware-diagonal-directions-v1.prompt.txt",
+      "archive_path": "Project/Assets/ReferenceSheets/hachiware-diagonal-directions-v1.prompt.txt",
+      "bytes": 2605,
+      "sha256": "36d34ddf7db47abc93c16e4f2b1d56863704048524074ab59c33a008138049f4"
+    },
+    {
+      "kind": "image",
+      "source": "Assets/ReferenceSheets/hachiware-turnaround-v1.png",
+      "archive_path": "Project/Assets/ReferenceSheets/hachiware-turnaround-v1.png",
+      "bytes": 1247640,
+      "sha256": "f17301b9445f92ac70b8c41944d442260869d5e3ba8c0c32630c8c4ac1b58aa4"
+    },
+    {
+      "kind": "supporting",
+      "source": "Assets/ReferenceSheets/hachiware-turnaround-v1.prompt.txt",
+      "archive_path": "Project/Assets/ReferenceSheets/hachiware-turnaround-v1.prompt.txt",
+      "bytes": 3198,
+      "sha256": "742cd07f60c7054a67524b87b1aa667a58f207cee7b8d44f9110250372d503a9"
+    },
+    {
+      "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/hachiware-cardinal-walk-12-v3.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/hachiware-cardinal-walk-12-v3.png",
+      "bytes": 1627194,
+      "sha256": "cd41bf4f46e29a15d6412016afccd8475c9d279c4b8993b22c3ec40b208faf19"
+    },
+    {
+      "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/hachiware-cardinal-walk-approved-v5.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/hachiware-cardinal-walk-approved-v5.png",
+      "bytes": 1629263,
+      "sha256": "c3b03bfe42f0501dcfaac2f442fe4d59242fd242a8f502737fb513ea21c0715c"
+    },
+    {
+      "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/hachiware-diagonal-matched-walk-v5.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/hachiware-diagonal-matched-walk-v5.png",
+      "bytes": 105017,
+      "sha256": "a5130282ebbaf905423aab8843c7e22f52e514b429f0438dd830c493c18eac40"
+    },
+    {
+      "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/hachiware-diagonal-walk-12-v2.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/hachiware-diagonal-walk-12-v2.png",
+      "bytes": 1758422,
+      "sha256": "1a24baf6cb5373c02cdb54e508fa608f7d0f4ac051e4a6bfbab164ca7dc9e94d"
+    },
+    {
+      "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/hachiware-sprites-v1.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/hachiware-sprites-v1.png",
+      "bytes": 1737619,
+      "sha256": "ac8776b7c831c2bf0ccc265a42736411f37a4c88ac8c53c6622f02455ba39935"
+    },
+    {
+      "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/hachiware-walk-bodies-v1.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/hachiware-walk-bodies-v1.png",
+      "bytes": 1290237,
+      "sha256": "a8d2d88fda86ce32314d2b664cd1efa856975483ec02ada07a83fbba0de7db75"
+    },
+    {
+      "kind": "image",
+      "source": "build/AppIcon.iconset/icon_128x128.png",
+      "archive_path": "Project/build/AppIcon.iconset/icon_128x128.png",
+      "bytes": 12336,
+      "sha256": "2c43836dad0b9aca90d6110efc0058faea0480ff46116eaa6db7997447912ffa"
+    },
+    {
+      "kind": "image",
+      "source": "build/AppIcon.iconset/icon_128x128@2x.png",
+      "archive_path": "Project/build/AppIcon.iconset/icon_128x128@2x.png",
+      "bytes": 36178,
+      "sha256": "cc16e2e09e2dfaea4306f8df23fd5ef4470c06c53bd149bfd033873538698733"
+    },
+    {
+      "kind": "image",
+      "source": "build/AppIcon.iconset/icon_16x16.png",
+      "archive_path": "Project/build/AppIcon.iconset/icon_16x16.png",
+      "bytes": 1180,
+      "sha256": "f59c79619bfebda766e611e126552b986ed7e5001f26f08182c9a439fcfd26f1"
+    },
+    {
+      "kind": "image",
+      "source": "build/AppIcon.iconset/icon_16x16@2x.png",
+      "archive_path": "Project/build/AppIcon.iconset/icon_16x16@2x.png",
+      "bytes": 2128,
+      "sha256": "5346ef27b88cb230dfb462d033c06b2bf04e835e5da79e85e315900c980e7c26"
+    },
+    {
+      "kind": "image",
+      "source": "build/AppIcon.iconset/icon_256x256.png",
+      "archive_path": "Project/build/AppIcon.iconset/icon_256x256.png",
+      "bytes": 36178,
+      "sha256": "cc16e2e09e2dfaea4306f8df23fd5ef4470c06c53bd149bfd033873538698733"
+    },
+    {
+      "kind": "image",
+      "source": "build/AppIcon.iconset/icon_256x256@2x.png",
+      "archive_path": "Project/build/AppIcon.iconset/icon_256x256@2x.png",
+      "bytes": 103628,
+      "sha256": "49dc782f9ed2147f4d0ec4717e9230dc3dd59f9960b0f6a264bca12f6dc69c48"
+    },
+    {
+      "kind": "image",
+      "source": "build/AppIcon.iconset/icon_32x32.png",
+      "archive_path": "Project/build/AppIcon.iconset/icon_32x32.png",
+      "bytes": 2128,
+      "sha256": "5346ef27b88cb230dfb462d033c06b2bf04e835e5da79e85e315900c980e7c26"
+    },
+    {
+      "kind": "image",
+      "source": "build/AppIcon.iconset/icon_32x32@2x.png",
+      "archive_path": "Project/build/AppIcon.iconset/icon_32x32@2x.png",
+      "bytes": 4595,
+      "sha256": "75b3f767216c7faee5986fa05e7c489108901355a7da46efe039ba36ac415b1a"
+    },
+    {
+      "kind": "image",
+      "source": "build/AppIcon.iconset/icon_512x512.png",
+      "archive_path": "Project/build/AppIcon.iconset/icon_512x512.png",
+      "bytes": 103628,
+      "sha256": "49dc782f9ed2147f4d0ec4717e9230dc3dd59f9960b0f6a264bca12f6dc69c48"
+    },
+    {
+      "kind": "image",
+      "source": "build/AppIcon.iconset/icon_512x512@2x.png",
+      "archive_path": "Project/build/AppIcon.iconset/icon_512x512@2x.png",
+      "bytes": 257854,
+      "sha256": "fadb9924edc62d95697cdefc883dbb54e597c528d87278bf12af3ed433319587"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/AppIcon.icns",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/AppIcon.icns",
+      "bytes": 556776,
+      "sha256": "9488e53f8fb8cf741b709c83782a9d9bb8eb39ea207e070fcf0ff8c7e9087b89"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/hachiware-cardinal-walk-12-v3.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/hachiware-cardinal-walk-12-v3.png",
+      "bytes": 1627194,
+      "sha256": "cd41bf4f46e29a15d6412016afccd8475c9d279c4b8993b22c3ec40b208faf19"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/hachiware-cardinal-walk-approved-v5.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/hachiware-cardinal-walk-approved-v5.png",
+      "bytes": 1629263,
+      "sha256": "c3b03bfe42f0501dcfaac2f442fe4d59242fd242a8f502737fb513ea21c0715c"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/hachiware-diagonal-matched-walk-v5.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/hachiware-diagonal-matched-walk-v5.png",
+      "bytes": 105017,
+      "sha256": "a5130282ebbaf905423aab8843c7e22f52e514b429f0438dd830c493c18eac40"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/hachiware-diagonal-walk-12-v2.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/hachiware-diagonal-walk-12-v2.png",
+      "bytes": 1758422,
+      "sha256": "1a24baf6cb5373c02cdb54e508fa608f7d0f4ac051e4a6bfbab164ca7dc9e94d"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/hachiware-sprites-v1.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/hachiware-sprites-v1.png",
+      "bytes": 1737619,
+      "sha256": "ac8776b7c831c2bf0ccc265a42736411f37a4c88ac8c53c6622f02455ba39935"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/hachiware-walk-bodies-v1.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/hachiware-walk-bodies-v1.png",
+      "bytes": 1290237,
+      "sha256": "a8d2d88fda86ce32314d2b664cd1efa856975483ec02ada07a83fbba0de7db75"
+    },
+    {
+      "kind": "image",
+      "source": "build/artwork/friends.png",
+      "archive_path": "Project/build/artwork/friends.png",
+      "bytes": 130750,
+      "sha256": "d358479d8d5e811e4d92ef921ce2437356ec9be1da5bff246e27a1d55b67c63e"
+    },
+    {
+      "kind": "image",
+      "source": "build/artwork/hachiware-12-frame-walk.gif",
+      "archive_path": "Project/build/artwork/hachiware-12-frame-walk.gif",
+      "bytes": 429441,
+      "sha256": "2a7c8741715cb6de25fc07bfb29e897711f9443bae30bae155f1ad7ad6b0184d"
+    },
+    {
+      "kind": "image",
+      "source": "build/artwork/hachiware-sprite-preview.png",
+      "archive_path": "Project/build/artwork/hachiware-sprite-preview.png",
+      "bytes": 273169,
+      "sha256": "5d0f3f13809fe8bd7d9023bcdf6142befb673a833d62dbefeb3bfdc07720c0c0"
+    },
+    {
+      "kind": "image",
+      "source": "build/artwork/hachiware-walk.png",
+      "archive_path": "Project/build/artwork/hachiware-walk.png",
+      "bytes": 136739,
+      "sha256": "54bfabb78c7f56e08fd0262c4e2fd12067405b766a5b4a474df8379234184c6f"
+    },
+    {
+      "kind": "image",
+      "source": "build/artwork/icon.png",
+      "archive_path": "Project/build/artwork/icon.png",
+      "bytes": 257854,
+      "sha256": "fadb9924edc62d95697cdefc883dbb54e597c528d87278bf12af3ed433319587"
+    },
+    {
+      "kind": "image",
+      "source": "build/desktop-hachiware-12.png",
+      "archive_path": "Project/build/desktop-hachiware-12.png",
+      "bytes": 15663,
+      "sha256": "c905c89808388c42ea614165f0a27d09f5a5bd218bdea1700ce47f394c5f0057"
+    },
+    {
+      "kind": "image",
+      "source": "build/desktop-hachiware-moving.png",
+      "archive_path": "Project/build/desktop-hachiware-moving.png",
+      "bytes": 15831,
+      "sha256": "ac737309e87d32f1e3bd0028e6070e397db44b2dcb6a6c216d1ca62652e7d4e0"
+    },
+    {
+      "kind": "image",
+      "source": "build/desktop-hachiware.png",
+      "archive_path": "Project/build/desktop-hachiware.png",
+      "bytes": 15238,
+      "sha256": "d9b355813376bb4e2a5c3f6ccef07316696cfd0c446830458c6d344c3219a2ce"
+    },
+    {
+      "kind": "image",
+      "source": "build/settings-preview.png",
+      "archive_path": "Project/build/settings-preview.png",
+      "bytes": 176266,
+      "sha256": "8b4db0395f18302b397cb45aa8acbcff7b36ee759a7ef92d25d9627d51fc4633"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/README.txt",
+      "archive_path": "README.txt",
+      "bytes": 771,
+      "sha256": "05ecdfa78837cb2068439fc100fda456f305a3fdc951b0f2b5fbb9c501d8a821"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/89e5b1c3dcc4c8a6/build/artwork/hachiware-sprite-preview.png",
+      "archive_path": "Versions/89e5b1c3dcc4c8a6/build/artwork/hachiware-sprite-preview.png",
+      "bytes": 275669,
+      "sha256": "89e5b1c3dcc4c8a66447e13aa9d081cd0b079cbe4fbf4268de345607cf6b7947"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/c218124b1d4cd9b9/build/artwork/hachiware-walk.png",
+      "archive_path": "Versions/c218124b1d4cd9b9/build/artwork/hachiware-walk.png",
+      "bytes": 131964,
+      "sha256": "c218124b1d4cd9b9837657d409329d040c4a58067205e0c36fa8586340a684f4"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/cc9378365f0d48fa/build/artwork/hachiware-12-frame-walk.gif",
+      "archive_path": "Versions/cc9378365f0d48fa/build/artwork/hachiware-12-frame-walk.gif",
+      "bytes": 578324,
+      "sha256": "cc9378365f0d48fa198a10a07c503a067a602529429f8aaa6eb465872a23d3b5"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/d4731c5d6b80e3bd/build/artwork/friends.png",
+      "archive_path": "Versions/d4731c5d6b80e3bd/build/artwork/friends.png",
+      "bytes": 129798,
+      "sha256": "d4731c5d6b80e3bd731a1b718e57145b1f738e29614b4489cd4b873c180f53d9"
+    }
+  ],
+  "updated_at": "2026-10-16T12:44:09.682678+00:00",
+  "latest_applied": "AppliedWalk-v5",
+  "applied_directions": [
+    "down-left",
+    "down-right"
+  ],
+  "previous_upward_diagonal_preserved": true,
+  "source_path_format": "repository-relative paths; generated originals are archived under Source/GeneratedOriginals"
+}

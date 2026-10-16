@@ -1,0 +1,11 @@
+/.build/
+/build/
+/.swiftpm/
+/.codex/
+/.claude/
+/.cursor/
+.DS_Store
+.env
+.env.*
+*.xcuserstate
+xcuserdata/

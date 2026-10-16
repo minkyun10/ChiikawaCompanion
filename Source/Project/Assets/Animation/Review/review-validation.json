@@ -1,0 +1,52 @@
+{
+  "runtime_applied": false,
+  "body_source": "../../../Sources/ChiikawaCompanion/Resources/hachiware-walk-bodies-v1.png",
+  "identity_source": "../../ReferenceSheets/hachiware-turnaround-v1.png",
+  "left_step_frames": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "right_step_frames": [
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "right_step_phase_offset_radians": 3.141592653589793,
+  "fixed_core_checks": [
+    {
+      "view": "front",
+      "head_face_variants": 1,
+      "crown_tail_variants": 1
+    },
+    {
+      "view": "side",
+      "head_face_variants": 1,
+      "crown_tail_variants": 1
+    },
+    {
+      "view": "back",
+      "head_face_variants": 1,
+      "crown_tail_variants": 1
+    },
+    {
+      "view": "front_diagonal",
+      "head_face_variants": 1,
+      "crown_tail_variants": 1
+    },
+    {
+      "view": "back_diagonal",
+      "head_face_variants": 1,
+      "crown_tail_variants": 1
+    }
+  ],
+  "preview_frames": 48,
+  "preview_loop_ms": 1360,
+  "maximum_left_right_trajectory_error_canvas_pixels": 2.842170943040401e-14
+}

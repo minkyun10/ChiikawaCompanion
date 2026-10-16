@@ -1,0 +1,15 @@
+Use case: stylized-concept
+Asset type: transparent production sprite atlas for a native desktop pet.
+Primary request: draw true TWELVE-FRAME seamless walk cycles of the approved Hachiware character, with real intermediate arm/foot poses for smoother animation.
+Input image 1: identity and exact front / left-side / back model reference only. Do not reproduce its layout, guide lines or typography.
+
+Output: ONE SQUARE transparent PNG, preferably 1536 x 1536, exactly SIX columns by SIX rows, 36 complete isolated characters. Invisible equal cells of 256 x 256. No captions, words, numbers, grid lines, backdrop, floor, shadows or glow. Keep all white fur fully opaque. Each sprite about 175px tall, centered with large transparent gutters on all four sides; every ear, foot and tail inside its cell.
+
+Read in normal reading order, left to right then next row:
+Rows 1 and 2 together: ONE 12-frame FRONT VIEW walk toward the viewer. Row 1 frames 1-6, row 2 frames 7-12.
+Rows 3 and 4 together: ONE 12-frame LEFT SIDE PROFILE walk to screen-left. Row 3 frames 1-6, row 4 frames 7-12. Profile has one visible large eye and tail behind to the right.
+Rows 5 and 6 together: ONE 12-frame BACK VIEW walk away from the viewer. Row 5 frames 1-6, row 6 frames 7-12. NO face visible, blue small tail on back.
+
+A continuous walk cycle across the TWO rows of each view. The second row continues the SAME motion, camera angle, body size and lighting. DO NOT restart the cycle after 6. Twelve chronological poses: left foot contact, sinking weight, left support with right foot lifting, passing, right foot forward, rising, right foot contact, sinking weight, right support with left lifting, opposite passing, left foot forward, rising toward first contact. Tiny stubby feet alternate. Gentle opposite arm swing and tiny tail sway. Body upright with subtle one-to-two-pixel bob, no large jumps or squashing. Frame 12 loops seamlessly to frame 1. Keep the head silhouette, facial features and volume as stable as possible; only the limbs and tiny body bob animate. Twelve frames must show progressive distinct poses, not six drawings copied twice.
+
+Identity lock: the approved continuous rounded white pear-shaped head/body without a separate head, neck or belly line; short extremely tiny arms and feet; rounded pointed dusty-blue ears merging into a parted blue crown; original large glossy black oval eyes with two white highlights, eyebrow dots, small w-mouth and dot beneath, pink cheeks with three short dark hatches; tiny blue bean-shaped tail. Clean slightly hand-drawn black outline, flat pastel colors and flat 2D kawaii illustration. No redesign, generic cat anatomy, clothing, props, text, perspective changes, pixel art or 3D rendering. Match the supplied model and proportions throughout all 36 sprites.

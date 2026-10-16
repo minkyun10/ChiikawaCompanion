@@ -1,0 +1,32 @@
+{
+  "app_version": "0.5.1",
+  "build": 10,
+  "packaged_checks_passed": 78,
+  "codesign_verified": true,
+  "applied_new_art": [
+    "down",
+    "up",
+    "left",
+    "right",
+    "down-left",
+    "down-right"
+  ],
+  "preserved_previous_art": [
+    "up-left",
+    "up-right"
+  ],
+  "downward_diagonal_frame_size": [
+    256,
+    256
+  ],
+  "frames_per_walk": 12,
+  "points_per_cycle": 62.7,
+  "speed_points_per_second": 46,
+  "assets": {
+    "hachiware-sprites-v1.png": "ac8776b7c831c2bf0ccc265a42736411f37a4c88ac8c53c6622f02455ba39935",
+    "hachiware-cardinal-walk-approved-v5.png": "c3b03bfe42f0501dcfaac2f442fe4d59242fd242a8f502737fb513ea21c0715c",
+    "hachiware-diagonal-matched-walk-v5.png": "a5130282ebbaf905423aab8843c7e22f52e514b429f0438dd830c493c18eac40",
+    "hachiware-diagonal-walk-12-v2.png": "1a24baf6cb5373c02cdb54e508fa608f7d0f4ac051e4a6bfbab164ca7dc9e94d"
+  },
+  "notification_permission_status": "macOS Touch ID authentication pending"
+}

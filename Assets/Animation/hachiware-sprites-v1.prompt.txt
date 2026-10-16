@@ -1,0 +1,16 @@
+Tool: built-in image_gen
+Reference: Assets/ReferenceSheets/hachiware-turnaround-v1.png
+Output: Sources/ChiikawaCompanion/Resources/hachiware-sprites-v1.png
+
+Use case: identity-preserve / game sprite animation asset.
+Reference image: the supplied approved HACHIWARE character model sheet. Match this exact character design and 2D line style. This is a sprite atlas to be used directly in an actual desktop pet application.
+Create ONE transparent RGBA sprite atlas with EXACTLY SIX columns and FOUR rows, twenty-four equally sized square cells, NO visible grid, NO labels, NO text, NO title. Landscape 1536 x 1024 pixels, 256 x 256 pixels per cell. Transparent background, not white and not a drawn checkerboard. All opaque character areas are fully opaque, including the white body. Every cell contains one complete character, centered horizontally in its cell, with feet at the same y baseline about 231 pixels from the cell top, ear tips about 27 pixels from the cell top, and ample transparent padding. No character part may cross a cell boundary. Character size is identical across the entire sheet; no camera motion or zoom.
+
+Identity is critical: one continuous round pear-shaped white silhouette with NO separate head, NO neck, NO separate torso or belly line. Huge rounded head/body and very small lower body; tiny stubby arms and feet. Muted dusty BLUE ears and cap-shaped crown marking with the same central white parted fringe. Large glossy BLACK OVAL EYES with TWO white highlights, tiny w mouth with small dot below, oval PINK cheeks with THREE short black diagonal hatches. Small blue bean-shaped tail. Solid slightly hand-drawn black outlines, flat fills, very limited shading, same face and proportions as reference. Not a generic cat, not the prior code-drawn desktop version. No outfit or props.
+
+ROW 1 (top): six successive frames of a FRONT-FACING walking cycle. Face viewer, short arms alternate gently, tiny feet alternate stepping/lifting, extremely subtle body bounce, preserve the continuous body silhouette and large glossy eyes. Frame 1 neutral front pose. Smoothly loopable.
+ROW 2: six successive frames of a strict LEFT-FACING SIDE walking cycle, like the SIDE view in the reference. Same character height as row 1, exactly one eye visible, tail behind to the right, tiny feet alternate and stubby near arm swings gently. Smoothly loopable.
+ROW 3: six successive frames of a BACK-FACING walking cycle, like BACK in reference. Same size, no face or eyes visible, blue crown/ears and small blue tail consistent. Tiny arms and feet step in alternation, smooth loop.
+ROW 4 (bottom): six FRONT-FACING friendly hover/reaction frames. Same exact body size and position, cute small hand waving or raised stubby arms, big glossy eyes retained in most frames, one slight happy blink permitted. No extra speech bubbles or sparkles outside character silhouette. Smooth friendly reaction loop.
+
+Do not put multiple poses in one cell. Do not add a fifth row. No top view needed in this animation atlas. Keep clean transparent gutters, steady registration, consistent line weight and identical palette. No white rectangles, no drop shadow, no frame borders, no annotation.

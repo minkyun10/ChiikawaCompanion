@@ -1,0 +1,11 @@
+Use case: precise-object-edit
+Create a 12-frame REAR diagonal UP-LEFT Hachiware walking animation sheet.
+Input 1: the rear OPPOSITE-foot pose. It has the BIG rounded foot under the LEFT half and the SMALL tucked foot under the RIGHT half. Use this as frame 07's exact leg pose.
+Input 2: original four-direction guide. ONLY use its TOP-LEFT UP-LEFT rear character for frame 01, where the BIG rounded foot is under the RIGHT half and the SMALL foot is under the LEFT half. Its body/ears/tail proportions are the master appearance. Ignore the other three characters.
+Layout: landscape, exactly 6 columns and 2 rows, exactly 12 equally sized fully visible characters, white background. Top row small numbers 01 02 03 04 05 06; bottom row 07 08 09 10 11 12. No title or other text.
+Every frame is the SAME REAR UP-LEFT view, tail staying on image-RIGHT. NO face or eyes. Lock the head/body/ears/cap/tail drawing, scale and position; only stubby feet and tiny arm counter-swing animate.
+Frame 01: big foot at RIGHT bottom, small foot at LEFT bottom, matching the original top-left guide.
+Frame 07: big foot at LEFT bottom, small foot at RIGHT bottom, matching input 1. The prominent foot must visibly change sides.
+Frames 02–06 smoothly transition 01 into 07. Frames 08–12 smoothly transition back into 01, with 12 leading seamlessly back to 01. At 04/10 passing poses both feet tuck closer beneath belly with one slightly raised. Frames 05–09 prominently show the LEFT foot leading and RIGHT foot tucked; frames 11,12,01,02,03 prominently show the RIGHT foot leading and LEFT foot tucked.
+Use two copies of the SAME rounded foot design moving along the same modest diagonal step arc, offset by six frames. Same extension, lift and timing on each side. Both feet stay naturally attached; correct occlusion, no additional legs.
+Match the guide's adorable round white bean, large blue ear-cap, small blue tail and thick black outline exactly. No expression, face, turn, stretch, squash, dramatic bob, waving, shoes, shadows, scenery or watermark. Stable core and ground baseline. Show an actual alternating two-legged step, not twelve repetitions of one foot.

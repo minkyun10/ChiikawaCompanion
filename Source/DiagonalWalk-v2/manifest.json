@@ -1,0 +1,93 @@
+{
+  "updated_at": "2026-10-16T12:20:29.616972+00:00",
+  "runtime_applied": false,
+  "selected_pose": "Review/hachiware-diagonal-right-foot-forward-v3.png",
+  "method": "built-in image_gen",
+  "files": [
+    {
+      "path": "GeneratedOriginals/exec-2dc43ae2-b85b-4077-8be4-24d03f476624.png",
+      "bytes": 1185769,
+      "sha256": "be97dd2d46ae92ee90ad30bf284cd54e1bff09bd832aa25d7caf186aef8916b8"
+    },
+    {
+      "path": "GeneratedOriginals/exec-3eb487e3-f0d3-4594-a8d3-38c252fbf120.png",
+      "bytes": 1192625,
+      "sha256": "1aab80cbe7205f6ea92c6e2296866ef86a4f78c5ff5ed15b67c760d649daa17f"
+    },
+    {
+      "path": "GeneratedOriginals/exec-7438059c-81b0-491d-b1b1-7f875b9c90d3.png",
+      "bytes": 1082216,
+      "sha256": "aa7f1bf013e51e7c1c5bdbaaac1475507288a975471677a3dcf1161770f29216"
+    },
+    {
+      "path": "Prompts/back-cycle-v2.prompt.txt",
+      "bytes": 2157,
+      "sha256": "e7bfcc2e38600834c1b85630a55b039af18ff7a3aedb23b1b6faa7837c5c381c"
+    },
+    {
+      "path": "Prompts/back_opposite-v2.prompt.txt",
+      "bytes": 1817,
+      "sha256": "c07a9a179e9c7d6a0b04d5481ae48454d2592d34a242a14f30c77900c2117893"
+    },
+    {
+      "path": "Prompts/front-cycle-correction-v2.prompt.txt",
+      "bytes": 1821,
+      "sha256": "f02d63e18055402f9478f0f418f60498233fdec97bf2eb5a32722404fa8905f4"
+    },
+    {
+      "path": "Prompts/front-cycle-v2.prompt.txt",
+      "bytes": 3028,
+      "sha256": "e692efc7f0beb207147aa2bdc73018f72c2e4b14e5555a2456bed04a423ea032"
+    },
+    {
+      "path": "Prompts/front_opposite-v2.prompt.txt",
+      "bytes": 2166,
+      "sha256": "dda0c853f745f7b2fe5e2406eda682442c639af9d397f6a567e3f42019e7b017"
+    },
+    {
+      "path": "Prompts/keyposes-v2.prompt.txt",
+      "bytes": 2445,
+      "sha256": "11a9c357f1bd934b05f1ce9f568aed72642c4a6ba684e02e164e0977738d08c5"
+    },
+    {
+      "path": "Prompts/right-foot-forward-v3.prompt.txt",
+      "bytes": 1402,
+      "sha256": "58aef0178b9599365dc243a230fedfad70f62d6ea2e748dbc56c6b4cd5b87370"
+    },
+    {
+      "path": "References/user-right-foot-forward-request.png",
+      "bytes": 102148,
+      "sha256": "d49bd416440a4f823fe6b778f422c91d02a94b68697558c6affd6b1f7739f0c7"
+    },
+    {
+      "path": "References/user-selected-diagonal-overview.png",
+      "bytes": 590812,
+      "sha256": "a79e209762a99d688b68f1b761389b9683b8cfe20dd64072b51d822afbbf4f0c"
+    },
+    {
+      "path": "References/user-selected-front-diagonal.png",
+      "bytes": 216970,
+      "sha256": "f7c60e7d50450d7e06f2b56a275736d44fc30e50aba91e3ee0d1ce72cf64b59c"
+    },
+    {
+      "path": "Review/hachiware-diagonal-back-opposite-foot-v2.png",
+      "bytes": 1082216,
+      "sha256": "aa7f1bf013e51e7c1c5bdbaaac1475507288a975471677a3dcf1161770f29216"
+    },
+    {
+      "path": "Review/hachiware-diagonal-front-opposite-foot-v2.png",
+      "bytes": 1192625,
+      "sha256": "1aab80cbe7205f6ea92c6e2296866ef86a4f78c5ff5ed15b67c760d649daa17f"
+    },
+    {
+      "path": "Review/hachiware-diagonal-right-foot-forward-v3.png",
+      "bytes": 1514480,
+      "sha256": "f23a828ed131ab92894ae8c81c5abe245d824b2d3fc8fc078726304cd706bf70"
+    },
+    {
+      "path": "Review/initial-keypose-comparison-v2.png",
+      "bytes": 1185769,
+      "sha256": "be97dd2d46ae92ee90ad30bf284cd54e1bff09bd832aa25d7caf186aef8916b8"
+    }
+  ]
+}

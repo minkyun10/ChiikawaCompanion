@@ -1,0 +1,28 @@
+{
+  "artwork": "first image body and foot proportions; regenerated fixed front/rear bodies",
+  "body_height_pixels": 192,
+  "cycle_milliseconds": 1360,
+  "directions": 4,
+  "foot_geometry": "one fixed broad rounded outline; no per-side or per-phase scaling",
+  "foot_path_bounds": "{{-23.378293432230901, -28.700189153979217}, {41.378293432230905, 33.700189153979217}}",
+  "foot_stroke_pixels": 4.2,
+  "frames_per_direction": 12,
+  "half_cycle_offset_frames": 6,
+  "maximum_left_right_trajectory_error_pixels": 1.4210854715202004e-14,
+  "preview_frames": 12,
+  "reference_motion": "same phase, travel, lift and timing; additional depth recession preserves far-foot occlusion",
+  "review_status": "pending user review",
+  "runtime_applied": false,
+  "head_and_face_region_variants_per_direction": {
+    "down-left": 1,
+    "down-right": 1,
+    "up-left": 1,
+    "up-right": 1
+  },
+  "mirror_max_channel_error": {
+    "down-left/down-right": 1,
+    "up-left/up-right": 1
+  },
+  "gif_verified_frames": 12,
+  "gif_verified_duration_ms": 1360
+}

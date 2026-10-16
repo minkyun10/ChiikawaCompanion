@@ -1,0 +1,12 @@
+Use case: precise-object-edit
+Asset type: Hachiware diagonal-walk opposite-foot key-pose sheet for a personal macOS desktop companion.
+Input image 1: exact selected front three-quarter diagonal DOWN-LEFT walking pose. Preserve its character drawing and appealing stride.
+Input image 2: original diagonal turnaround sheet. Use only its upper-left UP-LEFT rear-view pose as the rear reference. Ignore all text and the other directions.
+Primary request: Create ONE clean 2-column by 2-row key-pose comparison sheet on an opaque white background. Each cell has one large fully visible character at identical scale, consistent baseline, generous margins, flat clean line art matching the reference.
+Top row = the same DOWN-LEFT front three-quarter view in both cells. Bottom row = the same UP-LEFT rear three-quarter view in both cells.
+Left column A = reference stride: one foot reaches diagonally forward, the other foot is behind. Copy the selected reference pose faithfully.
+Right column B = exactly the opposite-foot stride in the SAME viewing direction, a half cycle later: the previously leading anatomical foot now trails and the previously trailing anatomical foot now leads along the same diagonal walking axis. It must be clearly a real opposite-leg drawing, not the same pose again.
+For DOWN-LEFT both cells keep the SAME blue tail on image-right and the SAME face orientation. Do NOT mirror or turn the entire character to obtain the opposite step. For UP-LEFT both cells keep the SAME blue tail on image-right and show no face.
+The two feet have the same rounded mitten-like foot design, equivalent extension and travel. The far foot is modestly occluded but must visibly alternate in front/behind depth. Arms counter-swing subtly and correspond to the exchanged legs. No waving.
+INVARIANTS: identical round white bean body proportions, large blue crown with two ears, black thick softly hand-drawn outline, tiny limbs, front black sparkling eyes and pink cheeks. No new facial expression, no blink, no mouth change, no head turn, no dramatic body lean. The body, ears, face and tail must be visually identical across A and B; only arm and leg pose changes. No extra limbs, detached limbs, blue feet, costume, props, floor, shadows, checkerboard, textures or watermark.
+Small unobtrusive labels only: column headers "A" and "B"; row labels "DOWN-LEFT" and "UP-LEFT". The deliverable is a 2x2 reference sheet, NOT an animation atlas yet.
