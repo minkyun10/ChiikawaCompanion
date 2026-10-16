@@ -20,6 +20,9 @@ enum HachiwarePose: Int, CaseIterable {
 final class HachiwareSprites {
     static let shared = HachiwareSprites()
     static let columns = 6
+    // Source sheets interleave foot poses. Follow one planted step from front to
+    // back, then its lifted return, rather than playing the sheet's storage order.
+    static let sideWalkOrder = [0, 3, 5, 2, 1, 11, 10, 8, 4, 6, 9, 7]
     static let assetNames = ["hachiware-sprites-v1", "hachiware-cardinal-walk-approved-v5",
                              "hachiware-diagonal-matched-walk-v5", "hachiware-diagonal-walk-12-v2"]
     private(set) var frames = [[NSImage]](repeating: [], count: HachiwarePose.allCases.count)
@@ -154,8 +157,9 @@ final class HachiwareSprites {
                 guard let image = target.cgImage else { return }
                 registered.append(NSImage(cgImage: image, size: canvas))
             }
-            frames[pose.rawValue] = registered
-            alphaBounds[pose.rawValue] = sources.map { $0.bounds }
+            let order = pose == .side ? Self.sideWalkOrder : Array(registered.indices)
+            frames[pose.rawValue] = order.map { registered[$0] }
+            alphaBounds[pose.rawValue] = order.map { sources[$0].bounds }
         }
     }
 

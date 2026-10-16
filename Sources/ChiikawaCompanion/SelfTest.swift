@@ -213,6 +213,35 @@ enum SelfTest {
             if signatures.count != 1 { diagonalBodiesStayFixed = false }
         }
         check(diagonalBodiesStayFixed, "downward diagonal head and face stay identical while the feet alternate")
+        let sideToePositions: [CGFloat] = (0..<12).compactMap { index in
+            guard let data = sprites.frame(pose: .side, index: index)?.tiffRepresentation,
+                  let bitmap = NSBitmapImageRep(data: data) else { return nil }
+            var lowestRow = -1
+            var toePixels: [(Int, Int)] = []
+            for y in 180..<256 {
+                for x in 60..<210 {
+                    guard let color = bitmap.colorAt(x: x, y: y)?.usingColorSpace(.deviceRGB),
+                          color.alphaComponent > 0.5,
+                          max(color.redComponent, color.greenComponent, color.blueComponent) < 0.4 else { continue }
+                    lowestRow = max(lowestRow, y); toePixels.append((x, y))
+                }
+            }
+            let lowest = toePixels.filter { $0.1 >= lowestRow - 2 }
+            guard !lowest.isEmpty else { return nil }
+            return CGFloat(lowest.reduce(0) { $0 + $1.0 }) / CGFloat(lowest.count)
+        }
+        let plantedStep = sideToePositions.count == 12 && (0..<6).allSatisfy {
+            sideToePositions[$0 + 1] >= sideToePositions[$0] - 1
+        }
+        let liftedReturn = sideToePositions.count == 12 && (6..<11).allSatisfy {
+            sideToePositions[$0 + 1] <= sideToePositions[$0] + 1
+        }
+        if !(plantedStep && liftedReturn) { print("Side foot x positions: \(sideToePositions)") }
+        check(plantedStep && liftedReturn,
+              "side walk advances the foot in one direction before returning instead of alternating random poses")
+        check(sideToePositions.count == 12 && (0..<12).allSatisfy {
+            abs(sideToePositions[($0 + 1) % 12] - sideToePositions[$0]) < 34
+        }, "side walk avoids the large foot-position jumps in the source sheet, including the loop boundary")
         check(HachiwareSprites.frameIndex(phase: 0) == 0 && HachiwareSprites.frameIndex(phase: 2 * .pi) == 0,
               "walking animation loops at full gait cycle")
         check(HachiwareSprites.frameIndex(phase: -.pi / 3) == 10, "negative gait phase wraps safely")
@@ -327,6 +356,20 @@ enum SelfTest {
             }
         }
         renderWalkAnimation(to: directory.appendingPathComponent("hachiware-12-frame-walk.gif"))
+        png(width: 1800, height: 680, to: directory.appendingPathComponent("hachiware-side-cycle.png")) {
+            NSColor(hex: 0xF7F4EB).setFill(); NSRect(x: 0, y: 0, width: 1800, height: 680).fill()
+            for index in 0..<12 {
+                let x = (index % 6) * 300 + 20, y = index < 6 ? 365 : 35
+                HachiwareSprites.shared.frame(pose: .side, index: index)?.draw(
+                    in: NSRect(x: x, y: y, width: 260, height: 260),
+                    from: .zero, operation: .sourceOver, fraction: 1)
+                let paragraph = NSMutableParagraphStyle(); paragraph.alignment = .center
+                (String(format: "%02d", index + 1) as NSString).draw(
+                    in: NSRect(x: x, y: y - 22, width: 260, height: 24),
+                    withAttributes: [.font: NSFont.systemFont(ofSize: 17, weight: .medium),
+                                     .foregroundColor: FriendArtwork.ink, .paragraphStyle: paragraph])
+            }
+        }
         print("Artwork rendered.")
     }
 

@@ -1,0 +1,129 @@
+{
+  "files": [
+    {
+      "path": "After/friends.png",
+      "bytes": 130750,
+      "sha256": "d358479d8d5e811e4d92ef921ce2437356ec9be1da5bff246e27a1d55b67c63e"
+    },
+    {
+      "path": "After/hachiware-12-frame-walk.gif",
+      "bytes": 429514,
+      "sha256": "d263fdcaf983cb5cb4b8a414fe430197a9f69581c7ffd813d6e01fb78f4fc798"
+    },
+    {
+      "path": "After/hachiware-side-cycle.png",
+      "bytes": 639691,
+      "sha256": "93e0374184b6baa6d27e5bc7c520655c7115ff4003e00d7719566ee36fa284a1"
+    },
+    {
+      "path": "After/hachiware-sprite-preview.png",
+      "bytes": 273924,
+      "sha256": "c73e0e353372acfda081f2319e656faff8ea7ef25f3fd6bd6b6e1d628c3e8d1d"
+    },
+    {
+      "path": "After/hachiware-walk.png",
+      "bytes": 136739,
+      "sha256": "54bfabb78c7f56e08fd0262c4e2fd12067405b766a5b4a474df8379234184c6f"
+    },
+    {
+      "path": "After/icon.png",
+      "bytes": 257854,
+      "sha256": "fadb9924edc62d95697cdefc883dbb54e597c528d87278bf12af3ed433319587"
+    },
+    {
+      "path": "Before/friends.png",
+      "bytes": 130750,
+      "sha256": "d358479d8d5e811e4d92ef921ce2437356ec9be1da5bff246e27a1d55b67c63e"
+    },
+    {
+      "path": "Before/hachiware-12-frame-walk.gif",
+      "bytes": 429441,
+      "sha256": "2a7c8741715cb6de25fc07bfb29e897711f9443bae30bae155f1ad7ad6b0184d"
+    },
+    {
+      "path": "Before/hachiware-side-cycle.png",
+      "bytes": 638486,
+      "sha256": "1361682ff928f819f394aaabc6631299c6025af689873c0ed597430b5ecfa206"
+    },
+    {
+      "path": "Before/hachiware-sprite-preview.png",
+      "bytes": 273169,
+      "sha256": "5d0f3f13809fe8bd7d9023bcdf6142befb673a833d62dbefeb3bfdc07720c0c0"
+    },
+    {
+      "path": "Before/hachiware-walk.png",
+      "bytes": 136739,
+      "sha256": "54bfabb78c7f56e08fd0262c4e2fd12067405b766a5b4a474df8379234184c6f"
+    },
+    {
+      "path": "Before/icon.png",
+      "bytes": 257854,
+      "sha256": "fadb9924edc62d95697cdefc883dbb54e597c528d87278bf12af3ed433319587"
+    },
+    {
+      "path": "Before/side-feet.png",
+      "bytes": 302957,
+      "sha256": "b3819b9dcbd37a0b606995be62e17b7c7887305df378cf77b0790d2611e4ce86"
+    },
+    {
+      "path": "InspectFootSequence.swift",
+      "bytes": 1400,
+      "sha256": "c6e5951450618a3b2fee60f8d2d54e204903b883ef8a4518de79009d171fe097"
+    },
+    {
+      "path": "Iterations/01-candidate/friends.png",
+      "bytes": 130750,
+      "sha256": "d358479d8d5e811e4d92ef921ce2437356ec9be1da5bff246e27a1d55b67c63e"
+    },
+    {
+      "path": "Iterations/01-candidate/hachiware-12-frame-walk.gif",
+      "bytes": 429166,
+      "sha256": "68ce0695b03c7bebed3e078b110faa1d6fed1081f834970305d9195a9a06621c"
+    },
+    {
+      "path": "Iterations/01-candidate/hachiware-side-cycle.png",
+      "bytes": 639534,
+      "sha256": "318a5fcd906d01db7351ddbcf594212a7a698ca8842b14ae23e3376d4cbb991d"
+    },
+    {
+      "path": "Iterations/01-candidate/hachiware-sprite-preview.png",
+      "bytes": 273924,
+      "sha256": "c73e0e353372acfda081f2319e656faff8ea7ef25f3fd6bd6b6e1d628c3e8d1d"
+    },
+    {
+      "path": "Iterations/01-candidate/hachiware-walk.png",
+      "bytes": 136739,
+      "sha256": "54bfabb78c7f56e08fd0262c4e2fd12067405b766a5b4a474df8379234184c6f"
+    },
+    {
+      "path": "Iterations/01-candidate/icon.png",
+      "bytes": 257854,
+      "sha256": "fadb9924edc62d95697cdefc883dbb54e597c528d87278bf12af3ed433319587"
+    },
+    {
+      "path": "MakeSidePreview.swift",
+      "bytes": 1820,
+      "sha256": "0017fcdd1f30f24a0823ce14d13f02246d2d205c54097c4c1e759f603d735803"
+    },
+    {
+      "path": "README.txt",
+      "bytes": 798,
+      "sha256": "0cc2ce797f8e37e3f742f9d88a1e73f6b82830b8ce3ceaa0b88cdc458abcdfbf"
+    },
+    {
+      "path": "sequence-analysis.json",
+      "bytes": 4540,
+      "sha256": "2fba5e20ba983dd188a49a6d768f6c215221337bc69169a9b0abc3cf99212e84"
+    },
+    {
+      "path": "side-walk-preview-v6.gif",
+      "bytes": 138191,
+      "sha256": "d85cbe1d114bb521675b8ecb85dbff87c4e3aeee0caa4b65bb5b7ee9baa8259f"
+    },
+    {
+      "path": "validation.json",
+      "bytes": 803,
+      "sha256": "1a9a6456b561a528697d08bc97a5b14f3694040f1a684da6921470f3c0a713af"
+    }
+  ]
+}

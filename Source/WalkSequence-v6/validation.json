@@ -1,0 +1,41 @@
+{
+  "app_version": "0.5.2",
+  "build": 11,
+  "packaged_checks_passed": 80,
+  "codesign_verified": true,
+  "source_frame_order_one_based": [
+    1,
+    4,
+    6,
+    3,
+    2,
+    12,
+    11,
+    9,
+    5,
+    7,
+    10,
+    8
+  ],
+  "measured_toe_x_by_playback_frame": [
+    105.58974358974359,
+    111.0,
+    123.75,
+    125.74242424242425,
+    127.21333333333334,
+    151.70731707317074,
+    154.09375,
+    145.74468085106383,
+    121.0,
+    120.29508196721312,
+    113.32608695652173,
+    105.72972972972973
+  ],
+  "planted_foot_moves_back_before_lifted_return": true,
+  "maximum_adjacent_toe_jump_pixels": 24.744680851063833,
+  "right_walk_mirrors_same_order": true,
+  "walk_cycle_distance_points": 62.7,
+  "preview_frames": 12,
+  "preview_duration_ms": 1360,
+  "upward_diagonals_unchanged": true
+}
