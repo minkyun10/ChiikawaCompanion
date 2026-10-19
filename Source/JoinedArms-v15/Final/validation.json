@@ -1,0 +1,30 @@
+{
+  "app_distance_per_cycle_points" : 62.700000000000003,
+  "approved_v14_legs_preserved" : true,
+  "arm_roots_open" : true,
+  "body_asset_shared" : true,
+  "body_height_at_contact" : -0,
+  "body_height_at_down" : -5.5,
+  "body_height_at_passing" : -6.735557395310443e-16,
+  "body_height_at_up" : 5.5,
+  "cycle_seconds" : 1.3630434782608696,
+  "foot_asset_shared" : true,
+  "foot_symmetry_max_error" : 4.6185277824406512e-14,
+  "frame_count" : 24,
+  "frames_per_step" : 12,
+  "half_cycle_offset_frames" : 12,
+  "keyframes_one_based" : [
+    1,
+    4,
+    7,
+    10,
+    13,
+    16,
+    19,
+    22
+  ],
+  "loop_boundary_error" : 1.2159998448169063e-06,
+  "native_joint_only" : true,
+  "planted_contact_world_slip" : 3.5527136788005009e-15,
+  "runtime_applied" : true
+}

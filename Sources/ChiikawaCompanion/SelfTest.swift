@@ -323,12 +323,19 @@ enum SelfTest {
         let originalSide = NSBitmapImageRep(data: try! Data(contentsOf:
             HachiwareSprites.assetURL(named: "hachiware-side-walk-24-v9")!))!.cgImage!
         check((0..<24).allSatisfy { index in
-            [CGRect(x: index % 6 * 256, y: index / 6 * 256, width: 256, height: 174),
+            [CGRect(x: index % 6 * 256, y: index / 6 * 256, width: 256, height: 128),
              CGRect(x: index % 6 * 256, y: index / 6 * 256 + 224, width: 256, height: 32)].allSatisfy { region in
                 guard let old = originalSide.cropping(to: region), let joined = sideAtlas.cropping(to: region) else { return false }
                 return NSBitmapImageRep(cgImage: old).tiffRepresentation == NSBitmapImageRep(cgImage: joined).tiffRepresentation
             }
-        }, "joining the legs preserves every original head, upper-body and bottom-sole pixel in all 24 frames")
+        }, "joining the limbs preserves every original head and bottom-sole pixel in all 24 frames")
+        let approvedLegs = NSBitmapImageRep(data: try! Data(contentsOf:
+            HachiwareSprites.assetURL(named: "hachiware-side-walk-24-joined-v14")!))!.cgImage!
+        check((0..<24).allSatisfy { index in
+            let region = CGRect(x: index % 6 * 256, y: index / 6 * 256 + 174, width: 256, height: 82)
+            guard let old = approvedLegs.cropping(to: region), let joined = sideAtlas.cropping(to: region) else { return false }
+            return NSBitmapImageRep(cgImage: old).tiffRepresentation == NSBitmapImageRep(cgImage: joined).tiffRepresentation
+        }, "opening the shoulder contours preserves all approved v14 leg pixels across the complete cycle")
         let crown = sprites.alphaBounds[HachiwarePose.side.rawValue].map(\.minY)
         check(crown[3] > crown[0] + 3 && crown[9] < crown[0] - 3,
               "down and up body heights survive loading instead of being normalized away")

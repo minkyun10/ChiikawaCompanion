@@ -1,0 +1,156 @@
+PASS: exact sender assignment
+PASS: trim boundary whitespace
+PASS: no partial sender matching
+PASS: disabled friend does not receive alerts
+PASS: empty names never match
+PASS: ambiguous assignments fail closed
+PASS: duplicate warning uses normalized names
+PASS: Unicode normalization
+PASS: fixture: app label followed by sender
+PASS: notification carries the preview body for transient display
+PASS: fixture: app-prefixed summary
+PASS: app-prefixed summary preserves the message body
+PASS: commas, line breaks, and emoji in a summary remain intact
+PASS: multi-leaf body is preserved without notification timestamps
+PASS: message-title identifiers are not included as message contents
+PASS: missing previews keep sender identification without inventing content
+PASS: explicit body works when the sender is available only as a title attribute
+PASS: speech bubble separates sender and received message
+PASS: voice alerts announce the sender without reading private message text
+PASS: missing message previews have an explicit explanation
+PASS: long previews are visibly abbreviated instead of overflowing the bubble
+PASS: synthetic message previews remain clearly marked as demos
+PASS: sender mentioned in message body does not trigger alert
+PASS: notifications from other apps are rejected
+PASS: unrecognized layout is rejected
+PASS: changed notification has new fingerprint
+PASS: existing notifications are baseline on startup
+PASS: only new notification is emitted
+PASS: repeated scan does not repeat alert
+PASS: re-enabling listener resets baseline
+PASS: desktop positions clamp to negative-coordinate screen
+PASS: transparent margins are click-through
+PASS: character body receives pointer
+PASS: character is above desktop icons
+PASS: character stays below normal app windows
+PASS: speech bubble stays on desktop, below app windows
+PASS: desktop character does not join full-screen overlays
+PASS: only Hachiware is exposed in this development stage
+PASS: destination can reach upper-right desktop
+PASS: walking moves in both desktop axes
+PASS: walking state follows actual movement
+PASS: long journey never crosses screen edges
+PASS: arrival clears target for a new journey
+PASS: walking left turns the character left
+PASS: hover pause stops motion without advancing gait
+PASS: drag release discards previous route
+PASS: zero elapsed time does not move character
+PASS: rounded windows finish journeys, start the next route, and resume from dragged positions
+PASS: short and long hovers release reaction and resume movement within the next sub-100ms update
+PASS: leaving hover respects the user's paused walking preference
+PASS: leaving hover does not interrupt a drag
+PASS: notification reaction remains independent of hover release
+PASS: notification reaction ends at its own deadline
+PASS: migration enables Hachiware alone for current UI
+PASS: migration preserves the other characters' saved mappings
+PASS: later launches preserve the user's walking preference
+PASS: three enabled props spawn on the desktop
+PASS: props stay reachable on negative-coordinate displays
+PASS: a distant prop cannot be equipped by teleporting
+PASS: disabling automatic pickup still leaves props on the desktop
+PASS: clicking a prop requests a journey even with automatic pickup off
+PASS: a requested prop is not picked up while the user is dragging it
+PASS: reaching a prop transfers it from ground to equipment
+PASS: new equipment is carried for a while before seeking another prop
+PASS: swapping equipment drops the old prop without duplicating or losing it
+PASS: manual drops restore the ground item within reachable screen bounds
+PASS: a dropped item is not immediately picked up again
+PASS: turning off a carried prop removes it from both equipment and ground
+PASS: scattering preserves exactly one instance of every enabled prop
+PASS: dragging the character leaves every ground prop at its exact original coordinate
+PASS: drag release rebuilds the character route while preserving the requested item interaction
+PASS: calling the character back never resets or scatters ground props
+PASS: dragging one prop moves only that prop, independently of the character and other props
+PASS: pickup still uses the unchanged ground coordinate after moving character and props independently
+PASS: prop and expression choices survive relaunch without changing sender assignments
+PASS: legacy bag preference is removed without changing the other prop choices
+PASS: four real spoken excerpts and their matching captions load from local resources
+PASS: every bundled recording decodes and preserves its caption timing
+PASS: missing or invalid audio paths cannot escape the bundled voice directory
+PASS: recorded dialogue varies without immediately repeating the same excerpt
+PASS: the original ten quotes stay intact and are never paired with unrelated spoken words
+PASS: audio gain clamps out-of-range values and safely handles invalid saved volume
+PASS: a recording prepares a single player at the requested volume
+PASS: rapid clicks replace and release the previous recording instead of overlapping audio
+PASS: a missing clip clears old playback and fails without silently retaining stale audio
+PASS: an output-device failure releases the prepared player
+PASS: one click pool contains exactly four voiced entries and all ten unmodified text quotes
+PASS: all fourteen lines share the same random selection pool without immediate repeats
+PASS: an older text-only mode preference cannot exclude the four recordings
+PASS: all fourteen selections show their own text and only the four matching recordings play
+PASS: the real character click callback selects a new entry from the combined pool
+PASS: turning off click voice stops current playback immediately
+PASS: muting audio keeps every one of the fourteen click captions available
+PASS: an incoming notification interrupts recorded dialogue and displays its own preview
+PASS: click voice and volume persist independently from Kakao voice and sender assignments
+PASS: the packaged app plays its own bundled recordings without relying on Downloads or network access
+PASS: home stays centered just above the Dock on a negative-coordinate display
+PASS: home fits within a small usable display
+PASS: house entrance is clickable while transparent upper corners pass through
+PASS: automatic rest honors its interval and both automatic-rest and walking preferences
+PASS: requesting rest starts a journey and cannot equip the bed from a distance
+PASS: reaching the actual doorway starts the entry animation
+PASS: entry animation finishes before sleeping begins
+PASS: sleep lasts twenty seconds after entry, then permits automatic waking
+PASS: waking has a doorway cooldown so the character can leave the house
+PASS: a deliberate house click can return home during the automatic-entry cooldown
+PASS: cave and sleeping reference sprites load and the breathing motion changes over time
+PASS: home stays behind normal apps, above desktop icons, without taking keyboard focus
+PASS: controller home action walks toward the entrance instead of teleporting
+PASS: dragging the character cancels its homeward route
+PASS: dragging across the doorway never hides the character mid-drag
+PASS: dropping at the entrance enters bed and puts down only the carried prop
+PASS: moving the character and entering bed never changes the house coordinates
+PASS: wake restores the character at the doorway without shifting props or instantly sleeping again
+PASS: deliberately dragging the character into the house overrides automatic-entry cooldown
+PASS: requesting a prop wakes the character and keeps the pickup interaction
+PASS: an incoming alert wakes the sleeping character before displaying its transient bubble
+PASS: home and rest choices persist independently of sender and prop preferences
+PASS: pickup gesture precedes the equipment-specific action
+PASS: hover or drag interrupts a prop action without a delayed reaction after leaving
+PASS: short equipment actions finish so the character keeps walking
+PASS: all seven reference-based expressions and gestures load without the bag
+PASS: action sprites retain transparent corners
+PASS: 24-frame side walk, four 12-frame walks and six greeting frames load
+PASS: all five selected sprite atlases decode
+PASS: approved side sheet loads as a six-column four-row 24-frame atlas
+PASS: approved downward diagonal frames load at their original registered size
+PASS: downward diagonal head and face stay identical while the feet alternate
+PASS: all 24 joined side frames retain their registered cells and chronological order
+PASS: joining the limbs preserves every original head and bottom-sole pixel in all 24 frames
+PASS: opening the shoulder contours preserves all approved v14 leg pixels across the complete cycle
+PASS: down and up body heights survive loading instead of being normalized away
+PASS: both steps follow the same body-height cycle half a cycle apart
+PASS: the live side renderer visits all 24 drawings without skipping or repeating frames
+PASS: equipped accessories follow the side drawing's down and up weight shift
+PASS: the existing upward diagonal accessories keep their previous placement
+PASS: walking animation loops at full gait cycle
+PASS: negative gait phase wraps safely
+PASS: playback visits all twelve frames in order before looping
+PASS: walking upward uses rear art
+PASS: walking downward uses front art
+PASS: horizontal walking uses side art
+PASS: both upward diagonals use rear three-quarter art
+PASS: both downward diagonals use front three-quarter art
+PASS: configured stride advances exactly one complete gait cycle
+PASS: half the travel distance advances only half the gait cycle
+PASS: same displacement produces the same gait at different update rates
+PASS: diagonal gait uses actual path length, not summed axis distances
+PASS: stationary and rounded-away movement never advance the gait
+PASS: walking resumes from the paused gait without restarting it
+PASS: each walk contains its full set of distinct drawings
+PASS: walk frames contain different artwork
+PASS: all registered frames keep transparent corners
+PASS: packaged app loads its own new expression atlas
+PASS: packaged app loads its own bundled sprite, independent of source files
+155 checks passed. Notification parser checks use fixtures, not a live KakaoTalk delivery.

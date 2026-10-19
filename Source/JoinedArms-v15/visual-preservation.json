@@ -1,0 +1,253 @@
+{
+  "date": "2026-10-19",
+  "frames": [
+    {
+      "frame": 1,
+      "changed_pixels": 113,
+      "bounds": [
+        56,
+        137,
+        148,
+        147
+      ]
+    },
+    {
+      "frame": 2,
+      "changed_pixels": 112,
+      "bounds": [
+        55,
+        140,
+        148,
+        149
+      ]
+    },
+    {
+      "frame": 3,
+      "changed_pixels": 111,
+      "bounds": [
+        55,
+        142,
+        148,
+        151
+      ]
+    },
+    {
+      "frame": 4,
+      "changed_pixels": 113,
+      "bounds": [
+        55,
+        143,
+        148,
+        151
+      ]
+    },
+    {
+      "frame": 5,
+      "changed_pixels": 111,
+      "bounds": [
+        55,
+        142,
+        148,
+        150
+      ]
+    },
+    {
+      "frame": 6,
+      "changed_pixels": 113,
+      "bounds": [
+        55,
+        139,
+        148,
+        147
+      ]
+    },
+    {
+      "frame": 7,
+      "changed_pixels": 102,
+      "bounds": [
+        55,
+        137,
+        148,
+        143
+      ]
+    },
+    {
+      "frame": 8,
+      "changed_pixels": 112,
+      "bounds": [
+        55,
+        133,
+        148,
+        141
+      ]
+    },
+    {
+      "frame": 9,
+      "changed_pixels": 110,
+      "bounds": [
+        55,
+        131,
+        148,
+        140
+      ]
+    },
+    {
+      "frame": 10,
+      "changed_pixels": 109,
+      "bounds": [
+        55,
+        130,
+        148,
+        139
+      ]
+    },
+    {
+      "frame": 11,
+      "changed_pixels": 108,
+      "bounds": [
+        55,
+        131,
+        148,
+        141
+      ]
+    },
+    {
+      "frame": 12,
+      "changed_pixels": 107,
+      "bounds": [
+        55,
+        133,
+        148,
+        143
+      ]
+    },
+    {
+      "frame": 13,
+      "changed_pixels": 107,
+      "bounds": [
+        55,
+        136,
+        148,
+        146
+      ]
+    },
+    {
+      "frame": 14,
+      "changed_pixels": 109,
+      "bounds": [
+        55,
+        139,
+        148,
+        148
+      ]
+    },
+    {
+      "frame": 15,
+      "changed_pixels": 108,
+      "bounds": [
+        55,
+        140,
+        148,
+        150
+      ]
+    },
+    {
+      "frame": 16,
+      "changed_pixels": 109,
+      "bounds": [
+        55,
+        141,
+        148,
+        150
+      ]
+    },
+    {
+      "frame": 17,
+      "changed_pixels": 108,
+      "bounds": [
+        55,
+        141,
+        148,
+        149
+      ]
+    },
+    {
+      "frame": 18,
+      "changed_pixels": 111,
+      "bounds": [
+        54,
+        139,
+        148,
+        147
+      ]
+    },
+    {
+      "frame": 19,
+      "changed_pixels": 102,
+      "bounds": [
+        55,
+        137,
+        148,
+        143
+      ]
+    },
+    {
+      "frame": 20,
+      "changed_pixels": 111,
+      "bounds": [
+        55,
+        134,
+        148,
+        142
+      ]
+    },
+    {
+      "frame": 21,
+      "changed_pixels": 114,
+      "bounds": [
+        55,
+        132,
+        148,
+        140
+      ]
+    },
+    {
+      "frame": 22,
+      "changed_pixels": 113,
+      "bounds": [
+        55,
+        132,
+        148,
+        140
+      ]
+    },
+    {
+      "frame": 23,
+      "changed_pixels": 114,
+      "bounds": [
+        55,
+        132,
+        148,
+        142
+      ]
+    },
+    {
+      "frame": 24,
+      "changed_pixels": 113,
+      "bounds": [
+        55,
+        134,
+        148,
+        144
+      ]
+    }
+  ],
+  "approved_v14_legs_pixel_identical": true,
+  "every_pixel_outside_transformed_arm_caps_identical": true,
+  "foot_paths_body_bob_arm_swing_and_pivots_unchanged": true,
+  "runtime_movement_code_unchanged": true,
+  "frame_count": 24,
+  "distance_per_cycle_points": 62.7,
+  "default_speed_points_per_second": 46,
+  "native_arm_local_clip_max_y": 0
+}

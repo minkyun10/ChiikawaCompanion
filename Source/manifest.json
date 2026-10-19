@@ -1,10 +1,10 @@
 {
   "created_at": "2026-10-16T12:08:58.617148+00:00",
   "operation": "copy; originals preserved",
-  "image_file_count": 874,
-  "unique_image_content_count": 689,
-  "supporting_file_count": 105,
-  "image_bytes": 213610820,
+  "image_file_count": 1003,
+  "unique_image_content_count": 747,
+  "supporting_file_count": 118,
+  "image_bytes": 234882276,
   "symmetric_walk_runtime_applied": true,
   "files": [
     {
@@ -3390,6 +3390,944 @@
     },
     {
       "kind": "image",
+      "source": "Source/JoinedArms-v15/Final/Frames/left-01.png",
+      "archive_path": "JoinedArms-v15/Final/Frames/left-01.png",
+      "bytes": 44308,
+      "sha256": "1d73b831ba0bd1276104c54b1bddfc18a77acb436d24ef75f4c0eef21246445e"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Final/Frames/left-02.png",
+      "archive_path": "JoinedArms-v15/Final/Frames/left-02.png",
+      "bytes": 45026,
+      "sha256": "664450f04f034eba50813f3834481f46a7ff9e6ffb2aadd447f7e63c2b7ce002"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Final/Frames/left-03.png",
+      "archive_path": "JoinedArms-v15/Final/Frames/left-03.png",
+      "bytes": 44804,
+      "sha256": "b2b85167e37fcd4fb4fef6d8d6bb77d36d7b40e4abdfafbdf1befdcf29b75994"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Final/Frames/left-04.png",
+      "archive_path": "JoinedArms-v15/Final/Frames/left-04.png",
+      "bytes": 45448,
+      "sha256": "942cbd070308a94403220e018dd90877743449eecc0745e7b3f6bb669d667574"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Final/Frames/left-05.png",
+      "archive_path": "JoinedArms-v15/Final/Frames/left-05.png",
+      "bytes": 44594,
+      "sha256": "45759a8f3d92f758a4025ae8745477f548565d3b6831bc03778d11ab4af675ea"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Final/Frames/left-06.png",
+      "archive_path": "JoinedArms-v15/Final/Frames/left-06.png",
+      "bytes": 44663,
+      "sha256": "a02335f9763c18e094fe144a34ff43243753b43ae95de570a209570b84a180cb"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Final/Frames/left-07.png",
+      "archive_path": "JoinedArms-v15/Final/Frames/left-07.png",
+      "bytes": 44095,
+      "sha256": "584551859c3859acc7c52f8ce35d39e5abe7dd7239fd85b535fd733d869d04b8"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Final/Frames/left-08.png",
+      "archive_path": "JoinedArms-v15/Final/Frames/left-08.png",
+      "bytes": 44961,
+      "sha256": "8c4fc5e4a7b3a99dcc1b111e048f96b0e8c0ecccd6a7ecdd6e9e4edd8c0bf0e0"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Final/Frames/left-09.png",
+      "archive_path": "JoinedArms-v15/Final/Frames/left-09.png",
+      "bytes": 44996,
+      "sha256": "5d80cad7ddc298c726a33459c877f60263a5fa12363d9a385583c80af24dbeaa"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Final/Frames/left-10.png",
+      "archive_path": "JoinedArms-v15/Final/Frames/left-10.png",
+      "bytes": 45656,
+      "sha256": "7092314c9f1e9ffa923625c489748e997e1c68a397cacd7087fe268a11de732b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Final/Frames/left-11.png",
+      "archive_path": "JoinedArms-v15/Final/Frames/left-11.png",
+      "bytes": 45252,
+      "sha256": "d6aa6d3b82911d31aacebed0b07e1d71c90e0fd531bf98a1581de0ab51dba0fd"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Final/Frames/left-12.png",
+      "archive_path": "JoinedArms-v15/Final/Frames/left-12.png",
+      "bytes": 45301,
+      "sha256": "a85e04a9e35954ca2c2b3db28406c25a362f0636089a60f32d6d82c04ef0c8ce"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Final/Frames/left-13.png",
+      "archive_path": "JoinedArms-v15/Final/Frames/left-13.png",
+      "bytes": 44210,
+      "sha256": "4661f828aba3b9df4d6cd5f76ab23cba1d71c04e68520bb139eedc7953b8c8c7"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Final/Frames/left-14.png",
+      "archive_path": "JoinedArms-v15/Final/Frames/left-14.png",
+      "bytes": 44936,
+      "sha256": "7dd5b233ddaa7afdf80c926064ce55bee994ef30527558d298bad375ce5871ad"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Final/Frames/left-15.png",
+      "archive_path": "JoinedArms-v15/Final/Frames/left-15.png",
+      "bytes": 44737,
+      "sha256": "0d388b38c7da0309a8972f2deb804eeb272ba3aadea2e69ed70e504fb8f03b11"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Final/Frames/left-16.png",
+      "archive_path": "JoinedArms-v15/Final/Frames/left-16.png",
+      "bytes": 45213,
+      "sha256": "74b8330e4e4118385e25241538eaa5908f01abeffc99fd8f7b72594697f1ef70"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Final/Frames/left-17.png",
+      "archive_path": "JoinedArms-v15/Final/Frames/left-17.png",
+      "bytes": 44521,
+      "sha256": "607c97283a28f848568d317dd865d5d55bd3e0a4bc9233b722709f26823a011a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Final/Frames/left-18.png",
+      "archive_path": "JoinedArms-v15/Final/Frames/left-18.png",
+      "bytes": 44632,
+      "sha256": "adcb1b953f0db4725cf07518bc533f58a7f16a5b261570b877d56df5ef9a6d7b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Final/Frames/left-19.png",
+      "archive_path": "JoinedArms-v15/Final/Frames/left-19.png",
+      "bytes": 44077,
+      "sha256": "2654c38b6fcd919fde606c2d6100b3cd55a9917aad4a1c2d733402456954215b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Final/Frames/left-20.png",
+      "archive_path": "JoinedArms-v15/Final/Frames/left-20.png",
+      "bytes": 44957,
+      "sha256": "d23a918d5f8e0fa3351bc34b7a844b6293bb1596810b8677ccf5cb0a96aada71"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Final/Frames/left-21.png",
+      "archive_path": "JoinedArms-v15/Final/Frames/left-21.png",
+      "bytes": 45130,
+      "sha256": "21741a804e0cf5ad3798d66c3089bd6d250909632af3bb9ac158ac94cc5a5820"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Final/Frames/left-22.png",
+      "archive_path": "JoinedArms-v15/Final/Frames/left-22.png",
+      "bytes": 45872,
+      "sha256": "fc0124694181f54e2b1368e20908c4d37fb6f38f1cde08b501224cb9b5a14c13"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Final/Frames/left-23.png",
+      "archive_path": "JoinedArms-v15/Final/Frames/left-23.png",
+      "bytes": 45326,
+      "sha256": "332d5779bb64ca55b12cac8751eb4bfaa5f49e4f4efe5adb82694a6e9106f311"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Final/Frames/left-24.png",
+      "archive_path": "JoinedArms-v15/Final/Frames/left-24.png",
+      "bytes": 45311,
+      "sha256": "ceb1278bb4abf212ae04d422f223fc500e25ae9e2c76569a44215a26888763e6"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Final/Frames/right-01.png",
+      "archive_path": "JoinedArms-v15/Final/Frames/right-01.png",
+      "bytes": 44334,
+      "sha256": "0762dcfac0c7b980a63ff43219a59c05546532e7ea91a26706d3f4b3d6695f18"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Final/Frames/right-02.png",
+      "archive_path": "JoinedArms-v15/Final/Frames/right-02.png",
+      "bytes": 45027,
+      "sha256": "652c40af2aa6d6e00f4d29a28c9e4b539ec054a8f3a4b2ddfc12bd3005c2d548"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Final/Frames/right-03.png",
+      "archive_path": "JoinedArms-v15/Final/Frames/right-03.png",
+      "bytes": 44830,
+      "sha256": "acff42963ef117df7dc57195183906df070630bb26755e64e3581e588f32f794"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Final/Frames/right-04.png",
+      "archive_path": "JoinedArms-v15/Final/Frames/right-04.png",
+      "bytes": 45339,
+      "sha256": "d4f00cb92f298606070016433a172d7dde2f788ed718109ca954ef2c7ccc79ef"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Final/Frames/right-05.png",
+      "archive_path": "JoinedArms-v15/Final/Frames/right-05.png",
+      "bytes": 44587,
+      "sha256": "ba2edf6ea8a7dc91ea36b5d21fdfcf96f911d320be8fedaa543ba35959094f41"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Final/Frames/right-06.png",
+      "archive_path": "JoinedArms-v15/Final/Frames/right-06.png",
+      "bytes": 44643,
+      "sha256": "898d7ee09bd6930c6da6d293542f25a7797e0cfe95a137072b294e294b5d5608"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Final/Frames/right-07.png",
+      "archive_path": "JoinedArms-v15/Final/Frames/right-07.png",
+      "bytes": 44202,
+      "sha256": "de4ee68b2168fac05d078ba3cf058ec1f88096f89995d0008d255c105a2ad3b9"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Final/Frames/right-08.png",
+      "archive_path": "JoinedArms-v15/Final/Frames/right-08.png",
+      "bytes": 44963,
+      "sha256": "3ae0f6d52a133654c8589d8160fb52f060ee7c6c830e43bfc86d89ce907b133b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Final/Frames/right-09.png",
+      "archive_path": "JoinedArms-v15/Final/Frames/right-09.png",
+      "bytes": 45106,
+      "sha256": "153ff101b5569d22629abd27967b5e251e00938d49f9d294671058829887ed9b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Final/Frames/right-10.png",
+      "archive_path": "JoinedArms-v15/Final/Frames/right-10.png",
+      "bytes": 45866,
+      "sha256": "a93a0a4b38df97cb394ca645d8d0aba32654fa2e015250fd28ffb8f1d8baef3e"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Final/Frames/right-11.png",
+      "archive_path": "JoinedArms-v15/Final/Frames/right-11.png",
+      "bytes": 45348,
+      "sha256": "a008b7ff20a4ab0c9139c4d295b1909d35e170f37848afaff7acd08e0d5f280b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Final/Frames/right-12.png",
+      "archive_path": "JoinedArms-v15/Final/Frames/right-12.png",
+      "bytes": 45311,
+      "sha256": "d1c83c2030382df356b2ae433e89cfeb7a988cf85c38b61ba27b04e8a3182a5f"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Final/Frames/right-13.png",
+      "archive_path": "JoinedArms-v15/Final/Frames/right-13.png",
+      "bytes": 44179,
+      "sha256": "2c3c3b260aad389cbfd448bb2d4d1f1f2a1e1fd69b5111f2275b3ca573ada269"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Final/Frames/right-14.png",
+      "archive_path": "JoinedArms-v15/Final/Frames/right-14.png",
+      "bytes": 44920,
+      "sha256": "6e868c4226afeaef4c38f1c76230abb3424c9c46c9e89626d9104908339f4397"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Final/Frames/right-15.png",
+      "archive_path": "JoinedArms-v15/Final/Frames/right-15.png",
+      "bytes": 44650,
+      "sha256": "64340987470792c23347f7be7e97c6b00429e0f2f30bd280b83c89e523c635c0"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Final/Frames/right-16.png",
+      "archive_path": "JoinedArms-v15/Final/Frames/right-16.png",
+      "bytes": 45304,
+      "sha256": "575730993becb2aca3b3e2abcf314ff2e2b3e1dc05a7f5a00a115a1c80f3c0cd"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Final/Frames/right-17.png",
+      "archive_path": "JoinedArms-v15/Final/Frames/right-17.png",
+      "bytes": 44520,
+      "sha256": "b5b04f1267b042655d13b8b204d557b42c980299c56e709fd946c236f5f80890"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Final/Frames/right-18.png",
+      "archive_path": "JoinedArms-v15/Final/Frames/right-18.png",
+      "bytes": 44619,
+      "sha256": "da45c2a0e1e967ad97b821fad8bd05eb843138e435d53075a5143a3963e6c007"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Final/Frames/right-19.png",
+      "archive_path": "JoinedArms-v15/Final/Frames/right-19.png",
+      "bytes": 44190,
+      "sha256": "a7e5529072501d5035e28c402999bb87447c779879a606c83a943b42f1c105ef"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Final/Frames/right-20.png",
+      "archive_path": "JoinedArms-v15/Final/Frames/right-20.png",
+      "bytes": 45030,
+      "sha256": "33248e1fe1a89ee91d4536d644b0f5b37ca01205f4793e19e5ef0a4a14438cdf"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Final/Frames/right-21.png",
+      "archive_path": "JoinedArms-v15/Final/Frames/right-21.png",
+      "bytes": 45134,
+      "sha256": "74d853ed87293059494d3d18af77a5895b08c7172f1e92cc404354236e60b376"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Final/Frames/right-22.png",
+      "archive_path": "JoinedArms-v15/Final/Frames/right-22.png",
+      "bytes": 45874,
+      "sha256": "6ec4a878e06e5a5c9400d2916c269be78a50c4ebfd721c3f9f0a0f9160aefcdf"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Final/Frames/right-23.png",
+      "archive_path": "JoinedArms-v15/Final/Frames/right-23.png",
+      "bytes": 45463,
+      "sha256": "b432799fa2094d5d46ec5225aa890d28595aad0c22ba0997b0a7a1dd2a0f6600"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Final/Frames/right-24.png",
+      "archive_path": "JoinedArms-v15/Final/Frames/right-24.png",
+      "bytes": 45417,
+      "sha256": "f6f2495ccf64febaa6fb8d23c3d1b396162c34d0ce3d88d826f95f46bb656c27"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Final/hachiware-four-phase-keyposes-v15.png",
+      "archive_path": "JoinedArms-v15/Final/hachiware-four-phase-keyposes-v15.png",
+      "bytes": 339046,
+      "sha256": "81c2d279f7b031cdfb801aab122a8e01c667a56fab8e589ec6dd1a75c417cf88"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Final/hachiware-four-phase-walk-slow-v15.gif",
+      "archive_path": "JoinedArms-v15/Final/hachiware-four-phase-walk-slow-v15.gif",
+      "bytes": 385176,
+      "sha256": "4c94233db252cde0fab971d4b8514c7e649a31af5ca797f09c7b8ba428e4dcc7"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Final/hachiware-four-phase-walk-v15.gif",
+      "archive_path": "JoinedArms-v15/Final/hachiware-four-phase-walk-v15.gif",
+      "bytes": 384714,
+      "sha256": "db1108f8a95ec3b8a3ca6ac5ebb408b888f9c85b4669b30a88762f525b2cc6d2"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Final/hachiware-side-24-frame-review-v15.png",
+      "archive_path": "JoinedArms-v15/Final/hachiware-side-24-frame-review-v15.png",
+      "bytes": 628776,
+      "sha256": "c686b5cc196a871cc5dfaaf93587dcce0ca0064a593e616d36ab78f047f51dee"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Final/hachiware-side-24-frame-sheet-v15.png",
+      "archive_path": "JoinedArms-v15/Final/hachiware-side-24-frame-sheet-v15.png",
+      "bytes": 709506,
+      "sha256": "0e93e86ef628c0d246c3b60371b25a39cbd8afbb2e8983ed5626d44a1850a09c"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/JoinedArms-v15/Final/validation.json",
+      "archive_path": "JoinedArms-v15/Final/validation.json",
+      "bytes": 767,
+      "sha256": "68b6a1e950c6eac75c030d7b0925c6dc1d71bfbb0ab1648bfd4c44f485e7973b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Iterations/01-open-shoulder/Frames/left-01.png",
+      "archive_path": "JoinedArms-v15/Iterations/01-open-shoulder/Frames/left-01.png",
+      "bytes": 44308,
+      "sha256": "1d73b831ba0bd1276104c54b1bddfc18a77acb436d24ef75f4c0eef21246445e"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Iterations/01-open-shoulder/Frames/left-02.png",
+      "archive_path": "JoinedArms-v15/Iterations/01-open-shoulder/Frames/left-02.png",
+      "bytes": 45026,
+      "sha256": "664450f04f034eba50813f3834481f46a7ff9e6ffb2aadd447f7e63c2b7ce002"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Iterations/01-open-shoulder/Frames/left-03.png",
+      "archive_path": "JoinedArms-v15/Iterations/01-open-shoulder/Frames/left-03.png",
+      "bytes": 44804,
+      "sha256": "b2b85167e37fcd4fb4fef6d8d6bb77d36d7b40e4abdfafbdf1befdcf29b75994"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Iterations/01-open-shoulder/Frames/left-04.png",
+      "archive_path": "JoinedArms-v15/Iterations/01-open-shoulder/Frames/left-04.png",
+      "bytes": 45448,
+      "sha256": "942cbd070308a94403220e018dd90877743449eecc0745e7b3f6bb669d667574"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Iterations/01-open-shoulder/Frames/left-05.png",
+      "archive_path": "JoinedArms-v15/Iterations/01-open-shoulder/Frames/left-05.png",
+      "bytes": 44594,
+      "sha256": "45759a8f3d92f758a4025ae8745477f548565d3b6831bc03778d11ab4af675ea"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Iterations/01-open-shoulder/Frames/left-06.png",
+      "archive_path": "JoinedArms-v15/Iterations/01-open-shoulder/Frames/left-06.png",
+      "bytes": 44663,
+      "sha256": "a02335f9763c18e094fe144a34ff43243753b43ae95de570a209570b84a180cb"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Iterations/01-open-shoulder/Frames/left-07.png",
+      "archive_path": "JoinedArms-v15/Iterations/01-open-shoulder/Frames/left-07.png",
+      "bytes": 44095,
+      "sha256": "584551859c3859acc7c52f8ce35d39e5abe7dd7239fd85b535fd733d869d04b8"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Iterations/01-open-shoulder/Frames/left-08.png",
+      "archive_path": "JoinedArms-v15/Iterations/01-open-shoulder/Frames/left-08.png",
+      "bytes": 44961,
+      "sha256": "8c4fc5e4a7b3a99dcc1b111e048f96b0e8c0ecccd6a7ecdd6e9e4edd8c0bf0e0"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Iterations/01-open-shoulder/Frames/left-09.png",
+      "archive_path": "JoinedArms-v15/Iterations/01-open-shoulder/Frames/left-09.png",
+      "bytes": 44996,
+      "sha256": "5d80cad7ddc298c726a33459c877f60263a5fa12363d9a385583c80af24dbeaa"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Iterations/01-open-shoulder/Frames/left-10.png",
+      "archive_path": "JoinedArms-v15/Iterations/01-open-shoulder/Frames/left-10.png",
+      "bytes": 45656,
+      "sha256": "7092314c9f1e9ffa923625c489748e997e1c68a397cacd7087fe268a11de732b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Iterations/01-open-shoulder/Frames/left-11.png",
+      "archive_path": "JoinedArms-v15/Iterations/01-open-shoulder/Frames/left-11.png",
+      "bytes": 45252,
+      "sha256": "d6aa6d3b82911d31aacebed0b07e1d71c90e0fd531bf98a1581de0ab51dba0fd"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Iterations/01-open-shoulder/Frames/left-12.png",
+      "archive_path": "JoinedArms-v15/Iterations/01-open-shoulder/Frames/left-12.png",
+      "bytes": 45301,
+      "sha256": "a85e04a9e35954ca2c2b3db28406c25a362f0636089a60f32d6d82c04ef0c8ce"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Iterations/01-open-shoulder/Frames/left-13.png",
+      "archive_path": "JoinedArms-v15/Iterations/01-open-shoulder/Frames/left-13.png",
+      "bytes": 44210,
+      "sha256": "4661f828aba3b9df4d6cd5f76ab23cba1d71c04e68520bb139eedc7953b8c8c7"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Iterations/01-open-shoulder/Frames/left-14.png",
+      "archive_path": "JoinedArms-v15/Iterations/01-open-shoulder/Frames/left-14.png",
+      "bytes": 44936,
+      "sha256": "7dd5b233ddaa7afdf80c926064ce55bee994ef30527558d298bad375ce5871ad"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Iterations/01-open-shoulder/Frames/left-15.png",
+      "archive_path": "JoinedArms-v15/Iterations/01-open-shoulder/Frames/left-15.png",
+      "bytes": 44737,
+      "sha256": "0d388b38c7da0309a8972f2deb804eeb272ba3aadea2e69ed70e504fb8f03b11"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Iterations/01-open-shoulder/Frames/left-16.png",
+      "archive_path": "JoinedArms-v15/Iterations/01-open-shoulder/Frames/left-16.png",
+      "bytes": 45213,
+      "sha256": "74b8330e4e4118385e25241538eaa5908f01abeffc99fd8f7b72594697f1ef70"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Iterations/01-open-shoulder/Frames/left-17.png",
+      "archive_path": "JoinedArms-v15/Iterations/01-open-shoulder/Frames/left-17.png",
+      "bytes": 44521,
+      "sha256": "607c97283a28f848568d317dd865d5d55bd3e0a4bc9233b722709f26823a011a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Iterations/01-open-shoulder/Frames/left-18.png",
+      "archive_path": "JoinedArms-v15/Iterations/01-open-shoulder/Frames/left-18.png",
+      "bytes": 44632,
+      "sha256": "adcb1b953f0db4725cf07518bc533f58a7f16a5b261570b877d56df5ef9a6d7b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Iterations/01-open-shoulder/Frames/left-19.png",
+      "archive_path": "JoinedArms-v15/Iterations/01-open-shoulder/Frames/left-19.png",
+      "bytes": 44077,
+      "sha256": "2654c38b6fcd919fde606c2d6100b3cd55a9917aad4a1c2d733402456954215b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Iterations/01-open-shoulder/Frames/left-20.png",
+      "archive_path": "JoinedArms-v15/Iterations/01-open-shoulder/Frames/left-20.png",
+      "bytes": 44957,
+      "sha256": "d23a918d5f8e0fa3351bc34b7a844b6293bb1596810b8677ccf5cb0a96aada71"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Iterations/01-open-shoulder/Frames/left-21.png",
+      "archive_path": "JoinedArms-v15/Iterations/01-open-shoulder/Frames/left-21.png",
+      "bytes": 45130,
+      "sha256": "21741a804e0cf5ad3798d66c3089bd6d250909632af3bb9ac158ac94cc5a5820"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Iterations/01-open-shoulder/Frames/left-22.png",
+      "archive_path": "JoinedArms-v15/Iterations/01-open-shoulder/Frames/left-22.png",
+      "bytes": 45872,
+      "sha256": "fc0124694181f54e2b1368e20908c4d37fb6f38f1cde08b501224cb9b5a14c13"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Iterations/01-open-shoulder/Frames/left-23.png",
+      "archive_path": "JoinedArms-v15/Iterations/01-open-shoulder/Frames/left-23.png",
+      "bytes": 45326,
+      "sha256": "332d5779bb64ca55b12cac8751eb4bfaa5f49e4f4efe5adb82694a6e9106f311"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Iterations/01-open-shoulder/Frames/left-24.png",
+      "archive_path": "JoinedArms-v15/Iterations/01-open-shoulder/Frames/left-24.png",
+      "bytes": 45311,
+      "sha256": "ceb1278bb4abf212ae04d422f223fc500e25ae9e2c76569a44215a26888763e6"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Iterations/01-open-shoulder/Frames/right-01.png",
+      "archive_path": "JoinedArms-v15/Iterations/01-open-shoulder/Frames/right-01.png",
+      "bytes": 44334,
+      "sha256": "0762dcfac0c7b980a63ff43219a59c05546532e7ea91a26706d3f4b3d6695f18"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Iterations/01-open-shoulder/Frames/right-02.png",
+      "archive_path": "JoinedArms-v15/Iterations/01-open-shoulder/Frames/right-02.png",
+      "bytes": 45027,
+      "sha256": "652c40af2aa6d6e00f4d29a28c9e4b539ec054a8f3a4b2ddfc12bd3005c2d548"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Iterations/01-open-shoulder/Frames/right-03.png",
+      "archive_path": "JoinedArms-v15/Iterations/01-open-shoulder/Frames/right-03.png",
+      "bytes": 44830,
+      "sha256": "acff42963ef117df7dc57195183906df070630bb26755e64e3581e588f32f794"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Iterations/01-open-shoulder/Frames/right-04.png",
+      "archive_path": "JoinedArms-v15/Iterations/01-open-shoulder/Frames/right-04.png",
+      "bytes": 45339,
+      "sha256": "d4f00cb92f298606070016433a172d7dde2f788ed718109ca954ef2c7ccc79ef"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Iterations/01-open-shoulder/Frames/right-05.png",
+      "archive_path": "JoinedArms-v15/Iterations/01-open-shoulder/Frames/right-05.png",
+      "bytes": 44587,
+      "sha256": "ba2edf6ea8a7dc91ea36b5d21fdfcf96f911d320be8fedaa543ba35959094f41"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Iterations/01-open-shoulder/Frames/right-06.png",
+      "archive_path": "JoinedArms-v15/Iterations/01-open-shoulder/Frames/right-06.png",
+      "bytes": 44643,
+      "sha256": "898d7ee09bd6930c6da6d293542f25a7797e0cfe95a137072b294e294b5d5608"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Iterations/01-open-shoulder/Frames/right-07.png",
+      "archive_path": "JoinedArms-v15/Iterations/01-open-shoulder/Frames/right-07.png",
+      "bytes": 44202,
+      "sha256": "de4ee68b2168fac05d078ba3cf058ec1f88096f89995d0008d255c105a2ad3b9"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Iterations/01-open-shoulder/Frames/right-08.png",
+      "archive_path": "JoinedArms-v15/Iterations/01-open-shoulder/Frames/right-08.png",
+      "bytes": 44963,
+      "sha256": "3ae0f6d52a133654c8589d8160fb52f060ee7c6c830e43bfc86d89ce907b133b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Iterations/01-open-shoulder/Frames/right-09.png",
+      "archive_path": "JoinedArms-v15/Iterations/01-open-shoulder/Frames/right-09.png",
+      "bytes": 45106,
+      "sha256": "153ff101b5569d22629abd27967b5e251e00938d49f9d294671058829887ed9b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Iterations/01-open-shoulder/Frames/right-10.png",
+      "archive_path": "JoinedArms-v15/Iterations/01-open-shoulder/Frames/right-10.png",
+      "bytes": 45866,
+      "sha256": "a93a0a4b38df97cb394ca645d8d0aba32654fa2e015250fd28ffb8f1d8baef3e"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Iterations/01-open-shoulder/Frames/right-11.png",
+      "archive_path": "JoinedArms-v15/Iterations/01-open-shoulder/Frames/right-11.png",
+      "bytes": 45348,
+      "sha256": "a008b7ff20a4ab0c9139c4d295b1909d35e170f37848afaff7acd08e0d5f280b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Iterations/01-open-shoulder/Frames/right-12.png",
+      "archive_path": "JoinedArms-v15/Iterations/01-open-shoulder/Frames/right-12.png",
+      "bytes": 45311,
+      "sha256": "d1c83c2030382df356b2ae433e89cfeb7a988cf85c38b61ba27b04e8a3182a5f"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Iterations/01-open-shoulder/Frames/right-13.png",
+      "archive_path": "JoinedArms-v15/Iterations/01-open-shoulder/Frames/right-13.png",
+      "bytes": 44179,
+      "sha256": "2c3c3b260aad389cbfd448bb2d4d1f1f2a1e1fd69b5111f2275b3ca573ada269"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Iterations/01-open-shoulder/Frames/right-14.png",
+      "archive_path": "JoinedArms-v15/Iterations/01-open-shoulder/Frames/right-14.png",
+      "bytes": 44920,
+      "sha256": "6e868c4226afeaef4c38f1c76230abb3424c9c46c9e89626d9104908339f4397"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Iterations/01-open-shoulder/Frames/right-15.png",
+      "archive_path": "JoinedArms-v15/Iterations/01-open-shoulder/Frames/right-15.png",
+      "bytes": 44650,
+      "sha256": "64340987470792c23347f7be7e97c6b00429e0f2f30bd280b83c89e523c635c0"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Iterations/01-open-shoulder/Frames/right-16.png",
+      "archive_path": "JoinedArms-v15/Iterations/01-open-shoulder/Frames/right-16.png",
+      "bytes": 45304,
+      "sha256": "575730993becb2aca3b3e2abcf314ff2e2b3e1dc05a7f5a00a115a1c80f3c0cd"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Iterations/01-open-shoulder/Frames/right-17.png",
+      "archive_path": "JoinedArms-v15/Iterations/01-open-shoulder/Frames/right-17.png",
+      "bytes": 44520,
+      "sha256": "b5b04f1267b042655d13b8b204d557b42c980299c56e709fd946c236f5f80890"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Iterations/01-open-shoulder/Frames/right-18.png",
+      "archive_path": "JoinedArms-v15/Iterations/01-open-shoulder/Frames/right-18.png",
+      "bytes": 44619,
+      "sha256": "da45c2a0e1e967ad97b821fad8bd05eb843138e435d53075a5143a3963e6c007"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Iterations/01-open-shoulder/Frames/right-19.png",
+      "archive_path": "JoinedArms-v15/Iterations/01-open-shoulder/Frames/right-19.png",
+      "bytes": 44190,
+      "sha256": "a7e5529072501d5035e28c402999bb87447c779879a606c83a943b42f1c105ef"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Iterations/01-open-shoulder/Frames/right-20.png",
+      "archive_path": "JoinedArms-v15/Iterations/01-open-shoulder/Frames/right-20.png",
+      "bytes": 45030,
+      "sha256": "33248e1fe1a89ee91d4536d644b0f5b37ca01205f4793e19e5ef0a4a14438cdf"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Iterations/01-open-shoulder/Frames/right-21.png",
+      "archive_path": "JoinedArms-v15/Iterations/01-open-shoulder/Frames/right-21.png",
+      "bytes": 45134,
+      "sha256": "74d853ed87293059494d3d18af77a5895b08c7172f1e92cc404354236e60b376"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Iterations/01-open-shoulder/Frames/right-22.png",
+      "archive_path": "JoinedArms-v15/Iterations/01-open-shoulder/Frames/right-22.png",
+      "bytes": 45874,
+      "sha256": "6ec4a878e06e5a5c9400d2916c269be78a50c4ebfd721c3f9f0a0f9160aefcdf"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Iterations/01-open-shoulder/Frames/right-23.png",
+      "archive_path": "JoinedArms-v15/Iterations/01-open-shoulder/Frames/right-23.png",
+      "bytes": 45463,
+      "sha256": "b432799fa2094d5d46ec5225aa890d28595aad0c22ba0997b0a7a1dd2a0f6600"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Iterations/01-open-shoulder/Frames/right-24.png",
+      "archive_path": "JoinedArms-v15/Iterations/01-open-shoulder/Frames/right-24.png",
+      "bytes": 45417,
+      "sha256": "f6f2495ccf64febaa6fb8d23c3d1b396162c34d0ce3d88d826f95f46bb656c27"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Iterations/01-open-shoulder/hachiware-four-phase-keyposes-v15.png",
+      "archive_path": "JoinedArms-v15/Iterations/01-open-shoulder/hachiware-four-phase-keyposes-v15.png",
+      "bytes": 339046,
+      "sha256": "81c2d279f7b031cdfb801aab122a8e01c667a56fab8e589ec6dd1a75c417cf88"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Iterations/01-open-shoulder/hachiware-four-phase-walk-slow-v15.gif",
+      "archive_path": "JoinedArms-v15/Iterations/01-open-shoulder/hachiware-four-phase-walk-slow-v15.gif",
+      "bytes": 385176,
+      "sha256": "4c94233db252cde0fab971d4b8514c7e649a31af5ca797f09c7b8ba428e4dcc7"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Iterations/01-open-shoulder/hachiware-four-phase-walk-v15.gif",
+      "archive_path": "JoinedArms-v15/Iterations/01-open-shoulder/hachiware-four-phase-walk-v15.gif",
+      "bytes": 384714,
+      "sha256": "db1108f8a95ec3b8a3ca6ac5ebb408b888f9c85b4669b30a88762f525b2cc6d2"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Iterations/01-open-shoulder/hachiware-side-24-frame-review-v15.png",
+      "archive_path": "JoinedArms-v15/Iterations/01-open-shoulder/hachiware-side-24-frame-review-v15.png",
+      "bytes": 628776,
+      "sha256": "c686b5cc196a871cc5dfaaf93587dcce0ca0064a593e616d36ab78f047f51dee"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Iterations/01-open-shoulder/hachiware-side-24-frame-sheet-v15.png",
+      "archive_path": "JoinedArms-v15/Iterations/01-open-shoulder/hachiware-side-24-frame-sheet-v15.png",
+      "bytes": 709506,
+      "sha256": "0e93e86ef628c0d246c3b60371b25a39cbd8afbb2e8983ed5626d44a1850a09c"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/JoinedArms-v15/Iterations/01-open-shoulder/validation.json",
+      "archive_path": "JoinedArms-v15/Iterations/01-open-shoulder/validation.json",
+      "bytes": 767,
+      "sha256": "68b6a1e950c6eac75c030d7b0925c6dc1d71bfbb0ab1648bfd4c44f485e7973b"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/JoinedArms-v15/JoinedArmPreview.swift",
+      "archive_path": "JoinedArms-v15/JoinedArmPreview.swift",
+      "bytes": 17523,
+      "sha256": "4721455e3ebd4535dc4f8beda8f111ee24b2b33996f4fd1aabe6489b6d244c49"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/JoinedArms-v15/README.txt",
+      "archive_path": "JoinedArms-v15/README.txt",
+      "bytes": 1778,
+      "sha256": "af1b9b2a47d87e8e3cdb914a25cee402a1b0bda5e8f1b4e2c6de55fcde12afcf"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Review/friends.png",
+      "archive_path": "JoinedArms-v15/Review/friends.png",
+      "bytes": 130750,
+      "sha256": "d358479d8d5e811e4d92ef921ce2437356ec9be1da5bff246e27a1d55b67c63e"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Review/hachiware-12-frame-walk.gif",
+      "archive_path": "JoinedArms-v15/Review/hachiware-12-frame-walk.gif",
+      "bytes": 429514,
+      "sha256": "d263fdcaf983cb5cb4b8a414fe430197a9f69581c7ffd813d6e01fb78f4fc798"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Review/hachiware-cave-home-v11.png",
+      "archive_path": "JoinedArms-v15/Review/hachiware-cave-home-v11.png",
+      "bytes": 373145,
+      "sha256": "c07da50b1919b1012dc1bed35d68833c02da01bf5791b436de85f33de8da54c6"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Review/hachiware-eight-directions-v10.gif",
+      "archive_path": "JoinedArms-v15/Review/hachiware-eight-directions-v10.gif",
+      "bytes": 608909,
+      "sha256": "0aa86b98ca9e08f3c71468e7bbdab1743344f8bf92ad80e6bd0d8eb8babb964a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Review/hachiware-equipped-directions-v11.png",
+      "archive_path": "JoinedArms-v15/Review/hachiware-equipped-directions-v11.png",
+      "bytes": 583384,
+      "sha256": "b05323d89f4ded4008682dda8aa4ecb31bf0ad03002312120ea38364c334a98a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Review/hachiware-equipped-directions-v7.png",
+      "archive_path": "JoinedArms-v15/Review/hachiware-equipped-directions-v7.png",
+      "bytes": 780418,
+      "sha256": "b75a2c35e640bf29a3c772ed7869c3d77dce13338b1730e6b995a71fd8b78a9d"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Review/hachiware-expressions-v11.png",
+      "archive_path": "JoinedArms-v15/Review/hachiware-expressions-v11.png",
+      "bytes": 451935,
+      "sha256": "71309900abc75f15becdc7f339510bd084b568505e5c5675df5b251e15d5b322"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Review/hachiware-expressions-v7.png",
+      "archive_path": "JoinedArms-v15/Review/hachiware-expressions-v7.png",
+      "bytes": 508318,
+      "sha256": "96099e9d449d5ff6fd0ba5a0480d1ccf3b750dee3404ceae22d68b5d2b88cabd"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Review/hachiware-home-sleep-v11.gif",
+      "archive_path": "JoinedArms-v15/Review/hachiware-home-sleep-v11.gif",
+      "bytes": 595803,
+      "sha256": "9d8d647db89bd8f2d0e25cca5aa4565fd02dfac634f562410c0aea88e8b86def"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Review/hachiware-items-v11.gif",
+      "archive_path": "JoinedArms-v15/Review/hachiware-items-v11.gif",
+      "bytes": 550859,
+      "sha256": "863cf17650a351eeb4ec8af250f279c743215f66f5cb17c71111ac360f3fcb2a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Review/hachiware-items-v7.gif",
+      "archive_path": "JoinedArms-v15/Review/hachiware-items-v7.gif",
+      "bytes": 667946,
+      "sha256": "943828c51e3b7971befd2757ce5df2bef52826ed3e39f9641c1e7b1efbcd62a5"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Review/hachiware-side-cycle.png",
+      "archive_path": "JoinedArms-v15/Review/hachiware-side-cycle.png",
+      "bytes": 791623,
+      "sha256": "56232bb7b3fc78aaec9e6c94cb49bf64de941422119a108cf2428b1fb413de9f"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Review/hachiware-sprite-preview.png",
+      "archive_path": "JoinedArms-v15/Review/hachiware-sprite-preview.png",
+      "bytes": 266383,
+      "sha256": "62b8b826f3d7ec00fb5987636f46627b104ec01bd6b2c2ab62aaf9e28b0466cd"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Review/hachiware-walk.png",
+      "archive_path": "JoinedArms-v15/Review/hachiware-walk.png",
+      "bytes": 136739,
+      "sha256": "54bfabb78c7f56e08fd0262c4e2fd12067405b766a5b4a474df8379234184c6f"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedArms-v15/Review/icon.png",
+      "archive_path": "JoinedArms-v15/Review/icon.png",
+      "bytes": 257854,
+      "sha256": "fadb9924edc62d95697cdefc883dbb54e597c528d87278bf12af3ed433319587"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/JoinedArms-v15/VerifyJoinedArms.py",
+      "archive_path": "JoinedArms-v15/VerifyJoinedArms.py",
+      "bytes": 2776,
+      "sha256": "6215ed53fb68e622696e9e7e3cc6569e12686737f1a927fe74e6f8b8939fd46e"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/JoinedArms-v15/build-log.txt",
+      "archive_path": "JoinedArms-v15/build-log.txt",
+      "bytes": 231,
+      "sha256": "eb542327c00a964f76af57b13ce7e841a362033b911c6adffdb05e80edba85a9"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/JoinedArms-v15/cli-self-test.txt",
+      "archive_path": "JoinedArms-v15/cli-self-test.txt",
+      "bytes": 10079,
+      "sha256": "b27d4af2f6bb102a4ade96364114f68158eec788bd0ee68a35c1beacaa48d277"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/JoinedArms-v15/compile-log.txt",
+      "archive_path": "JoinedArms-v15/compile-log.txt",
+      "bytes": 278,
+      "sha256": "c58519f0dcfc75cc994dc91251c9046fb7caa48cf9219875fd360f318de4c93f"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/JoinedArms-v15/manifest.json",
+      "archive_path": "JoinedArms-v15/manifest.json",
+      "bytes": 22816,
+      "sha256": "734e52827dcea1f7905e85efd2129ce403fd9c57eada5a83dc1ed13b4b393b92"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/JoinedArms-v15/render-log.txt",
+      "archive_path": "JoinedArms-v15/render-log.txt",
+      "bytes": 86,
+      "sha256": "bb78d2246e2f6916ee95569e6b16901948caf253a48e0774f0e100afb8e8ada0"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/JoinedArms-v15/self-test.txt",
+      "archive_path": "JoinedArms-v15/self-test.txt",
+      "bytes": 10313,
+      "sha256": "1f7df87e6dbc4715d2e6d7942230e81b31835cdb9a379c60980764f3c0aa3476"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/JoinedArms-v15/validation.json",
+      "archive_path": "JoinedArms-v15/validation.json",
+      "bytes": 540,
+      "sha256": "68b5f967da4eec6ad549aead417780968e221f582bac38743344cf6b8c4d82c1"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/JoinedArms-v15/visual-preservation.json",
+      "archive_path": "JoinedArms-v15/visual-preservation.json",
+      "bytes": 3671,
+      "sha256": "17c67317994ca56f410cf40ab0228e926bff6249f71e1a6ea281ba8d984a0164"
+    },
+    {
+      "kind": "image",
       "source": "Source/JoinedWalkAndMixedDialogue-v14/Final/Frames/left-01.png",
       "archive_path": "JoinedWalkAndMixedDialogue-v14/Final/Frames/left-01.png",
       "bytes": 44407,
@@ -5910,6 +6848,13 @@
     },
     {
       "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/hachiware-side-walk-24-joined-v15.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/hachiware-side-walk-24-joined-v15.png",
+      "bytes": 709506,
+      "sha256": "0e93e86ef628c0d246c3b60371b25a39cbd8afbb2e8983ed5626d44a1850a09c"
+    },
+    {
+      "kind": "image",
       "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/hachiware-side-walk-24-v9.png",
       "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/hachiware-side-walk-24-v9.png",
       "bytes": 737925,
@@ -6113,6 +7058,13 @@
     },
     {
       "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/hachiware-side-walk-24-joined-v15.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/hachiware-side-walk-24-joined-v15.png",
+      "bytes": 709506,
+      "sha256": "0e93e86ef628c0d246c3b60371b25a39cbd8afbb2e8983ed5626d44a1850a09c"
+    },
+    {
+      "kind": "image",
       "source": "Sources/ChiikawaCompanion/Resources/hachiware-side-walk-24-v9.png",
       "archive_path": "Project/Sources/ChiikawaCompanion/Resources/hachiware-side-walk-24-v9.png",
       "bytes": 737925,
@@ -6267,6 +7219,13 @@
     },
     {
       "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/hachiware-side-walk-24-joined-v15.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/hachiware-side-walk-24-joined-v15.png",
+      "bytes": 709506,
+      "sha256": "0e93e86ef628c0d246c3b60371b25a39cbd8afbb2e8983ed5626d44a1850a09c"
+    },
+    {
+      "kind": "image",
       "source": "build/ChiikawaCompanion.app/Contents/Resources/hachiware-side-walk-24-v9.png",
       "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/hachiware-side-walk-24-v9.png",
       "bytes": 737925,
@@ -6318,15 +7277,15 @@
       "kind": "image",
       "source": "build/artwork/hachiware-eight-directions-v10.gif",
       "archive_path": "Project/build/artwork/hachiware-eight-directions-v10.gif",
-      "bytes": 610390,
-      "sha256": "29a1770d2fc39162499efe237189f84ff1f1491e6cdf5ed650379f01ee6bbc93"
+      "bytes": 608909,
+      "sha256": "0aa86b98ca9e08f3c71468e7bbdab1743344f8bf92ad80e6bd0d8eb8babb964a"
     },
     {
       "kind": "image",
       "source": "build/artwork/hachiware-equipped-directions-v11.png",
       "archive_path": "Project/build/artwork/hachiware-equipped-directions-v11.png",
-      "bytes": 583527,
-      "sha256": "270424e290523d5fd780fd50805ebd23a55f6cc0f75d02e65a7f5c26abec6edc"
+      "bytes": 583384,
+      "sha256": "b05323d89f4ded4008682dda8aa4ecb31bf0ad03002312120ea38364c334a98a"
     },
     {
       "kind": "image",
@@ -6360,8 +7319,8 @@
       "kind": "image",
       "source": "build/artwork/hachiware-items-v11.gif",
       "archive_path": "Project/build/artwork/hachiware-items-v11.gif",
-      "bytes": 552903,
-      "sha256": "b5886b3b92e64f69098fa740fc2127b6ceeb5a6ea34f397f7405e73e4f941d87"
+      "bytes": 550859,
+      "sha256": "863cf17650a351eeb4ec8af250f279c743215f66f5cb17c71111ac360f3fcb2a"
     },
     {
       "kind": "image",
@@ -6374,15 +7333,15 @@
       "kind": "image",
       "source": "build/artwork/hachiware-side-cycle.png",
       "archive_path": "Project/build/artwork/hachiware-side-cycle.png",
-      "bytes": 797456,
-      "sha256": "4e71dfce17122d68e20809728914a3d630bf75599c9f800b94f45cf8b2b7c117"
+      "bytes": 791623,
+      "sha256": "56232bb7b3fc78aaec9e6c94cb49bf64de941422119a108cf2428b1fb413de9f"
     },
     {
       "kind": "image",
       "source": "build/artwork/hachiware-sprite-preview.png",
       "archive_path": "Project/build/artwork/hachiware-sprite-preview.png",
-      "bytes": 266536,
-      "sha256": "1214038f24f85005362d348cd527e5ac7dad3b0440d7e3ad8e965ea3afeaeabf"
+      "bytes": 266383,
+      "sha256": "62b8b826f3d7ec00fb5987636f46627b104ec01bd6b2c2ab62aaf9e28b0466cd"
     },
     {
       "kind": "image",
@@ -6430,8 +7389,29 @@
       "kind": "supporting",
       "source": "Source/README.txt",
       "archive_path": "README.txt",
-      "bytes": 2490,
-      "sha256": "3cba902816dee42a18833d21de5489e554eb601e1cfe66954f2917955750a68d"
+      "bytes": 2689,
+      "sha256": "6c763814955f4e3dc6b0fea2cbe2ae85a0bf57098b81df24bf49b065058c8639"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/1214038f24f85005/build/artwork/hachiware-sprite-preview.png",
+      "archive_path": "Versions/1214038f24f85005/build/artwork/hachiware-sprite-preview.png",
+      "bytes": 266536,
+      "sha256": "1214038f24f85005362d348cd527e5ac7dad3b0440d7e3ad8e965ea3afeaeabf"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/270424e290523d5f/build/artwork/hachiware-equipped-directions-v11.png",
+      "archive_path": "Versions/270424e290523d5f/build/artwork/hachiware-equipped-directions-v11.png",
+      "bytes": 583527,
+      "sha256": "270424e290523d5fd780fd50805ebd23a55f6cc0f75d02e65a7f5c26abec6edc"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/29a1770d2fc39162/build/artwork/hachiware-eight-directions-v10.gif",
+      "archive_path": "Versions/29a1770d2fc39162/build/artwork/hachiware-eight-directions-v10.gif",
+      "bytes": 610390,
+      "sha256": "29a1770d2fc39162499efe237189f84ff1f1491e6cdf5ed650379f01ee6bbc93"
     },
     {
       "kind": "image",
@@ -6470,6 +7450,13 @@
     },
     {
       "kind": "image",
+      "source": "Source/Versions/4e71dfce17122d68/build/artwork/hachiware-side-cycle.png",
+      "archive_path": "Versions/4e71dfce17122d68/build/artwork/hachiware-side-cycle.png",
+      "bytes": 797456,
+      "sha256": "4e71dfce17122d68e20809728914a3d630bf75599c9f800b94f45cf8b2b7c117"
+    },
+    {
+      "kind": "image",
       "source": "Source/Versions/5d0f3f13809fe8bd/build/artwork/hachiware-sprite-preview.png",
       "archive_path": "Versions/5d0f3f13809fe8bd/build/artwork/hachiware-sprite-preview.png",
       "bytes": 273169,
@@ -6495,6 +7482,13 @@
       "archive_path": "Versions/ab40babb2b8de90c/build/artwork/hachiware-side-cycle.png",
       "bytes": 816408,
       "sha256": "ab40babb2b8de90c687efc960e24ddc7db2fcc1a6a34bfe4389050f78b85aef5"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/b5886b3b92e64f69/build/artwork/hachiware-items-v11.gif",
+      "archive_path": "Versions/b5886b3b92e64f69/build/artwork/hachiware-items-v11.gif",
+      "bytes": 552903,
+      "sha256": "b5886b3b92e64f69098fa740fc2127b6ceeb5a6ea34f397f7405e73e4f941d87"
     },
     {
       "kind": "image",
@@ -6861,8 +7855,8 @@
       "sha256": "1a9a6456b561a528697d08bc97a5b14f3694040f1a684da6921470f3c0a713af"
     }
   ],
-  "updated_at": "2026-10-19T11:10:04.131635+00:00",
-  "latest_applied": "JoinedWalkAndMixedDialogue-v14",
+  "updated_at": "2026-10-19T11:14:50.904341+00:00",
+  "latest_applied": "JoinedArms-v15",
   "applied_directions": [
     "down-left",
     "down-right"
