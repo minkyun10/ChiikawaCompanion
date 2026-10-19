@@ -1,0 +1,175 @@
+{
+  "action" : "attack",
+  "body_anchor_x" : 155,
+  "crown_top" : 20,
+  "frames" : 12,
+  "registered_hair_width" : 92.276553106212418,
+  "registrations" : [
+    {
+      "frame" : 1,
+      "hair_width_source" : 171,
+      "scale" : 0.539628965533406,
+      "source_bounds" : [
+        29,
+        68,
+        355,
+        251
+      ]
+    },
+    {
+      "frame" : 2,
+      "hair_width_source" : 174,
+      "scale" : 0.53032501785179553,
+      "source_bounds" : [
+        27,
+        68,
+        327,
+        249
+      ]
+    },
+    {
+      "frame" : 3,
+      "hair_width_source" : 168,
+      "scale" : 0.54926519706078825,
+      "source_bounds" : [
+        33,
+        76,
+        300,
+        262
+      ]
+    },
+    {
+      "frame" : 4,
+      "hair_width_source" : 162,
+      "scale" : 0.56960835250748409,
+      "source_bounds" : [
+        25,
+        74,
+        339,
+        244
+      ]
+    },
+    {
+      "frame" : 5,
+      "hair_width_source" : 165,
+      "scale" : 0.55925183700734804,
+      "source_bounds" : [
+        21,
+        34,
+        370,
+        232
+      ]
+    },
+    {
+      "frame" : 6,
+      "hair_width_source" : 161,
+      "scale" : 0.57314629258517025,
+      "source_bounds" : [
+        5,
+        35,
+        372,
+        229
+      ]
+    },
+    {
+      "frame" : 7,
+      "hair_width_source" : 162,
+      "scale" : 0.56960835250748409,
+      "source_bounds" : [
+        10,
+        34,
+        356,
+        229
+      ]
+    },
+    {
+      "frame" : 8,
+      "hair_width_source" : 158,
+      "scale" : 0.58402881712792665,
+      "source_bounds" : [
+        13,
+        36,
+        346,
+        227
+      ]
+    },
+    {
+      "frame" : 9,
+      "hair_width_source" : 170,
+      "scale" : 0.54280325356595538,
+      "source_bounds" : [
+        18,
+        39,
+        358,
+        245
+      ]
+    },
+    {
+      "frame" : 10,
+      "hair_width_source" : 166,
+      "scale" : 0.55588285003742421,
+      "source_bounds" : [
+        23,
+        44,
+        322,
+        242
+      ]
+    },
+    {
+      "frame" : 11,
+      "hair_width_source" : 166,
+      "scale" : 0.55588285003742421,
+      "source_bounds" : [
+        26,
+        51,
+        324,
+        237
+      ]
+    },
+    {
+      "frame" : 12,
+      "hair_width_source" : 166,
+      "scale" : 0.55588285003742421,
+      "source_bounds" : [
+        21,
+        48,
+        351,
+        239
+      ]
+    }
+  ],
+  "runtime_cell" : 256,
+  "runtime_columns" : 6,
+  "runtime_rows" : 2,
+  "source_column_edges" : [
+    [
+      0,
+      408,
+      793,
+      1150,
+      1536
+    ],
+    [
+      0,
+      396,
+      782,
+      1160,
+      1536
+    ],
+    [
+      0,
+      397,
+      767,
+      1136,
+      1536
+    ]
+  ],
+  "source_columns" : 4,
+  "source_row_edges" : [
+    0,
+    371,
+    675,
+    1024
+  ],
+  "source_rows" : 3
+}

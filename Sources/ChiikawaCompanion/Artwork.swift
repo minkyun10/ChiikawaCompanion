@@ -11,7 +11,7 @@ enum FriendArtwork {
                      action: HachiwareAction? = nil, equipped: CompanionItem? = nil, actionTime: Double? = nil) {
         if friend == .hachiware {
             if let action, HachiwareActions.shared.draw(action, in: rect, time: actionTime ?? time) {
-                if let equipped, !action.isDaily && action != equipped.action && action != .pickup {
+                if let equipped, !action.isDaily && action != .attack && action != equipped.action && action != .pickup {
                     ItemArtwork.drawEquipped(equipped, in: rect, pose: .front, facing: -1, time: time, behind: false)
                 }
                 return

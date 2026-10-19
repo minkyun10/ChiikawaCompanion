@@ -1,0 +1,340 @@
+{
+  "date": "2026-10-19",
+  "files": [
+    {
+      "path": "Final/Frames/attack-01.png",
+      "bytes": 51860,
+      "sha256": "a8924e420f5425a4a94fb0f29e3db3cb2ce7f1406b6af439489aa33a0c121fa9"
+    },
+    {
+      "path": "Final/Frames/attack-02.png",
+      "bytes": 50192,
+      "sha256": "cb0d909efdecc1fb1db5bbfd0b2579a9e6f2cea4784a628bc67c14654e656110"
+    },
+    {
+      "path": "Final/Frames/attack-03.png",
+      "bytes": 50927,
+      "sha256": "e36a33206507d4905a29ce88fb755cf695d3c9eff39f72ad4de8ca5d1f09317b"
+    },
+    {
+      "path": "Final/Frames/attack-04.png",
+      "bytes": 54066,
+      "sha256": "d71c271a43861ea03d4c4718ce6a997f10916269e799bc50f837454f5dd7ab4e"
+    },
+    {
+      "path": "Final/Frames/attack-05.png",
+      "bytes": 50824,
+      "sha256": "d91d067e8ab730e35cf1948ba7e772a948bd10523a5574c133dd6916c9efdd92"
+    },
+    {
+      "path": "Final/Frames/attack-06.png",
+      "bytes": 54502,
+      "sha256": "edf83d5ade1b991809c379ba453826b18a0f7a2e0aac7d28fad4c210f276862e"
+    },
+    {
+      "path": "Final/Frames/attack-07.png",
+      "bytes": 53475,
+      "sha256": "fb7229ecebaf3f8e25947fef42b1feb83eeefe33f1d3af0c410485ad78d01767"
+    },
+    {
+      "path": "Final/Frames/attack-08.png",
+      "bytes": 53700,
+      "sha256": "e323afdcd4f6bcb03e40276f1923ecde3ab57ac17e5c870392b21e9e817c6fdd"
+    },
+    {
+      "path": "Final/Frames/attack-09.png",
+      "bytes": 51765,
+      "sha256": "66a2e17856940bbed99875df0f6ff722914815fe467879b6e7eb0b2c1b2ad391"
+    },
+    {
+      "path": "Final/Frames/attack-10.png",
+      "bytes": 53129,
+      "sha256": "3f6a84c0630a2cbc7d6045e8f1e7a868d64e00921955e8f656ae1eb45322a999"
+    },
+    {
+      "path": "Final/Frames/attack-11.png",
+      "bytes": 51871,
+      "sha256": "b75ebe29c19529fd3c7fd094f45383b6e2cc6f16dd0a7c60662d73a2a37a56ca"
+    },
+    {
+      "path": "Final/Frames/attack-12.png",
+      "bytes": 53406,
+      "sha256": "5de8cf100a9ae70d11110b814e76418c8431c194cfc571ad05b81caeb4f2cb92"
+    },
+    {
+      "path": "Final/attack-registration.json",
+      "bytes": 2812,
+      "sha256": "8eb50bb9fba9a253d450150cc5ec8091c352eb271cd930e22401d29e6d6183f2"
+    },
+    {
+      "path": "Final/hachiware-attack-v19.png",
+      "bytes": 617800,
+      "sha256": "2335ccafc5d948f77e7f2b9b57a6c1567b61621507d9793921f108f7edf8f528"
+    },
+    {
+      "path": "Generated/attack-original.png",
+      "bytes": 1922809,
+      "sha256": "a88be396f98d247477d23e3496d23cc2acb15c1ca21ba5045bf6df43fc54b56a"
+    },
+    {
+      "path": "Iterations/01-registration-failed.txt",
+      "bytes": 4359,
+      "sha256": "0c65fd2dddae291e881175920651f95be084338f493349fcd2932074bf541d0a"
+    },
+    {
+      "path": "Iterations/02-crown-anchor/Frames/attack-01.png",
+      "bytes": 45689,
+      "sha256": "bda3dacf0701d62ebde226d81abb13551c8a43a86d14b7518c86b3580bea449e"
+    },
+    {
+      "path": "Iterations/02-crown-anchor/Frames/attack-02.png",
+      "bytes": 44638,
+      "sha256": "e7069f0d199417374871bdc7750dc320a4d0c7ccb9573f5e4d69449ee532d5b7"
+    },
+    {
+      "path": "Iterations/02-crown-anchor/Frames/attack-03.png",
+      "bytes": 44844,
+      "sha256": "079ba36626ec5cd98cd9b0ad115d5037bd3654487b61ae49ac753f476d15baa3"
+    },
+    {
+      "path": "Iterations/02-crown-anchor/Frames/attack-04.png",
+      "bytes": 47262,
+      "sha256": "4492d4b9ffcd011fd6e289d9421e5907ed67737dbb0d33f578f483d5f89e3f9e"
+    },
+    {
+      "path": "Iterations/02-crown-anchor/Frames/attack-05.png",
+      "bytes": 45584,
+      "sha256": "6162c4ac4f05d88761bb09c34b9020ce12d87c4f30f4a3c5095b1c299f578587"
+    },
+    {
+      "path": "Iterations/02-crown-anchor/Frames/attack-06.png",
+      "bytes": 48590,
+      "sha256": "c4a166d286469139a78c86478e95c8f9c354e2f75795b6cbd2a73c76b0e921c9"
+    },
+    {
+      "path": "Iterations/02-crown-anchor/Frames/attack-07.png",
+      "bytes": 47589,
+      "sha256": "c791a49c87dac740976f792f51168a355b77b15bdd75df408b7727ecdec3f06d"
+    },
+    {
+      "path": "Iterations/02-crown-anchor/Frames/attack-08.png",
+      "bytes": 47881,
+      "sha256": "64a1578227579cf5af2a79325f00819a1adbb976e52eb43b2a690c182de1d082"
+    },
+    {
+      "path": "Iterations/02-crown-anchor/Frames/attack-09.png",
+      "bytes": 45887,
+      "sha256": "63419f5c020bc1ca2256e71fa115238b93c50198acc32a744003a3fe0170ce4e"
+    },
+    {
+      "path": "Iterations/02-crown-anchor/Frames/attack-10.png",
+      "bytes": 46935,
+      "sha256": "9e1868769f88e0f3db500deaf90f00367e279da68050afcdbdc5e2e409b74453"
+    },
+    {
+      "path": "Iterations/02-crown-anchor/Frames/attack-11.png",
+      "bytes": 45284,
+      "sha256": "037131c8daaa8d6cf21aa04810f4735116ba74792ddbc01fdba6a50c4ef7af9d"
+    },
+    {
+      "path": "Iterations/02-crown-anchor/Frames/attack-12.png",
+      "bytes": 46401,
+      "sha256": "264b5d19e3f7864cdc2db0d14734a0d5f55ba5f5ab8c0f160e51f3d28c323ab7"
+    },
+    {
+      "path": "Iterations/02-crown-anchor/attack-registration.json",
+      "bytes": 2794,
+      "sha256": "174b02cc74315cf811b77ddf775d529cf6404d8ec472fb88695cf2a7322ffaee"
+    },
+    {
+      "path": "Iterations/02-crown-anchor/hachiware-attack-v19.png",
+      "bytes": 543622,
+      "sha256": "697be884afb5c1ad95071ed12f5f4bbba3cb6771d2bc875b6acdabcf882a9b7f"
+    },
+    {
+      "path": "Iterations/03-first-pixel-test.txt",
+      "bytes": 10430,
+      "sha256": "846fa8ff6352557d192bee082d2ee7ee36ee6370d986fb0f202ed53628fd4ebc"
+    },
+    {
+      "path": "PrepareAttackAtlas.swift",
+      "bytes": 6881,
+      "sha256": "5975f6a1f145af167a0cea4ad6e095a9ad14a0daf613e3d07411b7ea80996ded"
+    },
+    {
+      "path": "Prompts/attack.txt",
+      "bytes": 3052,
+      "sha256": "65f683b97cb131dafda9d78c171e5662ff5bb74ff83d76d1e318a8c0ed87bc67"
+    },
+    {
+      "path": "README.txt",
+      "bytes": 2468,
+      "sha256": "1a0fd5d2309e15a9895a10a52b9eaa4823f7f2aa447576c93ea217e95b2c1a76"
+    },
+    {
+      "path": "References/approved-character.png",
+      "bytes": 1247640,
+      "sha256": "f17301b9445f92ac70b8c41944d442260869d5e3ba8c0c32630c8c4ac1b58aa4"
+    },
+    {
+      "path": "References/weapon-attack-expression.jpg",
+      "bytes": 46546,
+      "sha256": "e69ee3bb7718f1114b219482a1451b731e6b8e356d12bb535dc4e875fbb810f7"
+    },
+    {
+      "path": "Review/friends.png",
+      "bytes": 130750,
+      "sha256": "d358479d8d5e811e4d92ef921ce2437356ec9be1da5bff246e27a1d55b67c63e"
+    },
+    {
+      "path": "Review/hachiware-attack-frames-v19.png",
+      "bytes": 382957,
+      "sha256": "6437de74503fd088c34d11c6c63dda91013bf04d5b221d014f8c92284cba9b68"
+    },
+    {
+      "path": "Review/hachiware-cave-home-v11.png",
+      "bytes": 373145,
+      "sha256": "c07da50b1919b1012dc1bed35d68833c02da01bf5791b436de85f33de8da54c6"
+    },
+    {
+      "path": "Review/hachiware-daily-frames-v16.png",
+      "bytes": 666252,
+      "sha256": "a64ac89f71591894f34f509d3e75b64180912291022c506ebe241861c1531c79"
+    },
+    {
+      "path": "Review/hachiware-eat-v16.gif",
+      "bytes": 221083,
+      "sha256": "549f4f2875bde1c9be09c2b3b3fbab3a9fb0b8733a55ab95961503717ad041d0"
+    },
+    {
+      "path": "Review/hachiware-eight-directions-v10.gif",
+      "bytes": 608909,
+      "sha256": "0aa86b98ca9e08f3c71468e7bbdab1743344f8bf92ad80e6bd0d8eb8babb964a"
+    },
+    {
+      "path": "Review/hachiware-equipped-directions-v11.png",
+      "bytes": 583384,
+      "sha256": "b05323d89f4ded4008682dda8aa4ecb31bf0ad03002312120ea38364c334a98a"
+    },
+    {
+      "path": "Review/hachiware-expressions-v11.png",
+      "bytes": 451935,
+      "sha256": "71309900abc75f15becdc7f339510bd084b568505e5c5675df5b251e15d5b322"
+    },
+    {
+      "path": "Review/hachiware-home-sleep-v11.gif",
+      "bytes": 595803,
+      "sha256": "9d8d647db89bd8f2d0e25cca5aa4565fd02dfac634f562410c0aea88e8b86def"
+    },
+    {
+      "path": "Review/hachiware-hover-attack-v19.gif",
+      "bytes": 233860,
+      "sha256": "78caee79f5dc15090f139a42b8add077a4df55730e5727fd40a447c64df91546"
+    },
+    {
+      "path": "Review/hachiware-items-v11.gif",
+      "bytes": 550859,
+      "sha256": "863cf17650a351eeb4ec8af250f279c743215f66f5cb17c71111ac360f3fcb2a"
+    },
+    {
+      "path": "Review/hachiware-proximity-actions-v17.png",
+      "bytes": 195647,
+      "sha256": "c02ec015715c554b1ff63811d54e16cb7d03620a4bd353f3e1695e9121fa435f"
+    },
+    {
+      "path": "Review/hachiware-side-cycle.png",
+      "bytes": 791623,
+      "sha256": "56232bb7b3fc78aaec9e6c94cb49bf64de941422119a108cf2428b1fb413de9f"
+    },
+    {
+      "path": "Review/hachiware-sprite-preview.png",
+      "bytes": 266383,
+      "sha256": "62b8b826f3d7ec00fb5987636f46627b104ec01bd6b2c2ab62aaf9e28b0466cd"
+    },
+    {
+      "path": "Review/hachiware-study-v16.gif",
+      "bytes": 236231,
+      "sha256": "2d52c80db026ab3b3d2ad81ab8aaf51d41774d1933d77a8c4ebdcfd120c95c60"
+    },
+    {
+      "path": "Review/hachiware-vomit-v16.gif",
+      "bytes": 209889,
+      "sha256": "1e6f36dc62e8f3f79ca2541a8b00aa29db65e2506108891e140bebee9b5e3c03"
+    },
+    {
+      "path": "Review/hachiware-walk.png",
+      "bytes": 136739,
+      "sha256": "54bfabb78c7f56e08fd0262c4e2fd12067405b766a5b4a474df8379234184c6f"
+    },
+    {
+      "path": "Review/icon.png",
+      "bytes": 257854,
+      "sha256": "fadb9924edc62d95697cdefc883dbb54e597c528d87278bf12af3ed433319587"
+    },
+    {
+      "path": "Review/life-prop-desk-v17.png",
+      "bytes": 5048,
+      "sha256": "b3bf50da9919d286490de0b1bc75165225187ce96530ab191870413bdeb2c805"
+    },
+    {
+      "path": "Review/life-prop-furball-v17.png",
+      "bytes": 3314,
+      "sha256": "300da36602f4db21e52c44827e33e6144e244d0aaaed6437ea99a8f11e8fa75b"
+    },
+    {
+      "path": "Review/life-prop-rice-v17.png",
+      "bytes": 3646,
+      "sha256": "07dd6416c0a2ba2c46cca8e12db5ee0b6e5078d3e36bbd94c6a6d548cf1e1361"
+    },
+    {
+      "path": "Review/settings-attack-option-v19.png",
+      "bytes": 196033,
+      "sha256": "9bca774936ec2867edc89ef249a3afcff702f067442ef827126fead2d2109c37"
+    },
+    {
+      "path": "artwork-log.txt",
+      "bytes": 18,
+      "sha256": "e4e815f865d1d6b4f0ba8e7a4cf091562580558fb1729df68d170f0246609404"
+    },
+    {
+      "path": "build-log.txt",
+      "bytes": 251,
+      "sha256": "c835f2ab22252306f41f552f6b95284a4b507410460c0cb33e710d3f6a1018fc"
+    },
+    {
+      "path": "cli-self-test.txt",
+      "bytes": 15180,
+      "sha256": "49ec59976fef902c97b65c16d3cae198fc18cb3e1ca50c15133787038658950f"
+    },
+    {
+      "path": "codesign-log.txt",
+      "bytes": 109,
+      "sha256": "6210c61790ac2c9d268a576bdecb1c906f66d332a0c64871ceff1469e071d542"
+    },
+    {
+      "path": "compile-log.txt",
+      "bytes": 244,
+      "sha256": "d420fd513e4996e99613ce14aefcdf84f566014c2536a6aee60612a7f0ae1359"
+    },
+    {
+      "path": "existing-resources-preserved.json",
+      "bytes": 3835,
+      "sha256": "48eeb61973e7ccb44825df571bbb168b3e5f7d25cb3d1ddec9dc6e17d659a1e5"
+    },
+    {
+      "path": "registration-log.txt",
+      "bytes": 97,
+      "sha256": "038338367178d51ef85a6fb0987729cbf74953b421a8dc09fcbd12361ed275a3"
+    },
+    {
+      "path": "self-test.txt",
+      "bytes": 15568,
+      "sha256": "713689bef89b06a0b091787ec93090405d70703ecae994628d45580ffca3f343"
+    },
+    {
+      "path": "validation.json",
+      "bytes": 1790,
+      "sha256": "8a42caa40e469a5ee00fa2b860d14756cc1fd73bc8fcf73332c50b87a92c9c3b"
+    }
+  ]
+}

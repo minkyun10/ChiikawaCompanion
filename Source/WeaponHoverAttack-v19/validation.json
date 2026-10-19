@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-19",
+  "app_version": "0.12.0",
+  "build": 23,
+  "image_generation": "built-in image_gen",
+  "generated_outputs_retained": 1,
+  "source_prompt": "Prompts/attack.txt",
+  "reference": "References/weapon-attack-expression.jpg",
+  "frames": 12,
+  "cycle_duration_seconds": 1.2,
+  "runtime_atlas": "Final/hachiware-attack-v19.png",
+  "source_transparency_preserved": true,
+  "frame_order": "row-major 1-12",
+  "all_twenty_previous_resources_byte_identical": true,
+  "walking_motion_source_byte_identical": true,
+  "cli_checks_passed": 215,
+  "packaged_checks_passed": 220,
+  "codesign_deep_strict": "passed",
+  "native_ui": {
+    "app_started": true,
+    "sasumata_option_visible": true,
+    "sasumata_visit_selected": true,
+    "weapon_pickup_status_observed": true,
+    "settings_closed_at_end": true,
+    "app_left_running": true,
+    "expression_switch_enabled": true,
+    "click_voice_enabled": true,
+    "click_volume": 0.65,
+    "notification_monitoring_enabled": false
+  },
+  "checks": [
+    "distinct transparent frames",
+    "chronological playback and invalid clock handling",
+    "only sasumata gates attack",
+    "no duplicated weapon overlay",
+    "local hover clock",
+    "hover leaves within one 60-Hz update",
+    "visible gait resumes within 100ms with window rounding",
+    "paused walking retained",
+    "dragging excluded",
+    "new hover restarts at frame one",
+    "notification and selected daily-action priority",
+    "expression-off respected",
+    "camera replacement restores normal greeting"
+  ],
+  "preview": "Review/hachiware-hover-attack-v19.gif",
+  "limitations": [
+    "Controller hover checks use deterministic pointer visibility input; a physical GUI hover capture was not performed.",
+    "Live KakaoTalk delivery was not tested."
+  ]
+}

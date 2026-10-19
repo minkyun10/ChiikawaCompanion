@@ -4,7 +4,7 @@ final class HachiwareActions {
     static let shared = HachiwareActions()
     static let assetName = "hachiware-actions-v7"
     private(set) var frames: [NSImage] = []
-    var isReady: Bool { frames.count == HachiwareAction.legacy.count && DailyActionSprites.shared.isReady }
+    var isReady: Bool { frames.count == HachiwareAction.legacy.count && DailyActionSprites.shared.isReady && WeaponAttackSprites.shared.isReady }
 
     private init() {
         guard let url = HachiwareSprites.assetURL(named: Self.assetName),
@@ -51,6 +51,7 @@ final class HachiwareActions {
     @discardableResult
     func draw(_ action: HachiwareAction, in rect: NSRect, time: Double) -> Bool {
         if action.isDaily { return DailyActionSprites.shared.draw(action, in: rect, time: time) }
+        if action == .attack { return WeaponAttackSprites.shared.draw(in: rect, time: time) }
         guard frames.count == HachiwareAction.legacy.count, let cg = NSGraphicsContext.current?.cgContext else { return false }
         let length = min(rect.width, rect.height)
         cg.saveGState()

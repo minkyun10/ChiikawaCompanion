@@ -1,0 +1,7 @@
+[0/1] Planning build
+Building for production...
+[0/2] Write swift-version--1AB21518FC5DEDBE.txt
+Build complete! (0.16s)
+Artwork rendered.
+<project>/build/ChiikawaCompanion.app: replacing existing signature
+Built: <project>/build/ChiikawaCompanion.app

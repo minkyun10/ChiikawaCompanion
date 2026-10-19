@@ -209,6 +209,7 @@ final class DesktopController {
         // Decode and register once at launch, never on the first pointer hover.
         _ = HachiwareSprites.shared
         _ = HachiwareActions.shared
+        _ = WeaponAttackSprites.shared
         actors = Friend.developmentRoster.enumerated().map { FriendActor(friend: $0.element, index: $0.offset) }
         for actor in actors {
             actor.view.onClick = { [weak self, weak actor] in
@@ -533,7 +534,7 @@ final class DesktopController {
     private func publishEquipment() {
         if state.equippedItem != itemWorld.equipped { state.equippedItem = itemWorld.equipped }
     }
-    func tick(now: Date = Date(), pointer: NSPoint? = nil) {
+    func tick(now: Date = Date(), pointer: NSPoint? = nil, pointerCanReachCharacter: Bool? = nil) {
         let dt = min(max(0, now.timeIntervalSince(lastTick)), 0.06)
         lastTick = now
         let time = now.timeIntervalSince(started), mouse = pointer ?? NSEvent.mouseLocation
@@ -581,7 +582,7 @@ final class DesktopController {
                 continue
             }
             if !actor.panel.isVisible { actor.panel.orderFrontRegardless() }
-            let hovered = actor.panel.occlusionState.contains(.visible)
+            let hovered = !actor.view.isDragging && (pointerCanReachCharacter ?? actor.panel.occlusionState.contains(.visible))
                 && DesktopGeometry.hit(mouse, in: actor.panel.frame)
             actor.panel.ignoresMouseEvents = !hovered && !actor.view.isDragging
             let activity = DesktopActivity.resolve(roaming: state.roaming, hovered: hovered,
@@ -658,13 +659,14 @@ final class DesktopController {
             actor.view.walkPhase = actor.gait.phase
             actor.view.pose = HachiwarePose.forVelocity(actor.motion.velocity)
             actor.view.happy = activity.reacts
-            if dailyAction == nil && state.expressive && activity == .hovering {
-                action = now.timeIntervalSince(actor.hoverStarted) < 0.3 ? .wave : .laugh
+            if dailyAction == nil && state.expressive && activity == .hovering && !actor.view.isDragging {
+                action = HachiwareAction.hover(equipped: itemWorld.equipped, elapsed: now.timeIntervalSince(actor.hoverStarted))
             } else if state.expressive && activity == .notifying {
                 action = .surprised
             }
             actor.view.action = action
             actor.view.actionTime = actor.dailyPerformance.action(now: now) == nil ? nil : actor.dailyPerformance.elapsed(now: now)
+            if action == .attack { actor.view.actionTime = max(0, now.timeIntervalSince(actor.hoverStarted)) }
             actor.view.equipped = itemWorld.equipped
             actor.view.looking = min(1, max(-1, (mouse.x - actor.panel.frame.midX) / 160))
             actor.view.needsDisplay = true

@@ -21,7 +21,7 @@ enum CompanionItem: String, CaseIterable, Codable, Identifiable {
         switch self {
         case .camera: return "목에 걸고, 찰칵!"
         case .guitar: return "산책하다 잠깐 연주해요"
-        case .sasumata: return "토벌 도구를 들고 씩씩하게"
+        case .sasumata: return "마우스를 올리면 에잇!"
         }
     }
     var action: HachiwareAction {
@@ -122,11 +122,15 @@ struct ItemWorld {
 enum HachiwareAction: Int, CaseIterable {
     case wave, laugh, surprised, pickup, camera, guitar, sasumata
     case study, eat, vomit
+    case attack
     static let legacy = Array(allCases.prefix(7))
     static let daily: [HachiwareAction] = [.study, .eat, .vomit]
     var isDaily: Bool { Self.daily.contains(self) }
     var title: String {
-        ["안녕!", "헤헤", "와아!", "주워 볼까?", "찰칵!", "기타 연주", "씩씩하게", "공부하기", "밥 먹기", "토하기"][rawValue]
+        ["안녕!", "헤헤", "와아!", "주워 볼까?", "찰칵!", "기타 연주", "씩씩하게", "공부하기", "밥 먹기", "토하기", "에잇!"][rawValue]
+    }
+    static func hover(equipped: CompanionItem?, elapsed: TimeInterval) -> HachiwareAction {
+        equipped == .sasumata ? .attack : elapsed < 0.3 ? .wave : .laugh
     }
     var cycleDuration: TimeInterval { self == .study ? 1.8 : self == .eat ? 2 : 2.4 }
     var duration: TimeInterval { cycleDuration * (self == .study ? 5 : self == .eat ? 3 : 1) }
