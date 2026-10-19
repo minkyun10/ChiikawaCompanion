@@ -3,7 +3,7 @@ import AppKit
 enum HachiwarePose: Int, CaseIterable {
     case front, side, back, greeting, frontDiagonal, backDiagonal
 
-    var frameCount: Int { self == .greeting ? 6 : 12 }
+    var frameCount: Int { self == .greeting ? 6 : self == .side ? 24 : 12 }
     var canMirror: Bool { self == .side || self == .frontDiagonal || self == .backDiagonal }
 
     static func forVelocity(_ velocity: CGVector) -> HachiwarePose {
@@ -20,11 +20,9 @@ enum HachiwarePose: Int, CaseIterable {
 final class HachiwareSprites {
     static let shared = HachiwareSprites()
     static let columns = 6
-    // Source sheets interleave foot poses. Follow one planted step from front to
-    // back, then its lifted return, rather than playing the sheet's storage order.
-    static let sideWalkOrder = [0, 3, 5, 2, 1, 11, 10, 8, 4, 6, 9, 7]
     static let assetNames = ["hachiware-sprites-v1", "hachiware-cardinal-walk-approved-v5",
-                             "hachiware-diagonal-matched-walk-v5", "hachiware-diagonal-walk-12-v2"]
+                             "hachiware-diagonal-matched-walk-v5", "hachiware-diagonal-walk-12-v2",
+                             "hachiware-side-walk-24-v9"]
     private(set) var frames = [[NSImage]](repeating: [], count: HachiwarePose.allCases.count)
     private(set) var alphaBounds = [[NSRect]](repeating: [], count: HachiwarePose.allCases.count)
     private(set) var sourceSizes: [String: NSSize] = [:]
@@ -41,25 +39,32 @@ final class HachiwareSprites {
                   edges: [0, 266, 506, 745, 1024], groups: [(.greeting, [3])])
         loadAtlas(named: Self.assetNames[1], size: NSSize(width: 1254, height: 1254),
                   edges: [0, 223, 422, 622, 821, 1020, 1254],
-                  groups: [(.front, [0, 1]), (.side, [2, 3]), (.back, [4, 5])])
+                  groups: [(.front, [0, 1]), (.back, [4, 5])])
         // These approved frames already share one fixed body registration. Loading them
         // directly preserves the reviewed foot dimensions and avoids per-frame rescaling.
         loadRegisteredAtlas(named: Self.assetNames[2], poses: [.frontDiagonal])
         // The user explicitly chose to retain the existing upward diagonal animation.
         loadAtlas(named: Self.assetNames[3], size: NSSize(width: 1536, height: 1024),
                   edges: [0, 274, 522, 764, 1024], groups: [(.backDiagonal, [0, 1])])
+        // Reviewed 24-frame side cycle: keep its original body bob, foot size and
+        // chronological order. Per-frame head registration would erase the down/up poses.
+        loadRegisteredAtlas(named: Self.assetNames[4], poses: [.side], columns: 6)
     }
 
-    private func loadRegisteredAtlas(named name: String, poses: [HachiwarePose]) {
+    private func loadRegisteredAtlas(named name: String, poses: [HachiwarePose], columns: Int = 12) {
+        guard let first = poses.first, first.frameCount % columns == 0,
+              poses.allSatisfy({ $0.frameCount == first.frameCount }) else { return }
+        let rowsPerPose = first.frameCount / columns
         guard let url = Self.assetURL(named: name), let data = try? Data(contentsOf: url),
               let bitmap = NSBitmapImageRep(data: data), let atlas = bitmap.cgImage,
-              atlas.width == 12 * 256, atlas.height == poses.count * 256 else { return }
+              atlas.width == columns * 256, atlas.height == poses.count * rowsPerPose * 256 else { return }
         sourceSizes[name] = NSSize(width: atlas.width, height: atlas.height)
         for (row, pose) in poses.enumerated() {
             var registered: [NSImage] = []
             var bounds: [NSRect] = []
-            for column in 0..<12 {
-                guard let image = atlas.cropping(to: CGRect(x: column * 256, y: row * 256,
+            for index in 0..<pose.frameCount {
+                let column = index % columns, sourceRow = row * rowsPerPose + index / columns
+                guard let image = atlas.cropping(to: CGRect(x: column * 256, y: sourceRow * 256,
                                                            width: 256, height: 256)) else { return }
                 let pixels = NSBitmapImageRep(cgImage: image)
                 var left = 256, right = 0, top = 256, bottom = 0
@@ -157,15 +162,22 @@ final class HachiwareSprites {
                 guard let image = target.cgImage else { return }
                 registered.append(NSImage(cgImage: image, size: canvas))
             }
-            let order = pose == .side ? Self.sideWalkOrder : Array(registered.indices)
-            frames[pose.rawValue] = order.map { registered[$0] }
-            alphaBounds[pose.rawValue] = order.map { sources[$0].bounds }
+            frames[pose.rawValue] = registered
+            alphaBounds[pose.rawValue] = sources.map(\.bounds)
         }
     }
 
     static func frameIndex(phase: Double, count: Int = 12) -> Int {
         let index = Int(floor(phase / (2 * .pi) * Double(count)))
         return ((index % count) + count) % count
+    }
+
+    /// The side atlas already contains the weight shift. Accessories follow the
+    /// selected drawing, including its discrete frame timing, rather than bobbing independently.
+    static func bodyOffset(pose: HachiwarePose, phase: Double) -> CGFloat {
+        guard pose == .side else { return 0 }
+        let frame = frameIndex(phase: phase, count: pose.frameCount)
+        return -5.5 * sin(Double(frame) / Double(pose.frameCount) * 4 * .pi)
     }
 
     func frame(pose: HachiwarePose, index: Int) -> NSImage? {
@@ -180,7 +192,7 @@ final class HachiwareSprites {
         let selectedPose: HachiwarePose = happy ? .greeting : walking ? pose : .front
         let phase = walkPhase ?? time / RoamingMotion.previewCycleDuration * 2 * .pi
         let index = happy ? Int(time * 5) % selectedPose.frameCount
-            : walking ? Self.frameIndex(phase: phase) : 0
+            : walking ? Self.frameIndex(phase: phase, count: selectedPose.frameCount) : 0
         guard let image = frame(pose: selectedPose, index: index),
               let context = NSGraphicsContext.current?.cgContext else { return false }
         let length = min(rect.width, rect.height)

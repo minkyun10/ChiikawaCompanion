@@ -1,0 +1,64 @@
+{
+  "files": [
+    {
+      "path": "README.txt",
+      "bytes": 1949,
+      "sha256": "73e3ae2348db6108d33db8b2b9fb0852c954d961f4133672247f5870eef24325"
+    },
+    {
+      "path": "Review/friends.png",
+      "bytes": 130750,
+      "sha256": "d358479d8d5e811e4d92ef921ce2437356ec9be1da5bff246e27a1d55b67c63e"
+    },
+    {
+      "path": "Review/hachiware-eight-directions-v10.gif",
+      "bytes": 614791,
+      "sha256": "446cfa6a735593444ef19351b880df4257be546983e2c87c91904c727f8789df"
+    },
+    {
+      "path": "Review/hachiware-equipped-directions-v7.png",
+      "bytes": 780418,
+      "sha256": "b75a2c35e640bf29a3c772ed7869c3d77dce13338b1730e6b995a71fd8b78a9d"
+    },
+    {
+      "path": "Review/hachiware-expressions-v7.png",
+      "bytes": 508318,
+      "sha256": "96099e9d449d5ff6fd0ba5a0480d1ccf3b750dee3404ceae22d68b5d2b88cabd"
+    },
+    {
+      "path": "Review/hachiware-items-v7.gif",
+      "bytes": 667946,
+      "sha256": "943828c51e3b7971befd2757ce5df2bef52826ed3e39f9641c1e7b1efbcd62a5"
+    },
+    {
+      "path": "Review/hachiware-side-cycle.png",
+      "bytes": 816408,
+      "sha256": "ab40babb2b8de90c687efc960e24ddc7db2fcc1a6a34bfe4389050f78b85aef5"
+    },
+    {
+      "path": "Review/hachiware-sprite-preview.png",
+      "bytes": 267516,
+      "sha256": "377fd845c59c4139079dc1520a20276497781cf4425c0202b38137a8a4e67198"
+    },
+    {
+      "path": "Review/hachiware-walk.png",
+      "bytes": 136739,
+      "sha256": "54bfabb78c7f56e08fd0262c4e2fd12067405b766a5b4a474df8379234184c6f"
+    },
+    {
+      "path": "Review/icon.png",
+      "bytes": 257854,
+      "sha256": "fadb9924edc62d95697cdefc883dbb54e597c528d87278bf12af3ed433319587"
+    },
+    {
+      "path": "self-test.txt",
+      "bytes": 6673,
+      "sha256": "d43004493005af70d1a3822556a16f37ae2eb75dd6199b0ae8be059f385a07ff"
+    },
+    {
+      "path": "validation.json",
+      "bytes": 1017,
+      "sha256": "b7d8b5517b5fe1246af28c35c2112bd1d88469dede26c7e3fb1755003ba4d9df"
+    }
+  ]
+}

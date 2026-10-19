@@ -17,10 +17,13 @@ enum FriendArtwork {
                 return
             }
             let shownPose: HachiwarePose = happy || !walking ? .front : pose
-            if let equipped { ItemArtwork.drawEquipped(equipped, in: rect, pose: shownPose, facing: facing, time: time, behind: true) }
+            let phase = walkPhase ?? time / RoamingMotion.previewCycleDuration * 2 * .pi
+            let offset = HachiwareSprites.bodyOffset(pose: shownPose, phase: phase) * min(rect.width, rect.height) / 256
+            let equipmentRect = rect.offsetBy(dx: 0, dy: offset)
+            if let equipped { ItemArtwork.drawEquipped(equipped, in: equipmentRect, pose: shownPose, facing: facing, time: time, behind: true) }
             HachiwareSprites.shared.draw(in: rect, time: time, happy: happy, walking: walking,
                                          facing: facing, walkPhase: walkPhase, pose: pose)
-            if let equipped { ItemArtwork.drawEquipped(equipped, in: rect, pose: shownPose, facing: facing, time: time, behind: false) }
+            if let equipped { ItemArtwork.drawEquipped(equipped, in: equipmentRect, pose: shownPose, facing: facing, time: time, behind: false) }
             return
         }
         guard let cg = NSGraphicsContext.current?.cgContext else { return }

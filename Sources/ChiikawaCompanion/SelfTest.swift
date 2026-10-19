@@ -287,8 +287,10 @@ enum SelfTest {
         }, "action sprites retain transparent corners")
 
         let sprites = HachiwareSprites.shared
-        check(sprites.isReady && sprites.frames.flatMap { $0 }.count == 66, "five 12-frame walks and six greeting frames load successfully")
-        check(sprites.sourceSizes.count == 4, "all four selected sprite atlases decode")
+        check(sprites.isReady && sprites.frames.flatMap { $0 }.count == 78, "24-frame side walk, four 12-frame walks and six greeting frames load")
+        check(sprites.sourceSizes.count == 5, "all five selected sprite atlases decode")
+        check(sprites.sourceSizes[HachiwareSprites.assetNames[4]] == NSSize(width: 1536, height: 1024),
+              "approved side sheet loads as a six-column four-row 24-frame atlas")
         check(sprites.sourceSizes[HachiwareSprites.assetNames[2]] == NSSize(width: 3072, height: 256),
               "approved downward diagonal frames load at their original registered size")
         var diagonalBodiesStayFixed = true
@@ -304,35 +306,35 @@ enum SelfTest {
             if signatures.count != 1 { diagonalBodiesStayFixed = false }
         }
         check(diagonalBodiesStayFixed, "downward diagonal head and face stay identical while the feet alternate")
-        let sideToePositions: [CGFloat] = (0..<12).compactMap { index in
-            guard let data = sprites.frame(pose: .side, index: index)?.tiffRepresentation,
-                  let bitmap = NSBitmapImageRep(data: data) else { return nil }
-            var lowestRow = -1
-            var toePixels: [(Int, Int)] = []
-            for y in 180..<256 {
-                for x in 60..<210 {
-                    guard let color = bitmap.colorAt(x: x, y: y)?.usingColorSpace(.deviceRGB),
-                          color.alphaComponent > 0.5,
-                          max(color.redComponent, color.greenComponent, color.blueComponent) < 0.4 else { continue }
-                    lowestRow = max(lowestRow, y); toePixels.append((x, y))
-                }
-            }
-            let lowest = toePixels.filter { $0.1 >= lowestRow - 2 }
-            guard !lowest.isEmpty else { return nil }
-            return CGFloat(lowest.reduce(0) { $0 + $1.0 }) / CGFloat(lowest.count)
+        let sideData = try! Data(contentsOf: HachiwareSprites.assetURL(named: HachiwareSprites.assetNames[4])!)
+        let sideAtlas = NSBitmapImageRep(data: sideData)!.cgImage!
+        check((0..<24).allSatisfy { index in
+            guard let cell = sideAtlas.cropping(to: CGRect(x: index % 6 * 256, y: index / 6 * 256, width: 256, height: 256)) else { return false }
+            return NSImage(cgImage: cell, size: NSSize(width: 256, height: 256)).tiffRepresentation
+                == sprites.frame(pose: .side, index: index)?.tiffRepresentation
+        }, "all 24 side frames preserve the exact approved drawings and chronological order")
+        let crown = sprites.alphaBounds[HachiwarePose.side.rawValue].map(\.minY)
+        check(crown[3] > crown[0] + 3 && crown[9] < crown[0] - 3,
+              "down and up body heights survive loading instead of being normalized away")
+        check((0..<12).allSatisfy { abs(crown[$0] - crown[$0 + 12]) <= 1 },
+              "both steps follow the same body-height cycle half a cycle apart")
+        let renderedSide = (0..<24).map { index -> Data in
+            let rep = NSBitmapImageRep(bitmapDataPlanes: nil, pixelsWide: 256, pixelsHigh: 256,
+                bitsPerSample: 8, samplesPerPixel: 4, hasAlpha: true, isPlanar: false,
+                colorSpaceName: .deviceRGB, bytesPerRow: 1024, bitsPerPixel: 32)!
+            let graphics = NSGraphicsContext(bitmapImageRep: rep)!
+            NSGraphicsContext.saveGraphicsState(); NSGraphicsContext.current = graphics
+            sprites.draw(in: NSRect(x: 0, y: 0, width: 256, height: 256), time: 0, happy: false,
+                         walking: true, facing: -1, walkPhase: Double(index) / 24 * 2 * .pi + 1e-8, pose: .side)
+            graphics.flushGraphics(); NSGraphicsContext.restoreGraphicsState()
+            return rep.representation(using: .png, properties: [:])!
         }
-        let plantedStep = sideToePositions.count == 12 && (0..<6).allSatisfy {
-            sideToePositions[$0 + 1] >= sideToePositions[$0] - 1
-        }
-        let liftedReturn = sideToePositions.count == 12 && (6..<11).allSatisfy {
-            sideToePositions[$0 + 1] <= sideToePositions[$0] + 1
-        }
-        if !(plantedStep && liftedReturn) { print("Side foot x positions: \(sideToePositions)") }
-        check(plantedStep && liftedReturn,
-              "side walk advances the foot in one direction before returning instead of alternating random poses")
-        check(sideToePositions.count == 12 && (0..<12).allSatisfy {
-            abs(sideToePositions[($0 + 1) % 12] - sideToePositions[$0]) < 34
-        }, "side walk avoids the large foot-position jumps in the source sheet, including the loop boundary")
+        check(Set(renderedSide).count == 24, "the live side renderer visits all 24 drawings without skipping or repeating frames")
+        check(abs(HachiwareSprites.bodyOffset(pose: .side, phase: .pi / 4) + 5.5) < 1e-8
+              && abs(HachiwareSprites.bodyOffset(pose: .side, phase: 3 * .pi / 4) - 5.5) < 1e-8,
+              "equipped accessories follow the side drawing's down and up weight shift")
+        check(HachiwareSprites.bodyOffset(pose: .backDiagonal, phase: 1) == 0,
+              "the existing upward diagonal accessories keep their previous placement")
         check(HachiwareSprites.frameIndex(phase: 0) == 0 && HachiwareSprites.frameIndex(phase: 2 * .pi) == 0,
               "walking animation loops at full gait cycle")
         check(HachiwareSprites.frameIndex(phase: -.pi / 3) == 10, "negative gait phase wraps safely")
@@ -358,7 +360,7 @@ enum SelfTest {
         }
         let cycleDistance = WalkingGait.distancePerCycle
         let fullCycle = sampledGait(distance: cycleDistance, samples: 60)
-        check(abs(fullCycle.phase - 2 * .pi) < 1e-8, "configured stride advances exactly one twelve-frame cycle")
+        check(abs(fullCycle.phase - 2 * .pi) < 1e-8, "configured stride advances exactly one complete gait cycle")
         check(abs(sampledGait(distance: cycleDistance / 2, samples: 120).phase - .pi) < 1e-8,
               "half the travel distance advances only half the gait cycle")
         check(abs(sampledGait(distance: cycleDistance, samples: 15).phase - fullCycle.phase) < 1e-8,
@@ -374,8 +376,8 @@ enum SelfTest {
         resumedGait.recordMovement(from: .zero, to: NSPoint(x: cycleDistance / 4, y: 0))
         check(abs(resumedGait.phase - .pi) < 1e-8, "walking resumes from the paused gait without restarting it")
         check(HachiwarePose.allCases.filter { $0 != .greeting }.allSatisfy { pose in
-            Set((0..<12).compactMap { sprites.frame(pose: pose, index: $0)?.tiffRepresentation }).count == 12
-        }, "each walk contains twelve distinct drawings rather than repeated six-frame cycles")
+            Set((0..<pose.frameCount).compactMap { sprites.frame(pose: pose, index: $0)?.tiffRepresentation }).count == pose.frameCount
+        }, "each walk contains its full set of distinct drawings")
         check(sprites.frame(pose: .front, index: 0)?.tiffRepresentation != sprites.frame(pose: .front, index: 1)?.tiffRepresentation,
               "walk frames contain different artwork")
         var transparentCorners = true
@@ -448,11 +450,12 @@ enum SelfTest {
                                              facing: -1, walkPhase: 1, pose: pose)
             }
         }
-        renderWalkAnimation(to: directory.appendingPathComponent("hachiware-12-frame-walk.gif"))
-        png(width: 1800, height: 680, to: directory.appendingPathComponent("hachiware-side-cycle.png")) {
-            NSColor(hex: 0xF7F4EB).setFill(); NSRect(x: 0, y: 0, width: 1800, height: 680).fill()
-            for index in 0..<12 {
-                let x = (index % 6) * 300 + 20, y = index < 6 ? 365 : 35
+        renderWalkAnimation(to: directory.appendingPathComponent("hachiware-eight-directions-v10.gif"))
+        let sideRows = HachiwarePose.side.frameCount / 6
+        png(width: 1800, height: sideRows * 340, to: directory.appendingPathComponent("hachiware-side-cycle.png")) {
+            NSColor(hex: 0xF7F4EB).setFill(); NSRect(x: 0, y: 0, width: 1800, height: sideRows * 340).fill()
+            for index in 0..<HachiwarePose.side.frameCount {
+                let x = (index % 6) * 300 + 20, y = (sideRows - 1 - index / 6) * 340 + 35
                 HachiwareSprites.shared.frame(pose: .side, index: index)?.draw(
                     in: NSRect(x: x, y: y, width: 260, height: 260),
                     from: .zero, operation: .sourceOver, fraction: 1)
@@ -525,7 +528,8 @@ enum SelfTest {
     }
 
     static func renderWalkAnimation(to url: URL) {
-        guard let destination = CGImageDestinationCreateWithURL(url as CFURL, UTType.gif.identifier as CFString, 12, nil) else {
+        let count = HachiwarePose.side.frameCount
+        guard let destination = CGImageDestinationCreateWithURL(url as CFURL, UTType.gif.identifier as CFString, count, nil) else {
             fputs("Could not create animation preview\n", stderr); exit(1)
         }
         CGImageDestinationSetProperties(destination, [kCGImagePropertyGIFDictionary:
@@ -536,14 +540,14 @@ enum SelfTest {
             ("DOWN LEFT", .frontDiagonal, -1), ("DOWN", .front, -1),
             ("DOWN RIGHT", .frontDiagonal, 1), ("LEFT", .side, -1)
         ]
-        for index in 0..<12 {
+        for index in 0..<count {
             let rep = NSBitmapImageRep(bitmapDataPlanes: nil, pixelsWide: 800, pixelsHigh: 440,
                 bitsPerSample: 8, samplesPerPixel: 4, hasAlpha: true, isPlanar: false,
                 colorSpaceName: .deviceRGB, bytesPerRow: 3200, bitsPerPixel: 32)!
             let graphics = NSGraphicsContext(bitmapImageRep: rep)!
             NSGraphicsContext.saveGraphicsState(); NSGraphicsContext.current = graphics
             NSColor(hex: 0xF7F4EB).setFill(); NSRect(x: 0, y: 0, width: 800, height: 440).fill()
-            let phase = Double(index) / 12 * 2 * .pi + 1e-8
+            let phase = Double(index) / Double(count) * 2 * .pi + 1e-8
             for (slot, direction) in directions.enumerated() {
                 let x = CGFloat(slot % 4) * 200, y = slot < 4 ? CGFloat(220) : 0
                 HachiwareSprites.shared.draw(in: NSRect(x: x + 10, y: y + 20, width: 180, height: 190),
@@ -558,7 +562,7 @@ enum SelfTest {
             guard let image = rep.cgImage else { exit(1) }
             // Match the same distance/speed ratio as the app; GIF timing uses centiseconds.
             let totalCentiseconds = Int((RoamingMotion.previewCycleDuration * 100).rounded())
-            let delay = Double((index + 1) * totalCentiseconds / 12 - index * totalCentiseconds / 12) / 100
+            let delay = Double((index + 1) * totalCentiseconds / count - index * totalCentiseconds / count) / 100
             CGImageDestinationAddImage(destination, image, [kCGImagePropertyGIFDictionary:
                 [kCGImagePropertyGIFDelayTime: delay]] as CFDictionary)
         }

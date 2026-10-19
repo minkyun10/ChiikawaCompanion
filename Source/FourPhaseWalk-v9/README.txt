@@ -30,5 +30,6 @@
 재현
   swift Source/FourPhaseWalk-v9/FourPhasePreview.swift Source/FourPhaseWalk-v9/rig-parts-bold-v9.png <검토 출력 폴더>
 
-기존 사용자 요청에 따라 시트와 GIF를 먼저 보여드리는 검토 단계입니다.
-앱 리소스·걷기 재생 코드·아이템 좌표·실행 앱은 변경하지 않았습니다.
+이 폴더는 기존 사용자 요청에 따라 앱 교체 전에 만든 시트와 GIF 검토본입니다.
+2026-10-19 사용자가 승인하여 좌우 걷기에 적용했습니다. 적용 검증은 Source/AppliedFourPhaseWalk-v10에 있습니다.
+Final/validation.json의 runtime_applied:false는 시트를 먼저 생성했던 검토 시점의 기록입니다.
