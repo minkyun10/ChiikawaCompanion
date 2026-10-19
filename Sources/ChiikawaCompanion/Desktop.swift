@@ -248,6 +248,9 @@ final class DesktopController {
                     ?? desktopItem?.panel.screen ?? NSScreen.main)?.visibleFrame else { return }
                 self.itemWorld.move(item, to: point, bounds: bounds)
             }
+            desktopItem.view.onMoveEnd = { [weak self] point in
+                _ = self?.receiveDroppedItem(item, at: point)
+            }
             desktopItems[item] = desktopItem
         }
         for spot in ActivitySpot.allCases {
@@ -365,6 +368,30 @@ final class DesktopController {
         itemWorld.scatter(in: bounds); itemTarget = nil
         actors.first?.motion.retarget()
         state.itemStatus = "소품을 바탕화면에 다시 놓았어요"
+    }
+    @discardableResult
+    func receiveDroppedItem(_ item: CompanionItem, at point: NSPoint, now: Date = Date()) -> Bool {
+        guard state.showFriends, state.enabledItems.contains(item),
+              let actor = actors.first, actor.panel.isVisible,
+              state.activeAssignments.contains(where: { $0.friend == actor.friend && $0.enabled }),
+              !actor.view.isDragging, !homeRoutine.isInside,
+              desktopItems[item]?.view.isDragging == false,
+              DesktopGeometry.hit(point, in: actor.panel.frame),
+              let bounds = actor.panel.screen?.visibleFrame ?? NSScreen.main?.visibleFrame,
+              itemWorld.equip(item, at: actor.panel.frame.origin, bounds: bounds, now: now) else { return false }
+        stopDailyAction()
+        if homeRoutine.phase == .returning { wakeFromHome(now: now) }
+        itemTarget = nil; actor.motion.retarget()
+        actor.performance.cancel(now: now)
+        if state.expressive && now >= actor.bubbleUntil { actor.performance.begin(item, now: now, pickingUp: false) }
+        actor.view.equipped = item; actor.view.walking = false; actor.view.actionTime = nil
+        actor.view.action = state.expressive
+            ? (now < actor.bubbleUntil ? .surprised : actor.performance.action(now: now)) : nil
+        actor.view.needsDisplay = true
+        desktopItems[item]?.panel.orderOut(nil)
+        publishEquipment()
+        state.itemStatus = "\(item.name)를 건네받았어요"
+        return true
     }
     func dropItem() {
         guard let actor = actors.first, let bounds = actor.panel.screen?.visibleFrame ?? NSScreen.main?.visibleFrame else { return }

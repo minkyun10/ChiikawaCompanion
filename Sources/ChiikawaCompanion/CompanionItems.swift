@@ -97,6 +97,13 @@ struct ItemWorld {
         guard let point = ground[item], enabled.contains(item) else { return false }
         let contact = Self.contactPoint(origin: origin)
         guard hypot(contact.x - point.x, contact.y - point.y) <= 30 else { return false }
+        return equip(item, at: origin, bounds: bounds, now: now)
+    }
+    /// An intentional handoff uses the character hit target rather than foot proximity.
+    @discardableResult
+    mutating func equip(_ item: CompanionItem, at origin: NSPoint, bounds: NSRect, now: Date) -> Bool {
+        guard ground[item] != nil, enabled.contains(item) else { return false }
+        let contact = Self.contactPoint(origin: origin)
         drop(at: NSPoint(x: contact.x - 85, y: contact.y + 12), bounds: bounds, now: now)
         ground[item] = nil; availableAfter[item] = nil
         equipped = item; requested = nil

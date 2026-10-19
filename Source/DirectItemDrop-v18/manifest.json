@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-19",
+  "files": [
+    {
+      "path": "README.txt",
+      "bytes": 1952,
+      "sha256": "f46c81460ef0225ad39f38ec1d1e050e72d65cf03e2167060c9950f377be4a8f"
+    },
+    {
+      "path": "Review/settings-drag-handoff-v18.png",
+      "bytes": 188408,
+      "sha256": "fe63c86af1ff41c4618e0cb8acf633f18f1d479a24bb6a3fb5f242445614c228"
+    },
+    {
+      "path": "build-log.txt",
+      "bytes": 251,
+      "sha256": "e77865f0a35611fbd631d2b1c5e233034c7a60517a5ef907937d70cf7556f7c7"
+    },
+    {
+      "path": "cli-self-test.txt",
+      "bytes": 13847,
+      "sha256": "d202376b69582417b06c021914e74f23ecebf5aef2c96d6412c5bb2e323b9486"
+    },
+    {
+      "path": "codesign-log.txt",
+      "bytes": 109,
+      "sha256": "6210c61790ac2c9d268a576bdecb1c906f66d332a0c64871ceff1469e071d542"
+    },
+    {
+      "path": "compile-log.txt",
+      "bytes": 265,
+      "sha256": "291ebe6888b50d950d66a1ac77b9b0647256dd099c4d96f119eff6b5193d576f"
+    },
+    {
+      "path": "existing-resources-preserved.json",
+      "bytes": 3753,
+      "sha256": "ed644f5edf4b5351eaec00d485a72f1b8d4a932a7bd801b2a4a4c46403c5dc2d"
+    },
+    {
+      "path": "self-test.txt",
+      "bytes": 14158,
+      "sha256": "2ab6a8cc72cebf0255ce2794cbeca435dd0e479ab969b422e6f1a98664a011c9"
+    },
+    {
+      "path": "validation.json",
+      "bytes": 1239,
+      "sha256": "a85bf8027bfd88a9cdd1ff4a354087cd143393c3d184b89fb732cb94233026a0"
+    }
+  ]
+}

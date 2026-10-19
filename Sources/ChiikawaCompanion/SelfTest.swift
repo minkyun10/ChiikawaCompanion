@@ -277,6 +277,7 @@ enum SelfTest {
         runVoiceChecks(defaults: testDefaults) { check($0, $1) }
         runDailyActionChecks(defaults: testDefaults) { check($0, $1) }
         runActivitySpotChecks(defaults: testDefaults) { check($0, $1) }
+        runItemDropChecks(defaults: testDefaults) { check($0, $1) }
         runHomeTests(desktop: desktop, now: now) { check($0, $1) }
         var performance = CompanionPerformance()
         performance.begin(.camera, now: now, pickingUp: true)

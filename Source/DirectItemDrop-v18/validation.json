@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-19",
+  "app_version": "0.11.1",
+  "build": 22,
+  "cli_checks_passed": 198,
+  "packaged_checks_passed": 202,
+  "codesign_deep_strict": "passed",
+  "all_existing_resources_byte_identical": true,
+  "resource_count": 20,
+  "handoff_checks": [
+    "body target rather than foot proximity",
+    "release callback immediately equips and updates the view",
+    "no pickup before drag release",
+    "outside release retains ground prop",
+    "walking and automatic pickup can remain off",
+    "replacement returns old equipment without duplication",
+    "unrelated world coordinates preserved",
+    "pending daily action or visit cancelled",
+    "notification bubble and surprise reaction preserved",
+    "hidden character and disabled item rejected"
+  ],
+  "native_ui": {
+    "updated_handoff_instructions_visible": true,
+    "settings_closed_at_end": true,
+    "app_left_running": true,
+    "notification_monitoring_enabled": false,
+    "click_voice_enabled": true,
+    "character_volume": 0.65
+  },
+  "limitations": [
+    "Mouse release behavior is checked through real controller callbacks in the automated checks; a physical pointer drag was not performed in the GUI.",
+    "Live KakaoTalk delivery was not tested."
+  ]
+}

@@ -123,7 +123,7 @@ struct SettingsView: View {
                     Button("내려놓기") { state.onDropItem?() }.font(.system(size: 11))
                         .disabled(state.equippedItem == nil)
                 }
-                Text("소품을 클릭하면 주우러 와요. 드래그로 소품 위치를 바꿀 수도 있어요.\n카메라를 들면 찰칵, 기타를 들면 잠깐 연주해요. 다른 소품을 주우면 이전 소품은 내려놓아요.")
+                Text("소품을 하치와레 위에 드래그해 놓으면 바로 들어요. 바닥에 놓으면 그 자리로 옮겨요.\n클릭하면 주우러 와요. 카메라는 찰칵, 기타는 잠깐 연주해요. 새 소품을 들면 이전 것은 내려놓아요.")
                     .font(.system(size: 10)).lineSpacing(3).foregroundStyle(mutedInk)
                     .fixedSize(horizontal: false, vertical: true)
             }.padding(20).background(.white.opacity(0.9), in: RoundedRectangle(cornerRadius: 20))

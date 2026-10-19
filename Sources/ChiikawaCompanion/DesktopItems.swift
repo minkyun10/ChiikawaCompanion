@@ -6,6 +6,7 @@ final class DesktopItemView: NSView {
     var isDragging = false
     var onSeek: (() -> Void)?
     var onMove: ((NSPoint) -> Void)?
+    var onMoveEnd: ((NSPoint) -> Void)?
     private var down = NSPoint.zero
     private var origin = NSPoint.zero
     private var moved = false
@@ -13,8 +14,8 @@ final class DesktopItemView: NSView {
         self.item = item
         super.init(frame: NSRect(x: 0, y: 0, width: 76, height: 84))
         setAccessibilityElement(true); setAccessibilityRole(.button)
-        setAccessibilityLabel("\(item.name) — 클릭하면 하치와레가 주우러 와요. 드래그로 옮기기.")
-        toolTip = "\(item.name) · 클릭해 주우러 오게 하기 · 드래그로 옮기기"
+        setAccessibilityLabel("\(item.name) — 클릭하면 하치와레가 주우러 와요. 하치와레 위에 드래그해 건네기.")
+        toolTip = "\(item.name) · 클릭해 부르기 · 하치와레 위에 드래그해 건네기"
     }
     required init?(coder: NSCoder) { fatalError("init(coder:) is unavailable") }
     override var acceptsFirstResponder: Bool { false }
@@ -41,7 +42,7 @@ final class DesktopItemView: NSView {
     }
     override func mouseUp(with event: NSEvent) {
         isDragging = false
-        if !moved { onSeek?() }
+        if moved { onMoveEnd?(NSEvent.mouseLocation) } else { onSeek?() }
     }
 }
 
