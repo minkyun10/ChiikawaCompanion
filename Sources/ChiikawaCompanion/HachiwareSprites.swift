@@ -22,7 +22,7 @@ final class HachiwareSprites {
     static let columns = 6
     static let assetNames = ["hachiware-sprites-v1", "hachiware-cardinal-walk-approved-v5",
                              "hachiware-diagonal-matched-walk-v5", "hachiware-diagonal-walk-12-v2",
-                             "hachiware-side-walk-24-v9"]
+                             "hachiware-side-walk-24-joined-v14"]
     private(set) var frames = [[NSImage]](repeating: [], count: HachiwarePose.allCases.count)
     private(set) var alphaBounds = [[NSRect]](repeating: [], count: HachiwarePose.allCases.count)
     private(set) var sourceSizes: [String: NSSize] = [:]

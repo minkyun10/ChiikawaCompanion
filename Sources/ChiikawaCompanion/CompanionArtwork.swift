@@ -168,11 +168,6 @@ enum ItemArtwork {
             case .sasumata:
                 draw(item, in: NSRect(x: 121, y: 17, width: 121, height: 215))
             }
-            // Small paws rest in front of the held object, instead of leaving it floating.
-            do {
-                oval(NSRect(x: item == .sasumata ? 159 : side ? 73 : 83, y: item == .sasumata ? 79 : 69,
-                            width: 23, height: 18), fill: NSColor(hex: 0xFFFDFC), width: 3)
-            }
         }
         cg.restoreGState()
     }

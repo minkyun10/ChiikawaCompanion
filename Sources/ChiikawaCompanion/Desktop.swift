@@ -170,6 +170,7 @@ final class DesktopController {
     let speech = AVSpeechSynthesizer()
     let recordedVoice: RecordedVoicePlayer
     var lastRecordedLine: String?
+    var lastClickDialogueID: String?
     let started = Date()
     var lastTick = Date()
     var screenObserver: NSObjectProtocol?
@@ -298,19 +299,19 @@ final class DesktopController {
         state.itemStatus = "소품을 내려놓았어요"
     }
     func handleCharacterClick(_ actor: FriendActor) {
+        if actor.friend == .hachiware, let selected = ClickDialogue.choose(excluding: lastClickDialogueID) {
+            presentClickDialogue(selected, for: actor)
+        } else {
+            presentClickDialogue(ClickDialogue(id: actor.friend.rawValue, text: actor.friend.greeting, recording: nil), for: actor)
+        }
+    }
+    func presentClickDialogue(_ selected: ClickDialogue, for actor: FriendActor) {
         recordedVoice.stop()
         speech.stopSpeaking(at: .immediate)
-        let line: RecordedLine?
-        let text: String
-        if actor.friend == .hachiware, state.recordedDialogue,
-           let selected = RecordingCatalog.shared.choose(excluding: lastRecordedLine) {
-            line = selected; text = selected.text; lastRecordedLine = selected.id
-        } else {
-            text = actor.friend.greeting
-            line = actor.friend == .hachiware ? RecordingCatalog.shared.line(matching: text) : nil
-        }
+        lastClickDialogueID = selected.id
+        let line = selected.recording
         let duration = state.characterVoice ? max(4, (line?.duration ?? 0) + 0.35) : 4
-        actor.say(text, now: Date(), duration: duration)
+        actor.say(selected.text, now: Date(), duration: duration)
         if state.characterVoice, let line {
             recordedVoice.play(line, volume: state.characterVolume)
         } else if !state.characterVoice {

@@ -1,10 +1,10 @@
 {
   "created_at": "2026-10-16T12:08:58.617148+00:00",
   "operation": "copy; originals preserved",
-  "image_file_count": 529,
-  "unique_image_content_count": 362,
-  "supporting_file_count": 89,
-  "image_bytes": 172618542,
+  "image_file_count": 874,
+  "unique_image_content_count": 689,
+  "supporting_file_count": 105,
+  "image_bytes": 213610820,
   "symmetric_walk_runtime_applied": true,
   "files": [
     {
@@ -3390,6 +3390,2477 @@
     },
     {
       "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Final/Frames/left-01.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Final/Frames/left-01.png",
+      "bytes": 44407,
+      "sha256": "b57e8768fddf72554f197216aa9344160c3e7282551be2bf44b917a777d124aa"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Final/Frames/left-02.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Final/Frames/left-02.png",
+      "bytes": 45088,
+      "sha256": "a30a86dc5f33e0a55d61518bbeda9acdd70779312103b23bd994240edc05b1ba"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Final/Frames/left-03.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Final/Frames/left-03.png",
+      "bytes": 44905,
+      "sha256": "c831e4a8bda633d02b7242d8251614e5f85bbe55ab53ddb4f235900298047c6e"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Final/Frames/left-04.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Final/Frames/left-04.png",
+      "bytes": 45585,
+      "sha256": "e7c7cde108dffe90ac619425de3a2623bf8b16360d726b1de805fafd1fe9e188"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Final/Frames/left-05.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Final/Frames/left-05.png",
+      "bytes": 44638,
+      "sha256": "2e1d4ee6432a610ce8e704cf087f42db84611ee05f87c0b4745ef92f0484f632"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Final/Frames/left-06.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Final/Frames/left-06.png",
+      "bytes": 44765,
+      "sha256": "1479604f214da2fa7ec51be73a9d869a1aff917c9e343d49a6fbb3b183461bf2"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Final/Frames/left-07.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Final/Frames/left-07.png",
+      "bytes": 44239,
+      "sha256": "4ca6482cf0657b4c4daaf5d7e678630310e8742b65bed47749b19fe40ff31ae0"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Final/Frames/left-08.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Final/Frames/left-08.png",
+      "bytes": 45111,
+      "sha256": "6a01470e3a9d3666c81e74f7ee0f62d683cb14c14a2fdfcb6f478f5d4ac4fb74"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Final/Frames/left-09.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Final/Frames/left-09.png",
+      "bytes": 45134,
+      "sha256": "0651b00dbced8e104b08e4268c489e7992036f4055571f2fb5afdfdb85137002"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Final/Frames/left-10.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Final/Frames/left-10.png",
+      "bytes": 45865,
+      "sha256": "6567092817c27a0569f581eaadac9d233753155d6ba19b9601f598e4900e5cdb"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Final/Frames/left-11.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Final/Frames/left-11.png",
+      "bytes": 45379,
+      "sha256": "4d766318603170a87501b64b60b2094e22a68ebc9f7eced1fa40de47fba1c362"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Final/Frames/left-12.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Final/Frames/left-12.png",
+      "bytes": 45364,
+      "sha256": "6c77d53f1ec8cb1e088c8f2b25e61aba8b0d28cac8d4c32dff35a0969b163027"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Final/Frames/left-13.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Final/Frames/left-13.png",
+      "bytes": 44268,
+      "sha256": "878140774514ab59f8049f479e9b9ebe88e99b3c4f6a7b02f6b22475d0fa51a1"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Final/Frames/left-14.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Final/Frames/left-14.png",
+      "bytes": 45095,
+      "sha256": "8c5f966ec0f7597a1a22dd20ccebfa9f4536100ab26f9a0f43d6b56d860c3482"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Final/Frames/left-15.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Final/Frames/left-15.png",
+      "bytes": 44830,
+      "sha256": "34c79d0ab554b020f9b0efe6516c03fcf36f27a26e58a8ec50fab50c6d3d5e3a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Final/Frames/left-16.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Final/Frames/left-16.png",
+      "bytes": 45427,
+      "sha256": "e3232aaf5a7afba02d10a8d3460948049ae4119909f72bffbb79ba19beb1ed78"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Final/Frames/left-17.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Final/Frames/left-17.png",
+      "bytes": 44526,
+      "sha256": "b34f2be84f85bde4d085d606a45d8c429026bbc0b467d0566d8f9a81e3521ebc"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Final/Frames/left-18.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Final/Frames/left-18.png",
+      "bytes": 44692,
+      "sha256": "4e0923a13b67268a247669fb44b5c7b424e91c110e05c0ce2eefe3afa54e2a75"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Final/Frames/left-19.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Final/Frames/left-19.png",
+      "bytes": 44225,
+      "sha256": "6b59b84bca1b8e3cf3966d157edea011606b9588fa384f3f69165a49b00b7bca"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Final/Frames/left-20.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Final/Frames/left-20.png",
+      "bytes": 45087,
+      "sha256": "518efb1067b80fa473569b72ad2c6c9b7439f4c8ceb4137afb839cc4a98eb8b6"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Final/Frames/left-21.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Final/Frames/left-21.png",
+      "bytes": 45272,
+      "sha256": "5638234b41b57eb437c0c9d8ce3f42e0af96135bea0fdd217d91f609085adebe"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Final/Frames/left-22.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Final/Frames/left-22.png",
+      "bytes": 46019,
+      "sha256": "1cac46284fac356f3d03509264ed3fe39029c1c855be8682a3725c73977fef95"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Final/Frames/left-23.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Final/Frames/left-23.png",
+      "bytes": 45489,
+      "sha256": "0e99d848e7244ac79c71e95391fc010b9b46acd8b23ae19c90bf5cb15ed184af"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Final/Frames/left-24.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Final/Frames/left-24.png",
+      "bytes": 45438,
+      "sha256": "1780adaffa893ad357d4d19b839d576f5a9ccdde011d4a089e698ce870c19d1a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Final/Frames/right-01.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Final/Frames/right-01.png",
+      "bytes": 44358,
+      "sha256": "cd91c9b00beba3af486e3da69fc537becf24fba790115b4a876622a76ddb8e8d"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Final/Frames/right-02.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Final/Frames/right-02.png",
+      "bytes": 45053,
+      "sha256": "525e3147a186bbb49afd78201a6d243acb3767fbf358095277f59de1139e6773"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Final/Frames/right-03.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Final/Frames/right-03.png",
+      "bytes": 44828,
+      "sha256": "df2e7f7fbe4fcb7218adff6f8dd2106fc44aa5148107551cc851b166d4d581bf"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Final/Frames/right-04.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Final/Frames/right-04.png",
+      "bytes": 45461,
+      "sha256": "b14a2fea7931b1d4ae3e49a2993534329401e94e63f53842bd1dbabf88d48f62"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Final/Frames/right-05.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Final/Frames/right-05.png",
+      "bytes": 44553,
+      "sha256": "66989653bf0ae87f8e9642d6c57097494b4cfbbd2b20db4bdb120361bbd0cfcd"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Final/Frames/right-06.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Final/Frames/right-06.png",
+      "bytes": 44694,
+      "sha256": "19809638e30d76c40441caaf8732ac36094bf5743903209964aa5f5abaa28f43"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Final/Frames/right-07.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Final/Frames/right-07.png",
+      "bytes": 44295,
+      "sha256": "1a7cc4b6498e14f46b873886dd6920bec6f233ac784109330ae28ad7122a4026"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Final/Frames/right-08.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Final/Frames/right-08.png",
+      "bytes": 45028,
+      "sha256": "1c7de1ad47def4738e5b1ba67dfac00d9cd07bbe4bbff101efb7b905c3f49133"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Final/Frames/right-09.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Final/Frames/right-09.png",
+      "bytes": 45177,
+      "sha256": "02326153a85ee2a88527d627fc24cbbc46e2a5912d9990430c56709a8232c9ad"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Final/Frames/right-10.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Final/Frames/right-10.png",
+      "bytes": 46024,
+      "sha256": "27eb40b81e2a275b5bcd01f426fde62829c5173e646e54ca0a164a02055d9b47"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Final/Frames/right-11.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Final/Frames/right-11.png",
+      "bytes": 45414,
+      "sha256": "df9bff15f6165a97af751b944c4e4647b534cf784da8cc937bed63c26a3fc9ec"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Final/Frames/right-12.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Final/Frames/right-12.png",
+      "bytes": 45391,
+      "sha256": "a5d0f67208e0ca98b65a03c4493abcfaaea5c80aa1adf2c0f2c39366e275b258"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Final/Frames/right-13.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Final/Frames/right-13.png",
+      "bytes": 44308,
+      "sha256": "6ea426e01b8a34ad614c88d5610ea744706b95ce56bb45dfe7f40f21bc033616"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Final/Frames/right-14.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Final/Frames/right-14.png",
+      "bytes": 44989,
+      "sha256": "91670f347bb1d549eaf8bd47467e7c3c4f779f004818a42658de0d68e3320d57"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Final/Frames/right-15.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Final/Frames/right-15.png",
+      "bytes": 44746,
+      "sha256": "0e8e2ea7a6053a57b8f097610ba6774c701e9d48b36f0491c2bb78cbfc5eb848"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Final/Frames/right-16.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Final/Frames/right-16.png",
+      "bytes": 45476,
+      "sha256": "a58af148d80e1f78f68918b8cc9a173ae58a816c5f253c92cb7a1077e607fd9c"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Final/Frames/right-17.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Final/Frames/right-17.png",
+      "bytes": 44518,
+      "sha256": "4b64b9dc2fad4bee5846ca54e85989e0b7aaa2bc3460169780bcd57cc1403d10"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Final/Frames/right-18.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Final/Frames/right-18.png",
+      "bytes": 44612,
+      "sha256": "27bf814dd61861f4b5ce140cf437cf53236ee61374c867756a5689d953efe412"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Final/Frames/right-19.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Final/Frames/right-19.png",
+      "bytes": 44284,
+      "sha256": "be5ed141dd2315b2f4b6c62ca7425161462b07f7fe132a3e6684c1e1dfdbda65"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Final/Frames/right-20.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Final/Frames/right-20.png",
+      "bytes": 45112,
+      "sha256": "2c9f15542fb040d0ca862901ec4860ab8ad5f75c9995a928cb56d35111e39de4"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Final/Frames/right-21.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Final/Frames/right-21.png",
+      "bytes": 45196,
+      "sha256": "48c2ecbf30e0c9454b449749db1d260616a93fafe4f6e0b9081e9d173dbf6f4c"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Final/Frames/right-22.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Final/Frames/right-22.png",
+      "bytes": 46000,
+      "sha256": "8aba88de2205a9f6cc6932babe894ff267dc508c323e1d7dd03a4d5dff115b22"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Final/Frames/right-23.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Final/Frames/right-23.png",
+      "bytes": 45567,
+      "sha256": "41107a545c647484b245feb93b261c6b1e1c6fb23edbbffa509f506c4ed07d9e"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Final/Frames/right-24.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Final/Frames/right-24.png",
+      "bytes": 45524,
+      "sha256": "2dd048d96097526269391cad856a765763eef5776569670078aaf8080238d25c"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Final/hachiware-four-phase-keyposes-v14.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Final/hachiware-four-phase-keyposes-v14.png",
+      "bytes": 340479,
+      "sha256": "1706d590b46c428d224d30553d8bf3a23346d1c86be5e16cedc5a6d5622dee52"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Final/hachiware-four-phase-walk-slow-v14.gif",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Final/hachiware-four-phase-walk-slow-v14.gif",
+      "bytes": 387969,
+      "sha256": "590023196df4b70d6d0a77ec08e95a42106451a5aa067dc4d2a01473df961d0a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Final/hachiware-four-phase-walk-v14.gif",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Final/hachiware-four-phase-walk-v14.gif",
+      "bytes": 387493,
+      "sha256": "9c74239b5746e1938c85c20dd7155b69dbef524341c2d2b696a1d49a72908f47"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Final/hachiware-side-24-frame-review-v14.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Final/hachiware-side-24-frame-review-v14.png",
+      "bytes": 632256,
+      "sha256": "3e4378e77d767f5dd8a8bc7ef28f09804116001edbbb600c21d69cc6769a2398"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Final/hachiware-side-24-frame-sheet-v14.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Final/hachiware-side-24-frame-sheet-v14.png",
+      "bytes": 714270,
+      "sha256": "48857cbec8db2d74464f1343f23608279a4271989fdf3183dae05b7deb837805"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Final/validation.json",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Final/validation.json",
+      "bytes": 700,
+      "sha256": "8b71a81183605076fe2cbca6aca8b0d0a8536edfa999b9ce39e884d2d2c7e91d"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/left-01.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/left-01.png",
+      "bytes": 45494,
+      "sha256": "475a6166e1319d019d20a13a677304f6b167a0cd2f0de6fb1352b28336a0b9e6"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/left-02.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/left-02.png",
+      "bytes": 46195,
+      "sha256": "876fba6071810195fa6a762ecb7d1e4795d6712f68cc0972f31bcd893fd1a859"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/left-03.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/left-03.png",
+      "bytes": 45945,
+      "sha256": "f59f7d2251fc4ae5d754c2b788bb0e6e0240382d3f888e755cc95b8aa675c780"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/left-04.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/left-04.png",
+      "bytes": 46469,
+      "sha256": "e03bc0ba0a7d550874779a165a704e17a2024a629833cf1d62843bfc04858000"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/left-05.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/left-05.png",
+      "bytes": 45521,
+      "sha256": "e5e4cbe50668a8b7f9bbc04c64c31c138a9d1ac44440386ad92940eaec03ca2c"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/left-06.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/left-06.png",
+      "bytes": 45613,
+      "sha256": "290a0aa9c79aa2346de339b82d383d90eb96555f1ec7a542fc886c963ed0c0c2"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/left-07.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/left-07.png",
+      "bytes": 44776,
+      "sha256": "4d3efbae1aa9a41ac7d002532b72e64ed972e3b2ec6ff90003374c08e6dc642c"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/left-08.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/left-08.png",
+      "bytes": 45989,
+      "sha256": "a1773692c3933c1067d175d116c8f0c1a29d95916d3e8eb4d7e747dca421033d"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/left-09.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/left-09.png",
+      "bytes": 46157,
+      "sha256": "b2e5fc6bf60b04b21164c6c8c6ac3a6a1bcc5653c9c72d5609d4c540e210ebba"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/left-10.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/left-10.png",
+      "bytes": 47022,
+      "sha256": "998f6f172d224344d50673a73498d6dea9132f2b729d1a5f30a5c699eb78ef26"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/left-11.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/left-11.png",
+      "bytes": 46469,
+      "sha256": "a512752eeae871e6bbae3c24a4d8c3c2c7a23f0f99fa78183e2a00c742d29ea5"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/left-12.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/left-12.png",
+      "bytes": 46390,
+      "sha256": "0c0e3d4caf095659f01c2b7572927fd106673002969eee173450f3243cfe170b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/left-13.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/left-13.png",
+      "bytes": 45368,
+      "sha256": "b8f60e2de9559e7a03a0814d81513c53cbe42401cfedee23deebde2f9c535fff"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/left-14.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/left-14.png",
+      "bytes": 46186,
+      "sha256": "d5aa04bdd6694c8bcaa53bed5f576e1022233f6bf646c242b205697e4e4e3853"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/left-15.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/left-15.png",
+      "bytes": 45861,
+      "sha256": "cf6a728a38f68af64a07a9c6012574da7ff4d21069af69b3b480e9e26ab3c48d"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/left-16.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/left-16.png",
+      "bytes": 46350,
+      "sha256": "6225d41da6b3aa249a62a791d15f6470f8b7b0f6d8a762027ca5f1cd47b84ace"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/left-17.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/left-17.png",
+      "bytes": 45424,
+      "sha256": "eec841aad5531774872efca09e39c2c2c012ff1f47f84d68c88eff37cc87b16d"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/left-18.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/left-18.png",
+      "bytes": 45520,
+      "sha256": "70eba87a48b8055d000820e67072b403dd65ab12243f24c403fd166e6df51e44"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/left-19.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/left-19.png",
+      "bytes": 44785,
+      "sha256": "44b1fbe120e8f4397998c42004db601f8551dc53805ae5fbdf356ed403b678fc"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/left-20.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/left-20.png",
+      "bytes": 45972,
+      "sha256": "a643e19b21a3fa550c895fe34926bfd33b4680d10bf4d278781c8b299fad4201"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/left-21.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/left-21.png",
+      "bytes": 46283,
+      "sha256": "6d991c21dd9b768169fc340e9c3dccb595ae07ce056a0c76994ad2f590835cc7"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/left-22.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/left-22.png",
+      "bytes": 47147,
+      "sha256": "08eb5cbc0aa7b91ce2c5e33db38dedede88395eb1caed9b01131104afee39b2c"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/left-23.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/left-23.png",
+      "bytes": 46576,
+      "sha256": "df9073a5a7c3b383b66116191c130e39047c42da5b2ab59faef90d1ba24176c5"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/left-24.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/left-24.png",
+      "bytes": 46463,
+      "sha256": "982bf2225ce82360853563e0641ff8d394dd016574ce35fab24ac1f29062529b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/right-01.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/right-01.png",
+      "bytes": 45418,
+      "sha256": "a37e798ade19e9dec104443e5114f811b5126468aa7da3e51f2334c0df580503"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/right-02.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/right-02.png",
+      "bytes": 46087,
+      "sha256": "8bc2c2151b6fb50d04c6d28ec7b892d2b06c139e7751205becf4cb1a0ea105be"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/right-03.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/right-03.png",
+      "bytes": 45865,
+      "sha256": "0c5b6ee39bbbf299ff67c094562a531abb73c9a7c865c5f2a063ea5c6dade13e"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/right-04.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/right-04.png",
+      "bytes": 46340,
+      "sha256": "f46e78786c2047c399f95c914dc8d4257f1d289e110753fbcfec482e8d457c96"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/right-05.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/right-05.png",
+      "bytes": 45479,
+      "sha256": "b96e2faa51c00000afff94c66e501c2335bb41eaea6c2900da11a84451d0e0a7"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/right-06.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/right-06.png",
+      "bytes": 45504,
+      "sha256": "fd22c8e3d40fecacdb98f230b91798eeadb30bd02a250fffd909cd9c710f1031"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/right-07.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/right-07.png",
+      "bytes": 44848,
+      "sha256": "3518efc53a61990d4741926a6c190140fbda1dc57211a0ab67a0b91688033c35"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/right-08.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/right-08.png",
+      "bytes": 45912,
+      "sha256": "0ea475673d24e1b338dd1253474997f4f2567de0892f84e1a07d731943e37e9c"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/right-09.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/right-09.png",
+      "bytes": 46223,
+      "sha256": "c2a2a31f54427f258eed040ea120800135f706150699aa76a31bcaef26048a73"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/right-10.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/right-10.png",
+      "bytes": 47083,
+      "sha256": "54085623a0f45a4c2dbda72e71ad1c02270f6012d2503f682c61cb1fe82279ec"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/right-11.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/right-11.png",
+      "bytes": 46521,
+      "sha256": "629aa1f96f8f8ddf89e26c89dc15f40fe6d3dde8307a51eb1fce82c346474e97"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/right-12.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/right-12.png",
+      "bytes": 46407,
+      "sha256": "4931748f77908967385a6d8cdd3f4d29f7f6a69580645864e9ad8176b576b419"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/right-13.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/right-13.png",
+      "bytes": 45369,
+      "sha256": "cf00745e031ac96314ab03316600cef1249d4fa943f45c32dec93b20fd7dd88f"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/right-14.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/right-14.png",
+      "bytes": 46043,
+      "sha256": "13c6382b0da44d490f05ab5e6350a8975bbf55d7e39049c490eb8d27c8d6c65e"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/right-15.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/right-15.png",
+      "bytes": 45751,
+      "sha256": "054a2db8413a0f961c79318e76f7992396204ad305fdcb604e2a6429621584da"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/right-16.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/right-16.png",
+      "bytes": 46350,
+      "sha256": "ed4932b942e6117f8a968015ebfd07d80892ad02e1410356048c143170921f8e"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/right-17.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/right-17.png",
+      "bytes": 45389,
+      "sha256": "ef66626c2bba224f690fbf68b314c0e94f403a88d862047c3306f58879701004"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/right-18.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/right-18.png",
+      "bytes": 45413,
+      "sha256": "03e9b3fba7c095651d77b625293b73106c232fb76b352bb3f5799e1635d86c29"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/right-19.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/right-19.png",
+      "bytes": 44846,
+      "sha256": "4db8eed08bae6a6ba8a75c3115934087cddc12b4b4294218def87df1d403d43e"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/right-20.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/right-20.png",
+      "bytes": 45991,
+      "sha256": "c6157cb04a1b6fb2f9f7d70992e8c6f123d308cb4fec22957066ea80f96bdee8"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/right-21.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/right-21.png",
+      "bytes": 46226,
+      "sha256": "b454884a85cb36e8ffa8f877dc9041175f98d8549ed54aed94ac55791453584c"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/right-22.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/right-22.png",
+      "bytes": 47069,
+      "sha256": "485e7fed4b34837cafee2512a3881f82093701e1685826f9a6a122628d0c7d84"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/right-23.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/right-23.png",
+      "bytes": 46632,
+      "sha256": "97ed94f72a2185d6aa568c48b09b8571dcb15b4d55235c677d112008f3fa804a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/right-24.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/Frames/right-24.png",
+      "bytes": 46543,
+      "sha256": "4903ccbb48811df4a47c79bac545695de7c1beef22211f2724677e8e5bf8a8a8"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/hachiware-four-phase-keyposes-v14.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/hachiware-four-phase-keyposes-v14.png",
+      "bytes": 346598,
+      "sha256": "5210307bb8cff27c448802f32182c52ae1f6599285b02ae8d6e19a8ab1cf502b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/hachiware-four-phase-walk-slow-v14.gif",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/hachiware-four-phase-walk-slow-v14.gif",
+      "bytes": 393361,
+      "sha256": "f1a308518188f6134749fcc86904ac7184a1b98f6a56e157b9c1a2128426418e"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/hachiware-four-phase-walk-v14.gif",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/hachiware-four-phase-walk-v14.gif",
+      "bytes": 393406,
+      "sha256": "be440d69280b2c066a1ede78f0d1040dcacf6856efd42828b28440a8b7237535"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/hachiware-side-24-frame-review-v14.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/hachiware-side-24-frame-review-v14.png",
+      "bytes": 602300,
+      "sha256": "5253b806b901966d67cabe4c4b87d1704283196d57c7993c2b3289709b1aa876"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/hachiware-side-24-frame-sheet-v14.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/hachiware-side-24-frame-sheet-v14.png",
+      "bytes": 733300,
+      "sha256": "9950c22bbdceb2eceafbe2c5b6e7d7672f2277a7f4b6dfa7ee62a6138b2f3791"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/validation.json",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/01-native-joints/validation.json",
+      "bytes": 700,
+      "sha256": "8b71a81183605076fe2cbca6aca8b0d0a8536edfa999b9ce39e884d2d2c7e91d"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/left-01.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/left-01.png",
+      "bytes": 44981,
+      "sha256": "01070de217eec6f02d588c6789dc6f84d12d9a021adc3092c8f3b2ff73f12c95"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/left-02.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/left-02.png",
+      "bytes": 45729,
+      "sha256": "a9b68c8cd455b6ec6ddc9f0563246df132df0c148ac260537e5509a6cb583a78"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/left-03.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/left-03.png",
+      "bytes": 45566,
+      "sha256": "a0f60f8907927384e02ad367b3e9075eccebaf6d0836accca5673f4776a52b56"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/left-04.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/left-04.png",
+      "bytes": 46175,
+      "sha256": "09043179e3eba2518b938a84ecf29dbcf04cb88ad4262273ba980f9128320473"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/left-05.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/left-05.png",
+      "bytes": 45320,
+      "sha256": "743140a639cbb412a7bf4f9d03d76dbfef82a9a821520b401e9e53b6d3cb4a37"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/left-06.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/left-06.png",
+      "bytes": 45406,
+      "sha256": "6411d4622651b74acb09befafb757c4004a7f570d4c28015bf91a1bafd341cb5"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/left-07.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/left-07.png",
+      "bytes": 44656,
+      "sha256": "de0aae8f4c7be7599a14bd0fe8c649bbcd0961bab96148a0ef5286c012b1cea0"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/left-08.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/left-08.png",
+      "bytes": 45704,
+      "sha256": "4fd0be79179e7382af32897276da91c188805d8b27d554ddde44d46284e4fdb4"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/left-09.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/left-09.png",
+      "bytes": 45788,
+      "sha256": "36583daa28d341a80478ac407b8b91d12b9f1b2dc73517248e7a810181cfc344"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/left-10.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/left-10.png",
+      "bytes": 46599,
+      "sha256": "e50492ded148e01b8b9a2641a30372c3f874c37e766f51f525f7dc8126367b8c"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/left-11.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/left-11.png",
+      "bytes": 46072,
+      "sha256": "2aa7c67662fbd90aec2f00c2d72ca76d157b87f9454b60cedfa08554a67421b6"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/left-12.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/left-12.png",
+      "bytes": 46016,
+      "sha256": "f1445ab5eab1e354d393958c9d68852459791d40e0052db14d061ce8bfd9f268"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/left-13.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/left-13.png",
+      "bytes": 44851,
+      "sha256": "b8202173016a444fc8d1a7987b418a3220684feab3eadf46f1acc39ed0da5832"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/left-14.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/left-14.png",
+      "bytes": 45729,
+      "sha256": "8f8bfb7cc639363e4365d404d11b80ce1c931538c2ec0fe544f1321f1f7a0bef"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/left-15.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/left-15.png",
+      "bytes": 45499,
+      "sha256": "a5f95c2f0509088e7b5006dcd3b85f8d46343e6edfe9bb95f645636ad73e69a8"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/left-16.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/left-16.png",
+      "bytes": 46053,
+      "sha256": "6a18e7811c6e406202284386affc6dcba3eb4acd28be5654c2b918e6dbc0c807"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/left-17.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/left-17.png",
+      "bytes": 45254,
+      "sha256": "4465224516792866999c396f062a9d6542162908aa1de8671b21559cb6ea46c1"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/left-18.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/left-18.png",
+      "bytes": 45323,
+      "sha256": "e2c8de07bc73e473af7afdca7e2ad54cccfece2cc21d9505055190443eddabd0"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/left-19.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/left-19.png",
+      "bytes": 44656,
+      "sha256": "aa90ecf6f119e039bb38a14dc70cfdd6c5a1d97dacc0d78114722c34a1388c2d"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/left-20.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/left-20.png",
+      "bytes": 45697,
+      "sha256": "29176c206fdb80acda695efcf47a6b5f4cf38080e0f66fa2f17e4dd5d2dc0e6c"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/left-21.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/left-21.png",
+      "bytes": 45931,
+      "sha256": "4251b27965547fe3782676f806b068d75dd25e5bfada5b06c1b67a31413beedf"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/left-22.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/left-22.png",
+      "bytes": 46727,
+      "sha256": "ba4b6f568683bdb64d238da3b64e7dce636bf80bae3db798c2fcf13bba1846b1"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/left-23.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/left-23.png",
+      "bytes": 46173,
+      "sha256": "65941efd9ac6b137bd85e8be7bfb68bb50e084e3544b4c7a3053d953c57aed84"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/left-24.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/left-24.png",
+      "bytes": 46088,
+      "sha256": "2e6f74a142065918b0547cca5366d0389fe59549ea39e290bc95a64db9361085"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/right-01.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/right-01.png",
+      "bytes": 45000,
+      "sha256": "0a58c0dc90ea83ebaf4ee1f7040c85ccd80bdeeb6019120b6365e28bec39461b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/right-02.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/right-02.png",
+      "bytes": 45622,
+      "sha256": "9af577febb48d209abea01e1cc18cf29355979ab269eb3ac0268bb52b3aca13d"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/right-03.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/right-03.png",
+      "bytes": 45459,
+      "sha256": "45fdc36824772b2c56ab35417cbaa98940282a23584ab0932941c9f16b4090e6"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/right-04.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/right-04.png",
+      "bytes": 45986,
+      "sha256": "a8c7deba6682a7f2b5de9e08cc0e9b23d4d27e552fdc78f477535535730b29ec"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/right-05.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/right-05.png",
+      "bytes": 45224,
+      "sha256": "67f0f0f0e0a89518476bee29bd00a95df106eb588cdbe878ea6cb8ef1e9e7b61"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/right-06.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/right-06.png",
+      "bytes": 45320,
+      "sha256": "7495a86058a98a205daa45fe0c0eb8f733576b02a49435f486de335af9dd925c"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/right-07.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/right-07.png",
+      "bytes": 44677,
+      "sha256": "94d7ebb5a3c4ac96ed887613153bf36af457215d5dcfe33063e39b6af133c11f"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/right-08.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/right-08.png",
+      "bytes": 45590,
+      "sha256": "2c4e1c825e3684a7858c52c937380a5623e1216d37c2510c5aa1774e51a1f47d"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/right-09.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/right-09.png",
+      "bytes": 45827,
+      "sha256": "bf1ef40c7ffe672f81223910ac256ac2a40bb110edd5890f9eee8c7fec7b2595"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/right-10.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/right-10.png",
+      "bytes": 46650,
+      "sha256": "a4a4209ea764ff2308bc1999b74432b35f537954c2577ba48d57510eb5f246ce"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/right-11.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/right-11.png",
+      "bytes": 46118,
+      "sha256": "87fb9544ca9bd34321e42af96d0cbf8e374116120b1e6876d7f75d00218ed530"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/right-12.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/right-12.png",
+      "bytes": 46054,
+      "sha256": "bf977fa026be3e87fbe36306bdc57f4ea2287fd7d1c9be073fb1e7809e352b18"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/right-13.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/right-13.png",
+      "bytes": 44951,
+      "sha256": "d33602ce5671173a892c71b2b60bca97b5c6406e9b4ac5003c06b7cc72dcc785"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/right-14.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/right-14.png",
+      "bytes": 45570,
+      "sha256": "a7cd533390edfbcc1e061f31f8478254c9c865af3f76f093689ecedadb1b71df"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/right-15.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/right-15.png",
+      "bytes": 45349,
+      "sha256": "92916ca0df759d45599d6fe59668b7f7d6f135acbcac2682cdfdb1dad02cbd6a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/right-16.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/right-16.png",
+      "bytes": 46006,
+      "sha256": "8a354378d9c43ca27aed0493101943b602fc3ead554575eec7216efae4a260b1"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/right-17.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/right-17.png",
+      "bytes": 45140,
+      "sha256": "5e3efa984783098d8dd16944628db5a425536adf73414b08ee98e4daea3c26af"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/right-18.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/right-18.png",
+      "bytes": 45241,
+      "sha256": "b953063a589c6b9ed42c02b928b33c925c5e5d197c37f6e05e73bd57e53276d1"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/right-19.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/right-19.png",
+      "bytes": 44680,
+      "sha256": "c6cfb039aafec361f0089231b2b746991d88105e40d378b5c1d7c1ef6fff9f16"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/right-20.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/right-20.png",
+      "bytes": 45675,
+      "sha256": "0ad3f33999549d8620ee09596d25f8ff1a8491c0b3ee385ec5c2ca7f7235af0a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/right-21.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/right-21.png",
+      "bytes": 45838,
+      "sha256": "bf6997673de93e6e60615b96641df871cd555594ce7088499dfd6bd0e6f838fb"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/right-22.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/right-22.png",
+      "bytes": 46656,
+      "sha256": "7ac06c9799539e4f81b796298391ba6794d4d1273d72e1264998be5893af8b2a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/right-23.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/right-23.png",
+      "bytes": 46231,
+      "sha256": "0c20c45d2711d61baf93c0b82bb2b73d2832fd8c150a59a82c03d92e4cc2565d"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/right-24.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/Frames/right-24.png",
+      "bytes": 46184,
+      "sha256": "881b9294450a7cfa9a61aefbbc11ab66909469d2fffb26c23e80b3c0ecc14b27"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/hachiware-four-phase-keyposes-v14.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/hachiware-four-phase-keyposes-v14.png",
+      "bytes": 344478,
+      "sha256": "f2b373293f23a626df22798d29398251624c2480c7d24385ae59b6ae7ba738c4"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/hachiware-four-phase-walk-slow-v14.gif",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/hachiware-four-phase-walk-slow-v14.gif",
+      "bytes": 389594,
+      "sha256": "c62f8f5a9dde79a22b5e707889ff9074f4115d1831475da7a501ae286fdfaacc"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/hachiware-four-phase-walk-v14.gif",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/hachiware-four-phase-walk-v14.gif",
+      "bytes": 389484,
+      "sha256": "e1b028c7990d49751ea05a513009f06cb4ba9e2c23a62a7dd30c9c8589d15762"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/hachiware-side-24-frame-review-v14.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/hachiware-side-24-frame-review-v14.png",
+      "bytes": 597295,
+      "sha256": "6b2e96d13d5ce719b8e4fe4fd3a1f361a5054ab5c366643442f940aacbee52b3"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/hachiware-side-24-frame-sheet-v14.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/hachiware-side-24-frame-sheet-v14.png",
+      "bytes": 726606,
+      "sha256": "479683996d965f6479f98f6116405ea26dbe9c04d59b470196cb07dbafa5715c"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/validation.json",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/02-open-roots/validation.json",
+      "bytes": 700,
+      "sha256": "8b71a81183605076fe2cbca6aca8b0d0a8536edfa999b9ce39e884d2d2c7e91d"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/left-01.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/left-01.png",
+      "bytes": 45916,
+      "sha256": "5e72c70804fb85b76d5a34bedb8c349fb416b23620208d80c5b62c987c7c1c52"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/left-02.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/left-02.png",
+      "bytes": 46613,
+      "sha256": "7c2742800371299c0ad3720f3fe35eaabf4cf0a5d7e92649bbfb53055bfd1bd4"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/left-03.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/left-03.png",
+      "bytes": 46378,
+      "sha256": "ad9c4d60f233387f9beb0f9d2dc459e25957791e75454559bf742082caca47b4"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/left-04.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/left-04.png",
+      "bytes": 46953,
+      "sha256": "d72b5a50d9c20d308775fdca72652a2894fee866a25bd1540d22d562cda8eac1"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/left-05.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/left-05.png",
+      "bytes": 45934,
+      "sha256": "b84d78d0747ed294e7c9e5b8145ad501dfbdb0912afbf695ad86bf73bcdfea9b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/left-06.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/left-06.png",
+      "bytes": 45932,
+      "sha256": "cfb4be7bfb6c1d37743c102cfac2076b515676a638ac9e13863d51872f016331"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/left-07.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/left-07.png",
+      "bytes": 44947,
+      "sha256": "78d0ff58dd472bb44471be7dec8e39fbbac70cfe27c034030b67a6f36e6d0b01"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/left-08.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/left-08.png",
+      "bytes": 46188,
+      "sha256": "5deef1173066a6eadb07c3069e1be2a9bfad5a05e80c807b2abcc73b73d4823b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/left-09.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/left-09.png",
+      "bytes": 46468,
+      "sha256": "f38ceba763794c23899e0565601ac7c8fc0cdc69f1880572b22a7a8895b8fead"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/left-10.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/left-10.png",
+      "bytes": 47344,
+      "sha256": "a554f6b4ea2cb9604b9a583ab51f31fa7176a930f5de3116ace6db2e8284789c"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/left-11.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/left-11.png",
+      "bytes": 46890,
+      "sha256": "f1519a3d0140543e4655dc990979f9732aa7f73f5f423deaa9dff0f3ce2493f0"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/left-12.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/left-12.png",
+      "bytes": 46810,
+      "sha256": "798f63d081ce4eb762441d380713852ccd1ab8c9f24b5d13afa90fdef47d2361"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/left-13.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/left-13.png",
+      "bytes": 45808,
+      "sha256": "0fc80dc4eeba9209934a2b620709d5b4ae64b50cbe32dcf968e2fb311799ca79"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/left-14.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/left-14.png",
+      "bytes": 46567,
+      "sha256": "d93e2f1c2a9fcdedeea485600722d6281e4f8404c6de53515893b0b9fb304d35"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/left-15.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/left-15.png",
+      "bytes": 46264,
+      "sha256": "5eb1c565921416ed81b944628dd8f1f700902c958ac58326031c87f9b4829529"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/left-16.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/left-16.png",
+      "bytes": 46968,
+      "sha256": "83c02f0f026343aa81a8a4cefc811c9a184a7cdc4680d86ba7c08013ccec768e"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/left-17.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/left-17.png",
+      "bytes": 45991,
+      "sha256": "cf51938ae952f6d216a287d5c4c7f0e2e0a7bb3ae23246edc482febc04def1d1"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/left-18.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/left-18.png",
+      "bytes": 46168,
+      "sha256": "9f63645769fdf360c271ee6f89d0caf1fb884e8c951959256c8cde713c2c9199"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/left-19.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/left-19.png",
+      "bytes": 45338,
+      "sha256": "93bab710cb8d334299bc2286fea6105f9e4c0a66abd13cbd3a693f64d8a40994"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/left-20.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/left-20.png",
+      "bytes": 46569,
+      "sha256": "d87c81bb8512d71808a854d4abd82a7653d127be0b65af2cc6c098e19a9c702d"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/left-21.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/left-21.png",
+      "bytes": 46801,
+      "sha256": "6f7d0c25f196627616d8752f8e48e82ca9db7cd812735690f9cfd492422ace9b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/left-22.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/left-22.png",
+      "bytes": 47498,
+      "sha256": "2eae51ca7547e631ab81f33a43ec16d459d4f54bf27e7a00f440af52cb5a1879"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/left-23.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/left-23.png",
+      "bytes": 47010,
+      "sha256": "b6800d6deaa4ce3c37d5589b5bfab0036705238e5eddad901c4e1e2e04cd8ad5"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/left-24.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/left-24.png",
+      "bytes": 46862,
+      "sha256": "2eb37808337f7b568d9c45e118b7fb023f60d2d34dd9a7591d026292e301e19b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/right-01.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/right-01.png",
+      "bytes": 45862,
+      "sha256": "d0d293ba8136033c979f980553d79bf1788567b7f5e0a5c30a066331ce749642"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/right-02.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/right-02.png",
+      "bytes": 46508,
+      "sha256": "7d7d1e822a1a47ae699b167398d4d3b4236b78f54efb225feb7d87bb831e7a32"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/right-03.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/right-03.png",
+      "bytes": 46300,
+      "sha256": "bbccc503cbf3e11d9d61e15bf99d8cb1dcc7e71c2f151cacc39f6a0e5510b829"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/right-04.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/right-04.png",
+      "bytes": 46884,
+      "sha256": "494d538091052e8bc8f2d00d8c5338db705457f2a5ad9fe25965a40a972be613"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/right-05.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/right-05.png",
+      "bytes": 45898,
+      "sha256": "f7e4e012a0e22a273c5963692f830565e447237e23d6977fa22538001d25dd35"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/right-06.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/right-06.png",
+      "bytes": 45860,
+      "sha256": "b6162c7662fcf98dade508580c989a94d7f3e0161a08ed2204230768a0389426"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/right-07.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/right-07.png",
+      "bytes": 44979,
+      "sha256": "7d467852cf35ef1d8f19c27e365c3a7478a3fc479b2b6f9d43b84ecd72027ae9"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/right-08.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/right-08.png",
+      "bytes": 46083,
+      "sha256": "ef17310cd123cbb72e704cffcb45ab748cc91b9d31af6cd5f9948b6a82525a9f"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/right-09.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/right-09.png",
+      "bytes": 46462,
+      "sha256": "a9eac0883585d7e9c6c0255df6fe8310179cc8caf787d712d7d1414c2e4c5c81"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/right-10.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/right-10.png",
+      "bytes": 47429,
+      "sha256": "a1aaf924a4edaf3f6b3554aaadea13a49a0a193f447e930ffd08c7cf9d1530e1"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/right-11.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/right-11.png",
+      "bytes": 46915,
+      "sha256": "074aa234b6b17543c95daa7b6fc566dfad2280ca11e9cf838ef2fe6f899342c8"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/right-12.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/right-12.png",
+      "bytes": 46850,
+      "sha256": "705b321b59ff07bc7a1394a1d368e3d0e16e8414d60eba0ed7aaa1772e6a5615"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/right-13.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/right-13.png",
+      "bytes": 45815,
+      "sha256": "d00b95cd5ec1f65a13c9ac30950bb6141afcca801c70afc2234e988be7cbd4d0"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/right-14.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/right-14.png",
+      "bytes": 46403,
+      "sha256": "b11c5c2e2a14c1f33738a6c4cd6506c8303e143ea237b5df28fb44230222cc3d"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/right-15.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/right-15.png",
+      "bytes": 46188,
+      "sha256": "d6657f0f180d98c47a93399442487c3344cb104396aa757f2e33449867b9b51d"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/right-16.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/right-16.png",
+      "bytes": 46973,
+      "sha256": "b84e21595d8b57526197352b4ba3783cf7220a71c8ba56be1be1505a9287214b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/right-17.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/right-17.png",
+      "bytes": 45991,
+      "sha256": "a6185968098eeff4e32beac3683bfc99be83d064a3593e4393c2ea0084b3fcec"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/right-18.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/right-18.png",
+      "bytes": 46082,
+      "sha256": "9e788e1088f639ea033e7f3accdcf218921dff9bf56cae4146508556fe065f4a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/right-19.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/right-19.png",
+      "bytes": 45343,
+      "sha256": "82f3ae5ad805e31e6e9a7174ee6250844fa90dfedaef2d0b40596e44206ff1a1"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/right-20.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/right-20.png",
+      "bytes": 46557,
+      "sha256": "d4b65d10b71ce778e41a3aeaccd15acde2619285ca4c7a4f24c745f61e53be6e"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/right-21.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/right-21.png",
+      "bytes": 46804,
+      "sha256": "7292a2e587b65a015adf6c37c3130ff85fb9bfb028422b2be8131de9970e6274"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/right-22.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/right-22.png",
+      "bytes": 47463,
+      "sha256": "ea579f2cec4f8dd53886a6992fed0732e4a08675995dab7fe0ad1a49a2c74a8a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/right-23.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/right-23.png",
+      "bytes": 47063,
+      "sha256": "e323133372777aa5d1e7c227d016b44a4d833c107b7950a79f78f3c4a7f4295c"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/right-24.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/Frames/right-24.png",
+      "bytes": 46973,
+      "sha256": "976d5063bc9422a16221e9f3aec52ac7d25eeaf51f3ac34013b480c6a6d5b8fa"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/hachiware-four-phase-keyposes-v14.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/hachiware-four-phase-keyposes-v14.png",
+      "bytes": 349526,
+      "sha256": "3f10f814a9b00ee56caf5a8458eaea29b3bb34108be2baac10d29bb4015f5448"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/hachiware-four-phase-walk-slow-v14.gif",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/hachiware-four-phase-walk-slow-v14.gif",
+      "bytes": 397238,
+      "sha256": "a8ba93d83d4e260a98979257ad0fa92835459ad0f5c97bec000a46284544b1f0"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/hachiware-four-phase-walk-v14.gif",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/hachiware-four-phase-walk-v14.gif",
+      "bytes": 397589,
+      "sha256": "b5407e5e9c0fcb0f786f74380915a435123ae462afc192950ad052d647e7b14b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/hachiware-side-24-frame-review-v14.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/hachiware-side-24-frame-review-v14.png",
+      "bytes": 650580,
+      "sha256": "5f6dcd9d1bd147b189060777f35e88a98c462eb5b3e817a113920161ef88ab96"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/hachiware-side-24-frame-sheet-v14.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/hachiware-side-24-frame-sheet-v14.png",
+      "bytes": 745218,
+      "sha256": "6a13786eeeb5a96ae255f4eaddf74208aeb861bf7940741aa42be0839e277a8b"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/validation.json",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/03-unified-outline/validation.json",
+      "bytes": 700,
+      "sha256": "8b71a81183605076fe2cbca6aca8b0d0a8536edfa999b9ce39e884d2d2c7e91d"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/left-01.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/left-01.png",
+      "bytes": 45319,
+      "sha256": "241fd030d677253853d03ac01ad845b155b8131b2729c86a6bb3ac937f89b2a2"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/left-02.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/left-02.png",
+      "bytes": 45953,
+      "sha256": "39de962cf39e704bbe6ab44037564011dcf8c933e402aac5a0a43eaeb3fceff2"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/left-03.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/left-03.png",
+      "bytes": 45694,
+      "sha256": "30aef1e61de12e766905281201782e0618a4a377e28784f65fde71f3cf35a5a0"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/left-04.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/left-04.png",
+      "bytes": 46210,
+      "sha256": "bfa9bb3fd7ec68c836b8175cb2a6799924ebb6616605079abd7b70b6413398fb"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/left-05.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/left-05.png",
+      "bytes": 45314,
+      "sha256": "ba9cceadb7eca9cb96fe21e7baa354c2ccaf092710a88597a4aa782e7472bd94"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/left-06.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/left-06.png",
+      "bytes": 45300,
+      "sha256": "f86c234846464e5375317ae2ff858adc39bc38dfb386982577806cdefe525f7e"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/left-07.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/left-07.png",
+      "bytes": 44376,
+      "sha256": "fe06a4c4aaeff16cd8c26751d26370770ef3ffab6f6ee08e22c7be8ac53664e0"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/left-08.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/left-08.png",
+      "bytes": 45548,
+      "sha256": "f93e766da57eff0394ed164539b9b3cdf5b30a4f25c0c1b4dc62887417d6137f"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/left-09.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/left-09.png",
+      "bytes": 45827,
+      "sha256": "6d80cdfca37fc2d5ae0f463fcf7306046c484a0b8cda89815e34b56becca3fec"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/left-10.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/left-10.png",
+      "bytes": 46712,
+      "sha256": "7bcb29b54f8f01512f27e82b0583a792720d138101d84a7b7775e76b1fe1e2ef"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/left-11.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/left-11.png",
+      "bytes": 46219,
+      "sha256": "1a1b02b32cb8309d15f5a9824d5ac97f18aada4f4cca58de8560192d3e17b73f"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/left-12.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/left-12.png",
+      "bytes": 46160,
+      "sha256": "194a22758147c15b42fc8563d996f82a67ca4806c35db0c688edba7c5c3afd93"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/left-13.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/left-13.png",
+      "bytes": 45170,
+      "sha256": "7cc013d06bfe40cb448a7e004d5bd923cca7681dac255e91dd0cd710dd49a408"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/left-14.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/left-14.png",
+      "bytes": 45925,
+      "sha256": "b436beae06bf3f132abb356cabbec3adc1b5ac8d5c457b990adb990fb0d15de7"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/left-15.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/left-15.png",
+      "bytes": 45631,
+      "sha256": "a622bfdebb242b074724fc7bf18da801ee253f079c9b91765a5605dc942d8220"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/left-16.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/left-16.png",
+      "bytes": 46162,
+      "sha256": "78abba5629fdf27b1bc7d031bb040d58b0e61bfdff112709593a74a9fb268d9a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/left-17.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/left-17.png",
+      "bytes": 45280,
+      "sha256": "97b9c4f17523930bc7d3645ae2d60ff7ab33d3e0b5f101ef22005dcaff2dc225"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/left-18.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/left-18.png",
+      "bytes": 45240,
+      "sha256": "be1022b7b3b7228bf7e1c9946950cfcb45b041bc4327979196e92f30bbfd7742"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/left-19.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/left-19.png",
+      "bytes": 44363,
+      "sha256": "c6e9cf78a44aa89f9ac97867f1cfaac70ea1253218e1a26492e6a254124258af"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/left-20.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/left-20.png",
+      "bytes": 45649,
+      "sha256": "af97287e2b8019fcfc251b65bfb3af65a23cc4d27a5fe275b28aba7ad63bd926"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/left-21.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/left-21.png",
+      "bytes": 46033,
+      "sha256": "45df74429e36f2ddf0915d7960ac95de531a08440fce1bc25809c4fe48549090"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/left-22.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/left-22.png",
+      "bytes": 46868,
+      "sha256": "3ab396fa952e3c1ebc3fc5e88cd32324ca7d6990c84575341b11699e5d5afbdf"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/left-23.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/left-23.png",
+      "bytes": 46334,
+      "sha256": "c2825d7c5a48d9f3c923692bce86bd37959882d09da7a385e8d6f7ec04925226"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/left-24.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/left-24.png",
+      "bytes": 46209,
+      "sha256": "e6a85196c9ef805b29a9179849abafa7ba322fedb50d3dcc230c97e574f23f38"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/right-01.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/right-01.png",
+      "bytes": 45196,
+      "sha256": "7d8052af5e04db84af56852fc376f327c52abbe2e1447256ea565815c19234fb"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/right-02.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/right-02.png",
+      "bytes": 45890,
+      "sha256": "4f20cd6efb037fca2ff097651125299bb997253c9e9b63b13f0da531a141dcf4"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/right-03.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/right-03.png",
+      "bytes": 45635,
+      "sha256": "e76e36c184c90998dce552427e36e4f4c80334a3b651c4f64b19143394ba5412"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/right-04.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/right-04.png",
+      "bytes": 46178,
+      "sha256": "425f7838845e36e971cb15937859693a828ed660f734ca705064d50f18418491"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/right-05.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/right-05.png",
+      "bytes": 45281,
+      "sha256": "13db185b1eaefcd8cddde6b01b49066942d2575ef1bea594aaf1456cffcd78ba"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/right-06.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/right-06.png",
+      "bytes": 45240,
+      "sha256": "33c5e11402e5ea416c22f3c84c069d82bdc63cce694925156e1fe6eb36d34843"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/right-07.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/right-07.png",
+      "bytes": 44386,
+      "sha256": "de48178c7b0c91f0a86e29f4e4d99fcf2efb15c6fb453cc94d4be0d71ea18a2f"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/right-08.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/right-08.png",
+      "bytes": 45455,
+      "sha256": "6150a0cb626fb542f2ddf810dd50755c6ec6ea608423d66ef7f7dc911774bbc8"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/right-09.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/right-09.png",
+      "bytes": 45852,
+      "sha256": "ddeba96a0b45bb41002d19865cea6e166bbde18a4163327d507cab4a843021b6"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/right-10.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/right-10.png",
+      "bytes": 46756,
+      "sha256": "af42220029e9b8e459d5e11f79f0298bcf00356a2c2ae0ee9f559f35cbf9d8ae"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/right-11.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/right-11.png",
+      "bytes": 46248,
+      "sha256": "f89afaf2f2c12b717e3e77907205673b59404bed5322561c21ba3b2ae9d30d9c"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/right-12.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/right-12.png",
+      "bytes": 46160,
+      "sha256": "3a14a33cfcc76713b232589e591d0614b4f30cc11631aff715135730f249b1d5"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/right-13.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/right-13.png",
+      "bytes": 45160,
+      "sha256": "76100942798c8195e88ea9259739c63eba72c92e9ef740ce1539ad3ae6c01a4b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/right-14.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/right-14.png",
+      "bytes": 45766,
+      "sha256": "a37116e2712984555f12bbf24585fac243f66bab6e06f8c614a01c3caa4e268f"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/right-15.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/right-15.png",
+      "bytes": 45544,
+      "sha256": "f4bef5d76a56d7ba9b5df72c85da38b7c799a539e69286de7c4921e66f18976c"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/right-16.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/right-16.png",
+      "bytes": 46210,
+      "sha256": "656d4fdd66e723c9409358265d2f506dddf6c79b33e02200e71ae453ec603b9b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/right-17.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/right-17.png",
+      "bytes": 45194,
+      "sha256": "525f713798f1ca635e6d13e27021a229e0fe527eaa748315ca1b76790650c2c3"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/right-18.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/right-18.png",
+      "bytes": 45140,
+      "sha256": "12c024b61aa3360840fd602632a3903b539683141c9009df0e5b5d6afdadf380"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/right-19.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/right-19.png",
+      "bytes": 44361,
+      "sha256": "64ccb03fb204408e4249006f4c8f1950fb72582e18bb02450b6b2ffb1e52a815"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/right-20.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/right-20.png",
+      "bytes": 45653,
+      "sha256": "89b06e2617a8b7c6aacb06570688edb38b598f847262e2e6549aaa3162f9d0aa"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/right-21.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/right-21.png",
+      "bytes": 45989,
+      "sha256": "da9f84deffbefa22e4ed9a8fd93d22a62fa24198284dda46b6201f7585ff05e5"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/right-22.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/right-22.png",
+      "bytes": 46795,
+      "sha256": "a753b24f088bc4a22951ac478c15e84435a618a382cb46c3477d8d540f29ff4e"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/right-23.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/right-23.png",
+      "bytes": 46379,
+      "sha256": "365d53911eafd5ec3e48ab810264f4aad8b8f2a361029a8d0dadeb9cb2d39168"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/right-24.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/Frames/right-24.png",
+      "bytes": 46284,
+      "sha256": "cec6d9257d506dd18cb6521ba4c94bb744770664c2b6d1bce9c9a27946b41706"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/hachiware-four-phase-keyposes-v14.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/hachiware-four-phase-keyposes-v14.png",
+      "bytes": 345098,
+      "sha256": "8a08f306fcee3b089b556f9a9a14fb08b5eb909cef4e6f6644f791b6659c8e38"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/hachiware-four-phase-walk-slow-v14.gif",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/hachiware-four-phase-walk-slow-v14.gif",
+      "bytes": 388990,
+      "sha256": "ec75a72289d4aaa540baa99ab5c5d42298ee51ae9b94c21d41543ba097c02094"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/hachiware-four-phase-walk-v14.gif",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/hachiware-four-phase-walk-v14.gif",
+      "bytes": 388810,
+      "sha256": "8f81bd032d0bb8d99213208eb3943ef501f2ea5382bdf146862b485e67318415"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/hachiware-side-24-frame-review-v14.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/hachiware-side-24-frame-review-v14.png",
+      "bytes": 646876,
+      "sha256": "29c40aacc54e4de41044e996cb51737113323f2fd24d6b2a9f2228b3aada8b75"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/hachiware-side-24-frame-sheet-v14.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/hachiware-side-24-frame-sheet-v14.png",
+      "bytes": 731635,
+      "sha256": "6ff648a8f9a99dea1a83671345a38012319a23df9ab89b80bf86b05723465a01"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/validation.json",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/04-joined-contour/validation.json",
+      "bytes": 700,
+      "sha256": "8b71a81183605076fe2cbca6aca8b0d0a8536edfa999b9ce39e884d2d2c7e91d"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/left-01.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/left-01.png",
+      "bytes": 45530,
+      "sha256": "39f2ad950cb774b4e6c1c0aaf3a623db047cbee2eaf1f00dd3f5d4a8c9b55a04"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/left-02.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/left-02.png",
+      "bytes": 46182,
+      "sha256": "e69cede2fd1b503497a137d7402893f8d1d4b678710b246427eaa84c44be4ddf"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/left-03.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/left-03.png",
+      "bytes": 45991,
+      "sha256": "6b92b569c5435aa91de76896d107a2871503250084e517c082104edfb563df59"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/left-04.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/left-04.png",
+      "bytes": 46599,
+      "sha256": "d516b7d7fa4f6bb1222fefb7dd9dac38edc1b0f9762236cc6273312234a97a2b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/left-05.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/left-05.png",
+      "bytes": 45632,
+      "sha256": "f66a4e601f137abd97c7d208645b6a78af249c60484eb5867c4224e697b44dbc"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/left-06.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/left-06.png",
+      "bytes": 45618,
+      "sha256": "d621df987ef42e95f004555abc3e39fcd11ec055115ebcfef7536ff7ca956fad"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/left-07.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/left-07.png",
+      "bytes": 44715,
+      "sha256": "879690688c7b6c73d88eb26b647233876e02b7f29c1a0d7de6e1cfc1a450b5c6"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/left-08.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/left-08.png",
+      "bytes": 45877,
+      "sha256": "014c2ae59a469f418c562917683a08c363a1bc16443c89291c7e5fe6b37c15ae"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/left-09.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/left-09.png",
+      "bytes": 46133,
+      "sha256": "f49e83ab9dee182437d5e630be94024533f2b146307cfc7f80dbe91053e8eaea"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/left-10.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/left-10.png",
+      "bytes": 47012,
+      "sha256": "98e29d6aa17247475b5005216867d6c5215597054a7d749802bb16b0489eb36d"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/left-11.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/left-11.png",
+      "bytes": 46531,
+      "sha256": "4393002412d7489dca88b1e2459572f052adbf2d8c7363e514eaa7adfa83eecf"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/left-12.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/left-12.png",
+      "bytes": 46453,
+      "sha256": "522df55e6a3ea256da2000e5c7bb07219926d293d18641f1c16e0661a4fa4b38"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/left-13.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/left-13.png",
+      "bytes": 45402,
+      "sha256": "81c4408456d42a3a7763912de1c365f3e9faf629cf56c73274da15153b586df2"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/left-14.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/left-14.png",
+      "bytes": 46171,
+      "sha256": "2204c3f2d77fcb0e448bab61ab8721af182fa3ab83a355e91234f1f511a96a0b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/left-15.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/left-15.png",
+      "bytes": 45914,
+      "sha256": "16d8a8f67d354e2ccebf81807dc3dd9cc3d6ff47a9e74199e5821d371e30c2eb"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/left-16.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/left-16.png",
+      "bytes": 46507,
+      "sha256": "e35e442dc1cb072ca12d761ab877fa357057cda51594565aefe915855858ef4a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/left-17.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/left-17.png",
+      "bytes": 45509,
+      "sha256": "99b9c1ca90080b6416a9e8111805e67c79107b773e718b7f5f5d44e79a7f57a8"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/left-18.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/left-18.png",
+      "bytes": 45542,
+      "sha256": "fa70b03e2ed15d66f674e4df9ebe6b8355b9f2a5ad9384280489226faf7e0c85"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/left-19.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/left-19.png",
+      "bytes": 44752,
+      "sha256": "9204b77492b7f142f0ab91d4f4cf9771a14f4f11d25b012e8db3a40e56ff5bc1"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/left-20.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/left-20.png",
+      "bytes": 46057,
+      "sha256": "c9ed37a6fb9357c75544bc94e9ef17198b5475f5c67773a615e93ea6149b0c81"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/left-21.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/left-21.png",
+      "bytes": 46383,
+      "sha256": "fd348515034ee194364e7d7ea9fa220459a51fa23a040c4d80137c201d9dfc6f"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/left-22.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/left-22.png",
+      "bytes": 47153,
+      "sha256": "6073672c427ebf69b14d9fc4474d1703e212bd4ab88dc042294f02b81f932181"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/left-23.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/left-23.png",
+      "bytes": 46645,
+      "sha256": "21d4a7bd365d58236f0b2cf85882b606c81fba6235bf283c78132043f2d41a76"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/left-24.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/left-24.png",
+      "bytes": 46495,
+      "sha256": "a976ad5e1e9d68839bcd26a81a6054e4127180951aad7f3904aeef75871bf89a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/right-01.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/right-01.png",
+      "bytes": 45458,
+      "sha256": "df013f96aa1d01165d4d2054c8d195e5da3a6db72a765ac30d021f9212942624"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/right-02.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/right-02.png",
+      "bytes": 46103,
+      "sha256": "6681d5cee7ae07bdcdcd2758334c79e30bb1a08948a99cb2872ce45346da71a0"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/right-03.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/right-03.png",
+      "bytes": 45939,
+      "sha256": "29f7188bbd60e7884b074e212e6742e02092db6b2d8090c5744f813f39b0dc5b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/right-04.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/right-04.png",
+      "bytes": 46473,
+      "sha256": "711408da881068e4b3051f3a2252bf61532bae1301dd20dfda4c419f284e303b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/right-05.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/right-05.png",
+      "bytes": 45590,
+      "sha256": "1286122ed7a013996f11331b75120c982b9d5a6a2db7ad2704b1c433a4112c72"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/right-06.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/right-06.png",
+      "bytes": 45531,
+      "sha256": "79ae967c8920f891dbb1764616b3a3edd0545789b0eb987370a94d51f9b18c9b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/right-07.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/right-07.png",
+      "bytes": 44763,
+      "sha256": "6401182ef91b2a4fca9e9ca4149459f198fe8bf7c9d93be8182a09eae836538d"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/right-08.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/right-08.png",
+      "bytes": 45786,
+      "sha256": "516b8ddbcee9a0223b3d22e8584897052df0e734d18719ca8f4b544b2fb9f835"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/right-09.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/right-09.png",
+      "bytes": 46182,
+      "sha256": "fd6c2169034701feb22abe0a4cff73fc1e4b9e3b2deb31ecc47458d0baf264ab"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/right-10.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/right-10.png",
+      "bytes": 47068,
+      "sha256": "5d7c1e9d1c72bbdc69ee6bd705296a3df7233d4c6bba29358d3ed5500fc4bf24"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/right-11.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/right-11.png",
+      "bytes": 46599,
+      "sha256": "7a49e98b5eabafee5935ea688aa6fa13d03df728e036ea499a135eeb4f813f50"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/right-12.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/right-12.png",
+      "bytes": 46473,
+      "sha256": "13980d032460f62e09cacb28c546ec278fa4b7022ca08a97a9ea5f5c57c6a775"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/right-13.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/right-13.png",
+      "bytes": 45425,
+      "sha256": "53304b08b1bbd7faa3db44101527f515b7f7632df63cf5a34a5c8127451bfa4d"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/right-14.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/right-14.png",
+      "bytes": 46036,
+      "sha256": "c568e2db6fb4610a21e01222a4f26852853908ff1871942c15645f257fadaeb0"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/right-15.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/right-15.png",
+      "bytes": 45833,
+      "sha256": "3ab0074c9a29c8788469df01d271af10f029e6f666bfb41709f3bbf8cf98ae8e"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/right-16.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/right-16.png",
+      "bytes": 46530,
+      "sha256": "f5940c4e41ada172b2685fba3460fc63a168a31239b830c64b5d3a92d5446854"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/right-17.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/right-17.png",
+      "bytes": 45462,
+      "sha256": "325e858d3e0c3fc23ddcf80911a96a409db6b6d1bcc657a4e9b857fceb714fb6"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/right-18.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/right-18.png",
+      "bytes": 45421,
+      "sha256": "bff6a61a3c5c651062313140999c8f2f77b3b626735756ae85c16ccc9415c77c"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/right-19.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/right-19.png",
+      "bytes": 44826,
+      "sha256": "1e6cf3fc1f37318dcc7a2026bcffa2cf404947fd6af2c18ef5f16d379b6a5e74"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/right-20.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/right-20.png",
+      "bytes": 46039,
+      "sha256": "892dbd387f38a49c7d40761fb31626e564a477b208c8f9db63cecb35d1379582"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/right-21.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/right-21.png",
+      "bytes": 46358,
+      "sha256": "730dad2f097f67e4e2d1b95f215f16249d9efab52bbca5cd4eab6d0a319a8474"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/right-22.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/right-22.png",
+      "bytes": 47105,
+      "sha256": "d22a88603ebc33c5dcca278c700cd00abeb9b1cf17c1b3e41fc26c94f468ad9f"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/right-23.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/right-23.png",
+      "bytes": 46716,
+      "sha256": "4ebb0ce504cbb0e23863bde82337d507c2be6baeb7584e96d766480413b94609"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/right-24.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/Frames/right-24.png",
+      "bytes": 46610,
+      "sha256": "b52cb5ea624f85c9685fb65a4d17f73e8854335e121cede4e2fa00de6dfde79a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/hachiware-four-phase-keyposes-v14.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/hachiware-four-phase-keyposes-v14.png",
+      "bytes": 347142,
+      "sha256": "e33edc3b9f1f2e44e1fc6fad39a3d7c65c549dd12c72e068c84d87ca1630ca7d"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/hachiware-four-phase-walk-slow-v14.gif",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/hachiware-four-phase-walk-slow-v14.gif",
+      "bytes": 393510,
+      "sha256": "576edcb9a6364c58a205ab49fc87620e15c7a1b6cbbbeea18d31aad08569117c"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/hachiware-four-phase-walk-v14.gif",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/hachiware-four-phase-walk-v14.gif",
+      "bytes": 393114,
+      "sha256": "8f8871be36c38684460d04674de73840fa2de9954f8610be1f36abf5e64a093a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/hachiware-side-24-frame-review-v14.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/hachiware-side-24-frame-review-v14.png",
+      "bytes": 648347,
+      "sha256": "946ac3f178f0e1a3e071dfb2e877812df34117f4a74c5680ad72b3b8b0393c86"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/hachiware-side-24-frame-sheet-v14.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/hachiware-side-24-frame-sheet-v14.png",
+      "bytes": 736513,
+      "sha256": "fb9c0dd1ef44266d7f7fe1dcd013a37b164a6c696061f73d5de49c5198aa725b"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/validation.json",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Iterations/05-local-seams/validation.json",
+      "bytes": 700,
+      "sha256": "8b71a81183605076fe2cbca6aca8b0d0a8536edfa999b9ce39e884d2d2c7e91d"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/JoinedWalkPreview.swift",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/JoinedWalkPreview.swift",
+      "bytes": 17156,
+      "sha256": "980b18b10c30e2b4c635899d9c6b61f0a09c069430f1d8c0e48915a007147e2b"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/README.txt",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/README.txt",
+      "bytes": 2198,
+      "sha256": "9f9b69b418a9db5e3af0bf0469332aafeb814daab5d12a8a2ee775f748124562"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Review/friends.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Review/friends.png",
+      "bytes": 130750,
+      "sha256": "d358479d8d5e811e4d92ef921ce2437356ec9be1da5bff246e27a1d55b67c63e"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Review/hachiware-12-frame-walk.gif",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Review/hachiware-12-frame-walk.gif",
+      "bytes": 429514,
+      "sha256": "d263fdcaf983cb5cb4b8a414fe430197a9f69581c7ffd813d6e01fb78f4fc798"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Review/hachiware-cave-home-v11.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Review/hachiware-cave-home-v11.png",
+      "bytes": 373145,
+      "sha256": "c07da50b1919b1012dc1bed35d68833c02da01bf5791b436de85f33de8da54c6"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Review/hachiware-eight-directions-v10.gif",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Review/hachiware-eight-directions-v10.gif",
+      "bytes": 610390,
+      "sha256": "29a1770d2fc39162499efe237189f84ff1f1491e6cdf5ed650379f01ee6bbc93"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Review/hachiware-equipped-directions-v11.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Review/hachiware-equipped-directions-v11.png",
+      "bytes": 583527,
+      "sha256": "270424e290523d5fd780fd50805ebd23a55f6cc0f75d02e65a7f5c26abec6edc"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Review/hachiware-equipped-directions-v7.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Review/hachiware-equipped-directions-v7.png",
+      "bytes": 780418,
+      "sha256": "b75a2c35e640bf29a3c772ed7869c3d77dce13338b1730e6b995a71fd8b78a9d"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Review/hachiware-expressions-v11.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Review/hachiware-expressions-v11.png",
+      "bytes": 451935,
+      "sha256": "71309900abc75f15becdc7f339510bd084b568505e5c5675df5b251e15d5b322"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Review/hachiware-expressions-v7.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Review/hachiware-expressions-v7.png",
+      "bytes": 508318,
+      "sha256": "96099e9d449d5ff6fd0ba5a0480d1ccf3b750dee3404ceae22d68b5d2b88cabd"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Review/hachiware-home-sleep-v11.gif",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Review/hachiware-home-sleep-v11.gif",
+      "bytes": 595803,
+      "sha256": "9d8d647db89bd8f2d0e25cca5aa4565fd02dfac634f562410c0aea88e8b86def"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Review/hachiware-items-v11.gif",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Review/hachiware-items-v11.gif",
+      "bytes": 552903,
+      "sha256": "b5886b3b92e64f69098fa740fc2127b6ceeb5a6ea34f397f7405e73e4f941d87"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Review/hachiware-items-v7.gif",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Review/hachiware-items-v7.gif",
+      "bytes": 667946,
+      "sha256": "943828c51e3b7971befd2757ce5df2bef52826ed3e39f9641c1e7b1efbcd62a5"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Review/hachiware-side-cycle.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Review/hachiware-side-cycle.png",
+      "bytes": 797456,
+      "sha256": "4e71dfce17122d68e20809728914a3d630bf75599c9f800b94f45cf8b2b7c117"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Review/hachiware-sprite-preview.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Review/hachiware-sprite-preview.png",
+      "bytes": 266536,
+      "sha256": "1214038f24f85005362d348cd527e5ac7dad3b0440d7e3ad8e965ea3afeaeabf"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Review/hachiware-walk.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Review/hachiware-walk.png",
+      "bytes": 136739,
+      "sha256": "54bfabb78c7f56e08fd0262c4e2fd12067405b766a5b4a474df8379234184c6f"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Review/icon.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Review/icon.png",
+      "bytes": 257854,
+      "sha256": "fadb9924edc62d95697cdefc883dbb54e597c528d87278bf12af3ed433319587"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Review/joint-detail-final.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Review/joint-detail-final.png",
+      "bytes": 285753,
+      "sha256": "fddf99f5c49aa7844f4215e02a43077d7e6e6743767181c5ebbbd98e1affa086"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Review/joint-detail-initial.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Review/joint-detail-initial.png",
+      "bytes": 284430,
+      "sha256": "c26d1bcc1d8f28feb031be2471d8feb89fb09264cb19768f3542bdac7e29ed39"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Review/mac-mixed-dialogue-settings-bottom.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Review/mac-mixed-dialogue-settings-bottom.png",
+      "bytes": 107428,
+      "sha256": "2ae514ae5f741651655650661b5ad2f07141c58c57530659b4ef54ec8d806d64"
+    },
+    {
+      "kind": "image",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/Review/mac-mixed-dialogue-settings.png",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/Review/mac-mixed-dialogue-settings.png",
+      "bytes": 87676,
+      "sha256": "ef894d82b5a5947fda9e6361faf2dffbd88398713aea713f0c84452795222bf6"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/VerifyNativeWalk.py",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/VerifyNativeWalk.py",
+      "bytes": 2432,
+      "sha256": "72c3a4a83ceb82b1c471763b11dfc4a40a7d44c42e5b1d5d5684c12499d533a8"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/build-log.txt",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/build-log.txt",
+      "bytes": 389,
+      "sha256": "e2855b414f46119adfefbd130dd752ec23096f94f71de654829628c7195ab2ed"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/cli-self-test.txt",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/cli-self-test.txt",
+      "bytes": 9990,
+      "sha256": "a576b91fcba87d860054be32b218df74ad17c91b5925f7a5642a67ffd0cc3386"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/manifest.json",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/manifest.json",
+      "bytes": 63029,
+      "sha256": "1a866c202354b8767e179d7aefdb0079888e88027c236cd900ca3ffea29aba62"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/render-log.txt",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/render-log.txt",
+      "bytes": 86,
+      "sha256": "bb78d2246e2f6916ee95569e6b16901948caf253a48e0774f0e100afb8e8ada0"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/self-test.txt",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/self-test.txt",
+      "bytes": 10224,
+      "sha256": "e71104b5ccec11b00522bfc677be03898f57633a9de8bab91219a52a54b3f35e"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/validation.json",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/validation.json",
+      "bytes": 845,
+      "sha256": "cc3332033b7f88fcfbac659862257bfd1477ee6d186597bf48bcdd131d7a343a"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/JoinedWalkAndMixedDialogue-v14/visual-preservation.json",
+      "archive_path": "JoinedWalkAndMixedDialogue-v14/visual-preservation.json",
+      "bytes": 3966,
+      "sha256": "ee7feaed563fb7d1dc63b5b7a37d029521dd479ac1e2a83444bc397c3124ad7b"
+    },
+    {
+      "kind": "image",
       "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/hachiware-actions-v7.png",
       "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/hachiware-actions-v7.png",
       "bytes": 1307884,
@@ -3429,6 +5900,13 @@
       "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/hachiware-diagonal-walk-12-v2.png",
       "bytes": 1758422,
       "sha256": "1a24baf6cb5373c02cdb54e508fa608f7d0f4ac051e4a6bfbab164ca7dc9e94d"
+    },
+    {
+      "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/hachiware-side-walk-24-joined-v14.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/hachiware-side-walk-24-joined-v14.png",
+      "bytes": 714270,
+      "sha256": "48857cbec8db2d74464f1343f23608279a4271989fdf3183dae05b7deb837805"
     },
     {
       "kind": "image",
@@ -3628,6 +6106,13 @@
     },
     {
       "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/hachiware-side-walk-24-joined-v14.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/hachiware-side-walk-24-joined-v14.png",
+      "bytes": 714270,
+      "sha256": "48857cbec8db2d74464f1343f23608279a4271989fdf3183dae05b7deb837805"
+    },
+    {
+      "kind": "image",
       "source": "Sources/ChiikawaCompanion/Resources/hachiware-side-walk-24-v9.png",
       "archive_path": "Project/Sources/ChiikawaCompanion/Resources/hachiware-side-walk-24-v9.png",
       "bytes": 737925,
@@ -3775,6 +6260,13 @@
     },
     {
       "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/hachiware-side-walk-24-joined-v14.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/hachiware-side-walk-24-joined-v14.png",
+      "bytes": 714270,
+      "sha256": "48857cbec8db2d74464f1343f23608279a4271989fdf3183dae05b7deb837805"
+    },
+    {
+      "kind": "image",
       "source": "build/ChiikawaCompanion.app/Contents/Resources/hachiware-side-walk-24-v9.png",
       "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/hachiware-side-walk-24-v9.png",
       "bytes": 737925,
@@ -3826,15 +6318,15 @@
       "kind": "image",
       "source": "build/artwork/hachiware-eight-directions-v10.gif",
       "archive_path": "Project/build/artwork/hachiware-eight-directions-v10.gif",
-      "bytes": 614791,
-      "sha256": "446cfa6a735593444ef19351b880df4257be546983e2c87c91904c727f8789df"
+      "bytes": 610390,
+      "sha256": "29a1770d2fc39162499efe237189f84ff1f1491e6cdf5ed650379f01ee6bbc93"
     },
     {
       "kind": "image",
       "source": "build/artwork/hachiware-equipped-directions-v11.png",
       "archive_path": "Project/build/artwork/hachiware-equipped-directions-v11.png",
-      "bytes": 586614,
-      "sha256": "3fa9a12cb7cf2def31651a07774f037b35761463cd9da8c1a9405857dea0a649"
+      "bytes": 583527,
+      "sha256": "270424e290523d5fd780fd50805ebd23a55f6cc0f75d02e65a7f5c26abec6edc"
     },
     {
       "kind": "image",
@@ -3868,8 +6360,8 @@
       "kind": "image",
       "source": "build/artwork/hachiware-items-v11.gif",
       "archive_path": "Project/build/artwork/hachiware-items-v11.gif",
-      "bytes": 559654,
-      "sha256": "dfcd1ca4f793cf9e0215b8da9cccdb2ad0763157ac3b309cc8869b396e5e4d2c"
+      "bytes": 552903,
+      "sha256": "b5886b3b92e64f69098fa740fc2127b6ceeb5a6ea34f397f7405e73e4f941d87"
     },
     {
       "kind": "image",
@@ -3882,15 +6374,15 @@
       "kind": "image",
       "source": "build/artwork/hachiware-side-cycle.png",
       "archive_path": "Project/build/artwork/hachiware-side-cycle.png",
-      "bytes": 816408,
-      "sha256": "ab40babb2b8de90c687efc960e24ddc7db2fcc1a6a34bfe4389050f78b85aef5"
+      "bytes": 797456,
+      "sha256": "4e71dfce17122d68e20809728914a3d630bf75599c9f800b94f45cf8b2b7c117"
     },
     {
       "kind": "image",
       "source": "build/artwork/hachiware-sprite-preview.png",
       "archive_path": "Project/build/artwork/hachiware-sprite-preview.png",
-      "bytes": 267516,
-      "sha256": "377fd845c59c4139079dc1520a20276497781cf4425c0202b38137a8a4e67198"
+      "bytes": 266536,
+      "sha256": "1214038f24f85005362d348cd527e5ac7dad3b0440d7e3ad8e965ea3afeaeabf"
     },
     {
       "kind": "image",
@@ -3938,8 +6430,8 @@
       "kind": "supporting",
       "source": "Source/README.txt",
       "archive_path": "README.txt",
-      "bytes": 2201,
-      "sha256": "32cce477f74f461ba5b3685c5a828e2fc17a983f4c565021ad0ee0b14fcd4e54"
+      "bytes": 2490,
+      "sha256": "3cba902816dee42a18833d21de5489e554eb601e1cfe66954f2917955750a68d"
     },
     {
       "kind": "image",
@@ -3950,10 +6442,31 @@
     },
     {
       "kind": "image",
+      "source": "Source/Versions/377fd845c59c4139/build/artwork/hachiware-sprite-preview.png",
+      "archive_path": "Versions/377fd845c59c4139/build/artwork/hachiware-sprite-preview.png",
+      "bytes": 267516,
+      "sha256": "377fd845c59c4139079dc1520a20276497781cf4425c0202b38137a8a4e67198"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/3fa9a12cb7cf2def/build/artwork/hachiware-equipped-directions-v11.png",
+      "archive_path": "Versions/3fa9a12cb7cf2def/build/artwork/hachiware-equipped-directions-v11.png",
+      "bytes": 586614,
+      "sha256": "3fa9a12cb7cf2def31651a07774f037b35761463cd9da8c1a9405857dea0a649"
+    },
+    {
+      "kind": "image",
       "source": "Source/Versions/443c94613e4de0dc/build/artwork/hachiware-items-v7.gif",
       "archive_path": "Versions/443c94613e4de0dc/build/artwork/hachiware-items-v7.gif",
       "bytes": 738065,
       "sha256": "443c94613e4de0dca6b5e7afe0469105f963806ccd3dee2b98b36c8b9c43eb26"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/446cfa6a73559344/build/artwork/hachiware-eight-directions-v10.gif",
+      "archive_path": "Versions/446cfa6a73559344/build/artwork/hachiware-eight-directions-v10.gif",
+      "bytes": 614791,
+      "sha256": "446cfa6a735593444ef19351b880df4257be546983e2c87c91904c727f8789df"
     },
     {
       "kind": "image",
@@ -3975,6 +6488,13 @@
       "archive_path": "Versions/93e0374184b6baa6/build/artwork/hachiware-side-cycle.png",
       "bytes": 639691,
       "sha256": "93e0374184b6baa6d27e5bc7c520655c7115ff4003e00d7719566ee36fa284a1"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/ab40babb2b8de90c/build/artwork/hachiware-side-cycle.png",
+      "archive_path": "Versions/ab40babb2b8de90c/build/artwork/hachiware-side-cycle.png",
+      "bytes": 816408,
+      "sha256": "ab40babb2b8de90c687efc960e24ddc7db2fcc1a6a34bfe4389050f78b85aef5"
     },
     {
       "kind": "image",
@@ -4010,6 +6530,13 @@
       "archive_path": "Versions/d4731c5d6b80e3bd/build/artwork/friends.png",
       "bytes": 129798,
       "sha256": "d4731c5d6b80e3bd731a1b718e57145b1f738e29614b4489cd4b873c180f53d9"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/dfcd1ca4f793cf9e/build/artwork/hachiware-items-v11.gif",
+      "archive_path": "Versions/dfcd1ca4f793cf9e/build/artwork/hachiware-items-v11.gif",
+      "bytes": 559654,
+      "sha256": "dfcd1ca4f793cf9e0215b8da9cccdb2ad0763157ac3b309cc8869b396e5e4d2c"
     },
     {
       "kind": "supporting",
@@ -4334,8 +6861,8 @@
       "sha256": "1a9a6456b561a528697d08bc97a5b14f3694040f1a684da6921470f3c0a713af"
     }
   ],
-  "updated_at": "2026-10-19T10:54:20.480554+00:00",
-  "latest_applied": "VoiceClips-v13",
+  "updated_at": "2026-10-19T11:10:04.131635+00:00",
+  "latest_applied": "JoinedWalkAndMixedDialogue-v14",
   "applied_directions": [
     "down-left",
     "down-right"

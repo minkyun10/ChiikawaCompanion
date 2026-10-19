@@ -46,6 +46,23 @@ struct RecordingCatalog: Decodable {
     func line(matching text: String) -> RecordedLine? { clips.first { $0.text == text } }
 }
 
+struct ClickDialogue: Identifiable, Equatable {
+    let id: String
+    let text: String
+    let recording: RecordedLine?
+
+    // One entry per line gives all fourteen the same chance, rather than
+    // choosing a voice/text category first and over-weighting the four clips.
+    static let all: [ClickDialogue] = RecordingCatalog.shared.clips.map {
+        ClickDialogue(id: "voice-\($0.id)", text: $0.text, recording: $0)
+    } + Friend.hachiwareClickQuotes.enumerated().map {
+        ClickDialogue(id: "quote-\($0.offset)", text: $0.element, recording: nil)
+    }
+    static func choose(excluding previous: String? = nil) -> ClickDialogue? {
+        all.filter { $0.id != previous }.randomElement()
+    }
+}
+
 private extension URL {
     var existingFile: URL? { FileManager.default.fileExists(atPath: path) ? self : nil }
 }
@@ -92,7 +109,7 @@ final class RecordedVoicePlayer: NSObject, AVAudioPlayerDelegate {
     }
     func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
         guard self.player === player else { return }
-        stop(); onStatus?(flag ? "클릭하면 다른 녹음 대사를 들려줘요" : "재생이 중단됐어요")
+        stop(); onStatus?(flag ? "클릭하면 14개 대사 중 하나를 보여줘요" : "재생이 중단됐어요")
     }
     func audioPlayerDecodeErrorDidOccur(_ player: AVAudioPlayer, error: Error?) {
         guard self.player === player else { return }

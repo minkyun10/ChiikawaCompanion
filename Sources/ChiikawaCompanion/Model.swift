@@ -99,14 +99,8 @@ final class AppState: ObservableObject {
             if !characterVoice { onStopCharacterVoice?() }
         }
     }
-    @Published var recordedDialogue: Bool {
-        didSet {
-            defaults.set(recordedDialogue, forKey: "recordedDialogue")
-            onStopCharacterVoice?()
-        }
-    }
     @Published var characterVolume: Double { didSet { defaults.set(characterVolume, forKey: "characterVolume") } }
-    @Published var voiceStatus = "클릭하면 성우 녹음 대사를 들려줘요"
+    @Published var voiceStatus = "클릭하면 음성 4개와 명대사 10개 중 하나를 보여줘요"
     var onVoicePreview: (() -> Void)?
     var onStopCharacterVoice: (() -> Void)?
     var onGoHome: (() -> Void)?
@@ -133,7 +127,8 @@ final class AppState: ObservableObject {
         // Removed props cannot survive in older saved preferences.
         defaults.set(restoredItems.map(\.rawValue).sorted(), forKey: "enabledItems")
         characterVoice = defaults.object(forKey: "characterVoice") as? Bool ?? true
-        recordedDialogue = defaults.object(forKey: "recordedDialogue") as? Bool ?? true
+        // Both former modes now share a single fourteen-line click pool.
+        defaults.removeObject(forKey: "recordedDialogue")
         let savedVolume = defaults.object(forKey: "characterVolume") as? Double ?? 0.65
         characterVolume = savedVolume.isFinite ? min(1, max(0, savedVolume)) : 0.65
         homeEnabled = defaults.object(forKey: "homeEnabled") as? Bool ?? true

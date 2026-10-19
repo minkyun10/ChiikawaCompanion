@@ -39,40 +39,63 @@ extension SelfTest {
         check(!failedStart.play(first, volume: 1) && failedStart.player == nil,
               "an output-device failure releases the prepared player")
 
+        let entries = ClickDialogue.all
+        check(entries.count == 14 && Set(entries.map(\.id)).count == 14
+              && Set(entries.map(\.text)).count == 14
+              && entries.filter { $0.recording != nil }.count == 4
+              && Set(entries.filter { $0.recording == nil }.map(\.text)) == Set(Friend.hachiwareClickQuotes),
+              "one click pool contains exactly four voiced entries and all ten unmodified text quotes")
+        check(entries.allSatisfy { previous in
+            (0..<20).allSatisfy { _ in
+                guard let next = ClickDialogue.choose(excluding: previous.id) else { return false }
+                return next.id != previous.id && entries.contains(next)
+            }
+        }, "all fourteen lines share the same random selection pool without immediate repeats")
+
+        defaults.set(false, forKey: "recordedDialogue") // migrate either former mode
         let state = AppState(defaults: defaults)
-        state.voice = false; state.characterVoice = true; state.recordedDialogue = true
+        check(defaults.object(forKey: "recordedDialogue") == nil,
+              "an older text-only mode preference cannot exclude the four recordings")
+        state.voice = false; state.characterVoice = true
         let desktop = DesktopController(state: state, startTimer: false, recordedVoice: voice)
         let actor = desktop.actors[0]
         func bubbleText() -> String? {
             (actor.bubble?.contentView?.subviews.last as? NSTextField)?.stringValue
         }
+        var allMatched = true
+        // Exercise every possible result deterministically, including voice-to-text replacement.
+        for entry in entries.reversed() + entries {
+            desktop.presentClickDialogue(entry, for: actor)
+            allMatched = allMatched && bubbleText() == entry.text
+                && voice.currentID == entry.recording?.id
+                && (voice.player != nil) == (entry.recording != nil)
+        }
+        check(allMatched, "all fourteen selections show their own text and only the four matching recordings play")
+        let lastID = desktop.lastClickDialogueID
         actor.view.onClick?()
-        check(catalog.clips.first { $0.id == voice.currentID }?.text == bubbleText() && voice.player != nil,
-              "the real character click callback speaks exactly the caption shown in its bubble")
-        let lastID = voice.currentID
-        actor.view.onClick?()
-        check(voice.currentID != lastID && catalog.clips.first { $0.id == voice.currentID }?.text == bubbleText(),
-              "another click chooses a new matched recording and replaces the current bubble")
+        check(desktop.lastClickDialogueID != lastID
+              && entries.first { $0.id == desktop.lastClickDialogueID }?.text == bubbleText(),
+              "the real character click callback selects a new entry from the combined pool")
+        desktop.presentClickDialogue(entries[0], for: actor)
         state.characterVoice = false
         check(voice.player == nil, "turning off click voice stops current playback immediately")
-        actor.view.onClick?()
-        check(voice.player == nil && catalog.clips.contains { $0.text == bubbleText() },
-              "muted character clicks still show a recorded-line caption without playing sound")
-        state.recordedDialogue = false
-        actor.view.onClick?()
-        check(voice.player == nil && Friend.hachiwareClickQuotes.contains(bubbleText() ?? ""),
-              "the original ten-quote mode keeps its own text and does not play a mismatched excerpt")
-        state.recordedDialogue = true; state.characterVoice = true
-        actor.view.onClick?()
+        var allMuted = true
+        for entry in entries {
+            desktop.presentClickDialogue(entry, for: actor)
+            allMuted = allMuted && voice.player == nil && bubbleText() == entry.text
+        }
+        check(allMuted, "muting audio keeps every one of the fourteen click captions available")
+        state.characterVoice = true
+        desktop.presentClickDialogue(entries[0], for: actor)
         desktop.notify(.hachiware, sender: "테스트 친구", body: "음성 중단 시연", demo: true)
         check(voice.player == nil && (bubbleText()?.contains("음성 중단 시연") ?? false),
               "an incoming notification interrupts recorded dialogue and displays its own preview")
         actor.dismissBubble(); actor.panel.orderOut(nil); desktop.home.panel.orderOut(nil)
-        state.characterVoice = false; state.recordedDialogue = false; state.characterVolume = 0.24
+        state.characterVoice = false; state.characterVolume = 0.24
         let reopened = AppState(defaults: defaults)
-        check(!reopened.characterVoice && !reopened.recordedDialogue && abs(reopened.characterVolume - 0.24) < 0.001
+        check(!reopened.characterVoice && abs(reopened.characterVolume - 0.24) < 0.001
               && !reopened.voice && reopened.assignments.map(\.sender) == state.assignments.map(\.sender),
-              "voice mode and volume persist independently from Kakao voice and sender assignments")
+              "click voice and volume persist independently from Kakao voice and sender assignments")
         if Bundle.main.bundlePath.hasSuffix(".app") {
             check(catalog.clips.allSatisfy { $0.resourceURL?.path.hasPrefix(Bundle.main.resourcePath ?? "missing") == true },
                   "the packaged app plays its own bundled recordings without relying on Downloads or network access")

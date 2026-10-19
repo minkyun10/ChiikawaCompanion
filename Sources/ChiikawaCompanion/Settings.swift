@@ -217,11 +217,7 @@ struct SettingsView: View {
                 Toggle("클릭 목소리", isOn: $state.characterVoice)
                     .toggleStyle(.switch).controlSize(.small).font(.system(size: 11))
             }
-            HStack(spacing: 10) {
-                dialogueChoice("성우 녹음 대사 4개", recorded: true)
-                dialogueChoice("내 명대사 10개 · 글로 보기", recorded: false)
-            }
-            Text("손정민 성우의 공개 샘플에서 고른 실제 녹음이에요. 선택한 대사를 말풍선과 함께 들려줘요.")
+            Text("클릭하면 음성 대사 4개와 명대사 10개, 총 14개 중 하나가 랜덤으로 나와요. 녹음이 있는 4개는 말풍선과 함께 목소리를 들려줘요.")
                 .font(.system(size: 11)).foregroundStyle(mutedInk)
                 .fixedSize(horizontal: false, vertical: true)
             HStack(spacing: 12) {
@@ -235,24 +231,10 @@ struct SettingsView: View {
                 Button("멈추기") { state.onStopCharacterVoice?() }.font(.system(size: 11))
             }
             Text(state.voiceStatus).font(.system(size: 10)).foregroundStyle(mutedInk)
-            Text("초밥이다! · 엉망진창으로 뒤섞였어 · 맛있다! · 그래서 말이야\n기존 명대사 10개는 글로 보는 모드에 남아 있어요. 카톡 수신 목소리 알림은 아래에서 따로 설정해요.")
+            Text("손정민 성우 녹음: 초밥이다! · 엉망진창으로 뒤섞였어 · 맛있다! · 그래서 말이야\n명대사 10개는 글로 보여줘요. 카톡 수신 목소리 알림은 아래에서 따로 설정해요.")
                 .font(.system(size: 10)).lineSpacing(3).foregroundStyle(mutedInk)
                 .fixedSize(horizontal: false, vertical: true)
         }.padding(20).background(.white.opacity(0.9), in: RoundedRectangle(cornerRadius: 20))
-    }
-
-    private func dialogueChoice(_ title: String, recorded: Bool) -> some View {
-        let selected = state.recordedDialogue == recorded
-        return Button { state.recordedDialogue = recorded } label: {
-            HStack(spacing: 7) {
-                Image(systemName: selected ? "checkmark.circle.fill" : "circle")
-                    .foregroundStyle(selected ? blue : mutedInk)
-                Text(title).font(.system(size: 11, weight: selected ? .semibold : .regular))
-            }.frame(maxWidth: .infinity).padding(.vertical, 11)
-                .background(selected ? blue.opacity(0.17) : cream, in: RoundedRectangle(cornerRadius: 10))
-                .overlay(RoundedRectangle(cornerRadius: 10).stroke(selected ? blue.opacity(0.65) : blue.opacity(0.15), lineWidth: 1))
-        }.buttonStyle(.plain).accessibilityLabel(title)
-            .accessibilityValue(Text(selected ? "선택됨" : "선택 안 됨"))
     }
 
     private func feature(_ title: String, detail: String, icon: String) -> some View {

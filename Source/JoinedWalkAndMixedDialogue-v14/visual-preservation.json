@@ -1,0 +1,261 @@
+{
+  "date": "2026-10-19",
+  "all_24_frames": [
+    {
+      "frame": 1,
+      "changed_pixels": 1311,
+      "change_bounds": [
+        93,
+        179,
+        162,
+        222
+      ]
+    },
+    {
+      "frame": 2,
+      "changed_pixels": 1274,
+      "change_bounds": [
+        98,
+        181,
+        165,
+        222
+      ]
+    },
+    {
+      "frame": 3,
+      "changed_pixels": 1216,
+      "change_bounds": [
+        102,
+        183,
+        163,
+        222
+      ]
+    },
+    {
+      "frame": 4,
+      "changed_pixels": 1154,
+      "change_bounds": [
+        106,
+        184,
+        161,
+        222
+      ]
+    },
+    {
+      "frame": 5,
+      "changed_pixels": 1067,
+      "change_bounds": [
+        110,
+        181,
+        155,
+        222
+      ]
+    },
+    {
+      "frame": 6,
+      "changed_pixels": 915,
+      "change_bounds": [
+        115,
+        178,
+        145,
+        222
+      ]
+    },
+    {
+      "frame": 7,
+      "changed_pixels": 607,
+      "change_bounds": [
+        119,
+        177,
+        135,
+        222
+      ]
+    },
+    {
+      "frame": 8,
+      "changed_pixels": 931,
+      "change_bounds": [
+        110,
+        176,
+        139,
+        222
+      ]
+    },
+    {
+      "frame": 9,
+      "changed_pixels": 1151,
+      "change_bounds": [
+        102,
+        174,
+        142,
+        222
+      ]
+    },
+    {
+      "frame": 10,
+      "changed_pixels": 1295,
+      "change_bounds": [
+        97,
+        174,
+        147,
+        222
+      ]
+    },
+    {
+      "frame": 11,
+      "changed_pixels": 1333,
+      "change_bounds": [
+        92,
+        174,
+        152,
+        222
+      ]
+    },
+    {
+      "frame": 12,
+      "changed_pixels": 1351,
+      "change_bounds": [
+        90,
+        176,
+        157,
+        222
+      ]
+    },
+    {
+      "frame": 13,
+      "changed_pixels": 1308,
+      "change_bounds": [
+        93,
+        179,
+        162,
+        222
+      ]
+    },
+    {
+      "frame": 14,
+      "changed_pixels": 1275,
+      "change_bounds": [
+        98,
+        181,
+        165,
+        222
+      ]
+    },
+    {
+      "frame": 15,
+      "changed_pixels": 1217,
+      "change_bounds": [
+        102,
+        183,
+        163,
+        222
+      ]
+    },
+    {
+      "frame": 16,
+      "changed_pixels": 1153,
+      "change_bounds": [
+        106,
+        184,
+        161,
+        222
+      ]
+    },
+    {
+      "frame": 17,
+      "changed_pixels": 1062,
+      "change_bounds": [
+        110,
+        181,
+        155,
+        222
+      ]
+    },
+    {
+      "frame": 18,
+      "changed_pixels": 904,
+      "change_bounds": [
+        115,
+        178,
+        145,
+        222
+      ]
+    },
+    {
+      "frame": 19,
+      "changed_pixels": 594,
+      "change_bounds": [
+        119,
+        177,
+        135,
+        222
+      ]
+    },
+    {
+      "frame": 20,
+      "changed_pixels": 929,
+      "change_bounds": [
+        110,
+        176,
+        139,
+        222
+      ]
+    },
+    {
+      "frame": 21,
+      "changed_pixels": 1155,
+      "change_bounds": [
+        102,
+        174,
+        142,
+        222
+      ]
+    },
+    {
+      "frame": 22,
+      "changed_pixels": 1290,
+      "change_bounds": [
+        97,
+        174,
+        147,
+        222
+      ]
+    },
+    {
+      "frame": 23,
+      "changed_pixels": 1332,
+      "change_bounds": [
+        92,
+        174,
+        152,
+        222
+      ]
+    },
+    {
+      "frame": 24,
+      "changed_pixels": 1351,
+      "change_bounds": [
+        90,
+        176,
+        157,
+        222
+      ]
+    }
+  ],
+  "head_and_upper_body_pixel_identical": true,
+  "bottom_32_rows_pixel_identical": true,
+  "all_changes_in_lower_joint_band": [
+    80,
+    174,
+    180,
+    224
+  ],
+  "gait_functions_and_transforms_identical_to_v9": true,
+  "runtime_motion_code_unchanged": true,
+  "cycle_distance_points": 62.7,
+  "speed_points_per_second": 46,
+  "full_cycle_frames": 24,
+  "click_pool_entries": 14,
+  "voice_entries": 4,
+  "text_only_entries": 10
+}

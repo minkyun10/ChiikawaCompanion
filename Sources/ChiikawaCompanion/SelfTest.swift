@@ -319,7 +319,16 @@ enum SelfTest {
             guard let cell = sideAtlas.cropping(to: CGRect(x: index % 6 * 256, y: index / 6 * 256, width: 256, height: 256)) else { return false }
             return NSImage(cgImage: cell, size: NSSize(width: 256, height: 256)).tiffRepresentation
                 == sprites.frame(pose: .side, index: index)?.tiffRepresentation
-        }, "all 24 side frames preserve the exact approved drawings and chronological order")
+        }, "all 24 joined side frames retain their registered cells and chronological order")
+        let originalSide = NSBitmapImageRep(data: try! Data(contentsOf:
+            HachiwareSprites.assetURL(named: "hachiware-side-walk-24-v9")!))!.cgImage!
+        check((0..<24).allSatisfy { index in
+            [CGRect(x: index % 6 * 256, y: index / 6 * 256, width: 256, height: 174),
+             CGRect(x: index % 6 * 256, y: index / 6 * 256 + 224, width: 256, height: 32)].allSatisfy { region in
+                guard let old = originalSide.cropping(to: region), let joined = sideAtlas.cropping(to: region) else { return false }
+                return NSBitmapImageRep(cgImage: old).tiffRepresentation == NSBitmapImageRep(cgImage: joined).tiffRepresentation
+            }
+        }, "joining the legs preserves every original head, upper-body and bottom-sole pixel in all 24 frames")
         let crown = sprites.alphaBounds[HachiwarePose.side.rawValue].map(\.minY)
         check(crown[3] > crown[0] + 3 && crown[9] < crown[0] - 3,
               "down and up body heights survive loading instead of being normalized away")

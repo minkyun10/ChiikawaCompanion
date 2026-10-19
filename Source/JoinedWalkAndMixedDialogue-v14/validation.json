@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-19",
+  "app_version": "0.9.1",
+  "build": 18,
+  "cli_checks_passed": 151,
+  "packaged_checks_passed": 154,
+  "codesign_deep_strict": "passed",
+  "visual_preservation": "visual-preservation.json",
+  "native_ui": {
+    "running_updated_app": true,
+    "mixed_fourteen_line_explanation_visible": true,
+    "former_mode_controls_removed": true,
+    "click_voice_enabled": true,
+    "volume": 0.65,
+    "sender_mapping_preserved": true,
+    "notification_monitoring_enabled": false,
+    "settings_closed_at_end": true
+  },
+  "item_review": "Review/hachiware-equipped-directions-v11.png",
+  "normal_walk_preview": "Final/hachiware-four-phase-walk-v14.gif",
+  "limitations": [
+    "No live KakaoTalk delivery tested in this change.",
+    "The ten original quotes remain text-only; only four exact recorded lines play audio."
+  ]
+}

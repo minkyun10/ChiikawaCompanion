@@ -1,0 +1,1 @@
+24-frame side gait, both directions, sheets, GIFs and mechanical validation rendered.
