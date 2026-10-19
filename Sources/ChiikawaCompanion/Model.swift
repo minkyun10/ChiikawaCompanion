@@ -70,6 +70,16 @@ final class AppState: ObservableObject {
     @Published var accessibilityAvailable = false
     @Published var lastEvent = "아직 받은 알림이 없어요"
     @Published var verifiedSession = false
+    @Published var enabledItems: Set<CompanionItem> {
+        didSet { defaults.set(enabledItems.map(\.rawValue).sorted(), forKey: "enabledItems") }
+    }
+    @Published var automaticItems: Bool { didSet { defaults.set(automaticItems, forKey: "automaticItems") } }
+    @Published var expressive: Bool { didSet { defaults.set(expressive, forKey: "expressive") } }
+    @Published var equippedItem: CompanionItem?
+    @Published var itemStatus = "바탕화면에서 소품을 찾아요"
+    var onScatterItems: (() -> Void)?
+    var onSeekItem: ((CompanionItem) -> Void)?
+    var onDropItem: (() -> Void)?
     var onDemo: ((Friend) -> Void)?
     var onReset: (() -> Void)?
     var onMonitoringChange: ((Bool) -> Void)?
@@ -83,6 +93,10 @@ final class AppState: ObservableObject {
 
     init(defaults: UserDefaults = .standard) {
         self.defaults = defaults
+        enabledItems = Set((defaults.stringArray(forKey: "enabledItems") ?? CompanionItem.allCases.map(\.rawValue))
+            .compactMap(CompanionItem.init(rawValue:)))
+        automaticItems = defaults.object(forKey: "automaticItems") as? Bool ?? true
+        expressive = defaults.object(forKey: "expressive") as? Bool ?? true
         if let data = defaults.data(forKey: "assignments"),
            let saved = try? JSONDecoder().decode([Assignment].self, from: data) {
             assignments = Friend.allCases.map { friend in

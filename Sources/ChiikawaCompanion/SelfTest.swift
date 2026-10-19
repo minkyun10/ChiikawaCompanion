@@ -195,6 +195,68 @@ enum SelfTest {
         let reopened = AppState(defaults: testDefaults)
         check(!reopened.roaming, "later launches preserve the user's walking preference")
 
+        var world = ItemWorld()
+        let allItems = Set(CompanionItem.allCases)
+        world.configure(enabled: allItems, bounds: screen)
+        check(world.ground.count == 4 && world.equipped == nil, "four enabled props spawn on the desktop")
+        check(world.ground.values.allSatisfy { ItemWorld.clamp($0, to: screen) == $0 },
+              "props stay reachable on negative-coordinate displays")
+        let cameraPoint = world.ground[.camera]!
+        let cameraOrigin = ItemWorld.destination(for: cameraPoint)
+        check(!world.pickUp(.camera, from: NSPoint(x: cameraOrigin.x + 300, y: cameraOrigin.y), bounds: screen, now: now),
+              "a distant prop cannot be equipped by teleporting")
+        check(world.target(from: cameraOrigin, automatic: false, now: now) == nil,
+              "disabling automatic pickup still leaves props on the desktop")
+        world.requested = .camera
+        check(world.target(from: cameraOrigin, automatic: false, now: now) == .camera,
+              "clicking a prop requests a journey even with automatic pickup off")
+        check(world.target(from: cameraOrigin, automatic: true, now: now, excluding: [.camera]) == nil,
+              "a requested prop is not picked up while the user is dragging it")
+        check(world.pickUp(.camera, from: cameraOrigin, bounds: screen, now: now)
+              && world.equipped == .camera && world.ground[.camera] == nil,
+              "reaching a prop transfers it from ground to equipment")
+        check(world.target(from: cameraOrigin, automatic: true, now: now.addingTimeInterval(5)) == nil,
+              "new equipment is carried for a while before seeking another prop")
+        let guitarOrigin = ItemWorld.destination(for: world.ground[.guitar]!)
+        check(world.pickUp(.guitar, from: guitarOrigin, bounds: screen, now: now.addingTimeInterval(25))
+              && world.equipped == .guitar && world.ground[.camera] != nil && world.ground.count == 3,
+              "swapping equipment drops the old prop without duplicating or losing it")
+        world.drop(at: NSPoint(x: 9999, y: -9999), bounds: screen, now: now.addingTimeInterval(30))
+        check(world.equipped == nil && world.ground.count == 4
+              && world.ground.values.allSatisfy { ItemWorld.clamp($0, to: screen) == $0 },
+              "manual drops restore the ground item within reachable screen bounds")
+        let dropTime = now.addingTimeInterval(30)
+        check(world.target(from: guitarOrigin, automatic: true, now: dropTime.addingTimeInterval(1)) == nil,
+              "a dropped item is not immediately picked up again")
+        let bagOrigin = ItemWorld.destination(for: world.ground[.bag]!)
+        _ = world.pickUp(.bag, from: bagOrigin, bounds: screen, now: now.addingTimeInterval(50))
+        world.configure(enabled: [.camera, .guitar, .sasumata], bounds: screen)
+        check(world.equipped == nil && world.ground[.bag] == nil,
+              "turning off a carried prop removes it from both equipment and ground")
+        world.scatter(in: screen)
+        check(world.ground.count == 3 && Set(world.ground.keys) == world.enabled,
+              "scattering preserves exactly one instance of every enabled prop")
+        migrated.enabledItems = [.camera, .bag]; migrated.automaticItems = false; migrated.expressive = false
+        let itemPreferences = AppState(defaults: testDefaults)
+        check(itemPreferences.enabledItems == [.camera, .bag] && !itemPreferences.automaticItems && !itemPreferences.expressive,
+              "prop and expression choices survive relaunch without changing sender assignments")
+        var performance = CompanionPerformance()
+        performance.begin(.camera, now: now, pickingUp: true)
+        check(performance.action(now: now) == .pickup && performance.action(now: now.addingTimeInterval(0.7)) == .camera,
+              "pickup gesture precedes the equipment-specific action")
+        performance.cancel(now: now.addingTimeInterval(1))
+        check(performance.action(now: now.addingTimeInterval(1.01)) == nil,
+              "hover or drag interrupts a prop action without a delayed reaction after leaving")
+        performance.begin(.guitar, now: now, pickingUp: false)
+        check(performance.action(now: now.addingTimeInterval(2.5)) == nil,
+              "short equipment actions finish so the character keeps walking")
+        check(HachiwareActions.shared.isReady, "all eight new reference-based expressions and gestures load")
+        check(HachiwareActions.shared.frames.allSatisfy {
+            guard let data = $0.tiffRepresentation, let bitmap = NSBitmapImageRep(data: data) else { return false }
+            return (bitmap.colorAt(x: 0, y: 0)?.alphaComponent ?? 1) < 0.02
+                && (bitmap.colorAt(x: 255, y: 255)?.alphaComponent ?? 1) < 0.02
+        }, "action sprites retain transparent corners")
+
         let sprites = HachiwareSprites.shared
         check(sprites.isReady && sprites.frames.flatMap { $0 }.count == 66, "five 12-frame walks and six greeting frames load successfully")
         check(sprites.sourceSizes.count == 4, "all four selected sprite atlases decode")
@@ -299,6 +361,8 @@ enum SelfTest {
         }
         check(transparentCorners, "all registered frames keep transparent corners")
         if Bundle.main.bundlePath.hasSuffix(".app") {
+            check(HachiwareSprites.assetURL(named: HachiwareActions.assetName)?.path.hasPrefix(Bundle.main.resourcePath ?? "missing") == true,
+                  "packaged app loads its own new expression atlas")
             check(HachiwareSprites.assetNames.allSatisfy {
                 HachiwareSprites.assetURL(named: $0)?.path.hasPrefix(Bundle.main.resourcePath ?? "missing") == true
             },
@@ -371,6 +435,64 @@ enum SelfTest {
             }
         }
         print("Artwork rendered.")
+        renderItems(to: directory)
+    }
+
+    static func renderItems(to directory: URL) {
+        func caption(_ text: String, x: CGFloat, y: CGFloat, width: CGFloat) {
+            let paragraph = NSMutableParagraphStyle(); paragraph.alignment = .center
+            (text as NSString).draw(in: NSRect(x: x, y: y, width: width, height: 25), withAttributes: [
+                .font: NSFont.systemFont(ofSize: 16, weight: .medium), .foregroundColor: FriendArtwork.ink,
+                .paragraphStyle: paragraph])
+        }
+        png(width: 1200, height: 650, to: directory.appendingPathComponent("hachiware-expressions-v7.png")) {
+            NSColor(hex: 0xF7F4EB).setFill(); NSRect(x: 0, y: 0, width: 1200, height: 650).fill()
+            for action in HachiwareAction.allCases {
+                let x = CGFloat(action.rawValue % 4) * 300, y: CGFloat = action.rawValue < 4 ? 330 : 10
+                HachiwareActions.shared.draw(action, in: NSRect(x: x + 22, y: y + 30, width: 256, height: 256), time: 0.7)
+                caption(action.title, x: x, y: y + 3, width: 300)
+            }
+        }
+        png(width: 1200, height: 1080, to: directory.appendingPathComponent("hachiware-equipped-directions-v7.png")) {
+            NSColor(hex: 0xF7F4EB).setFill(); NSRect(x: 0, y: 0, width: 1200, height: 1080).fill()
+            let poses: [HachiwarePose] = [.front, .side, .frontDiagonal, .back, .backDiagonal]
+            for (row, item) in CompanionItem.allCases.enumerated() {
+                for (column, pose) in poses.enumerated() {
+                    let x = CGFloat(column) * 220 + 95, y = CGFloat(3 - row) * 270 + 30
+                    FriendArtwork.draw(.hachiware, in: NSRect(x: x, y: y, width: 210, height: 215), time: 0.8,
+                        walking: true, facing: -1, walkPhase: 1, pose: pose, equipped: item)
+                    if column == 0 { caption(item.name, x: 0, y: y + 105, width: 105) }
+                }
+            }
+        }
+        let url = directory.appendingPathComponent("hachiware-items-v7.gif")
+        guard let destination = CGImageDestinationCreateWithURL(url as CFURL, UTType.gif.identifier as CFString, 72, nil) else { return }
+        CGImageDestinationSetProperties(destination, [kCGImagePropertyGIFDictionary: [kCGImagePropertyGIFLoopCount: 0]] as CFDictionary)
+        for index in 0..<72 {
+            let bitmap = NSBitmapImageRep(bitmapDataPlanes: nil, pixelsWide: 960, pixelsHigh: 340,
+                bitsPerSample: 8, samplesPerPixel: 4, hasAlpha: true, isPlanar: false,
+                colorSpaceName: .deviceRGB, bytesPerRow: 3840, bitsPerPixel: 32)!
+            let context = NSGraphicsContext(bitmapImageRep: bitmap)!
+            NSGraphicsContext.saveGraphicsState(); NSGraphicsContext.current = context
+            NSColor(hex: 0xF7F4EB).setFill(); NSRect(x: 0, y: 0, width: 960, height: 340).fill()
+            let time = Double(index) / 10
+            for (slot, item) in CompanionItem.allCases.enumerated() {
+                let x = CGFloat(slot) * 240
+                caption(item.name, x: x, y: 300, width: 240)
+                let action: HachiwareAction? = time < 2 ? nil : time < 2.65 ? .pickup : time < 5.1 ? item.action : nil
+                let moving = action == nil
+                let travel = CGFloat(time < 2 ? time * 36 : time > 5.1 ? (time - 5.1) * 36 : 72)
+                let petRect = NSRect(x: x + 8 + min(travel, 86), y: 60, width: 140, height: 160)
+                if time < 2 { ItemArtwork.draw(item, in: NSRect(x: x + 143, y: 84, width: 60, height: 60)) }
+                FriendArtwork.draw(.hachiware, in: petRect, time: time, walking: moving, facing: 1,
+                    walkPhase: Double(travel / WalkingGait.distancePerCycle) * 2 * .pi, pose: .side,
+                    action: action, equipped: time >= 2 ? item : nil)
+                caption(time < 2 ? "주우러 가는 중" : action == .pickup ? "쏙!" : time < 5.1 ? item.action.title : "들고 산책", x: x, y: 28, width: 240)
+            }
+            context.flushGraphics(); NSGraphicsContext.restoreGraphicsState()
+            CGImageDestinationAddImage(destination, bitmap.cgImage!, [kCGImagePropertyGIFDictionary: [kCGImagePropertyGIFDelayTime: 0.1]] as CFDictionary)
+        }
+        precondition(CGImageDestinationFinalize(destination))
     }
 
     static func renderWalkAnimation(to url: URL) {

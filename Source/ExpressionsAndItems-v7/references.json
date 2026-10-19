@@ -1,0 +1,30 @@
+{
+  "verified": "2026-10-19",
+  "sources": [
+    {
+      "url": "https://www.segatoys.co.jp/brand/chiikawahouse/hachiwareouchi/",
+      "publisher": "SEGA FAVE",
+      "supports": ["Hachiware's guitar", "Hachiware's camera and neck strap"],
+      "basis": "Official product page identifies these as objects appearing in the original work."
+    },
+    {
+      "url": "https://www.goodsmile.com/ja/product/12138/",
+      "publisher": "Good Smile Company",
+      "supports": ["Hachiware's sasumata", "Hachiware's camera", "smile and surprised expressions"],
+      "basis": "Official Hachiware figure lists sasumata and camera accessories, with smile and surprised face parts."
+    }
+  ],
+  "fanmade": {
+    "bag": "Tan satchel with blue crossbody strap. Not verified as Hachiware's canonical possession; identified as a fanmade walking accessory in the UI.",
+    "artwork": "New reference-based generated character poses and native accessory drawings. No official web image is bundled as runtime artwork.",
+    "camera_action": "Visual animation only; no camera, microphone, screen capture, image saving or network access.",
+    "guitar_action": "Visual animation only; no copyrighted audio playback."
+  },
+  "user_references": [
+    "References/happy-cheek.png",
+    "References/camera-reference.jpeg",
+    "References/camera-full-body.jpg",
+    "References/guitar-reference.jpg",
+    "References/original-hachiware.png"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "verified": "2026-10-19",
+  "app_version": "0.6.0",
+  "build": 12,
+  "packaged_self_test_checks": 100,
+  "packaged_self_test_passed": true,
+  "code_signature_valid": true,
+  "existing_walk_atlases_modified": false,
+  "existing_side_walk_order_modified": false,
+  "upward_diagonal_preserved": true,
+  "movement_driven_gait_preserved": true,
+  "ui_verified": [
+    "automatic camera pickup",
+    "manual drop",
+    "requested guitar journey and pickup",
+    "automatic bag pickup",
+    "saved sender and walking/voice preferences preserved"
+  ],
+  "live_kakao_message_verified": false,
+  "accessibility_reconnection": "Awaiting macOS Touch ID for the final build; no broader permission requested.",
+  "runtime_art": "Sources/ChiikawaCompanion/Resources/hachiware-actions-v7.png",
+  "generated_original": "Source/GeneratedOriginals/exec-de1fb059-318f-46a2-9e22-d5b609304192.png"
+}

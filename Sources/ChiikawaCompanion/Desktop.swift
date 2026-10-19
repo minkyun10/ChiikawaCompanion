@@ -26,6 +26,8 @@ final class DesktopFriendView: NSView {
     var facing: CGFloat = 1
     var walkPhase = 0.0
     var pose = HachiwarePose.front
+    var action: HachiwareAction?
+    var equipped: CompanionItem?
     var isDragging = false
     var onClick: (() -> Void)?
     var onDragEnd: (() -> Void)?
@@ -45,7 +47,8 @@ final class DesktopFriendView: NSView {
     override func acceptsFirstMouse(for event: NSEvent?) -> Bool { true }
     override func draw(_ dirtyRect: NSRect) {
         FriendArtwork.draw(friend, in: bounds, time: time, happy: happy, walking: walking,
-                           looking: looking, facing: facing, walkPhase: walkPhase, pose: pose)
+                           looking: looking, facing: facing, walkPhase: walkPhase, pose: pose,
+                           action: action, equipped: equipped)
     }
     override func mouseDown(with event: NSEvent) {
         isDragging = true; moved = false
@@ -77,6 +80,9 @@ final class FriendActor {
     let phase: Double
     var bubble: NSPanel?
     var bubbleUntil = Date.distantPast
+    var performance = CompanionPerformance()
+    var hoverStarted = Date.distantPast
+    var wasHovered = false
 
     init(friend: Friend, index: Int) {
         self.friend = friend
@@ -162,16 +168,38 @@ final class DesktopController {
     let started = Date()
     var lastTick = Date()
     var screenObserver: NSObjectProtocol?
+    var itemWorld = ItemWorld()
+    var desktopItems: [CompanionItem: DesktopItem] = [:]
+    var itemTarget: CompanionItem?
 
     init(state: AppState) {
         self.state = state
+        // Decode and register once at launch, never on the first pointer hover.
+        _ = HachiwareSprites.shared
+        _ = HachiwareActions.shared
         actors = Friend.developmentRoster.enumerated().map { FriendActor(friend: $0.element, index: $0.offset) }
         for actor in actors {
             actor.view.onClick = { [weak actor] in
                 actor?.say(actor?.friend.greeting ?? "안녕!", now: Date())
             }
-            actor.view.onDragEnd = { [weak actor] in actor?.motion.retarget() }
+            actor.view.onDragEnd = { [weak self, weak actor] in
+                actor?.motion.retarget()
+                if let bounds = actor?.panel.screen?.visibleFrame { self?.itemWorld.scatter(in: bounds) }
+                self?.itemTarget = nil
+            }
         }
+        for item in CompanionItem.allCases {
+            let desktopItem = DesktopItem(item: item)
+            desktopItem.view.onSeek = { [weak self] in self?.seekItem(item) }
+            desktopItem.view.onMove = { [weak self] point in
+                guard let self, let bounds = self.actors.first?.panel.screen?.visibleFrame ?? NSScreen.main?.visibleFrame else { return }
+                self.itemWorld.move(item, to: point, bounds: bounds)
+            }
+            desktopItems[item] = desktopItem
+        }
+        state.onScatterItems = { [weak self] in self?.scatterItems() }
+        state.onSeekItem = { [weak self] item in self?.seekItem(item) }
+        state.onDropItem = { [weak self] in self?.dropItem() }
         resetPositions()
         screenObserver = NotificationCenter.default.addObserver(forName: NSApplication.didChangeScreenParametersNotification,
                                                                  object: nil, queue: .main) { [weak self] _ in self?.resetPositions() }
@@ -194,15 +222,53 @@ final class DesktopController {
             actor.motion.retarget()
             actor.motion.destination = RoamingMotion.target(in: visible, size: size, xFraction: 0.8, yFraction: 0.72)
         }
+        itemWorld.configure(enabled: state.enabledItems, bounds: visible)
+        // Keep existing choices but return off-screen props after a display change.
+        for (item, point) in itemWorld.ground { itemWorld.move(item, to: point, bounds: visible) }
+        itemTarget = nil
+    }
+    func seekItem(_ item: CompanionItem) {
+        guard itemWorld.ground[item] != nil else { return }
+        state.roaming = true; state.showFriends = true
+        itemWorld.requested = item; itemTarget = nil
+        actors.first?.performance.cancel(now: Date())
+        actors.first?.motion.retarget()
+        state.itemStatus = "\(item.name) 주우러 가는 중"
+    }
+    func scatterItems() {
+        guard let bounds = actors.first?.panel.screen?.visibleFrame ?? NSScreen.main?.visibleFrame else { return }
+        itemWorld.scatter(in: bounds); itemTarget = nil
+        actors.first?.motion.retarget()
+        state.itemStatus = "소품을 바탕화면에 다시 놓았어요"
+    }
+    func dropItem() {
+        guard let actor = actors.first, let bounds = actor.panel.screen?.visibleFrame ?? NSScreen.main?.visibleFrame else { return }
+        let point = ItemWorld.contactPoint(origin: actor.panel.frame.origin)
+        itemWorld.drop(at: NSPoint(x: point.x + 88, y: point.y), bounds: bounds, now: Date())
+        actor.performance.cancel(now: Date()); itemWorld.requested = nil; itemTarget = nil
+        actor.motion.retarget()
+        publishEquipment()
+        state.itemStatus = "소품을 내려놓았어요"
+    }
+    private func publishEquipment() {
+        if state.equippedItem != itemWorld.equipped { state.equippedItem = itemWorld.equipped }
     }
     func tick() {
         let now = Date(), dt = min(now.timeIntervalSince(lastTick), 0.06)
         lastTick = now
         let time = now.timeIntervalSince(started), mouse = NSEvent.mouseLocation
+        if let bounds = actors.first?.panel.screen?.visibleFrame ?? NSScreen.main?.visibleFrame {
+            let previous = itemWorld.equipped
+            itemWorld.configure(enabled: state.enabledItems, bounds: bounds)
+            if previous != itemWorld.equipped { actors.first?.performance.cancel(now: now) }
+            publishEquipment()
+        }
         for actor in actors {
             let enabled = state.showFriends && (state.assignments.first { $0.friend == actor.friend }?.enabled ?? false)
             guard enabled else {
                 actor.panel.orderOut(nil); actor.dismissBubble()
+                actor.performance.cancel(now: now)
+                for item in desktopItems.values { item.update(position: nil, visible: false, mouse: mouse) }
                 continue
             }
             if !actor.panel.isVisible { actor.panel.orderFrontRegardless() }
@@ -212,9 +278,33 @@ final class DesktopController {
             let activity = DesktopActivity.resolve(roaming: state.roaming, hovered: hovered,
                                                    dragging: actor.view.isDragging,
                                                    notificationUntil: actor.bubbleUntil, now: now)
-            if activity == .walking, let screen = actor.panel.screen ?? NSScreen.main {
+            if hovered && !actor.wasHovered { actor.hoverStarted = now }
+            actor.wasHovered = hovered
+            if activity != .walking || !state.expressive { actor.performance.cancel(now: now) }
+            if activity == .walking, state.expressive, let item = itemWorld.equipped,
+               now >= actor.performance.nextPerformance {
+                actor.performance.begin(item, now: now, pickingUp: false)
+            }
+            var action = state.expressive ? actor.performance.action(now: now) : nil
+            if activity == .walking && action == nil, let screen = actor.panel.screen ?? NSScreen.main {
                 let frame = actor.panel.frame
-                if actor.motion.destination == nil {
+                let draggedItems = Set(desktopItems.filter { $0.value.view.isDragging }.map(\.key))
+                let targetItem = itemWorld.target(from: frame.origin, automatic: state.automaticItems,
+                                                 now: now, excluding: draggedItems)
+                if itemTarget != targetItem { actor.motion.retarget(); itemTarget = targetItem }
+                if let targetItem, let point = itemWorld.ground[targetItem] {
+                    actor.motion.destination = ItemWorld.destination(for: point)
+                    if itemWorld.pickUp(targetItem, from: frame.origin, bounds: screen.visibleFrame, now: now) {
+                        actor.motion.retarget(); itemTarget = nil
+                        if state.expressive {
+                            actor.performance.begin(targetItem, now: now, pickingUp: true)
+                            action = actor.performance.action(now: now)
+                        }
+                        state.itemStatus = "\(targetItem.name)\(targetItem == .bag ? "을" : "를") 주웠어요"
+                        publishEquipment()
+                    }
+                }
+                if actor.motion.destination == nil && action == nil {
                     var target = frame.origin
                     // Prefer a real journey, rather than pacing around a nearby point.
                     for _ in 0..<8 {
@@ -225,8 +315,10 @@ final class DesktopController {
                     }
                     actor.motion.destination = target
                 }
-                let position = actor.motion.advance(from: frame.origin, dt: dt, bounds: screen.visibleFrame, size: frame.size)
-                actor.panel.setFrameOrigin(position)
+                if action == nil {
+                    let position = actor.motion.advance(from: frame.origin, dt: dt, bounds: screen.visibleFrame, size: frame.size)
+                    actor.panel.setFrameOrigin(position)
+                }
                 // AppKit can round or constrain the requested position. Animate only the
                 // displacement actually shown on screen, including its diagonal component.
                 actor.gait.recordMovement(from: frame.origin, to: actor.panel.frame.origin)
@@ -237,10 +329,20 @@ final class DesktopController {
             actor.view.walkPhase = actor.gait.phase
             actor.view.pose = HachiwarePose.forVelocity(actor.motion.velocity)
             actor.view.happy = activity.reacts
+            if state.expressive && activity == .hovering {
+                action = now.timeIntervalSince(actor.hoverStarted) < 0.3 ? .wave : .laugh
+            } else if state.expressive && activity == .notifying {
+                action = .surprised
+            }
+            actor.view.action = action
+            actor.view.equipped = itemWorld.equipped
             actor.view.looking = min(1, max(-1, (mouse.x - actor.panel.frame.midX) / 160))
             actor.view.needsDisplay = true
             if now < actor.bubbleUntil { actor.positionBubble() }
             else if actor.bubble != nil { actor.dismissBubble() }
+            for (item, desktopItem) in desktopItems {
+                desktopItem.update(position: itemWorld.ground[item], visible: enabled, mouse: mouse)
+            }
         }
     }
     func notify(_ friend: Friend, sender: String, body: String? = nil, demo: Bool = false) {

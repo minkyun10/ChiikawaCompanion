@@ -18,6 +18,7 @@ struct SettingsView: View {
     private let refresh = Timer.publish(every: 2, on: .main, in: .common).autoconnect()
 
     var body: some View {
+        ScrollView {
         VStack(alignment: .leading, spacing: 20) {
             HStack {
                 Label("DESKTOP COMPANION", systemImage: "pawprint.fill")
@@ -74,6 +75,59 @@ struct SettingsView: View {
                     .overlay(RoundedRectangle(cornerRadius: 22).stroke(blue.opacity(0.35), lineWidth: 1))
             }
 
+            VStack(alignment: .leading, spacing: 14) {
+                HStack {
+                    VStack(alignment: .leading, spacing: 5) {
+                        Text("오늘은 뭘 들고 걸을까?").font(.system(size: 16, weight: .semibold))
+                        Text("바탕화면 소품을 발견하면 주워서 착용해요.")
+                            .font(.system(size: 11)).foregroundStyle(mutedInk)
+                    }
+                    Spacer()
+                    Button("다시 흩어 놓기") { state.onScatterItems?() }
+                        .font(.system(size: 11)).buttonStyle(.bordered)
+                }
+                LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 10) {
+                    ForEach(CompanionItem.allCases) { item in
+                        HStack(spacing: 10) {
+                            Image(systemName: item.symbol).font(.system(size: 20)).foregroundStyle(blue).frame(width: 28)
+                            VStack(alignment: .leading, spacing: 4) {
+                                Text(item.name).font(.system(size: 12, weight: .semibold))
+                                Text(item.detail).font(.system(size: 10)).foregroundStyle(mutedInk)
+                            }
+                            Spacer(minLength: 0)
+                            Toggle(item.name, isOn: Binding(get: { state.enabledItems.contains(item) }, set: {
+                                if $0 { state.enabledItems.insert(item) } else { state.enabledItems.remove(item) }
+                            })).labelsHidden().toggleStyle(.switch).controlSize(.mini)
+                                .accessibilityLabel("\(item.name) 바탕화면에 놓기")
+                        }.padding(12).background(cream, in: RoundedRectangle(cornerRadius: 12))
+                    }
+                }
+                HStack(spacing: 18) {
+                    Toggle("스스로 주워 입기", isOn: $state.automaticItems)
+                    Toggle("표정과 소품 동작", isOn: $state.expressive)
+                }.toggleStyle(.switch).controlSize(.small).font(.system(size: 11))
+                Divider().opacity(0.5)
+                HStack(spacing: 10) {
+                    VStack(alignment: .leading, spacing: 4) {
+                        Text(state.equippedItem.map { "지금은 \($0.name)\($0 == .bag ? "과" : "와") 함께" } ?? "지금은 빈손으로 산책 중")
+                            .font(.system(size: 11, weight: .semibold))
+                        Text(state.itemStatus).font(.system(size: 10)).foregroundStyle(mutedInk)
+                    }
+                    Spacer()
+                    Menu("주우러 가기") {
+                        ForEach(CompanionItem.allCases.filter { state.enabledItems.contains($0) && state.equippedItem != $0 }) { item in
+                            Button(item.name) { state.onSeekItem?(item) }
+                        }
+                    }.fixedSize().font(.system(size: 11))
+                        .disabled(state.enabledItems.subtracting(Set([state.equippedItem].compactMap { $0 })).isEmpty)
+                    Button("내려놓기") { state.onDropItem?() }.font(.system(size: 11))
+                        .disabled(state.equippedItem == nil)
+                }
+                Text("소품을 클릭하면 주우러 와요. 드래그로 소품 위치를 바꿀 수도 있어요.\n카메라를 들면 찰칵, 기타를 들면 잠깐 연주해요. 다른 소품을 주우면 이전 소품은 내려놓아요.")
+                    .font(.system(size: 10)).lineSpacing(3).foregroundStyle(mutedInk)
+                    .fixedSize(horizontal: false, vertical: true)
+            }.padding(20).background(.white.opacity(0.9), in: RoundedRectangle(cornerRadius: 20))
+
             VStack(alignment: .leading, spacing: 15) {
                 HStack(spacing: 20) {
                     Toggle("산책하기", isOn: $state.roaming)
@@ -120,6 +174,8 @@ struct SettingsView: View {
         }
         .padding(.horizontal, 28).padding(.top, 32).padding(.bottom, 22)
         .frame(width: 710)
+        }
+        .frame(width: 710, height: min(900, max(550, (NSScreen.main?.visibleFrame.height ?? 850) - 90)))
         .foregroundStyle(warmInk).background(cream).tint(Color(nsColor: NSColor(hex: 0xA79B73)))
         .onReceive(refresh) { _ in permission = KakaoNotificationMonitor.hasPermission }
     }

@@ -1,10 +1,10 @@
 {
   "created_at": "2026-10-16T12:08:58.617148+00:00",
   "operation": "copy; originals preserved",
-  "image_file_count": 277,
-  "unique_image_content_count": 220,
-  "supporting_file_count": 35,
-  "image_bytes": 99537566,
+  "image_file_count": 310,
+  "unique_image_content_count": 232,
+  "supporting_file_count": 41,
+  "image_bytes": 116985632,
   "symmetric_walk_runtime_applied": true,
   "files": [
     {
@@ -1444,6 +1444,230 @@
     },
     {
       "kind": "image",
+      "source": "Source/ExpressionsAndItems-v7/Final/hachiware-equipped-directions-v7.png",
+      "archive_path": "ExpressionsAndItems-v7/Final/hachiware-equipped-directions-v7.png",
+      "bytes": 795396,
+      "sha256": "ce1745e702907101647deb1efd01f1d211f266193e4a953d4703a755a5505b74"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ExpressionsAndItems-v7/Final/hachiware-expressions-v7.png",
+      "archive_path": "ExpressionsAndItems-v7/Final/hachiware-expressions-v7.png",
+      "bytes": 508318,
+      "sha256": "96099e9d449d5ff6fd0ba5a0480d1ccf3b750dee3404ceae22d68b5d2b88cabd"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ExpressionsAndItems-v7/Final/hachiware-items-v7.gif",
+      "archive_path": "ExpressionsAndItems-v7/Final/hachiware-items-v7.gif",
+      "bytes": 738065,
+      "sha256": "443c94613e4de0dca6b5e7afe0469105f963806ccd3dee2b98b36c8b9c43eb26"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ExpressionsAndItems-v7/Prompts/actions-v7.txt",
+      "archive_path": "ExpressionsAndItems-v7/Prompts/actions-v7.txt",
+      "bytes": 1851,
+      "sha256": "06faae2fd479696cc4929e19b691757054799e36178e5177a48361274b716368"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ExpressionsAndItems-v7/README.txt",
+      "archive_path": "ExpressionsAndItems-v7/README.txt",
+      "bytes": 1814,
+      "sha256": "dee2f4e261ddb8879c6238f663891df4beb1d35c378dab49df26d682660214ac"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ExpressionsAndItems-v7/References/camera-full-body.jpg",
+      "archive_path": "ExpressionsAndItems-v7/References/camera-full-body.jpg",
+      "bytes": 7702,
+      "sha256": "0f7bb8e79df862ece1d8a96e55bf109d0a3a9881f064aaaec741db29d7e4cca2"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ExpressionsAndItems-v7/References/camera-reference.jpeg",
+      "archive_path": "ExpressionsAndItems-v7/References/camera-reference.jpeg",
+      "bytes": 29831,
+      "sha256": "a26bc8e763350cca520b6ec268ebdd65840c2a6f5324aa4ae5e878d079b89d6a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ExpressionsAndItems-v7/References/guitar-reference.jpg",
+      "archive_path": "ExpressionsAndItems-v7/References/guitar-reference.jpg",
+      "bytes": 37496,
+      "sha256": "0cc14b2ec263ece5bc855877d3751f095da15faf966370dca66d4275989f3b32"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ExpressionsAndItems-v7/References/happy-cheek.png",
+      "archive_path": "ExpressionsAndItems-v7/References/happy-cheek.png",
+      "bytes": 218865,
+      "sha256": "64047c2b0f8d50149db12bae2eeb81b95b0503d7a73baef80eaaf20b30699d17"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ExpressionsAndItems-v7/References/original-hachiware.png",
+      "archive_path": "ExpressionsAndItems-v7/References/original-hachiware.png",
+      "bytes": 10768,
+      "sha256": "c011abe3401deff0ecd2b6ee9eadfd5f7195e4744c4f9d524fa161f2df58af10"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ExpressionsAndItems-v7/Review/01-initial/friends.png",
+      "archive_path": "ExpressionsAndItems-v7/Review/01-initial/friends.png",
+      "bytes": 130750,
+      "sha256": "d358479d8d5e811e4d92ef921ce2437356ec9be1da5bff246e27a1d55b67c63e"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ExpressionsAndItems-v7/Review/01-initial/hachiware-12-frame-walk.gif",
+      "archive_path": "ExpressionsAndItems-v7/Review/01-initial/hachiware-12-frame-walk.gif",
+      "bytes": 429514,
+      "sha256": "d263fdcaf983cb5cb4b8a414fe430197a9f69581c7ffd813d6e01fb78f4fc798"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ExpressionsAndItems-v7/Review/01-initial/hachiware-equipped-directions-v7.png",
+      "archive_path": "ExpressionsAndItems-v7/Review/01-initial/hachiware-equipped-directions-v7.png",
+      "bytes": 797500,
+      "sha256": "e960f79cd4575c64e80ad3457b287e23cb8529b003f8141bde957c65d65efdd8"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ExpressionsAndItems-v7/Review/01-initial/hachiware-expressions-v7.png",
+      "archive_path": "ExpressionsAndItems-v7/Review/01-initial/hachiware-expressions-v7.png",
+      "bytes": 506525,
+      "sha256": "4cd2de87f1a01f6eaf6e14045d3d5a8b6ce8a93eea90745c2c527ec0ce48b63d"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ExpressionsAndItems-v7/Review/01-initial/hachiware-items-v7.gif",
+      "archive_path": "ExpressionsAndItems-v7/Review/01-initial/hachiware-items-v7.gif",
+      "bytes": 745562,
+      "sha256": "facc5356965abd613b10b31763bb8527e8ac85757bf31f85e31497dca8bf60a7"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ExpressionsAndItems-v7/Review/01-initial/hachiware-side-cycle.png",
+      "archive_path": "ExpressionsAndItems-v7/Review/01-initial/hachiware-side-cycle.png",
+      "bytes": 639691,
+      "sha256": "93e0374184b6baa6d27e5bc7c520655c7115ff4003e00d7719566ee36fa284a1"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ExpressionsAndItems-v7/Review/01-initial/hachiware-sprite-preview.png",
+      "archive_path": "ExpressionsAndItems-v7/Review/01-initial/hachiware-sprite-preview.png",
+      "bytes": 273924,
+      "sha256": "c73e0e353372acfda081f2319e656faff8ea7ef25f3fd6bd6b6e1d628c3e8d1d"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ExpressionsAndItems-v7/Review/01-initial/hachiware-walk.png",
+      "archive_path": "ExpressionsAndItems-v7/Review/01-initial/hachiware-walk.png",
+      "bytes": 136739,
+      "sha256": "54bfabb78c7f56e08fd0262c4e2fd12067405b766a5b4a474df8379234184c6f"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ExpressionsAndItems-v7/Review/01-initial/icon.png",
+      "archive_path": "ExpressionsAndItems-v7/Review/01-initial/icon.png",
+      "bytes": 257854,
+      "sha256": "fadb9924edc62d95697cdefc883dbb54e597c528d87278bf12af3ed433319587"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ExpressionsAndItems-v7/Review/02-adjusted/friends.png",
+      "archive_path": "ExpressionsAndItems-v7/Review/02-adjusted/friends.png",
+      "bytes": 130750,
+      "sha256": "d358479d8d5e811e4d92ef921ce2437356ec9be1da5bff246e27a1d55b67c63e"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ExpressionsAndItems-v7/Review/02-adjusted/hachiware-12-frame-walk.gif",
+      "archive_path": "ExpressionsAndItems-v7/Review/02-adjusted/hachiware-12-frame-walk.gif",
+      "bytes": 429514,
+      "sha256": "d263fdcaf983cb5cb4b8a414fe430197a9f69581c7ffd813d6e01fb78f4fc798"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ExpressionsAndItems-v7/Review/02-adjusted/hachiware-equipped-directions-v7.png",
+      "archive_path": "ExpressionsAndItems-v7/Review/02-adjusted/hachiware-equipped-directions-v7.png",
+      "bytes": 795396,
+      "sha256": "ce1745e702907101647deb1efd01f1d211f266193e4a953d4703a755a5505b74"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ExpressionsAndItems-v7/Review/02-adjusted/hachiware-expressions-v7.png",
+      "archive_path": "ExpressionsAndItems-v7/Review/02-adjusted/hachiware-expressions-v7.png",
+      "bytes": 508318,
+      "sha256": "96099e9d449d5ff6fd0ba5a0480d1ccf3b750dee3404ceae22d68b5d2b88cabd"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ExpressionsAndItems-v7/Review/02-adjusted/hachiware-items-v7.gif",
+      "archive_path": "ExpressionsAndItems-v7/Review/02-adjusted/hachiware-items-v7.gif",
+      "bytes": 738065,
+      "sha256": "443c94613e4de0dca6b5e7afe0469105f963806ccd3dee2b98b36c8b9c43eb26"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ExpressionsAndItems-v7/Review/02-adjusted/hachiware-side-cycle.png",
+      "archive_path": "ExpressionsAndItems-v7/Review/02-adjusted/hachiware-side-cycle.png",
+      "bytes": 639691,
+      "sha256": "93e0374184b6baa6d27e5bc7c520655c7115ff4003e00d7719566ee36fa284a1"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ExpressionsAndItems-v7/Review/02-adjusted/hachiware-sprite-preview.png",
+      "archive_path": "ExpressionsAndItems-v7/Review/02-adjusted/hachiware-sprite-preview.png",
+      "bytes": 273924,
+      "sha256": "c73e0e353372acfda081f2319e656faff8ea7ef25f3fd6bd6b6e1d628c3e8d1d"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ExpressionsAndItems-v7/Review/02-adjusted/hachiware-walk.png",
+      "archive_path": "ExpressionsAndItems-v7/Review/02-adjusted/hachiware-walk.png",
+      "bytes": 136739,
+      "sha256": "54bfabb78c7f56e08fd0262c4e2fd12067405b766a5b4a474df8379234184c6f"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ExpressionsAndItems-v7/Review/02-adjusted/icon.png",
+      "archive_path": "ExpressionsAndItems-v7/Review/02-adjusted/icon.png",
+      "bytes": 257854,
+      "sha256": "fadb9924edc62d95697cdefc883dbb54e597c528d87278bf12af3ed433319587"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ExpressionsAndItems-v7/manifest.json",
+      "archive_path": "ExpressionsAndItems-v7/manifest.json",
+      "bytes": 5320,
+      "sha256": "0cf09d8ad542baacbaa08365f53be0832129189ee4834de448a9a792813db5a1"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ExpressionsAndItems-v7/references.json",
+      "archive_path": "ExpressionsAndItems-v7/references.json",
+      "bytes": 1425,
+      "sha256": "76fbb79ca4078a1dcbca953dedf47e699659a4bbad4ac56b23b5ef50b3367e94"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ExpressionsAndItems-v7/self-test.txt",
+      "archive_path": "ExpressionsAndItems-v7/self-test.txt",
+      "bytes": 5898,
+      "sha256": "58fe4df1c8023b900b2a8a25e39214eda479c6c4c071eef0f2d3444c79bc2bf3"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ExpressionsAndItems-v7/validation.json",
+      "archive_path": "ExpressionsAndItems-v7/validation.json",
+      "bytes": 882,
+      "sha256": "d70a1ac9a3f0a48b7dd791f1c4c1dad2d5fef393aaa1b176a79fdd99f35d1bbf"
+    },
+    {
+      "kind": "image",
       "source": "Source/GeneratedOriginals/exec-1e74567d-854f-4889-b499-0706d195e7c2.png",
       "archive_path": "GeneratedOriginals/exec-1e74567d-854f-4889-b499-0706d195e7c2.png",
       "bytes": 1742461,
@@ -1542,6 +1766,13 @@
     },
     {
       "kind": "image",
+      "source": "Source/GeneratedOriginals/exec-de1fb059-318f-46a2-9e22-d5b609304192.png",
+      "archive_path": "GeneratedOriginals/exec-de1fb059-318f-46a2-9e22-d5b609304192.png",
+      "bytes": 1307884,
+      "sha256": "920b8add1d3402f1e0b522967aac31060589e9d3d234c4b0c0a7fe3ebd026111"
+    },
+    {
+      "kind": "image",
       "source": "Source/GeneratedOriginals/exec-e053a6f9-4f22-4267-846d-b4a0e170dd0a.png",
       "archive_path": "GeneratedOriginals/exec-e053a6f9-4f22-4267-846d-b4a0e170dd0a.png",
       "bytes": 1514480,
@@ -1560,6 +1791,13 @@
       "archive_path": "GeneratedOriginals/exec-f8bd50ee-31c9-4bbc-b0c4-17d762e16b7c.png",
       "bytes": 1584907,
       "sha256": "83f5490f5489b56e54837d1ff956a15ddda931eba202c4468d76ba3482e726c1"
+    },
+    {
+      "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/hachiware-actions-v7.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/hachiware-actions-v7.png",
+      "bytes": 1307884,
+      "sha256": "920b8add1d3402f1e0b522967aac31060589e9d3d234c4b0c0a7fe3ebd026111"
     },
     {
       "kind": "image",
@@ -1731,6 +1969,13 @@
     },
     {
       "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/hachiware-actions-v7.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/hachiware-actions-v7.png",
+      "bytes": 1307884,
+      "sha256": "920b8add1d3402f1e0b522967aac31060589e9d3d234c4b0c0a7fe3ebd026111"
+    },
+    {
+      "kind": "image",
       "source": "Sources/ChiikawaCompanion/Resources/hachiware-cardinal-walk-12-v3.png",
       "archive_path": "Project/Sources/ChiikawaCompanion/Resources/hachiware-cardinal-walk-12-v3.png",
       "bytes": 1627194,
@@ -1850,6 +2095,13 @@
     },
     {
       "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/hachiware-actions-v7.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/hachiware-actions-v7.png",
+      "bytes": 1307884,
+      "sha256": "920b8add1d3402f1e0b522967aac31060589e9d3d234c4b0c0a7fe3ebd026111"
+    },
+    {
+      "kind": "image",
       "source": "build/ChiikawaCompanion.app/Contents/Resources/hachiware-cardinal-walk-12-v3.png",
       "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/hachiware-cardinal-walk-12-v3.png",
       "bytes": 1627194,
@@ -1903,6 +2155,27 @@
       "archive_path": "Project/build/artwork/hachiware-12-frame-walk.gif",
       "bytes": 429514,
       "sha256": "d263fdcaf983cb5cb4b8a414fe430197a9f69581c7ffd813d6e01fb78f4fc798"
+    },
+    {
+      "kind": "image",
+      "source": "build/artwork/hachiware-equipped-directions-v7.png",
+      "archive_path": "Project/build/artwork/hachiware-equipped-directions-v7.png",
+      "bytes": 795396,
+      "sha256": "ce1745e702907101647deb1efd01f1d211f266193e4a953d4703a755a5505b74"
+    },
+    {
+      "kind": "image",
+      "source": "build/artwork/hachiware-expressions-v7.png",
+      "archive_path": "Project/build/artwork/hachiware-expressions-v7.png",
+      "bytes": 508318,
+      "sha256": "96099e9d449d5ff6fd0ba5a0480d1ccf3b750dee3404ceae22d68b5d2b88cabd"
+    },
+    {
+      "kind": "image",
+      "source": "build/artwork/hachiware-items-v7.gif",
+      "archive_path": "Project/build/artwork/hachiware-items-v7.gif",
+      "bytes": 738065,
+      "sha256": "443c94613e4de0dca6b5e7afe0469105f963806ccd3dee2b98b36c8b9c43eb26"
     },
     {
       "kind": "image",
@@ -1964,8 +2237,8 @@
       "kind": "supporting",
       "source": "Source/README.txt",
       "archive_path": "README.txt",
-      "bytes": 771,
-      "sha256": "05ecdfa78837cb2068439fc100fda456f305a3fdc951b0f2b5fbb9c501d8a821"
+      "bytes": 1210,
+      "sha256": "f5e863d71436514949131a1e627d7d1672eb3b244ab4c3180f9159c04e41edfa"
     },
     {
       "kind": "image",
@@ -2192,8 +2465,8 @@
       "sha256": "1a9a6456b561a528697d08bc97a5b14f3694040f1a684da6921470f3c0a713af"
     }
   ],
-  "updated_at": "2026-10-16T13:01:56.957536+00:00",
-  "latest_applied": "WalkSequence-v6",
+  "updated_at": "2026-10-19T01:40:22.498318+00:00",
+  "latest_applied": "ExpressionsAndItems-v7",
   "applied_directions": [
     "down-left",
     "down-right"

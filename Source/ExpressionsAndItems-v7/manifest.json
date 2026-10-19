@@ -1,0 +1,159 @@
+{
+  "files": [
+    {
+      "path": "Final/hachiware-equipped-directions-v7.png",
+      "bytes": 795396,
+      "sha256": "ce1745e702907101647deb1efd01f1d211f266193e4a953d4703a755a5505b74"
+    },
+    {
+      "path": "Final/hachiware-expressions-v7.png",
+      "bytes": 508318,
+      "sha256": "96099e9d449d5ff6fd0ba5a0480d1ccf3b750dee3404ceae22d68b5d2b88cabd"
+    },
+    {
+      "path": "Final/hachiware-items-v7.gif",
+      "bytes": 738065,
+      "sha256": "443c94613e4de0dca6b5e7afe0469105f963806ccd3dee2b98b36c8b9c43eb26"
+    },
+    {
+      "path": "Prompts/actions-v7.txt",
+      "bytes": 1851,
+      "sha256": "06faae2fd479696cc4929e19b691757054799e36178e5177a48361274b716368"
+    },
+    {
+      "path": "README.txt",
+      "bytes": 1814,
+      "sha256": "dee2f4e261ddb8879c6238f663891df4beb1d35c378dab49df26d682660214ac"
+    },
+    {
+      "path": "References/camera-full-body.jpg",
+      "bytes": 7702,
+      "sha256": "0f7bb8e79df862ece1d8a96e55bf109d0a3a9881f064aaaec741db29d7e4cca2"
+    },
+    {
+      "path": "References/camera-reference.jpeg",
+      "bytes": 29831,
+      "sha256": "a26bc8e763350cca520b6ec268ebdd65840c2a6f5324aa4ae5e878d079b89d6a"
+    },
+    {
+      "path": "References/guitar-reference.jpg",
+      "bytes": 37496,
+      "sha256": "0cc14b2ec263ece5bc855877d3751f095da15faf966370dca66d4275989f3b32"
+    },
+    {
+      "path": "References/happy-cheek.png",
+      "bytes": 218865,
+      "sha256": "64047c2b0f8d50149db12bae2eeb81b95b0503d7a73baef80eaaf20b30699d17"
+    },
+    {
+      "path": "References/original-hachiware.png",
+      "bytes": 10768,
+      "sha256": "c011abe3401deff0ecd2b6ee9eadfd5f7195e4744c4f9d524fa161f2df58af10"
+    },
+    {
+      "path": "Review/01-initial/friends.png",
+      "bytes": 130750,
+      "sha256": "d358479d8d5e811e4d92ef921ce2437356ec9be1da5bff246e27a1d55b67c63e"
+    },
+    {
+      "path": "Review/01-initial/hachiware-12-frame-walk.gif",
+      "bytes": 429514,
+      "sha256": "d263fdcaf983cb5cb4b8a414fe430197a9f69581c7ffd813d6e01fb78f4fc798"
+    },
+    {
+      "path": "Review/01-initial/hachiware-equipped-directions-v7.png",
+      "bytes": 797500,
+      "sha256": "e960f79cd4575c64e80ad3457b287e23cb8529b003f8141bde957c65d65efdd8"
+    },
+    {
+      "path": "Review/01-initial/hachiware-expressions-v7.png",
+      "bytes": 506525,
+      "sha256": "4cd2de87f1a01f6eaf6e14045d3d5a8b6ce8a93eea90745c2c527ec0ce48b63d"
+    },
+    {
+      "path": "Review/01-initial/hachiware-items-v7.gif",
+      "bytes": 745562,
+      "sha256": "facc5356965abd613b10b31763bb8527e8ac85757bf31f85e31497dca8bf60a7"
+    },
+    {
+      "path": "Review/01-initial/hachiware-side-cycle.png",
+      "bytes": 639691,
+      "sha256": "93e0374184b6baa6d27e5bc7c520655c7115ff4003e00d7719566ee36fa284a1"
+    },
+    {
+      "path": "Review/01-initial/hachiware-sprite-preview.png",
+      "bytes": 273924,
+      "sha256": "c73e0e353372acfda081f2319e656faff8ea7ef25f3fd6bd6b6e1d628c3e8d1d"
+    },
+    {
+      "path": "Review/01-initial/hachiware-walk.png",
+      "bytes": 136739,
+      "sha256": "54bfabb78c7f56e08fd0262c4e2fd12067405b766a5b4a474df8379234184c6f"
+    },
+    {
+      "path": "Review/01-initial/icon.png",
+      "bytes": 257854,
+      "sha256": "fadb9924edc62d95697cdefc883dbb54e597c528d87278bf12af3ed433319587"
+    },
+    {
+      "path": "Review/02-adjusted/friends.png",
+      "bytes": 130750,
+      "sha256": "d358479d8d5e811e4d92ef921ce2437356ec9be1da5bff246e27a1d55b67c63e"
+    },
+    {
+      "path": "Review/02-adjusted/hachiware-12-frame-walk.gif",
+      "bytes": 429514,
+      "sha256": "d263fdcaf983cb5cb4b8a414fe430197a9f69581c7ffd813d6e01fb78f4fc798"
+    },
+    {
+      "path": "Review/02-adjusted/hachiware-equipped-directions-v7.png",
+      "bytes": 795396,
+      "sha256": "ce1745e702907101647deb1efd01f1d211f266193e4a953d4703a755a5505b74"
+    },
+    {
+      "path": "Review/02-adjusted/hachiware-expressions-v7.png",
+      "bytes": 508318,
+      "sha256": "96099e9d449d5ff6fd0ba5a0480d1ccf3b750dee3404ceae22d68b5d2b88cabd"
+    },
+    {
+      "path": "Review/02-adjusted/hachiware-items-v7.gif",
+      "bytes": 738065,
+      "sha256": "443c94613e4de0dca6b5e7afe0469105f963806ccd3dee2b98b36c8b9c43eb26"
+    },
+    {
+      "path": "Review/02-adjusted/hachiware-side-cycle.png",
+      "bytes": 639691,
+      "sha256": "93e0374184b6baa6d27e5bc7c520655c7115ff4003e00d7719566ee36fa284a1"
+    },
+    {
+      "path": "Review/02-adjusted/hachiware-sprite-preview.png",
+      "bytes": 273924,
+      "sha256": "c73e0e353372acfda081f2319e656faff8ea7ef25f3fd6bd6b6e1d628c3e8d1d"
+    },
+    {
+      "path": "Review/02-adjusted/hachiware-walk.png",
+      "bytes": 136739,
+      "sha256": "54bfabb78c7f56e08fd0262c4e2fd12067405b766a5b4a474df8379234184c6f"
+    },
+    {
+      "path": "Review/02-adjusted/icon.png",
+      "bytes": 257854,
+      "sha256": "fadb9924edc62d95697cdefc883dbb54e597c528d87278bf12af3ed433319587"
+    },
+    {
+      "path": "references.json",
+      "bytes": 1425,
+      "sha256": "76fbb79ca4078a1dcbca953dedf47e699659a4bbad4ac56b23b5ef50b3367e94"
+    },
+    {
+      "path": "self-test.txt",
+      "bytes": 5898,
+      "sha256": "58fe4df1c8023b900b2a8a25e39214eda479c6c4c071eef0f2d3444c79bc2bf3"
+    },
+    {
+      "path": "validation.json",
+      "bytes": 882,
+      "sha256": "d70a1ac9a3f0a48b7dd791f1c4c1dad2d5fef393aaa1b176a79fdd99f35d1bbf"
+    }
+  ]
+}

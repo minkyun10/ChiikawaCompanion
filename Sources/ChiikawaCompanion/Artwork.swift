@@ -7,10 +7,20 @@ enum FriendArtwork {
 
     static func draw(_ friend: Friend, in rect: NSRect, time: Double = 0,
                      happy: Bool = false, walking: Bool = false, looking: CGFloat = 0,
-                     facing: CGFloat = 1, walkPhase: Double? = nil, pose: HachiwarePose = .front) {
+                     facing: CGFloat = 1, walkPhase: Double? = nil, pose: HachiwarePose = .front,
+                     action: HachiwareAction? = nil, equipped: CompanionItem? = nil) {
         if friend == .hachiware {
+            if let action, HachiwareActions.shared.draw(action, in: rect, time: time) {
+                if let equipped, action != equipped.action && action != .pickup {
+                    ItemArtwork.drawEquipped(equipped, in: rect, pose: .front, facing: -1, time: time, behind: false)
+                }
+                return
+            }
+            let shownPose: HachiwarePose = happy || !walking ? .front : pose
+            if let equipped { ItemArtwork.drawEquipped(equipped, in: rect, pose: shownPose, facing: facing, time: time, behind: true) }
             HachiwareSprites.shared.draw(in: rect, time: time, happy: happy, walking: walking,
                                          facing: facing, walkPhase: walkPhase, pose: pose)
+            if let equipped { ItemArtwork.drawEquipped(equipped, in: rect, pose: shownPose, facing: facing, time: time, behind: false) }
             return
         }
         guard let cg = NSGraphicsContext.current?.cgContext else { return }
