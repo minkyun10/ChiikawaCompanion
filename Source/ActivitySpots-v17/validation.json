@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-19",
+  "app_version": "0.11.0",
+  "build": 21,
+  "cli_checks_passed": 187,
+  "packaged_checks_passed": 191,
+  "codesign_deep_strict": "passed",
+  "new_raster_resources": 0,
+  "all_existing_resources_byte_identical": true,
+  "trigger_radius_pt": 34,
+  "exit_radius_pt": 84,
+  "cooldown_seconds": {
+    "desk": 30,
+    "furball": 45,
+    "rice": 30
+  },
+  "actions": {
+    "desk": "study",
+    "furball": "vomit",
+    "rice": "eat"
+  },
+  "native_ui": {
+    "all_three_props_enabled": true,
+    "automatic_reactions_enabled": true,
+    "desk_visit_started_walking": true,
+    "settings_card_visible": true,
+    "notification_monitoring_enabled": false,
+    "click_voice_enabled": true,
+    "character_volume": 0.65,
+    "desk_visit_arrived_and_started_studying": true,
+    "settings_closed_at_end": true,
+    "app_left_running": true,
+    "observed_arrival_status": "study action active after desk visit"
+  },
+  "preview_file": "Review/01-native/hachiware-proximity-actions-v17.png",
+  "limitations": [
+    "Live KakaoTalk delivery was not tested.",
+    "Prop coordinates and repeat-trigger latches are runtime-only."
+  ]
+}

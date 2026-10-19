@@ -276,6 +276,7 @@ enum SelfTest {
               "legacy bag preference is removed without changing the other prop choices")
         runVoiceChecks(defaults: testDefaults) { check($0, $1) }
         runDailyActionChecks(defaults: testDefaults) { check($0, $1) }
+        runActivitySpotChecks(defaults: testDefaults) { check($0, $1) }
         runHomeTests(desktop: desktop, now: now) { check($0, $1) }
         var performance = CompanionPerformance()
         performance.begin(.camera, now: now, pickingUp: true)
@@ -493,6 +494,7 @@ enum SelfTest {
         print("Artwork rendered.")
         renderItems(to: directory)
         renderDailyActions(to: directory)
+        renderActivitySpots(to: directory)
         renderHome(to: directory)
     }
 

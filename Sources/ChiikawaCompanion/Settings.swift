@@ -215,8 +215,29 @@ struct SettingsView: View {
                 Label("하치와레의 하루", systemImage: "sun.max")
                     .font(.system(size: 16, weight: .semibold))
                 Spacer()
+                Toggle("가까이 가면 행동하기", isOn: $state.automaticActivities)
+                    .toggleStyle(.switch).controlSize(.small).font(.system(size: 10))
                 Button("동작 멈추기") { state.onStopDailyAction?() }
-                    .font(.system(size: 11)).disabled(!state.dailyActionRunning)
+                    .font(.system(size: 11)).disabled(!state.dailyActionRunning && !state.activityJourneyRunning)
+            }
+            HStack(spacing: 10) {
+                ForEach(ActivitySpot.allCases) { spot in
+                    VStack(alignment: .leading, spacing: 8) {
+                        HStack(spacing: 7) {
+                            Label(spot.name, systemImage: spot.symbol).font(.system(size: 12, weight: .semibold))
+                            Spacer(minLength: 0)
+                            Toggle(spot.name, isOn: Binding(get: { state.enabledActivitySpots.contains(spot) }, set: {
+                                if $0 { state.enabledActivitySpots.insert(spot) } else { state.enabledActivitySpots.remove(spot) }
+                            })).labelsHidden().toggleStyle(.switch).controlSize(.mini)
+                                .accessibilityLabel("\(spot.name) 바탕화면에 놓기")
+                        }
+                        Text("가까이 가면 \(spot.action.title)").font(.system(size: 10)).foregroundStyle(mutedInk)
+                        Button(spot.visitTitle) { state.onSeekActivitySpot?(spot) }
+                            .font(.system(size: 10)).disabled(!state.enabledActivitySpots.contains(spot))
+                            .accessibilityLabel("하치와레 \(spot.visitTitle)")
+                    }.padding(11).frame(maxWidth: .infinity)
+                        .background(cream, in: RoundedRectangle(cornerRadius: 11))
+                }
             }
             HStack(spacing: 10) {
                 ForEach(HachiwareAction.daily, id: \.rawValue) { action in
@@ -229,7 +250,7 @@ struct SettingsView: View {
                 }
             }
             Text(state.dailyActionStatus).font(.system(size: 10)).foregroundStyle(mutedInk)
-            Text("혀를 빼꼼 내밀고 공부하고, 젓가락으로 밥을 먹어요. 토하기는 직접 고를 때만 나와요.\n캐릭터를 우클릭해도 고를 수 있어요. 동작 중에도 클릭하거나 드래그해 바로 멈출 수 있어요.")
+            Text("책상·털뭉치·밥 근처에 가면 해당 동작을 해요. 소품을 클릭하면 걸어가고, 드래그로 자리를 바꿀 수 있어요.\n한 번 행동한 곳은 멀어졌다 돌아와야 다시 반응해요. 동작 버튼이나 캐릭터 우클릭으로 바로 볼 수도 있어요.")
                 .font(.system(size: 10)).foregroundStyle(mutedInk).lineSpacing(3)
                 .fixedSize(horizontal: false, vertical: true)
         }.padding(20).background(.white.opacity(0.9), in: RoundedRectangle(cornerRadius: 20))

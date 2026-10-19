@@ -103,6 +103,12 @@ final class AppState: ObservableObject {
     @Published var voiceStatus = "클릭하면 음성 4개와 명대사 10개 중 하나를 보여줘요"
     @Published var dailyActionStatus = "공부하고, 밥도 먹고, 잠깐 쉬어 가요"
     @Published var dailyActionRunning = false
+    @Published var activityJourneyRunning = false
+    @Published var enabledActivitySpots: Set<ActivitySpot> {
+        didSet { defaults.set(enabledActivitySpots.map(\.rawValue).sorted(), forKey: "enabledActivitySpots") }
+    }
+    @Published var automaticActivities: Bool { didSet { defaults.set(automaticActivities, forKey: "automaticActivities") } }
+    var onSeekActivitySpot: ((ActivitySpot) -> Void)?
     var onDailyAction: ((HachiwareAction) -> Void)?
     var onStopDailyAction: (() -> Void)?
     var onVoicePreview: (() -> Void)?
@@ -125,6 +131,9 @@ final class AppState: ObservableObject {
 
     init(defaults: UserDefaults = .standard) {
         self.defaults = defaults
+        enabledActivitySpots = Set((defaults.stringArray(forKey: "enabledActivitySpots") ?? ActivitySpot.allCases.map(\.rawValue))
+            .compactMap(ActivitySpot.init(rawValue:)))
+        automaticActivities = defaults.object(forKey: "automaticActivities") as? Bool ?? true
         let restoredItems = Set((defaults.stringArray(forKey: "enabledItems") ?? CompanionItem.allCases.map(\.rawValue))
             .compactMap(CompanionItem.init(rawValue:)))
         enabledItems = restoredItems
