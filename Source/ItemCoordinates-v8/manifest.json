@@ -1,0 +1,19 @@
+{
+  "files": [
+    {
+      "path": "README.txt",
+      "bytes": 1267,
+      "sha256": "2f37230d283958c848d6a8af484acb486e6c661c039b25c1a1e8aa7ac1f8d014"
+    },
+    {
+      "path": "self-test.txt",
+      "bytes": 6348,
+      "sha256": "748931a53f0d144e3655ba0b35a28154cc314670c8c623a211e9a3bdb4d7febb"
+    },
+    {
+      "path": "validation.json",
+      "bytes": 565,
+      "sha256": "47a1c56a4a54bdfda4d087adc101f103efbfce3fa578919cbc02021d1fae627a"
+    }
+  ]
+}

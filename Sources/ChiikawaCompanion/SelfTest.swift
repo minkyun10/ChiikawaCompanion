@@ -236,6 +236,35 @@ enum SelfTest {
         world.scatter(in: screen)
         check(world.ground.count == 3 && Set(world.ground.keys) == world.enabled,
               "scattering preserves exactly one instance of every enabled prop")
+        // Exercise the actual drag-release callback that previously scattered props.
+        // No timer or visible windows: all preferences belong to the isolated test suite.
+        _ = NSApplication.shared
+        let desktop = DesktopController(state: migrated, startTimer: false)
+        let actor = desktop.actors[0]
+        let originalGround = desktop.itemWorld.ground
+        let oldOrigin = actor.panel.frame.origin
+        actor.panel.setFrameOrigin(NSPoint(x: oldOrigin.x + 95, y: oldOrigin.y + 70))
+        desktop.itemWorld.requested = .camera; desktop.itemTarget = .camera
+        actor.motion.destination = oldOrigin
+        actor.view.onDragEnd?()
+        check(actor.panel.frame.origin != oldOrigin && desktop.itemWorld.ground == originalGround,
+              "dragging the character leaves every ground prop at its exact original coordinate")
+        check(actor.motion.destination == nil && desktop.itemTarget == nil && desktop.itemWorld.requested == .camera,
+              "drag release rebuilds the character route while preserving the requested item interaction")
+        desktop.resetPositions()
+        check(desktop.itemWorld.ground == originalGround,
+              "calling the character back never resets or scatters ground props")
+        let characterPosition = actor.panel.frame.origin
+        let itemPoint = originalGround[.guitar]!
+        desktop.desktopItems[.guitar]?.view.onMove?(NSPoint(x: itemPoint.x - 35, y: itemPoint.y - 35))
+        check(desktop.itemWorld.ground[.guitar] != itemPoint && actor.panel.frame.origin == characterPosition
+              && desktop.itemWorld.ground.filter { $0.key != .guitar } == originalGround.filter { $0.key != .guitar },
+              "dragging one prop moves only that prop, independently of the character and other props")
+        let fixedCamera = desktop.itemWorld.ground[.camera]!
+        let originAtCamera = ItemWorld.destination(for: fixedCamera)
+        check(desktop.itemWorld.pickUp(.camera, from: originAtCamera, bounds: NSScreen.main!.visibleFrame, now: now)
+              && desktop.itemWorld.equipped == .camera,
+              "pickup still uses the unchanged ground coordinate after moving character and props independently")
         migrated.enabledItems = [.camera, .bag]; migrated.automaticItems = false; migrated.expressive = false
         let itemPreferences = AppState(defaults: testDefaults)
         check(itemPreferences.enabledItems == [.camera, .bag] && !itemPreferences.automaticItems && !itemPreferences.expressive,

@@ -1,0 +1,18 @@
+{
+  "verified": "2026-10-19",
+  "app_version": "0.6.1",
+  "build": 13,
+  "packaged_self_test_checks": 105,
+  "packaged_self_test_passed": true,
+  "code_signature_valid": true,
+  "runtime_relaunched": true,
+  "regression_checks": [
+    "character drag leaves ground coordinates unchanged",
+    "drag invalidates route while keeping requested item",
+    "call character leaves props unchanged",
+    "one prop drag affects only that prop",
+    "pickup uses fixed ground coordinates"
+  ],
+  "character_artwork_modified": false,
+  "live_kakao_message_verified": false
+}

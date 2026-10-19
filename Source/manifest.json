@@ -3,7 +3,7 @@
   "operation": "copy; originals preserved",
   "image_file_count": 310,
   "unique_image_content_count": 232,
-  "supporting_file_count": 41,
+  "supporting_file_count": 45,
   "image_bytes": 116985632,
   "symmetric_walk_runtime_applied": true,
   "files": [
@@ -1793,6 +1793,34 @@
       "sha256": "83f5490f5489b56e54837d1ff956a15ddda931eba202c4468d76ba3482e726c1"
     },
     {
+      "kind": "supporting",
+      "source": "Source/ItemCoordinates-v8/README.txt",
+      "archive_path": "ItemCoordinates-v8/README.txt",
+      "bytes": 1267,
+      "sha256": "2f37230d283958c848d6a8af484acb486e6c661c039b25c1a1e8aa7ac1f8d014"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ItemCoordinates-v8/manifest.json",
+      "archive_path": "ItemCoordinates-v8/manifest.json",
+      "bytes": 462,
+      "sha256": "fe087d9254207a05c0f79817d87e1f2f7ddeb35ebd0f11a83192213f4d6d4bb4"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ItemCoordinates-v8/self-test.txt",
+      "archive_path": "ItemCoordinates-v8/self-test.txt",
+      "bytes": 6348,
+      "sha256": "748931a53f0d144e3655ba0b35a28154cc314670c8c623a211e9a3bdb4d7febb"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ItemCoordinates-v8/validation.json",
+      "archive_path": "ItemCoordinates-v8/validation.json",
+      "bytes": 565,
+      "sha256": "47a1c56a4a54bdfda4d087adc101f103efbfce3fa578919cbc02021d1fae627a"
+    },
+    {
       "kind": "image",
       "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/hachiware-actions-v7.png",
       "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/hachiware-actions-v7.png",
@@ -2465,8 +2493,8 @@
       "sha256": "1a9a6456b561a528697d08bc97a5b14f3694040f1a684da6921470f3c0a713af"
     }
   ],
-  "updated_at": "2026-10-19T01:40:22.498318+00:00",
-  "latest_applied": "ExpressionsAndItems-v7",
+  "updated_at": "2026-10-19T02:29:22.072948+00:00",
+  "latest_applied": "ItemCoordinates-v8",
   "applied_directions": [
     "down-left",
     "down-right"

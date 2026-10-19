@@ -172,7 +172,7 @@ final class DesktopController {
     var desktopItems: [CompanionItem: DesktopItem] = [:]
     var itemTarget: CompanionItem?
 
-    init(state: AppState) {
+    init(state: AppState, startTimer: Bool = true) {
         self.state = state
         // Decode and register once at launch, never on the first pointer hover.
         _ = HachiwareSprites.shared
@@ -184,15 +184,17 @@ final class DesktopController {
             }
             actor.view.onDragEnd = { [weak self, weak actor] in
                 actor?.motion.retarget()
-                if let bounds = actor?.panel.screen?.visibleFrame { self?.itemWorld.scatter(in: bounds) }
+                // Ground props own screen coordinates. Moving the character only
+                // invalidates its route; it must never reposition those props.
                 self?.itemTarget = nil
             }
         }
         for item in CompanionItem.allCases {
             let desktopItem = DesktopItem(item: item)
             desktopItem.view.onSeek = { [weak self] in self?.seekItem(item) }
-            desktopItem.view.onMove = { [weak self] point in
-                guard let self, let bounds = self.actors.first?.panel.screen?.visibleFrame ?? NSScreen.main?.visibleFrame else { return }
+            desktopItem.view.onMove = { [weak self, weak desktopItem] point in
+                guard let self, let bounds = (NSScreen.screens.first { $0.frame.contains(point) }
+                    ?? desktopItem?.panel.screen ?? NSScreen.main)?.visibleFrame else { return }
                 self.itemWorld.move(item, to: point, bounds: bounds)
             }
             desktopItems[item] = desktopItem
@@ -201,8 +203,12 @@ final class DesktopController {
         state.onSeekItem = { [weak self] item in self?.seekItem(item) }
         state.onDropItem = { [weak self] in self?.dropItem() }
         resetPositions()
+        if let visible = NSScreen.main?.visibleFrame {
+            itemWorld.configure(enabled: state.enabledItems, bounds: visible)
+        }
         screenObserver = NotificationCenter.default.addObserver(forName: NSApplication.didChangeScreenParametersNotification,
-                                                                 object: nil, queue: .main) { [weak self] _ in self?.resetPositions() }
+                                                                 object: nil, queue: .main) { [weak self] _ in self?.screenLayoutChanged() }
+        guard startTimer else { return }
         timer = Timer(timeInterval: DesktopActivity.updateInterval, repeats: true) { [weak self] _ in self?.tick() }
         timer?.tolerance = 0.002
         RunLoop.main.add(timer!, forMode: .common)
@@ -222,10 +228,16 @@ final class DesktopController {
             actor.motion.retarget()
             actor.motion.destination = RoamingMotion.target(in: visible, size: size, xFraction: 0.8, yFraction: 0.72)
         }
-        itemWorld.configure(enabled: state.enabledItems, bounds: visible)
-        // Keep existing choices but return off-screen props after a display change.
-        for (item, point) in itemWorld.ground { itemWorld.move(item, to: point, bounds: visible) }
         itemTarget = nil
+    }
+    private func screenLayoutChanged() {
+        resetPositions()
+        // Repair coordinates only when the display layout actually changes.
+        // Props already on another connected screen stay on that screen.
+        for (item, point) in itemWorld.ground {
+            guard let screen = NSScreen.screens.first(where: { $0.frame.contains(point) }) ?? NSScreen.main else { continue }
+            itemWorld.move(item, to: point, bounds: screen.visibleFrame)
+        }
     }
     func seekItem(_ item: CompanionItem) {
         guard itemWorld.ground[item] != nil else { return }
@@ -236,7 +248,7 @@ final class DesktopController {
         state.itemStatus = "\(item.name) 주우러 가는 중"
     }
     func scatterItems() {
-        guard let bounds = actors.first?.panel.screen?.visibleFrame ?? NSScreen.main?.visibleFrame else { return }
+        guard let bounds = NSScreen.main?.visibleFrame else { return }
         itemWorld.scatter(in: bounds); itemTarget = nil
         actors.first?.motion.retarget()
         state.itemStatus = "소품을 바탕화면에 다시 놓았어요"
@@ -257,7 +269,7 @@ final class DesktopController {
         let now = Date(), dt = min(now.timeIntervalSince(lastTick), 0.06)
         lastTick = now
         let time = now.timeIntervalSince(started), mouse = NSEvent.mouseLocation
-        if let bounds = actors.first?.panel.screen?.visibleFrame ?? NSScreen.main?.visibleFrame {
+        if let bounds = NSScreen.main?.visibleFrame {
             let previous = itemWorld.equipped
             itemWorld.configure(enabled: state.enabledItems, bounds: bounds)
             if previous != itemWorld.equipped { actors.first?.performance.cancel(now: now) }
