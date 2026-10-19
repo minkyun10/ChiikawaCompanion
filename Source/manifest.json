@@ -1,10 +1,10 @@
 {
   "created_at": "2026-10-16T12:08:58.617148+00:00",
   "operation": "copy; originals preserved",
-  "image_file_count": 526,
-  "unique_image_content_count": 359,
-  "supporting_file_count": 66,
-  "image_bytes": 172220990,
+  "image_file_count": 527,
+  "unique_image_content_count": 360,
+  "supporting_file_count": 71,
+  "image_bytes": 172240258,
   "symmetric_walk_runtime_applied": true,
   "files": [
     {
@@ -391,6 +391,48 @@
       "archive_path": "CaveHome-v11/walk-preservation.json",
       "bytes": 1277,
       "sha256": "56e3fe7f17c928467c8f80d916d3dc4feeeab3ece68bdbb4f8603e403842562a"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ClickQuotes-v12/README.txt",
+      "archive_path": "ClickQuotes-v12/README.txt",
+      "bytes": 891,
+      "sha256": "650691b530ee58a56f95330088490fa3bf54cdc5a3ab19ce12cb560d2d81f6ae"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ClickQuotes-v12/Review/mac-random-quote-1.png",
+      "archive_path": "ClickQuotes-v12/Review/mac-random-quote-1.png",
+      "bytes": 19268,
+      "sha256": "82ed3df651d142c681f78576a3675c4d1062decaaa42cea2d3411ee6643edeaf"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ClickQuotes-v12/manifest.json",
+      "archive_path": "ClickQuotes-v12/manifest.json",
+      "bytes": 771,
+      "sha256": "d155c9b9d798cc9eb8b65ac68b3e4b9402aa07c8b89987d3e56c05fe342736ae"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ClickQuotes-v12/quotes.json",
+      "archive_path": "ClickQuotes-v12/quotes.json",
+      "bytes": 510,
+      "sha256": "17dd460a9a6a8f9db56cfe127987ae8a3d401f8338d2867b4766392ba2d74f8e"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ClickQuotes-v12/self-test.txt",
+      "archive_path": "ClickQuotes-v12/self-test.txt",
+      "bytes": 8466,
+      "sha256": "47cdc82897202841f024cd7fe9bf1347cabb8ba4626f177d60ef1cc6f65e2a8b"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ClickQuotes-v12/validation.json",
+      "archive_path": "ClickQuotes-v12/validation.json",
+      "bytes": 667,
+      "sha256": "cfcb5e8db8db6c652130458e397d665609118270a91929720035ab546636edac"
     },
     {
       "kind": "image",
@@ -3896,8 +3938,8 @@
       "kind": "supporting",
       "source": "Source/README.txt",
       "archive_path": "README.txt",
-      "bytes": 1828,
-      "sha256": "6ce003bb6a2f1397754dbdc717657109bfa6d2c4f4ae43702e426fc18d4c7876"
+      "bytes": 1973,
+      "sha256": "66a2c871469dda7de03032937d7240fdf79e195990aecd9b0c193d91b6ea7083"
     },
     {
       "kind": "image",
@@ -4152,7 +4194,7 @@
       "sha256": "1a9a6456b561a528697d08bc97a5b14f3694040f1a684da6921470f3c0a713af"
     }
   ],
-  "updated_at": "2026-10-19T09:11:57.567628+00:00",
+  "updated_at": "2026-10-19T10:23:20.975641+00:00",
   "latest_applied": "CaveHome-v11",
   "applied_directions": [
     "down-left",

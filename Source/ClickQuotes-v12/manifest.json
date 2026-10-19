@@ -1,0 +1,29 @@
+{
+  "files": [
+    {
+      "path": "README.txt",
+      "bytes": 891,
+      "sha256": "650691b530ee58a56f95330088490fa3bf54cdc5a3ab19ce12cb560d2d81f6ae"
+    },
+    {
+      "path": "Review/mac-random-quote-1.png",
+      "bytes": 19268,
+      "sha256": "82ed3df651d142c681f78576a3675c4d1062decaaa42cea2d3411ee6643edeaf"
+    },
+    {
+      "path": "quotes.json",
+      "bytes": 510,
+      "sha256": "17dd460a9a6a8f9db56cfe127987ae8a3d401f8338d2867b4766392ba2d74f8e"
+    },
+    {
+      "path": "self-test.txt",
+      "bytes": 8466,
+      "sha256": "47cdc82897202841f024cd7fe9bf1347cabb8ba4626f177d60ef1cc6f65e2a8b"
+    },
+    {
+      "path": "validation.json",
+      "bytes": 667,
+      "sha256": "cfcb5e8db8db6c652130458e397d665609118270a91929720035ab546636edac"
+    }
+  ]
+}

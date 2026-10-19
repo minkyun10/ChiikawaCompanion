@@ -1,0 +1,17 @@
+{
+  "verified": "2026-10-19",
+  "version": "0.8.1",
+  "build": 16,
+  "quote_count": 10,
+  "quotes_preserved_from_user": true,
+  "selection": "Swift randomElement; independent random selection for each character click, repeats possible",
+  "packaged_checks_passed": 133,
+  "strict_code_signature_verified": true,
+  "native_character_click_invoked": true,
+  "ui_capture": "Review/mac-random-quote-1.png",
+  "ui_capture_scope": "character click reaction; bubble belongs to a separate window",
+  "home_and_all_three_props_restored_on": true,
+  "existing_sender_and_notification_preferences_preserved": true,
+  "app_left_running": true,
+  "new_generated_artwork": false
+}

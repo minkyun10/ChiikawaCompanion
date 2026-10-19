@@ -46,6 +46,7 @@ final class DesktopFriendView: NSView {
     required init?(coder: NSCoder) { fatalError("init(coder:) is unavailable") }
     override var acceptsFirstResponder: Bool { false }
     override func acceptsFirstMouse(for event: NSEvent?) -> Bool { true }
+    override func accessibilityPerformPress() -> Bool { onClick?(); return true }
     override func draw(_ dirtyRect: NSRect) {
         FriendArtwork.draw(friend, in: bounds, time: time, happy: happy, walking: walking,
                            looking: looking, facing: facing, walkPhase: walkPhase, pose: pose,

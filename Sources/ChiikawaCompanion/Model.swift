@@ -5,6 +5,18 @@ enum Friend: String, CaseIterable, Codable, Identifiable {
     case chiikawa, hachiware, usagi, momonga, kurimanju
     // Finish one character's behaviour before exposing the other characters.
     static let developmentRoster: [Friend] = [.hachiware]
+    static let hachiwareClickQuotes = [
+        "어떻게든 돼라!",
+        "추억은… 계속… 있는 거니까.",
+        "그치만… 기쁜 일도 가득 있었잖아!",
+        "최고잖아!!",
+        "이렇게나 함께 있는데, 다른 사람이 된다니 싫어.",
+        "같이 합격해서, 같은 보수를 받아서, 좀 더 큰 집에 같이 살자!",
+        "내가… 떨어졌어……",
+        "우리가 꾼 꿈, 혹시 이어져 있었던 걸까?",
+        "기분 탓이야! 기분 탓!",
+        "내일도 자격증 공부 해야 하니까… 오늘은 자야지…"
+    ]
     var id: String { rawValue }
     var name: String {
         switch self {
@@ -18,7 +30,7 @@ enum Friend: String, CaseIterable, Codable, Identifiable {
     var greeting: String {
         switch self {
         case .chiikawa: return "와아…! 반가워!"
-        case .hachiware: return "오늘도 같이 있자!"
+        case .hachiware: return Self.hachiwareClickQuotes.randomElement() ?? "오늘도 같이 있자!"
         case .usagi: return "우라! 야하!"
         case .momonga: return "나 좀 봐줘!"
         case .kurimanju: return "잠깐 쉬어 가자."
