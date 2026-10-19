@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-19",
+  "files": [
+    {
+      "path": "README.txt",
+      "bytes": 2192,
+      "sha256": "0238417fff4abe077ad2d12ee5f2bfe7c71177cc7dbea1731bcd8758ae4f8a0e"
+    },
+    {
+      "path": "build-log.txt",
+      "bytes": 396,
+      "sha256": "77620f2a75c4c0396e4a07db5c9ac7dfe7aaef4fc102d6feae03389c382ff3b0"
+    },
+    {
+      "path": "cli-self-test.txt",
+      "bytes": 16182,
+      "sha256": "29c6b3edfb06af524c110ed098bc6b397fa322b3259d1a202b7cb5c108af2cae"
+    },
+    {
+      "path": "codesign-log.txt",
+      "bytes": 109,
+      "sha256": "6210c61790ac2c9d268a576bdecb1c906f66d332a0c64871ceff1469e071d542"
+    },
+    {
+      "path": "compile-log.txt",
+      "bytes": 265,
+      "sha256": "aede0ab189b4ee7ef67ff3cffaabcfa5658a31e2f249fcd625db6e485f793eba"
+    },
+    {
+      "path": "existing-resources-preserved.json",
+      "bytes": 3927,
+      "sha256": "b055e261103d0e6c7f2f3a677953835821259fbe5f698d46de1915f4b31653d3"
+    },
+    {
+      "path": "self-test.txt",
+      "bytes": 16570,
+      "sha256": "2ab04dc6dee3ef6ad2a28b61fd9c63b4eb5125497eaf169c05c5ef5cf7ac5d70"
+    },
+    {
+      "path": "validation.json",
+      "bytes": 1290,
+      "sha256": "d84109940c85ddd25fd2770cc279ed1004ae6a5621f962a595afce547369cf8a"
+    }
+  ]
+}

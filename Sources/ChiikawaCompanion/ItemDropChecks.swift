@@ -22,9 +22,8 @@ extension SelfTest {
               "dropping a dragged item away from the character leaves it on the desktop")
 
         desktop.desktopItems[.camera]!.view.onMove?(body)
-        check(!desktop.itemWorld.pickUp(.camera, from: characterOrigin,
-                                       bounds: NSScreen.main!.visibleFrame, now: now),
-              "a body-level drop is outside the ordinary foot-proximity pickup radius")
+        check(ItemWorld.canReach(body,from:characterOrigin) && desktop.itemWorld.equipped == nil,
+              "the body-level handoff is reachable without equipping an item that is still being moved")
         desktop.desktopItems[.camera]!.view.isDragging = true
         check(!desktop.receiveDroppedItem(.camera, at: body),
               "holding a dragged item over the character does not equip it before release")

@@ -41,6 +41,7 @@ struct ItemWorld {
     private(set) var enabled = Set<CompanionItem>()
     private(set) var availableAfter: [CompanionItem: Date] = [:]
     private(set) var nextAutomaticPickup = Date.distantPast
+    private(set) var nextNearbyPickup = Date.distantPast
     var requested: CompanionItem?
 
     static let contactOffset = NSPoint(x: 66, y: 30)
@@ -49,6 +50,15 @@ struct ItemWorld {
     }
     static func destination(for point: NSPoint) -> NSPoint {
         NSPoint(x: point.x - contactOffset.x, y: point.y - contactOffset.y)
+    }
+    /// The drawn prop occupies 64x64 points above its ground anchor. Test it against
+    /// the character's rounded body, with a small reach margin rather than one foot point.
+    static func canReach(_ point: NSPoint, from origin: NSPoint) -> Bool {
+        let prop = NSRect(x: point.x-32, y: point.y-1, width: 64, height: 64)
+        let center = NSPoint(x: origin.x+66, y: origin.y+74)
+        let dx = (min(max(center.x,prop.minX),prop.maxX)-center.x)/50
+        let dy = (min(max(center.y,prop.minY),prop.maxY)-center.y)/62
+        return dx*dx+dy*dy <= 1
     }
     static func clamp(_ point: NSPoint, to bounds: NSRect) -> NSPoint {
         let origin = DesktopGeometry.clamp(destination(for: point), size: NSSize(width: 132, height: 150), to: bounds)
@@ -92,14 +102,26 @@ struct ItemWorld {
             return hypot(contact.x - a.x, contact.y - a.y) < hypot(contact.x - b.x, contact.y - b.y)
         }
     }
+    func nearbyTarget(from origin: NSPoint, automatic: Bool, now: Date,
+                      excluding dragged: Set<CompanionItem> = []) -> CompanionItem? {
+        guard automatic, requested == nil, now >= nextNearbyPickup else { return nil }
+        let contact = Self.contactPoint(origin: origin)
+        return ground.keys.filter {
+            !dragged.contains($0) && now >= (availableAfter[$0] ?? .distantPast)
+                && Self.canReach(ground[$0]!, from: origin)
+        }.min {
+            let a = ground[$0]!, b = ground[$1]!
+            let da = hypot(contact.x-a.x,contact.y-a.y), db = hypot(contact.x-b.x,contact.y-b.y)
+            return da == db ? $0.rawValue < $1.rawValue : da < db
+        }
+    }
     @discardableResult
     mutating func pickUp(_ item: CompanionItem, from origin: NSPoint, bounds: NSRect, now: Date) -> Bool {
         guard let point = ground[item], enabled.contains(item) else { return false }
-        let contact = Self.contactPoint(origin: origin)
-        guard hypot(contact.x - point.x, contact.y - point.y) <= 30 else { return false }
+        guard Self.canReach(point, from: origin) else { return false }
         return equip(item, at: origin, bounds: bounds, now: now)
     }
-    /// An intentional handoff uses the character hit target rather than foot proximity.
+    /// Shared transfer after visual contact or a separately validated intentional handoff.
     @discardableResult
     mutating func equip(_ item: CompanionItem, at origin: NSPoint, bounds: NSRect, now: Date) -> Bool {
         guard ground[item] != nil, enabled.contains(item) else { return false }
@@ -108,6 +130,7 @@ struct ItemWorld {
         ground[item] = nil; availableAfter[item] = nil
         equipped = item; requested = nil
         nextAutomaticPickup = now.addingTimeInterval(24)
+        nextNearbyPickup = now.addingTimeInterval(3)
         return true
     }
     mutating func drop(at point: NSPoint, bounds: NSRect, now: Date) {
@@ -116,6 +139,7 @@ struct ItemWorld {
         availableAfter[item] = now.addingTimeInterval(12)
         equipped = nil
         nextAutomaticPickup = now.addingTimeInterval(8)
+        nextNearbyPickup = now.addingTimeInterval(1)
     }
 }
 

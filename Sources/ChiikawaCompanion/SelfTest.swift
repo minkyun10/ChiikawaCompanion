@@ -279,6 +279,7 @@ enum SelfTest {
         runActivitySpotChecks(defaults: testDefaults) { check($0, $1) }
         runItemDropChecks(defaults: testDefaults) { check($0, $1) }
         runWeaponAttackChecks(defaults: testDefaults) { check($0, $1) }
+        runNearbyPickupChecks(defaults: testDefaults) { check($0, $1) }
         runHomeTests(desktop: desktop, now: now) { check($0, $1) }
         var performance = CompanionPerformance()
         performance.begin(.camera, now: now, pickingUp: true)

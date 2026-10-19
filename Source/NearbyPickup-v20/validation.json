@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-19",
+  "app_version": "0.12.1",
+  "build": 24,
+  "scope": "camera, guitar and sasumata pass-by pickups",
+  "cli_checks_passed": 227,
+  "packaged_checks_passed": 232,
+  "codesign_deep_strict": "passed",
+  "body_reach_center": [
+    66,
+    74
+  ],
+  "body_reach_radii": [
+    50,
+    62
+  ],
+  "prop_drawing_relative_to_ground": [
+    -32,
+    -1,
+    64,
+    64
+  ],
+  "nearby_pickup_minimum_seconds": 3,
+  "automatic_seek_delay_seconds": 24,
+  "dropped_same_item_delay_seconds": 12,
+  "manual_drop_nearby_delay_seconds": 1,
+  "check_before_and_after_movement": true,
+  "unchanged_life_prop_trigger_radius": 34,
+  "all_existing_resources_byte_identical": true,
+  "resource_count": 21,
+  "native_ui": {
+    "automatic_items_enabled": true,
+    "updated_pass_by_instructions_visible": true,
+    "settings_closed_at_end": true,
+    "app_left_running": true,
+    "notification_monitoring_enabled": false,
+    "expression_switch_enabled": true,
+    "click_voice_enabled": true,
+    "character_volume": 0.65
+  },
+  "limitations": [
+    "Desk/rice/furball proximity rules are unchanged.",
+    "Pass-by contacts are verified through the live controller using deterministic input rather than a physical GUI pointer capture.",
+    "Live KakaoTalk delivery was not tested."
+  ]
+}

@@ -3,7 +3,7 @@
   "operation": "copy; originals preserved",
   "image_file_count": 1203,
   "unique_image_content_count": 854,
-  "supporting_file_count": 177,
+  "supporting_file_count": 186,
   "image_bytes": 302813144,
   "symmetric_walk_runtime_applied": true,
   "files": [
@@ -7981,6 +7981,69 @@
       "sha256": "ee7feaed563fb7d1dc63b5b7a37d029521dd479ac1e2a83444bc397c3124ad7b"
     },
     {
+      "kind": "supporting",
+      "source": "Source/NearbyPickup-v20/README.txt",
+      "archive_path": "NearbyPickup-v20/README.txt",
+      "bytes": 2192,
+      "sha256": "0238417fff4abe077ad2d12ee5f2bfe7c71177cc7dbea1731bcd8758ae4f8a0e"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/NearbyPickup-v20/build-log.txt",
+      "archive_path": "NearbyPickup-v20/build-log.txt",
+      "bytes": 396,
+      "sha256": "77620f2a75c4c0396e4a07db5c9ac7dfe7aaef4fc102d6feae03389c382ff3b0"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/NearbyPickup-v20/cli-self-test.txt",
+      "archive_path": "NearbyPickup-v20/cli-self-test.txt",
+      "bytes": 16182,
+      "sha256": "29c6b3edfb06af524c110ed098bc6b397fa322b3259d1a202b7cb5c108af2cae"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/NearbyPickup-v20/codesign-log.txt",
+      "archive_path": "NearbyPickup-v20/codesign-log.txt",
+      "bytes": 109,
+      "sha256": "6210c61790ac2c9d268a576bdecb1c906f66d332a0c64871ceff1469e071d542"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/NearbyPickup-v20/compile-log.txt",
+      "archive_path": "NearbyPickup-v20/compile-log.txt",
+      "bytes": 265,
+      "sha256": "aede0ab189b4ee7ef67ff3cffaabcfa5658a31e2f249fcd625db6e485f793eba"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/NearbyPickup-v20/existing-resources-preserved.json",
+      "archive_path": "NearbyPickup-v20/existing-resources-preserved.json",
+      "bytes": 3927,
+      "sha256": "b055e261103d0e6c7f2f3a677953835821259fbe5f698d46de1915f4b31653d3"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/NearbyPickup-v20/manifest.json",
+      "archive_path": "NearbyPickup-v20/manifest.json",
+      "bytes": 1255,
+      "sha256": "94c6314baf98b40f7fade20f5b98cde4997159baabe0b589ea23dea2dc33fcce"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/NearbyPickup-v20/self-test.txt",
+      "archive_path": "NearbyPickup-v20/self-test.txt",
+      "bytes": 16570,
+      "sha256": "2ab04dc6dee3ef6ad2a28b61fd9c63b4eb5125497eaf169c05c5ef5cf7ac5d70"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/NearbyPickup-v20/validation.json",
+      "archive_path": "NearbyPickup-v20/validation.json",
+      "bytes": 1290,
+      "sha256": "d84109940c85ddd25fd2770cc279ed1004ae6a5621f962a595afce547369cf8a"
+    },
+    {
       "kind": "image",
       "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/hachiware-actions-v7.png",
       "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/hachiware-actions-v7.png",
@@ -8726,8 +8789,8 @@
       "kind": "supporting",
       "source": "Source/README.txt",
       "archive_path": "README.txt",
-      "bytes": 3882,
-      "sha256": "922d05b0bf9704d4259093dc6e1852d1ab7f09eaeddd8a4daba389b8a0feb003"
+      "bytes": 4177,
+      "sha256": "fca6835ddcf0cd155a5c0b81594b7e4d8f5691a2252c4dae443254f8e5b06d2f"
     },
     {
       "kind": "image",
@@ -9668,8 +9731,8 @@
       "sha256": "8a42caa40e469a5ee00fa2b860d14756cc1fd73bc8fcf73332c50b87a92c9c3b"
     }
   ],
-  "updated_at": "2026-10-19T13:01:59.137821+00:00",
-  "latest_applied": "WeaponHoverAttack-v19",
+  "updated_at": "2026-10-19T13:12:33.190713+00:00",
+  "latest_applied": "NearbyPickup-v20",
   "applied_directions": [
     "down-left",
     "down-right"

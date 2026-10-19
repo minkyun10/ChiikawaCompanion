@@ -16,8 +16,8 @@ cat > "$app_dir/Contents/Info.plist" <<'PLIST'
   <key>CFBundleName</key><string>ChiikawaCompanion</string>
   <key>CFBundleDisplayName</key><string>치이카와 데스크톱</string>
   <key>CFBundleExecutable</key><string>ChiikawaCompanion</string>
-  <key>CFBundleVersion</key><string>23</string>
-  <key>CFBundleShortVersionString</key><string>0.12.0</string>
+  <key>CFBundleVersion</key><string>24</string>
+  <key>CFBundleShortVersionString</key><string>0.12.1</string>
   <key>CFBundlePackageType</key><string>APPL</string>
   <key>CFBundleIconFile</key><string>AppIcon</string>
   <key>LSMinimumSystemVersion</key><string>13.0</string>

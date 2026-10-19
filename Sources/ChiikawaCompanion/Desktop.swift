@@ -403,6 +403,15 @@ final class DesktopController {
         publishEquipment()
         state.itemStatus = "소품을 내려놓았어요"
     }
+    @discardableResult
+    func pickUpItem(_ item: CompanionItem, for actor: FriendActor, bounds: NSRect, now: Date) -> Bool {
+        guard itemWorld.pickUp(item,from:actor.panel.frame.origin,bounds:bounds,now:now) else { return false }
+        actor.motion.retarget(); itemTarget = nil
+        if state.expressive { actor.performance.begin(item,now:now,pickingUp:true) }
+        state.itemStatus = "\(item.name)를 주웠어요"
+        publishEquipment()
+        return true
+    }
     func handleCharacterClick(_ actor: FriendActor) {
         if actor.friend == .hachiware, let selected = ClickDialogue.choose(excluding: lastClickDialogueID) {
             presentClickDialogue(selected, for: actor)
@@ -609,8 +618,11 @@ final class DesktopController {
             if activity == .walking && action == nil, let screen = actor.panel.screen ?? NSScreen.main {
                 let frame = actor.panel.frame
                 let draggedItems = Set(desktopItems.filter { $0.value.view.isDragging }.map(\.key))
-                let targetItem = homeRoutine.phase == .returning || activityWorld.requested != nil ? nil : itemWorld.target(from: frame.origin, automatic: state.automaticItems,
-                                                 now: now, excluding: draggedItems)
+                let followingRoute = homeRoutine.phase == .returning || activityWorld.requested != nil
+                let nearbyItem = followingRoute ? nil : itemWorld.nearbyTarget(from:frame.origin,
+                    automatic:state.automaticItems,now:now,excluding:draggedItems)
+                let targetItem = followingRoute ? nil : nearbyItem ?? itemWorld.target(from: frame.origin, automatic: state.automaticItems,
+                    now: now, excluding: draggedItems)
                 if itemTarget != targetItem { actor.motion.retarget(); itemTarget = targetItem }
                 if homeRoutine.phase == .returning {
                     actor.motion.destination = ItemWorld.destination(for: home.entrance)
@@ -620,14 +632,8 @@ final class DesktopController {
                 }
                 if let targetItem, let point = itemWorld.ground[targetItem] {
                     actor.motion.destination = ItemWorld.destination(for: point)
-                    if itemWorld.pickUp(targetItem, from: frame.origin, bounds: screen.visibleFrame, now: now) {
-                        actor.motion.retarget(); itemTarget = nil
-                        if state.expressive {
-                            actor.performance.begin(targetItem, now: now, pickingUp: true)
-                            action = actor.performance.action(now: now)
-                        }
-                        state.itemStatus = "\(targetItem.name)를 주웠어요"
-                        publishEquipment()
+                    if pickUpItem(targetItem,for:actor,bounds:screen.visibleFrame,now:now) {
+                        action = state.expressive ? actor.performance.action(now:now) : nil
                     }
                 }
                 if actor.motion.destination == nil && action == nil {
@@ -652,6 +658,12 @@ final class DesktopController {
                 actor.gait.recordMovement(from: frame.origin, to: actor.panel.frame.origin)
                 _ = enterHomeIfReached(actor, now: now)
                 if triggerNearbyActivity(actor, now: now) { action = actor.dailyPerformance.action(now: now) }
+                if action == nil && !homeRoutine.isInside && !followingRoute,
+                   let nearbyItem = itemWorld.nearbyTarget(from:actor.panel.frame.origin,
+                       automatic:state.automaticItems,now:now,excluding:draggedItems),
+                   pickUpItem(nearbyItem,for:actor,bounds:screen.visibleFrame,now:now) {
+                    action = state.expressive ? actor.performance.action(now:now) : nil
+                }
             } else { actor.motion.stop() }
             actor.view.time = time + actor.phase
             actor.view.walking = actor.motion.isWalking
