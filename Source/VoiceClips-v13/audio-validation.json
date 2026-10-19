@@ -1,0 +1,26 @@
+[
+  {
+    "file": "hachiware-mixed-v13.m4a",
+    "duration": 2.93,
+    "mean_volume_db": -18.7,
+    "peak_db": -1.8
+  },
+  {
+    "file": "hachiware-story-v13.m4a",
+    "duration": 1.62,
+    "mean_volume_db": -17.2,
+    "peak_db": -3.7
+  },
+  {
+    "file": "hachiware-sushi-v13.m4a",
+    "duration": 1.12,
+    "mean_volume_db": -16.9,
+    "peak_db": -3.7
+  },
+  {
+    "file": "hachiware-tasty-v13.m4a",
+    "duration": 1.59,
+    "mean_volume_db": -19.5,
+    "peak_db": -1.8
+  }
+]

@@ -168,6 +168,8 @@ final class DesktopController {
     var actors: [FriendActor] = []
     var timer: Timer?
     let speech = AVSpeechSynthesizer()
+    let recordedVoice: RecordedVoicePlayer
+    var lastRecordedLine: String?
     let started = Date()
     var lastTick = Date()
     var screenObserver: NSObjectProtocol?
@@ -177,17 +179,20 @@ final class DesktopController {
     let home = DesktopHome()
     var homeRoutine = HomeRoutine()
 
-    init(state: AppState, startTimer: Bool = true) {
+    init(state: AppState, startTimer: Bool = true, recordedVoice: RecordedVoicePlayer = RecordedVoicePlayer()) {
         self.state = state
+        self.recordedVoice = recordedVoice
         // Decode and register once at launch, never on the first pointer hover.
         _ = HachiwareSprites.shared
         _ = HachiwareActions.shared
         actors = Friend.developmentRoster.enumerated().map { FriendActor(friend: $0.element, index: $0.offset) }
         for actor in actors {
-            actor.view.onClick = { [weak actor] in
-                actor?.say(actor?.friend.greeting ?? "안녕!", now: Date())
+            actor.view.onClick = { [weak self, weak actor] in
+                guard let self, let actor else { return }
+                self.handleCharacterClick(actor)
             }
             actor.view.onDragStart = { [weak self] in
+                self?.stopCharacterVoice()
                 guard let self, self.homeRoutine.phase == .returning else { return }
                 self.wakeFromHome()
             }
@@ -221,6 +226,9 @@ final class DesktopController {
             guard let self else { return }
             if self.homeRoutine.isInside { self.wakeFromHome() } else { self.goHome() }
         }
+        recordedVoice.onStatus = { [weak state] status in state?.voiceStatus = status }
+        state.onVoicePreview = { [weak self] in self?.previewCharacterVoice() }
+        state.onStopCharacterVoice = { [weak self] in self?.stopCharacterVoice() }
         state.onGoHome = { [weak self] in self?.goHome() }
         state.onWake = { [weak self] in self?.wakeFromHome() }
         state.onScatterItems = { [weak self] in self?.scatterItems() }
@@ -289,12 +297,51 @@ final class DesktopController {
         publishEquipment()
         state.itemStatus = "소품을 내려놓았어요"
     }
+    func handleCharacterClick(_ actor: FriendActor) {
+        recordedVoice.stop()
+        speech.stopSpeaking(at: .immediate)
+        let line: RecordedLine?
+        let text: String
+        if actor.friend == .hachiware, state.recordedDialogue,
+           let selected = RecordingCatalog.shared.choose(excluding: lastRecordedLine) {
+            line = selected; text = selected.text; lastRecordedLine = selected.id
+        } else {
+            text = actor.friend.greeting
+            line = actor.friend == .hachiware ? RecordingCatalog.shared.line(matching: text) : nil
+        }
+        let duration = state.characterVoice ? max(4, (line?.duration ?? 0) + 0.35) : 4
+        actor.say(text, now: Date(), duration: duration)
+        if state.characterVoice, let line {
+            recordedVoice.play(line, volume: state.characterVolume)
+        } else if !state.characterVoice {
+            state.voiceStatus = "클릭 목소리를 꺼 두었어요"
+        } else {
+            state.voiceStatus = "이 명대사는 녹음이 없어 글로 보여줘요"
+        }
+    }
+    func previewCharacterVoice() {
+        guard let actor = actors.first else { return }
+        if homeRoutine.phase != .outside { wakeFromHome() }
+        guard let line = RecordingCatalog.shared.choose(excluding: lastRecordedLine) else {
+            state.voiceStatus = "아직 준비된 녹음이 없어요"; return
+        }
+        lastRecordedLine = line.id
+        speech.stopSpeaking(at: .immediate)
+        if state.showFriends { actor.say(line.text, now: Date(), duration: max(4, line.duration + 0.35)) }
+        // Explicit preview works while the click-voice switch is off, without changing that preference.
+        recordedVoice.play(line, volume: state.characterVolume)
+    }
+    func stopCharacterVoice() {
+        guard recordedVoice.player != nil else { return }
+        recordedVoice.stop(); state.voiceStatus = "목소리 재생을 멈췄어요"
+    }
     func goHome(now: Date = Date()) {
         guard !homeRoutine.isInside else { return }
         state.homeEnabled = true; state.showFriends = true; state.roaming = true
         requestHome(now: now)
     }
     private func requestHome(now: Date) {
+        stopCharacterVoice()
         homeRoutine.request(now: now)
         actors.first?.motion.retarget(); actors.first?.performance.cancel(now: now)
         itemWorld.requested = nil; itemTarget = nil
@@ -342,6 +389,8 @@ final class DesktopController {
         let now = Date(), dt = min(now.timeIntervalSince(lastTick), 0.06)
         lastTick = now
         let time = now.timeIntervalSince(started), mouse = NSEvent.mouseLocation
+        recordedVoice.setVolume(state.characterVolume)
+        if !state.showFriends { stopCharacterVoice() }
         if let bounds = NSScreen.main?.visibleFrame {
             let previous = itemWorld.equipped
             itemWorld.configure(enabled: state.enabledItems, bounds: bounds)
@@ -356,7 +405,7 @@ final class DesktopController {
         for actor in actors {
             let enabled = state.showFriends && (state.assignments.first { $0.friend == actor.friend }?.enabled ?? false)
             guard enabled else {
-                actor.panel.orderOut(nil); actor.dismissBubble()
+                actor.panel.orderOut(nil); actor.dismissBubble(); stopCharacterVoice()
                 actor.performance.cancel(now: now)
                 for item in desktopItems.values { item.update(position: nil, visible: false, mouse: mouse) }
                 continue
@@ -464,6 +513,7 @@ final class DesktopController {
         guard let actor = actors.first(where: { $0.friend == friend }) else { return }
         guard state.showFriends, state.activeAssignments.contains(where: { $0.friend == friend && $0.enabled }) else { return }
         if homeRoutine.phase != .outside { wakeFromHome() }
+        stopCharacterVoice()
         let alert = KakaoAlertPresentation(sender: sender, body: body, demo: demo)
         let duration = min(12, max(6, Double(alert.message.count) / 25))
         actor.say(alert.message, now: Date(), duration: duration, heading: alert.title)

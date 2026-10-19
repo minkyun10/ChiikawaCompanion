@@ -93,6 +93,22 @@ final class AppState: ObservableObject {
     @Published var automaticRest: Bool { didSet { defaults.set(automaticRest, forKey: "automaticRest") } }
     @Published var homeStatus = "집을 클릭하면 쉬러 가요"
     @Published var resting = false
+    @Published var characterVoice: Bool {
+        didSet {
+            defaults.set(characterVoice, forKey: "characterVoice")
+            if !characterVoice { onStopCharacterVoice?() }
+        }
+    }
+    @Published var recordedDialogue: Bool {
+        didSet {
+            defaults.set(recordedDialogue, forKey: "recordedDialogue")
+            onStopCharacterVoice?()
+        }
+    }
+    @Published var characterVolume: Double { didSet { defaults.set(characterVolume, forKey: "characterVolume") } }
+    @Published var voiceStatus = "클릭하면 성우 녹음 대사를 들려줘요"
+    var onVoicePreview: (() -> Void)?
+    var onStopCharacterVoice: (() -> Void)?
     var onGoHome: (() -> Void)?
     var onWake: (() -> Void)?
     var onScatterItems: (() -> Void)?
@@ -116,6 +132,10 @@ final class AppState: ObservableObject {
         enabledItems = restoredItems
         // Removed props cannot survive in older saved preferences.
         defaults.set(restoredItems.map(\.rawValue).sorted(), forKey: "enabledItems")
+        characterVoice = defaults.object(forKey: "characterVoice") as? Bool ?? true
+        recordedDialogue = defaults.object(forKey: "recordedDialogue") as? Bool ?? true
+        let savedVolume = defaults.object(forKey: "characterVolume") as? Double ?? 0.65
+        characterVolume = savedVolume.isFinite ? min(1, max(0, savedVolume)) : 0.65
         homeEnabled = defaults.object(forKey: "homeEnabled") as? Bool ?? true
         automaticRest = defaults.object(forKey: "automaticRest") as? Bool ?? true
         automaticItems = defaults.object(forKey: "automaticItems") as? Bool ?? true

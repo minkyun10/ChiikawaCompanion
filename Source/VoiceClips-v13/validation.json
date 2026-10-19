@@ -1,0 +1,36 @@
+{
+  "verified": "2026-10-19",
+  "app_version": "0.9.0",
+  "build": 17,
+  "speaker": "손정민",
+  "recorded_lines": 4,
+  "total_final_clip_seconds": 7.26,
+  "original_ten_quotes_preserved_as_text_mode": true,
+  "cli_checks_passed": 148,
+  "packaged_checks_passed": 151,
+  "strict_code_signature_verified": true,
+  "source_audio_uploaded_for_processing": false,
+  "local_asr_models": [
+    "mlx-community/whisper-small-mlx",
+    "mlx-community/whisper-large-v3-turbo-q4"
+  ],
+  "voice_synthesis_added": false,
+  "voice_resources_bundled": true,
+  "ui_checks": {
+    "preview_start_status_observed": "재생 중 · 맛있다!",
+    "preview_completion_status_observed": "클릭하면 다른 녹음 대사를 들려줘요",
+    "recorded_and_original_quote_mode_buttons_work": true,
+    "mute_interrupts_current_recording": true,
+    "click_voice_restored_on": true,
+    "recorded_mode_restored_on": true,
+    "volume_preserved": 0.65,
+    "existing_props_home_roaming_voice_notifications_preserved": true,
+    "monitoring_preserved_off": true,
+    "sender_unchanged": true,
+    "settings_closed_app_running": true
+  },
+  "ui_proof": "Review/mac-voice-controls.png",
+  "artwork_unchanged": true,
+  "live_kakao_delivery_tested": false,
+  "acoustic_loopback_tested": false
+}

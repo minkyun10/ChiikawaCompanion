@@ -1,10 +1,10 @@
 {
   "created_at": "2026-10-16T12:08:58.617148+00:00",
   "operation": "copy; originals preserved",
-  "image_file_count": 527,
-  "unique_image_content_count": 360,
-  "supporting_file_count": 71,
-  "image_bytes": 172240258,
+  "image_file_count": 529,
+  "unique_image_content_count": 362,
+  "supporting_file_count": 89,
+  "image_bytes": 172618542,
   "symmetric_walk_runtime_applied": true,
   "files": [
     {
@@ -3938,8 +3938,8 @@
       "kind": "supporting",
       "source": "Source/README.txt",
       "archive_path": "README.txt",
-      "bytes": 1973,
-      "sha256": "66a2c871469dda7de03032937d7240fdf79e195990aecd9b0c193d91b6ea7083"
+      "bytes": 2201,
+      "sha256": "32cce477f74f461ba5b3685c5a828e2fc17a983f4c565021ad0ee0b14fcd4e54"
     },
     {
       "kind": "image",
@@ -4010,6 +4010,146 @@
       "archive_path": "Versions/d4731c5d6b80e3bd/build/artwork/friends.png",
       "bytes": 129798,
       "sha256": "d4731c5d6b80e3bd731a1b718e57145b1f738e29614b4489cd4b873c180f53d9"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/VoiceClips-v13/Clips/hachiware-mixed-v13.m4a",
+      "archive_path": "VoiceClips-v13/Clips/hachiware-mixed-v13.m4a",
+      "bytes": 48641,
+      "sha256": "f2a269ed6d3c5cb3e265d68156a2398c2ea8b5572bf95fbeb5564bb5550176b5"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/VoiceClips-v13/Clips/hachiware-story-v13.m4a",
+      "archive_path": "VoiceClips-v13/Clips/hachiware-story-v13.m4a",
+      "bytes": 26782,
+      "sha256": "dd149f58c2eb420a188a7e59feffc2e1764755517233328c120d248bf37662de"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/VoiceClips-v13/Clips/hachiware-sushi-v13.m4a",
+      "archive_path": "VoiceClips-v13/Clips/hachiware-sushi-v13.m4a",
+      "bytes": 20791,
+      "sha256": "0431503ff9fc352723d87a65fe7b323802b8b6a9ce1026dbe70d93cdacfbe4f8"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/VoiceClips-v13/Clips/hachiware-tasty-v13.m4a",
+      "archive_path": "VoiceClips-v13/Clips/hachiware-tasty-v13.m4a",
+      "bytes": 26995,
+      "sha256": "8cb971e8819661470b10819548b06a30f8edc0086b01db6957684c8f9b664bdc"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/VoiceClips-v13/Iterations/hachiware-tasty-v13-first-cut.m4a",
+      "archive_path": "VoiceClips-v13/Iterations/hachiware-tasty-v13-first-cut.m4a",
+      "bytes": 26017,
+      "sha256": "bd6ff03acb831ecf4eb7efcdc87ae6ccb95f42c1949c9d996cbaf02d6daa4a0f"
+    },
+    {
+      "kind": "image",
+      "source": "Source/VoiceClips-v13/Iterations/mac-voice-controls-native-picker.png",
+      "archive_path": "VoiceClips-v13/Iterations/mac-voice-controls-native-picker.png",
+      "bytes": 185731,
+      "sha256": "272af779bb4869d98647fed872952b25d1b243def1fd4d195403a8cd460d361d"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/VoiceClips-v13/README.txt",
+      "archive_path": "VoiceClips-v13/README.txt",
+      "bytes": 3162,
+      "sha256": "d68fe4725827f75c11d3f6a0d87eae7f57c7308588330ee70aa947b99307b22a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/VoiceClips-v13/Review/mac-voice-controls.png",
+      "archive_path": "VoiceClips-v13/Review/mac-voice-controls.png",
+      "bytes": 192553,
+      "sha256": "c6f713a1f89e0c5c17eb7208a9a825a874e90e463b92065334d337aa0ebbd8d8"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/VoiceClips-v13/artwork-preservation.json",
+      "archive_path": "VoiceClips-v13/artwork-preservation.json",
+      "bytes": 1946,
+      "sha256": "6b3f625c50881f6e44e9d3ee1f5241ae93385bbf43b30b494e5900038c5b7d73"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/VoiceClips-v13/audio-validation.json",
+      "archive_path": "VoiceClips-v13/audio-validation.json",
+      "bytes": 479,
+      "sha256": "29fc8e499e495fc85ce435673534f32b97533089fd6acc709b312abf5b3a80f7"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/VoiceClips-v13/catalog.json",
+      "archive_path": "VoiceClips-v13/catalog.json",
+      "bytes": 960,
+      "sha256": "7bd41088f145b4f8926cd73ee1520d1de5aa23504706048e0614fca049836f49"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/VoiceClips-v13/clip-transcription-check.json",
+      "archive_path": "VoiceClips-v13/clip-transcription-check.json",
+      "bytes": 440,
+      "sha256": "0ca5316efc500a2c9278174244b9289914c84a9a1f2e71cefe4692c4cbef2d3c"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/VoiceClips-v13/manifest.json",
+      "archive_path": "VoiceClips-v13/manifest.json",
+      "bytes": 3042,
+      "sha256": "43f5047e015cceb0fe883c40b6bf46e189b9e8196d7d4691507e5240ad4837a7"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/VoiceClips-v13/prepare-clips.py",
+      "archive_path": "VoiceClips-v13/prepare-clips.py",
+      "bytes": 1501,
+      "sha256": "342b4b4d32880031b5c3e61677062df52111998488c6d21c33afc4e2411b62ca"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/VoiceClips-v13/provenance.json",
+      "archive_path": "VoiceClips-v13/provenance.json",
+      "bytes": 625,
+      "sha256": "e65a78113151570e6b4f0b1c7431df90dcfaeb6b25adb154ffdb5c531bb6d85f"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/VoiceClips-v13/self-test-cli.txt",
+      "archive_path": "VoiceClips-v13/self-test-cli.txt",
+      "bytes": 9725,
+      "sha256": "4df63b3cbba5f7cf2477878803f5f410b1c31a45ce0368e69ff3b03177a875e3"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/VoiceClips-v13/self-test.txt",
+      "archive_path": "VoiceClips-v13/self-test.txt",
+      "bytes": 9959,
+      "sha256": "2b81a69d6c3955dd9280475ce19671e29997e7cc6c752f5972cc39aa5eaddf9c"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/VoiceClips-v13/transcript-verification.json",
+      "archive_path": "VoiceClips-v13/transcript-verification.json",
+      "bytes": 4443,
+      "sha256": "0a074bb5e59177ec026838debdf7efbbefa088e0b740a8ce5c254bc69fbb3df9"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/VoiceClips-v13/transcript.json",
+      "archive_path": "VoiceClips-v13/transcript.json",
+      "bytes": 4184,
+      "sha256": "47c225be8004f127bc9003e320176ad2fd2a72eb7417a23ecf409529ed2eeb94"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/VoiceClips-v13/validation.json",
+      "archive_path": "VoiceClips-v13/validation.json",
+      "bytes": 1271,
+      "sha256": "47b7221b84a00105f9d85ddd3b64e34412b2450f3999867782dbb47e7371dfa1"
     },
     {
       "kind": "image",
@@ -4194,8 +4334,8 @@
       "sha256": "1a9a6456b561a528697d08bc97a5b14f3694040f1a684da6921470f3c0a713af"
     }
   ],
-  "updated_at": "2026-10-19T10:23:20.975641+00:00",
-  "latest_applied": "CaveHome-v11",
+  "updated_at": "2026-10-19T10:54:20.480554+00:00",
+  "latest_applied": "VoiceClips-v13",
   "applied_directions": [
     "down-left",
     "down-right"

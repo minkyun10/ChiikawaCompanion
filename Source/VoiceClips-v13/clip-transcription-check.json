@@ -1,0 +1,22 @@
+[
+  {
+    "id": "sushi",
+    "expected": "초밥이다!",
+    "recognized": " 수고하셨습니다!"
+  },
+  {
+    "id": "mixed",
+    "expected": "엉망진창으로 뒤섞였어.",
+    "recognized": " 엉망진창으로 뒤섞겼어"
+  },
+  {
+    "id": "tasty",
+    "expected": "맛있다!",
+    "recognized": " 다시가"
+  },
+  {
+    "id": "story",
+    "expected": "그래서 말이야.",
+    "recognized": " 그래서 말이야!"
+  }
+]

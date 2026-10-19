@@ -1,0 +1,39 @@
+{
+  "speaker": "손정민",
+  "sourceTitle": "[더빙/캐릭터] 밝고 긍정적인, 다정한",
+  "sourceProfile": "https://studiomonkey.co.kr/actor_profile?name=%EC%86%90%EC%A0%95%EB%AF%BC",
+  "clips": [
+    {
+      "id": "sushi",
+      "text": "초밥이다!",
+      "file": "hachiware-sushi-v13.m4a",
+      "duration": 1.12,
+      "sourceStart": 0,
+      "sourceEnd": 1.12
+    },
+    {
+      "id": "mixed",
+      "text": "엉망진창으로 뒤섞였어.",
+      "file": "hachiware-mixed-v13.m4a",
+      "duration": 2.93,
+      "sourceStart": 5.45,
+      "sourceEnd": 8.38
+    },
+    {
+      "id": "tasty",
+      "text": "맛있다!",
+      "file": "hachiware-tasty-v13.m4a",
+      "duration": 1.59,
+      "sourceStart": 11.92,
+      "sourceEnd": 13.51
+    },
+    {
+      "id": "story",
+      "text": "그래서 말이야.",
+      "file": "hachiware-story-v13.m4a",
+      "duration": 1.62,
+      "sourceStart": 13.54,
+      "sourceEnd": 15.16
+    }
+  ]
+}

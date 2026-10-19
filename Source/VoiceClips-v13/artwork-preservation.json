@@ -1,0 +1,52 @@
+[
+  {
+    "path": "Sources/ChiikawaCompanion/Resources/hachiware-actions-v7.png",
+    "sha256": "920b8add1d3402f1e0b522967aac31060589e9d3d234c4b0c0a7fe3ebd026111",
+    "unchanged": true
+  },
+  {
+    "path": "Sources/ChiikawaCompanion/Resources/hachiware-cardinal-walk-12-v3.png",
+    "sha256": "cd41bf4f46e29a15d6412016afccd8475c9d279c4b8993b22c3ec40b208faf19",
+    "unchanged": true
+  },
+  {
+    "path": "Sources/ChiikawaCompanion/Resources/hachiware-cardinal-walk-approved-v5.png",
+    "sha256": "c3b03bfe42f0501dcfaac2f442fe4d59242fd242a8f502737fb513ea21c0715c",
+    "unchanged": true
+  },
+  {
+    "path": "Sources/ChiikawaCompanion/Resources/hachiware-cave-v11.png",
+    "sha256": "5c7624f8e3e53f8146bafed8387c64e9fc68a4411fed591cc2a66e7466162be2",
+    "unchanged": true
+  },
+  {
+    "path": "Sources/ChiikawaCompanion/Resources/hachiware-diagonal-matched-walk-v5.png",
+    "sha256": "a5130282ebbaf905423aab8843c7e22f52e514b429f0438dd830c493c18eac40",
+    "unchanged": true
+  },
+  {
+    "path": "Sources/ChiikawaCompanion/Resources/hachiware-diagonal-walk-12-v2.png",
+    "sha256": "1a24baf6cb5373c02cdb54e508fa608f7d0f4ac051e4a6bfbab164ca7dc9e94d",
+    "unchanged": true
+  },
+  {
+    "path": "Sources/ChiikawaCompanion/Resources/hachiware-side-walk-24-v9.png",
+    "sha256": "d0ff9c9aa6de3617c27d1421e051295c427136005c4ba651502ab8828c71dc19",
+    "unchanged": true
+  },
+  {
+    "path": "Sources/ChiikawaCompanion/Resources/hachiware-sleep-v11.png",
+    "sha256": "7705245172e3501d419c5b2cc144ef8e9dab9b7c938cc50c7bf0d80c5abb38ee",
+    "unchanged": true
+  },
+  {
+    "path": "Sources/ChiikawaCompanion/Resources/hachiware-sprites-v1.png",
+    "sha256": "ac8776b7c831c2bf0ccc265a42736411f37a4c88ac8c53c6622f02455ba39935",
+    "unchanged": true
+  },
+  {
+    "path": "Sources/ChiikawaCompanion/Resources/hachiware-walk-bodies-v1.png",
+    "sha256": "a8d2d88fda86ce32314d2b664cd1efa856975483ec02ada07a83fbba0de7db75",
+    "unchanged": true
+  }
+]

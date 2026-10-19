@@ -98,7 +98,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
     @objc func toggleRoaming() { state.roaming.toggle() }
     @objc func demo(_ sender: NSMenuItem) { state.demo(Friend.developmentRoster[sender.tag]) }
     @objc func quit() { NSApp.terminate(nil) }
-    func applicationWillTerminate(_ notification: Notification) { monitor.stop() }
+    func applicationWillTerminate(_ notification: Notification) { monitor.stop(); desktop?.stopCharacterVoice() }
     func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool { false }
 }
 
