@@ -1,10 +1,10 @@
 {
   "created_at": "2026-10-16T12:08:58.617148+00:00",
   "operation": "copy; originals preserved",
-  "image_file_count": 310,
-  "unique_image_content_count": 232,
-  "supporting_file_count": 45,
-  "image_bytes": 116985632,
+  "image_file_count": 479,
+  "unique_image_content_count": 343,
+  "supporting_file_count": 54,
+  "image_bytes": 142760855,
   "symmetric_walk_runtime_applied": true,
   "files": [
     {
@@ -1668,6 +1668,1238 @@
     },
     {
       "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Final/Frames/left-01.png",
+      "archive_path": "FourPhaseWalk-v9/Final/Frames/left-01.png",
+      "bytes": 45778,
+      "sha256": "02912437163468cff8329acdead32a26a12ba1c2ac2e32c38aca3f05d90de7de"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Final/Frames/left-02.png",
+      "archive_path": "FourPhaseWalk-v9/Final/Frames/left-02.png",
+      "bytes": 46503,
+      "sha256": "d9eb02cbafcf8ce4747b04904f9ad7ec8e79033fc1c37c574f3f2c21958a08cd"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Final/Frames/left-03.png",
+      "archive_path": "FourPhaseWalk-v9/Final/Frames/left-03.png",
+      "bytes": 46323,
+      "sha256": "5172ef2a078b9928abb32270df98597b0bb5e6eb265fbb8ebb97358fa9423c4e"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Final/Frames/left-04.png",
+      "archive_path": "FourPhaseWalk-v9/Final/Frames/left-04.png",
+      "bytes": 46888,
+      "sha256": "a32499a74b258a9193287dd3cebdef212bcd295393e2f2b31475865f9d68a4fb"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Final/Frames/left-05.png",
+      "archive_path": "FourPhaseWalk-v9/Final/Frames/left-05.png",
+      "bytes": 45868,
+      "sha256": "62b6764f79f5a0ba579812f142f51a689bbe0c8baa04d130b67b55e63e96586c"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Final/Frames/left-06.png",
+      "archive_path": "FourPhaseWalk-v9/Final/Frames/left-06.png",
+      "bytes": 45929,
+      "sha256": "88b2f9a2a4e049f238d33bf5853545f2f50e9410ad5deec5c1bb184a214c48e1"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Final/Frames/left-07.png",
+      "archive_path": "FourPhaseWalk-v9/Final/Frames/left-07.png",
+      "bytes": 44945,
+      "sha256": "ad86d2a46074c1c4b23bcb0ae3de05f0805d24290c33b116e9017e34ddf28f09"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Final/Frames/left-08.png",
+      "archive_path": "FourPhaseWalk-v9/Final/Frames/left-08.png",
+      "bytes": 46172,
+      "sha256": "f637b2789b4d4a5c7394e0a789954ff050aba28aca2c158edad0c7514cdb3d6d"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Final/Frames/left-09.png",
+      "archive_path": "FourPhaseWalk-v9/Final/Frames/left-09.png",
+      "bytes": 46383,
+      "sha256": "46dc66aa0063aeb3735e774c3fd440fea5abe468f5603a9c2fb0bb9a0634ea4d"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Final/Frames/left-10.png",
+      "archive_path": "FourPhaseWalk-v9/Final/Frames/left-10.png",
+      "bytes": 47254,
+      "sha256": "96aec724bec8efd55476fbb4ab5a974d360eb3a0baf61889f10402a3d5eec693"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Final/Frames/left-11.png",
+      "archive_path": "FourPhaseWalk-v9/Final/Frames/left-11.png",
+      "bytes": 46770,
+      "sha256": "56983102cf2418ff2cab7b5b90a3eb071f6f766f86cf93bd7397bffb3447edfa"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Final/Frames/left-12.png",
+      "archive_path": "FourPhaseWalk-v9/Final/Frames/left-12.png",
+      "bytes": 46719,
+      "sha256": "df7da246c1f7a4fe70381f1ee753d0b134c88dc86250d4906ad7a26c7c338ddf"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Final/Frames/left-13.png",
+      "archive_path": "FourPhaseWalk-v9/Final/Frames/left-13.png",
+      "bytes": 45622,
+      "sha256": "d50d7feb5ce9003c162f5295a928cf61d853cedd1760da2535989632c6f14e3e"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Final/Frames/left-14.png",
+      "archive_path": "FourPhaseWalk-v9/Final/Frames/left-14.png",
+      "bytes": 46473,
+      "sha256": "f45773821045ca6efd0d5a45e90150bc405bdb17253ea59ce9801fca66c776a0"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Final/Frames/left-15.png",
+      "archive_path": "FourPhaseWalk-v9/Final/Frames/left-15.png",
+      "bytes": 46189,
+      "sha256": "108d18b71a32aded469326046c8faf512c482c22c27dfc780d901334ad893aef"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Final/Frames/left-16.png",
+      "archive_path": "FourPhaseWalk-v9/Final/Frames/left-16.png",
+      "bytes": 46928,
+      "sha256": "4f686bce58ea0626b8b0a3d1206b01e539cc827c7c325f24e70de7839c3e7b96"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Final/Frames/left-17.png",
+      "archive_path": "FourPhaseWalk-v9/Final/Frames/left-17.png",
+      "bytes": 45966,
+      "sha256": "e80a201811443601480631f24a0bce59adc0e6b76135d7127dcbc2841dba34ce"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Final/Frames/left-18.png",
+      "archive_path": "FourPhaseWalk-v9/Final/Frames/left-18.png",
+      "bytes": 46129,
+      "sha256": "9d4ee35bedaa21bf0ed9faae6d59f56141a813865ef8604f007963bbaa5e88ee"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Final/Frames/left-19.png",
+      "archive_path": "FourPhaseWalk-v9/Final/Frames/left-19.png",
+      "bytes": 45320,
+      "sha256": "be4075044dd1721361afe54c464b65ad91896abc94ef82a8d2479a159368207a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Final/Frames/left-20.png",
+      "archive_path": "FourPhaseWalk-v9/Final/Frames/left-20.png",
+      "bytes": 46513,
+      "sha256": "82ffbc7c096772adf24361163069cbc876e4a618f4b77e1fa6550fdbec2d62bd"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Final/Frames/left-21.png",
+      "archive_path": "FourPhaseWalk-v9/Final/Frames/left-21.png",
+      "bytes": 46709,
+      "sha256": "0dce4d4fd15c78228b0987946fe758710e3463ffc690cf69698e9207c8407c31"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Final/Frames/left-22.png",
+      "archive_path": "FourPhaseWalk-v9/Final/Frames/left-22.png",
+      "bytes": 47400,
+      "sha256": "d64183ce4c42450c21a82b3abc9b4e3cd20b8867d076b2ae584a4e4741b9a15b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Final/Frames/left-23.png",
+      "archive_path": "FourPhaseWalk-v9/Final/Frames/left-23.png",
+      "bytes": 46905,
+      "sha256": "dd7b120e41dad2d66375e9f592972e43e0d8d741eeffde68782fdeb2b92d1fb0"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Final/Frames/left-24.png",
+      "archive_path": "FourPhaseWalk-v9/Final/Frames/left-24.png",
+      "bytes": 46778,
+      "sha256": "142ccf6e6145853eb86e605e55114ae55c860460620461d717d3673344c74951"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Final/Frames/right-01.png",
+      "archive_path": "FourPhaseWalk-v9/Final/Frames/right-01.png",
+      "bytes": 45733,
+      "sha256": "8a2bbafa95dbc4267670bf57ae40de5362f991e60252c12658d002fbd9605c3c"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Final/Frames/right-02.png",
+      "archive_path": "FourPhaseWalk-v9/Final/Frames/right-02.png",
+      "bytes": 46388,
+      "sha256": "1669db826e635f75ae4acb485ee3e82e9a61adeae94f5048c4e371a47c75549d"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Final/Frames/right-03.png",
+      "archive_path": "FourPhaseWalk-v9/Final/Frames/right-03.png",
+      "bytes": 46224,
+      "sha256": "28f3d926eafccb8ead4ee4612f6e6c062c56f6a33f7c148bcfeafcebf83df906"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Final/Frames/right-04.png",
+      "archive_path": "FourPhaseWalk-v9/Final/Frames/right-04.png",
+      "bytes": 46829,
+      "sha256": "349f62e4ca6eb2b387562ccedd582abf48dcbe14c3f355f21d63a856266b99c8"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Final/Frames/right-05.png",
+      "archive_path": "FourPhaseWalk-v9/Final/Frames/right-05.png",
+      "bytes": 45872,
+      "sha256": "ae4fa4b63fcca602fadd60bd9e180526e7c08ec8e7d6fd7becd789894e0adee6"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Final/Frames/right-06.png",
+      "archive_path": "FourPhaseWalk-v9/Final/Frames/right-06.png",
+      "bytes": 45836,
+      "sha256": "4cd94fedb1bac61467880991c8aeeeddb71063e5607ed61568a2b3baabf299ac"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Final/Frames/right-07.png",
+      "archive_path": "FourPhaseWalk-v9/Final/Frames/right-07.png",
+      "bytes": 44966,
+      "sha256": "bfec4ca4d7923d08567b9df22ddcc5ca2207f5858437603267af038e45b48c1f"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Final/Frames/right-08.png",
+      "archive_path": "FourPhaseWalk-v9/Final/Frames/right-08.png",
+      "bytes": 46060,
+      "sha256": "dd8816ce024562cc4eff9902e1894fe2044e675a437b5e3e392c54ff3fbb87c4"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Final/Frames/right-09.png",
+      "archive_path": "FourPhaseWalk-v9/Final/Frames/right-09.png",
+      "bytes": 46368,
+      "sha256": "4cc2a4187842f7ae662249f73c892aac2db44847fc2a8b65bf53d9109f27ba42"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Final/Frames/right-10.png",
+      "archive_path": "FourPhaseWalk-v9/Final/Frames/right-10.png",
+      "bytes": 47321,
+      "sha256": "a56f4cd4f94682fdbe7d511133bf7c86a6a3ec269ae575b8ab3b33c47642f9e2"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Final/Frames/right-11.png",
+      "archive_path": "FourPhaseWalk-v9/Final/Frames/right-11.png",
+      "bytes": 46793,
+      "sha256": "c46f12a2db8adc4390e745fc3801a2a074da1a7d54b5a4c388d1ee35354c2488"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Final/Frames/right-12.png",
+      "archive_path": "FourPhaseWalk-v9/Final/Frames/right-12.png",
+      "bytes": 46747,
+      "sha256": "e34bc92c079812c3234facc9d6aa09f03d8abc5f8a20c1aeebd4324cf7933b44"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Final/Frames/right-13.png",
+      "archive_path": "FourPhaseWalk-v9/Final/Frames/right-13.png",
+      "bytes": 45703,
+      "sha256": "50320723f26eaca573fe2b3845b88422a1e55f3d1dd92449f63709159351f0b7"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Final/Frames/right-14.png",
+      "archive_path": "FourPhaseWalk-v9/Final/Frames/right-14.png",
+      "bytes": 46322,
+      "sha256": "b02357f9541e480ef550e345a7729e24ad1db0e132042fd571fde3f81aa068bd"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Final/Frames/right-15.png",
+      "archive_path": "FourPhaseWalk-v9/Final/Frames/right-15.png",
+      "bytes": 46117,
+      "sha256": "b8549cd8e85c85f9b6e98dcb4c1c8c92cc12fe451ba5126e9e00cc9093343e42"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Final/Frames/right-16.png",
+      "archive_path": "FourPhaseWalk-v9/Final/Frames/right-16.png",
+      "bytes": 46936,
+      "sha256": "1c16cc3c72a800c4b2905551ba3cb5f89ffc65fcfb6dc9079ffe339d648a8ae7"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Final/Frames/right-17.png",
+      "archive_path": "FourPhaseWalk-v9/Final/Frames/right-17.png",
+      "bytes": 45957,
+      "sha256": "c4c87996cbacc6c883cb9cf1ddb7ed2985ceedb84c8da5c205c226538f4bafbc"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Final/Frames/right-18.png",
+      "archive_path": "FourPhaseWalk-v9/Final/Frames/right-18.png",
+      "bytes": 46097,
+      "sha256": "5306c8e5909435d33354beb0acd9d746f2b95477a72cdf57abdf099f0f474ba3"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Final/Frames/right-19.png",
+      "archive_path": "FourPhaseWalk-v9/Final/Frames/right-19.png",
+      "bytes": 45336,
+      "sha256": "6d176d35328ab882dcd559a0f2fbba7f139325b070b802b658eac5f43bfb3062"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Final/Frames/right-20.png",
+      "archive_path": "FourPhaseWalk-v9/Final/Frames/right-20.png",
+      "bytes": 46514,
+      "sha256": "3615f53ddc7438c1642bd8c8ae3f61979d9e79a66bdde5f30057886e7b78d0e3"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Final/Frames/right-21.png",
+      "archive_path": "FourPhaseWalk-v9/Final/Frames/right-21.png",
+      "bytes": 46663,
+      "sha256": "84a74ecae19bc5f9f7e24bc8951f93e85418fe6fcead14d44d4c00f43ba62181"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Final/Frames/right-22.png",
+      "archive_path": "FourPhaseWalk-v9/Final/Frames/right-22.png",
+      "bytes": 47387,
+      "sha256": "1f768de4c595dff6f5eaf1205e6a2f8ab103d80ecb0d4b54105ab63ae66aaffe"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Final/Frames/right-23.png",
+      "archive_path": "FourPhaseWalk-v9/Final/Frames/right-23.png",
+      "bytes": 46930,
+      "sha256": "c0c6c09929b6169cc8a21fb83e95fc67f7853542851401d64c6e6148f112dd94"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Final/Frames/right-24.png",
+      "archive_path": "FourPhaseWalk-v9/Final/Frames/right-24.png",
+      "bytes": 46876,
+      "sha256": "328727ddab9b28e2e4a74b0ceeb20bdcaad1de8eff9ed287273c4e1609e6cb37"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Final/hachiware-four-phase-keyposes-v9.png",
+      "archive_path": "FourPhaseWalk-v9/Final/hachiware-four-phase-keyposes-v9.png",
+      "bytes": 347913,
+      "sha256": "0e4546e0d2a9f7f098a27861a54187f37d248b3815ac49258426284aded0a365"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Final/hachiware-four-phase-walk-slow-v9.gif",
+      "archive_path": "FourPhaseWalk-v9/Final/hachiware-four-phase-walk-slow-v9.gif",
+      "bytes": 397285,
+      "sha256": "d52189d3b1176669aca3190db2465cfb81d6ad948e201d2e45fbc396b1d0cef5"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Final/hachiware-four-phase-walk-v9.gif",
+      "archive_path": "FourPhaseWalk-v9/Final/hachiware-four-phase-walk-v9.gif",
+      "bytes": 397307,
+      "sha256": "ee25c91e3434193bfff94222032a2e64eeb1275a3e778c1673e17476996af917"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Final/hachiware-side-24-frame-review-v9.png",
+      "archive_path": "FourPhaseWalk-v9/Final/hachiware-side-24-frame-review-v9.png",
+      "bytes": 602481,
+      "sha256": "1ce04aea315cbbe945490a3d0195850cd35fdaf0ab2781225f0eff826e8acf0f"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Final/hachiware-side-24-frame-sheet-v9.png",
+      "archive_path": "FourPhaseWalk-v9/Final/hachiware-side-24-frame-sheet-v9.png",
+      "bytes": 737925,
+      "sha256": "d0ff9c9aa6de3617c27d1421e051295c427136005c4ba651502ab8828c71dc19"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/FourPhaseWalk-v9/Final/validation.json",
+      "archive_path": "FourPhaseWalk-v9/Final/validation.json",
+      "bytes": 1008,
+      "sha256": "f6904bacf6a7ed2ce977b842b8ba63998923b53179ee5390cb946b11f769ecfe"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/FourPhaseWalk-v9/FourPhasePreview.swift",
+      "archive_path": "FourPhaseWalk-v9/FourPhasePreview.swift",
+      "bytes": 13372,
+      "sha256": "ceed948111771da14b7cb3fb8602367793c2ccae06495e659a7ce9cb3f4d7c56"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/FourPhaseWalk-v9/Prompts/limb-outline.txt",
+      "archive_path": "FourPhaseWalk-v9/Prompts/limb-outline.txt",
+      "bytes": 839,
+      "sha256": "c706cb7e4b17fc6a6ab5f24a25b374ecea351f4038cc905fa7366cbdca0eaaa8"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/FourPhaseWalk-v9/Prompts/rig-cleanup.txt",
+      "archive_path": "FourPhaseWalk-v9/Prompts/rig-cleanup.txt",
+      "bytes": 744,
+      "sha256": "16cc2260322e756f4b99ac661513306703ef3b1a457958f433b925a158e355ca"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/FourPhaseWalk-v9/Prompts/rig-parts.txt",
+      "archive_path": "FourPhaseWalk-v9/Prompts/rig-parts.txt",
+      "bytes": 2007,
+      "sha256": "3f3dd3196efa7648ce2fe179913ca8d1456e984f7f8f171d6f2fea356496577d"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/FourPhaseWalk-v9/README.txt",
+      "archive_path": "FourPhaseWalk-v9/README.txt",
+      "bytes": 2438,
+      "sha256": "42b772533191182163c44b3839e71c2b1de1171b6c111bba3b056f04bac8d239"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/References/approved-tpose-turnaround.png",
+      "archive_path": "FourPhaseWalk-v9/References/approved-tpose-turnaround.png",
+      "bytes": 1247640,
+      "sha256": "f17301b9445f92ac70b8c41944d442260869d5e3ba8c0c32630c8c4ac1b58aa4"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/References/four-phase-reverse-reference.png",
+      "archive_path": "FourPhaseWalk-v9/References/four-phase-reverse-reference.png",
+      "bytes": 2724561,
+      "sha256": "9534f87b85c0c80610a854ffb8360793b7b1d74275294163799d13592383d6cd"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/References/four-phase-walk.jpg",
+      "archive_path": "FourPhaseWalk-v9/References/four-phase-walk.jpg",
+      "bytes": 148777,
+      "sha256": "fab2da9ba5a77c4bbfc3deb0ecf351e64112eb29e6c68432f5283aecb4e0eaaf"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/01-rig-cycle/Frames/left-01.png",
+      "archive_path": "FourPhaseWalk-v9/Review/01-rig-cycle/Frames/left-01.png",
+      "bytes": 46017,
+      "sha256": "1f2f0429cc26b6322c1ff9bcd83fe10750540897ec44c1409435b0b98d81cecc"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/01-rig-cycle/Frames/left-02.png",
+      "archive_path": "FourPhaseWalk-v9/Review/01-rig-cycle/Frames/left-02.png",
+      "bytes": 46703,
+      "sha256": "b5d8c7476395858782f41b46424b3c9a334ea5ec912ddca5490af01af27e89f2"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/01-rig-cycle/Frames/left-03.png",
+      "archive_path": "FourPhaseWalk-v9/Review/01-rig-cycle/Frames/left-03.png",
+      "bytes": 46521,
+      "sha256": "1b04cbee78d5b61685ce91ecb8e365fb5314a91018db5af462ca3a95cbe9ada3"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/01-rig-cycle/Frames/left-04.png",
+      "archive_path": "FourPhaseWalk-v9/Review/01-rig-cycle/Frames/left-04.png",
+      "bytes": 47184,
+      "sha256": "88376a59c5931b88ee493a7b1a1260411e20044b9e4532f312a33261539aa331"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/01-rig-cycle/Frames/left-05.png",
+      "archive_path": "FourPhaseWalk-v9/Review/01-rig-cycle/Frames/left-05.png",
+      "bytes": 46208,
+      "sha256": "e8ce8851239da6ee987ab746fde78a36eaed86e0d4c9d6ee2dab4bf312bd4487"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/01-rig-cycle/Frames/left-06.png",
+      "archive_path": "FourPhaseWalk-v9/Review/01-rig-cycle/Frames/left-06.png",
+      "bytes": 46123,
+      "sha256": "9ece745aab27de6b7553c811dc6d9305b7df0a6225468f673e60c70a937ee9b6"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/01-rig-cycle/Frames/left-07.png",
+      "archive_path": "FourPhaseWalk-v9/Review/01-rig-cycle/Frames/left-07.png",
+      "bytes": 45080,
+      "sha256": "2393e5e18fea4c5cf4db77c386cf4d7520614c7f13f5bc1ba6d68f61de6ea444"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/01-rig-cycle/Frames/left-08.png",
+      "archive_path": "FourPhaseWalk-v9/Review/01-rig-cycle/Frames/left-08.png",
+      "bytes": 46386,
+      "sha256": "b800c0ad8b3f24d38192449fc5f4875a36862bd47380297e70aee572778617f3"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/01-rig-cycle/Frames/left-09.png",
+      "archive_path": "FourPhaseWalk-v9/Review/01-rig-cycle/Frames/left-09.png",
+      "bytes": 46591,
+      "sha256": "f4917bbc0b93dc3581fbbab289a706efe836118f04db5a4788f2a27200147142"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/01-rig-cycle/Frames/left-10.png",
+      "archive_path": "FourPhaseWalk-v9/Review/01-rig-cycle/Frames/left-10.png",
+      "bytes": 47611,
+      "sha256": "c7d54ca3563a25d23b1755affdf3284d6c57893e9e7f0b5112448aa9ac5520a6"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/01-rig-cycle/Frames/left-11.png",
+      "archive_path": "FourPhaseWalk-v9/Review/01-rig-cycle/Frames/left-11.png",
+      "bytes": 46944,
+      "sha256": "a32f3559a89e9539569e877e541ce580bec99b4db66040133fe3c6da25a59854"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/01-rig-cycle/Frames/left-12.png",
+      "archive_path": "FourPhaseWalk-v9/Review/01-rig-cycle/Frames/left-12.png",
+      "bytes": 46860,
+      "sha256": "fc1374eb855b42a8ccb5600e09e6fce70eafe315d58184896a2608ba3009ba9c"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/01-rig-cycle/Frames/left-13.png",
+      "archive_path": "FourPhaseWalk-v9/Review/01-rig-cycle/Frames/left-13.png",
+      "bytes": 45881,
+      "sha256": "af8368e85b0c94c679d6f5898c7ff520a2c1d2eb360672c9400662813f6456eb"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/01-rig-cycle/Frames/left-14.png",
+      "archive_path": "FourPhaseWalk-v9/Review/01-rig-cycle/Frames/left-14.png",
+      "bytes": 46614,
+      "sha256": "6c624ec3ec061c486bbf267d9201d7bd049245dc81c9a32f3633e4e73a09e950"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/01-rig-cycle/Frames/left-15.png",
+      "archive_path": "FourPhaseWalk-v9/Review/01-rig-cycle/Frames/left-15.png",
+      "bytes": 46545,
+      "sha256": "be56d5de5b62dd251b9c6a90aef983c49a23e7c5fc756f910402d303801f2208"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/01-rig-cycle/Frames/left-16.png",
+      "archive_path": "FourPhaseWalk-v9/Review/01-rig-cycle/Frames/left-16.png",
+      "bytes": 47252,
+      "sha256": "58b60b70a68d033a6ed3c6c8d6b55d5636ccdfa7ec0100d2b2e898c99e3ed3a7"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/01-rig-cycle/Frames/left-17.png",
+      "archive_path": "FourPhaseWalk-v9/Review/01-rig-cycle/Frames/left-17.png",
+      "bytes": 46313,
+      "sha256": "b1330378f962548ab2183829fcaf2f651d6afa405a4bdcc6912341eb95f3a0fd"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/01-rig-cycle/Frames/left-18.png",
+      "archive_path": "FourPhaseWalk-v9/Review/01-rig-cycle/Frames/left-18.png",
+      "bytes": 46311,
+      "sha256": "1f8677203e67acfc906f2f05f0037bb4c0f27401c1d399a96e94c37142f032f2"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/01-rig-cycle/Frames/left-19.png",
+      "archive_path": "FourPhaseWalk-v9/Review/01-rig-cycle/Frames/left-19.png",
+      "bytes": 45502,
+      "sha256": "825930fe2c94b502836f2b28b4e404bd3b9fc09b757f59afefdac1f6e1e852a7"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/01-rig-cycle/Frames/left-20.png",
+      "archive_path": "FourPhaseWalk-v9/Review/01-rig-cycle/Frames/left-20.png",
+      "bytes": 46780,
+      "sha256": "9bc00914b6c88ce48034c5bb13504562616b232df4725460199fabeddfc4335b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/01-rig-cycle/Frames/left-21.png",
+      "archive_path": "FourPhaseWalk-v9/Review/01-rig-cycle/Frames/left-21.png",
+      "bytes": 46790,
+      "sha256": "1a92ecfb9590b0f639c7073a9dde44b6485ce0634e43dede34a2c43875f9c3dd"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/01-rig-cycle/Frames/left-22.png",
+      "archive_path": "FourPhaseWalk-v9/Review/01-rig-cycle/Frames/left-22.png",
+      "bytes": 47686,
+      "sha256": "0f74b08d1a37d22ba3cbe4cfd15ac750676c55f6d5f30c0693a11227acb9bb0d"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/01-rig-cycle/Frames/left-23.png",
+      "archive_path": "FourPhaseWalk-v9/Review/01-rig-cycle/Frames/left-23.png",
+      "bytes": 47007,
+      "sha256": "d1802f7be3f4b6f91feb79b8f3b4b2d41fc118f3c92594951bc5897337c39411"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/01-rig-cycle/Frames/left-24.png",
+      "archive_path": "FourPhaseWalk-v9/Review/01-rig-cycle/Frames/left-24.png",
+      "bytes": 46928,
+      "sha256": "da18da77b289f254626e64c5e8d5535224014c131f289021d1d0c4108b421aba"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/01-rig-cycle/Frames/right-01.png",
+      "archive_path": "FourPhaseWalk-v9/Review/01-rig-cycle/Frames/right-01.png",
+      "bytes": 46181,
+      "sha256": "2d6519d17593c0ef0e479b620b826c7eaafc8bea0f2893ed2bdef0ff3cea95b6"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/01-rig-cycle/Frames/right-02.png",
+      "archive_path": "FourPhaseWalk-v9/Review/01-rig-cycle/Frames/right-02.png",
+      "bytes": 46719,
+      "sha256": "fbd25afdc64b7dce7daf769272ba3299a7805cb76ee89e2b0f5667450c6c2524"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/01-rig-cycle/Frames/right-03.png",
+      "archive_path": "FourPhaseWalk-v9/Review/01-rig-cycle/Frames/right-03.png",
+      "bytes": 46582,
+      "sha256": "4bdaa99b5626c0009a09bf8f2b551c02eb54bea83941490c44c465ca60f61a05"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/01-rig-cycle/Frames/right-04.png",
+      "archive_path": "FourPhaseWalk-v9/Review/01-rig-cycle/Frames/right-04.png",
+      "bytes": 47108,
+      "sha256": "9e43d1663b42a78a7be56612b7e58f6a77d0efe3c3d2ca34ccc9dec5ffdde776"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/01-rig-cycle/Frames/right-05.png",
+      "archive_path": "FourPhaseWalk-v9/Review/01-rig-cycle/Frames/right-05.png",
+      "bytes": 46302,
+      "sha256": "3d3690a337b7d95f2a4d8832c735cbe4b7b3a0368fe077058e8ee9fbf0112819"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/01-rig-cycle/Frames/right-06.png",
+      "archive_path": "FourPhaseWalk-v9/Review/01-rig-cycle/Frames/right-06.png",
+      "bytes": 46117,
+      "sha256": "3344b90992fe3e4f9b42d52289fd2493ac64bad05543c6a24a155680bb90690f"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/01-rig-cycle/Frames/right-07.png",
+      "archive_path": "FourPhaseWalk-v9/Review/01-rig-cycle/Frames/right-07.png",
+      "bytes": 45228,
+      "sha256": "826d9b5ad8f9520fbeeaf60d541dc2fa1438b4787a7c9cc3537fa357b314b16d"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/01-rig-cycle/Frames/right-08.png",
+      "archive_path": "FourPhaseWalk-v9/Review/01-rig-cycle/Frames/right-08.png",
+      "bytes": 46453,
+      "sha256": "af39a6442ddaeb6ee6d176d9f16eca4193f97a6761bda0d6681aab6de342df14"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/01-rig-cycle/Frames/right-09.png",
+      "archive_path": "FourPhaseWalk-v9/Review/01-rig-cycle/Frames/right-09.png",
+      "bytes": 46692,
+      "sha256": "6ac0cae1e9a92624e04bc10da5842f2a3b0d34d047e655ddecb3bc6272b575f4"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/01-rig-cycle/Frames/right-10.png",
+      "archive_path": "FourPhaseWalk-v9/Review/01-rig-cycle/Frames/right-10.png",
+      "bytes": 47500,
+      "sha256": "fab2d3eac2a460b98486af46704380094d14c18c5446c6b46f6b19546a006378"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/01-rig-cycle/Frames/right-11.png",
+      "archive_path": "FourPhaseWalk-v9/Review/01-rig-cycle/Frames/right-11.png",
+      "bytes": 47115,
+      "sha256": "e172a6e746dc980d43a572e90bda613cf8ba370beb0e136bd8ea4f6c427a8070"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/01-rig-cycle/Frames/right-12.png",
+      "archive_path": "FourPhaseWalk-v9/Review/01-rig-cycle/Frames/right-12.png",
+      "bytes": 46972,
+      "sha256": "0448f63104daf5812481436b6eb3be0bdca4284f635c2e444fd737b25c3b62f8"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/01-rig-cycle/Frames/right-13.png",
+      "archive_path": "FourPhaseWalk-v9/Review/01-rig-cycle/Frames/right-13.png",
+      "bytes": 45925,
+      "sha256": "0dc5258d5e3926f2ae5fcc97c5769dfff88a80e116c882cfbfab74b5b6f89dd9"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/01-rig-cycle/Frames/right-14.png",
+      "archive_path": "FourPhaseWalk-v9/Review/01-rig-cycle/Frames/right-14.png",
+      "bytes": 46612,
+      "sha256": "7f5569df960c72d72a18e5b3d2b9d7b2b049e4246f3ba0f371a963068605bc5e"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/01-rig-cycle/Frames/right-15.png",
+      "archive_path": "FourPhaseWalk-v9/Review/01-rig-cycle/Frames/right-15.png",
+      "bytes": 46505,
+      "sha256": "e28e455f514fadad75c9e6c4d51cae17d60d71cd6db7f7965dd2e3ea024ba15f"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/01-rig-cycle/Frames/right-16.png",
+      "archive_path": "FourPhaseWalk-v9/Review/01-rig-cycle/Frames/right-16.png",
+      "bytes": 47074,
+      "sha256": "2d00829f4323b005e307f6f3bba0f4b9bcd2a31203e7992c8b824041cf0bed6c"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/01-rig-cycle/Frames/right-17.png",
+      "archive_path": "FourPhaseWalk-v9/Review/01-rig-cycle/Frames/right-17.png",
+      "bytes": 46360,
+      "sha256": "a6a99c71bec69e879685b01552058902c2876af2a6b2aa3499f2104cd42001ae"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/01-rig-cycle/Frames/right-18.png",
+      "archive_path": "FourPhaseWalk-v9/Review/01-rig-cycle/Frames/right-18.png",
+      "bytes": 46388,
+      "sha256": "b5750325402ab34fa93b5796ba943debd6f090adb7e04f314e34c8bc9084b51e"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/01-rig-cycle/Frames/right-19.png",
+      "archive_path": "FourPhaseWalk-v9/Review/01-rig-cycle/Frames/right-19.png",
+      "bytes": 45676,
+      "sha256": "e52f00a4339a8b9423fa8fa11cce95a6569520c4f4bcce373c3c6960e7e7f716"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/01-rig-cycle/Frames/right-20.png",
+      "archive_path": "FourPhaseWalk-v9/Review/01-rig-cycle/Frames/right-20.png",
+      "bytes": 46902,
+      "sha256": "2553323680be11fbd3a071e2ba0c495a08d89c4a3363a21c6f0e4ce30031f204"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/01-rig-cycle/Frames/right-21.png",
+      "archive_path": "FourPhaseWalk-v9/Review/01-rig-cycle/Frames/right-21.png",
+      "bytes": 47060,
+      "sha256": "ae09bfa17122e316e73994802f8b4246b1cd9d86383b759970afdc53210def83"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/01-rig-cycle/Frames/right-22.png",
+      "archive_path": "FourPhaseWalk-v9/Review/01-rig-cycle/Frames/right-22.png",
+      "bytes": 47611,
+      "sha256": "501b3910f202849345e76f926845cfb41436c51b94d03a0d0675d05533def437"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/01-rig-cycle/Frames/right-23.png",
+      "archive_path": "FourPhaseWalk-v9/Review/01-rig-cycle/Frames/right-23.png",
+      "bytes": 47176,
+      "sha256": "7470fd204a0b21d3f82fd0745951403e35ce179dc8b7fd2de7be948921fae948"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/01-rig-cycle/Frames/right-24.png",
+      "archive_path": "FourPhaseWalk-v9/Review/01-rig-cycle/Frames/right-24.png",
+      "bytes": 47045,
+      "sha256": "1069914daf409d05ec4d248bcb02daa1de83cbed00dae967852764dcfec49023"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/01-rig-cycle/hachiware-four-phase-keyposes-v9.png",
+      "archive_path": "FourPhaseWalk-v9/Review/01-rig-cycle/hachiware-four-phase-keyposes-v9.png",
+      "bytes": 347355,
+      "sha256": "e40586851ca0c70d401be38eae1aaaef527d872b485edce9c3dad9383c40efbc"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/01-rig-cycle/hachiware-four-phase-walk-slow-v9.gif",
+      "archive_path": "FourPhaseWalk-v9/Review/01-rig-cycle/hachiware-four-phase-walk-slow-v9.gif",
+      "bytes": 412892,
+      "sha256": "c67b63e06f6b8e6b06cf72ed06fb8340be14951019badf66aa2dfd794892482d"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/01-rig-cycle/hachiware-four-phase-walk-v9.gif",
+      "archive_path": "FourPhaseWalk-v9/Review/01-rig-cycle/hachiware-four-phase-walk-v9.gif",
+      "bytes": 412798,
+      "sha256": "a9edd3e412a2c9e4203ade077985c76b4da65ae5d84de7bb29a042b6d38ab86b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/01-rig-cycle/hachiware-side-24-frame-review-v9.png",
+      "archive_path": "FourPhaseWalk-v9/Review/01-rig-cycle/hachiware-side-24-frame-review-v9.png",
+      "bytes": 582380,
+      "sha256": "2c4cdf0e277a5d7d0e0ae60080dfe703396f4b3c05b315e01c7423be0acc0284"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/01-rig-cycle/hachiware-side-24-frame-sheet-v9.png",
+      "archive_path": "FourPhaseWalk-v9/Review/01-rig-cycle/hachiware-side-24-frame-sheet-v9.png",
+      "bytes": 735139,
+      "sha256": "8a89bdda5b1278e3c5f77ecfbce7e7e8cebe2ce0a8627fd6288633a9e305278f"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/FourPhaseWalk-v9/Review/01-rig-cycle/validation.json",
+      "archive_path": "FourPhaseWalk-v9/Review/01-rig-cycle/validation.json",
+      "bytes": 671,
+      "sha256": "825ea2d7c3e3c2d9c83bdaf031bf01e679e72ebdb3b45479e06986c4dc10a866"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/left-01.png",
+      "archive_path": "FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/left-01.png",
+      "bytes": 45778,
+      "sha256": "02912437163468cff8329acdead32a26a12ba1c2ac2e32c38aca3f05d90de7de"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/left-02.png",
+      "archive_path": "FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/left-02.png",
+      "bytes": 46503,
+      "sha256": "d9eb02cbafcf8ce4747b04904f9ad7ec8e79033fc1c37c574f3f2c21958a08cd"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/left-03.png",
+      "archive_path": "FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/left-03.png",
+      "bytes": 46323,
+      "sha256": "5172ef2a078b9928abb32270df98597b0bb5e6eb265fbb8ebb97358fa9423c4e"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/left-04.png",
+      "archive_path": "FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/left-04.png",
+      "bytes": 46888,
+      "sha256": "a32499a74b258a9193287dd3cebdef212bcd295393e2f2b31475865f9d68a4fb"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/left-05.png",
+      "archive_path": "FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/left-05.png",
+      "bytes": 45868,
+      "sha256": "62b6764f79f5a0ba579812f142f51a689bbe0c8baa04d130b67b55e63e96586c"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/left-06.png",
+      "archive_path": "FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/left-06.png",
+      "bytes": 45929,
+      "sha256": "88b2f9a2a4e049f238d33bf5853545f2f50e9410ad5deec5c1bb184a214c48e1"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/left-07.png",
+      "archive_path": "FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/left-07.png",
+      "bytes": 44945,
+      "sha256": "ad86d2a46074c1c4b23bcb0ae3de05f0805d24290c33b116e9017e34ddf28f09"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/left-08.png",
+      "archive_path": "FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/left-08.png",
+      "bytes": 46172,
+      "sha256": "f637b2789b4d4a5c7394e0a789954ff050aba28aca2c158edad0c7514cdb3d6d"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/left-09.png",
+      "archive_path": "FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/left-09.png",
+      "bytes": 46383,
+      "sha256": "46dc66aa0063aeb3735e774c3fd440fea5abe468f5603a9c2fb0bb9a0634ea4d"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/left-10.png",
+      "archive_path": "FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/left-10.png",
+      "bytes": 47254,
+      "sha256": "96aec724bec8efd55476fbb4ab5a974d360eb3a0baf61889f10402a3d5eec693"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/left-11.png",
+      "archive_path": "FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/left-11.png",
+      "bytes": 46770,
+      "sha256": "56983102cf2418ff2cab7b5b90a3eb071f6f766f86cf93bd7397bffb3447edfa"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/left-12.png",
+      "archive_path": "FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/left-12.png",
+      "bytes": 46719,
+      "sha256": "df7da246c1f7a4fe70381f1ee753d0b134c88dc86250d4906ad7a26c7c338ddf"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/left-13.png",
+      "archive_path": "FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/left-13.png",
+      "bytes": 45622,
+      "sha256": "d50d7feb5ce9003c162f5295a928cf61d853cedd1760da2535989632c6f14e3e"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/left-14.png",
+      "archive_path": "FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/left-14.png",
+      "bytes": 46473,
+      "sha256": "f45773821045ca6efd0d5a45e90150bc405bdb17253ea59ce9801fca66c776a0"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/left-15.png",
+      "archive_path": "FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/left-15.png",
+      "bytes": 46189,
+      "sha256": "108d18b71a32aded469326046c8faf512c482c22c27dfc780d901334ad893aef"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/left-16.png",
+      "archive_path": "FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/left-16.png",
+      "bytes": 46928,
+      "sha256": "4f686bce58ea0626b8b0a3d1206b01e539cc827c7c325f24e70de7839c3e7b96"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/left-17.png",
+      "archive_path": "FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/left-17.png",
+      "bytes": 45966,
+      "sha256": "e80a201811443601480631f24a0bce59adc0e6b76135d7127dcbc2841dba34ce"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/left-18.png",
+      "archive_path": "FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/left-18.png",
+      "bytes": 46129,
+      "sha256": "9d4ee35bedaa21bf0ed9faae6d59f56141a813865ef8604f007963bbaa5e88ee"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/left-19.png",
+      "archive_path": "FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/left-19.png",
+      "bytes": 45320,
+      "sha256": "be4075044dd1721361afe54c464b65ad91896abc94ef82a8d2479a159368207a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/left-20.png",
+      "archive_path": "FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/left-20.png",
+      "bytes": 46513,
+      "sha256": "82ffbc7c096772adf24361163069cbc876e4a618f4b77e1fa6550fdbec2d62bd"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/left-21.png",
+      "archive_path": "FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/left-21.png",
+      "bytes": 46709,
+      "sha256": "0dce4d4fd15c78228b0987946fe758710e3463ffc690cf69698e9207c8407c31"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/left-22.png",
+      "archive_path": "FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/left-22.png",
+      "bytes": 47400,
+      "sha256": "d64183ce4c42450c21a82b3abc9b4e3cd20b8867d076b2ae584a4e4741b9a15b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/left-23.png",
+      "archive_path": "FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/left-23.png",
+      "bytes": 46905,
+      "sha256": "dd7b120e41dad2d66375e9f592972e43e0d8d741eeffde68782fdeb2b92d1fb0"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/left-24.png",
+      "archive_path": "FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/left-24.png",
+      "bytes": 46778,
+      "sha256": "142ccf6e6145853eb86e605e55114ae55c860460620461d717d3673344c74951"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/right-01.png",
+      "archive_path": "FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/right-01.png",
+      "bytes": 45733,
+      "sha256": "8a2bbafa95dbc4267670bf57ae40de5362f991e60252c12658d002fbd9605c3c"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/right-02.png",
+      "archive_path": "FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/right-02.png",
+      "bytes": 46388,
+      "sha256": "1669db826e635f75ae4acb485ee3e82e9a61adeae94f5048c4e371a47c75549d"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/right-03.png",
+      "archive_path": "FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/right-03.png",
+      "bytes": 46224,
+      "sha256": "28f3d926eafccb8ead4ee4612f6e6c062c56f6a33f7c148bcfeafcebf83df906"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/right-04.png",
+      "archive_path": "FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/right-04.png",
+      "bytes": 46829,
+      "sha256": "349f62e4ca6eb2b387562ccedd582abf48dcbe14c3f355f21d63a856266b99c8"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/right-05.png",
+      "archive_path": "FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/right-05.png",
+      "bytes": 45872,
+      "sha256": "ae4fa4b63fcca602fadd60bd9e180526e7c08ec8e7d6fd7becd789894e0adee6"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/right-06.png",
+      "archive_path": "FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/right-06.png",
+      "bytes": 45836,
+      "sha256": "4cd94fedb1bac61467880991c8aeeeddb71063e5607ed61568a2b3baabf299ac"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/right-07.png",
+      "archive_path": "FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/right-07.png",
+      "bytes": 44966,
+      "sha256": "bfec4ca4d7923d08567b9df22ddcc5ca2207f5858437603267af038e45b48c1f"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/right-08.png",
+      "archive_path": "FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/right-08.png",
+      "bytes": 46060,
+      "sha256": "dd8816ce024562cc4eff9902e1894fe2044e675a437b5e3e392c54ff3fbb87c4"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/right-09.png",
+      "archive_path": "FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/right-09.png",
+      "bytes": 46368,
+      "sha256": "4cc2a4187842f7ae662249f73c892aac2db44847fc2a8b65bf53d9109f27ba42"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/right-10.png",
+      "archive_path": "FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/right-10.png",
+      "bytes": 47321,
+      "sha256": "a56f4cd4f94682fdbe7d511133bf7c86a6a3ec269ae575b8ab3b33c47642f9e2"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/right-11.png",
+      "archive_path": "FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/right-11.png",
+      "bytes": 46793,
+      "sha256": "c46f12a2db8adc4390e745fc3801a2a074da1a7d54b5a4c388d1ee35354c2488"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/right-12.png",
+      "archive_path": "FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/right-12.png",
+      "bytes": 46747,
+      "sha256": "e34bc92c079812c3234facc9d6aa09f03d8abc5f8a20c1aeebd4324cf7933b44"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/right-13.png",
+      "archive_path": "FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/right-13.png",
+      "bytes": 45703,
+      "sha256": "50320723f26eaca573fe2b3845b88422a1e55f3d1dd92449f63709159351f0b7"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/right-14.png",
+      "archive_path": "FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/right-14.png",
+      "bytes": 46322,
+      "sha256": "b02357f9541e480ef550e345a7729e24ad1db0e132042fd571fde3f81aa068bd"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/right-15.png",
+      "archive_path": "FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/right-15.png",
+      "bytes": 46117,
+      "sha256": "b8549cd8e85c85f9b6e98dcb4c1c8c92cc12fe451ba5126e9e00cc9093343e42"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/right-16.png",
+      "archive_path": "FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/right-16.png",
+      "bytes": 46936,
+      "sha256": "1c16cc3c72a800c4b2905551ba3cb5f89ffc65fcfb6dc9079ffe339d648a8ae7"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/right-17.png",
+      "archive_path": "FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/right-17.png",
+      "bytes": 45957,
+      "sha256": "c4c87996cbacc6c883cb9cf1ddb7ed2985ceedb84c8da5c205c226538f4bafbc"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/right-18.png",
+      "archive_path": "FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/right-18.png",
+      "bytes": 46097,
+      "sha256": "5306c8e5909435d33354beb0acd9d746f2b95477a72cdf57abdf099f0f474ba3"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/right-19.png",
+      "archive_path": "FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/right-19.png",
+      "bytes": 45336,
+      "sha256": "6d176d35328ab882dcd559a0f2fbba7f139325b070b802b658eac5f43bfb3062"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/right-20.png",
+      "archive_path": "FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/right-20.png",
+      "bytes": 46514,
+      "sha256": "3615f53ddc7438c1642bd8c8ae3f61979d9e79a66bdde5f30057886e7b78d0e3"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/right-21.png",
+      "archive_path": "FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/right-21.png",
+      "bytes": 46663,
+      "sha256": "84a74ecae19bc5f9f7e24bc8951f93e85418fe6fcead14d44d4c00f43ba62181"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/right-22.png",
+      "archive_path": "FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/right-22.png",
+      "bytes": 47387,
+      "sha256": "1f768de4c595dff6f5eaf1205e6a2f8ab103d80ecb0d4b54105ab63ae66aaffe"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/right-23.png",
+      "archive_path": "FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/right-23.png",
+      "bytes": 46930,
+      "sha256": "c0c6c09929b6169cc8a21fb83e95fc67f7853542851401d64c6e6148f112dd94"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/right-24.png",
+      "archive_path": "FourPhaseWalk-v9/Review/02-outline-and-proportions/Frames/right-24.png",
+      "bytes": 46876,
+      "sha256": "328727ddab9b28e2e4a74b0ceeb20bdcaad1de8eff9ed287273c4e1609e6cb37"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/02-outline-and-proportions/hachiware-four-phase-keyposes-v9.png",
+      "archive_path": "FourPhaseWalk-v9/Review/02-outline-and-proportions/hachiware-four-phase-keyposes-v9.png",
+      "bytes": 347913,
+      "sha256": "0e4546e0d2a9f7f098a27861a54187f37d248b3815ac49258426284aded0a365"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/02-outline-and-proportions/hachiware-four-phase-walk-slow-v9.gif",
+      "archive_path": "FourPhaseWalk-v9/Review/02-outline-and-proportions/hachiware-four-phase-walk-slow-v9.gif",
+      "bytes": 397285,
+      "sha256": "d52189d3b1176669aca3190db2465cfb81d6ad948e201d2e45fbc396b1d0cef5"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/02-outline-and-proportions/hachiware-four-phase-walk-v9.gif",
+      "archive_path": "FourPhaseWalk-v9/Review/02-outline-and-proportions/hachiware-four-phase-walk-v9.gif",
+      "bytes": 397307,
+      "sha256": "ee25c91e3434193bfff94222032a2e64eeb1275a3e778c1673e17476996af917"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/02-outline-and-proportions/hachiware-side-24-frame-review-v9.png",
+      "archive_path": "FourPhaseWalk-v9/Review/02-outline-and-proportions/hachiware-side-24-frame-review-v9.png",
+      "bytes": 602481,
+      "sha256": "1ce04aea315cbbe945490a3d0195850cd35fdaf0ab2781225f0eff826e8acf0f"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/02-outline-and-proportions/hachiware-side-24-frame-sheet-v9.png",
+      "archive_path": "FourPhaseWalk-v9/Review/02-outline-and-proportions/hachiware-side-24-frame-sheet-v9.png",
+      "bytes": 737925,
+      "sha256": "d0ff9c9aa6de3617c27d1421e051295c427136005c4ba651502ab8828c71dc19"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/FourPhaseWalk-v9/Review/02-outline-and-proportions/validation.json",
+      "archive_path": "FourPhaseWalk-v9/Review/02-outline-and-proportions/validation.json",
+      "bytes": 671,
+      "sha256": "825ea2d7c3e3c2d9c83bdaf031bf01e679e72ebdb3b45479e06986c4dc10a866"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/rig-parts-cleanup.png",
+      "archive_path": "FourPhaseWalk-v9/Review/rig-parts-cleanup.png",
+      "bytes": 1100015,
+      "sha256": "4ed03b2a00ebf1549bdbb732bd9ab91093a5091e915327892d1df51aac8786fe"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/Review/rig-parts-initial.png",
+      "archive_path": "FourPhaseWalk-v9/Review/rig-parts-initial.png",
+      "bytes": 1115737,
+      "sha256": "7d8f417a59101daed1988427a121e3d87c526a6ce8a41d504060bb29fbee12d0"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/FourPhaseWalk-v9/manifest.json",
+      "archive_path": "FourPhaseWalk-v9/manifest.json",
+      "bytes": 30489,
+      "sha256": "1ae57493d92eff86d96a7cd8d1411e3ea33dc05437ad935bc4cd822cb9d5e61d"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/rig-parts-bold-v9.png",
+      "archive_path": "FourPhaseWalk-v9/rig-parts-bold-v9.png",
+      "bytes": 990161,
+      "sha256": "e99767f16f0c5d6409a5cf0fa383a6084b0e66fe7a4d018a23ac088c3464382b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/FourPhaseWalk-v9/rig-parts-v9.png",
+      "archive_path": "FourPhaseWalk-v9/rig-parts-v9.png",
+      "bytes": 1100015,
+      "sha256": "4ed03b2a00ebf1549bdbb732bd9ab91093a5091e915327892d1df51aac8786fe"
+    },
+    {
+      "kind": "image",
+      "source": "Source/GeneratedOriginals/exec-0897366a-160f-4030-b862-e63fecb3ba33.png",
+      "archive_path": "GeneratedOriginals/exec-0897366a-160f-4030-b862-e63fecb3ba33.png",
+      "bytes": 1100015,
+      "sha256": "4ed03b2a00ebf1549bdbb732bd9ab91093a5091e915327892d1df51aac8786fe"
+    },
+    {
+      "kind": "image",
       "source": "Source/GeneratedOriginals/exec-1e74567d-854f-4889-b499-0706d195e7c2.png",
       "archive_path": "GeneratedOriginals/exec-1e74567d-854f-4889-b499-0706d195e7c2.png",
       "bytes": 1742461,
@@ -1721,6 +2953,13 @@
       "archive_path": "GeneratedOriginals/exec-7515fb8c-2086-4b3a-ac2e-2651f3ccf71a.png",
       "bytes": 1218269,
       "sha256": "69b6182d09b80a466ae2f1294da66e08f7575718678c4575f30610eb3a85f15f"
+    },
+    {
+      "kind": "image",
+      "source": "Source/GeneratedOriginals/exec-7b06b31c-8bf1-4f51-82f5-717dd853c555.png",
+      "archive_path": "GeneratedOriginals/exec-7b06b31c-8bf1-4f51-82f5-717dd853c555.png",
+      "bytes": 1115737,
+      "sha256": "7d8f417a59101daed1988427a121e3d87c526a6ce8a41d504060bb29fbee12d0"
     },
     {
       "kind": "image",
@@ -1791,6 +3030,13 @@
       "archive_path": "GeneratedOriginals/exec-f8bd50ee-31c9-4bbc-b0c4-17d762e16b7c.png",
       "bytes": 1584907,
       "sha256": "83f5490f5489b56e54837d1ff956a15ddda931eba202c4468d76ba3482e726c1"
+    },
+    {
+      "kind": "image",
+      "source": "Source/GeneratedOriginals/exec-fa24089c-4473-4f75-b957-41506ce80da8.png",
+      "archive_path": "GeneratedOriginals/exec-fa24089c-4473-4f75-b957-41506ce80da8.png",
+      "bytes": 990161,
+      "sha256": "e99767f16f0c5d6409a5cf0fa383a6084b0e66fe7a4d018a23ac088c3464382b"
     },
     {
       "kind": "supporting",
@@ -2265,8 +3511,8 @@
       "kind": "supporting",
       "source": "Source/README.txt",
       "archive_path": "README.txt",
-      "bytes": 1210,
-      "sha256": "f5e863d71436514949131a1e627d7d1672eb3b244ab4c3180f9159c04e41edfa"
+      "bytes": 1443,
+      "sha256": "b02860ca7668a86709318609fb95004eb4f3c5408c5440c4470743e69106c965"
     },
     {
       "kind": "image",
@@ -2493,12 +3739,13 @@
       "sha256": "1a9a6456b561a528697d08bc97a5b14f3694040f1a684da6921470f3c0a713af"
     }
   ],
-  "updated_at": "2026-10-19T02:29:22.072948+00:00",
+  "updated_at": "2026-10-19T02:50:51.211680+00:00",
   "latest_applied": "ItemCoordinates-v8",
   "applied_directions": [
     "down-left",
     "down-right"
   ],
   "previous_upward_diagonal_preserved": true,
-  "source_path_format": "repository-relative paths; generated originals are archived under Source/GeneratedOriginals"
+  "source_path_format": "repository-relative paths; generated originals are archived under Source/GeneratedOriginals",
+  "latest_review": "FourPhaseWalk-v9"
 }

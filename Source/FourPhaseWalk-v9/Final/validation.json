@@ -1,0 +1,38 @@
+{
+  "app_distance_per_cycle_points": 62.7,
+  "body_asset_shared": true,
+  "body_height_at_contact": 0,
+  "body_height_at_down": -5.5,
+  "body_height_at_passing": -6.735557395310443e-16,
+  "body_height_at_up": 5.5,
+  "cycle_seconds": 1.3630434782608696,
+  "foot_asset_shared": true,
+  "foot_symmetry_max_error": 4.618527782440651e-14,
+  "frame_count": 24,
+  "frames_per_step": 12,
+  "half_cycle_offset_frames": 12,
+  "keyframes_one_based": [
+    1,
+    4,
+    7,
+    10,
+    13,
+    16,
+    19,
+    22
+  ],
+  "loop_boundary_error": 1.2159998448169063e-06,
+  "planted_contact_world_slip": 3.552713678800501e-15,
+  "runtime_applied": false,
+  "unique_left_frames": 24,
+  "registered_frame_dimensions": [
+    256,
+    256
+  ],
+  "atlas_frames_match_individuals": true,
+  "transparent_corners_verified": true,
+  "normal_gif_total_ms": 1360,
+  "slow_gif_total_ms": 2880,
+  "generator": "built-in image_gen for raster parts; native Swift renderer for matched motion",
+  "app_unchanged_pending_sheet_review": true
+}

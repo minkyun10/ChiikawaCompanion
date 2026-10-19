@@ -11,3 +11,6 @@ manifest.json: 모든 파일의 출처, 보관 경로, 크기, SHA-256 목록입
 각 버전의 Review/Iterations는 검토 이력이며, 실행 리소스의 정본은 Sources/ChiikawaCompanion/Resources입니다.
 같은 Project 경로의 내용이 바뀌면 이전 사본을 Versions/<SHA-256 앞 16자리>/에 먼저 보존합니다.
 이미지 생성 프롬프트와 검토용 렌더러·검증 결과도 함께 보관했습니다.
+
+FourPhaseWalk-v9: T포즈 기반 양발 24프레임 측면 걷기 시트와 좌우 미리보기입니다.
+시트 선검토 단계이며, 앱 적용 여부는 해당 폴더의 README.txt 및 Final/validation.json에 기록합니다.
