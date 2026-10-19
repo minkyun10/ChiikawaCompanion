@@ -198,7 +198,7 @@ enum SelfTest {
         var world = ItemWorld()
         let allItems = Set(CompanionItem.allCases)
         world.configure(enabled: allItems, bounds: screen)
-        check(world.ground.count == 4 && world.equipped == nil, "four enabled props spawn on the desktop")
+        check(world.ground.count == 3 && world.equipped == nil, "three enabled props spawn on the desktop")
         check(world.ground.values.allSatisfy { ItemWorld.clamp($0, to: screen) == $0 },
               "props stay reachable on negative-coordinate displays")
         let cameraPoint = world.ground[.camera]!
@@ -219,22 +219,22 @@ enum SelfTest {
               "new equipment is carried for a while before seeking another prop")
         let guitarOrigin = ItemWorld.destination(for: world.ground[.guitar]!)
         check(world.pickUp(.guitar, from: guitarOrigin, bounds: screen, now: now.addingTimeInterval(25))
-              && world.equipped == .guitar && world.ground[.camera] != nil && world.ground.count == 3,
+              && world.equipped == .guitar && world.ground[.camera] != nil && world.ground.count == 2,
               "swapping equipment drops the old prop without duplicating or losing it")
         world.drop(at: NSPoint(x: 9999, y: -9999), bounds: screen, now: now.addingTimeInterval(30))
-        check(world.equipped == nil && world.ground.count == 4
+        check(world.equipped == nil && world.ground.count == 3
               && world.ground.values.allSatisfy { ItemWorld.clamp($0, to: screen) == $0 },
               "manual drops restore the ground item within reachable screen bounds")
         let dropTime = now.addingTimeInterval(30)
         check(world.target(from: guitarOrigin, automatic: true, now: dropTime.addingTimeInterval(1)) == nil,
               "a dropped item is not immediately picked up again")
-        let bagOrigin = ItemWorld.destination(for: world.ground[.bag]!)
-        _ = world.pickUp(.bag, from: bagOrigin, bounds: screen, now: now.addingTimeInterval(50))
-        world.configure(enabled: [.camera, .guitar, .sasumata], bounds: screen)
-        check(world.equipped == nil && world.ground[.bag] == nil,
+        let weaponOrigin = ItemWorld.destination(for: world.ground[.sasumata]!)
+        _ = world.pickUp(.sasumata, from: weaponOrigin, bounds: screen, now: now.addingTimeInterval(50))
+        world.configure(enabled: [.camera, .guitar], bounds: screen)
+        check(world.equipped == nil && world.ground[.sasumata] == nil,
               "turning off a carried prop removes it from both equipment and ground")
         world.scatter(in: screen)
-        check(world.ground.count == 3 && Set(world.ground.keys) == world.enabled,
+        check(world.ground.count == 2 && Set(world.ground.keys) == world.enabled,
               "scattering preserves exactly one instance of every enabled prop")
         // Exercise the actual drag-release callback that previously scattered props.
         // No timer or visible windows: all preferences belong to the isolated test suite.
@@ -265,10 +265,16 @@ enum SelfTest {
         check(desktop.itemWorld.pickUp(.camera, from: originAtCamera, bounds: NSScreen.main!.visibleFrame, now: now)
               && desktop.itemWorld.equipped == .camera,
               "pickup still uses the unchanged ground coordinate after moving character and props independently")
-        migrated.enabledItems = [.camera, .bag]; migrated.automaticItems = false; migrated.expressive = false
+        migrated.enabledItems = [.camera, .guitar]; migrated.automaticItems = false; migrated.expressive = false
         let itemPreferences = AppState(defaults: testDefaults)
-        check(itemPreferences.enabledItems == [.camera, .bag] && !itemPreferences.automaticItems && !itemPreferences.expressive,
+        check(itemPreferences.enabledItems == [.camera, .guitar] && !itemPreferences.automaticItems && !itemPreferences.expressive,
               "prop and expression choices survive relaunch without changing sender assignments")
+        testDefaults.set(["camera", "bag", "guitar"], forKey: "enabledItems")
+        let withoutBag = AppState(defaults: testDefaults)
+        check(withoutBag.enabledItems == [.camera, .guitar]
+              && testDefaults.stringArray(forKey: "enabledItems") == ["camera", "guitar"],
+              "legacy bag preference is removed without changing the other prop choices")
+        runHomeTests(desktop: desktop, now: now) { check($0, $1) }
         var performance = CompanionPerformance()
         performance.begin(.camera, now: now, pickingUp: true)
         check(performance.action(now: now) == .pickup && performance.action(now: now.addingTimeInterval(0.7)) == .camera,
@@ -279,7 +285,7 @@ enum SelfTest {
         performance.begin(.guitar, now: now, pickingUp: false)
         check(performance.action(now: now.addingTimeInterval(2.5)) == nil,
               "short equipment actions finish so the character keeps walking")
-        check(HachiwareActions.shared.isReady, "all eight new reference-based expressions and gestures load")
+        check(HachiwareActions.shared.isReady, "all seven reference-based expressions and gestures load without the bag")
         check(HachiwareActions.shared.frames.allSatisfy {
             guard let data = $0.tiffRepresentation, let bitmap = NSBitmapImageRep(data: data) else { return false }
             return (bitmap.colorAt(x: 0, y: 0)?.alphaComponent ?? 1) < 0.02
@@ -468,6 +474,7 @@ enum SelfTest {
         }
         print("Artwork rendered.")
         renderItems(to: directory)
+        renderHome(to: directory)
     }
 
     static func renderItems(to directory: URL) {
@@ -477,7 +484,7 @@ enum SelfTest {
                 .font: NSFont.systemFont(ofSize: 16, weight: .medium), .foregroundColor: FriendArtwork.ink,
                 .paragraphStyle: paragraph])
         }
-        png(width: 1200, height: 650, to: directory.appendingPathComponent("hachiware-expressions-v7.png")) {
+        png(width: 1200, height: 650, to: directory.appendingPathComponent("hachiware-expressions-v11.png")) {
             NSColor(hex: 0xF7F4EB).setFill(); NSRect(x: 0, y: 0, width: 1200, height: 650).fill()
             for action in HachiwareAction.allCases {
                 let x = CGFloat(action.rawValue % 4) * 300, y: CGFloat = action.rawValue < 4 ? 330 : 10
@@ -485,28 +492,28 @@ enum SelfTest {
                 caption(action.title, x: x, y: y + 3, width: 300)
             }
         }
-        png(width: 1200, height: 1080, to: directory.appendingPathComponent("hachiware-equipped-directions-v7.png")) {
-            NSColor(hex: 0xF7F4EB).setFill(); NSRect(x: 0, y: 0, width: 1200, height: 1080).fill()
+        png(width: 1200, height: 810, to: directory.appendingPathComponent("hachiware-equipped-directions-v11.png")) {
+            NSColor(hex: 0xF7F4EB).setFill(); NSRect(x: 0, y: 0, width: 1200, height: 810).fill()
             let poses: [HachiwarePose] = [.front, .side, .frontDiagonal, .back, .backDiagonal]
             for (row, item) in CompanionItem.allCases.enumerated() {
                 for (column, pose) in poses.enumerated() {
-                    let x = CGFloat(column) * 220 + 95, y = CGFloat(3 - row) * 270 + 30
+                    let x = CGFloat(column) * 220 + 95, y = CGFloat(2 - row) * 270 + 30
                     FriendArtwork.draw(.hachiware, in: NSRect(x: x, y: y, width: 210, height: 215), time: 0.8,
                         walking: true, facing: -1, walkPhase: 1, pose: pose, equipped: item)
                     if column == 0 { caption(item.name, x: 0, y: y + 105, width: 105) }
                 }
             }
         }
-        let url = directory.appendingPathComponent("hachiware-items-v7.gif")
+        let url = directory.appendingPathComponent("hachiware-items-v11.gif")
         guard let destination = CGImageDestinationCreateWithURL(url as CFURL, UTType.gif.identifier as CFString, 72, nil) else { return }
         CGImageDestinationSetProperties(destination, [kCGImagePropertyGIFDictionary: [kCGImagePropertyGIFLoopCount: 0]] as CFDictionary)
         for index in 0..<72 {
-            let bitmap = NSBitmapImageRep(bitmapDataPlanes: nil, pixelsWide: 960, pixelsHigh: 340,
+            let bitmap = NSBitmapImageRep(bitmapDataPlanes: nil, pixelsWide: 720, pixelsHigh: 340,
                 bitsPerSample: 8, samplesPerPixel: 4, hasAlpha: true, isPlanar: false,
-                colorSpaceName: .deviceRGB, bytesPerRow: 3840, bitsPerPixel: 32)!
+                colorSpaceName: .deviceRGB, bytesPerRow: 2880, bitsPerPixel: 32)!
             let context = NSGraphicsContext(bitmapImageRep: bitmap)!
             NSGraphicsContext.saveGraphicsState(); NSGraphicsContext.current = context
-            NSColor(hex: 0xF7F4EB).setFill(); NSRect(x: 0, y: 0, width: 960, height: 340).fill()
+            NSColor(hex: 0xF7F4EB).setFill(); NSRect(x: 0, y: 0, width: 720, height: 340).fill()
             let time = Double(index) / 10
             for (slot, item) in CompanionItem.allCases.enumerated() {
                 let x = CGFloat(slot) * 240

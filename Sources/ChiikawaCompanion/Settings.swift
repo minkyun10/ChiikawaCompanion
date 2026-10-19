@@ -109,7 +109,7 @@ struct SettingsView: View {
                 Divider().opacity(0.5)
                 HStack(spacing: 10) {
                     VStack(alignment: .leading, spacing: 4) {
-                        Text(state.equippedItem.map { "지금은 \($0.name)\($0 == .bag ? "과" : "와") 함께" } ?? "지금은 빈손으로 산책 중")
+                        Text(state.equippedItem.map { "지금은 \($0.name)와 함께" } ?? "지금은 빈손으로 산책 중")
                             .font(.system(size: 11, weight: .semibold))
                         Text(state.itemStatus).font(.system(size: 10)).foregroundStyle(mutedInk)
                     }
@@ -124,6 +124,32 @@ struct SettingsView: View {
                         .disabled(state.equippedItem == nil)
                 }
                 Text("소품을 클릭하면 주우러 와요. 드래그로 소품 위치를 바꿀 수도 있어요.\n카메라를 들면 찰칵, 기타를 들면 잠깐 연주해요. 다른 소품을 주우면 이전 소품은 내려놓아요.")
+                    .font(.system(size: 10)).lineSpacing(3).foregroundStyle(mutedInk)
+                    .fixedSize(horizontal: false, vertical: true)
+            }.padding(20).background(.white.opacity(0.9), in: RoundedRectangle(cornerRadius: 20))
+
+            VStack(alignment: .leading, spacing: 13) {
+                HStack {
+                    Label("하치와레의 동굴 집", systemImage: "house.fill")
+                        .font(.system(size: 16, weight: .semibold))
+                    Spacer()
+                    Toggle("집 표시", isOn: $state.homeEnabled)
+                        .toggleStyle(.switch).controlSize(.small).font(.system(size: 11))
+                }
+                Text("화면 중앙 하단, Dock 위에 있어요. 일반 앱 창 뒤에 표시돼요.")
+                    .font(.system(size: 11)).foregroundStyle(mutedInk)
+                HStack {
+                    VStack(alignment: .leading, spacing: 5) {
+                        Text(state.homeStatus).font(.system(size: 11, weight: .semibold))
+                        Toggle("가끔 집에서 쉬기", isOn: $state.automaticRest)
+                            .toggleStyle(.switch).controlSize(.small).font(.system(size: 11))
+                    }
+                    Spacer()
+                    Button("집에 가서 자기") { state.onGoHome?() }
+                        .disabled(!state.homeEnabled || state.resting)
+                    Button("깨우기") { state.onWake?() }.disabled(!state.resting)
+                }
+                Text("집을 클릭하거나 하치와레를 입구에 데려다 놓으면 이불을 덮고 자요.\n잠든 집을 클릭하면 깨워요. 20초 쉬면 스스로 일어나고, 알림이 와도 일어나요.")
                     .font(.system(size: 10)).lineSpacing(3).foregroundStyle(mutedInk)
                     .fixedSize(horizontal: false, vertical: true)
             }.padding(20).background(.white.opacity(0.9), in: RoundedRectangle(cornerRadius: 20))

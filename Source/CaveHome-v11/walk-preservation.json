@@ -1,0 +1,32 @@
+[
+  {
+    "path": "Sources/ChiikawaCompanion/Resources/hachiware-cardinal-walk-12-v3.png",
+    "sha256": "cd41bf4f46e29a15d6412016afccd8475c9d279c4b8993b22c3ec40b208faf19",
+    "matches_previous_commit": true
+  },
+  {
+    "path": "Sources/ChiikawaCompanion/Resources/hachiware-cardinal-walk-approved-v5.png",
+    "sha256": "c3b03bfe42f0501dcfaac2f442fe4d59242fd242a8f502737fb513ea21c0715c",
+    "matches_previous_commit": true
+  },
+  {
+    "path": "Sources/ChiikawaCompanion/Resources/hachiware-diagonal-matched-walk-v5.png",
+    "sha256": "a5130282ebbaf905423aab8843c7e22f52e514b429f0438dd830c493c18eac40",
+    "matches_previous_commit": true
+  },
+  {
+    "path": "Sources/ChiikawaCompanion/Resources/hachiware-diagonal-walk-12-v2.png",
+    "sha256": "1a24baf6cb5373c02cdb54e508fa608f7d0f4ac051e4a6bfbab164ca7dc9e94d",
+    "matches_previous_commit": true
+  },
+  {
+    "path": "Sources/ChiikawaCompanion/Resources/hachiware-side-walk-24-v9.png",
+    "sha256": "d0ff9c9aa6de3617c27d1421e051295c427136005c4ba651502ab8828c71dc19",
+    "matches_previous_commit": true
+  },
+  {
+    "path": "Sources/ChiikawaCompanion/Resources/hachiware-walk-bodies-v1.png",
+    "sha256": "a8d2d88fda86ce32314d2b664cd1efa856975483ec02ada07a83fbba0de7db75",
+    "matches_previous_commit": true
+  }
+]

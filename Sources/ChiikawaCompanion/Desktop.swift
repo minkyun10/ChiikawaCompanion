@@ -30,6 +30,7 @@ final class DesktopFriendView: NSView {
     var equipped: CompanionItem?
     var isDragging = false
     var onClick: (() -> Void)?
+    var onDragStart: (() -> Void)?
     var onDragEnd: (() -> Void)?
     private var downPoint: NSPoint = .zero
     private var downOrigin: NSPoint = .zero
@@ -51,6 +52,7 @@ final class DesktopFriendView: NSView {
                            action: action, equipped: equipped)
     }
     override func mouseDown(with event: NSEvent) {
+        onDragStart?()
         isDragging = true; moved = false
         downPoint = NSEvent.mouseLocation
         downOrigin = window?.frame.origin ?? .zero
@@ -171,6 +173,8 @@ final class DesktopController {
     var itemWorld = ItemWorld()
     var desktopItems: [CompanionItem: DesktopItem] = [:]
     var itemTarget: CompanionItem?
+    let home = DesktopHome()
+    var homeRoutine = HomeRoutine()
 
     init(state: AppState, startTimer: Bool = true) {
         self.state = state
@@ -182,11 +186,24 @@ final class DesktopController {
             actor.view.onClick = { [weak actor] in
                 actor?.say(actor?.friend.greeting ?? "안녕!", now: Date())
             }
+            actor.view.onDragStart = { [weak self] in
+                guard let self, self.homeRoutine.phase == .returning else { return }
+                self.wakeFromHome()
+            }
             actor.view.onDragEnd = { [weak self, weak actor] in
                 actor?.motion.retarget()
                 // Ground props own screen coordinates. Moving the character only
                 // invalidates its route; it must never reposition those props.
                 self?.itemTarget = nil
+                if let self, let actor, self.state.homeEnabled {
+                    let contact = ItemWorld.contactPoint(origin: actor.panel.frame.origin)
+                    if hypot(contact.x - self.home.entrance.x, contact.y - self.home.entrance.y) <= 24 {
+                        // A deliberate drop at the doorway overrides the automatic-entry cooldown.
+                        let now = Date()
+                        self.homeRoutine.request(now: now)
+                        _ = self.enterHomeIfReached(actor, now: now)
+                    }
+                }
             }
         }
         for item in CompanionItem.allCases {
@@ -199,6 +216,12 @@ final class DesktopController {
             }
             desktopItems[item] = desktopItem
         }
+        home.view.onActivate = { [weak self] in
+            guard let self else { return }
+            if self.homeRoutine.isInside { self.wakeFromHome() } else { self.goHome() }
+        }
+        state.onGoHome = { [weak self] in self?.goHome() }
+        state.onWake = { [weak self] in self?.wakeFromHome() }
         state.onScatterItems = { [weak self] in self?.scatterItems() }
         state.onSeekItem = { [weak self] item in self?.seekItem(item) }
         state.onDropItem = { [weak self] in self?.dropItem() }
@@ -218,6 +241,7 @@ final class DesktopController {
         if let screenObserver { NotificationCenter.default.removeObserver(screenObserver) }
     }
     func resetPositions() {
+        if homeRoutine.phase != .outside { wakeFromHome() }
         guard let screen = NSScreen.main ?? NSScreen.screens.first else { return }
         let visible = screen.visibleFrame
         for (index, actor) in actors.enumerated() {
@@ -232,6 +256,7 @@ final class DesktopController {
     }
     private func screenLayoutChanged() {
         resetPositions()
+        home.anchorToScreen()
         // Repair coordinates only when the display layout actually changes.
         // Props already on another connected screen stay on that screen.
         for (item, point) in itemWorld.ground {
@@ -241,6 +266,7 @@ final class DesktopController {
     }
     func seekItem(_ item: CompanionItem) {
         guard itemWorld.ground[item] != nil else { return }
+        if homeRoutine.phase != .outside { wakeFromHome() }
         state.roaming = true; state.showFriends = true
         itemWorld.requested = item; itemTarget = nil
         actors.first?.performance.cancel(now: Date())
@@ -262,6 +288,52 @@ final class DesktopController {
         publishEquipment()
         state.itemStatus = "소품을 내려놓았어요"
     }
+    func goHome(now: Date = Date()) {
+        guard !homeRoutine.isInside else { return }
+        state.homeEnabled = true; state.showFriends = true; state.roaming = true
+        requestHome(now: now)
+    }
+    private func requestHome(now: Date) {
+        homeRoutine.request(now: now)
+        actors.first?.motion.retarget(); actors.first?.performance.cancel(now: now)
+        itemWorld.requested = nil; itemTarget = nil
+        publishHome()
+    }
+    func wakeFromHome(now: Date = Date()) {
+        let wasInside = homeRoutine.isInside
+        homeRoutine.wake(now: now)
+        if let actor = actors.first {
+            if wasInside {
+                let visible = home.panel.screen?.visibleFrame ?? NSScreen.main?.visibleFrame ?? home.panel.frame
+                actor.panel.setFrameOrigin(DesktopGeometry.clamp(ItemWorld.destination(for: home.entrance),
+                    size: actor.panel.frame.size, to: visible))
+            }
+            actor.motion.retarget(); actor.performance.cancel(now: now)
+            // Step away before considering the doorway again. Waking never scatters props.
+            if state.roaming && wasInside {
+                actor.motion.destination = NSPoint(x: actor.panel.frame.minX - 180, y: actor.panel.frame.minY + 55)
+            }
+        }
+        itemTarget = nil; publishHome()
+    }
+    private func publishHome() {
+        if state.homeStatus != homeRoutine.status { state.homeStatus = homeRoutine.status }
+        if state.resting != homeRoutine.isInside { state.resting = homeRoutine.isInside }
+    }
+    @discardableResult
+    func enterHomeIfReached(_ actor: FriendActor, now: Date) -> Bool {
+        guard state.homeEnabled, !actor.view.isDragging, now >= actor.bubbleUntil,
+              homeRoutine.arrive(contact: ItemWorld.contactPoint(origin: actor.panel.frame.origin),
+                                 entrance: home.entrance, now: now) else { return false }
+        // Only the carried item moves: the other desktop props retain their world coordinates.
+        let visible = home.panel.screen?.visibleFrame ?? NSScreen.main?.visibleFrame ?? home.panel.frame
+        itemWorld.drop(at: NSPoint(x: home.panel.frame.maxX + 24, y: home.entrance.y), bounds: visible, now: now)
+        itemWorld.requested = nil; itemTarget = nil
+        actor.motion.retarget(); actor.performance.cancel(now: now); actor.dismissBubble()
+        actor.panel.orderOut(nil)
+        publishEquipment(); publishHome()
+        return true
+    }
     private func publishEquipment() {
         if state.equippedItem != itemWorld.equipped { state.equippedItem = itemWorld.equipped }
     }
@@ -275,12 +347,26 @@ final class DesktopController {
             if previous != itemWorld.equipped { actors.first?.performance.cancel(now: now) }
             publishEquipment()
         }
+        let homeVisible = state.homeEnabled && state.showFriends
+            && (state.activeAssignments.first { $0.friend == .hachiware }?.enabled ?? false)
+        if !homeVisible && homeRoutine.phase != .outside { wakeFromHome(now: now) }
+        homeRoutine.advance(now: now)
+        if homeRoutine.shouldWake(now: now) { wakeFromHome(now: now) }
         for actor in actors {
             let enabled = state.showFriends && (state.assignments.first { $0.friend == actor.friend }?.enabled ?? false)
             guard enabled else {
                 actor.panel.orderOut(nil); actor.dismissBubble()
                 actor.performance.cancel(now: now)
                 for item in desktopItems.values { item.update(position: nil, visible: false, mouse: mouse) }
+                continue
+            }
+            if homeRoutine.isInside && now < actor.bubbleUntil { wakeFromHome(now: now) }
+            if !homeRoutine.isInside { _ = enterHomeIfReached(actor, now: now) }
+            if homeRoutine.isInside {
+                actor.panel.orderOut(nil); actor.motion.stop()
+                for (item, desktopItem) in desktopItems {
+                    desktopItem.update(position: itemWorld.ground[item], visible: enabled, mouse: mouse)
+                }
                 continue
             }
             if !actor.panel.isVisible { actor.panel.orderFrontRegardless() }
@@ -290,10 +376,14 @@ final class DesktopController {
             let activity = DesktopActivity.resolve(roaming: state.roaming, hovered: hovered,
                                                    dragging: actor.view.isDragging,
                                                    notificationUntil: actor.bubbleUntil, now: now)
+            if homeVisible && activity == .walking && itemWorld.requested == nil
+                && homeRoutine.shouldReturn(now: now, automatic: state.automaticRest, roaming: state.roaming) {
+                requestHome(now: now)
+            }
             if hovered && !actor.wasHovered { actor.hoverStarted = now }
             actor.wasHovered = hovered
-            if activity != .walking || !state.expressive { actor.performance.cancel(now: now) }
-            if activity == .walking, state.expressive, let item = itemWorld.equipped,
+            if activity != .walking || !state.expressive || homeRoutine.phase == .returning { actor.performance.cancel(now: now) }
+            if activity == .walking, homeRoutine.phase != .returning, state.expressive, let item = itemWorld.equipped,
                now >= actor.performance.nextPerformance {
                 actor.performance.begin(item, now: now, pickingUp: false)
             }
@@ -301,9 +391,12 @@ final class DesktopController {
             if activity == .walking && action == nil, let screen = actor.panel.screen ?? NSScreen.main {
                 let frame = actor.panel.frame
                 let draggedItems = Set(desktopItems.filter { $0.value.view.isDragging }.map(\.key))
-                let targetItem = itemWorld.target(from: frame.origin, automatic: state.automaticItems,
+                let targetItem = homeRoutine.phase == .returning ? nil : itemWorld.target(from: frame.origin, automatic: state.automaticItems,
                                                  now: now, excluding: draggedItems)
                 if itemTarget != targetItem { actor.motion.retarget(); itemTarget = targetItem }
+                if homeRoutine.phase == .returning {
+                    actor.motion.destination = ItemWorld.destination(for: home.entrance)
+                }
                 if let targetItem, let point = itemWorld.ground[targetItem] {
                     actor.motion.destination = ItemWorld.destination(for: point)
                     if itemWorld.pickUp(targetItem, from: frame.origin, bounds: screen.visibleFrame, now: now) {
@@ -312,7 +405,7 @@ final class DesktopController {
                             actor.performance.begin(targetItem, now: now, pickingUp: true)
                             action = actor.performance.action(now: now)
                         }
-                        state.itemStatus = "\(targetItem.name)\(targetItem == .bag ? "을" : "를") 주웠어요"
+                        state.itemStatus = "\(targetItem.name)를 주웠어요"
                         publishEquipment()
                     }
                 }
@@ -328,12 +421,15 @@ final class DesktopController {
                     actor.motion.destination = target
                 }
                 if action == nil {
-                    let position = actor.motion.advance(from: frame.origin, dt: dt, bounds: screen.visibleFrame, size: frame.size)
+                    let travelBounds = homeRoutine.phase == .returning
+                        ? screen.visibleFrame.union(home.panel.screen?.visibleFrame ?? screen.visibleFrame) : screen.visibleFrame
+                    let position = actor.motion.advance(from: frame.origin, dt: dt, bounds: travelBounds, size: frame.size)
                     actor.panel.setFrameOrigin(position)
                 }
                 // AppKit can round or constrain the requested position. Animate only the
                 // displacement actually shown on screen, including its diagonal component.
                 actor.gait.recordMovement(from: frame.origin, to: actor.panel.frame.origin)
+                _ = enterHomeIfReached(actor, now: now)
             } else { actor.motion.stop() }
             actor.view.time = time + actor.phase
             actor.view.walking = actor.motion.isWalking
@@ -356,10 +452,17 @@ final class DesktopController {
                 desktopItem.update(position: itemWorld.ground[item], visible: enabled, mouse: mouse)
             }
         }
+        publishHome()
+        let homeWasVisible = home.panel.isVisible
+        home.update(visible: homeVisible, mouse: mouse, routine: homeRoutine, now: now, time: time)
+        if !homeWasVisible && homeVisible && !homeRoutine.isInside {
+            actors.filter { $0.panel.isVisible }.forEach { $0.panel.order(.above, relativeTo: home.panel.windowNumber) }
+        }
     }
     func notify(_ friend: Friend, sender: String, body: String? = nil, demo: Bool = false) {
         guard let actor = actors.first(where: { $0.friend == friend }) else { return }
         guard state.showFriends, state.activeAssignments.contains(where: { $0.friend == friend && $0.enabled }) else { return }
+        if homeRoutine.phase != .outside { wakeFromHome() }
         let alert = KakaoAlertPresentation(sender: sender, body: body, demo: demo)
         let duration = min(12, max(6, Double(alert.message.count) / 25))
         actor.say(alert.message, now: Date(), duration: duration, heading: alert.title)

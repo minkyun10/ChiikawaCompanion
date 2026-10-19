@@ -77,6 +77,12 @@ final class AppState: ObservableObject {
     @Published var expressive: Bool { didSet { defaults.set(expressive, forKey: "expressive") } }
     @Published var equippedItem: CompanionItem?
     @Published var itemStatus = "바탕화면에서 소품을 찾아요"
+    @Published var homeEnabled: Bool { didSet { defaults.set(homeEnabled, forKey: "homeEnabled") } }
+    @Published var automaticRest: Bool { didSet { defaults.set(automaticRest, forKey: "automaticRest") } }
+    @Published var homeStatus = "집을 클릭하면 쉬러 가요"
+    @Published var resting = false
+    var onGoHome: (() -> Void)?
+    var onWake: (() -> Void)?
     var onScatterItems: (() -> Void)?
     var onSeekItem: ((CompanionItem) -> Void)?
     var onDropItem: (() -> Void)?
@@ -93,8 +99,13 @@ final class AppState: ObservableObject {
 
     init(defaults: UserDefaults = .standard) {
         self.defaults = defaults
-        enabledItems = Set((defaults.stringArray(forKey: "enabledItems") ?? CompanionItem.allCases.map(\.rawValue))
+        let restoredItems = Set((defaults.stringArray(forKey: "enabledItems") ?? CompanionItem.allCases.map(\.rawValue))
             .compactMap(CompanionItem.init(rawValue:)))
+        enabledItems = restoredItems
+        // Removed props cannot survive in older saved preferences.
+        defaults.set(restoredItems.map(\.rawValue).sorted(), forKey: "enabledItems")
+        homeEnabled = defaults.object(forKey: "homeEnabled") as? Bool ?? true
+        automaticRest = defaults.object(forKey: "automaticRest") as? Bool ?? true
         automaticItems = defaults.object(forKey: "automaticItems") as? Bool ?? true
         expressive = defaults.object(forKey: "expressive") as? Bool ?? true
         if let data = defaults.data(forKey: "assignments"),

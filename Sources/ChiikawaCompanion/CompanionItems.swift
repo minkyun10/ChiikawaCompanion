@@ -1,14 +1,13 @@
 import AppKit
 
 enum CompanionItem: String, CaseIterable, Codable, Identifiable {
-    case camera, guitar, sasumata, bag
+    case camera, guitar, sasumata
     var id: String { rawValue }
     var name: String {
         switch self {
         case .camera: return "카메라"
         case .guitar: return "기타"
         case .sasumata: return "파란 사스마타"
-        case .bag: return "산책 가방"
         }
     }
     var symbol: String {
@@ -16,7 +15,6 @@ enum CompanionItem: String, CaseIterable, Codable, Identifiable {
         case .camera: return "camera"
         case .guitar: return "guitars"
         case .sasumata: return "sparkles"
-        case .bag: return "bag"
         }
     }
     var detail: String {
@@ -24,7 +22,6 @@ enum CompanionItem: String, CaseIterable, Codable, Identifiable {
         case .camera: return "목에 걸고, 찰칵!"
         case .guitar: return "산책하다 잠깐 연주해요"
         case .sasumata: return "토벌 도구를 들고 씩씩하게"
-        case .bag: return "팬메이드 산책 소품"
         }
     }
     var action: HachiwareAction {
@@ -32,7 +29,6 @@ enum CompanionItem: String, CaseIterable, Codable, Identifiable {
         case .camera: return .camera
         case .guitar: return .guitar
         case .sasumata: return .sasumata
-        case .bag: return .bag
         }
     }
 }
@@ -69,7 +65,7 @@ struct ItemWorld {
         for item in added { ground[item] = spawn(item, bounds: bounds) }
     }
     private func spawn(_ item: CompanionItem, bounds: NSRect) -> NSPoint {
-        let fractions: [(CGFloat, CGFloat)] = [(0.30, 0.30), (0.74, 0.60), (0.42, 0.82), (0.82, 0.20)]
+        let fractions: [(CGFloat, CGFloat)] = [(0.30, 0.30), (0.74, 0.60), (0.42, 0.82)]
         let f = fractions[CompanionItem.allCases.firstIndex(of: item)!]
         return Self.contactPoint(origin: RoamingMotion.target(in: bounds,
             size: NSSize(width: 132, height: 150), xFraction: f.0, yFraction: f.1))
@@ -117,9 +113,9 @@ struct ItemWorld {
 }
 
 enum HachiwareAction: Int, CaseIterable {
-    case wave, laugh, surprised, pickup, camera, guitar, sasumata, bag
+    case wave, laugh, surprised, pickup, camera, guitar, sasumata
     var title: String {
-        ["안녕!", "헤헤", "와아!", "주워 볼까?", "찰칵!", "기타 연주", "씩씩하게", "산책 준비"][rawValue]
+        ["안녕!", "헤헤", "와아!", "주워 볼까?", "찰칵!", "기타 연주", "씩씩하게"][rawValue]
     }
 }
 

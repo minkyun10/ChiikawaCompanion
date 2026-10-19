@@ -1,0 +1,35 @@
+{
+  "verified": "2026-10-19",
+  "app_version": "0.8.0",
+  "build": "15",
+  "generation_mode": "built-in image_gen",
+  "transparent_original_assets": [
+    "Final/hachiware-cave-v11.png",
+    "Final/hachiware-sleep-v11.png"
+  ],
+  "prompts": [
+    "Prompts/cave.txt",
+    "Prompts/sleep.txt"
+  ],
+  "cli_checks_passed": 131,
+  "packaged_checks_passed": 133,
+  "strict_code_signature_verified": true,
+  "ui_checks": {
+    "bag_option_removed": true,
+    "home_control_requests_walking": true,
+    "sleeping_sprite_seen_in_running_mac_app": "Review/mac-home-sleep.png",
+    "house_click_wakes_and_clears_sleeping_sprite": "Review/mac-home-after-wake.png",
+    "wake_control_disabled_after_wake": true,
+    "camera_guitar_sasumata_toggles_restored_to_on": true,
+    "sender_field_unchanged": true,
+    "monitoring_preserved_off": true,
+    "voice_preserved_on": true,
+    "settings_closed_app_left_running": true
+  },
+  "desktop_layer": "above desktop icons; below normal app windows",
+  "home_placement": "retained display usable-area center, 12pt above Dock-safe bottom edge",
+  "coordinates": "home, character and props independent; only equipped prop drops by house on entry",
+  "original_walking_resources_unchanged": true,
+  "live_kakao_delivery_tested": false,
+  "archive_policy": "Preserve all generated originals, reference images, previews and older versions, including historical bag art."
+}

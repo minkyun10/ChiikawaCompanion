@@ -1,0 +1,124 @@
+{
+  "files": [
+    {
+      "path": "Final/hachiware-cave-v11.png",
+      "bytes": 1427076,
+      "sha256": "5c7624f8e3e53f8146bafed8387c64e9fc68a4411fed591cc2a66e7466162be2"
+    },
+    {
+      "path": "Final/hachiware-sleep-v11.png",
+      "bytes": 967407,
+      "sha256": "7705245172e3501d419c5b2cc144ef8e9dab9b7c938cc50c7bf0d80c5abb38ee"
+    },
+    {
+      "path": "Prompts/cave.txt",
+      "bytes": 1099,
+      "sha256": "26aa29707595d8356a395bcb348c135d887aff1f1cef445a7493c82a02706c14"
+    },
+    {
+      "path": "Prompts/sleep.txt",
+      "bytes": 1099,
+      "sha256": "f0f2e4818e361038740c9fb70caed0c1baeddc4369b17b1030bc146ab4a15f1d"
+    },
+    {
+      "path": "README.txt",
+      "bytes": 2652,
+      "sha256": "5277496c8d658d7ba1c6b003122e408b85e09a6c26bb99b727a30be399934e69"
+    },
+    {
+      "path": "References/cave-reference.png",
+      "bytes": 310488,
+      "sha256": "8ab36b72966c15d41ec39b30e22f3275452d131ab03872674d632f659fbf5baf"
+    },
+    {
+      "path": "References/sleep-reference.jpeg",
+      "bytes": 132272,
+      "sha256": "61ecc4b1a67b8b9993105ed9e780b5da5502bccea41e0422867d7d19f287f010"
+    },
+    {
+      "path": "Review/friends.png",
+      "bytes": 130750,
+      "sha256": "d358479d8d5e811e4d92ef921ce2437356ec9be1da5bff246e27a1d55b67c63e"
+    },
+    {
+      "path": "Review/hachiware-cave-home-v11.png",
+      "bytes": 373145,
+      "sha256": "c07da50b1919b1012dc1bed35d68833c02da01bf5791b436de85f33de8da54c6"
+    },
+    {
+      "path": "Review/hachiware-eight-directions-v10.gif",
+      "bytes": 614791,
+      "sha256": "446cfa6a735593444ef19351b880df4257be546983e2c87c91904c727f8789df"
+    },
+    {
+      "path": "Review/hachiware-equipped-directions-v11.png",
+      "bytes": 586614,
+      "sha256": "3fa9a12cb7cf2def31651a07774f037b35761463cd9da8c1a9405857dea0a649"
+    },
+    {
+      "path": "Review/hachiware-expressions-v11.png",
+      "bytes": 451935,
+      "sha256": "71309900abc75f15becdc7f339510bd084b568505e5c5675df5b251e15d5b322"
+    },
+    {
+      "path": "Review/hachiware-home-sleep-v11.gif",
+      "bytes": 595803,
+      "sha256": "9d8d647db89bd8f2d0e25cca5aa4565fd02dfac634f562410c0aea88e8b86def"
+    },
+    {
+      "path": "Review/hachiware-items-v11.gif",
+      "bytes": 559654,
+      "sha256": "dfcd1ca4f793cf9e0215b8da9cccdb2ad0763157ac3b309cc8869b396e5e4d2c"
+    },
+    {
+      "path": "Review/hachiware-side-cycle.png",
+      "bytes": 816408,
+      "sha256": "ab40babb2b8de90c687efc960e24ddc7db2fcc1a6a34bfe4389050f78b85aef5"
+    },
+    {
+      "path": "Review/hachiware-sprite-preview.png",
+      "bytes": 267516,
+      "sha256": "377fd845c59c4139079dc1520a20276497781cf4425c0202b38137a8a4e67198"
+    },
+    {
+      "path": "Review/hachiware-walk.png",
+      "bytes": 136739,
+      "sha256": "54bfabb78c7f56e08fd0262c4e2fd12067405b766a5b4a474df8379234184c6f"
+    },
+    {
+      "path": "Review/icon.png",
+      "bytes": 257854,
+      "sha256": "fadb9924edc62d95697cdefc883dbb54e597c528d87278bf12af3ed433319587"
+    },
+    {
+      "path": "Review/mac-home-after-wake.png",
+      "bytes": 69923,
+      "sha256": "1a28b5d7efb9f051b07b3866a1ad09c94192d7fa0c235b4f6d500dfaeace52df"
+    },
+    {
+      "path": "Review/mac-home-sleep.png",
+      "bytes": 75083,
+      "sha256": "8dd3f271da2e77899a790122f578baf0e5ed5ae7c12f575370121093c75a9616"
+    },
+    {
+      "path": "self-test-cli.txt",
+      "bytes": 8335,
+      "sha256": "66ef083866764f162b8f6540be323573402c11b3a1c5833e8cd56590d4b74b2a"
+    },
+    {
+      "path": "self-test.txt",
+      "bytes": 8466,
+      "sha256": "47cdc82897202841f024cd7fe9bf1347cabb8ba4626f177d60ef1cc6f65e2a8b"
+    },
+    {
+      "path": "validation.json",
+      "bytes": 1399,
+      "sha256": "74330833b22e16d3de1ff7dac82e0b0fc1e43fd71b24c89322b9597307c53033"
+    },
+    {
+      "path": "walk-preservation.json",
+      "bytes": 1277,
+      "sha256": "56e3fe7f17c928467c8f80d916d3dc4feeeab3ece68bdbb4f8603e403842562a"
+    }
+  ]
+}

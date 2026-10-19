@@ -11,10 +11,10 @@ final class HachiwareActions {
               let data = try? Data(contentsOf: url), let rep = NSBitmapImageRep(data: data),
               let atlas = rep.cgImage else { return }
         var parts: [(CGImage, NSRect)] = []
-        for index in 0..<8 {
+        for index in 0..<HachiwareAction.allCases.count {
             let col = index % 4, row = index / 4
             // The sasumata extends into the nominal last gutter. Cut in the actual
-            // transparent gap so it is whole and never leaks into the bag sprite.
+            // transparent gap so it is whole and never leaks into the neighboring archived cell.
             let edges = row == 1 ? [0, 444, 887, 1362, atlas.width] : [0, 444, 887, 1331, atlas.width]
             let x = edges[col], y = row * atlas.height / 2
             let width = edges[col + 1] - x
@@ -77,7 +77,7 @@ final class HachiwareActions {
     }
 }
 
-/// Native accessories stay attached to the existing twelve-frame walk in every direction.
+/// Native accessories stay attached to the existing walking cycles in every direction.
 /// These are drawn in the same 256-point registration as the walking sprites.
 enum ItemArtwork {
     static let ink = NSColor(hex: 0x48332D)
@@ -134,11 +134,6 @@ enum ItemArtwork {
             fork.curve(to: NSPoint(x: 168, y: 227), controlPoint1: NSPoint(x: 71, y: 157), controlPoint2: NSPoint(x: 185, y: 157))
             fork.lineCapStyle = .round; fork.lineWidth = 23; ink.setStroke(); fork.stroke()
             fork.lineWidth = 13; blue.setStroke(); fork.stroke()
-        case .bag:
-            if strap { line([NSPoint(x: 65, y: 143), NSPoint(x: 66, y: 207), NSPoint(x: 191, y: 207), NSPoint(x: 191, y: 143)], width: 10) }
-            box(NSRect(x: 53, y: 55, width: 152, height: 115), radius: 28, fill: NSColor(hex: 0xDDA768))
-            box(NSRect(x: 58, y: 113, width: 143, height: 57), radius: 17, fill: NSColor(hex: 0xEDBF82))
-            box(NSRect(x: 115, y: 108, width: 26, height: 22), radius: 5, fill: NSColor(hex: 0x96714C))
         }
         cg.restoreGState()
     }
@@ -172,12 +167,9 @@ enum ItemArtwork {
                 draw(item, in: NSRect(x: side ? 32 : 51, y: 22, width: side ? 150 : 170, height: 135))
             case .sasumata:
                 draw(item, in: NSRect(x: 121, y: 17, width: 121, height: 215))
-            case .bag:
-                line([NSPoint(x: 73, y: 103), NSPoint(x: 182, y: 67)], width: 6)
-                draw(item, in: NSRect(x: 148, y: 28, width: 81, height: 86), strap: false)
             }
             // Small paws rest in front of the held object, instead of leaving it floating.
-            if item != .bag {
+            do {
                 oval(NSRect(x: item == .sasumata ? 159 : side ? 73 : 83, y: item == .sasumata ? 79 : 69,
                             width: 23, height: 18), fill: NSColor(hex: 0xFFFDFC), width: 3)
             }
