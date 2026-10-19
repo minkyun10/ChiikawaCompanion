@@ -1,0 +1,151 @@
+{
+  "action" : "eat",
+  "crown_top" : 20,
+  "frames" : 12,
+  "registered_hair_width" : 130,
+  "registrations" : [
+    {
+      "frame" : 1,
+      "hair_width_source" : 209,
+      "scale" : 0.62200956937799046,
+      "source_bounds" : [
+        46,
+        63,
+        288,
+        311
+      ]
+    },
+    {
+      "frame" : 2,
+      "hair_width_source" : 212,
+      "scale" : 0.6132075471698113,
+      "source_bounds" : [
+        41,
+        63,
+        290,
+        311
+      ]
+    },
+    {
+      "frame" : 3,
+      "hair_width_source" : 212,
+      "scale" : 0.6132075471698113,
+      "source_bounds" : [
+        39,
+        63,
+        290,
+        311
+      ]
+    },
+    {
+      "frame" : 4,
+      "hair_width_source" : 212,
+      "scale" : 0.6132075471698113,
+      "source_bounds" : [
+        35,
+        64,
+        289,
+        310
+      ]
+    },
+    {
+      "frame" : 5,
+      "hair_width_source" : 211,
+      "scale" : 0.61611374407582942,
+      "source_bounds" : [
+        46,
+        15,
+        290,
+        308
+      ]
+    },
+    {
+      "frame" : 6,
+      "hair_width_source" : 211,
+      "scale" : 0.61611374407582942,
+      "source_bounds" : [
+        40,
+        14,
+        292,
+        309
+      ]
+    },
+    {
+      "frame" : 7,
+      "hair_width_source" : 212,
+      "scale" : 0.6132075471698113,
+      "source_bounds" : [
+        13,
+        14,
+        331,
+        309
+      ]
+    },
+    {
+      "frame" : 8,
+      "hair_width_source" : 210,
+      "scale" : 0.61904761904761907,
+      "source_bounds" : [
+        36,
+        15,
+        290,
+        309
+      ]
+    },
+    {
+      "frame" : 9,
+      "hair_width_source" : 212,
+      "scale" : 0.6132075471698113,
+      "source_bounds" : [
+        46,
+        15,
+        288,
+        309
+      ]
+    },
+    {
+      "frame" : 10,
+      "hair_width_source" : 214,
+      "scale" : 0.60747663551401865,
+      "source_bounds" : [
+        41,
+        16,
+        288,
+        308
+      ]
+    },
+    {
+      "frame" : 11,
+      "hair_width_source" : 211,
+      "scale" : 0.61611374407582942,
+      "source_bounds" : [
+        39,
+        16,
+        287,
+        309
+      ]
+    },
+    {
+      "frame" : 12,
+      "hair_width_source" : 211,
+      "scale" : 0.61611374407582942,
+      "source_bounds" : [
+        35,
+        15,
+        290,
+        310
+      ]
+    }
+  ],
+  "runtime_cell" : 256,
+  "runtime_columns" : 6,
+  "runtime_rows" : 2,
+  "source_columns" : 4,
+  "source_row_edges" : [
+    0,
+    386,
+    723,
+    1086
+  ],
+  "source_rows" : 3
+}

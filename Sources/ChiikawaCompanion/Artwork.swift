@@ -8,10 +8,10 @@ enum FriendArtwork {
     static func draw(_ friend: Friend, in rect: NSRect, time: Double = 0,
                      happy: Bool = false, walking: Bool = false, looking: CGFloat = 0,
                      facing: CGFloat = 1, walkPhase: Double? = nil, pose: HachiwarePose = .front,
-                     action: HachiwareAction? = nil, equipped: CompanionItem? = nil) {
+                     action: HachiwareAction? = nil, equipped: CompanionItem? = nil, actionTime: Double? = nil) {
         if friend == .hachiware {
-            if let action, HachiwareActions.shared.draw(action, in: rect, time: time) {
-                if let equipped, action != equipped.action && action != .pickup {
+            if let action, HachiwareActions.shared.draw(action, in: rect, time: actionTime ?? time) {
+                if let equipped, !action.isDaily && action != equipped.action && action != .pickup {
                     ItemArtwork.drawEquipped(equipped, in: rect, pose: .front, facing: -1, time: time, behind: false)
                 }
                 return

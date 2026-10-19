@@ -128,6 +128,7 @@ struct SettingsView: View {
                     .fixedSize(horizontal: false, vertical: true)
             }.padding(20).background(.white.opacity(0.9), in: RoundedRectangle(cornerRadius: 20))
 
+            dailyActionCard
             voiceCard
 
             VStack(alignment: .leading, spacing: 13) {
@@ -206,6 +207,32 @@ struct SettingsView: View {
         .frame(width: 710, height: min(900, max(550, (NSScreen.main?.visibleFrame.height ?? 850) - 90)))
         .foregroundStyle(warmInk).background(cream).tint(Color(nsColor: NSColor(hex: 0xA79B73)))
         .onReceive(refresh) { _ in permission = KakaoNotificationMonitor.hasPermission }
+    }
+
+    private var dailyActionCard: some View {
+        VStack(alignment: .leading, spacing: 13) {
+            HStack {
+                Label("하치와레의 하루", systemImage: "sun.max")
+                    .font(.system(size: 16, weight: .semibold))
+                Spacer()
+                Button("동작 멈추기") { state.onStopDailyAction?() }
+                    .font(.system(size: 11)).disabled(!state.dailyActionRunning)
+            }
+            HStack(spacing: 10) {
+                ForEach(HachiwareAction.daily, id: \.rawValue) { action in
+                    Button { state.onDailyAction?(action) } label: {
+                        Label(action.title, systemImage: action == .study ? "pencil.and.outline" : action == .eat ? "fork.knife" : "drop")
+                            .font(.system(size: 12, weight: .medium))
+                            .frame(maxWidth: .infinity).padding(.vertical, 12)
+                            .background(blue.opacity(0.15), in: RoundedRectangle(cornerRadius: 11))
+                    }.buttonStyle(.plain).accessibilityLabel("하치와레 \(action.title)")
+                }
+            }
+            Text(state.dailyActionStatus).font(.system(size: 10)).foregroundStyle(mutedInk)
+            Text("혀를 빼꼼 내밀고 공부하고, 젓가락으로 밥을 먹어요. 토하기는 직접 고를 때만 나와요.\n캐릭터를 우클릭해도 고를 수 있어요. 동작 중에도 클릭하거나 드래그해 바로 멈출 수 있어요.")
+                .font(.system(size: 10)).foregroundStyle(mutedInk).lineSpacing(3)
+                .fixedSize(horizontal: false, vertical: true)
+        }.padding(20).background(.white.opacity(0.9), in: RoundedRectangle(cornerRadius: 20))
     }
 
     private var voiceCard: some View {

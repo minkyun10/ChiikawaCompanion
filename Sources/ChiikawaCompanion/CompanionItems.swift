@@ -114,9 +114,31 @@ struct ItemWorld {
 
 enum HachiwareAction: Int, CaseIterable {
     case wave, laugh, surprised, pickup, camera, guitar, sasumata
+    case study, eat, vomit
+    static let legacy = Array(allCases.prefix(7))
+    static let daily: [HachiwareAction] = [.study, .eat, .vomit]
+    var isDaily: Bool { Self.daily.contains(self) }
     var title: String {
-        ["안녕!", "헤헤", "와아!", "주워 볼까?", "찰칵!", "기타 연주", "씩씩하게"][rawValue]
+        ["안녕!", "헤헤", "와아!", "주워 볼까?", "찰칵!", "기타 연주", "씩씩하게", "공부하기", "밥 먹기", "토하기"][rawValue]
     }
+    var cycleDuration: TimeInterval { self == .study ? 1.8 : self == .eat ? 2 : 2.4 }
+    var duration: TimeInterval { cycleDuration * (self == .study ? 5 : self == .eat ? 3 : 1) }
+}
+
+/// Explicitly selected actions keep their own clock and never move desktop props.
+struct DailyActionPerformance {
+    private(set) var selected: HachiwareAction?
+    private(set) var started = Date.distantPast
+    mutating func begin(_ action: HachiwareAction, now: Date) {
+        guard action.isDaily else { return }
+        selected = action; started = now
+    }
+    mutating func cancel() { selected = nil }
+    func action(now: Date) -> HachiwareAction? {
+        guard let selected, now >= started, now.timeIntervalSince(started) < selected.duration else { return nil }
+        return selected
+    }
+    func elapsed(now: Date) -> TimeInterval { max(0, now.timeIntervalSince(started)) }
 }
 
 /// Item actions are interruptible. A hover never leaves a timed reaction behind.

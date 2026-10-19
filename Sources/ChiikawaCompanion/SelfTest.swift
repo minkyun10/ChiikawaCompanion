@@ -275,6 +275,7 @@ enum SelfTest {
               && testDefaults.stringArray(forKey: "enabledItems") == ["camera", "guitar"],
               "legacy bag preference is removed without changing the other prop choices")
         runVoiceChecks(defaults: testDefaults) { check($0, $1) }
+        runDailyActionChecks(defaults: testDefaults) { check($0, $1) }
         runHomeTests(desktop: desktop, now: now) { check($0, $1) }
         var performance = CompanionPerformance()
         performance.begin(.camera, now: now, pickingUp: true)
@@ -286,7 +287,7 @@ enum SelfTest {
         performance.begin(.guitar, now: now, pickingUp: false)
         check(performance.action(now: now.addingTimeInterval(2.5)) == nil,
               "short equipment actions finish so the character keeps walking")
-        check(HachiwareActions.shared.isReady, "all seven reference-based expressions and gestures load without the bag")
+        check(HachiwareActions.shared.isReady, "seven reference gestures and three daily animations load without the bag")
         check(HachiwareActions.shared.frames.allSatisfy {
             guard let data = $0.tiffRepresentation, let bitmap = NSBitmapImageRep(data: data) else { return false }
             return (bitmap.colorAt(x: 0, y: 0)?.alphaComponent ?? 1) < 0.02
@@ -491,6 +492,7 @@ enum SelfTest {
         }
         print("Artwork rendered.")
         renderItems(to: directory)
+        renderDailyActions(to: directory)
         renderHome(to: directory)
     }
 
@@ -503,7 +505,7 @@ enum SelfTest {
         }
         png(width: 1200, height: 650, to: directory.appendingPathComponent("hachiware-expressions-v11.png")) {
             NSColor(hex: 0xF7F4EB).setFill(); NSRect(x: 0, y: 0, width: 1200, height: 650).fill()
-            for action in HachiwareAction.allCases {
+            for action in HachiwareAction.legacy {
                 let x = CGFloat(action.rawValue % 4) * 300, y: CGFloat = action.rawValue < 4 ? 330 : 10
                 HachiwareActions.shared.draw(action, in: NSRect(x: x + 22, y: y + 30, width: 256, height: 256), time: 0.7)
                 caption(action.title, x: x, y: y + 3, width: 300)

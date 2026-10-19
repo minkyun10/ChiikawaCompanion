@@ -4,14 +4,14 @@ final class HachiwareActions {
     static let shared = HachiwareActions()
     static let assetName = "hachiware-actions-v7"
     private(set) var frames: [NSImage] = []
-    var isReady: Bool { frames.count == HachiwareAction.allCases.count }
+    var isReady: Bool { frames.count == HachiwareAction.legacy.count && DailyActionSprites.shared.isReady }
 
     private init() {
         guard let url = HachiwareSprites.assetURL(named: Self.assetName),
               let data = try? Data(contentsOf: url), let rep = NSBitmapImageRep(data: data),
               let atlas = rep.cgImage else { return }
         var parts: [(CGImage, NSRect)] = []
-        for index in 0..<HachiwareAction.allCases.count {
+        for index in 0..<HachiwareAction.legacy.count {
             let col = index % 4, row = index / 4
             // The sasumata extends into the nominal last gutter. Cut in the actual
             // transparent gap so it is whole and never leaks into the neighboring archived cell.
@@ -50,7 +50,8 @@ final class HachiwareActions {
     }
     @discardableResult
     func draw(_ action: HachiwareAction, in rect: NSRect, time: Double) -> Bool {
-        guard isReady, let cg = NSGraphicsContext.current?.cgContext else { return false }
+        if action.isDaily { return DailyActionSprites.shared.draw(action, in: rect, time: time) }
+        guard frames.count == HachiwareAction.legacy.count, let cg = NSGraphicsContext.current?.cgContext else { return false }
         let length = min(rect.width, rect.height)
         cg.saveGState()
         cg.translateBy(x: rect.midX, y: rect.midY - length * 0.30)

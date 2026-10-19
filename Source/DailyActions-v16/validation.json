@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-19",
+  "app_version": "0.10.0",
+  "build": 20,
+  "cli_checks_passed": 167,
+  "packaged_checks_passed": 171,
+  "codesign_deep_strict": "passed",
+  "frames_per_action": 12,
+  "total_new_frames": 36,
+  "study_tongue_all_frames": true,
+  "image_generation": "built-in image_gen",
+  "generated_outputs_retained": 4,
+  "walking_preservation": "existing-resources-preserved.json",
+  "source_registration": "PrepareDailyAtlas.swift",
+  "native_ui": {
+    "study_button_started": true,
+    "eat_button_started": true,
+    "vomit_button_started": true,
+    "stop_button_cancelled": true,
+    "settings_closed_at_end": true,
+    "app_left_running": true,
+    "notification_monitoring_enabled": false,
+    "click_voice_enabled": true,
+    "character_volume": 0.65
+  },
+  "preview_files": [
+    "Review/hachiware-study-v16.gif",
+    "Review/hachiware-eat-v16.gif",
+    "Review/hachiware-vomit-v16.gif"
+  ],
+  "limitations": [
+    "Live KakaoTalk delivery was not tested.",
+    "The focus-timer proposal remains on hold.",
+    "Comic spit-up is explicitly selected and does not run automatically."
+  ]
+}

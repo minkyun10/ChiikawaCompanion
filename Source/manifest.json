@@ -1,10 +1,10 @@
 {
   "created_at": "2026-10-16T12:08:58.617148+00:00",
   "operation": "copy; originals preserved",
-  "image_file_count": 1003,
-  "unique_image_content_count": 747,
-  "supporting_file_count": 118,
-  "image_bytes": 234882276,
+  "image_file_count": 1119,
+  "unique_image_content_count": 815,
+  "supporting_file_count": 141,
+  "image_bytes": 278571899,
   "symmetric_walk_runtime_applied": true,
   "files": [
     {
@@ -433,6 +433,860 @@
       "archive_path": "ClickQuotes-v12/validation.json",
       "bytes": 667,
       "sha256": "cfcb5e8db8db6c652130458e397d665609118270a91929720035ab546636edac"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Final/Frames/eat-01.png",
+      "archive_path": "DailyActions-v16/Final/Frames/eat-01.png",
+      "bytes": 60651,
+      "sha256": "cf7e6f711ca87cc265c51f599461522861041b1e857f1ec680b866ba76ace90a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Final/Frames/eat-02.png",
+      "archive_path": "DailyActions-v16/Final/Frames/eat-02.png",
+      "bytes": 59627,
+      "sha256": "293880b33da3aa081377b054f6da74e7c53a8b74dfe5a32b33908cf6dad43bf0"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Final/Frames/eat-03.png",
+      "archive_path": "DailyActions-v16/Final/Frames/eat-03.png",
+      "bytes": 59678,
+      "sha256": "c921947b14ed9173b4001b2a663e893766e4423275d4c18835254f83f353c86e"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Final/Frames/eat-04.png",
+      "archive_path": "DailyActions-v16/Final/Frames/eat-04.png",
+      "bytes": 59640,
+      "sha256": "b2f03d3d3bf60366cc078f72e0f854529147a6a3d2d854cc20cdc9334cc01d9b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Final/Frames/eat-05.png",
+      "archive_path": "DailyActions-v16/Final/Frames/eat-05.png",
+      "bytes": 59677,
+      "sha256": "78de07837244f2c242f5e1dc5fb9224b933398f2aced82d34309aee7bf631c38"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Final/Frames/eat-06.png",
+      "archive_path": "DailyActions-v16/Final/Frames/eat-06.png",
+      "bytes": 59950,
+      "sha256": "c5449c2735f431e9386bcc2fd8d82a81e2c4636017117d6bc01eae48739bec9c"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Final/Frames/eat-07.png",
+      "archive_path": "DailyActions-v16/Final/Frames/eat-07.png",
+      "bytes": 60876,
+      "sha256": "64c58b15014bd777ec33502b1bb397bfc627b3db68edd0a04e593d2fc7e6efed"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Final/Frames/eat-08.png",
+      "archive_path": "DailyActions-v16/Final/Frames/eat-08.png",
+      "bytes": 59867,
+      "sha256": "d5c5b9f16cb55ef6ce459457956cad2fb321c7d662b9b794bc23d9e29b56ac99"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Final/Frames/eat-09.png",
+      "archive_path": "DailyActions-v16/Final/Frames/eat-09.png",
+      "bytes": 58519,
+      "sha256": "c51d291501ad9ef36b61321a8a2e0c76de41ce92a3c59b110f07167a1ec2bf4c"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Final/Frames/eat-10.png",
+      "archive_path": "DailyActions-v16/Final/Frames/eat-10.png",
+      "bytes": 58577,
+      "sha256": "bcbeea876858941635c0e048c2ed9bb68978d9c9bd2e38cdccfdf7413e5f9123"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Final/Frames/eat-11.png",
+      "archive_path": "DailyActions-v16/Final/Frames/eat-11.png",
+      "bytes": 59405,
+      "sha256": "a83128d4f352f382d36927f696296620090d09070c4e3eb339c4295aa5e4aa0e"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Final/Frames/eat-12.png",
+      "archive_path": "DailyActions-v16/Final/Frames/eat-12.png",
+      "bytes": 59678,
+      "sha256": "ed4046bbd36cbb3ee8e003078867b9c72e3caec58eac8413c93b5539343b53e4"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Final/Frames/study-01.png",
+      "archive_path": "DailyActions-v16/Final/Frames/study-01.png",
+      "bytes": 56274,
+      "sha256": "23821ae7ab11cbccfbb90f11a6df26100bbac532f289bfbe81ffceaaf94ae20c"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Final/Frames/study-02.png",
+      "archive_path": "DailyActions-v16/Final/Frames/study-02.png",
+      "bytes": 56694,
+      "sha256": "31743ab6b23036b23540587a5a3d44ffd5d96dd0a3fdba5be30aa9657f6dbf9e"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Final/Frames/study-03.png",
+      "archive_path": "DailyActions-v16/Final/Frames/study-03.png",
+      "bytes": 55948,
+      "sha256": "d33b6ff88c111e6ec1e5908556dd0e300631a3ba3e6b7b75fa59356e7d0b2741"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Final/Frames/study-04.png",
+      "archive_path": "DailyActions-v16/Final/Frames/study-04.png",
+      "bytes": 54790,
+      "sha256": "8e91a3d91b3ea36a8cd386e924c1b9f7893d4b09bbdecd85bcb1f2db8a403186"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Final/Frames/study-05.png",
+      "archive_path": "DailyActions-v16/Final/Frames/study-05.png",
+      "bytes": 55107,
+      "sha256": "0c5b730f1452393fd0e137a3dd0189efc09f04448e408addcefa89fb659e82e8"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Final/Frames/study-06.png",
+      "archive_path": "DailyActions-v16/Final/Frames/study-06.png",
+      "bytes": 59273,
+      "sha256": "a61097c452b8b7da674a23d1aad02b71c5d5517ca5b5193a21d2963d78e74e63"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Final/Frames/study-07.png",
+      "archive_path": "DailyActions-v16/Final/Frames/study-07.png",
+      "bytes": 57290,
+      "sha256": "37afed2e890bec99232299961bf960330c1e884e98f7dfe4a9b84e0e33bbb00b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Final/Frames/study-08.png",
+      "archive_path": "DailyActions-v16/Final/Frames/study-08.png",
+      "bytes": 57619,
+      "sha256": "63ece2f348d12cec8e36afe90d0ebf99ac537c6d30f86f277a876592ae695c5b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Final/Frames/study-09.png",
+      "archive_path": "DailyActions-v16/Final/Frames/study-09.png",
+      "bytes": 52881,
+      "sha256": "ad60a4261b51195f1189f1cbbd8fe0612f061b92bff47ec6d0176bd3f20cfde7"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Final/Frames/study-10.png",
+      "archive_path": "DailyActions-v16/Final/Frames/study-10.png",
+      "bytes": 53552,
+      "sha256": "f38d822be567e440f9a111c71d107bbe093fba3d5b8571c4d3e7e3eea656a16f"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Final/Frames/study-11.png",
+      "archive_path": "DailyActions-v16/Final/Frames/study-11.png",
+      "bytes": 54135,
+      "sha256": "ea00c0575c2b1fb4b95d0acbe64d3ad55b5c802dfa6361ab4fcc882cb2b8c71f"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Final/Frames/study-12.png",
+      "archive_path": "DailyActions-v16/Final/Frames/study-12.png",
+      "bytes": 54500,
+      "sha256": "8225c7f3c34a3e9910b8c30257323f3adaeae333dd85f6db2f89e80067a3e939"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Final/Frames/vomit-01.png",
+      "archive_path": "DailyActions-v16/Final/Frames/vomit-01.png",
+      "bytes": 54681,
+      "sha256": "7694d1e4d0906edcf6eb0773554b752716eaf0bd506f47ab8cac99e6423e6a31"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Final/Frames/vomit-02.png",
+      "archive_path": "DailyActions-v16/Final/Frames/vomit-02.png",
+      "bytes": 54943,
+      "sha256": "b7a5af5daeafbb2bbbf868e289350e10467dcc79557ea6b2df4326f9fa668a9f"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Final/Frames/vomit-03.png",
+      "archive_path": "DailyActions-v16/Final/Frames/vomit-03.png",
+      "bytes": 56048,
+      "sha256": "f6372cea9d74e6d4b3b1714731063c212ace56bee8f7d685da7e396dcd738431"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Final/Frames/vomit-04.png",
+      "archive_path": "DailyActions-v16/Final/Frames/vomit-04.png",
+      "bytes": 57277,
+      "sha256": "3c181444bdf01c936320bcf6ec9e359099b28959988dee1612a4b598a13faf13"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Final/Frames/vomit-05.png",
+      "archive_path": "DailyActions-v16/Final/Frames/vomit-05.png",
+      "bytes": 58923,
+      "sha256": "01e8c2261b7c072a0d19f1165819da5b55128f25dc3c47938f01d6c8a4a832dd"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Final/Frames/vomit-06.png",
+      "archive_path": "DailyActions-v16/Final/Frames/vomit-06.png",
+      "bytes": 59202,
+      "sha256": "c72f95d6c240ffed203a327f357907f969bf3d6ee39763a394a9df8303efd8ea"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Final/Frames/vomit-07.png",
+      "archive_path": "DailyActions-v16/Final/Frames/vomit-07.png",
+      "bytes": 59311,
+      "sha256": "72cad74a5e9180f4b77bc462fbb862482fcd21a51c91dbaf5af02169273501fb"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Final/Frames/vomit-08.png",
+      "archive_path": "DailyActions-v16/Final/Frames/vomit-08.png",
+      "bytes": 59039,
+      "sha256": "66592044b7344408f90ff41c7ae7e79fa14387c0237cd336965c7717c83b5c70"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Final/Frames/vomit-09.png",
+      "archive_path": "DailyActions-v16/Final/Frames/vomit-09.png",
+      "bytes": 57647,
+      "sha256": "1e1eb86439a941087acea26c629b4da3d2a8f6f4ae85374cc4a49923e6923f4e"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Final/Frames/vomit-10.png",
+      "archive_path": "DailyActions-v16/Final/Frames/vomit-10.png",
+      "bytes": 55895,
+      "sha256": "497b1065f18516812ae908c2b3013b33a75bbc46ba2283a8b6f51be850f6cdbe"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Final/Frames/vomit-11.png",
+      "archive_path": "DailyActions-v16/Final/Frames/vomit-11.png",
+      "bytes": 55413,
+      "sha256": "cd7189dc8dd76562528ccd56bcbaef3484f02a192a19673be3a93dedd51378d4"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Final/Frames/vomit-12.png",
+      "archive_path": "DailyActions-v16/Final/Frames/vomit-12.png",
+      "bytes": 53745,
+      "sha256": "828d0bb00b0c5be3da938744ab52ac33584f3866ba51642488a32168d500247e"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/DailyActions-v16/Final/eat-registration.json",
+      "archive_path": "DailyActions-v16/Final/eat-registration.json",
+      "bytes": 2516,
+      "sha256": "51d37033c37b5edaedc4e58358cd41ac5223d5e217498c469f327186f89b8b56"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Final/hachiware-eat-v16.png",
+      "archive_path": "DailyActions-v16/Final/hachiware-eat-v16.png",
+      "bytes": 700022,
+      "sha256": "33e7c926e0042568acbd27d4c2a9e4754cff3a4ff8bd3ac2b8f129aa72cf3e12"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Final/hachiware-study-v16.png",
+      "archive_path": "DailyActions-v16/Final/hachiware-study-v16.png",
+      "bytes": 653141,
+      "sha256": "a5eb060a62e87bd14cc2fe8c8b6200afed8cbddd607d0bb539ba11acb87d9b58"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Final/hachiware-vomit-v16.png",
+      "archive_path": "DailyActions-v16/Final/hachiware-vomit-v16.png",
+      "bytes": 666115,
+      "sha256": "d85807f1d730bc7748dca103e7d29f47c508ac4b43af121af99f82afad2f1609"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/DailyActions-v16/Final/study-registration.json",
+      "archive_path": "DailyActions-v16/Final/study-registration.json",
+      "bytes": 2515,
+      "sha256": "b902578b4dbfd864f60aae590a6090ebee50b47f656341c465fc89188b57c565"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/DailyActions-v16/Final/vomit-registration.json",
+      "archive_path": "DailyActions-v16/Final/vomit-registration.json",
+      "bytes": 2504,
+      "sha256": "ead53eb205f968a0381b3473f98f573bf11c25052b0f25d13193200acc9cdcf4"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Generated/eat-original.png",
+      "archive_path": "DailyActions-v16/Generated/eat-original.png",
+      "bytes": 1485864,
+      "sha256": "6221fada04d7d27804324cbbb8b1730fa22b82603cdb6db42984bf551d7d5ef6"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Generated/study-clean-alpha.png",
+      "archive_path": "DailyActions-v16/Generated/study-clean-alpha.png",
+      "bytes": 1999355,
+      "sha256": "930ea2eccb8609f053ec8bf3f1aa0da6634436f4320a0970e1d7fc3ffe5840b3"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Generated/study-original.png",
+      "archive_path": "DailyActions-v16/Generated/study-original.png",
+      "bytes": 2017372,
+      "sha256": "858695ef0bbd6fb47b30c3c4687ffa31ee67e899935ee36303d1738a296e90af"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Generated/vomit-original.png",
+      "archive_path": "DailyActions-v16/Generated/vomit-original.png",
+      "bytes": 1346869,
+      "sha256": "ce467da01ed99105aadeb580d2ee1d02c8f9cceed0c79368730bebcec593936a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Iterations/00-equal-grid/Frames/vomit-01.png",
+      "archive_path": "DailyActions-v16/Iterations/00-equal-grid/Frames/vomit-01.png",
+      "bytes": 54721,
+      "sha256": "d4dad74332488d7276f49b572e6d7882e90a9e706f833aff39fd2401197fbfe9"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Iterations/00-equal-grid/Frames/vomit-02.png",
+      "archive_path": "DailyActions-v16/Iterations/00-equal-grid/Frames/vomit-02.png",
+      "bytes": 54928,
+      "sha256": "922f9443532d48cdc3aa7f8719a96a31b7f529280d6e0bc33be844ede5c1bc4a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Iterations/00-equal-grid/Frames/vomit-03.png",
+      "archive_path": "DailyActions-v16/Iterations/00-equal-grid/Frames/vomit-03.png",
+      "bytes": 56035,
+      "sha256": "e98b9d0fee3f6c5e2eb2e1ad0506ae2d81fe9053f1ca6a3899235a295bfe59b3"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Iterations/00-equal-grid/Frames/vomit-04.png",
+      "archive_path": "DailyActions-v16/Iterations/00-equal-grid/Frames/vomit-04.png",
+      "bytes": 57402,
+      "sha256": "775a5ef6cb1a48ca38b53b82529955d2527e05fba0823222614a2852b3be856c"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Iterations/00-equal-grid/Frames/vomit-05.png",
+      "archive_path": "DailyActions-v16/Iterations/00-equal-grid/Frames/vomit-05.png",
+      "bytes": 58886,
+      "sha256": "bb0a8aa19cbee8303e63ba3057c76a132b8bcc8ed8b5f7680a0f0fe93d0fde5b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Iterations/00-equal-grid/Frames/vomit-06.png",
+      "archive_path": "DailyActions-v16/Iterations/00-equal-grid/Frames/vomit-06.png",
+      "bytes": 59043,
+      "sha256": "3c145275d4e1b0a5210a3ccca54523af901c61161a6fe9f0f187d66f59c1d1ae"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Iterations/00-equal-grid/Frames/vomit-07.png",
+      "archive_path": "DailyActions-v16/Iterations/00-equal-grid/Frames/vomit-07.png",
+      "bytes": 59258,
+      "sha256": "e3f3d38c1686f512ce67ece8c93b212dc7a7c48f1856cafc2503186a4277ddab"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Iterations/00-equal-grid/Frames/vomit-08.png",
+      "archive_path": "DailyActions-v16/Iterations/00-equal-grid/Frames/vomit-08.png",
+      "bytes": 59115,
+      "sha256": "ebb4fc888fa4021297fbe9122f73b4628bd687cf67b3af9050729d813e454bd5"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Iterations/00-equal-grid/Frames/vomit-09.png",
+      "archive_path": "DailyActions-v16/Iterations/00-equal-grid/Frames/vomit-09.png",
+      "bytes": 57646,
+      "sha256": "186ec2051ccfbe8c4cdaab0cf9805d20722fa9a47cd35f15cdb4b4fbbdb6adae"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Iterations/00-equal-grid/Frames/vomit-10.png",
+      "archive_path": "DailyActions-v16/Iterations/00-equal-grid/Frames/vomit-10.png",
+      "bytes": 55987,
+      "sha256": "06f8fa4d38032db4808cfa3d5eafafde56db915a776001d2b88745d17646ac57"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Iterations/00-equal-grid/Frames/vomit-11.png",
+      "archive_path": "DailyActions-v16/Iterations/00-equal-grid/Frames/vomit-11.png",
+      "bytes": 55438,
+      "sha256": "41531e2a9fc6465e14681e9beabb4016951225bd4f260c2eefe1a53f108b1c01"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Iterations/00-equal-grid/Frames/vomit-12.png",
+      "archive_path": "DailyActions-v16/Iterations/00-equal-grid/Frames/vomit-12.png",
+      "bytes": 53654,
+      "sha256": "e6434b71ac2bbd0787b3e3dc687701a157b5abba909fbaf8dcb258e5194966ea"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/DailyActions-v16/Iterations/00-equal-grid/PrepareEqualGrid.swift",
+      "archive_path": "DailyActions-v16/Iterations/00-equal-grid/PrepareEqualGrid.swift",
+      "bytes": 5766,
+      "sha256": "930869aeb2c141c5d667346398c7763719bd3172ff083fa868209b90ac02e18d"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Iterations/00-equal-grid/hachiware-vomit-v16.png",
+      "archive_path": "DailyActions-v16/Iterations/00-equal-grid/hachiware-vomit-v16.png",
+      "bytes": 667228,
+      "sha256": "c25084e93e8901c876d937707201ef329392c3ce02ca282d65360267c646f9be"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/DailyActions-v16/Iterations/00-equal-grid/render-log.txt",
+      "archive_path": "DailyActions-v16/Iterations/00-equal-grid/render-log.txt",
+      "bytes": 81,
+      "sha256": "550677668f3eeca528b4fef4fe2bec71af61a4e7f989662e440144c423ba8efa"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/DailyActions-v16/Iterations/00-equal-grid/vomit-registration.json",
+      "archive_path": "DailyActions-v16/Iterations/00-equal-grid/vomit-registration.json",
+      "bytes": 2500,
+      "sha256": "0d76b492dff4c5e7ebc68b11d6c032b50ec24704008c063e8561b597d3e6264e"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/DailyActions-v16/PrepareDailyAtlas.swift",
+      "archive_path": "DailyActions-v16/PrepareDailyAtlas.swift",
+      "bytes": 5760,
+      "sha256": "13c5e31d081d7fc01ad3b6f02766a0571df81488a6728da7f23e7084872c4edf"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/DailyActions-v16/Prompts/eat.txt",
+      "archive_path": "DailyActions-v16/Prompts/eat.txt",
+      "bytes": 1423,
+      "sha256": "4f3fc1bbd3412e5678cb115d171b50f7cf0dc499875c0d77b6af97b28a5d1a34"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/DailyActions-v16/Prompts/study-clean-alpha.txt",
+      "archive_path": "DailyActions-v16/Prompts/study-clean-alpha.txt",
+      "bytes": 933,
+      "sha256": "ea894cb419848cc1101809ab586252fbe62a88b5874b7d2cd4fcdcd518f9119b"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/DailyActions-v16/Prompts/study.txt",
+      "archive_path": "DailyActions-v16/Prompts/study.txt",
+      "bytes": 1706,
+      "sha256": "5017df9999b1985093c3aa4c50e70d2c2dac5029b18f5d080530348184120529"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/DailyActions-v16/Prompts/vomit.txt",
+      "archive_path": "DailyActions-v16/Prompts/vomit.txt",
+      "bytes": 1539,
+      "sha256": "a79b41afbfdceac7551324981a9a4798fe0456fcafe28535511deb415507b994"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/DailyActions-v16/README.txt",
+      "archive_path": "DailyActions-v16/README.txt",
+      "bytes": 3211,
+      "sha256": "4e0190542adff7886f1cc42614ffd34d3dbcf64b490ff32e2a076fc00aff4e4e"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/References/approved-character.png",
+      "archive_path": "DailyActions-v16/References/approved-character.png",
+      "bytes": 1247640,
+      "sha256": "f17301b9445f92ac70b8c41944d442260869d5e3ba8c0c32630c8c4ac1b58aa4"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/References/eating.gif",
+      "archive_path": "DailyActions-v16/References/eating.gif",
+      "bytes": 332438,
+      "sha256": "0d09fad5d566a37f5470dc0d01ffaa01583c6cf46e7b7efacdd6a9701fdce6de"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/References/study-book.jpeg",
+      "archive_path": "DailyActions-v16/References/study-book.jpeg",
+      "bytes": 15640,
+      "sha256": "e941f58a0810ee6bef3ffdfc04ee6990ca8d6b1c20f768cb15138ec7fa5b9b83"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/References/study-tongue.jpeg",
+      "archive_path": "DailyActions-v16/References/study-tongue.jpeg",
+      "bytes": 21216,
+      "sha256": "2943baf496b99543f35bf08204b55062a67914088a2c4ed750799840fdf01702"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/References/vomit.png",
+      "archive_path": "DailyActions-v16/References/vomit.png",
+      "bytes": 226634,
+      "sha256": "b56954217670ce53752b8b693d4ea1da010c320fa376db34a82ef333aaf2f3c8"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Review/01-initial/friends.png",
+      "archive_path": "DailyActions-v16/Review/01-initial/friends.png",
+      "bytes": 130750,
+      "sha256": "d358479d8d5e811e4d92ef921ce2437356ec9be1da5bff246e27a1d55b67c63e"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Review/01-initial/hachiware-cave-home-v11.png",
+      "archive_path": "DailyActions-v16/Review/01-initial/hachiware-cave-home-v11.png",
+      "bytes": 373145,
+      "sha256": "c07da50b1919b1012dc1bed35d68833c02da01bf5791b436de85f33de8da54c6"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Review/01-initial/hachiware-daily-frames-v16.png",
+      "archive_path": "DailyActions-v16/Review/01-initial/hachiware-daily-frames-v16.png",
+      "bytes": 666252,
+      "sha256": "a64ac89f71591894f34f509d3e75b64180912291022c506ebe241861c1531c79"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Review/01-initial/hachiware-eat-v16.gif",
+      "archive_path": "DailyActions-v16/Review/01-initial/hachiware-eat-v16.gif",
+      "bytes": 221083,
+      "sha256": "549f4f2875bde1c9be09c2b3b3fbab3a9fb0b8733a55ab95961503717ad041d0"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Review/01-initial/hachiware-eight-directions-v10.gif",
+      "archive_path": "DailyActions-v16/Review/01-initial/hachiware-eight-directions-v10.gif",
+      "bytes": 608909,
+      "sha256": "0aa86b98ca9e08f3c71468e7bbdab1743344f8bf92ad80e6bd0d8eb8babb964a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Review/01-initial/hachiware-equipped-directions-v11.png",
+      "archive_path": "DailyActions-v16/Review/01-initial/hachiware-equipped-directions-v11.png",
+      "bytes": 583384,
+      "sha256": "b05323d89f4ded4008682dda8aa4ecb31bf0ad03002312120ea38364c334a98a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Review/01-initial/hachiware-expressions-v11.png",
+      "archive_path": "DailyActions-v16/Review/01-initial/hachiware-expressions-v11.png",
+      "bytes": 451935,
+      "sha256": "71309900abc75f15becdc7f339510bd084b568505e5c5675df5b251e15d5b322"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Review/01-initial/hachiware-home-sleep-v11.gif",
+      "archive_path": "DailyActions-v16/Review/01-initial/hachiware-home-sleep-v11.gif",
+      "bytes": 595803,
+      "sha256": "9d8d647db89bd8f2d0e25cca5aa4565fd02dfac634f562410c0aea88e8b86def"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Review/01-initial/hachiware-items-v11.gif",
+      "archive_path": "DailyActions-v16/Review/01-initial/hachiware-items-v11.gif",
+      "bytes": 550859,
+      "sha256": "863cf17650a351eeb4ec8af250f279c743215f66f5cb17c71111ac360f3fcb2a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Review/01-initial/hachiware-side-cycle.png",
+      "archive_path": "DailyActions-v16/Review/01-initial/hachiware-side-cycle.png",
+      "bytes": 791623,
+      "sha256": "56232bb7b3fc78aaec9e6c94cb49bf64de941422119a108cf2428b1fb413de9f"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Review/01-initial/hachiware-sprite-preview.png",
+      "archive_path": "DailyActions-v16/Review/01-initial/hachiware-sprite-preview.png",
+      "bytes": 266383,
+      "sha256": "62b8b826f3d7ec00fb5987636f46627b104ec01bd6b2c2ab62aaf9e28b0466cd"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Review/01-initial/hachiware-study-v16.gif",
+      "archive_path": "DailyActions-v16/Review/01-initial/hachiware-study-v16.gif",
+      "bytes": 236231,
+      "sha256": "2d52c80db026ab3b3d2ad81ab8aaf51d41774d1933d77a8c4ebdcfd120c95c60"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Review/01-initial/hachiware-vomit-v16.gif",
+      "archive_path": "DailyActions-v16/Review/01-initial/hachiware-vomit-v16.gif",
+      "bytes": 209889,
+      "sha256": "1e6f36dc62e8f3f79ca2541a8b00aa29db65e2506108891e140bebee9b5e3c03"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Review/01-initial/hachiware-walk.png",
+      "archive_path": "DailyActions-v16/Review/01-initial/hachiware-walk.png",
+      "bytes": 136739,
+      "sha256": "54bfabb78c7f56e08fd0262c4e2fd12067405b766a5b4a474df8379234184c6f"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Review/01-initial/icon.png",
+      "archive_path": "DailyActions-v16/Review/01-initial/icon.png",
+      "bytes": 257854,
+      "sha256": "fadb9924edc62d95697cdefc883dbb54e597c528d87278bf12af3ed433319587"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Review/friends.png",
+      "archive_path": "DailyActions-v16/Review/friends.png",
+      "bytes": 130750,
+      "sha256": "d358479d8d5e811e4d92ef921ce2437356ec9be1da5bff246e27a1d55b67c63e"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Review/hachiware-12-frame-walk.gif",
+      "archive_path": "DailyActions-v16/Review/hachiware-12-frame-walk.gif",
+      "bytes": 429514,
+      "sha256": "d263fdcaf983cb5cb4b8a414fe430197a9f69581c7ffd813d6e01fb78f4fc798"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Review/hachiware-cave-home-v11.png",
+      "archive_path": "DailyActions-v16/Review/hachiware-cave-home-v11.png",
+      "bytes": 373145,
+      "sha256": "c07da50b1919b1012dc1bed35d68833c02da01bf5791b436de85f33de8da54c6"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Review/hachiware-daily-frames-v16.png",
+      "archive_path": "DailyActions-v16/Review/hachiware-daily-frames-v16.png",
+      "bytes": 666252,
+      "sha256": "a64ac89f71591894f34f509d3e75b64180912291022c506ebe241861c1531c79"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Review/hachiware-eat-v16.gif",
+      "archive_path": "DailyActions-v16/Review/hachiware-eat-v16.gif",
+      "bytes": 221083,
+      "sha256": "549f4f2875bde1c9be09c2b3b3fbab3a9fb0b8733a55ab95961503717ad041d0"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Review/hachiware-eight-directions-v10.gif",
+      "archive_path": "DailyActions-v16/Review/hachiware-eight-directions-v10.gif",
+      "bytes": 608909,
+      "sha256": "0aa86b98ca9e08f3c71468e7bbdab1743344f8bf92ad80e6bd0d8eb8babb964a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Review/hachiware-equipped-directions-v11.png",
+      "archive_path": "DailyActions-v16/Review/hachiware-equipped-directions-v11.png",
+      "bytes": 583384,
+      "sha256": "b05323d89f4ded4008682dda8aa4ecb31bf0ad03002312120ea38364c334a98a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Review/hachiware-equipped-directions-v7.png",
+      "archive_path": "DailyActions-v16/Review/hachiware-equipped-directions-v7.png",
+      "bytes": 780418,
+      "sha256": "b75a2c35e640bf29a3c772ed7869c3d77dce13338b1730e6b995a71fd8b78a9d"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Review/hachiware-expressions-v11.png",
+      "archive_path": "DailyActions-v16/Review/hachiware-expressions-v11.png",
+      "bytes": 451935,
+      "sha256": "71309900abc75f15becdc7f339510bd084b568505e5c5675df5b251e15d5b322"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Review/hachiware-expressions-v7.png",
+      "archive_path": "DailyActions-v16/Review/hachiware-expressions-v7.png",
+      "bytes": 508318,
+      "sha256": "96099e9d449d5ff6fd0ba5a0480d1ccf3b750dee3404ceae22d68b5d2b88cabd"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Review/hachiware-home-sleep-v11.gif",
+      "archive_path": "DailyActions-v16/Review/hachiware-home-sleep-v11.gif",
+      "bytes": 595803,
+      "sha256": "9d8d647db89bd8f2d0e25cca5aa4565fd02dfac634f562410c0aea88e8b86def"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Review/hachiware-items-v11.gif",
+      "archive_path": "DailyActions-v16/Review/hachiware-items-v11.gif",
+      "bytes": 550859,
+      "sha256": "863cf17650a351eeb4ec8af250f279c743215f66f5cb17c71111ac360f3fcb2a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Review/hachiware-items-v7.gif",
+      "archive_path": "DailyActions-v16/Review/hachiware-items-v7.gif",
+      "bytes": 667946,
+      "sha256": "943828c51e3b7971befd2757ce5df2bef52826ed3e39f9641c1e7b1efbcd62a5"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Review/hachiware-side-cycle.png",
+      "archive_path": "DailyActions-v16/Review/hachiware-side-cycle.png",
+      "bytes": 791623,
+      "sha256": "56232bb7b3fc78aaec9e6c94cb49bf64de941422119a108cf2428b1fb413de9f"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Review/hachiware-sprite-preview.png",
+      "archive_path": "DailyActions-v16/Review/hachiware-sprite-preview.png",
+      "bytes": 266383,
+      "sha256": "62b8b826f3d7ec00fb5987636f46627b104ec01bd6b2c2ab62aaf9e28b0466cd"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Review/hachiware-study-v16.gif",
+      "archive_path": "DailyActions-v16/Review/hachiware-study-v16.gif",
+      "bytes": 236231,
+      "sha256": "2d52c80db026ab3b3d2ad81ab8aaf51d41774d1933d77a8c4ebdcfd120c95c60"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Review/hachiware-vomit-v16.gif",
+      "archive_path": "DailyActions-v16/Review/hachiware-vomit-v16.gif",
+      "bytes": 209889,
+      "sha256": "1e6f36dc62e8f3f79ca2541a8b00aa29db65e2506108891e140bebee9b5e3c03"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Review/hachiware-walk.png",
+      "archive_path": "DailyActions-v16/Review/hachiware-walk.png",
+      "bytes": 136739,
+      "sha256": "54bfabb78c7f56e08fd0262c4e2fd12067405b766a5b4a474df8379234184c6f"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Review/icon.png",
+      "archive_path": "DailyActions-v16/Review/icon.png",
+      "bytes": 257854,
+      "sha256": "fadb9924edc62d95697cdefc883dbb54e597c528d87278bf12af3ed433319587"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Review/mac-daily-actions-eat.png",
+      "archive_path": "DailyActions-v16/Review/mac-daily-actions-eat.png",
+      "bytes": 192781,
+      "sha256": "59adce99240baabad6c0a2473a1e0ecdc2e92d7f17e34e9dd51c04c761850729"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Review/mac-daily-actions-study-active.png",
+      "archive_path": "DailyActions-v16/Review/mac-daily-actions-study-active.png",
+      "bytes": 193735,
+      "sha256": "2df6bb28654128180c2b54dbf05405756f9bfdbac120fa07889e1d96d5ed8882"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Review/mac-daily-actions-study.png",
+      "archive_path": "DailyActions-v16/Review/mac-daily-actions-study.png",
+      "bytes": 193080,
+      "sha256": "0c238f5de90b845a9261097fc46436f4ad7991fe161d3b4bc2b8e97390f8b404"
+    },
+    {
+      "kind": "image",
+      "source": "Source/DailyActions-v16/Review/mac-daily-actions-vomit.png",
+      "archive_path": "DailyActions-v16/Review/mac-daily-actions-vomit.png",
+      "bytes": 193425,
+      "sha256": "459ffd49b3b3fb9751c135d73bf521f3f1f9baa8d7f97f51f866fa55c8c52892"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/DailyActions-v16/artwork-log.txt",
+      "archive_path": "DailyActions-v16/artwork-log.txt",
+      "bytes": 18,
+      "sha256": "e4e815f865d1d6b4f0ba8e7a4cf091562580558fb1729df68d170f0246609404"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/DailyActions-v16/build-log.txt",
+      "archive_path": "DailyActions-v16/build-log.txt",
+      "bytes": 231,
+      "sha256": "eb542327c00a964f76af57b13ce7e841a362033b911c6adffdb05e80edba85a9"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/DailyActions-v16/cli-self-test.txt",
+      "archive_path": "DailyActions-v16/cli-self-test.txt",
+      "bytes": 11260,
+      "sha256": "6d82f569675e5e084e9fc115ae541b2099fa17cc9525be7ca09219df4846968f"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/DailyActions-v16/compile-log.txt",
+      "archive_path": "DailyActions-v16/compile-log.txt",
+      "bytes": 233,
+      "sha256": "e11a2f7fb8895b2477ac8d87ea5587705345514611d498ea2217cf43c99fa429"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/DailyActions-v16/eat-registration-log.txt",
+      "archive_path": "DailyActions-v16/eat-registration-log.txt",
+      "bytes": 79,
+      "sha256": "3f9603e349c7df4901a6eb45d9c9ef77150012f00404ae08733c249215ecf2c7"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/DailyActions-v16/existing-resources-preserved.json",
+      "archive_path": "DailyActions-v16/existing-resources-preserved.json",
+      "bytes": 3212,
+      "sha256": "e70adea9cf65be21fbfebf64c70c3f3f1f2a10f5170b7d82987a06c01fe14d77"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/DailyActions-v16/manifest.json",
+      "archive_path": "DailyActions-v16/manifest.json",
+      "bytes": 20231,
+      "sha256": "4a99808516f4a91d9e90d8ab3914e6ffeac65b92ae8cbed6978832e7ea9f0a79"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/DailyActions-v16/self-test.txt",
+      "archive_path": "DailyActions-v16/self-test.txt",
+      "bytes": 11571,
+      "sha256": "a31a2eab24854c37dd29b60c4e1e412d7590cc29becda207d93712c746f077fd"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/DailyActions-v16/study-registration-log.txt",
+      "archive_path": "DailyActions-v16/study-registration-log.txt",
+      "bytes": 81,
+      "sha256": "df39f3077f1ff9176d3b58d5f19bcc07ea1aaf1042c09977224dea8db72a4ca1"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/DailyActions-v16/validation.json",
+      "archive_path": "DailyActions-v16/validation.json",
+      "bytes": 1111,
+      "sha256": "00b8e3e67794c04f28eb50fc0c0f99c52852ebf7dca467df2efcc8181ec773be"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/DailyActions-v16/vomit-registration-log.txt",
+      "archive_path": "DailyActions-v16/vomit-registration-log.txt",
+      "bytes": 81,
+      "sha256": "550677668f3eeca528b4fef4fe2bec71af61a4e7f989662e440144c423ba8efa"
     },
     {
       "kind": "image",
@@ -3215,6 +4069,13 @@
     },
     {
       "kind": "image",
+      "source": "Source/GeneratedOriginals/exec-0e89287f-f833-41ce-ab5f-7654189df776.png",
+      "archive_path": "GeneratedOriginals/exec-0e89287f-f833-41ce-ab5f-7654189df776.png",
+      "bytes": 1999355,
+      "sha256": "930ea2eccb8609f053ec8bf3f1aa0da6634436f4320a0970e1d7fc3ffe5840b3"
+    },
+    {
+      "kind": "image",
       "source": "Source/GeneratedOriginals/exec-1e74567d-854f-4889-b499-0706d195e7c2.png",
       "archive_path": "GeneratedOriginals/exec-1e74567d-854f-4889-b499-0706d195e7c2.png",
       "bytes": 1742461,
@@ -3285,6 +4146,13 @@
     },
     {
       "kind": "image",
+      "source": "Source/GeneratedOriginals/exec-9e0f1c8e-d13b-4632-a3c2-75443780d59a.png",
+      "archive_path": "GeneratedOriginals/exec-9e0f1c8e-d13b-4632-a3c2-75443780d59a.png",
+      "bytes": 2017372,
+      "sha256": "858695ef0bbd6fb47b30c3c4687ffa31ee67e899935ee36303d1738a296e90af"
+    },
+    {
+      "kind": "image",
       "source": "Source/GeneratedOriginals/exec-ad3d4673-937d-4425-af39-21f501956760.png",
       "archive_path": "GeneratedOriginals/exec-ad3d4673-937d-4425-af39-21f501956760.png",
       "bytes": 1665235,
@@ -3310,6 +4178,13 @@
       "archive_path": "GeneratedOriginals/exec-cb3f9d2a-16bf-45ee-a72f-9f5704e87ebf.png",
       "bytes": 1290237,
       "sha256": "a8d2d88fda86ce32314d2b664cd1efa856975483ec02ada07a83fbba0de7db75"
+    },
+    {
+      "kind": "image",
+      "source": "Source/GeneratedOriginals/exec-d7011244-0219-4609-98b1-139920191803.png",
+      "archive_path": "GeneratedOriginals/exec-d7011244-0219-4609-98b1-139920191803.png",
+      "bytes": 1485864,
+      "sha256": "6221fada04d7d27804324cbbb8b1730fa22b82603cdb6db42984bf551d7d5ef6"
     },
     {
       "kind": "image",
@@ -3345,6 +4220,13 @@
       "archive_path": "GeneratedOriginals/exec-e25b655d-f888-492f-a1c0-bf18a619efce.png",
       "bytes": 1758422,
       "sha256": "1a24baf6cb5373c02cdb54e508fa608f7d0f4ac051e4a6bfbab164ca7dc9e94d"
+    },
+    {
+      "kind": "image",
+      "source": "Source/GeneratedOriginals/exec-ec4d289f-a152-4111-a8da-c985b5f92660.png",
+      "archive_path": "GeneratedOriginals/exec-ec4d289f-a152-4111-a8da-c985b5f92660.png",
+      "bytes": 1346869,
+      "sha256": "ce467da01ed99105aadeb580d2ee1d02c8f9cceed0c79368730bebcec593936a"
     },
     {
       "kind": "image",
@@ -6841,6 +7723,13 @@
     },
     {
       "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/hachiware-eat-v16.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/hachiware-eat-v16.png",
+      "bytes": 700022,
+      "sha256": "33e7c926e0042568acbd27d4c2a9e4754cff3a4ff8bd3ac2b8f129aa72cf3e12"
+    },
+    {
+      "kind": "image",
       "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/hachiware-side-walk-24-joined-v14.png",
       "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/hachiware-side-walk-24-joined-v14.png",
       "bytes": 714270,
@@ -6873,6 +7762,20 @@
       "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/hachiware-sprites-v1.png",
       "bytes": 1737619,
       "sha256": "ac8776b7c831c2bf0ccc265a42736411f37a4c88ac8c53c6622f02455ba39935"
+    },
+    {
+      "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/hachiware-study-v16.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/hachiware-study-v16.png",
+      "bytes": 653141,
+      "sha256": "a5eb060a62e87bd14cc2fe8c8b6200afed8cbddd607d0bb539ba11acb87d9b58"
+    },
+    {
+      "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/hachiware-vomit-v16.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/hachiware-vomit-v16.png",
+      "bytes": 666115,
+      "sha256": "d85807f1d730bc7748dca103e7d29f47c508ac4b43af121af99f82afad2f1609"
     },
     {
       "kind": "image",
@@ -7051,6 +7954,13 @@
     },
     {
       "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/hachiware-eat-v16.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/hachiware-eat-v16.png",
+      "bytes": 700022,
+      "sha256": "33e7c926e0042568acbd27d4c2a9e4754cff3a4ff8bd3ac2b8f129aa72cf3e12"
+    },
+    {
+      "kind": "image",
       "source": "Sources/ChiikawaCompanion/Resources/hachiware-side-walk-24-joined-v14.png",
       "archive_path": "Project/Sources/ChiikawaCompanion/Resources/hachiware-side-walk-24-joined-v14.png",
       "bytes": 714270,
@@ -7083,6 +7993,20 @@
       "archive_path": "Project/Sources/ChiikawaCompanion/Resources/hachiware-sprites-v1.png",
       "bytes": 1737619,
       "sha256": "ac8776b7c831c2bf0ccc265a42736411f37a4c88ac8c53c6622f02455ba39935"
+    },
+    {
+      "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/hachiware-study-v16.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/hachiware-study-v16.png",
+      "bytes": 653141,
+      "sha256": "a5eb060a62e87bd14cc2fe8c8b6200afed8cbddd607d0bb539ba11acb87d9b58"
+    },
+    {
+      "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/hachiware-vomit-v16.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/hachiware-vomit-v16.png",
+      "bytes": 666115,
+      "sha256": "d85807f1d730bc7748dca103e7d29f47c508ac4b43af121af99f82afad2f1609"
     },
     {
       "kind": "image",
@@ -7212,6 +8136,13 @@
     },
     {
       "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/hachiware-eat-v16.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/hachiware-eat-v16.png",
+      "bytes": 700022,
+      "sha256": "33e7c926e0042568acbd27d4c2a9e4754cff3a4ff8bd3ac2b8f129aa72cf3e12"
+    },
+    {
+      "kind": "image",
       "source": "build/ChiikawaCompanion.app/Contents/Resources/hachiware-side-walk-24-joined-v14.png",
       "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/hachiware-side-walk-24-joined-v14.png",
       "bytes": 714270,
@@ -7247,6 +8178,20 @@
     },
     {
       "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/hachiware-study-v16.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/hachiware-study-v16.png",
+      "bytes": 653141,
+      "sha256": "a5eb060a62e87bd14cc2fe8c8b6200afed8cbddd607d0bb539ba11acb87d9b58"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/hachiware-vomit-v16.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/hachiware-vomit-v16.png",
+      "bytes": 666115,
+      "sha256": "d85807f1d730bc7748dca103e7d29f47c508ac4b43af121af99f82afad2f1609"
+    },
+    {
+      "kind": "image",
       "source": "build/ChiikawaCompanion.app/Contents/Resources/hachiware-walk-bodies-v1.png",
       "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/hachiware-walk-bodies-v1.png",
       "bytes": 1290237,
@@ -7272,6 +8217,20 @@
       "archive_path": "Project/build/artwork/hachiware-cave-home-v11.png",
       "bytes": 373145,
       "sha256": "c07da50b1919b1012dc1bed35d68833c02da01bf5791b436de85f33de8da54c6"
+    },
+    {
+      "kind": "image",
+      "source": "build/artwork/hachiware-daily-frames-v16.png",
+      "archive_path": "Project/build/artwork/hachiware-daily-frames-v16.png",
+      "bytes": 666252,
+      "sha256": "a64ac89f71591894f34f509d3e75b64180912291022c506ebe241861c1531c79"
+    },
+    {
+      "kind": "image",
+      "source": "build/artwork/hachiware-eat-v16.gif",
+      "archive_path": "Project/build/artwork/hachiware-eat-v16.gif",
+      "bytes": 221083,
+      "sha256": "549f4f2875bde1c9be09c2b3b3fbab3a9fb0b8733a55ab95961503717ad041d0"
     },
     {
       "kind": "image",
@@ -7345,6 +8304,20 @@
     },
     {
       "kind": "image",
+      "source": "build/artwork/hachiware-study-v16.gif",
+      "archive_path": "Project/build/artwork/hachiware-study-v16.gif",
+      "bytes": 236231,
+      "sha256": "2d52c80db026ab3b3d2ad81ab8aaf51d41774d1933d77a8c4ebdcfd120c95c60"
+    },
+    {
+      "kind": "image",
+      "source": "build/artwork/hachiware-vomit-v16.gif",
+      "archive_path": "Project/build/artwork/hachiware-vomit-v16.gif",
+      "bytes": 209889,
+      "sha256": "1e6f36dc62e8f3f79ca2541a8b00aa29db65e2506108891e140bebee9b5e3c03"
+    },
+    {
+      "kind": "image",
       "source": "build/artwork/hachiware-walk.png",
       "archive_path": "Project/build/artwork/hachiware-walk.png",
       "bytes": 136739,
@@ -7389,8 +8362,8 @@
       "kind": "supporting",
       "source": "Source/README.txt",
       "archive_path": "README.txt",
-      "bytes": 2689,
-      "sha256": "6c763814955f4e3dc6b0fea2cbe2ae85a0bf57098b81df24bf49b065058c8639"
+      "bytes": 2946,
+      "sha256": "df2cb68068f5c83716007fcb40744365c0be8b4c68ff390fff97ea047d3d9cca"
     },
     {
       "kind": "image",
@@ -7855,8 +8828,8 @@
       "sha256": "1a9a6456b561a528697d08bc97a5b14f3694040f1a684da6921470f3c0a713af"
     }
   ],
-  "updated_at": "2026-10-19T11:14:50.904341+00:00",
-  "latest_applied": "JoinedArms-v15",
+  "updated_at": "2026-10-19T12:09:37.395958+00:00",
+  "latest_applied": "DailyActions-v16",
   "applied_directions": [
     "down-left",
     "down-right"

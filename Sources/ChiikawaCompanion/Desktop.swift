@@ -27,11 +27,14 @@ final class DesktopFriendView: NSView {
     var walkPhase = 0.0
     var pose = HachiwarePose.front
     var action: HachiwareAction?
+    var actionTime: Double?
     var equipped: CompanionItem?
     var isDragging = false
     var onClick: (() -> Void)?
     var onDragStart: (() -> Void)?
     var onDragEnd: (() -> Void)?
+    var onDailyAction: ((HachiwareAction) -> Void)?
+    var onStopDailyAction: (() -> Void)?
     private var downPoint: NSPoint = .zero
     private var downOrigin: NSPoint = .zero
     private var moved = false
@@ -41,7 +44,7 @@ final class DesktopFriendView: NSView {
         super.init(frame: NSRect(x: 0, y: 0, width: 132, height: 150))
         setAccessibilityElement(true)
         setAccessibilityRole(.button)
-        setAccessibilityLabel("\(friend.name) — 마우스를 올리거나 클릭해 인사하기. 드래그로 이동.")
+        setAccessibilityLabel("\(friend.name) — 클릭해 인사하기, 드래그로 이동, 우클릭해 일상 동작 고르기.")
     }
     required init?(coder: NSCoder) { fatalError("init(coder:) is unavailable") }
     override var acceptsFirstResponder: Bool { false }
@@ -50,8 +53,24 @@ final class DesktopFriendView: NSView {
     override func draw(_ dirtyRect: NSRect) {
         FriendArtwork.draw(friend, in: bounds, time: time, happy: happy, walking: walking,
                            looking: looking, facing: facing, walkPhase: walkPhase, pose: pose,
-                           action: action, equipped: equipped)
+                           action: action, equipped: equipped, actionTime: actionTime)
     }
+    override func rightMouseDown(with event: NSEvent) {
+        let menu = NSMenu()
+        for action in HachiwareAction.daily {
+            let entry = NSMenuItem(title: action.title, action: #selector(chooseDailyAction(_:)), keyEquivalent: "")
+            entry.target = self; entry.tag = action.rawValue; menu.addItem(entry)
+        }
+        menu.addItem(.separator())
+        let stop = NSMenuItem(title: "동작 멈추기", action: #selector(stopDailyAction), keyEquivalent: "")
+        stop.target = self; menu.addItem(stop)
+        NSMenu.popUpContextMenu(menu, with: event, for: self)
+    }
+    @objc private func chooseDailyAction(_ sender: NSMenuItem) {
+        guard let action = HachiwareAction(rawValue: sender.tag), action.isDaily else { return }
+        onDailyAction?(action)
+    }
+    @objc private func stopDailyAction() { onStopDailyAction?() }
     override func mouseDown(with event: NSEvent) {
         onDragStart?()
         isDragging = true; moved = false
@@ -84,6 +103,7 @@ final class FriendActor {
     var bubble: NSPanel?
     var bubbleUntil = Date.distantPast
     var performance = CompanionPerformance()
+    var dailyPerformance = DailyActionPerformance()
     var hoverStarted = Date.distantPast
     var wasHovered = false
 
@@ -194,9 +214,12 @@ final class DesktopController {
             }
             actor.view.onDragStart = { [weak self] in
                 self?.stopCharacterVoice()
+                self?.stopDailyAction()
                 guard let self, self.homeRoutine.phase == .returning else { return }
                 self.wakeFromHome()
             }
+            actor.view.onDailyAction = { [weak self] action in self?.playDailyAction(action) }
+            actor.view.onStopDailyAction = { [weak self] in self?.stopDailyAction() }
             actor.view.onDragEnd = { [weak self, weak actor] in
                 actor?.motion.retarget()
                 // Ground props own screen coordinates. Moving the character only
@@ -235,6 +258,8 @@ final class DesktopController {
         state.onScatterItems = { [weak self] in self?.scatterItems() }
         state.onSeekItem = { [weak self] item in self?.seekItem(item) }
         state.onDropItem = { [weak self] in self?.dropItem() }
+        state.onDailyAction = { [weak self] action in self?.playDailyAction(action) }
+        state.onStopDailyAction = { [weak self] in self?.stopDailyAction() }
         resetPositions()
         if let visible = NSScreen.main?.visibleFrame {
             itemWorld.configure(enabled: state.enabledItems, bounds: visible)
@@ -251,6 +276,7 @@ final class DesktopController {
         if let screenObserver { NotificationCenter.default.removeObserver(screenObserver) }
     }
     func resetPositions() {
+        stopDailyAction()
         if homeRoutine.phase != .outside { wakeFromHome() }
         guard let screen = NSScreen.main ?? NSScreen.screens.first else { return }
         let visible = screen.visibleFrame
@@ -276,6 +302,7 @@ final class DesktopController {
     }
     func seekItem(_ item: CompanionItem) {
         guard itemWorld.ground[item] != nil else { return }
+        stopDailyAction()
         if homeRoutine.phase != .outside { wakeFromHome() }
         state.roaming = true; state.showFriends = true
         itemWorld.requested = item; itemTarget = nil
@@ -306,6 +333,7 @@ final class DesktopController {
         }
     }
     func presentClickDialogue(_ selected: ClickDialogue, for actor: FriendActor) {
+        stopDailyAction()
         recordedVoice.stop()
         speech.stopSpeaking(at: .immediate)
         lastClickDialogueID = selected.id
@@ -321,6 +349,7 @@ final class DesktopController {
         }
     }
     func previewCharacterVoice() {
+        stopDailyAction()
         guard let actor = actors.first else { return }
         if homeRoutine.phase != .outside { wakeFromHome() }
         guard let line = RecordingCatalog.shared.choose(excluding: lastRecordedLine) else {
@@ -336,12 +365,38 @@ final class DesktopController {
         guard recordedVoice.player != nil else { return }
         recordedVoice.stop(); state.voiceStatus = "목소리 재생을 멈췄어요"
     }
+    func playDailyAction(_ action: HachiwareAction, now: Date = Date()) {
+        guard action.isDaily, let actor = actors.first else { return }
+        if homeRoutine.phase != .outside { wakeFromHome(now: now) }
+        state.showFriends = true
+        if let index = state.assignments.firstIndex(where: { $0.friend == .hachiware }) {
+            state.assignments[index].enabled = true
+        }
+        stopCharacterVoice(); speech.stopSpeaking(at: .immediate)
+        actor.dismissBubble(); actor.performance.cancel(now: now)
+        itemWorld.requested = nil; itemTarget = nil
+        actor.dailyPerformance.begin(action, now: now); actor.motion.stop()
+        actor.view.action = action; actor.view.actionTime = 0; actor.view.walking = false
+        actor.view.needsDisplay = true; actor.panel.orderFrontRegardless()
+        state.dailyActionRunning = true; state.dailyActionStatus = "\(action.title) · 끝나면 다시 산책해요"
+    }
+    func stopDailyAction() {
+        for actor in actors where actor.dailyPerformance.selected != nil {
+            actor.dailyPerformance.cancel()
+            if actor.view.action?.isDaily == true { actor.view.action = nil }
+            actor.view.actionTime = nil; actor.motion.retarget(); actor.view.needsDisplay = true
+        }
+        if state.dailyActionRunning { state.dailyActionRunning = false }
+        let status = "공부하고, 밥도 먹고, 잠깐 쉬어 가요"
+        if state.dailyActionStatus != status { state.dailyActionStatus = status }
+    }
     func goHome(now: Date = Date()) {
         guard !homeRoutine.isInside else { return }
         state.homeEnabled = true; state.showFriends = true; state.roaming = true
         requestHome(now: now)
     }
     private func requestHome(now: Date) {
+        stopDailyAction()
         stopCharacterVoice()
         homeRoutine.request(now: now)
         actors.first?.motion.retarget(); actors.first?.performance.cancel(now: now)
@@ -372,6 +427,7 @@ final class DesktopController {
     @discardableResult
     func enterHomeIfReached(_ actor: FriendActor, now: Date) -> Bool {
         guard state.homeEnabled, !actor.view.isDragging, now >= actor.bubbleUntil,
+              actor.dailyPerformance.action(now: now) == nil,
               homeRoutine.arrive(contact: ItemWorld.contactPoint(origin: actor.panel.frame.origin),
                                  entrance: home.entrance, now: now) else { return false }
         // Only the carried item moves: the other desktop props retain their world coordinates.
@@ -386,10 +442,10 @@ final class DesktopController {
     private func publishEquipment() {
         if state.equippedItem != itemWorld.equipped { state.equippedItem = itemWorld.equipped }
     }
-    func tick() {
-        let now = Date(), dt = min(now.timeIntervalSince(lastTick), 0.06)
+    func tick(now: Date = Date(), pointer: NSPoint? = nil) {
+        let dt = min(max(0, now.timeIntervalSince(lastTick)), 0.06)
         lastTick = now
-        let time = now.timeIntervalSince(started), mouse = NSEvent.mouseLocation
+        let time = now.timeIntervalSince(started), mouse = pointer ?? NSEvent.mouseLocation
         recordedVoice.setVolume(state.characterVolume)
         if !state.showFriends { stopCharacterVoice() }
         if let bounds = NSScreen.main?.visibleFrame {
@@ -406,10 +462,14 @@ final class DesktopController {
         for actor in actors {
             let enabled = state.showFriends && (state.assignments.first { $0.friend == actor.friend }?.enabled ?? false)
             guard enabled else {
+                stopDailyAction()
                 actor.panel.orderOut(nil); actor.dismissBubble(); stopCharacterVoice()
                 actor.performance.cancel(now: now)
                 for item in desktopItems.values { item.update(position: nil, visible: false, mouse: mouse) }
                 continue
+            }
+            if actor.dailyPerformance.selected != nil && actor.dailyPerformance.action(now: now) == nil {
+                stopDailyAction()
             }
             if homeRoutine.isInside && now < actor.bubbleUntil { wakeFromHome(now: now) }
             if !homeRoutine.isInside { _ = enterHomeIfReached(actor, now: now) }
@@ -427,18 +487,21 @@ final class DesktopController {
             let activity = DesktopActivity.resolve(roaming: state.roaming, hovered: hovered,
                                                    dragging: actor.view.isDragging,
                                                    notificationUntil: actor.bubbleUntil, now: now)
+            if activity == .dragging || activity == .notifying { stopDailyAction() }
+            let dailyAction = actor.dailyPerformance.action(now: now)
             if homeVisible && activity == .walking && itemWorld.requested == nil
+                && dailyAction == nil
                 && homeRoutine.shouldReturn(now: now, automatic: state.automaticRest, roaming: state.roaming) {
                 requestHome(now: now)
             }
             if hovered && !actor.wasHovered { actor.hoverStarted = now }
             actor.wasHovered = hovered
-            if activity != .walking || !state.expressive || homeRoutine.phase == .returning { actor.performance.cancel(now: now) }
-            if activity == .walking, homeRoutine.phase != .returning, state.expressive, let item = itemWorld.equipped,
+            if dailyAction != nil || activity != .walking || !state.expressive || homeRoutine.phase == .returning { actor.performance.cancel(now: now) }
+            if dailyAction == nil, activity == .walking, homeRoutine.phase != .returning, state.expressive, let item = itemWorld.equipped,
                now >= actor.performance.nextPerformance {
                 actor.performance.begin(item, now: now, pickingUp: false)
             }
-            var action = state.expressive ? actor.performance.action(now: now) : nil
+            var action = dailyAction ?? (state.expressive ? actor.performance.action(now: now) : nil)
             if activity == .walking && action == nil, let screen = actor.panel.screen ?? NSScreen.main {
                 let frame = actor.panel.frame
                 let draggedItems = Set(desktopItems.filter { $0.value.view.isDragging }.map(\.key))
@@ -488,12 +551,13 @@ final class DesktopController {
             actor.view.walkPhase = actor.gait.phase
             actor.view.pose = HachiwarePose.forVelocity(actor.motion.velocity)
             actor.view.happy = activity.reacts
-            if state.expressive && activity == .hovering {
+            if dailyAction == nil && state.expressive && activity == .hovering {
                 action = now.timeIntervalSince(actor.hoverStarted) < 0.3 ? .wave : .laugh
             } else if state.expressive && activity == .notifying {
                 action = .surprised
             }
             actor.view.action = action
+            actor.view.actionTime = dailyAction == nil ? nil : actor.dailyPerformance.elapsed(now: now)
             actor.view.equipped = itemWorld.equipped
             actor.view.looking = min(1, max(-1, (mouse.x - actor.panel.frame.midX) / 160))
             actor.view.needsDisplay = true
@@ -513,6 +577,7 @@ final class DesktopController {
     func notify(_ friend: Friend, sender: String, body: String? = nil, demo: Bool = false) {
         guard let actor = actors.first(where: { $0.friend == friend }) else { return }
         guard state.showFriends, state.activeAssignments.contains(where: { $0.friend == friend && $0.enabled }) else { return }
+        stopDailyAction()
         if homeRoutine.phase != .outside { wakeFromHome() }
         stopCharacterVoice()
         let alert = KakaoAlertPresentation(sender: sender, body: body, demo: demo)

@@ -101,6 +101,10 @@ final class AppState: ObservableObject {
     }
     @Published var characterVolume: Double { didSet { defaults.set(characterVolume, forKey: "characterVolume") } }
     @Published var voiceStatus = "클릭하면 음성 4개와 명대사 10개 중 하나를 보여줘요"
+    @Published var dailyActionStatus = "공부하고, 밥도 먹고, 잠깐 쉬어 가요"
+    @Published var dailyActionRunning = false
+    var onDailyAction: ((HachiwareAction) -> Void)?
+    var onStopDailyAction: (() -> Void)?
     var onVoicePreview: (() -> Void)?
     var onStopCharacterVoice: (() -> Void)?
     var onGoHome: (() -> Void)?

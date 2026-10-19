@@ -60,6 +60,15 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         menu.addItem(item("하치와레 부르기", action: #selector(resetPositions)))
         menu.addItem(item("하치와레 표시 / 숨기기", action: #selector(toggleFriends)))
         menu.addItem(item("걷기 켜기 / 끄기", action: #selector(toggleRoaming)))
+        let daily = NSMenuItem(title: "하치와레의 하루", action: nil, keyEquivalent: "")
+        let dailyMenu = NSMenu()
+        for action in HachiwareAction.daily {
+            let entry = item(action.title, action: #selector(playDailyAction(_:)))
+            entry.tag = action.rawValue; dailyMenu.addItem(entry)
+        }
+        dailyMenu.addItem(.separator())
+        dailyMenu.addItem(item("동작 멈추기", action: #selector(stopDailyAction)))
+        daily.submenu = dailyMenu; menu.addItem(daily)
         menu.addItem(.separator())
         let demos = NSMenuItem(title: "알림 시연", action: nil, keyEquivalent: "")
         let submenu = NSMenu()
@@ -96,6 +105,11 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
     @objc func resetPositions() { desktop.resetPositions() }
     @objc func toggleFriends() { state.showFriends.toggle() }
     @objc func toggleRoaming() { state.roaming.toggle() }
+    @objc func playDailyAction(_ sender: NSMenuItem) {
+        guard let action = HachiwareAction(rawValue: sender.tag), action.isDaily else { return }
+        desktop.playDailyAction(action)
+    }
+    @objc func stopDailyAction() { desktop.stopDailyAction() }
     @objc func demo(_ sender: NSMenuItem) { state.demo(Friend.developmentRoster[sender.tag]) }
     @objc func quit() { NSApp.terminate(nil) }
     func applicationWillTerminate(_ notification: Notification) { monitor.stop(); desktop?.stopCharacterVoice() }
