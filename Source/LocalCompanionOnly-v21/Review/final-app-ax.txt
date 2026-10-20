@@ -1,0 +1,4 @@
+The following is a diff from the previous accessibility tree for Window: "생활 소품 · 밥" with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 0-14, 25-73, 76
++76 system dialog 생활 소품 · 밥, Secondary Actions: Raise
++	77 button Description: 밥 — 클릭하면 하치와레가 걸어와 밥 먹기. 드래그로 옮기기., Help: 밥 · 가까이 가면 밥 먹기 · 드래그로 옮기기

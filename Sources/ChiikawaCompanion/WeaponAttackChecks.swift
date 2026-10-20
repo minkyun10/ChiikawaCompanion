@@ -37,7 +37,7 @@ extension SelfTest {
         let state = AppState(defaults: defaults)
         state.enabledItems = [.sasumata,.camera]; state.automaticItems = false
         state.automaticActivities = false; state.homeEnabled = false
-        state.characterVoice = false; state.voice = false; state.expressive = true
+        state.characterVoice = false; state.expressive = true
         state.showFriends = true; state.roaming = true
         let desktop = DesktopController(state:state,startTimer:false), actor = desktop.actors[0]
         let away = NSPoint(x:-10000,y:-10000), now = Date()
@@ -75,10 +75,10 @@ extension SelfTest {
         actor.view.isDragging = false
         desktop.tick(now:now.addingTimeInterval(1.3),pointer:actor.panel.frame.attackCenter,pointerCanReachCharacter:true)
         check(actor.view.action == .attack && actor.view.actionTime == 0, "a new weapon hover restarts at frame one")
-        desktop.notify(.hachiware,sender:"Fixture",body:"Notification priority",demo:true)
+        desktop.presentClickDialogue(ClickDialogue.all.last!,for:actor)
         desktop.tick(now:now.addingTimeInterval(1.4),pointer:actor.panel.frame.attackCenter,pointerCanReachCharacter:true)
         check(actor.view.action == .surprised && actor.view.actionTime == nil && actor.bubble != nil,
-              "notifications retain priority over the weapon attack while hovered")
+              "click dialogue retains priority over the weapon attack while hovered")
         desktop.playDailyAction(.study,now:now.addingTimeInterval(1.5))
         desktop.tick(now:now.addingTimeInterval(1.6),pointer:actor.panel.frame.attackCenter,pointerCanReachCharacter:true)
         check(actor.view.action == .study, "explicit study animation keeps priority over armed hover")

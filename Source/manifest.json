@@ -1,10 +1,10 @@
 {
   "created_at": "2026-10-16T12:08:58.617148+00:00",
   "operation": "copy; originals preserved",
-  "image_file_count": 1203,
-  "unique_image_content_count": 854,
-  "supporting_file_count": 186,
-  "image_bytes": 302813144,
+  "image_file_count": 1205,
+  "unique_image_content_count": 856,
+  "supporting_file_count": 199,
+  "image_bytes": 303178395,
   "symmetric_walk_runtime_applied": true,
   "files": [
     {
@@ -7982,6 +7982,111 @@
     },
     {
       "kind": "supporting",
+      "source": "Source/LocalCompanionOnly-v21/README.txt",
+      "archive_path": "LocalCompanionOnly-v21/README.txt",
+      "bytes": 1685,
+      "sha256": "ffa7a0a2975219a8fbcb7f6ea18a83fc8a109d3b22645aa1ef4eb1de9c5195f9"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/LocalCompanionOnly-v21/Review/final-app-ax.txt",
+      "archive_path": "LocalCompanionOnly-v21/Review/final-app-ax.txt",
+      "bytes": 486,
+      "sha256": "c294f71c686ab190d3fbfda17b0635e47f79f62878d7cba242cac6364eb99c7f"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/LocalCompanionOnly-v21/Review/settings-ax.txt",
+      "archive_path": "LocalCompanionOnly-v21/Review/settings-ax.txt",
+      "bytes": 5132,
+      "sha256": "ee6af018f5a714fcff73f69206a9edebf1cf22bb69818deca1c40cb344347a44"
+    },
+    {
+      "kind": "image",
+      "source": "Source/LocalCompanionOnly-v21/Review/settings-bottom.png",
+      "archive_path": "LocalCompanionOnly-v21/Review/settings-bottom.png",
+      "bytes": 196734,
+      "sha256": "1ff2ac92647d1294c6b53fdab42098fda295a35aafe32cac9be50b46c5f671f3"
+    },
+    {
+      "kind": "image",
+      "source": "Source/LocalCompanionOnly-v21/Review/settings-top.png",
+      "archive_path": "LocalCompanionOnly-v21/Review/settings-top.png",
+      "bytes": 168517,
+      "sha256": "c3c2b5f7f2847ee933177cb4ead78386a5e1c87b5379488761c285f04c2eae00"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/LocalCompanionOnly-v21/Review/voice-preview-ax.txt",
+      "archive_path": "LocalCompanionOnly-v21/Review/voice-preview-ax.txt",
+      "bytes": 567,
+      "sha256": "bdf31e94d75da658aa1243bac2afa177f6cf18ab9327275f1f4ef88ad4796759"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/LocalCompanionOnly-v21/build-log.txt",
+      "archive_path": "LocalCompanionOnly-v21/build-log.txt",
+      "bytes": 375,
+      "sha256": "86b0e62ae37429538788a76eabd88d2526b551da8c7c3a54ae3e8b74d6fe0c1e"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/LocalCompanionOnly-v21/cli-self-test.txt",
+      "archive_path": "LocalCompanionOnly-v21/cli-self-test.txt",
+      "bytes": 14577,
+      "sha256": "f63ca83b5d74a55041ed6bb8230685c3d59f2c106bb1fa2dafdd7841b0efc552"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/LocalCompanionOnly-v21/codesign-log.txt",
+      "archive_path": "LocalCompanionOnly-v21/codesign-log.txt",
+      "bytes": 109,
+      "sha256": "6210c61790ac2c9d268a576bdecb1c906f66d332a0c64871ceff1469e071d542"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/LocalCompanionOnly-v21/compile-log.txt",
+      "archive_path": "LocalCompanionOnly-v21/compile-log.txt",
+      "bytes": 265,
+      "sha256": "d21ded1409f80ae148b99fec20bbf7b798a9c34317fedbf03cddcb8c9902917b"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/LocalCompanionOnly-v21/existing-resources-preserved.json",
+      "archive_path": "LocalCompanionOnly-v21/existing-resources-preserved.json",
+      "bytes": 4065,
+      "sha256": "61dc179b8aad6017c02819dd169355d3323f5de02c61c5a851c4cf08223fff5d"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/LocalCompanionOnly-v21/manifest.json",
+      "archive_path": "LocalCompanionOnly-v21/manifest.json",
+      "bytes": 2227,
+      "sha256": "64469922c863f5b6f3d9d1c0204831286531cfa2842702aa396774db4ed5a833"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/LocalCompanionOnly-v21/removal-scan.json",
+      "archive_path": "LocalCompanionOnly-v21/removal-scan.json",
+      "bytes": 799,
+      "sha256": "7bd321efb221e7c046478c556f181549bbb17983a938ca4b5109cd74449d668a"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/LocalCompanionOnly-v21/self-test.txt",
+      "archive_path": "LocalCompanionOnly-v21/self-test.txt",
+      "bytes": 14965,
+      "sha256": "f110ee5aafeccd7c098e2dce685b753b142cb178aac04f9b0b3e8647194c62da"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/LocalCompanionOnly-v21/validation.json",
+      "archive_path": "LocalCompanionOnly-v21/validation.json",
+      "bytes": 1304,
+      "sha256": "0972c61e06a165eaa3bf82c0c41e82fa0d6a45731c2df1b69e0472eece11ba3e"
+    },
+    {
+      "kind": "supporting",
       "source": "Source/NearbyPickup-v20/README.txt",
       "archive_path": "NearbyPickup-v20/README.txt",
       "bytes": 2192,
@@ -8789,8 +8894,8 @@
       "kind": "supporting",
       "source": "Source/README.txt",
       "archive_path": "README.txt",
-      "bytes": 4177,
-      "sha256": "fca6835ddcf0cd155a5c0b81594b7e4d8f5691a2252c4dae443254f8e5b06d2f"
+      "bytes": 4555,
+      "sha256": "fd0e40a2477283710a4dae14f5f5c3bf2ec338e0f9a049a4db141d2e9b40f13b"
     },
     {
       "kind": "image",
@@ -9731,8 +9836,8 @@
       "sha256": "8a42caa40e469a5ee00fa2b860d14756cc1fd73bc8fcf73332c50b87a92c9c3b"
     }
   ],
-  "updated_at": "2026-10-19T13:12:33.190713+00:00",
-  "latest_applied": "NearbyPickup-v20",
+  "updated_at": "2026-10-20T00:31:43.184171+00:00",
+  "latest_applied": "LocalCompanionOnly-v21",
   "applied_directions": [
     "down-left",
     "down-right"

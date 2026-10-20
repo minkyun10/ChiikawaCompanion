@@ -41,7 +41,7 @@ extension SelfTest {
         check(performance.action(now: now) == nil, "manual stop releases a daily animation immediately")
 
         let state = AppState(defaults: defaults)
-        state.characterVoice = false; state.voice = false; state.expressive = false
+        state.characterVoice = false; state.expressive = false
         state.homeEnabled = false; state.automaticItems = true; state.roaming = true
         let desktop = DesktopController(state: state, startTimer: false)
         let actor = desktop.actors[0]
@@ -66,9 +66,9 @@ extension SelfTest {
         check(actor.dailyPerformance.selected == nil && actor.bubble != nil,
               "ordinary clicks stop studying and retain the fourteen-line dialogue behavior")
         desktop.playDailyAction(.eat)
-        desktop.notify(.hachiware, sender: "테스트", body: "일상 동작 중단", demo: true)
+        state.onStopDailyAction?()
         check(actor.dailyPerformance.selected == nil && !state.dailyActionRunning,
-              "incoming notifications take priority over eating")
+              "the stop callback interrupts eating immediately")
         desktop.playDailyAction(.vomit, now: now)
         desktop.tick(now: now.addingTimeInterval(HachiwareAction.vomit.duration + 0.1), pointer: away)
         check(!state.dailyActionRunning && actor.dailyPerformance.selected == nil && actor.view.action?.isDaily != true,

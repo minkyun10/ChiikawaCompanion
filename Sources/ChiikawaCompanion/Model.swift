@@ -47,41 +47,9 @@ enum Friend: String, CaseIterable, Codable, Identifiable {
     }
 }
 
-struct Assignment: Codable, Identifiable {
-    var friend: Friend
-    var sender: String = ""
-    var enabled: Bool = true
-    var id: String { friend.id }
-}
-
-enum SenderMatcher {
-    static func normalize(_ text: String) -> String {
-        text.precomposedStringWithCanonicalMapping.trimmingCharacters(in: .whitespacesAndNewlines)
-    }
-    static func match(_ sender: String, in assignments: [Assignment]) -> Friend? {
-        let name = normalize(sender)
-        guard !name.isEmpty else { return nil }
-        let matches = assignments.filter {
-            $0.enabled && !normalize($0.sender).isEmpty && normalize($0.sender) == name
-        }
-        return matches.count == 1 ? matches[0].friend : nil
-    }
-    static func duplicateNames(_ assignments: [Assignment]) -> Set<String> {
-        let names = assignments.filter(\.enabled).map { normalize($0.sender) }.filter { !$0.isEmpty }
-        return Set(Dictionary(grouping: names, by: { $0 }).filter { $0.value.count > 1 }.keys)
-    }
-}
-
 final class AppState: ObservableObject {
-    @Published var assignments: [Assignment] { didSet { save() } }
     @Published var roaming: Bool { didSet { defaults.set(roaming, forKey: "roaming") } }
-    @Published var voice: Bool { didSet { defaults.set(voice, forKey: "voice") } }
     @Published var showFriends = true
-    @Published var monitoring = false
-    @Published var monitoringStatus = "꺼져 있어요"
-    @Published var accessibilityAvailable = false
-    @Published var lastEvent = "아직 받은 알림이 없어요"
-    @Published var verifiedSession = false
     @Published var enabledItems: Set<CompanionItem> {
         didSet { defaults.set(enabledItems.map(\.rawValue).sorted(), forKey: "enabledItems") }
     }
@@ -118,19 +86,15 @@ final class AppState: ObservableObject {
     var onScatterItems: (() -> Void)?
     var onSeekItem: ((CompanionItem) -> Void)?
     var onDropItem: (() -> Void)?
-    var onDemo: ((Friend) -> Void)?
     var onReset: (() -> Void)?
-    var onMonitoringChange: ((Bool) -> Void)?
     let defaults: UserDefaults
-    var activeAssignments: [Assignment] {
-        assignments.filter { Friend.developmentRoster.contains($0.friend) }
-    }
-    var activeAssignmentIndices: [Int] {
-        assignments.indices.filter { Friend.developmentRoster.contains(assignments[$0].friend) }
-    }
 
     init(defaults: UserDefaults = .standard) {
         self.defaults = defaults
+        // Remove preferences belonging to the retired chat-notification integration.
+        for key in ["assignments", "voice", "hachiwareWalkStage", "monitoring", "monitoringStatus", "lastEvent", "verifiedSession"] {
+            defaults.removeObject(forKey: key)
+        }
         enabledActivitySpots = Set((defaults.stringArray(forKey: "enabledActivitySpots") ?? ActivitySpot.allCases.map(\.rawValue))
             .compactMap(ActivitySpot.init(rawValue:)))
         automaticActivities = defaults.object(forKey: "automaticActivities") as? Bool ?? true
@@ -148,35 +112,7 @@ final class AppState: ObservableObject {
         automaticRest = defaults.object(forKey: "automaticRest") as? Bool ?? true
         automaticItems = defaults.object(forKey: "automaticItems") as? Bool ?? true
         expressive = defaults.object(forKey: "expressive") as? Bool ?? true
-        if let data = defaults.data(forKey: "assignments"),
-           let saved = try? JSONDecoder().decode([Assignment].self, from: data) {
-            assignments = Friend.allCases.map { friend in
-                saved.first(where: { $0.friend == friend }) ?? Assignment(friend: friend)
-            }
-        } else {
-            assignments = Friend.allCases.map { Assignment(friend: $0) }
-        }
         roaming = defaults.object(forKey: "roaming") as? Bool ?? true
-        voice = defaults.bool(forKey: "voice")
-        if !defaults.bool(forKey: "hachiwareWalkStage") {
-            if let index = assignments.firstIndex(where: { $0.friend == .hachiware }) {
-                assignments[index].enabled = true
-            }
-            roaming = true
-            defaults.set(true, forKey: "hachiwareWalkStage")
-            defaults.set(true, forKey: "roaming")
-            save()
-        }
-    }
-
-    private func save() {
-        guard let data = try? JSONEncoder().encode(assignments) else { return }
-        defaults.set(data, forKey: "assignments")
-    }
-    func demo(_ friend: Friend) { onDemo?(friend) }
-    func setMonitoring(_ enabled: Bool) {
-        monitoring = enabled
-        onMonitoringChange?(enabled)
     }
 }
 

@@ -1,0 +1,203 @@
+PASS: desktop positions clamp to negative-coordinate screen
+PASS: transparent margins are click-through
+PASS: character body receives pointer
+PASS: character is above desktop icons
+PASS: character stays below normal app windows
+PASS: speech bubble stays on desktop, below app windows
+PASS: desktop character does not join full-screen overlays
+PASS: only Hachiware is exposed in this development stage
+PASS: destination can reach upper-right desktop
+PASS: walking moves in both desktop axes
+PASS: walking state follows actual movement
+PASS: long journey never crosses screen edges
+PASS: arrival clears target for a new journey
+PASS: walking left turns the character left
+PASS: hover pause stops motion without advancing gait
+PASS: drag release discards previous route
+PASS: zero elapsed time does not move character
+PASS: rounded windows finish journeys, start the next route, and resume from dragged positions
+PASS: short and long hovers release reaction and resume movement within the next sub-100ms update
+PASS: leaving hover respects the user's paused walking preference
+PASS: leaving hover does not interrupt a drag
+PASS: click dialogue reaction remains independent of hover release
+PASS: click dialogue reaction ends at its own deadline
+PASS: launch removes retired sender mappings and notification preferences
+PASS: removing chat preferences preserves walking and recorded-click voice settings
+PASS: later launches preserve the user's walking preference
+PASS: three enabled props spawn on the desktop
+PASS: props stay reachable on negative-coordinate displays
+PASS: a distant prop cannot be equipped by teleporting
+PASS: disabling automatic pickup still leaves props on the desktop
+PASS: clicking a prop requests a journey even with automatic pickup off
+PASS: a requested prop is not picked up while the user is dragging it
+PASS: reaching a prop transfers it from ground to equipment
+PASS: new equipment is carried for a while before seeking another prop
+PASS: swapping equipment drops the old prop without duplicating or losing it
+PASS: manual drops restore the ground item within reachable screen bounds
+PASS: a dropped item is not immediately picked up again
+PASS: turning off a carried prop removes it from both equipment and ground
+PASS: scattering preserves exactly one instance of every enabled prop
+PASS: dragging the character leaves every ground prop at its exact original coordinate
+PASS: drag release rebuilds the character route while preserving the requested item interaction
+PASS: calling the character back never resets or scatters ground props
+PASS: dragging one prop moves only that prop, independently of the character and other props
+PASS: pickup still uses the unchanged ground coordinate after moving character and props independently
+PASS: prop and expression choices survive relaunch independently of other character settings
+PASS: legacy bag preference is removed without changing the other prop choices
+PASS: four real spoken excerpts and their matching captions load from local resources
+PASS: every bundled recording decodes and preserves its caption timing
+PASS: missing or invalid audio paths cannot escape the bundled voice directory
+PASS: recorded dialogue varies without immediately repeating the same excerpt
+PASS: the original ten quotes stay intact and are never paired with unrelated spoken words
+PASS: audio gain clamps out-of-range values and safely handles invalid saved volume
+PASS: a recording prepares a single player at the requested volume
+PASS: rapid clicks replace and release the previous recording instead of overlapping audio
+PASS: a missing clip clears old playback and fails without silently retaining stale audio
+PASS: an output-device failure releases the prepared player
+PASS: one click pool contains exactly four voiced entries and all ten unmodified text quotes
+PASS: all fourteen lines share the same random selection pool without immediate repeats
+PASS: an older text-only mode preference cannot exclude the four recordings
+PASS: all fourteen selections show their own text and only the four matching recordings play
+PASS: the real character click callback selects a new entry from the combined pool
+PASS: turning off click voice stops current playback immediately
+PASS: muting audio keeps every one of the fourteen click captions available
+PASS: starting a daily action stops the recording and its old click bubble
+PASS: recorded click voice and volume still persist after chat integration removal
+PASS: the packaged app plays its own bundled recordings without relying on Downloads or network access
+PASS: study, eating and comic spit-up each load twelve transparent animation frames
+PASS: daily sprites retain clean transparent corners without a room background
+PASS: every daily animation advances through its twelve frames chronologically before looping
+PASS: all twelve study frames retain the requested pink tongue in the central mouth region
+PASS: studying uses its own duration and finishes without leaving a permanent stopped pose
+PASS: a new selected action replaces the previous one and spit-up runs only once
+PASS: manual stop releases a daily animation immediately
+PASS: the settings action callback pauses travel at the current position and advances a local study clock
+PASS: hovering preserves an explicitly selected study animation and never moves the ground props
+PASS: the character menu callback starts eating directly
+PASS: dragging interrupts the daily action immediately
+PASS: ordinary clicks stop studying and retain the fourteen-line dialogue behavior
+PASS: the stop callback interrupts eating immediately
+PASS: spit-up finishes in the live update path and yields to the existing roaming behavior
+PASS: hiding the character cancels its active daily action
+PASS: the packaged app loads all daily animations from its own bundled files
+PASS: the independent desk, furball and rice props map to the three approved daily actions
+PASS: proximity actions obey the automatic-reaction switch
+PASS: a dragged prop cannot trigger its action before release
+PASS: standing at the same desk never repeatedly restarts studying after a timeout
+PASS: a repeat encounter needs both leaving the prop and finishing its cooldown
+PASS: explicitly clicking a prop can request another visit without waiting for automatic rearming
+PASS: dragging one life prop leaves the other world coordinates unchanged
+PASS: hiding a prop removes its trigger and clears a pending visit
+PASS: a running 책상 action cannot be replaced by another automatic proximity check
+PASS: a running 털뭉치 action cannot be replaced by another automatic proximity check
+PASS: a running 밥 action cannot be replaced by another automatic proximity check
+PASS: the live update starts study, spit-up and eating at their own fixed prop anchors without moving any prop
+PASS: finished actions reveal the same props and stay idle until the character leaves
+PASS: clicking a life prop walks toward it before starting its action
+PASS: an explicit visit triggers the selected desk only on arrival
+PASS: dropping the character beside a life prop triggers the matching action immediately
+PASS: turning off automatic reactions keeps nearby props visible without starting actions
+PASS: a requested rice visit still works while automatic proximity is off
+PASS: calling or moving the character never scatters life props or carried-item world positions
+PASS: life-prop visibility and proximity preferences persist independently
+PASS: dropping a dragged item away from the character leaves it on the desktop
+PASS: the body-level handoff is reachable without equipping an item that is still being moved
+PASS: holding a dragged item over the character does not equip it before release
+PASS: the actual item drag-release callback immediately equips and displays a body-level handoff
+PASS: direct handoff works with automatic pickup and walking off without moving the character
+PASS: handing over a replacement stops studying and drops the old item without duplication
+PASS: a replacement handoff never relocates unrelated carried-item or life-prop coordinates
+PASS: an already carried item cannot be handed over or duplicated a second time
+PASS: an intentional handoff cancels a pending prop visit while preserving click dialogue and its reaction
+PASS: an invisible character does not accept an item dropped at its old coordinates
+PASS: a disabled item cannot be handed over before the next display update
+PASS: weapon hover loads twelve dedicated attack frames
+PASS: the attack contains twelve distinct drawings rather than one rotated still
+PASS: attack sprites retain transparent corners without the reference cave or other character
+PASS: attack playback stays chronological, loops cleanly and rejects invalid clocks
+PASS: only a held sasumata changes the regular greeting into the determined attack
+PASS: the attack already includes one weapon and never receives a duplicate equipment overlay
+PASS: weapon hover starts the attack immediately on a local clock without advancing travel
+PASS: holding hover advances the attack without moving props or replacing equipment
+PASS: leaving weapon hover releases the attack and resumes the existing gait on the next sub-100ms tick
+PASS: distance-based gait resumes within 100ms even when the first resumed window position rounds to the same pixel
+PASS: leaving weapon hover preserves paused walking
+PASS: dragging the armed character does not continue a hover attack
+PASS: a new weapon hover restarts at frame one
+PASS: click dialogue retains priority over the weapon attack while hovered
+PASS: explicit study animation keeps priority over armed hover
+PASS: the expression switch also disables the weapon hover animation
+PASS: replacing the weapon restores the normal hover greeting immediately
+PASS: the packaged app loads its attack sheet from its own bundled resources
+PASS: a prop touching the upper side of the drawn body is reachable beyond the old 30-point foot circle
+PASS: the visual pickup area does not grab distant props
+PASS: a nearby encounter is independent of the 24-second automatic seek cooldown
+PASS: the short three-second encounter cooldown prevents rapid automatic item flicker
+PASS: passing pickup respects automatic-off and never grabs a prop during its drag
+PASS: visual contact swaps the held item while keeping unrelated props fixed
+PASS: a recently dropped old item keeps its own twelve-second no-repickup delay
+PASS: incidental contact does not replace an explicitly requested item journey
+PASS: the live update grabs a body-touching item during the seek cooldown even with a different old route target
+PASS: a passing pickup keeps other item and life-prop coordinates unchanged
+PASS: the encounter boundary fixture begins outside contact
+PASS: the post-movement check equips on the same tick that the body first touches a prop
+PASS: home stays centered just above the Dock on a negative-coordinate display
+PASS: home fits within a small usable display
+PASS: house entrance is clickable while transparent upper corners pass through
+PASS: automatic rest honors its interval and both automatic-rest and walking preferences
+PASS: requesting rest starts a journey and cannot equip the bed from a distance
+PASS: reaching the actual doorway starts the entry animation
+PASS: entry animation finishes before sleeping begins
+PASS: sleep lasts twenty seconds after entry, then permits automatic waking
+PASS: waking has a doorway cooldown so the character can leave the house
+PASS: a deliberate house click can return home during the automatic-entry cooldown
+PASS: cave and sleeping reference sprites load and the breathing motion changes over time
+PASS: home stays behind normal apps, above desktop icons, without taking keyboard focus
+PASS: controller home action walks toward the entrance instead of teleporting
+PASS: dragging the character cancels its homeward route
+PASS: dragging across the doorway never hides the character mid-drag
+PASS: dropping at the entrance enters bed and puts down only the carried prop
+PASS: moving the character and entering bed never changes the house coordinates
+PASS: wake restores the character at the doorway without shifting props or instantly sleeping again
+PASS: deliberately dragging the character into the house overrides automatic-entry cooldown
+PASS: requesting a prop wakes the character and keeps the pickup interaction
+PASS: clicking the sleeping house wakes the character without an external connection
+PASS: home and rest choices persist independently of other prop preferences
+PASS: pickup gesture precedes the equipment-specific action
+PASS: hover or drag interrupts a prop action without a delayed reaction after leaving
+PASS: short equipment actions finish so the character keeps walking
+PASS: seven reference gestures and three daily animations load without the bag
+PASS: action sprites retain transparent corners
+PASS: 24-frame side walk, four 12-frame walks and six greeting frames load
+PASS: all five selected sprite atlases decode
+PASS: approved side sheet loads as a six-column four-row 24-frame atlas
+PASS: approved downward diagonal frames load at their original registered size
+PASS: downward diagonal head and face stay identical while the feet alternate
+PASS: all 24 joined side frames retain their registered cells and chronological order
+PASS: joining the limbs preserves every original head and bottom-sole pixel in all 24 frames
+PASS: opening the shoulder contours preserves all approved v14 leg pixels across the complete cycle
+PASS: down and up body heights survive loading instead of being normalized away
+PASS: both steps follow the same body-height cycle half a cycle apart
+PASS: the live side renderer visits all 24 drawings without skipping or repeating frames
+PASS: equipped accessories follow the side drawing's down and up weight shift
+PASS: the existing upward diagonal accessories keep their previous placement
+PASS: walking animation loops at full gait cycle
+PASS: negative gait phase wraps safely
+PASS: playback visits all twelve frames in order before looping
+PASS: walking upward uses rear art
+PASS: walking downward uses front art
+PASS: horizontal walking uses side art
+PASS: both upward diagonals use rear three-quarter art
+PASS: both downward diagonals use front three-quarter art
+PASS: configured stride advances exactly one complete gait cycle
+PASS: half the travel distance advances only half the gait cycle
+PASS: same displacement produces the same gait at different update rates
+PASS: diagonal gait uses actual path length, not summed axis distances
+PASS: stationary and rounded-away movement never advance the gait
+PASS: walking resumes from the paused gait without restarting it
+PASS: each walk contains its full set of distinct drawings
+PASS: walk frames contain different artwork
+PASS: all registered frames keep transparent corners
+PASS: packaged app loads its own new expression atlas
+PASS: packaged app loads its own bundled sprite, independent of source files
+202 checks passed.

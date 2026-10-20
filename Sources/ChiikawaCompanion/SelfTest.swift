@@ -9,72 +9,7 @@ enum SelfTest {
             guard value() else { fputs("FAIL: \(name)\n", stderr); exit(1) }
             passed += 1; print("PASS: \(name)")
         }
-        let assignments = [Assignment(friend: .chiikawa, sender: "테스트 친구"),
-                           Assignment(friend: .hachiware, sender: "다른 친구"),
-                           Assignment(friend: .usagi, sender: "숨긴 친구", enabled: false)]
-        check(SenderMatcher.match("테스트 친구", in: assignments) == .chiikawa, "exact sender assignment")
-        check(SenderMatcher.match(" 테스트 친구\n", in: assignments) == .chiikawa, "trim boundary whitespace")
-        check(SenderMatcher.match("테스트", in: assignments) == nil, "no partial sender matching")
-        check(SenderMatcher.match("숨긴 친구", in: assignments) == nil, "disabled friend does not receive alerts")
-        check(SenderMatcher.match("", in: [Assignment(friend: .chiikawa)]) == nil, "empty names never match")
-        let duplicate = assignments + [Assignment(friend: .momonga, sender: "테스트 친구")]
-        check(SenderMatcher.match("테스트 친구", in: duplicate) == nil, "ambiguous assignments fail closed")
-        check(SenderMatcher.duplicateNames(duplicate) == ["테스트 친구"], "duplicate warning uses normalized names")
-        let decomposed = "테스트 친구".decomposedStringWithCanonicalMapping
-        check(SenderMatcher.match(decomposed, in: assignments) == .chiikawa, "Unicode normalization")
-
-        let fixture = KakaoNotificationParser.parse(app: "카카오톡", title: nil,
-            texts: [NotificationText(text: "카카오톡"), NotificationText(text: "테스트 친구"), NotificationText(text: "안녕!")], summary: nil)
-        check(fixture?.sender == "테스트 친구", "fixture: app label followed by sender")
-        check(fixture?.body == "안녕!", "notification carries the preview body for transient display")
-        let summary = KakaoNotificationParser.parse(app: "KakaoTalk", title: nil, texts: [], summary: "KakaoTalk, 다른 친구, 안녕!")
-        check(summary?.sender == "다른 친구", "fixture: app-prefixed summary")
-        check(summary?.body == "안녕!", "app-prefixed summary preserves the message body")
-        let punctuated = KakaoNotificationParser.parse(app: "KakaoTalk", title: nil, texts: [],
-            summary: "KakaoTalk, 테스트 친구, 안녕, 내일 만날까?\n두 번째 줄 😀")
-        check(punctuated?.body == "안녕, 내일 만날까?\n두 번째 줄 😀", "commas, line breaks, and emoji in a summary remain intact")
-        let multipleLines = KakaoNotificationParser.parse(app: "카카오톡", title: "테스트 친구", texts: [
-            NotificationText(text: "테스트 친구"), NotificationText(text: "첫 줄"),
-            NotificationText(text: "다음 줄"), NotificationText(identifier: "deliveryTime", text: "오후 3:00")], summary: nil)
-        check(multipleLines?.body == "첫 줄\n다음 줄", "multi-leaf body is preserved without notification timestamps")
-        let explicitBody = KakaoNotificationParser.parse(app: "카카오톡", title: "테스트 친구", texts: [
-            NotificationText(identifier: "messageTitle", text: "테스트 친구"),
-            NotificationText(identifier: "messageBody", text: "본문만 표시")], summary: nil)
-        check(explicitBody?.body == "본문만 표시", "message-title identifiers are not included as message contents")
-        let titleOnly = KakaoNotificationParser.parse(app: "카카오톡", title: "테스트 친구", texts: [], summary: nil)
-        check(titleOnly?.body == nil && titleOnly?.sender == "테스트 친구", "missing previews keep sender identification without inventing content")
-        let bodyOnly = KakaoNotificationParser.parse(app: "카카오톡", title: "테스트 친구", texts: [
-            NotificationText(identifier: "notificationBody", text: "발신자 제목은 별도 속성")], summary: nil)
-        check(bodyOnly?.body == "발신자 제목은 별도 속성", "explicit body works when the sender is available only as a title attribute")
-        let display = KakaoAlertPresentation(sender: "테스트 친구", body: fixture?.body)
-        check(display.title == "테스트 친구" && display.message == "안녕!", "speech bubble separates sender and received message")
-        check(!display.spokenText.contains("안녕!") && display.spokenText.contains("테스트 친구"),
-              "voice alerts announce the sender without reading private message text")
-        check(KakaoAlertPresentation(sender: "테스트 친구", body: nil).message.contains("미리보기"),
-              "missing message previews have an explicit explanation")
-        let longMessage = KakaoAlertPresentation(sender: "테스트 친구", body: String(repeating: "가", count: 700))
-        check(longMessage.message.count == 501 && longMessage.message.hasSuffix("…"),
-              "long previews are visibly abbreviated instead of overflowing the bubble")
-        check(KakaoAlertPresentation(sender: "테스트 친구", body: "샘플", demo: true).title.hasPrefix("[시연]"),
-              "synthetic message previews remain clearly marked as demos")
-        let bodyMention = KakaoNotificationParser.parse(app: "카카오톡", title: "모르는 사람",
-            texts: [NotificationText(text: "모르는 사람"), NotificationText(text: "테스트 친구")], summary: nil)
-        check(SenderMatcher.match(bodyMention!.sender, in: assignments) == nil, "sender mentioned in message body does not trigger alert")
-        check(KakaoNotificationParser.parse(app: "다른 앱", title: "테스트 친구", texts: [], summary: nil) == nil,
-              "notifications from other apps are rejected")
-        check(KakaoNotificationParser.parse(app: "카카오톡", title: nil, texts: [], summary: "안녕") == nil,
-              "unrecognized layout is rejected")
-        let changed = KakaoNotificationParser.parse(app: "카카오톡", title: "테스트 친구",
-            texts: [NotificationText(text: "테스트 친구"), NotificationText(text: "새 메시지")], summary: nil)!
-        check(changed.fingerprint != fixture?.fingerprint, "changed notification has new fingerprint")
-        var dedup = NotificationDeduplicator()
         let now = Date()
-        check(dedup.fresh([fixture!], now: now).isEmpty, "existing notifications are baseline on startup")
-        check(dedup.fresh([fixture!, changed], now: now.addingTimeInterval(1)) == [changed], "only new notification is emitted")
-        check(dedup.fresh([changed], now: now.addingTimeInterval(2)).isEmpty, "repeated scan does not repeat alert")
-        dedup.reset()
-        check(dedup.fresh([changed], now: now.addingTimeInterval(3)).isEmpty, "re-enabling listener resets baseline")
-
         let screen = NSRect(x: -1920, y: 30, width: 1920, height: 1050)
         let clamped = DesktopGeometry.clamp(NSPoint(x: 30, y: -40), size: NSSize(width: 132, height: 150), to: screen)
         check(clamped == NSPoint(x: -132, y: 30), "desktop positions clamp to negative-coordinate screen")
@@ -154,10 +89,10 @@ enum SelfTest {
         for duration in [0.01, 0.1, 1.4, 2.5] {
             var resumedMotion = RoamingMotion(destination: target)
             let entry = DesktopActivity.resolve(roaming: true, hovered: true, dragging: false,
-                                                 notificationUntil: .distantPast, now: now)
+                                                 dialogueUntil: .distantPast, now: now)
             resumedMotion.stop()
             let exit = DesktopActivity.resolve(roaming: true, hovered: false, dragging: false,
-                                                notificationUntil: .distantPast,
+                                                dialogueUntil: .distantPast,
                                                 now: now.addingTimeInterval(duration + DesktopActivity.updateInterval))
             let resumedPosition = exit == .walking
                 ? resumedMotion.advance(from: start, dt: DesktopActivity.updateInterval, bounds: screen, size: size)
@@ -168,29 +103,33 @@ enum SelfTest {
         check(immediateHoverRelease && DesktopActivity.updateInterval < 0.1,
               "short and long hovers release reaction and resume movement within the next sub-100ms update")
         check(DesktopActivity.resolve(roaming: false, hovered: false, dragging: false,
-                                      notificationUntil: .distantPast, now: now) == .idle,
+                                      dialogueUntil: .distantPast, now: now) == .idle,
               "leaving hover respects the user's paused walking preference")
         check(DesktopActivity.resolve(roaming: true, hovered: false, dragging: true,
-                                      notificationUntil: .distantPast, now: now) == .dragging,
+                                      dialogueUntil: .distantPast, now: now) == .dragging,
               "leaving hover does not interrupt a drag")
-        let notificationEnd = now.addingTimeInterval(5)
+        let dialogueEnd = now.addingTimeInterval(5)
         check(DesktopActivity.resolve(roaming: true, hovered: false, dragging: false,
-                                      notificationUntil: notificationEnd, now: now.addingTimeInterval(1)).reacts,
-              "notification reaction remains independent of hover release")
+                                      dialogueUntil: dialogueEnd, now: now.addingTimeInterval(1)).reacts,
+              "click dialogue reaction remains independent of hover release")
         check(DesktopActivity.resolve(roaming: true, hovered: false, dragging: false,
-                                      notificationUntil: notificationEnd, now: notificationEnd) == .walking,
-              "notification reaction ends at its own deadline")
+                                      dialogueUntil: dialogueEnd, now: dialogueEnd) == .walking,
+              "click dialogue reaction ends at its own deadline")
 
         let suite = "local.chiikawa.companion.selftest.\(UUID().uuidString)"
         let testDefaults = UserDefaults(suiteName: suite)!
         defer { testDefaults.removePersistentDomain(forName: suite) }
-        let legacy = Friend.allCases.map { Assignment(friend: $0, sender: "기존-\($0.rawValue)", enabled: false) }
-        testDefaults.set(try! JSONEncoder().encode(legacy), forKey: "assignments")
+        testDefaults.set(Data("legacy sender fixture".utf8), forKey: "assignments")
+        testDefaults.set(true, forKey: "voice")
+        testDefaults.set(true, forKey: "monitoring")
+        testDefaults.set(false, forKey: "roaming")
+        testDefaults.set(true, forKey: "characterVoice")
+        testDefaults.set(0.42, forKey: "characterVolume")
         let migrated = AppState(defaults: testDefaults)
-        check(migrated.activeAssignments.count == 1 && migrated.activeAssignments[0].friend == .hachiware
-              && migrated.activeAssignments[0].enabled, "migration enables Hachiware alone for current UI")
-        check(migrated.assignments.count == 5 && migrated.assignments.first?.sender == legacy.first?.sender,
-              "migration preserves the other characters' saved mappings")
+        check(["assignments", "voice", "monitoring"].allSatisfy { testDefaults.object(forKey:$0) == nil },
+              "launch removes retired sender mappings and notification preferences")
+        check(!migrated.roaming && migrated.characterVoice && abs(migrated.characterVolume-0.42)<0.001,
+              "removing chat preferences preserves walking and recorded-click voice settings")
         migrated.roaming = false
         let reopened = AppState(defaults: testDefaults)
         check(!reopened.roaming, "later launches preserve the user's walking preference")
@@ -268,7 +207,7 @@ enum SelfTest {
         migrated.enabledItems = [.camera, .guitar]; migrated.automaticItems = false; migrated.expressive = false
         let itemPreferences = AppState(defaults: testDefaults)
         check(itemPreferences.enabledItems == [.camera, .guitar] && !itemPreferences.automaticItems && !itemPreferences.expressive,
-              "prop and expression choices survive relaunch without changing sender assignments")
+              "prop and expression choices survive relaunch independently of other character settings")
         testDefaults.set(["camera", "bag", "guitar"], forKey: "enabledItems")
         let withoutBag = AppState(defaults: testDefaults)
         check(withoutBag.enabledItems == [.camera, .guitar]
@@ -427,7 +366,7 @@ enum SelfTest {
             },
                   "packaged app loads its own bundled sprite, independent of source files")
         }
-        print("\(passed) checks passed. Notification parser checks use fixtures, not a live KakaoTalk delivery.")
+        print("\(passed) checks passed.")
     }
 
     static func png(width: Int, height: Int, to url: URL, draw: () -> Void) {

@@ -34,7 +34,7 @@ enum CompanionItem: String, CaseIterable, Codable, Identifiable {
 }
 
 /// One instance of each enabled item: either on the ground or being carried.
-/// This model contains no notification or sender information.
+/// Ground coordinates remain independent of character movement.
 struct ItemWorld {
     private(set) var ground: [CompanionItem: NSPoint] = [:]
     private(set) var equipped: CompanionItem?

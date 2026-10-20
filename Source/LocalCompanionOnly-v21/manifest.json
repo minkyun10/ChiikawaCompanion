@@ -1,0 +1,76 @@
+{
+  "version": "0.13.0",
+  "date": "2026-10-20",
+  "files": [
+    {
+      "path": "README.txt",
+      "bytes": 1685,
+      "sha256": "ffa7a0a2975219a8fbcb7f6ea18a83fc8a109d3b22645aa1ef4eb1de9c5195f9"
+    },
+    {
+      "path": "Review/final-app-ax.txt",
+      "bytes": 486,
+      "sha256": "c294f71c686ab190d3fbfda17b0635e47f79f62878d7cba242cac6364eb99c7f"
+    },
+    {
+      "path": "Review/settings-ax.txt",
+      "bytes": 5132,
+      "sha256": "ee6af018f5a714fcff73f69206a9edebf1cf22bb69818deca1c40cb344347a44"
+    },
+    {
+      "path": "Review/settings-bottom.png",
+      "bytes": 196734,
+      "sha256": "1ff2ac92647d1294c6b53fdab42098fda295a35aafe32cac9be50b46c5f671f3"
+    },
+    {
+      "path": "Review/settings-top.png",
+      "bytes": 168517,
+      "sha256": "c3c2b5f7f2847ee933177cb4ead78386a5e1c87b5379488761c285f04c2eae00"
+    },
+    {
+      "path": "Review/voice-preview-ax.txt",
+      "bytes": 567,
+      "sha256": "bdf31e94d75da658aa1243bac2afa177f6cf18ab9327275f1f4ef88ad4796759"
+    },
+    {
+      "path": "build-log.txt",
+      "bytes": 375,
+      "sha256": "86b0e62ae37429538788a76eabd88d2526b551da8c7c3a54ae3e8b74d6fe0c1e"
+    },
+    {
+      "path": "cli-self-test.txt",
+      "bytes": 14577,
+      "sha256": "f63ca83b5d74a55041ed6bb8230685c3d59f2c106bb1fa2dafdd7841b0efc552"
+    },
+    {
+      "path": "codesign-log.txt",
+      "bytes": 109,
+      "sha256": "6210c61790ac2c9d268a576bdecb1c906f66d332a0c64871ceff1469e071d542"
+    },
+    {
+      "path": "compile-log.txt",
+      "bytes": 265,
+      "sha256": "d21ded1409f80ae148b99fec20bbf7b798a9c34317fedbf03cddcb8c9902917b"
+    },
+    {
+      "path": "existing-resources-preserved.json",
+      "bytes": 4065,
+      "sha256": "61dc179b8aad6017c02819dd169355d3323f5de02c61c5a851c4cf08223fff5d"
+    },
+    {
+      "path": "removal-scan.json",
+      "bytes": 799,
+      "sha256": "7bd321efb221e7c046478c556f181549bbb17983a938ca4b5109cd74449d668a"
+    },
+    {
+      "path": "self-test.txt",
+      "bytes": 14965,
+      "sha256": "f110ee5aafeccd7c098e2dce685b753b142cb178aac04f9b0b3e8647194c62da"
+    },
+    {
+      "path": "validation.json",
+      "bytes": 1304,
+      "sha256": "0972c61e06a165eaa3bf82c0c41e82fa0d6a45731c2df1b69e0472eece11ba3e"
+    }
+  ]
+}

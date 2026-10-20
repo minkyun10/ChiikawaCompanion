@@ -7,7 +7,7 @@ extension SelfTest {
         state.enabledActivitySpots = Set(ActivitySpot.allCases)
         state.automaticItems = false; state.automaticActivities = false
         state.roaming = false; state.expressive = true; state.homeEnabled = false
-        state.showFriends = true; state.characterVoice = false; state.voice = false
+        state.showFriends = true; state.characterVoice = false
         let desktop = DesktopController(state: state, startTimer: false)
         let actor = desktop.actors[0], now = Date(), away = NSPoint(x: -10000, y: -10000)
         desktop.tick(now: now, pointer: away)
@@ -51,14 +51,14 @@ extension SelfTest {
 
         desktop.seekActivitySpot(.desk)
         state.roaming = false
-        actor.say("Fixture notification", now: now, duration: 20)
+        actor.say("Fixture click dialogue", now: now, duration: 20)
         let bubble = actor.bubble, bubbleUntil = actor.bubbleUntil
         desktop.desktopItems[.sasumata]!.view.onMove?(body)
         desktop.desktopItems[.sasumata]!.view.onMoveEnd?(body)
         check(desktop.itemWorld.equipped == .sasumata && desktop.activityWorld.requested == nil
               && !state.activityJourneyRunning && actor.view.action == .surprised
               && actor.bubble === bubble && actor.bubbleUntil == bubbleUntil,
-              "an intentional handoff cancels a pending prop visit while preserving a notification and its reaction")
+              "an intentional handoff cancels a pending prop visit while preserving click dialogue and its reaction")
 
         state.showFriends = false
         let hiddenInventory = desktop.itemWorld.ground

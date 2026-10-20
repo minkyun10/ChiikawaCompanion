@@ -1,0 +1,2 @@
+build/ChiikawaCompanion.app: valid on disk
+build/ChiikawaCompanion.app: satisfies its Designated Requirement

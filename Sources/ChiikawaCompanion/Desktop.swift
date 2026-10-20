@@ -1,5 +1,4 @@
 import AppKit
-import AVFoundation
 
 final class FriendPanel: NSPanel {
     override var canBecomeKey: Bool { false }
@@ -125,7 +124,7 @@ final class FriendActor {
         panel.ignoresMouseEvents = true
         panel.setAccessibilityLabel(friend.name)
     }
-    func say(_ text: String, now: Date, duration: TimeInterval = 4, heading: String? = nil) {
+    func say(_ text: String, now: Date, duration: TimeInterval = 4) {
         dismissBubble()
         let textWidth: CGFloat = 288
         let font = NSFont.systemFont(ofSize: 13, weight: .medium)
@@ -136,7 +135,7 @@ final class FriendActor {
         let p = NSPanel(contentRect: NSRect(x: 0, y: 0, width: 320, height: height),
                         styleMask: [.borderless, .nonactivatingPanel], backing: .buffered, defer: false)
         p.isOpaque = false; p.backgroundColor = .clear; p.hasShadow = true
-        p.title = "\(friend.name) 알림"
+        p.title = "\(friend.name) 대사"
         p.isReleasedWhenClosed = false
         p.isFloatingPanel = false
         p.level = DesktopLayer.bubble; p.hidesOnDeactivate = false; p.ignoresMouseEvents = true
@@ -147,7 +146,7 @@ final class FriendActor {
         container.layer?.cornerRadius = 19
         container.layer?.borderWidth = 1.5
         container.layer?.borderColor = friend.color.withAlphaComponent(0.65).cgColor
-        let title = NSTextField(labelWithString: heading.map { "\(friend.name) · \($0)" } ?? friend.name)
+        let title = NSTextField(labelWithString: friend.name)
         title.font = .systemFont(ofSize: 10, weight: .semibold)
         title.textColor = NSColor(hex: 0xA08C7D)
         title.lineBreakMode = .byTruncatingTail
@@ -187,7 +186,6 @@ final class DesktopController {
     let state: AppState
     var actors: [FriendActor] = []
     var timer: Timer?
-    let speech = AVSpeechSynthesizer()
     let recordedVoice: RecordedVoicePlayer
     var lastRecordedLine: String?
     var lastClickDialogueID: String?
@@ -336,7 +334,7 @@ final class DesktopController {
         stopDailyAction()
         if homeRoutine.phase != .outside { wakeFromHome() }
         state.roaming = true; state.showFriends = true
-        actors.first?.dismissBubble(); stopCharacterVoice(); speech.stopSpeaking(at: .immediate)
+        actors.first?.dismissBubble(); stopCharacterVoice()
         activityWorld.requested = spot; itemWorld.requested = nil; itemTarget = nil
         state.activityJourneyRunning = true
         actors.first?.performance.cancel(now: Date()); actors.first?.motion.retarget()
@@ -374,7 +372,6 @@ final class DesktopController {
     func receiveDroppedItem(_ item: CompanionItem, at point: NSPoint, now: Date = Date()) -> Bool {
         guard state.showFriends, state.enabledItems.contains(item),
               let actor = actors.first, actor.panel.isVisible,
-              state.activeAssignments.contains(where: { $0.friend == actor.friend && $0.enabled }),
               !actor.view.isDragging, !homeRoutine.isInside,
               desktopItems[item]?.view.isDragging == false,
               DesktopGeometry.hit(point, in: actor.panel.frame),
@@ -422,7 +419,6 @@ final class DesktopController {
     func presentClickDialogue(_ selected: ClickDialogue, for actor: FriendActor) {
         stopDailyAction()
         recordedVoice.stop()
-        speech.stopSpeaking(at: .immediate)
         lastClickDialogueID = selected.id
         let line = selected.recording
         let duration = state.characterVoice ? max(4, (line?.duration ?? 0) + 0.35) : 4
@@ -443,7 +439,6 @@ final class DesktopController {
             state.voiceStatus = "아직 준비된 녹음이 없어요"; return
         }
         lastRecordedLine = line.id
-        speech.stopSpeaking(at: .immediate)
         if state.showFriends { actor.say(line.text, now: Date(), duration: max(4, line.duration + 0.35)) }
         // Explicit preview works while the click-voice switch is off, without changing that preference.
         recordedVoice.play(line, volume: state.characterVolume)
@@ -456,10 +451,7 @@ final class DesktopController {
         guard action.isDaily, let actor = actors.first else { return }
         if homeRoutine.phase != .outside { wakeFromHome(now: now) }
         state.showFriends = true
-        if let index = state.assignments.firstIndex(where: { $0.friend == .hachiware }) {
-            state.assignments[index].enabled = true
-        }
-        stopCharacterVoice(); speech.stopSpeaking(at: .immediate)
+        stopCharacterVoice()
         actor.dismissBubble(); actor.performance.cancel(now: now)
         itemWorld.requested = nil; itemTarget = nil
         let contact = ItemWorld.contactPoint(origin: actor.panel.frame.origin)
@@ -563,12 +555,11 @@ final class DesktopController {
             }
         }
         let homeVisible = state.homeEnabled && state.showFriends
-            && (state.activeAssignments.first { $0.friend == .hachiware }?.enabled ?? false)
         if !homeVisible && homeRoutine.phase != .outside { wakeFromHome(now: now) }
         homeRoutine.advance(now: now)
         if homeRoutine.shouldWake(now: now) { wakeFromHome(now: now) }
         for actor in actors {
-            let enabled = state.showFriends && (state.assignments.first { $0.friend == actor.friend }?.enabled ?? false)
+            let enabled = state.showFriends
             guard enabled else {
                 stopDailyAction()
                 actor.panel.orderOut(nil); actor.dismissBubble(); stopCharacterVoice()
@@ -596,8 +587,8 @@ final class DesktopController {
             actor.panel.ignoresMouseEvents = !hovered && !actor.view.isDragging
             let activity = DesktopActivity.resolve(roaming: state.roaming, hovered: hovered,
                                                    dragging: actor.view.isDragging,
-                                                   notificationUntil: actor.bubbleUntil, now: now)
-            if activity == .dragging || activity == .notifying { stopDailyAction() }
+                                                   dialogueUntil: actor.bubbleUntil, now: now)
+            if activity == .dragging || activity == .speaking { stopDailyAction() }
             activityWorld.observe(contact: ItemWorld.contactPoint(origin: actor.panel.frame.origin))
             if activity == .walking || activity == .idle { _ = triggerNearbyActivity(actor, now: now) }
             let dailyAction = actor.dailyPerformance.action(now: now)
@@ -673,7 +664,7 @@ final class DesktopController {
             actor.view.happy = activity.reacts
             if dailyAction == nil && state.expressive && activity == .hovering && !actor.view.isDragging {
                 action = HachiwareAction.hover(equipped: itemWorld.equipped, elapsed: now.timeIntervalSince(actor.hoverStarted))
-            } else if state.expressive && activity == .notifying {
+            } else if state.expressive && activity == .speaking {
                 action = .surprised
             }
             actor.view.action = action
@@ -701,23 +692,6 @@ final class DesktopController {
             let replacedByPose = activeActivitySpot == spot && spot != .furball && actor.dailyPerformance.selected != nil
             object.update(position: activityWorld.positions[spot], visible: visible && !replacedByPose,
                           mouse: mouse, behind: actor.panel.isVisible ? actor.panel.windowNumber : nil)
-        }
-    }
-    func notify(_ friend: Friend, sender: String, body: String? = nil, demo: Bool = false) {
-        guard let actor = actors.first(where: { $0.friend == friend }) else { return }
-        guard state.showFriends, state.activeAssignments.contains(where: { $0.friend == friend && $0.enabled }) else { return }
-        stopDailyAction()
-        if homeRoutine.phase != .outside { wakeFromHome() }
-        stopCharacterVoice()
-        let alert = KakaoAlertPresentation(sender: sender, body: body, demo: demo)
-        let duration = min(12, max(6, Double(alert.message.count) / 25))
-        actor.say(alert.message, now: Date(), duration: duration, heading: alert.title)
-        if state.voice {
-            speech.stopSpeaking(at: .immediate)
-            let utterance = AVSpeechUtterance(string: alert.spokenText)
-            utterance.voice = AVSpeechSynthesisVoice(language: "ko-KR")
-            utterance.rate = 0.48
-            speech.speak(utterance)
         }
     }
 }

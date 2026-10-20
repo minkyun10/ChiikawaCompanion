@@ -56,7 +56,7 @@ extension SelfTest {
         let state = AppState(defaults: defaults)
         check(defaults.object(forKey: "recordedDialogue") == nil,
               "an older text-only mode preference cannot exclude the four recordings")
-        state.voice = false; state.characterVoice = true
+        state.characterVoice = true
         let desktop = DesktopController(state: state, startTimer: false, recordedVoice: voice)
         let actor = desktop.actors[0]
         func bubbleText() -> String? {
@@ -87,15 +87,14 @@ extension SelfTest {
         check(allMuted, "muting audio keeps every one of the fourteen click captions available")
         state.characterVoice = true
         desktop.presentClickDialogue(entries[0], for: actor)
-        desktop.notify(.hachiware, sender: "테스트 친구", body: "음성 중단 시연", demo: true)
-        check(voice.player == nil && (bubbleText()?.contains("음성 중단 시연") ?? false),
-              "an incoming notification interrupts recorded dialogue and displays its own preview")
+        desktop.playDailyAction(.study)
+        check(voice.player == nil && actor.dailyPerformance.selected == .study && actor.bubble == nil,
+              "starting a daily action stops the recording and its old click bubble")
         actor.dismissBubble(); actor.panel.orderOut(nil); desktop.home.panel.orderOut(nil)
         state.characterVoice = false; state.characterVolume = 0.24
         let reopened = AppState(defaults: defaults)
-        check(!reopened.characterVoice && abs(reopened.characterVolume - 0.24) < 0.001
-              && !reopened.voice && reopened.assignments.map(\.sender) == state.assignments.map(\.sender),
-              "click voice and volume persist independently from Kakao voice and sender assignments")
+        check(!reopened.characterVoice && abs(reopened.characterVolume - 0.24) < 0.001,
+              "recorded click voice and volume still persist after chat integration removal")
         if Bundle.main.bundlePath.hasSuffix(".app") {
             check(catalog.clips.allSatisfy { $0.resourceURL?.path.hasPrefix(Bundle.main.resourcePath ?? "missing") == true },
                   "the packaged app plays its own bundled recordings without relying on Downloads or network access")

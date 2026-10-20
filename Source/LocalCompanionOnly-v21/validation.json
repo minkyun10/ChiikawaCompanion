@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-20",
+  "app_version": "0.13.0",
+  "build": 25,
+  "scope": "Remove KakaoTalk integration; preserve local companion behavior",
+  "cli_checks_passed": 197,
+  "packaged_checks_passed": 202,
+  "codesign_deep_strict": "passed",
+  "all_existing_resources_byte_identical": true,
+  "resource_count": 21,
+  "migration": "Old sender mappings and notification preferences removed on startup; roaming and recorded-click voice/volume preserved in isolated fixtures.",
+  "native_ui": {
+    "removed_controls_absent": true,
+    "click_voice_enabled": true,
+    "character_volume": 0.65,
+    "voice_preview_status": "playing · 그래서 말이야.",
+    "walking_enabled": true,
+    "items_and_daily_props_visible": true,
+    "settings_closed_at_end": true,
+    "app_left_running": true
+  },
+  "preserved_features": [
+    "four recorded click lines and ten text quotes",
+    "eight-direction distance-based walking",
+    "hover attack with sasumata",
+    "independent carried and life props",
+    "pickup and direct item handoff",
+    "home and sleeping",
+    "study with tongue detail, eating, comic spit-up"
+  ],
+  "notes": [
+    "Historical Source archives remain intact.",
+    "macOS permission settings were not changed. No accessibility scanner or permission prompt remains in the app."
+  ]
+}

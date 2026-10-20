@@ -1,20 +1,20 @@
 import AppKit
 
 enum DesktopActivity {
-    case walking, idle, hovering, dragging, notifying
+    case walking, idle, hovering, dragging, speaking
 
     static let updateInterval: TimeInterval = 1.0 / 60
 
     // Hover is a live input, not a timed reaction: leaving releases it on the next update.
     static func resolve(roaming: Bool, hovered: Bool, dragging: Bool,
-                        notificationUntil: Date, now: Date) -> DesktopActivity {
-        if now < notificationUntil { return .notifying }
+                        dialogueUntil: Date, now: Date) -> DesktopActivity {
+        if now < dialogueUntil { return .speaking }
         if hovered { return .hovering }
         if dragging { return .dragging }
         return roaming ? .walking : .idle
     }
 
-    var reacts: Bool { self == .hovering || self == .notifying }
+    var reacts: Bool { self == .hovering || self == .speaking }
 }
 
 enum DesktopLayer {

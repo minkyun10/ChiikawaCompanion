@@ -3,38 +3,13 @@ import SwiftUI
 
 final class AppDelegate: NSObject, NSApplicationDelegate {
     let state = AppState()
-    let monitor = KakaoNotificationMonitor()
     var desktop: DesktopController!
     var settingsWindow: NSWindow?
     var statusItem: NSStatusItem!
 
     func applicationDidFinishLaunching(_ notification: Notification) {
         desktop = DesktopController(state: state)
-        state.onDemo = { [weak self] friend in
-            guard let self else { return }
-            let sender = self.state.assignments.first(where: { $0.friend == friend })?.sender ?? ""
-            self.desktop.notify(friend, sender: sender.isEmpty ? "테스트 친구" : sender,
-                                body: "오늘 뭐해? 같이 산책할래?", demo: true)
-        }
         state.onReset = { [weak self] in self?.desktop.resetPositions() }
-        state.onMonitoringChange = { [weak self] enabled in
-            guard let self else { return }
-            if enabled { self.monitor.start() }
-            else { self.monitor.stop(); self.state.monitoringStatus = "꺼져 있어요" }
-        }
-        monitor.onStatus = { [weak self] status in
-            guard let self, self.state.monitoring else { return }
-            self.state.monitoringStatus = status
-        }
-        monitor.onAccessChange = { [weak self] available in self?.state.accessibilityAvailable = available }
-        monitor.onNotification = { [weak self] event in
-            guard let self, self.state.monitoring,
-                  let friend = SenderMatcher.match(event.sender, in: self.state.activeAssignments) else { return }
-            self.state.verifiedSession = true
-            let time = DateFormatter.localizedString(from: Date(), dateStyle: .none, timeStyle: .short)
-            self.state.lastEvent = "\(time) · \(event.sender) → \(friend.name)"
-            self.desktop.notify(friend, sender: event.sender, body: event.body)
-        }
         setupMenu()
         let mainMenu = NSMenu()
         let appItem = NSMenuItem()
@@ -70,14 +45,6 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         dailyMenu.addItem(item("동작 멈추기", action: #selector(stopDailyAction)))
         daily.submenu = dailyMenu; menu.addItem(daily)
         menu.addItem(.separator())
-        let demos = NSMenuItem(title: "알림 시연", action: nil, keyEquivalent: "")
-        let submenu = NSMenu()
-        for (index, friend) in Friend.developmentRoster.enumerated() {
-            let entry = item(friend.name, action: #selector(demo(_:))); entry.tag = index
-            submenu.addItem(entry)
-        }
-        demos.submenu = submenu; menu.addItem(demos)
-        menu.addItem(.separator())
         menu.addItem(item("종료", action: #selector(quit), key: "q"))
         statusItem.menu = menu
     }
@@ -110,9 +77,8 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         desktop.playDailyAction(action)
     }
     @objc func stopDailyAction() { desktop.stopDailyAction() }
-    @objc func demo(_ sender: NSMenuItem) { state.demo(Friend.developmentRoster[sender.tag]) }
     @objc func quit() { NSApp.terminate(nil) }
-    func applicationWillTerminate(_ notification: Notification) { monitor.stop(); desktop?.stopCharacterVoice() }
+    func applicationWillTerminate(_ notification: Notification) { desktop?.stopCharacterVoice() }
     func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool { false }
 }
 

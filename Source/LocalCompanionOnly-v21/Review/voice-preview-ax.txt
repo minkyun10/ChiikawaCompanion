@@ -1,0 +1,4 @@
+The following is a diff from the previous accessibility tree for Window: "치이카와 데스크톱 · 친구 설정" with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+~		55 text 재생 중 · 그래서 말이야. 손정민 성우 녹음: 초밥이다! · 엉망진창으로 뒤섞였어 · 맛있다! · 그래서 말이야
+명대사 10개는 글로 보여줘요. 하치와레의 동굴 집
+The focused UI element is 0 standard window 치이카와 데스크톱 · 친구 설정, Secondary Actions: Raise

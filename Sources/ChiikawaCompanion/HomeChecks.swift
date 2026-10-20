@@ -82,15 +82,14 @@ extension SelfTest {
               "requesting a prop wakes the character and keeps the pickup interaction")
         desktop.goHome(now: now)
         _ = desktop.enterHomeIfReached(actor, now: now)
-        desktop.state.voice = false
-        desktop.notify(.hachiware, sender: "테스트 친구", body: "수면 중 알림 시연", demo: true)
-        check(!desktop.homeRoutine.isInside && actor.bubble != nil,
-              "an incoming alert wakes the sleeping character before displaying its transient bubble")
+        desktop.home.view.onActivate?()
+        check(!desktop.homeRoutine.isInside && !desktop.state.resting,
+              "clicking the sleeping house wakes the character without an external connection")
         actor.dismissBubble()
         desktop.state.homeEnabled = false; desktop.state.automaticRest = false
         let saved = AppState(defaults: desktop.state.defaults)
         check(!saved.homeEnabled && !saved.automaticRest,
-              "home and rest choices persist independently of sender and prop preferences")
+              "home and rest choices persist independently of other prop preferences")
         actor.panel.orderOut(nil); desktop.home.panel.orderOut(nil)
     }
 

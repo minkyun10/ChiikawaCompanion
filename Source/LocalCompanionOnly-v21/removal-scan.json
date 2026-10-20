@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-20",
+  "deleted_monitor_source": true,
+  "retired_symbol_and_ui_matches": [],
+  "scanned_patterns": [
+    "KakaoNotification",
+    "SenderMatcher",
+    "struct Assignment",
+    "AVSpeechSynthesizer",
+    "AVSpeechUtterance",
+    "AXUIElement",
+    "AXIsProcessTrusted",
+    "Privacy_Accessibility",
+    "onMonitoringChange",
+    "onDemo",
+    "state.assignments",
+    "state.monitoring",
+    "카카오톡",
+    "연결할 카톡 상대",
+    "알림 감지",
+    "알림 시연",
+    "목소리 알림"
+  ],
+  "allowed_framework_use": "Foundation Notification arguments and the screen-layout NotificationCenter observer are app lifecycle events. They do not read other apps.",
+  "legacy_preference_keys": "Present only for removal on launch and isolated migration fixtures."
+}

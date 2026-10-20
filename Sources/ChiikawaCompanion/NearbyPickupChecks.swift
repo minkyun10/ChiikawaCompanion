@@ -38,7 +38,7 @@ extension SelfTest {
         let state = AppState(defaults:defaults)
         state.enabledItems = Set(CompanionItem.allCases); state.automaticItems = true
         state.automaticActivities = false; state.homeEnabled = false
-        state.characterVoice = false; state.voice = false; state.expressive = false
+        state.characterVoice = false; state.expressive = false
         state.showFriends = true; state.roaming = true
         let desktop = DesktopController(state:state,startTimer:false), actor = desktop.actors[0]
         let area = NSScreen.main!.visibleFrame, away = NSPoint(x:-10000,y:-10000)

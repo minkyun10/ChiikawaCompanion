@@ -1,0 +1,84 @@
+Window: "치이카와 데스크톱 · 친구 설정", App: 치이카와 데스크톱.
+0 standard window 치이카와 데스크톱 · 친구 설정, Secondary Actions: Raise
+	1 scroll area Secondary Actions: Scroll Up, Scroll Down
+		2 text DESKTOP COMPANION 하치와레와 먼저 하치와레와
+바탕화면 산책.
+		3 button 하치와레 부르기
+		4 text 설정 창을 닫으면, 바탕화면에서 만나요.
+		5 image Description: 윈도우, ID: macwindow
+		6 text 바탕화면에서만 앱 창 뒤에, 바탕화면 아이콘 앞에 있어요.
+		7 image point.topleft.down.to.point.bottomright.curvepath
+		8 text 화면 구석구석 산책 상하좌우로 걷고, 목적지를 바꿔요.
+		9 image Description: 커서 클릭, ID: cursorarrow.rays
+		10 text 다가오면 반가워해요 마우스를 올려 인사하고, 드래그로 옮겨요. 하치와레
+		11 image Description: 왼쪽 주석, ID: bubble.left.fill
+		12 text 클릭하면 한마디 목소리와 명대사 중 하나를 들려줘요. 오늘도 같이 걷자! 오늘은 뭘 들고 걸을까?
+		13 button 다시 흩어 놓기
+		14 text 바탕화면 소품을 발견하면 주워서 착용해요.
+		15 collection Secondary Actions: AXScrollToTop, AXScrollToBottom
+			16 image Description: 카메라, ID: camera
+			17 text 카메라 목에 걸고, 찰칵!
+			18 toggle button Description: 카메라 바탕화면에 놓기, Value: on
+			19 image Description: 장르, ID: guitars
+			20 text 기타 산책하다 잠깐 연주해요
+			21 toggle button Description: 기타 바탕화면에 놓기, Value: on
+			22 image Description: 반짝반짝, ID: sparkles
+			23 text 파란 사스마타 마우스를 올리면 에잇!
+			24 toggle button Description: 파란 사스마타 바탕화면에 놓기, Value: on
+		25 switch 스스로 주워 입기, Value: on
+		26 switch 표정과 소품 동작, Value: on
+		27 text 지금은 카메라와 함께 카메라를 주웠어요
+		28 menu button 주우러 가기
+		29 button 내려놓기
+		30 text 소품이 몸에 닿으면 지나가면서도 주워요. 하치와레 위에 드래그해 건넬 수도 있어요.
+바닥에 드래그하면 옮기고, 클릭하면 주우러 와요. 새 소품을 들면 이전 것은 내려놓아요. 하치와레의 하루
+		31 switch 가까이 가면 행동하기, Value: on
+		32 button (disabled) 동작 멈추기
+		33 text 책상
+		34 toggle button Description: 책상 바탕화면에 놓기, Value: on
+		35 text 털뭉치
+		36 toggle button Description: 털뭉치 바탕화면에 놓기, Value: on
+		37 text 밥
+		38 toggle button Description: 밥 바탕화면에 놓기, Value: on
+		39 text 가까이 가면 공부하기 가까이 가면 토하기 가까이 가면 밥 먹기
+		40 button 하치와레 책상으로 가기
+		41 button 하치와레 털뭉치로 가기
+		42 button 하치와레 밥으로 가기
+		43 button 하치와레 공부하기
+		44 button 하치와레 밥 먹기
+		45 button 하치와레 토하기
+		46 text 공부하고, 밥도 먹고, 잠깐 쉬어 가요 책상·털뭉치·밥 근처에 가면 해당 동작을 해요. 소품을 클릭하면 걸어가고, 드래그로 자리를 바꿀 수 있어요.
+한 번 행동한 곳은 멀어졌다 돌아와야 다시 반응해요. 동작 버튼이나 캐릭터 우클릭으로 바로 볼 수도 있어요. 하치와레의 목소리
+		47 switch 클릭 목소리, Value: on
+		48 text 클릭하면 음성 대사 4개와 명대사 10개, 총 14개 중 하나가 랜덤으로 나와요. 녹음이 있는 4개는 말풍선과 함께 목소리를 들려줘요.
+		49 image Description: 음량 높게, ID: speaker.wave.2.fill
+		50 slider Description: 클릭 목소리 음량, Value: 0.65, Secondary Actions: Increment, Decrement
+			51 value indicator 0.65
+		52 text 65%
+		53 button 하치와레 목소리 들어보기
+		54 button 멈추기
+		55 text 클릭하면 음성 4개와 명대사 10개 중 하나를 보여줘요 손정민 성우 녹음: 초밥이다! · 엉망진창으로 뒤섞였어 · 맛있다! · 그래서 말이야
+명대사 10개는 글로 보여줘요. 하치와레의 동굴 집
+		56 switch 집 표시, Value: on
+		57 text 화면 중앙 하단, Dock 위에 있어요. 일반 앱 창 뒤에 표시돼요. 집을 클릭하면 쉬러 가요
+		58 switch 가끔 집에서 쉬기, Value: on
+		59 button 집에 가서 자기
+		60 button (disabled) 깨우기
+		61 text 집을 클릭하거나 하치와레를 입구에 데려다 놓으면 이불을 덮고 자요.
+잠든 집을 클릭하면 깨워요. 20초 쉬면 스스로 일어나요.
+		62 switch 산책하기, Value: on
+		63 switch 하치와레 표시, Value: on
+		64 text 지금은 하치와레 한 명과 산책해요. 설정은 메뉴 막대의 발바닥에서
+		65 scroll bar (settable, float) 0
+			66 value indicator (settable, float) 0
+			67 increment arrow button
+			68 decrement arrow button
+			69 increment page button
+			70 decrement page button
+	71 close button
+	72 zoom button (disabled)
+	73 minimize button
+74 menu bar
+	75 ChiikawaCompanion
+
+The focused UI element is 0 standard window 치이카와 데스크톱 · 친구 설정, Secondary Actions: Raise
