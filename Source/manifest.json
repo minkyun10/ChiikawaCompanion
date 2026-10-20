@@ -1,10 +1,10 @@
 {
   "created_at": "2026-10-16T12:08:58.617148+00:00",
   "operation": "copy; originals preserved",
-  "image_file_count": 1970,
-  "unique_image_content_count": 1323,
-  "supporting_file_count": 260,
-  "image_bytes": 431502292,
+  "image_file_count": 1972,
+  "unique_image_content_count": 1325,
+  "supporting_file_count": 264,
+  "image_bytes": 431601952,
   "symmetric_walk_runtime_applied": true,
   "files": [
     {
@@ -5613,6 +5613,48 @@
       "archive_path": "Chiikawa-v22/verification-log.txt",
       "bytes": 103,
       "sha256": "9d93e5e021e6e40be54a9d6d57af16661ed0491450a57444e7bd7d783ce1bb53"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaResearch-v25/README.txt",
+      "archive_path": "ChiikawaResearch-v25/README.txt",
+      "bytes": 3274,
+      "sha256": "7cdd1470a46f52ee9cbf0a204cf56d9a5583e938d2f54f8636d14db73ad21085"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaResearch-v25/References/Official/chiikawa-house-props-sega.jpg",
+      "archive_path": "ChiikawaResearch-v25/References/Official/chiikawa-house-props-sega.jpg",
+      "bytes": 25797,
+      "sha256": "2cfa6808cea9d524b9767f41d356e3b86d47a5bbf3d48c323796a80642d3b123"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaResearch-v25/References/Official/chiikawa-house-sega.jpg",
+      "archive_path": "ChiikawaResearch-v25/References/Official/chiikawa-house-sega.jpg",
+      "bytes": 73863,
+      "sha256": "e7b5a78d21cac3fa637f928ca55f779a96b50cd8a77424c7f77c8a8d246f7e77"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaResearch-v25/reference-images.json",
+      "archive_path": "ChiikawaResearch-v25/reference-images.json",
+      "bytes": 919,
+      "sha256": "6df0aa19d5d853678287052f6e8f8fa377f879d2db25fa992e18dee83b8560a5"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaResearch-v25/sources.json",
+      "archive_path": "ChiikawaResearch-v25/sources.json",
+      "bytes": 4070,
+      "sha256": "ba55c08e8832acf2d3634d7004cf155412570acc0b8a0494d4d34ade0e902672"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaResearch-v25/voice-candidates.json",
+      "archive_path": "ChiikawaResearch-v25/voice-candidates.json",
+      "bytes": 1350,
+      "sha256": "fbf1707522245a7e28d0f3cdd8be5062a6fbd541e20f286ddff96ebb1e06a15a"
     },
     {
       "kind": "supporting",
@@ -14669,8 +14711,8 @@
       "kind": "supporting",
       "source": "Source/README.txt",
       "archive_path": "README.txt",
-      "bytes": 5934,
-      "sha256": "1e28b6979571a0804fc9d9023467839b842ecfb86790380ec421e936d82422b8"
+      "bytes": 6257,
+      "sha256": "7389f72fd755088886b0807156873d49e45e7d19c0e52c452970f22ec6930ba5"
     },
     {
       "kind": "image",
@@ -15618,7 +15660,7 @@
       "sha256": "8a42caa40e469a5ee00fa2b860d14756cc1fd73bc8fcf73332c50b87a92c9c3b"
     }
   ],
-  "updated_at": "2026-10-20T11:11:12.498545+00:00",
+  "updated_at": "2026-10-20T11:27:00.028178+00:00",
   "latest_applied": "ChiikawaWeaponAttack-v24",
   "applied_directions": [
     "down-left",

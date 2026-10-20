@@ -1,0 +1,32 @@
+{
+  "verified": "2026-10-20",
+  "korean_actor": "이주은",
+  "agency_class": "대원방송 12기",
+  "role_credit_source_id": "actor-profile",
+  "preferred_reference": {
+    "url": "https://www.youtube.com/watch?v=V0IPf4ENMJs",
+    "title": "[성우 이주은] 캐릭터 - 겁많고 소심한 햄스터💗 (치이카와)",
+    "author": "성우 이주은",
+    "channel": "https://www.youtube.com/@jooeun_2",
+    "duration_seconds_observed": 38,
+    "metadata_confirmation": "YouTube oEmbed + visible channel video entry",
+    "status": "Reference located; not imported into application"
+  },
+  "additional_reference_source_id": "anibox-playlist",
+  "proposed_app_reactions": [
+    "Short greeting or happy reaction",
+    "Startled reaction",
+    "Tearful reaction",
+    "Effort or attack reaction"
+  ],
+  "proposal_status": "Production ideas inferred from character and interview, not a transcript or verified clip inventory",
+  "not_yet_verified": [
+    "Exact utterances and clean-cut timestamps",
+    "Background music and sound-effect overlap",
+    "Permission to extract, embed or redistribute recordings"
+  ],
+  "audio_downloaded": false,
+  "audio_applied_to_runtime": false,
+  "voice_cloning_performed": false,
+  "note": "The word 햄스터 is part of the public sample title; it is not used here as an official species classification."
+}

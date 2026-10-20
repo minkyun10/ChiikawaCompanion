@@ -1,0 +1,112 @@
+[
+  {
+    "id": "official-character",
+    "url": "https://www.chiikawaofficial.com/characters/",
+    "publisher": "Chiikawa official",
+    "type": "primary",
+    "supports": [
+      "Shy and cautious character; tears and support from friends"
+    ],
+    "verification": "Public official character page",
+    "verified": "2026-10-20"
+  },
+  {
+    "id": "official-figure",
+    "url": "https://www.goodsmile.info/ja/product/14452",
+    "publisher": "Good Smile Company / Max Factory",
+    "type": "primary",
+    "supports": [
+      "Sasumata and pochette as Chiikawa optional parts",
+      "Smiling and crying expressions",
+      "Weeding and subjugation as everyday work"
+    ],
+    "existing_local_references": "../Chiikawa-v22/References/Official",
+    "verification": "Official licensed figure product page",
+    "verified": "2026-10-20"
+  },
+  {
+    "id": "official-house",
+    "url": "https://www.segafave.co.jp/news/240626_1/",
+    "publisher": "SEGA Fave",
+    "type": "primary",
+    "published": "2024-06-26",
+    "supports": [
+      "House won through Muchauma Yogurt sweepstakes",
+      "Canonical props: key, stuffed toy, bedding, bear pochette, table, notebook, pajamas and stickers"
+    ],
+    "verification": "Manufacturer news release and both product images",
+    "linked_product_page_status": "The linked segatoys product page returned HTTP 404; use this news release",
+    "verified": "2026-10-20"
+  },
+  {
+    "id": "actor-profile",
+    "url": "https://studiomonkey.co.kr/actor_profile?name=%EC%9D%B4%EC%A3%BC%EC%9D%80",
+    "publisher": "Studio Monkey",
+    "type": "primary",
+    "supports": [
+      "Korean role Chiikawa is credited to Lee Joo-eun (이주은)"
+    ],
+    "verification": "Public actor profile HTML contains the credit: 먼작귀 - 치이카와",
+    "verified": "2026-10-20"
+  },
+  {
+    "id": "actor-channel",
+    "url": "https://www.youtube.com/@jooeun_2",
+    "publisher": "성우 이주은",
+    "type": "primary",
+    "supports": [
+      "Self-introduction as Daewon Broadcasting 12th-class voice actress",
+      "Chiikawa acting sample in individual acting shelf"
+    ],
+    "verification": "YouTube channel visible accessibility content",
+    "verified": "2026-10-20"
+  },
+  {
+    "id": "actor-chiikawa-sample",
+    "url": "https://www.youtube.com/watch?v=V0IPf4ENMJs",
+    "publisher": "성우 이주은",
+    "type": "primary",
+    "supports": [
+      "An explicitly Chiikawa-labeled acting sample by the Korean voice actress"
+    ],
+    "verification": "Visible channel video title and 38-second duration; video title and author independently confirmed by public YouTube oEmbed",
+    "verified": "2026-10-20"
+  },
+  {
+    "id": "anibox-playlist",
+    "url": "https://www.youtube.com/playlist?list=PLsmaUhkCwW3q5q46uc9So2b4D-pZqVZOV",
+    "publisher": "AniBox",
+    "type": "primary",
+    "supports": [
+      "Official Korean-dub episode reference playlist titled [전편공개]먼작귀"
+    ],
+    "verification": "Visible YouTube playlist title, verified owner AniBox, and owner channel @myanibox",
+    "limitations": "Availability and watchability of every episode were not individually checked",
+    "verified": "2026-10-20"
+  },
+  {
+    "id": "licensed-dub",
+    "url": "https://www.tving.com/contents/P001780494",
+    "publisher": "TVING / ANIBOX",
+    "type": "primary",
+    "supports": [
+      "Korean dubbed edition and cast list including 이주은"
+    ],
+    "verification": "Public title metadata; streaming may require a subscription",
+    "verified": "2026-10-20"
+  },
+  {
+    "id": "actor-interview",
+    "url": "https://m.newspic.kr/view.html?nid=2026071611520065430",
+    "publisher": "Wikitree via NewsPic",
+    "type": "interview_syndication",
+    "published": "2026-07-16",
+    "supports": [
+      "이주은 is identified as Chiikawa actress",
+      "Soft rounded breaths and nonverbal emotional reactions",
+      "Persistence after the weeding qualification exam failure"
+    ],
+    "verification": "Interview text, with speaker and original publisher identified",
+    "verified": "2026-10-20"
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "file": "References/Official/chiikawa-house-sega.jpg",
+    "url": "https://www.segafave.co.jp/_nuxt/image01.jLTOAnl_.jpg",
+    "source_page": "https://www.segafave.co.jp/news/240626_1/",
+    "publisher": "SEGA Fave",
+    "published": "2024-06-26",
+    "verified": "2026-10-20",
+    "bytes": 73863,
+    "sha256": "e7b5a78d21cac3fa637f928ca55f779a96b50cd8a77424c7f77c8a8d246f7e77",
+    "purpose": "Reference only; no runtime asset replacement"
+  },
+  {
+    "file": "References/Official/chiikawa-house-props-sega.jpg",
+    "url": "https://www.segafave.co.jp/_nuxt/image02.DiH34Z5n.jpg",
+    "source_page": "https://www.segafave.co.jp/news/240626_1/",
+    "publisher": "SEGA Fave",
+    "published": "2024-06-26",
+    "verified": "2026-10-20",
+    "bytes": 25797,
+    "sha256": "2cfa6808cea9d524b9767f41d356e3b86d47a5bbf3d48c323796a80642d3b123",
+    "purpose": "Reference only; no runtime asset replacement"
+  }
+]
