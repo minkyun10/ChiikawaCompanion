@@ -1,0 +1,73 @@
+{
+  "generations": [
+    {
+      "generator": "built-in image_gen",
+      "mode": "reference-based generation/edit",
+      "date": "2026-10-20",
+      "output": "Generated/chiikawa-model-sheet-v1.png",
+      "original_output_filename": "exec-52d0eb28-52de-4c05-aabb-efa305834fda.png",
+      "prompt": "Prompts/01-turnaround.txt",
+      "input_images": [
+        "References/Official/chiikawa-anime-front.png",
+        "References/Project/hachiware-approved-style.png",
+        "References/Official/chiikawa-official-figure-02.jpg",
+        "References/Official/chiikawa-official-figure-03.jpg"
+      ],
+      "transparent_background_requested": false,
+      "bytes": 1563760,
+      "sha256": "70c69248eee0b85f9a3823e6f28447c0de02353a95b54d064d16fc9902672384",
+      "original_preserved": true
+    },
+    {
+      "generator": "built-in image_gen",
+      "mode": "reference-based generation/edit",
+      "date": "2026-10-20",
+      "output": "Generated/chiikawa-walk-rig-v1.png",
+      "original_output_filename": "exec-e707c8ce-9f6e-49a9-9eab-b55a62296275.png",
+      "prompt": "Prompts/02-walk-rig.txt",
+      "input_images": [
+        "Generated/chiikawa-model-sheet-v1.png",
+        "References/Project/hachiware-approved-gait.png"
+      ],
+      "transparent_background_requested": true,
+      "bytes": 970763,
+      "sha256": "4352f5806fb7c17d56e3fe30c5e131f85cd8bcac1e0409e3c92bef524aca4b6a",
+      "original_preserved": true
+    },
+    {
+      "generator": "built-in image_gen",
+      "mode": "reference-based generation/edit",
+      "date": "2026-10-20",
+      "output": "Generated/chiikawa-expressions-items-v1.png",
+      "original_output_filename": "exec-c7e3cb32-5654-478e-a09a-cada58d695a3.png",
+      "prompt": "Prompts/03-expressions-and-items.txt",
+      "input_images": [
+        "Generated/chiikawa-model-sheet-v1.png",
+        "References/Official/chiikawa-official-figure-02.jpg",
+        "References/Official/chiikawa-official-figure-03.jpg"
+      ],
+      "transparent_background_requested": false,
+      "bytes": 1543693,
+      "sha256": "12034a91a4599643ac25353e55f5096e888e3f852ee7e243d41795906f7ede12",
+      "original_preserved": true
+    },
+    {
+      "generator": "built-in image_gen",
+      "mode": "reference-based generation/edit",
+      "date": "2026-10-20",
+      "output": "Generated/chiikawa-bold-limb-parts-v2.png",
+      "original_output_filename": "exec-901442b5-869b-4f72-b385-61189f87145d.png",
+      "prompt": "Prompts/04-bold-limb-parts.txt",
+      "input_images": [
+        "Generated/chiikawa-model-sheet-v1.png",
+        "Generated/chiikawa-walk-rig-v1.png"
+      ],
+      "transparent_background_requested": true,
+      "bytes": 241583,
+      "sha256": "c44d28b432bc2495b480fd1fba57f3ab3618d8cbac36330ef7bb8748479a11dd",
+      "original_preserved": true
+    }
+  ],
+  "all_generated_variants_preserved": true,
+  "native_animation_renderer": "ChiikawaWalkPreview.swift"
+}

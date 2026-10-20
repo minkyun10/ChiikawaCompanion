@@ -1,0 +1,424 @@
+{
+  "all_body_views_from_one_generated_atlas" : true,
+  "app_speed_points_per_second" : 46,
+  "app_stride_points" : 62.700000000000003,
+  "body_source_is_constant_between_frames" : true,
+  "cycle_seconds" : 1.3630434782608696,
+  "date" : "2026-10-20",
+  "directions" : [
+    {
+      "direction" : "left",
+      "distinct_pixel_frames" : 24,
+      "foot_size_constant_both_legs" : [
+        16,
+        26
+      ],
+      "frame_count" : 24,
+      "largest_component_counts" : [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "transparent_corners" : true
+    },
+    {
+      "direction" : "right",
+      "distinct_pixel_frames" : 24,
+      "foot_size_constant_both_legs" : [
+        16,
+        26
+      ],
+      "frame_count" : 24,
+      "largest_component_counts" : [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "transparent_corners" : true
+    },
+    {
+      "direction" : "down",
+      "distinct_pixel_frames" : 24,
+      "foot_size_constant_both_legs" : [
+        18,
+        24
+      ],
+      "frame_count" : 24,
+      "largest_component_counts" : [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "transparent_corners" : true
+    },
+    {
+      "direction" : "up",
+      "distinct_pixel_frames" : 24,
+      "foot_size_constant_both_legs" : [
+        18,
+        24
+      ],
+      "frame_count" : 24,
+      "largest_component_counts" : [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "transparent_corners" : true
+    },
+    {
+      "direction" : "down-left",
+      "distinct_pixel_frames" : 24,
+      "foot_size_constant_both_legs" : [
+        18,
+        24
+      ],
+      "frame_count" : 24,
+      "largest_component_counts" : [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "transparent_corners" : true
+    },
+    {
+      "direction" : "down-right",
+      "distinct_pixel_frames" : 24,
+      "foot_size_constant_both_legs" : [
+        18,
+        24
+      ],
+      "frame_count" : 24,
+      "largest_component_counts" : [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "transparent_corners" : true
+    },
+    {
+      "direction" : "up-left",
+      "distinct_pixel_frames" : 24,
+      "foot_size_constant_both_legs" : [
+        18,
+        24
+      ],
+      "frame_count" : 24,
+      "largest_component_counts" : [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "transparent_corners" : true
+    },
+    {
+      "direction" : "up-right",
+      "distinct_pixel_frames" : 24,
+      "foot_size_constant_both_legs" : [
+        18,
+        24
+      ],
+      "frame_count" : 24,
+      "largest_component_counts" : [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "transparent_corners" : true
+    }
+  ],
+  "frames_per_complete_left_right_cycle" : 24,
+  "gif_cycle_seconds" : 1.3600000000000001,
+  "left_right_half_cycle_max_error" : 2.8421709430404007e-14,
+  "right_views_mirror_completed_left_frames" : true,
+  "runtime_applied" : false,
+  "side_planted_foot_compensation_error" : 0,
+  "slow_gif_cycle_seconds" : 2.8799999999999999,
+  "source_parts" : [
+    {
+      "name" : "front-body",
+      "source_rect_top_left" : [
+        45,
+        20,
+        385,
+        395
+      ],
+      "trimmed_pixels" : [
+        329,
+        354
+      ]
+    },
+    {
+      "name" : "side-body",
+      "source_rect_top_left" : [
+        445,
+        20,
+        350,
+        395
+      ],
+      "trimmed_pixels" : [
+        307,
+        353
+      ]
+    },
+    {
+      "name" : "back-body",
+      "source_rect_top_left" : [
+        820,
+        20,
+        390,
+        400
+      ],
+      "trimmed_pixels" : [
+        325,
+        357
+      ]
+    },
+    {
+      "name" : "front-diagonal-body",
+      "source_rect_top_left" : [
+        55,
+        425,
+        375,
+        380
+      ],
+      "trimmed_pixels" : [
+        313,
+        351
+      ]
+    },
+    {
+      "name" : "back-diagonal-body",
+      "source_rect_top_left" : [
+        450,
+        425,
+        360,
+        385
+      ],
+      "trimmed_pixels" : [
+        300,
+        349
+      ]
+    },
+    {
+      "name" : "foot",
+      "source_rect_top_left" : [
+        920,
+        530,
+        230,
+        230
+      ],
+      "trimmed_pixels" : [
+        163,
+        179
+      ]
+    },
+    {
+      "name" : "arm",
+      "source_rect_top_left" : [
+        120,
+        910,
+        210,
+        240
+      ],
+      "trimmed_pixels" : [
+        136,
+        177
+      ]
+    },
+    {
+      "name" : "happy",
+      "source_rect_top_left" : [
+        430,
+        810,
+        385,
+        410
+      ],
+      "trimmed_pixels" : [
+        330,
+        367
+      ]
+    },
+    {
+      "name" : "crying",
+      "source_rect_top_left" : [
+        820,
+        810,
+        390,
+        410
+      ],
+      "trimmed_pixels" : [
+        329,
+        365
+      ]
+    }
+  ]
+}

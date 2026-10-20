@@ -1,0 +1,7 @@
+Source/Chiikawa-v22/ChiikawaWalkPreview.swift:110:26: error: the compiler is unable to type-check this expression in reasonable time; try breaking up the expression into distinct sub-expressions
+108 |     let x: CGFloat = stride * CGFloat(h00 + 2*h10 - h01 + 2*h11)
+109 |     let y: CGFloat = ground + lift * CGFloat(pow(sin(Double.pi * u), 2))
+110 |     let angle: CGFloat = CGFloat(32 - 60 * (u*u*(3 - 2*u))) * CGFloat.pi / 180
+    |                          `- error: the compiler is unable to type-check this expression in reasonable time; try breaking up the expression into distinct sub-expressions
+111 |     return Step(x: x, y: y, angle: angle)
+112 | }

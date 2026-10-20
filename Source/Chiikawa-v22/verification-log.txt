@@ -1,0 +1,1 @@
+760 checks passed for 8 directions, 192 frames, atlas order, identity, exact mirroring and GIF timing.

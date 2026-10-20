@@ -1,0 +1,19 @@
+Use case: precise-object-edit.
+Asset type: transparent 2D character rig source atlas for a desktop companion's mathematically symmetric 24-frame walk.
+Reference image 1, chiikawa-model-sheet-v1.png, is the EXACT character identity and model. Preserve that Chiikawa's simple rounded ears, glossy small black eyes, eyebrows, tiny w mouth, pink cheeks, white fill and warm dark-brown outlines. Keep its broad plump outline and short limb proportions.
+Reference image 2, hachiware-approved-gait.png, is only a visual guide for seamlessly connected short legs and arms. Do NOT draw Hachiware, pointed ears or blue patches.
+Create a clean, square TRANSPARENT atlas in an EXACT equal 3-column by 3-row grid. Nine isolated assets, generous transparent gutters, no text, no labels, no grid, no background, no cast shadows. Every occupied cell has one clearly separate asset and nothing else.
+Top row, left to right:
+1 FRONT BODY ONLY: front-facing head-and-torso silhouette of the exact Chiikawa, neutral face. REMOVE BOTH ARMS AND BOTH FEET. The lower belly is one smooth closed continuous curve. All ears, face and torso unchanged.
+2 SIDE-LEFT BODY ONLY: true left profile head-and-torso silhouette from the model sheet, neutral profile face and tiny round white tail. REMOVE BOTH ARMS AND BOTH FEET. Smooth closed lower belly, no limb stumps.
+3 BACK BODY ONLY: straight rear head-and-torso silhouette with both round ears and the tiny round white tail. REMOVE BOTH ARMS AND BOTH FEET. No face.
+Middle row:
+4 FRONT-LEFT THREE-QUARTER BODY ONLY: model sheet DOWN LEFT identity, turned 45 degrees left with both eyes and nearer cheek visible; REMOVE ALL ARMS AND FEET. Smooth body outline.
+5 BACK-LEFT THREE-QUARTER BODY ONLY: model sheet UP LEFT identity, clearly rear 45-degree view, tiny round white tail; REMOVE ALL ARMS AND FEET, no face.
+6 FOOT PART: one isolated plain white short rounded foot/leg, a small soft capsule with a round lower toe and a broad white open root at its top, dark-brown outline on sides and sole ONLY. No claws, no toes, no ankle line. Make it large enough in the cell to be reusable.
+Bottom row:
+7 ARM PART: one isolated little white arm, rounded U-shaped white hand at its lower end, open shoulder root at the top, dark-brown outline along sides and lower end only. No fingers or shoulder cap line. Make it large enough in the cell to be reusable.
+8 HAPPY FRONT: complete Chiikawa with attached tiny arms and feet, eyes curved closed, happy gentle open smile.
+9 CRYING FRONT: complete Chiikawa with attached tiny arms and feet, wobbly eyebrows, shiny eyes and small turquoise tears as on the model sheet.
+Flat ink illustration, no 3D or toy seam. Body-only assets in cells 1-5 must be the SAME height and matching size, no detached limb scraps in those cells. Fill is opaque white; outside is genuine alpha transparency. Reproduce the facial features and brown outline from the model sheet consistently.
+Critical: no existing arms/feet on cells 1-5; they will be articulated from parts 6 and 7 by the native animation renderer. Do not add numbers, checkerboard pattern, pink backgrounds, pink ear interiors, blue markings or other characters.

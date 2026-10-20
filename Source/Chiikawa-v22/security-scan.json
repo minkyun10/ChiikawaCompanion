@@ -1,0 +1,8 @@
+{
+  "date": "2026-10-20",
+  "scanner": "Gitleaks 8.30.1",
+  "scope": "New Chiikawa-v22 source package",
+  "secret_findings": 0,
+  "exit_code": 0,
+  "raw_values_in_report": false
+}

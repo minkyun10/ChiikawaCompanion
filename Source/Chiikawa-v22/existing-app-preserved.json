@@ -1,0 +1,193 @@
+{
+  "date": "2026-10-20",
+  "app_version": "0.13.0",
+  "runtime_applied": false,
+  "all_runtime_code_and_resources_unchanged": true,
+  "checked_file_count": 46,
+  "files": [
+    {
+      "path": "Package.swift",
+      "sha256": "cb6833124060d69408a2a9a7a2667bb083326c6c157344fa05ad829ca926583a"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/ActivitySpotChecks.swift",
+      "sha256": "8df87313a273cf2389d2544807e89efacf97572acfe94532d6c9c5c3e763f528"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/ActivitySpots.swift",
+      "sha256": "34dcca3f6e1ee8db8dbb0ec621c3630d24e24d1f2e99bb959659a137b0756276"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Artwork.swift",
+      "sha256": "8c8db3db02c3571d912e1db37a8b0f4678994ed565ae17d7898d5b8d925bccc8"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/CaveHome.swift",
+      "sha256": "8d9e54d2dfaa182943e71ad8dd1add5b6f3ab866468e2163cd0fb6d856c162f6"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/CompanionArtwork.swift",
+      "sha256": "de7426e8c924bf11e6c55109da00da6ba7ce1b396777c3f09666d7a5a97527fb"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/CompanionItems.swift",
+      "sha256": "fe5ae7bb7175603c3725b4e41cd57a2a0d81043b53e4dfdd4c43f46e59c77067"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/DailyActionChecks.swift",
+      "sha256": "838172515923e4226a407dd19180953c9fdf09c86621e158860403a61bc24aa2"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/DailyActions.swift",
+      "sha256": "fa0d09b39dd9c7c5fa35da21879a925311da755ed5d142fe79eab4b0fbd30d2f"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Desktop.swift",
+      "sha256": "f7afbf46f7eb187e7b71dea6c68e298ca9e9e52bccad4c4a0636aacc0890882c"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/DesktopItems.swift",
+      "sha256": "bae1d82c5d26738f6cc53c5b061dfcbe323dbe88024d34f85d88c6dec16136cb"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/HachiwareSprites.swift",
+      "sha256": "6e1008a6cb19c6cb4f84effd8b41b1b44bb05f3c86f64e848db94ff84e4f3e7a"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/HomeChecks.swift",
+      "sha256": "08deafbdb2e27eef05fceec557ccf4316d55f99f8fadc4507f23d1de493ecb09"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/ItemDropChecks.swift",
+      "sha256": "c935b0a6b6f904fc217934fa76a27d286c9d30188cc9cd22fe5b23a777bea852"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Model.swift",
+      "sha256": "bd11a4d45036e8a4938301b077814f9bffa6a6f75496440351ae32319aab9e2e"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/NearbyPickupChecks.swift",
+      "sha256": "9f2fd11cff188487cc44b1fac9e047d9a626b43cbe60c1a298ee7deacb26999d"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/RecordedVoice.swift",
+      "sha256": "d80bb95e35a22b7764e7a0331ed138f630be6a153937b8cc33b4cfb77ded8479"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Resources/Voice/hachiware-mixed-v13.m4a",
+      "sha256": "f2a269ed6d3c5cb3e265d68156a2398c2ea8b5572bf95fbeb5564bb5550176b5"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Resources/Voice/hachiware-recordings-v13.json",
+      "sha256": "7bd41088f145b4f8926cd73ee1520d1de5aa23504706048e0614fca049836f49"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Resources/Voice/hachiware-story-v13.m4a",
+      "sha256": "dd149f58c2eb420a188a7e59feffc2e1764755517233328c120d248bf37662de"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Resources/Voice/hachiware-sushi-v13.m4a",
+      "sha256": "0431503ff9fc352723d87a65fe7b323802b8b6a9ce1026dbe70d93cdacfbe4f8"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Resources/Voice/hachiware-tasty-v13.m4a",
+      "sha256": "8cb971e8819661470b10819548b06a30f8edc0086b01db6957684c8f9b664bdc"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Resources/hachiware-actions-v7.png",
+      "sha256": "920b8add1d3402f1e0b522967aac31060589e9d3d234c4b0c0a7fe3ebd026111"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Resources/hachiware-attack-v19.png",
+      "sha256": "2335ccafc5d948f77e7f2b9b57a6c1567b61621507d9793921f108f7edf8f528"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Resources/hachiware-cardinal-walk-12-v3.png",
+      "sha256": "cd41bf4f46e29a15d6412016afccd8475c9d279c4b8993b22c3ec40b208faf19"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Resources/hachiware-cardinal-walk-approved-v5.png",
+      "sha256": "c3b03bfe42f0501dcfaac2f442fe4d59242fd242a8f502737fb513ea21c0715c"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Resources/hachiware-cave-v11.png",
+      "sha256": "5c7624f8e3e53f8146bafed8387c64e9fc68a4411fed591cc2a66e7466162be2"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Resources/hachiware-diagonal-matched-walk-v5.png",
+      "sha256": "a5130282ebbaf905423aab8843c7e22f52e514b429f0438dd830c493c18eac40"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Resources/hachiware-diagonal-walk-12-v2.png",
+      "sha256": "1a24baf6cb5373c02cdb54e508fa608f7d0f4ac051e4a6bfbab164ca7dc9e94d"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Resources/hachiware-eat-v16.png",
+      "sha256": "33e7c926e0042568acbd27d4c2a9e4754cff3a4ff8bd3ac2b8f129aa72cf3e12"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Resources/hachiware-side-walk-24-joined-v14.png",
+      "sha256": "48857cbec8db2d74464f1343f23608279a4271989fdf3183dae05b7deb837805"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Resources/hachiware-side-walk-24-joined-v15.png",
+      "sha256": "0e93e86ef628c0d246c3b60371b25a39cbd8afbb2e8983ed5626d44a1850a09c"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Resources/hachiware-side-walk-24-v9.png",
+      "sha256": "d0ff9c9aa6de3617c27d1421e051295c427136005c4ba651502ab8828c71dc19"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Resources/hachiware-sleep-v11.png",
+      "sha256": "7705245172e3501d419c5b2cc144ef8e9dab9b7c938cc50c7bf0d80c5abb38ee"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Resources/hachiware-sprites-v1.png",
+      "sha256": "ac8776b7c831c2bf0ccc265a42736411f37a4c88ac8c53c6622f02455ba39935"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Resources/hachiware-study-v16.png",
+      "sha256": "a5eb060a62e87bd14cc2fe8c8b6200afed8cbddd607d0bb539ba11acb87d9b58"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Resources/hachiware-vomit-v16.png",
+      "sha256": "d85807f1d730bc7748dca103e7d29f47c508ac4b43af121af99f82afad2f1609"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Resources/hachiware-walk-bodies-v1.png",
+      "sha256": "a8d2d88fda86ce32314d2b664cd1efa856975483ec02ada07a83fbba0de7db75"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Roaming.swift",
+      "sha256": "4fd250772a2a630b4b9ea183dc80b886767a01da4fa01da7fb3e7bd2d6d54258"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/SelfTest.swift",
+      "sha256": "c2c3bad11a93163a07ff8e872d483377e9c1bd13c632b5630ea21ec675302d1c"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Settings.swift",
+      "sha256": "5e142fdd1e1c95badf9bfee510c63293bb8bf41aa17ee5e0b9457ba6dad5f989"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/VoiceChecks.swift",
+      "sha256": "c7d5e534a96353cacb72695bc004b1ae9e4b4efb1a0b0ac9ececa66364e741a0"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/WeaponAttack.swift",
+      "sha256": "0f39cad9b3a339116e2adbec388013e4741c249da91369f5464ed3ee537702b8"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/WeaponAttackChecks.swift",
+      "sha256": "6dfed908ae86061673a7546512d3286c03cd27116f64a09d1b6353634ce0b691"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/main.swift",
+      "sha256": "45860c88e42b93603f44f4ac3db9e71c933e892879977ef6509399a5b6c811aa"
+    },
+    {
+      "path": "scripts/build.sh",
+      "sha256": "12afd7ce570715d9289cf981673b73a627e31d68da3feb74b1603a415b328c5e"
+    }
+  ]
+}

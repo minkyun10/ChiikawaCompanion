@@ -1,0 +1,71 @@
+{
+  "components" : [
+    {
+      "height" : 348,
+      "pixels" : 88645,
+      "width" : 323,
+      "x" : 86,
+      "y" : 51
+    },
+    {
+      "height" : 349,
+      "pixels" : 77777,
+      "width" : 303,
+      "x" : 466,
+      "y" : 51
+    },
+    {
+      "height" : 353,
+      "pixels" : 87974,
+      "width" : 319,
+      "x" : 845,
+      "y" : 51
+    },
+    {
+      "height" : 345,
+      "pixels" : 80923,
+      "width" : 309,
+      "x" : 89,
+      "y" : 442
+    },
+    {
+      "height" : 344,
+      "pixels" : 77824,
+      "width" : 296,
+      "x" : 483,
+      "y" : 442
+    },
+    {
+      "height" : 174,
+      "pixels" : 20576,
+      "width" : 157,
+      "x" : 950,
+      "y" : 561
+    },
+    {
+      "height" : 363,
+      "pixels" : 88598,
+      "width" : 326,
+      "x" : 461,
+      "y" : 832
+    },
+    {
+      "height" : 361,
+      "pixels" : 87893,
+      "width" : 324,
+      "x" : 852,
+      "y" : 834
+    },
+    {
+      "height" : 173,
+      "pixels" : 14723,
+      "width" : 131,
+      "x" : 168,
+      "y" : 946
+    }
+  ],
+  "has_alpha" : true,
+  "height" : 1254,
+  "opaque_corner" : 0,
+  "width" : 1254
+}

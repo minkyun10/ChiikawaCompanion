@@ -1,0 +1,11 @@
+{
+  "all_mirrors_pixel_exact" : true,
+  "atlas_layout" : "6 columns x 4 rows; chronological row-major order",
+  "checks_passed" : 760,
+  "direction_count" : 8,
+  "individual_frames_checked" : 192,
+  "normal_gif_cycle_seconds" : 1.3600000000000001,
+  "png_round_trip_tolerance" : 2,
+  "runtime_applied" : false,
+  "slow_gif_cycle_seconds" : 2.8799999999999999
+}

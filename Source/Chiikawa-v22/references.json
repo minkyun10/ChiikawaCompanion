@@ -1,0 +1,103 @@
+{
+  "verified": "2026-10-20",
+  "collected_at": "2026-10-20T09:13:59.284013+00:00",
+  "purpose": "Personal fan-made desktop companion reference and future reuse; source material is distinct from generated production artwork.",
+  "sources": [
+    {
+      "page_url": "https://www.anime-chiikawa.jp/",
+      "discovery_url": "https://www.anime-chiikawa.jp/css/style.css",
+      "asset_url": "https://www.anime-chiikawa.jp/images/bg_top_chiikawa_01.png",
+      "file": "chiikawa-anime-front.png",
+      "path": "References/Official/chiikawa-anime-front.png",
+      "publisher": "Chiikawa anime official / Chiikawa production committee",
+      "role": "Primary 2D anatomy and line-art reference",
+      "bytes": 8228,
+      "sha256": "740bc8e6af1ed4954df7ba9796c40e6f6f9f1dc872e3a3496fb6f7db534a9dd3",
+      "content_type": "image/png"
+    },
+    {
+      "page_url": "https://www.chiikawaofficial.com/characters/",
+      "asset_url": "https://images.squarespace-cdn.com/content/v1/6670add926f2a64cd00fb0e7/543919e8-5aa0-45b2-9738-e8d52f7d3b57/1719x1338+pale+Pink+Bubble+Size+background.png",
+      "file": "chiikawa-official-page-background.png",
+      "publisher": "Spiralcute / Chiikawa official",
+      "role": "Decorative page background; retained as collected material, excluded from character anatomy references.",
+      "path": "References/Official/chiikawa-official-page-background.png",
+      "bytes": 44750,
+      "sha256": "36a52039d46a44067cfdaa30a4c8523476daa8aeeb1d79074e48bea2c9bdb3dd",
+      "content_type": "image/png"
+    },
+    {
+      "page_url": "https://www.goodsmile.info/ja/product/14452",
+      "asset_url": "https://images.goodsmile.info/cgm/images/product/20230602/14452/116034/large/2a093446166d86853155c779469dfe40.jpg",
+      "file": "chiikawa-official-figure-01.jpg",
+      "publisher": "Good Smile Company / Max Factory",
+      "role": "Front face and body proportions; open happy expression",
+      "path": "References/Official/chiikawa-official-figure-01.jpg",
+      "bytes": 58175,
+      "sha256": "d585ed043a5b0f484b7ac9c07dc2134860a8f24823272b7cd02c31dce600747c",
+      "content_type": "image/jpeg"
+    },
+    {
+      "page_url": "https://www.goodsmile.info/ja/product/14452",
+      "asset_url": "https://images.goodsmile.info/cgm/images/product/20230602/14452/116026/large/7af9039702dc565f1dc983cf786ff3fe.jpg",
+      "file": "chiikawa-official-figure-02.jpg",
+      "publisher": "Good Smile Company / Max Factory",
+      "role": "Closed-eye happy expression; pink bear-face pochette and narrow white crossbody strap",
+      "path": "References/Official/chiikawa-official-figure-02.jpg",
+      "bytes": 61741,
+      "sha256": "373eecb3889e4ab0dbad3bca6d68f230fc022d25d6685a189c99116998d6b21a",
+      "content_type": "image/jpeg"
+    },
+    {
+      "page_url": "https://www.goodsmile.info/ja/product/14452",
+      "asset_url": "https://images.goodsmile.info/cgm/images/product/20230602/14452/116027/large/ca2f121101dc12ae41493d97f07e7215.jpg",
+      "file": "chiikawa-official-figure-03.jpg",
+      "publisher": "Good Smile Company / Max Factory",
+      "role": "Nervous crying face; horizontally held pink sasumata with white spikes",
+      "path": "References/Official/chiikawa-official-figure-03.jpg",
+      "bytes": 79290,
+      "sha256": "7a947c66b2120fdc20e130511cca0055c6c492de306d0472e94380f7429536d7",
+      "content_type": "image/jpeg"
+    },
+    {
+      "page_url": "https://www.goodsmile.info/ja/product/14452",
+      "asset_url": "https://images.goodsmile.info/cgm/images/product/20230602/14452/116028/large/9fb48eb82eb038cdb9d81839dfc923a7.jpg",
+      "file": "chiikawa-official-figure-04.jpg",
+      "publisher": "Good Smile Company / Max Factory",
+      "role": "Crying face and diagonally held sasumata pose",
+      "path": "References/Official/chiikawa-official-figure-04.jpg",
+      "bytes": 79122,
+      "sha256": "c73e1c41dd58fd547822fee1b5f973253769bb1917be3368bcc69ca0080e9419",
+      "content_type": "image/jpeg"
+    },
+    {
+      "page_url": "https://www.goodsmile.info/ja/product/14452",
+      "asset_url": "https://images.goodsmile.info/cgm/images/product/20230602/14452/116029/large/375c6ece36d28022a459f6c262a79d1d.jpg",
+      "file": "chiikawa-official-figure-05.jpg",
+      "publisher": "Good Smile Company / Max Factory",
+      "role": "Group scale and seated expressions; focus only on Chiikawa",
+      "path": "References/Official/chiikawa-official-figure-05.jpg",
+      "bytes": 100446,
+      "sha256": "fda2740615e7c33c0f21d11688e309a90af706fc1016f38e3397ecbbd9ab5799",
+      "content_type": "image/jpeg"
+    },
+    {
+      "page_url": "https://www.goodsmile.info/ja/product/14452",
+      "asset_url": "https://images.goodsmile.info/cgm/images/product/20230602/14452/116030/large/1703f217eaa6293227d9899feb6e64b1.jpg",
+      "file": "chiikawa-official-figure-06.jpg",
+      "publisher": "Good Smile Company / Max Factory",
+      "role": "Group scale and standing happy expression; focus only on Chiikawa",
+      "path": "References/Official/chiikawa-official-figure-06.jpg",
+      "bytes": 103520,
+      "sha256": "b51fd71ab8d045d3d12e01de1cd42e25a70269005c3e5df0dc993482e6fb1505",
+      "content_type": "image/jpeg"
+    }
+  ],
+  "limitations": [
+    "Official product photographs guide shapes and expressions; the sprite style follows the existing 2D companion.",
+    "Rear, top, T-pose and walking in-betweens are production interpretations unless a separate source is cited.",
+    "No Korean voice recording is claimed or synthesized."
+  ],
+  "collected_original_file_count": 8,
+  "character_reference_file_count": 7
+}

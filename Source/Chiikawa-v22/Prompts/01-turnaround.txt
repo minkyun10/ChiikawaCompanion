@@ -1,0 +1,16 @@
+Use case: stylized-concept.
+Asset type: production character model sheet for a personal 2D macOS desktop companion.
+Create CHIIKAWA, the small white round-eared character, as a consistent nine-panel MODEL SHEET. This is a DIFFERENT character from Hachiware.
+Reference image roles:
+1. chiikawa-anime-front.png is the primary Chiikawa identity reference: two small ROUND white ears, round white body, black shiny eyes, subtle eyebrows, tiny w-shaped mouth, pink blush with dark short strokes. No blue patches, no pointed ears, no long tail.
+2. hachiware-approved-style.png is ONLY the rendering-style and proportions guide: clean, slightly hand-drawn bold charcoal outline, opaque white flat fill, simple pink cheeks, tiny connected arms and short connected feet. Do NOT copy Hachiware's blue fur, triangular ears or tail.
+3. chiikawa-official-figure-02.jpg is a supplementary reference for the happy expression and the round ears only; do not draw a plastic toy, seams or a display stand.
+4. chiikawa-official-figure-03.jpg is a supplementary crying-face reference only; no weapon in this sheet.
+Composition: square model sheet, exactly a regular 3-column by 3-row grid, generous equal spacing, consistent character height and design between every panel, plain warm white paper background. All limbs visible, no cropping. Small clean English labels under the figures, no other text.
+Rows in exact order:
+Top row: T-POSE (front view with short arms extended horizontally), FRONT (relaxed arms, neutral gentle face), BACK (rear orthographic, no face).
+Middle row: SIDE LEFT (true left profile), DOWN LEFT (front three-quarter facing lower-left), UP LEFT (rear three-quarter facing upper-left).
+Bottom row: TOP (top-down head/ears), HAPPY (front, closed curved happy eyes and small smiling open mouth), CRYING (front, wobbly eyebrows, shining eyes with small turquoise tears).
+Character shape: soft broad head flows into a small plump pear-shaped torso as ONE continuous silhouette, exactly like the 2D style guide; no line separating the head from the belly. Two little round ears with white interior. Short tiny rounded feet about the same relative size as the Hachiware style reference, tiny rounded hands attached seamlessly to the torso. A very small round white tail may be visible on rear views only. Keep identity and proportions stable. Front and rear views have two equal-size feet, no extra limbs.
+The SIDE LEFT must keep a visible face profile and two round ear lobes, and the three-quarter views must be distinct from a straight front/back. Make the result usable for deriving aligned walking sprites.
+Avoid photorealism, 3D shading, plastic texture, necklaces, clothes, bags, weapons, blue head marking, pointed cat ears, long limbs, detached arms or legs, thick separate belly seam, black background, checkerboard background, additional characters, watermarks.

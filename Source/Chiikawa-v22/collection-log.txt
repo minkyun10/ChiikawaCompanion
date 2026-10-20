@@ -1,0 +1,2 @@
+Collected and hashed 7 official reference images.
+Added official anime 2D image; retained the decorative page background separately. Final collection: 8 originals, 7 usable character references.

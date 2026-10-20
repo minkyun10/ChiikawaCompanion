@@ -1,0 +1,26 @@
+{
+  "verified": "2026-10-20",
+  "references": [
+    {
+      "path": "References/Project/hachiware-approved-style.png",
+      "source_project_path": "Source/FourPhaseWalk-v9/References/approved-tpose-turnaround.png",
+      "role": "Existing approved style only; do not copy Hachiware identity",
+      "bytes": 1247640,
+      "sha256": "f17301b9445f92ac70b8c41944d442260869d5e3ba8c0c32630c8c4ac1b58aa4"
+    },
+    {
+      "path": "References/Project/hachiware-approved-gait.png",
+      "source_project_path": "Source/JoinedArms-v15/Final/hachiware-side-24-frame-sheet-v15.png",
+      "role": "Approved limb connection and timing guide",
+      "bytes": 709506,
+      "sha256": "0e93e86ef628c0d246c3b60371b25a39cbd8afbb2e8983ed5626d44a1850a09c"
+    },
+    {
+      "path": "References/Project/four-phase-walk.jpg",
+      "source_project_path": "Source/FourPhaseWalk-v9/References/four-phase-walk.jpg",
+      "role": "Contact, down, passing, up mechanics",
+      "bytes": 148777,
+      "sha256": "fab2da9ba5a77c4bbfc3deb0ecf351e64112eb29e6c68432f5283aecb4e0eaaf"
+    }
+  ]
+}
