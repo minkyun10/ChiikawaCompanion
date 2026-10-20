@@ -22,14 +22,14 @@ struct SettingsView: View {
                 Label("DESKTOP COMPANION", systemImage: "pawprint.fill")
                     .font(.system(size: 10, weight: .bold, design: .rounded)).tracking(2)
                 Spacer()
-                Text("하치와레와 먼저").font(.system(size: 10, weight: .medium))
+                Text("두 친구와 함께").font(.system(size: 10, weight: .medium))
                     .padding(.horizontal, 11).padding(.vertical, 6)
                     .background(blue.opacity(0.15), in: Capsule())
             }.foregroundStyle(mutedInk)
 
             HStack(alignment: .bottom) {
                 VStack(alignment: .leading, spacing: 8) {
-                    Text("하치와레와\n바탕화면 산책.")
+                    Text("두 친구와\n바탕화면 산책.")
                         .font(.system(size: 30, weight: .bold, design: .rounded)).lineSpacing(2)
                         .fixedSize(horizontal: false, vertical: true)
                     Text("설정 창을 닫으면, 바탕화면에서 만나요.")
@@ -37,30 +37,17 @@ struct SettingsView: View {
                 }
                 Spacer()
                 Button { state.onReset?() } label: {
-                    Label("하치와레 부르기", systemImage: "arrow.uturn.backward")
+                    Label("모두 부르기", systemImage: "arrow.uturn.backward")
                         .font(.system(size: 11, weight: .medium))
                 }.buttonStyle(.plain).padding(10).background(.white.opacity(0.8), in: Capsule())
             }
 
-            HStack(alignment: .center, spacing: 25) {
-                VStack(spacing: 8) {
-                    FriendPortrait(friend: .hachiware).frame(width: 125, height: 150)
-                    Text("하치와레").font(.system(size: 14, weight: .semibold))
-                    Text("오늘도 같이 걷자!").font(.system(size: 11)).foregroundStyle(mutedInk)
-                }.frame(width: 150)
-                VStack(alignment: .leading, spacing: 14) {
-                    feature("바탕화면에서만", detail: "앱 창 뒤에, 바탕화면 아이콘 앞에 있어요.", icon: "macwindow")
-                    feature("화면 구석구석 산책", detail: "상하좌우로 걷고, 목적지를 바꿔요.", icon: "point.topleft.down.to.point.bottomright.curvepath")
-                    feature("다가오면 반가워해요", detail: "마우스를 올려 인사하고, 드래그로 옮겨요.", icon: "cursorarrow.rays")
-                    feature("클릭하면 한마디", detail: "목소리와 명대사 중 하나를 들려줘요.", icon: "bubble.left.fill")
-                }
-            }.padding(22)
-                .background(.white.opacity(0.9), in: RoundedRectangle(cornerRadius: 22))
-                .overlay(RoundedRectangle(cornerRadius: 22).stroke(blue.opacity(0.35), lineWidth: 1))
+            rosterCard
+            chiikawaItemCard
             VStack(alignment: .leading, spacing: 14) {
                 HStack {
                     VStack(alignment: .leading, spacing: 5) {
-                        Text("오늘은 뭘 들고 걸을까?").font(.system(size: 16, weight: .semibold))
+                        Text("하치와레의 소품").font(.system(size: 16, weight: .semibold))
                         Text("바탕화면 소품을 발견하면 주워서 착용해요.")
                             .font(.system(size: 11)).foregroundStyle(mutedInk)
                     }
@@ -141,15 +128,15 @@ struct SettingsView: View {
 
             VStack(alignment: .leading, spacing: 15) {
                 HStack(spacing: 20) {
-                    Toggle("산책하기", isOn: $state.roaming)
+                    Toggle("전체 산책", isOn: $state.roaming)
                     Spacer()
-                    Toggle("하치와레 표시", isOn: $state.showFriends)
+                    Toggle("모든 친구 표시", isOn: $state.showFriends)
                 }.toggleStyle(.switch).controlSize(.small).font(.system(size: 11))
             }.padding(19).background(.white.opacity(0.85), in: RoundedRectangle(cornerRadius: 19))
 
             HStack {
                 Circle().fill(blue).frame(width: 6, height: 6)
-                Text("지금은 하치와레 한 명과 산책해요.")
+                Text("각자 걷고, 각자의 소품을 주워요.")
                     .font(.system(size: 10)).foregroundStyle(mutedInk)
                 Spacer()
                 Text("설정은 메뉴 막대의 발바닥에서").font(.system(size: 10)).foregroundStyle(mutedInk)
@@ -160,6 +147,68 @@ struct SettingsView: View {
         }
         .frame(width: 710, height: min(900, max(550, (NSScreen.main?.visibleFrame.height ?? 850) - 90)))
         .foregroundStyle(warmInk).background(cream).tint(Color(nsColor: NSColor(hex: 0xA79B73)))
+    }
+
+    private var rosterCard: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            ForEach(Friend.developmentRoster) { friend in
+                HStack(spacing: 14) {
+                    FriendPortrait(friend: friend).frame(width: 72, height: 82)
+                    VStack(alignment: .leading, spacing: 5) {
+                        Text(friend.name).font(.system(size: 15, weight: .semibold))
+                        Text(friend == .chiikawa ? "8방향 산책 · 웃음과 울음 · 분홍 소품" : "산책 · 소품 · 일상 동작 · 동굴 집")
+                            .font(.system(size: 10)).foregroundStyle(mutedInk)
+                    }
+                    Spacer()
+                    Toggle("표시", isOn: Binding(get: { state.visibleFriends.contains(friend) }, set: {
+                        if $0 { state.visibleFriends.insert(friend) } else { state.visibleFriends.remove(friend) }
+                    })).accessibilityLabel("\(friend.name) 표시")
+                    Toggle("산책", isOn: Binding(get: { state.walkingFriends.contains(friend) }, set: {
+                        if $0 { state.walkingFriends.insert(friend); state.roaming = true } else { state.walkingFriends.remove(friend) }
+                    })).accessibilityLabel("\(friend.name) 산책")
+                    Button("부르기") { state.onCallFriend?(friend) }.accessibilityLabel("\(friend.name) 부르기")
+                }.toggleStyle(.switch).controlSize(.small).font(.system(size: 11))
+            }
+            Text("마우스를 올리면 반응하고, 떼면 다시 걸어요. 클릭해 인사하거나 드래그해 옮겨 보세요.\n일반 앱 창 뒤, 바탕화면 아이콘 앞에서 함께 지내요.")
+                .font(.system(size: 10)).foregroundStyle(mutedInk).lineSpacing(3)
+        }.padding(20).background(.white.opacity(0.9), in: RoundedRectangle(cornerRadius: 20))
+    }
+
+    private var chiikawaItemCard: some View {
+        VStack(alignment: .leading, spacing: 13) {
+            HStack {
+                Label("치이카와의 소품", systemImage: "bag").font(.system(size: 16, weight: .semibold))
+                Spacer()
+                Button("다시 흩어 놓기") { state.onChiikawaScatterItems?() }.font(.system(size: 11))
+            }
+            HStack(spacing: 12) {
+                ForEach(ChiikawaItem.allCases) { item in
+                    HStack {
+                        Label(item.name, systemImage: item.symbol).font(.system(size: 12, weight: .medium))
+                        Spacer()
+                        Toggle(item.name, isOn: Binding(get: { state.chiikawaItems.contains(item) }, set: {
+                            if $0 { state.chiikawaItems.insert(item) } else { state.chiikawaItems.remove(item) }
+                        })).labelsHidden().toggleStyle(.switch).controlSize(.mini)
+                            .accessibilityLabel("치이카와 \(item.name) 바탕화면에 놓기")
+                    }.padding(12).background(cream, in: RoundedRectangle(cornerRadius: 12))
+                }
+            }
+            HStack {
+                Toggle("스스로 주워 입기", isOn: $state.chiikawaAutomaticItems)
+                    .toggleStyle(.switch).controlSize(.small).font(.system(size: 11))
+                Spacer()
+                Menu("주우러 가기") {
+                    ForEach(ChiikawaItem.allCases.filter { state.chiikawaItems.contains($0) && state.chiikawaEquipped != $0 }) { item in
+                        Button(item.name) { state.onChiikawaSeekItem?(item) }
+                    }
+                }.font(.system(size: 11)).disabled(state.chiikawaItems.subtracting(Set([state.chiikawaEquipped].compactMap { $0 })).isEmpty)
+                Button("내려놓기") { state.onChiikawaDropItem?() }.font(.system(size: 11)).disabled(state.chiikawaEquipped == nil)
+            }
+            Text(state.chiikawaEquipped.map { "지금은 \($0.name)와 함께 · \(state.chiikawaItemStatus)" } ?? state.chiikawaItemStatus)
+                .font(.system(size: 10)).foregroundStyle(mutedInk)
+            Text("치이카와 위에 드래그해 건네거나, 소품을 클릭해 부를 수 있어요.\n치이카와의 목소리·집·일상 동작은 자료를 더 준비한 뒤 추가할 예정이에요.")
+                .font(.system(size: 10)).foregroundStyle(mutedInk).lineSpacing(3)
+        }.padding(20).background(.white.opacity(0.9), in: RoundedRectangle(cornerRadius: 20))
     }
 
     private var dailyActionCard: some View {

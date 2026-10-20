@@ -1,6 +1,6 @@
 import AppKit
 
-/// Hachiware uses the approved reference-based sprite art; other characters retain vector drafts.
+/// The two active companions use their registered reference-based sprite art.
 enum FriendArtwork {
     static let ink = NSColor(hex: 0x554944)
     static let paper = NSColor(hex: 0xFFFDF7)
@@ -8,7 +8,14 @@ enum FriendArtwork {
     static func draw(_ friend: Friend, in rect: NSRect, time: Double = 0,
                      happy: Bool = false, walking: Bool = false, looking: CGFloat = 0,
                      facing: CGFloat = 1, walkPhase: Double? = nil, pose: HachiwarePose = .front,
-                     action: HachiwareAction? = nil, equipped: CompanionItem? = nil, actionTime: Double? = nil) {
+                     action: HachiwareAction? = nil, equipped: CompanionItem? = nil, actionTime: Double? = nil,
+                     chiikawaReaction: ChiikawaReaction? = nil, chiikawaItem: ChiikawaItem? = nil) {
+        if friend == .chiikawa {
+            ChiikawaSprites.shared.draw(in: rect, time: time, walking: walking, facing: facing,
+                phase: walkPhase ?? time / RoamingMotion.previewCycleDuration * 2 * .pi,
+                pose: pose, reaction: chiikawaReaction ?? (happy ? .happy : nil), equipped: chiikawaItem)
+            return
+        }
         if friend == .hachiware {
             if let action, HachiwareActions.shared.draw(action, in: rect, time: actionTime ?? time) {
                 if let equipped, !action.isDaily && action != .attack && action != equipped.action && action != .pickup {

@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-20",
+  "app_version": "0.14.0",
+  "build": 26,
+  "packaged_checks": 248,
+  "code_signing": "codesign --verify --deep --strict: passed",
+  "ui_observed": [
+    "Both character visibility and roaming switches were on in the launched app.",
+    "Chiikawa independently picked up pink sasumata; Hachiware independently picked up blue sasumata.",
+    "Settings lower controls screenshot saved."
+  ],
+  "ui_capture_limit": "Foreground application changed during UI inspection; no further foreground actions forced.",
+  "deferred": [
+    "Chiikawa house",
+    "Korean Chiikawa recordings",
+    "Full study/eat/sleep/attack motion assets"
+  ],
+  "existing_resources_preserved": 21,
+  "cli_checks": 242
+}

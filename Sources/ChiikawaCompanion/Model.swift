@@ -3,8 +3,7 @@ import Combine
 
 enum Friend: String, CaseIterable, Codable, Identifiable {
     case chiikawa, hachiware, usagi, momonga, kurimanju
-    // Finish one character's behaviour before exposing the other characters.
-    static let developmentRoster: [Friend] = [.hachiware]
+    static let developmentRoster: [Friend] = [.hachiware, .chiikawa]
     static let hachiwareClickQuotes = [
         "어떻게든 돼라!",
         "추억은… 계속… 있는 거니까.",
@@ -50,6 +49,26 @@ enum Friend: String, CaseIterable, Codable, Identifiable {
 final class AppState: ObservableObject {
     @Published var roaming: Bool { didSet { defaults.set(roaming, forKey: "roaming") } }
     @Published var showFriends = true
+    @Published var visibleFriends: Set<Friend> {
+        didSet { defaults.set(visibleFriends.map(\.rawValue).sorted(), forKey: "visibleFriends") }
+    }
+    @Published var walkingFriends: Set<Friend> {
+        didSet { defaults.set(walkingFriends.map(\.rawValue).sorted(), forKey: "walkingFriends") }
+    }
+    @Published var chiikawaItems: Set<ChiikawaItem> {
+        didSet { defaults.set(chiikawaItems.map(\.rawValue).sorted(), forKey: "chiikawaItems") }
+    }
+    @Published var chiikawaAutomaticItems: Bool {
+        didSet { defaults.set(chiikawaAutomaticItems, forKey: "chiikawaAutomaticItems") }
+    }
+    @Published var chiikawaEquipped: ChiikawaItem?
+    @Published var chiikawaItemStatus = "분홍 소품을 찾아요"
+    var onCallFriend: ((Friend) -> Void)?
+    var onChiikawaSeekItem: ((ChiikawaItem) -> Void)?
+    var onChiikawaDropItem: (() -> Void)?
+    var onChiikawaScatterItems: (() -> Void)?
+    func isVisible(_ friend: Friend) -> Bool { showFriends && visibleFriends.contains(friend) }
+    func isWalking(_ friend: Friend) -> Bool { roaming && walkingFriends.contains(friend) }
     @Published var enabledItems: Set<CompanionItem> {
         didSet { defaults.set(enabledItems.map(\.rawValue).sorted(), forKey: "enabledItems") }
     }
@@ -91,6 +110,14 @@ final class AppState: ObservableObject {
 
     init(defaults: UserDefaults = .standard) {
         self.defaults = defaults
+        let roster = Set(Friend.developmentRoster)
+        visibleFriends = Set((defaults.stringArray(forKey: "visibleFriends") ?? Friend.developmentRoster.map(\.rawValue))
+            .compactMap(Friend.init(rawValue:))).intersection(roster)
+        walkingFriends = Set((defaults.stringArray(forKey: "walkingFriends") ?? Friend.developmentRoster.map(\.rawValue))
+            .compactMap(Friend.init(rawValue:))).intersection(roster)
+        chiikawaItems = Set((defaults.stringArray(forKey: "chiikawaItems") ?? ChiikawaItem.allCases.map(\.rawValue))
+            .compactMap(ChiikawaItem.init(rawValue:)))
+        chiikawaAutomaticItems = defaults.object(forKey: "chiikawaAutomaticItems") as? Bool ?? true
         // Remove preferences belonging to the retired chat-notification integration.
         for key in ["assignments", "voice", "hachiwareWalkStage", "monitoring", "monitoringStatus", "lastEvent", "verifiedSession"] {
             defaults.removeObject(forKey: key)

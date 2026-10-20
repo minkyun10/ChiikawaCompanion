@@ -1,10 +1,10 @@
 {
   "created_at": "2026-10-16T12:08:58.617148+00:00",
   "operation": "copy; originals preserved",
-  "image_file_count": 1892,
-  "unique_image_content_count": 1300,
-  "supporting_file_count": 230,
-  "image_bytes": 394636077,
+  "image_file_count": 1930,
+  "unique_image_content_count": 1305,
+  "supporting_file_count": 240,
+  "image_bytes": 418517492,
   "symmetric_walk_runtime_applied": true,
   "files": [
     {
@@ -5613,6 +5613,111 @@
       "archive_path": "Chiikawa-v22/verification-log.txt",
       "bytes": 103,
       "sha256": "9d93e5e021e6e40be54a9d6d57af16661ed0491450a57444e7bd7d783ce1bb53"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaRuntime-v23/Iterations/01-pochette-strap/ChiikawaArtwork.swift",
+      "archive_path": "ChiikawaRuntime-v23/Iterations/01-pochette-strap/ChiikawaArtwork.swift",
+      "bytes": 8655,
+      "sha256": "1fcbe1b4d977d2fa9ec75a25593f611af3126e2d5deb0dcc40241b25fa0921b2"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRuntime-v23/Iterations/01-pochette-strap/chiikawa-runtime-equipment-v23.png",
+      "archive_path": "ChiikawaRuntime-v23/Iterations/01-pochette-strap/chiikawa-runtime-equipment-v23.png",
+      "bytes": 548472,
+      "sha256": "58376e8710dd86c213ab346f7050d8456ce7a796d8006a1890223d1357ed605c"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRuntime-v23/Iterations/01-pochette-strap/chiikawa-runtime-walk-v23.gif",
+      "archive_path": "ChiikawaRuntime-v23/Iterations/01-pochette-strap/chiikawa-runtime-walk-v23.gif",
+      "bytes": 942413,
+      "sha256": "f9f94cf094de33f0bfbeea5e20df587914ea6a7c0c136112dfc0e9545476e3c7"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaRuntime-v23/Iterations/01-pochette-strap/compile-log.txt",
+      "archive_path": "ChiikawaRuntime-v23/Iterations/01-pochette-strap/compile-log.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaRuntime-v23/Iterations/01-pochette-strap/main.swift",
+      "archive_path": "ChiikawaRuntime-v23/Iterations/01-pochette-strap/main.swift",
+      "bytes": 115,
+      "sha256": "25d4a5d67739c381e61819d9d80ec61150b595bde5bbc4638cc60d6aa6c690c3"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaRuntime-v23/README.txt",
+      "archive_path": "ChiikawaRuntime-v23/README.txt",
+      "bytes": 3485,
+      "sha256": "97af75114a86ddb6487cfabd7506a63a6691a31bb1081048bcecb0f2cc65bd84"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRuntime-v23/Review/chiikawa-runtime-equipment-v23.png",
+      "archive_path": "ChiikawaRuntime-v23/Review/chiikawa-runtime-equipment-v23.png",
+      "bytes": 546838,
+      "sha256": "e38bc78ea5ced5b4f85b7d102d14fc781ab02b3cc177dc4d7456992169d41ba2"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRuntime-v23/Review/chiikawa-runtime-walk-v23.gif",
+      "archive_path": "ChiikawaRuntime-v23/Review/chiikawa-runtime-walk-v23.gif",
+      "bytes": 942413,
+      "sha256": "f9f94cf094de33f0bfbeea5e20df587914ea6a7c0c136112dfc0e9545476e3c7"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRuntime-v23/Review/settings-lower-controls-v23.png",
+      "archive_path": "ChiikawaRuntime-v23/Review/settings-lower-controls-v23.png",
+      "bytes": 194873,
+      "sha256": "8f2e22b66634ec0ff520ca9c457a8d2bc8fbf76aa3b38fa628c08ddead87ff24"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaRuntime-v23/build-log.txt",
+      "archive_path": "ChiikawaRuntime-v23/build-log.txt",
+      "bytes": 375,
+      "sha256": "061d0f78f65aef7d0e7ebd705affe7fd419d66fd6d306815bfd2a0846c2594ca"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaRuntime-v23/resource-provenance.json",
+      "archive_path": "ChiikawaRuntime-v23/resource-provenance.json",
+      "bytes": 6892,
+      "sha256": "d6b073e20ce184a438919ee9369f8d62a247eaf4c8b617384f6e8b63c4678e03"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaRuntime-v23/runtime-verification.json",
+      "archive_path": "ChiikawaRuntime-v23/runtime-verification.json",
+      "bytes": 717,
+      "sha256": "8153f9c4fe6d01f5989f88e276331642d3558015e4dbb56d2286dc1e0b25cc50"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaRuntime-v23/security-scan.json",
+      "archive_path": "ChiikawaRuntime-v23/security-scan.json",
+      "bytes": 236,
+      "sha256": "7ece7dd1c7b3c6568c9255935bc47d8d36148ab853f4f3a6fb2d4a183fed2818"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaRuntime-v23/self-test-app.txt",
+      "archive_path": "ChiikawaRuntime-v23/self-test-app.txt",
+      "bytes": 18466,
+      "sha256": "1a6e7fdac7b2f2a6d68bb00d8084e2731d4f0cba1c325ab814cdbdbb0820eb43"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaRuntime-v23/self-test-cli.txt",
+      "archive_path": "ChiikawaRuntime-v23/self-test-cli.txt",
+      "bytes": 17977,
+      "sha256": "b341ea935fd82b5d369d74e8ad50cc94a8852deaecbe8029a8f246eb825ccea7"
     },
     {
       "kind": "supporting",
@@ -13176,6 +13281,76 @@
     },
     {
       "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/chiikawa-crying-v23.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/chiikawa-crying-v23.png",
+      "bytes": 153147,
+      "sha256": "5c4077847d05adfcc96f83cbffea0a2dedc995860fca9bc2bd39c524d8f10a83"
+    },
+    {
+      "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/chiikawa-down-24.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/chiikawa-down-24.png",
+      "bytes": 821374,
+      "sha256": "b91ea0dd617317b4d00c15ef356c3401f18441e14efb39ef50758c1c56befeec"
+    },
+    {
+      "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/chiikawa-down-left-24.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/chiikawa-down-left-24.png",
+      "bytes": 785163,
+      "sha256": "4bee9602543b051f99708a289afe2debd70d83f9283911779ff4689d74e6db9f"
+    },
+    {
+      "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/chiikawa-down-right-24.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/chiikawa-down-right-24.png",
+      "bytes": 773212,
+      "sha256": "cb007ee7a70ab3484460d38a7b74bc9d017642f50c74341f033df28d30fde034"
+    },
+    {
+      "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/chiikawa-happy-v23.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/chiikawa-happy-v23.png",
+      "bytes": 147947,
+      "sha256": "1a03e5f965d7ca8e7408af40f3ff2b12c4ceac1e4afa91d804a789bb7a70c67b"
+    },
+    {
+      "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/chiikawa-left-24.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/chiikawa-left-24.png",
+      "bytes": 725757,
+      "sha256": "0c5de32f2505e61e98fe1b60567dae54ee0c15ff366e4aaa954e851ce9b54d57"
+    },
+    {
+      "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/chiikawa-right-24.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/chiikawa-right-24.png",
+      "bytes": 722025,
+      "sha256": "92ca2594d8553d5f1a05be50ed3e19a747ff0a04b02aaf71db9d606b625f3dca"
+    },
+    {
+      "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/chiikawa-up-24.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/chiikawa-up-24.png",
+      "bytes": 727783,
+      "sha256": "7d7a058a273c01f9dc53a62651e5bafd3c2d6d260aec9bc99bfe129943145561"
+    },
+    {
+      "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/chiikawa-up-left-24.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/chiikawa-up-left-24.png",
+      "bytes": 746136,
+      "sha256": "3d0e710fc064e188efc8966bf57867181fa22c642835636d8bd4cba3be2a4302"
+    },
+    {
+      "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/chiikawa-up-right-24.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/chiikawa-up-right-24.png",
+      "bytes": 744901,
+      "sha256": "752c763a706eec67fa2db623b094d5a03a3b285154fb2ddd42e80b6371ed9dbc"
+    },
+    {
+      "kind": "image",
       "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/hachiware-actions-v7.png",
       "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/hachiware-actions-v7.png",
       "bytes": 1307884,
@@ -13414,6 +13589,76 @@
     },
     {
       "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/chiikawa-crying-v23.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/chiikawa-crying-v23.png",
+      "bytes": 153147,
+      "sha256": "5c4077847d05adfcc96f83cbffea0a2dedc995860fca9bc2bd39c524d8f10a83"
+    },
+    {
+      "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/chiikawa-down-24.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/chiikawa-down-24.png",
+      "bytes": 821374,
+      "sha256": "b91ea0dd617317b4d00c15ef356c3401f18441e14efb39ef50758c1c56befeec"
+    },
+    {
+      "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/chiikawa-down-left-24.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/chiikawa-down-left-24.png",
+      "bytes": 785163,
+      "sha256": "4bee9602543b051f99708a289afe2debd70d83f9283911779ff4689d74e6db9f"
+    },
+    {
+      "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/chiikawa-down-right-24.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/chiikawa-down-right-24.png",
+      "bytes": 773212,
+      "sha256": "cb007ee7a70ab3484460d38a7b74bc9d017642f50c74341f033df28d30fde034"
+    },
+    {
+      "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/chiikawa-happy-v23.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/chiikawa-happy-v23.png",
+      "bytes": 147947,
+      "sha256": "1a03e5f965d7ca8e7408af40f3ff2b12c4ceac1e4afa91d804a789bb7a70c67b"
+    },
+    {
+      "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/chiikawa-left-24.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/chiikawa-left-24.png",
+      "bytes": 725757,
+      "sha256": "0c5de32f2505e61e98fe1b60567dae54ee0c15ff366e4aaa954e851ce9b54d57"
+    },
+    {
+      "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/chiikawa-right-24.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/chiikawa-right-24.png",
+      "bytes": 722025,
+      "sha256": "92ca2594d8553d5f1a05be50ed3e19a747ff0a04b02aaf71db9d606b625f3dca"
+    },
+    {
+      "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/chiikawa-up-24.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/chiikawa-up-24.png",
+      "bytes": 727783,
+      "sha256": "7d7a058a273c01f9dc53a62651e5bafd3c2d6d260aec9bc99bfe129943145561"
+    },
+    {
+      "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/chiikawa-up-left-24.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/chiikawa-up-left-24.png",
+      "bytes": 746136,
+      "sha256": "3d0e710fc064e188efc8966bf57867181fa22c642835636d8bd4cba3be2a4302"
+    },
+    {
+      "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/chiikawa-up-right-24.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/chiikawa-up-right-24.png",
+      "bytes": 744901,
+      "sha256": "752c763a706eec67fa2db623b094d5a03a3b285154fb2ddd42e80b6371ed9dbc"
+    },
+    {
+      "kind": "image",
       "source": "Sources/ChiikawaCompanion/Resources/hachiware-actions-v7.png",
       "archive_path": "Project/Sources/ChiikawaCompanion/Resources/hachiware-actions-v7.png",
       "bytes": 1307884,
@@ -13603,6 +13848,76 @@
     },
     {
       "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/chiikawa-crying-v23.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/chiikawa-crying-v23.png",
+      "bytes": 153147,
+      "sha256": "5c4077847d05adfcc96f83cbffea0a2dedc995860fca9bc2bd39c524d8f10a83"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/chiikawa-down-24.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/chiikawa-down-24.png",
+      "bytes": 821374,
+      "sha256": "b91ea0dd617317b4d00c15ef356c3401f18441e14efb39ef50758c1c56befeec"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/chiikawa-down-left-24.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/chiikawa-down-left-24.png",
+      "bytes": 785163,
+      "sha256": "4bee9602543b051f99708a289afe2debd70d83f9283911779ff4689d74e6db9f"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/chiikawa-down-right-24.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/chiikawa-down-right-24.png",
+      "bytes": 773212,
+      "sha256": "cb007ee7a70ab3484460d38a7b74bc9d017642f50c74341f033df28d30fde034"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/chiikawa-happy-v23.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/chiikawa-happy-v23.png",
+      "bytes": 147947,
+      "sha256": "1a03e5f965d7ca8e7408af40f3ff2b12c4ceac1e4afa91d804a789bb7a70c67b"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/chiikawa-left-24.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/chiikawa-left-24.png",
+      "bytes": 725757,
+      "sha256": "0c5de32f2505e61e98fe1b60567dae54ee0c15ff366e4aaa954e851ce9b54d57"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/chiikawa-right-24.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/chiikawa-right-24.png",
+      "bytes": 722025,
+      "sha256": "92ca2594d8553d5f1a05be50ed3e19a747ff0a04b02aaf71db9d606b625f3dca"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/chiikawa-up-24.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/chiikawa-up-24.png",
+      "bytes": 727783,
+      "sha256": "7d7a058a273c01f9dc53a62651e5bafd3c2d6d260aec9bc99bfe129943145561"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/chiikawa-up-left-24.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/chiikawa-up-left-24.png",
+      "bytes": 746136,
+      "sha256": "3d0e710fc064e188efc8966bf57867181fa22c642835636d8bd4cba3be2a4302"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/chiikawa-up-right-24.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/chiikawa-up-right-24.png",
+      "bytes": 744901,
+      "sha256": "752c763a706eec67fa2db623b094d5a03a3b285154fb2ddd42e80b6371ed9dbc"
+    },
+    {
+      "kind": "image",
       "source": "build/ChiikawaCompanion.app/Contents/Resources/hachiware-actions-v7.png",
       "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/hachiware-actions-v7.png",
       "bytes": 1307884,
@@ -13715,10 +14030,24 @@
     },
     {
       "kind": "image",
+      "source": "build/artwork/chiikawa-runtime-equipment-v23.png",
+      "archive_path": "Project/build/artwork/chiikawa-runtime-equipment-v23.png",
+      "bytes": 546838,
+      "sha256": "e38bc78ea5ced5b4f85b7d102d14fc781ab02b3cc177dc4d7456992169d41ba2"
+    },
+    {
+      "kind": "image",
+      "source": "build/artwork/chiikawa-runtime-walk-v23.gif",
+      "archive_path": "Project/build/artwork/chiikawa-runtime-walk-v23.gif",
+      "bytes": 942413,
+      "sha256": "f9f94cf094de33f0bfbeea5e20df587914ea6a7c0c136112dfc0e9545476e3c7"
+    },
+    {
+      "kind": "image",
       "source": "build/artwork/friends.png",
       "archive_path": "Project/build/artwork/friends.png",
-      "bytes": 130750,
-      "sha256": "d358479d8d5e811e4d92ef921ce2437356ec9be1da5bff246e27a1d55b67c63e"
+      "bytes": 174820,
+      "sha256": "093914a47e35f0a406674ae65f26873b66d519c816ba2d2a5a2c734e84ccbefb"
     },
     {
       "kind": "image",
@@ -13920,8 +14249,8 @@
       "kind": "supporting",
       "source": "Source/README.txt",
       "archive_path": "README.txt",
-      "bytes": 5104,
-      "sha256": "8d5a7f57ea335f57560acb882e4f19304316e731796032a379386013302fb839"
+      "bytes": 5552,
+      "sha256": "8adbca7530f2b59db6ef46b24542a85956d14f482eac6ee0ddf2e5641d01e221"
     },
     {
       "kind": "image",
@@ -14048,6 +14377,13 @@
       "archive_path": "Versions/ce1745e702907101/build/artwork/hachiware-equipped-directions-v7.png",
       "bytes": 795396,
       "sha256": "ce1745e702907101647deb1efd01f1d211f266193e4a953d4703a755a5505b74"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/d358479d8d5e811e/build/artwork/friends.png",
+      "archive_path": "Versions/d358479d8d5e811e/build/artwork/friends.png",
+      "bytes": 130750,
+      "sha256": "d358479d8d5e811e4d92ef921ce2437356ec9be1da5bff246e27a1d55b67c63e"
     },
     {
       "kind": "image",
@@ -14862,8 +15198,8 @@
       "sha256": "8a42caa40e469a5ee00fa2b860d14756cc1fd73bc8fcf73332c50b87a92c9c3b"
     }
   ],
-  "updated_at": "2026-10-20T10:07:42.699731+00:00",
-  "latest_applied": "LocalCompanionOnly-v21",
+  "updated_at": "2026-10-20T10:46:59.056284+00:00",
+  "latest_applied": "ChiikawaRuntime-v23",
   "applied_directions": [
     "down-left",
     "down-right"

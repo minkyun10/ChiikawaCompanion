@@ -24,7 +24,7 @@ enum SelfTest {
         check(DesktopLayer.bubble.rawValue > DesktopLayer.character.rawValue && DesktopLayer.bubble.rawValue < normal,
               "speech bubble stays on desktop, below app windows")
         check(!DesktopLayer.collection.contains(.fullScreenAuxiliary), "desktop character does not join full-screen overlays")
-        check(Friend.developmentRoster == [.hachiware], "only Hachiware is exposed in this development stage")
+        check(Friend.developmentRoster == [.hachiware, .chiikawa], "Hachiware and Chiikawa are the active companions")
 
         let size = NSSize(width: 132, height: 150)
         let target = RoamingMotion.target(in: screen, size: size, xFraction: 0.9, yFraction: 0.85)
@@ -219,6 +219,7 @@ enum SelfTest {
         runItemDropChecks(defaults: testDefaults) { check($0, $1) }
         runWeaponAttackChecks(defaults: testDefaults) { check($0, $1) }
         runNearbyPickupChecks(defaults: testDefaults) { check($0, $1) }
+        runChiikawaChecks(defaults: testDefaults) { check($0, $1) }
         runHomeTests(desktop: desktop, now: now) { check($0, $1) }
         var performance = CompanionPerformance()
         performance.begin(.camera, now: now, pickingUp: true)
@@ -439,6 +440,7 @@ enum SelfTest {
         renderActivitySpots(to: directory)
         renderWeaponAttack(to: directory)
         renderHome(to: directory)
+        renderChiikawaReview(to: directory)
     }
 
     static func renderItems(to directory: URL) {

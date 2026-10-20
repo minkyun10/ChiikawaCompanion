@@ -1,7 +1,10 @@
 import AppKit
 
-final class DesktopItemView: NSView {
-    let item: CompanionItem
+typealias DesktopItemView = DesktopPropView<CompanionItem>
+typealias DesktopItem = DesktopPropWindow<CompanionItem>
+
+final class DesktopPropView<Item: DesktopProp>: NSView {
+    let item: Item
     var hovered = false
     var isDragging = false
     var onSeek: (() -> Void)?
@@ -10,12 +13,12 @@ final class DesktopItemView: NSView {
     private var down = NSPoint.zero
     private var origin = NSPoint.zero
     private var moved = false
-    init(item: CompanionItem) {
+    init(item: Item) {
         self.item = item
         super.init(frame: NSRect(x: 0, y: 0, width: 76, height: 84))
         setAccessibilityElement(true); setAccessibilityRole(.button)
-        setAccessibilityLabel("\(item.name) — 클릭하면 하치와레가 주우러 와요. 하치와레 위에 드래그해 건네기.")
-        toolTip = "\(item.name) · 클릭해 부르기 · 하치와레 위에 드래그해 건네기"
+        setAccessibilityLabel("\(item.name) — 클릭하면 \(item.owner.name)가 주우러 와요. \(item.owner.name) 위에 드래그해 건네기.")
+        toolTip = "\(item.name) · 클릭해 부르기 · \(item.owner.name) 위에 드래그해 건네기"
     }
     required init?(coder: NSCoder) { fatalError("init(coder:) is unavailable") }
     override var acceptsFirstResponder: Bool { false }
@@ -28,7 +31,7 @@ final class DesktopItemView: NSView {
             NSColor(hex: 0xFFFDF6, alpha: 0.85).setFill()
             NSBezierPath(roundedRect: NSRect(x: 6, y: 9, width: 64, height: 66), xRadius: 16, yRadius: 16).fill()
         }
-        ItemArtwork.draw(item, in: NSRect(x: 6, y: 15, width: 64, height: 64))
+        item.draw(in: NSRect(x: 6, y: 15, width: 64, height: 64))
     }
     override func mouseDown(with event: NSEvent) {
         down = NSEvent.mouseLocation; origin = window?.frame.origin ?? .zero
@@ -46,11 +49,11 @@ final class DesktopItemView: NSView {
     }
 }
 
-final class DesktopItem {
+final class DesktopPropWindow<Item: DesktopProp> {
     let panel: FriendPanel
-    let view: DesktopItemView
-    init(item: CompanionItem) {
-        view = DesktopItemView(item: item)
+    let view: DesktopPropView<Item>
+    init(item: Item) {
+        view = DesktopPropView(item: item)
         panel = FriendPanel(contentRect: view.bounds, styleMask: [.borderless, .nonactivatingPanel], backing: .buffered, defer: false)
         panel.contentView = view; panel.title = "산책 소품 · \(item.name)"
         panel.isOpaque = false; panel.backgroundColor = .clear; panel.hasShadow = false

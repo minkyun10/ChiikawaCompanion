@@ -9,7 +9,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_ notification: Notification) {
         desktop = DesktopController(state: state)
-        state.onReset = { [weak self] in self?.desktop.resetPositions() }
+        state.onReset = { [weak self] in self?.resetPositions() }
         setupMenu()
         let mainMenu = NSMenu()
         let appItem = NSMenuItem()
@@ -32,8 +32,12 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         let title = NSMenuItem(title: "치이카와 데스크톱", action: nil, keyEquivalent: "")
         title.isEnabled = false; menu.addItem(title)
         menu.addItem(item("친구 설정…", action: #selector(showSettings), key: ","))
-        menu.addItem(item("하치와레 부르기", action: #selector(resetPositions)))
-        menu.addItem(item("하치와레 표시 / 숨기기", action: #selector(toggleFriends)))
+        menu.addItem(item("모두 부르기", action: #selector(resetPositions)))
+        for friend in Friend.developmentRoster {
+            let entry = item("\(friend.name) 부르기", action: #selector(callFriend(_:)))
+            entry.representedObject = friend.rawValue; menu.addItem(entry)
+        }
+        menu.addItem(item("모든 친구 표시 / 숨기기", action: #selector(toggleFriends)))
         menu.addItem(item("걷기 켜기 / 끄기", action: #selector(toggleRoaming)))
         let daily = NSMenuItem(title: "하치와레의 하루", action: nil, keyEquivalent: "")
         let dailyMenu = NSMenu()
@@ -69,7 +73,11 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         NSApp.activate(ignoringOtherApps: true)
         settingsWindow?.makeKeyAndOrderFront(nil)
     }
-    @objc func resetPositions() { desktop.resetPositions() }
+    @objc func callFriend(_ sender: NSMenuItem) {
+        guard let value = sender.representedObject as? String, let friend = Friend(rawValue: value) else { return }
+        desktop.callFriend(friend)
+    }
+    @objc func resetPositions() { Friend.developmentRoster.forEach { desktop.callFriend($0) } }
     @objc func toggleFriends() { state.showFriends.toggle() }
     @objc func toggleRoaming() { state.roaming.toggle() }
     @objc func playDailyAction(_ sender: NSMenuItem) {

@@ -1,7 +1,19 @@
 import AppKit
 
-enum CompanionItem: String, CaseIterable, Codable, Identifiable {
+protocol DesktopProp: CaseIterable, Hashable, RawRepresentable where RawValue == String {
+    var name: String { get }
+    var owner: Friend { get }
+    var spawnFraction: (CGFloat, CGFloat) { get }
+    func draw(in rect: NSRect)
+}
+
+enum CompanionItem: String, CaseIterable, Codable, Identifiable, DesktopProp {
     case camera, guitar, sasumata
+    var owner: Friend { .hachiware }
+    var spawnFraction: (CGFloat, CGFloat) {
+        switch self { case .camera: return (0.30, 0.30); case .guitar: return (0.74, 0.60); case .sasumata: return (0.42, 0.82) }
+    }
+    func draw(in rect: NSRect) { ItemArtwork.draw(self, in: rect) }
     var id: String { rawValue }
     var name: String {
         switch self {
@@ -35,16 +47,18 @@ enum CompanionItem: String, CaseIterable, Codable, Identifiable {
 
 /// One instance of each enabled item: either on the ground or being carried.
 /// Ground coordinates remain independent of character movement.
-struct ItemWorld {
-    private(set) var ground: [CompanionItem: NSPoint] = [:]
-    private(set) var equipped: CompanionItem?
-    private(set) var enabled = Set<CompanionItem>()
-    private(set) var availableAfter: [CompanionItem: Date] = [:]
+typealias ItemWorld = PropWorld<CompanionItem>
+
+struct PropWorld<Item: DesktopProp> {
+    private(set) var ground: [Item: NSPoint] = [:]
+    private(set) var equipped: Item?
+    private(set) var enabled = Set<Item>()
+    private(set) var availableAfter: [Item: Date] = [:]
     private(set) var nextAutomaticPickup = Date.distantPast
     private(set) var nextNearbyPickup = Date.distantPast
-    var requested: CompanionItem?
+    var requested: Item?
 
-    static let contactOffset = NSPoint(x: 66, y: 30)
+    static var contactOffset: NSPoint { NSPoint(x: 66, y: 30) }
     static func contactPoint(origin: NSPoint) -> NSPoint {
         NSPoint(x: origin.x + contactOffset.x, y: origin.y + contactOffset.y)
     }
@@ -64,7 +78,7 @@ struct ItemWorld {
         let origin = DesktopGeometry.clamp(destination(for: point), size: NSSize(width: 132, height: 150), to: bounds)
         return contactPoint(origin: origin)
     }
-    mutating func configure(enabled newValue: Set<CompanionItem>, bounds: NSRect) {
+    mutating func configure(enabled newValue: Set<Item>, bounds: NSRect) {
         for item in enabled.subtracting(newValue) {
             ground[item] = nil; availableAfter[item] = nil
             if equipped == item { equipped = nil }
@@ -74,9 +88,8 @@ struct ItemWorld {
         enabled = newValue
         for item in added { ground[item] = spawn(item, bounds: bounds) }
     }
-    private func spawn(_ item: CompanionItem, bounds: NSRect) -> NSPoint {
-        let fractions: [(CGFloat, CGFloat)] = [(0.30, 0.30), (0.74, 0.60), (0.42, 0.82)]
-        let f = fractions[CompanionItem.allCases.firstIndex(of: item)!]
+    private func spawn(_ item: Item, bounds: NSRect) -> NSPoint {
+        let f = item.spawnFraction
         return Self.contactPoint(origin: RoamingMotion.target(in: bounds,
             size: NSSize(width: 132, height: 150), xFraction: f.0, yFraction: f.1))
     }
@@ -88,12 +101,12 @@ struct ItemWorld {
         }
         requested = nil
     }
-    mutating func move(_ item: CompanionItem, to point: NSPoint, bounds: NSRect) {
+    mutating func move(_ item: Item, to point: NSPoint, bounds: NSRect) {
         guard ground[item] != nil else { return }
         ground[item] = Self.clamp(point, to: bounds)
     }
     func target(from origin: NSPoint, automatic: Bool, now: Date,
-                excluding dragged: Set<CompanionItem> = []) -> CompanionItem? {
+                excluding dragged: Set<Item> = []) -> Item? {
         if let requested, ground[requested] != nil { return dragged.contains(requested) ? nil : requested }
         guard automatic, now >= nextAutomaticPickup else { return nil }
         let contact = Self.contactPoint(origin: origin)
@@ -103,7 +116,7 @@ struct ItemWorld {
         }
     }
     func nearbyTarget(from origin: NSPoint, automatic: Bool, now: Date,
-                      excluding dragged: Set<CompanionItem> = []) -> CompanionItem? {
+                      excluding dragged: Set<Item> = []) -> Item? {
         guard automatic, requested == nil, now >= nextNearbyPickup else { return nil }
         let contact = Self.contactPoint(origin: origin)
         return ground.keys.filter {
@@ -116,14 +129,14 @@ struct ItemWorld {
         }
     }
     @discardableResult
-    mutating func pickUp(_ item: CompanionItem, from origin: NSPoint, bounds: NSRect, now: Date) -> Bool {
+    mutating func pickUp(_ item: Item, from origin: NSPoint, bounds: NSRect, now: Date) -> Bool {
         guard let point = ground[item], enabled.contains(item) else { return false }
         guard Self.canReach(point, from: origin) else { return false }
         return equip(item, at: origin, bounds: bounds, now: now)
     }
     /// Shared transfer after visual contact or a separately validated intentional handoff.
     @discardableResult
-    mutating func equip(_ item: CompanionItem, at origin: NSPoint, bounds: NSRect, now: Date) -> Bool {
+    mutating func equip(_ item: Item, at origin: NSPoint, bounds: NSRect, now: Date) -> Bool {
         guard ground[item] != nil, enabled.contains(item) else { return false }
         let contact = Self.contactPoint(origin: origin)
         drop(at: NSPoint(x: contact.x - 85, y: contact.y + 12), bounds: bounds, now: now)
