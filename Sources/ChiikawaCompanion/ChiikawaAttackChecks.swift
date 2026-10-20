@@ -37,6 +37,8 @@ extension SelfTest {
         let state = AppState(defaults: defaults)
         state.automaticItems = false; state.chiikawaAutomaticItems = false; state.automaticActivities = false
         state.homeEnabled = false; state.automaticRest = false; state.characterVoice = false
+        state.chiikawaHomeEnabled = false; state.chiikawaAutomaticRest = false
+        state.chiikawaAutomaticActivities = false; state.chiikawaVoice = false
         let desktop = DesktopController(state: state, startTimer: false)
         let actor = desktop.chiikawaActor!, hachi = desktop.hachiwareActor!, now = Date()
         let away = NSPoint(x: -10000, y: -10000)

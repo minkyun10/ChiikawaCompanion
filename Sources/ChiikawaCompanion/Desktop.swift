@@ -30,6 +30,7 @@ final class DesktopFriendView: NSView {
     var equipped: CompanionItem?
     var chiikawaItem: ChiikawaItem?
     var chiikawaReaction: ChiikawaReaction?
+    var chiikawaLife: ChiikawaLifeAction?
     var isDragging = false
     var onClick: (() -> Void)?
     var onToggleWalking: (() -> Void)?
@@ -38,6 +39,8 @@ final class DesktopFriendView: NSView {
     var onDragEnd: (() -> Void)?
     var onDailyAction: ((HachiwareAction) -> Void)?
     var onStopDailyAction: (() -> Void)?
+    var onChiikawaLife: ((ChiikawaLifeAction) -> Void)?
+    var onGoHome: (() -> Void)?
     private var downPoint: NSPoint = .zero
     private var downOrigin: NSPoint = .zero
     private var moved = false
@@ -57,7 +60,7 @@ final class DesktopFriendView: NSView {
         FriendArtwork.draw(friend, in: bounds, time: time, happy: happy, walking: walking,
                            looking: looking, facing: facing, walkPhase: walkPhase, pose: pose,
                            action: action, equipped: equipped, actionTime: actionTime,
-                           chiikawaReaction: chiikawaReaction, chiikawaItem: chiikawaItem)
+                           chiikawaReaction: chiikawaReaction, chiikawaItem: chiikawaItem, chiikawaLife: chiikawaLife)
     }
     override func rightMouseDown(with event: NSEvent) {
         let menu = NSMenu()
@@ -66,6 +69,14 @@ final class DesktopFriendView: NSView {
             entry.target = self; entry.tag = action.rawValue; menu.addItem(entry)
         }
         if friend == .chiikawa {
+            for action in ChiikawaLifeAction.allCases {
+                let entry = NSMenuItem(title: action.title, action: #selector(chooseChiikawaLife(_:)), keyEquivalent: "")
+                entry.target = self; entry.representedObject = action.rawValue; menu.addItem(entry)
+            }
+            let home = NSMenuItem(title: "집으로 가서 자기", action: #selector(goHome), keyEquivalent: "")
+            home.target = self; menu.addItem(home)
+            let stop = NSMenuItem(title: "동작 멈추기", action: #selector(stopDailyAction), keyEquivalent: "")
+            stop.target = self; menu.addItem(stop); menu.addItem(.separator())
             let walk = NSMenuItem(title: "이 친구 산책 켜기 / 끄기", action: #selector(toggleWalking), keyEquivalent: "")
             walk.target = self; menu.addItem(walk)
             let drop = NSMenuItem(title: "소품 내려놓기", action: #selector(dropEquipment), keyEquivalent: "")
@@ -83,6 +94,11 @@ final class DesktopFriendView: NSView {
         onDailyAction?(action)
     }
     @objc private func toggleWalking() { onToggleWalking?() }
+    @objc private func goHome() { onGoHome?() }
+    @objc private func chooseChiikawaLife(_ sender: NSMenuItem) {
+        guard let raw = sender.representedObject as? String, let action = ChiikawaLifeAction(rawValue: raw) else { return }
+        onChiikawaLife?(action)
+    }
     @objc private func dropEquipment() { onDropEquipment?() }
     @objc private func stopDailyAction() { onStopDailyAction?() }
     override func mouseDown(with event: NSEvent) {
@@ -207,6 +223,15 @@ final class DesktopController {
     var chiikawaWorld = PropWorld<ChiikawaItem>()
     var chiikawaDesktopItems: [ChiikawaItem: DesktopPropWindow<ChiikawaItem>] = [:]
     var chiikawaItemTarget: ChiikawaItem?
+    let chiikawaHome = DesktopChiikawaHome()
+    var chiikawaHomeRoutine = HomeRoutine()
+    var chiikawaSeekingHomeKey = false
+    let chiikawaDesk = DesktopActivitySpot(spot: .desk, owner: .chiikawa)
+    var chiikawaStudyWorld = ActivitySpotWorld()
+    var chiikawaLifeRoutine = ChiikawaLifeRoutine()
+    var chiikawaStudyingAtDesk = false
+    let chiikawaVoice: RecordedVoicePlayer
+    var lastChiikawaVoiceID: String?
     var timer: Timer?
     let recordedVoice: RecordedVoicePlayer
     var lastRecordedLine: String?
@@ -223,9 +248,11 @@ final class DesktopController {
     let home = DesktopHome()
     var homeRoutine = HomeRoutine()
 
-    init(state: AppState, startTimer: Bool = true, recordedVoice: RecordedVoicePlayer = RecordedVoicePlayer()) {
+    init(state: AppState, startTimer: Bool = true, recordedVoice: RecordedVoicePlayer = RecordedVoicePlayer(),
+         chiikawaVoice: RecordedVoicePlayer = RecordedVoicePlayer(idleStatus: "클릭하면 치이카와의 짧은 반응을 들려줘요")) {
         self.state = state
         self.recordedVoice = recordedVoice
+        self.chiikawaVoice = chiikawaVoice
         // Decode and register once at launch, never on the first pointer hover.
         _ = ChiikawaAttackSprites.shared
         _ = ChiikawaSprites.shared
@@ -245,10 +272,18 @@ final class DesktopController {
             }
             if actor.friend == .chiikawa {
                 actor.view.onDropEquipment = { [weak self] in self?.dropChiikawaItem() }
+                actor.view.onChiikawaLife = { [weak self] action in self?.playChiikawaLife(action) }
+                actor.view.onGoHome = { [weak self] in self?.goChiikawaHome() }
+                actor.view.onStopDailyAction = { [weak self] in self?.stopChiikawaLife() }
             }
             actor.view.onDragStart = { [weak self, weak actor] in
                 guard let actor else { return }
                 actor.dismissBubble(); actor.motion.stop()
+                if actor.friend == .chiikawa {
+                    self?.stopChiikawaLife(); self?.stopChiikawaVoice()
+                    if self?.chiikawaHomeRoutine.phase == .returning { self?.wakeChiikawa() }
+                    return
+                }
                 guard actor.friend == .hachiware else { return }
                 self?.stopCharacterVoice()
                 self?.stopDailyAction()
@@ -261,7 +296,7 @@ final class DesktopController {
             }
             actor.view.onDragEnd = { [weak self, weak actor] in
                 actor?.motion.retarget()
-                if actor?.friend == .chiikawa { self?.chiikawaItemTarget = nil; return }
+                if let actor, actor.friend == .chiikawa { self?.didMoveChiikawa(actor); return }
                 // Ground props own screen coordinates. Moving the character only
                 // invalidates its route; it must never reposition those props.
                 self?.itemTarget = nil
@@ -278,6 +313,7 @@ final class DesktopController {
             }
         }
         configureChiikawaItems()
+        configureChiikawaLife()
         for item in CompanionItem.allCases {
             let desktopItem = DesktopItem(item: item)
             desktopItem.view.onSeek = { [weak self] in self?.seekItem(item) }
@@ -340,12 +376,15 @@ final class DesktopController {
         actors.forEach { $0.dismissBubble(); $0.panel.close() }
         desktopItems.values.forEach { $0.panel.close() }
         chiikawaDesktopItems.values.forEach { $0.panel.close() }
+        chiikawaHome.panel.close(); chiikawaDesk.panel.close(); chiikawaVoice.stop()
         home.panel.close()
         desktopActivitySpots.values.forEach { $0.panel.close() }
         if let screenObserver { NotificationCenter.default.removeObserver(screenObserver) }
     }
     func resetPositions() {
         stopDailyAction()
+        stopChiikawaLife()
+        if chiikawaHomeRoutine.phase != .outside { wakeChiikawa() }
         if homeRoutine.phase != .outside { wakeFromHome() }
         guard let screen = NSScreen.main ?? NSScreen.screens.first else { return }
         let visible = screen.visibleFrame
@@ -362,6 +401,11 @@ final class DesktopController {
     private func screenLayoutChanged() {
         resetPositions()
         home.anchorToScreen()
+        chiikawaHome.anchorToScreen()
+        for (spot,point) in chiikawaStudyWorld.positions {
+            guard let screen = NSScreen.screens.first(where: { $0.frame.contains(point) }) ?? NSScreen.main else { continue }
+            chiikawaStudyWorld.move(spot,to: point,bounds: screen.visibleFrame)
+        }
         // Repair coordinates only when the display layout actually changes.
         // Props already on another connected screen stay on that screen.
         for (item, point) in itemWorld.ground {
@@ -463,10 +507,7 @@ final class DesktopController {
         if actor.friend == .hachiware, let selected = ClickDialogue.choose(excluding: lastClickDialogueID) {
             presentClickDialogue(selected, for: actor)
         } else if actor.friend == .chiikawa {
-            let choices = ChiikawaReaction.greetings.filter { $0.0 != actor.lastGreeting }
-            guard let selected = choices.randomElement() else { return }
-            actor.lastGreeting = selected.0; actor.clickReaction = selected.1
-            actor.say(selected.0, now: Date())
+            sayChiikawa()
         }
     }
     func presentClickDialogue(_ selected: ClickDialogue, for actor: FriendActor) {
@@ -595,7 +636,8 @@ final class DesktopController {
         lastTick = now
         let time = now.timeIntervalSince(started), mouse = pointer ?? NSEvent.mouseLocation
         recordedVoice.setVolume(state.characterVolume)
-        if !state.showFriends { stopCharacterVoice() }
+        chiikawaVoice.setVolume(state.characterVolume)
+        if !state.showFriends { stopCharacterVoice(); stopChiikawaVoice() }
         if let bounds = NSScreen.main?.visibleFrame {
             let previous = itemWorld.equipped
             itemWorld.configure(enabled: state.enabledItems, bounds: bounds)

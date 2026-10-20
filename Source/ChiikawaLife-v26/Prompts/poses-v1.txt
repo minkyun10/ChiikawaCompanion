@@ -1,0 +1,10 @@
+Use case: illustration-story.
+Asset type: transparent 2D cutout pose sheet for Chiikawa desktop home.
+Primary request: Use the supplied Chiikawa model sheet to create SIX full character poses in EXACTLY 3 columns by 2 rows, equal cells with generous transparent gutters. Match identity and proportions perfectly, warm dark brown thick rounded outlines, white body, round ears, pink cheeks. No Hachiware or blue hair.
+Row 1 column 1: Chiikawa asleep on a small cream futon under a light cream blanket, wearing a soft pink hooded pajama outfit with round ears, face fully visible, shut eyes and tiny calm mouth. Head at left, body toward right.
+Row 1 column 2: Chiikawa standing in pink hooded pajamas, shy content face, short connected paws.
+Row 1 column 3: Chiikawa in the same pink pajamas sitting and hugging the small BROWN TOOTHY stuffed monster in reference Image 2; content shut eyes. This is the brown doll, NOT the pink bear-face pochette.
+Row 2 column 1: ordinary white Chiikawa startled, wide shiny eyes, tiny round open mouth, paws near chest, small brow tension. No symbols, no lettering.
+Row 2 column 2: ordinary white Chiikawa feeling brave and determined, tiny furrowed brows, adorable open mouth, connected paws firmly at sides. No weapon.
+Row 2 column 3: ordinary white Chiikawa gently smiling in modest celebration, two paws together under chin, tiny closed smile.
+Background genuinely transparent, absolutely no text/numbers/labels, no furniture other than futon/blanket for first pose, no scenery, no watermark. All six complete, fully separated silhouettes including paws and ears. Keep consistent head width throughout all six.

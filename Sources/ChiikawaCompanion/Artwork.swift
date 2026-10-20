@@ -9,8 +9,10 @@ enum FriendArtwork {
                      happy: Bool = false, walking: Bool = false, looking: CGFloat = 0,
                      facing: CGFloat = 1, walkPhase: Double? = nil, pose: HachiwarePose = .front,
                      action: HachiwareAction? = nil, equipped: CompanionItem? = nil, actionTime: Double? = nil,
-                     chiikawaReaction: ChiikawaReaction? = nil, chiikawaItem: ChiikawaItem? = nil) {
+                     chiikawaReaction: ChiikawaReaction? = nil, chiikawaItem: ChiikawaItem? = nil,
+                     chiikawaLife: ChiikawaLifeAction? = nil) {
         if friend == .chiikawa {
+            if let chiikawaLife, ChiikawaLifeSprites.shared.draw(chiikawaLife, in: rect, elapsed: actionTime ?? time) { return }
             // This pose contains both paws and the pink weapon. Do not add the walking overlay.
             if action == .attack, ChiikawaAttackSprites.shared.draw(in: rect, time: actionTime ?? time) { return }
             ChiikawaSprites.shared.draw(in: rect, time: time, walking: walking, facing: facing,

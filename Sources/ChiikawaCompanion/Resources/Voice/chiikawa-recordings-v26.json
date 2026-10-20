@@ -1,0 +1,41 @@
+{
+  "speaker": "이주은",
+  "sourceTitle": "[성우 이주은] 캐릭터 - 겁많고 소심한 햄스터💗 (치이카와)",
+  "sourceProfile": "https://www.youtube.com/@jooeun_2",
+  "sourceURL": "https://www.youtube.com/watch?v=V0IPf4ENMJs",
+  "captionPolicy": "Bubble punctuation expresses the app reaction; it is not a verbatim transcription.",
+  "clips": [
+    {
+      "id": "chiikawa-surprise",
+      "text": "…!",
+      "file": "chiikawa-surprise-v26.m4a",
+      "sourceStart": 0.38,
+      "sourceEnd": 1.94,
+      "duration": 1.56
+    },
+    {
+      "id": "chiikawa-cry",
+      "text": "…",
+      "file": "chiikawa-cry-v26.m4a",
+      "sourceStart": 15.18,
+      "sourceEnd": 17.5,
+      "duration": 2.32
+    },
+    {
+      "id": "chiikawa-effort",
+      "text": "…!!",
+      "file": "chiikawa-effort-v26.m4a",
+      "sourceStart": 20.32,
+      "sourceEnd": 22.24,
+      "duration": 1.92
+    },
+    {
+      "id": "chiikawa-happy",
+      "text": "…♡",
+      "file": "chiikawa-happy-v26.m4a",
+      "sourceStart": 26.92,
+      "sourceEnd": 28.7,
+      "duration": 1.78
+    }
+  ]
+}

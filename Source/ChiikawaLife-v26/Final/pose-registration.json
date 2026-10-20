@@ -1,0 +1,98 @@
+{
+  "poses" : [
+    {
+      "alpha_bounds" : [
+        22,
+        127,
+        622,
+        366
+      ],
+      "name" : "sleep",
+      "source_rect" : [
+        0,
+        0,
+        645,
+        521
+      ]
+    },
+    {
+      "alpha_bounds" : [
+        2,
+        58,
+        368,
+        429
+      ],
+      "name" : "pajamas",
+      "source_rect" : [
+        644,
+        0,
+        440,
+        521
+      ]
+    },
+    {
+      "alpha_bounds" : [
+        70,
+        79,
+        349,
+        406
+      ],
+      "name" : "hug",
+      "source_rect" : [
+        1083,
+        0,
+        453,
+        521
+      ]
+    },
+    {
+      "alpha_bounds" : [
+        75,
+        27,
+        361,
+        411
+      ],
+      "name" : "startled",
+      "source_rect" : [
+        0,
+        520,
+        531,
+        504
+      ]
+    },
+    {
+      "alpha_bounds" : [
+        95,
+        29,
+        358,
+        406
+      ],
+      "name" : "determined",
+      "source_rect" : [
+        530,
+        520,
+        519,
+        504
+      ]
+    },
+    {
+      "alpha_bounds" : [
+        66,
+        33,
+        363,
+        406
+      ],
+      "name" : "gentle",
+      "source_rect" : [
+        1048,
+        520,
+        488,
+        504
+      ]
+    }
+  ],
+  "source_size" : [
+    1536,
+    1024
+  ]
+}

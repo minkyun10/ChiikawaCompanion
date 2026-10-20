@@ -44,6 +44,8 @@ struct SettingsView: View {
 
             rosterCard
             chiikawaItemCard
+            chiikawaLifeCard
+            chiikawaVoiceCard
             VStack(alignment: .leading, spacing: 14) {
                 HStack {
                     VStack(alignment: .leading, spacing: 5) {
@@ -156,7 +158,7 @@ struct SettingsView: View {
                     FriendPortrait(friend: friend).frame(width: 72, height: 82)
                     VStack(alignment: .leading, spacing: 5) {
                         Text(friend.name).font(.system(size: 15, weight: .semibold))
-                        Text(friend == .chiikawa ? "8방향 산책 · 표정 · 분홍 소품 · 무기 공격" : "산책 · 소품 · 일상 동작 · 동굴 집")
+                        Text(friend == .chiikawa ? "산책 · 소품 · 공부 · 잠옷 · 집 · 한국어 음성" : "산책 · 소품 · 일상 동작 · 동굴 집")
                             .font(.system(size: 10)).foregroundStyle(mutedInk)
                     }
                     Spacer()
@@ -181,7 +183,7 @@ struct SettingsView: View {
                 Spacer()
                 Button("다시 흩어 놓기") { state.onChiikawaScatterItems?() }.font(.system(size: 11))
             }
-            HStack(spacing: 12) {
+            LazyVGrid(columns: [GridItem(.flexible()),GridItem(.flexible())], spacing: 12) {
                 ForEach(ChiikawaItem.allCases) { item in
                     HStack {
                         Label(item.name, systemImage: item.symbol).font(.system(size: 12, weight: .medium))
@@ -206,9 +208,60 @@ struct SettingsView: View {
             }
             Text(state.chiikawaEquipped.map { "지금은 \($0.name)와 함께 · \(state.chiikawaItemStatus)" } ?? state.chiikawaItemStatus)
                 .font(.system(size: 10)).foregroundStyle(mutedInk)
-            Text("치이카와 위에 드래그해 건네거나, 소품을 클릭해 부를 수 있어요.\n분홍 사스마타를 들었을 때 마우스를 올리면 에잇! 떼면 다시 산책해요.\n치이카와의 목소리·집·일상 동작은 자료를 더 준비한 뒤 추가할 예정이에요.")
+            Text("치이카와 위에 드래그해 건네거나, 소품을 클릭해 부를 수 있어요.\n분홍 사스마타를 들고 호버하면 공격하고, 인형을 주우면 꼭 안아요. 열쇠는 귀가할 때 챙겨요.")
                 .font(.system(size: 10)).foregroundStyle(mutedInk).lineSpacing(3)
         }.padding(20).background(.white.opacity(0.9), in: RoundedRectangle(cornerRadius: 20))
+    }
+
+    private var chiikawaLifeCard: some View {
+        VStack(alignment: .leading, spacing: 13) {
+            Label("치이카와의 하루",systemImage: "house").font(.system(size: 16,weight: .semibold))
+            HStack {
+                Toggle("치이카와 집",isOn: $state.chiikawaHomeEnabled)
+                Toggle("가끔 귀가해서 쉬기",isOn: $state.chiikawaAutomaticRest)
+                Spacer()
+                Button("집에 가서 자기") { state.onChiikawaGoHome?() }.disabled(state.chiikawaResting)
+                Button("깨우기") { state.onChiikawaWake?() }.disabled(!state.chiikawaResting)
+            }.toggleStyle(.switch).controlSize(.small).font(.system(size: 11))
+            Text(state.chiikawaHomeStatus).font(.system(size: 10)).foregroundStyle(mutedInk)
+            HStack {
+                Toggle("분홍 공부 책상",isOn: $state.chiikawaStudyEnabled)
+                Toggle("가까이 가면 공부하기",isOn: $state.chiikawaAutomaticActivities)
+                Spacer()
+                Button("책상으로 가기") { state.onChiikawaStudy?() }
+            }.toggleStyle(.switch).controlSize(.small).font(.system(size: 11))
+            HStack(spacing: 10) {
+                ForEach(ChiikawaLifeAction.allCases) { action in
+                    Button(action.title) {
+                        if action == .study { state.onChiikawaStudy?() } else { state.onChiikawaLife?(action) }
+                    }.frame(maxWidth: .infinity).accessibilityLabel("치이카와 \(action.title)")
+                }
+                Button("동작 멈추기") { state.onStopChiikawaLife?() }.disabled(!state.chiikawaLifeRunning)
+            }.font(.system(size: 11))
+            Text(state.chiikawaLifeStatus).font(.system(size: 10)).foregroundStyle(mutedInk)
+            Text("동굴 옆의 둥근 집을 클릭하면 열쇠를 주워 귀가해요. 잠옷을 입고 이불을 덮어 20초 쉬어요.\n분홍 책상은 드래그로 옮길 수 있어요. 집과 책상·소품 위치는 캐릭터 이동과 독립적이에요.")
+                .font(.system(size: 10)).lineSpacing(3).foregroundStyle(mutedInk)
+        }.padding(20).background(.white.opacity(0.9),in: RoundedRectangle(cornerRadius: 20))
+    }
+
+    private var chiikawaVoiceCard: some View {
+        VStack(alignment: .leading,spacing: 12) {
+            HStack {
+                Label("치이카와의 목소리",systemImage: "waveform").font(.system(size: 16,weight: .semibold))
+                Spacer()
+                Toggle("클릭 목소리",isOn: $state.chiikawaVoice)
+                    .toggleStyle(.switch).controlSize(.small).font(.system(size: 11))
+            }
+            Text("이주은 성우의 공개 연기 샘플에서 준비한 짧은 반응을 클릭할 때 무작위로 들려줘요.")
+                .font(.system(size: 11)).foregroundStyle(mutedInk)
+            HStack {
+                Image(systemName: "speaker.wave.2.fill").foregroundStyle(blue)
+                Slider(value: $state.characterVolume,in: 0...1).accessibilityLabel("두 친구 목소리 음량")
+                Button("치이카와 목소리 들어보기") { state.onChiikawaVoicePreview?() }
+                Button("멈추기") { state.onStopChiikawaVoice?() }
+            }.font(.system(size: 11))
+            Text(state.chiikawaVoiceStatus).font(.system(size: 10)).foregroundStyle(mutedInk)
+        }.padding(20).background(.white.opacity(0.9),in: RoundedRectangle(cornerRadius: 20))
     }
 
     private var dailyActionCard: some View {

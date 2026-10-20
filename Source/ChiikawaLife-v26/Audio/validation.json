@@ -1,0 +1,38 @@
+[
+  {
+    "id": "chiikawa-surprise",
+    "duration": 1.56,
+    "sha256": "194f7dc1be7a541a56e51888895c5da53e94c6540c9a79bc96716886662246f4",
+    "volume": [
+      "mean_volume: -22.0 dB",
+      "max_volume: -8.9 dB"
+    ]
+  },
+  {
+    "id": "chiikawa-cry",
+    "duration": 2.32,
+    "sha256": "5217d109661a4ef26e47a5c1e821735ffc0d7b677c02e6a31e5bf37ef0d50363",
+    "volume": [
+      "mean_volume: -22.7 dB",
+      "max_volume: -4.5 dB"
+    ]
+  },
+  {
+    "id": "chiikawa-effort",
+    "duration": 1.92,
+    "sha256": "d9b5ab529445d805c39619ca0d78fe0ed88ebb86c87f8cfd0419c3dfd4c47697",
+    "volume": [
+      "mean_volume: -21.6 dB",
+      "max_volume: -5.5 dB"
+    ]
+  },
+  {
+    "id": "chiikawa-happy",
+    "duration": 1.78,
+    "sha256": "e0f5021bd2d28e12213947871b7b2c77ceba5e20d3c5cadd42d4baade88f7f5d",
+    "volume": [
+      "mean_volume: -20.8 dB",
+      "max_volume: -9.2 dB"
+    ]
+  }
+]

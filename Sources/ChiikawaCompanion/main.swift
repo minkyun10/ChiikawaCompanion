@@ -48,6 +48,17 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         dailyMenu.addItem(.separator())
         dailyMenu.addItem(item("동작 멈추기", action: #selector(stopDailyAction)))
         daily.submenu = dailyMenu; menu.addItem(daily)
+        let chiiDay = NSMenuItem(title: "치이카와의 하루",action: nil,keyEquivalent: "")
+        let chiiMenu = NSMenu()
+        for action in ChiikawaLifeAction.allCases {
+            let entry = item(action.title,action: #selector(playChiikawaLife(_:)))
+            entry.representedObject = action.rawValue; chiiMenu.addItem(entry)
+        }
+        chiiMenu.addItem(item("집에 가서 자기",action: #selector(chiikawaGoHome)))
+        chiiMenu.addItem(item("깨우기",action: #selector(chiikawaWake)))
+        chiiMenu.addItem(item("목소리 들어보기",action: #selector(chiikawaVoicePreview)))
+        chiiMenu.addItem(item("동작 멈추기",action: #selector(stopChiikawaLife)))
+        chiiDay.submenu = chiiMenu; menu.addItem(chiiDay)
         menu.addItem(.separator())
         menu.addItem(item("종료", action: #selector(quit), key: "q"))
         statusItem.menu = menu
@@ -85,8 +96,16 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         desktop.playDailyAction(action)
     }
     @objc func stopDailyAction() { desktop.stopDailyAction() }
+    @objc func playChiikawaLife(_ sender: NSMenuItem) {
+        guard let raw = sender.representedObject as? String, let action = ChiikawaLifeAction(rawValue: raw) else { return }
+        if action == .study { desktop.seekChiikawaStudy() } else { desktop.playChiikawaLife(action) }
+    }
+    @objc func chiikawaGoHome() { desktop.goChiikawaHome() }
+    @objc func chiikawaWake() { desktop.wakeChiikawa() }
+    @objc func chiikawaVoicePreview() { desktop.sayChiikawa(preview: true) }
+    @objc func stopChiikawaLife() { desktop.stopChiikawaLife() }
     @objc func quit() { NSApp.terminate(nil) }
-    func applicationWillTerminate(_ notification: Notification) { desktop?.stopCharacterVoice() }
+    func applicationWillTerminate(_ notification: Notification) { desktop?.stopCharacterVoice(); desktop?.stopChiikawaVoice() }
     func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool { false }
 }
 

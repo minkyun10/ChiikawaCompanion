@@ -1,0 +1,15 @@
+{
+  "verified": "2026-10-20",
+  "speaker": "이주은",
+  "role": "치이카와",
+  "sourceURL": "https://www.youtube.com/watch?v=V0IPf4ENMJs",
+  "sourceSHA256": "1d8da044ee3a80a5e3712e6b2702eda18434f6aa59c2655697f8df36606cbe46",
+  "sourceBytes": 665814,
+  "method": "Ordinary public YouTube download; no account cookies, credentials or private API keys",
+  "use": "User-authorized personal desktop companion; four short nonverbal excerpts",
+  "synthesized": false,
+  "voice_cloned": false,
+  "machine_transcript_is_authoritative": false,
+  "reaction_names": "App performance mapping; emotional labels are interpretation, not source transcript",
+  "background_audio": "No source separation performed; any original ambience remains in excerpts"
+}

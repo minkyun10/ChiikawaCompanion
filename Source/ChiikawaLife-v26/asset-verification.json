@@ -1,0 +1,91 @@
+{
+  "previous_resources_preserved": 32,
+  "new_images": [
+    {
+      "name": "chiikawa-determined-v26.png",
+      "size": [
+        358,
+        406
+      ],
+      "sha256": "186885a30b0a9a989cc82a10038383ecca6513ad73c82294d331b4d237e354b1"
+    },
+    {
+      "name": "chiikawa-gentle-v26.png",
+      "size": [
+        363,
+        406
+      ],
+      "sha256": "4da1779c357a55e652119f2ec0a3a19d8ebca9df8ec18bd901b45b795ed3a827"
+    },
+    {
+      "name": "chiikawa-house-v26.png",
+      "size": [
+        1340,
+        895
+      ],
+      "sha256": "d6d8f5dfa6d36cb00a3c4ebd15d0a40c99ae0a1e18186ad126e0bd0e5e68f904"
+    },
+    {
+      "name": "chiikawa-hug-v26.png",
+      "size": [
+        349,
+        406
+      ],
+      "sha256": "238ccc7943af8bb0e135538317bdf80c101a4c1184967f85c6cc84a1fd15f1b2"
+    },
+    {
+      "name": "chiikawa-pajamas-v26.png",
+      "size": [
+        368,
+        429
+      ],
+      "sha256": "b57ebb01b6c7df1183265bee3ed1eeb707c2728167ce965c1aed59ffd898ba1c"
+    },
+    {
+      "name": "chiikawa-sleep-v26.png",
+      "size": [
+        622,
+        366
+      ],
+      "sha256": "c9bb0b5a5db990df3168b66f33c01bd1c96cc2ffe22114cb1b424cbc5baef100"
+    },
+    {
+      "name": "chiikawa-startled-v26.png",
+      "size": [
+        361,
+        411
+      ],
+      "sha256": "ad463217467d74951787bcbd188f367b875de11e49ccd9b5cc68006779783c61"
+    },
+    {
+      "name": "chiikawa-study-v26.png",
+      "size": [
+        1536,
+        512
+      ],
+      "sha256": "ea006d311e55d1c6018865a5f9cf05de979fee13c3c9b3d91523602e561ad654"
+    }
+  ],
+  "voice_resources": [
+    {
+      "name": "chiikawa-surprise-v26.m4a",
+      "duration": 1.56,
+      "sha256": "194f7dc1be7a541a56e51888895c5da53e94c6540c9a79bc96716886662246f4"
+    },
+    {
+      "name": "chiikawa-cry-v26.m4a",
+      "duration": 2.32,
+      "sha256": "5217d109661a4ef26e47a5c1e821735ffc0d7b677c02e6a31e5bf37ef0d50363"
+    },
+    {
+      "name": "chiikawa-effort-v26.m4a",
+      "duration": 1.92,
+      "sha256": "d9b5ab529445d805c39619ca0d78fe0ed88ebb86c87f8cfd0419c3dfd4c47697"
+    },
+    {
+      "name": "chiikawa-happy-v26.m4a",
+      "duration": 1.78,
+      "sha256": "e0f5021bd2d28e12213947871b7b2c77ceba5e20d3c5cadd42d4baade88f7f5d"
+    }
+  ]
+}

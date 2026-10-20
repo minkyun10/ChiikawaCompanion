@@ -1,0 +1,47 @@
+{
+  "generations": [
+    {
+      "generator": "built-in image_gen",
+      "date": "2026-10-20",
+      "output": "Generated/house-original-v1.png",
+      "original_filename": "exec-74ef64d5-1b8e-41c0-a6a9-2fa7ba4d0c8f.png",
+      "prompt": "Prompts/house-v1.txt",
+      "inputs": [
+        "References/chiikawa-model-sheet-v22.png",
+        "References/official-house-sega.jpg"
+      ],
+      "transparent_background": true,
+      "bytes": 1388209,
+      "sha256": "48378c4909a4b1b02dd9c4d7ddf6d031ffc80d71ae45cd3d8e0eb00a79dc1f07"
+    },
+    {
+      "generator": "built-in image_gen",
+      "date": "2026-10-20",
+      "output": "Generated/study-original-v1.png",
+      "original_filename": "exec-f34db35d-04ad-4c86-a48d-d34b6336d5c8.png",
+      "prompt": "Prompts/study-v1.txt",
+      "inputs": [
+        "References/chiikawa-model-sheet-v22.png",
+        "References/official-house-sega.jpg"
+      ],
+      "transparent_background": true,
+      "bytes": 1467295,
+      "sha256": "f52c3047dbcae65aa1e1ff5a1021920b20f1d673372aba93e04d1caf7a1360b5"
+    },
+    {
+      "generator": "built-in image_gen",
+      "date": "2026-10-20",
+      "output": "Generated/poses-original-v1.png",
+      "original_filename": "exec-bc096742-438d-4f2c-89de-c9fb4539e3c0.png",
+      "prompt": "Prompts/poses-v1.txt",
+      "inputs": [
+        "References/chiikawa-model-sheet-v22.png",
+        "References/official-house-sega.jpg"
+      ],
+      "transparent_background": true,
+      "bytes": 1605669,
+      "sha256": "47b6d644198eb16bf0428ef83c655866d96c9f61765f878f9c99fa28ebe3a988"
+    }
+  ],
+  "all_originals_preserved": true
+}

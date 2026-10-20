@@ -12,6 +12,8 @@ extension SelfTest {
               "existing installations start with both companions visible and walking")
         state.automaticItems = false; state.automaticActivities = false; state.automaticRest = false; state.homeEnabled = false
         state.chiikawaAutomaticItems = false
+        state.chiikawaHomeEnabled = false; state.chiikawaAutomaticRest = false
+        state.chiikawaAutomaticActivities = false; state.chiikawaVoice = false
         let voice = RecordedVoicePlayer(startPlayback: { _ in true })
         let desktop = DesktopController(state: state, startTimer: false, recordedVoice: voice)
         let hachi = desktop.hachiwareActor!, chii = desktop.chiikawaActor!
@@ -105,10 +107,10 @@ extension SelfTest {
               "direct drop immediately dresses Chiikawa even with walking and automatic pickup disabled")
         desktop.chiikawaDesktopItems[.pinkSasumata]!.view.onMoveEnd?(body)
         check(desktop.chiikawaWorld.equipped == .pinkSasumata && desktop.chiikawaWorld.ground[.pochette] != nil
-              && desktop.chiikawaWorld.ground.count == 1 && desktop.itemWorld.ground == hachiGround,
+              && desktop.chiikawaWorld.ground.count == ChiikawaItem.allCases.count-1 && desktop.itemWorld.ground == hachiGround,
               "Chiikawa item replacement drops the previous item without duplicating or moving Hachiware props")
         desktop.dropChiikawaItem(now: now)
-        check(desktop.chiikawaWorld.equipped == nil && desktop.chiikawaWorld.ground.count == 2
+        check(desktop.chiikawaWorld.equipped == nil && desktop.chiikawaWorld.ground.count == ChiikawaItem.allCases.count
               && desktop.chiikawaWorld.nearbyTarget(from: chii.panel.frame.origin, automatic: true, now: now) == nil,
               "putting down a Chiikawa item preserves ground coordinates and applies re-pickup cooldown")
         state.homeEnabled = true; desktop.goHome(now: now)
@@ -134,7 +136,7 @@ extension SelfTest {
         state.walkingFriends = [.hachiware]; state.chiikawaAutomaticItems = true
         let restored = AppState(defaults: defaults)
         check(restored.visibleFriends == [.chiikawa] && restored.walkingFriends == [.hachiware]
-              && restored.chiikawaItems == [.pochette] && restored.chiikawaAutomaticItems,
+              && restored.chiikawaItems == [.pochette,.houseKey,.stuffedToy] && restored.chiikawaAutomaticItems,
               "visibility, walking, Chiikawa inventory and automatic pickup preferences survive relaunch independently")
         defaults.set(["chiikawa", "usagi", "unknown"], forKey: "visibleFriends")
         check(AppState(defaults: defaults).visibleFriends == [.chiikawa], "saved roster preferences cannot expose unfinished or unknown characters")
@@ -173,11 +175,12 @@ extension SelfTest {
             ("UP LEFT", .backDiagonal, -1), ("UP", .back, -1), ("UP RIGHT", .backDiagonal, 1), ("LEFT", .side, -1),
             ("RIGHT", .side, 1), ("DOWN LEFT", .frontDiagonal, -1), ("DOWN", .front, -1), ("DOWN RIGHT", .frontDiagonal, 1)
         ]
-        png(width: 1600, height: 780, to: directory.appendingPathComponent("chiikawa-runtime-equipment-v23.png")) {
-            NSColor(hex: 0xF7F4EB).setFill(); NSRect(x: 0, y: 0, width: 1600, height: 780).fill()
+        let height = ChiikawaItem.allCases.count*300+180
+        png(width: 1600, height: height, to: directory.appendingPathComponent("chiikawa-runtime-equipment-v23.png")) {
+            NSColor(hex: 0xF7F4EB).setFill(); NSRect(x: 0,y: 0,width: 1600,height: height).fill()
             for (row, item) in ChiikawaItem.allCases.enumerated() {
                 for (column, direction) in directions.enumerated() {
-                    let rect = NSRect(x: CGFloat(column) * 200, y: CGFloat(1 - row) * 300 + 170, width: 200, height: 220)
+                    let rect = NSRect(x: CGFloat(column) * 200, y: CGFloat(ChiikawaItem.allCases.count-1-row) * 300 + 170, width: 200, height: 220)
                     FriendArtwork.draw(.chiikawa, in: rect, walking: true, facing: direction.2, walkPhase: .pi / 2,
                         pose: direction.1, chiikawaItem: item)
                     (direction.0 as NSString).draw(at: NSPoint(x: rect.minX + 20, y: rect.minY - 15),
@@ -185,7 +188,7 @@ extension SelfTest {
                 }
             }
             for (index, reaction) in ChiikawaReaction.allCases.enumerated() {
-                FriendArtwork.draw(.chiikawa, in: NSRect(x: 600 + index * 180, y: 0, width: 160, height: 170), chiikawaReaction: reaction)
+                FriendArtwork.draw(.chiikawa, in: NSRect(x: 280 + index * 200, y: 0, width: 160, height: 170), chiikawaReaction: reaction)
             }
         }
         let destination = CGImageDestinationCreateWithURL(directory.appendingPathComponent("chiikawa-runtime-walk-v23.gif") as CFURL,

@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-20",
+  "version": "0.15.0",
+  "build": 28,
+  "status": "built-and-tested; native screen validation awaits Mac unlock",
+  "cli_checks_passed": 298,
+  "packaged_checks_passed": 305,
+  "codesign_strict_verified": true,
+  "previous_resources_unchanged": 32,
+  "new_image_resources": 8,
+  "new_voice_clips": 4,
+  "image_generator": "built-in image_gen",
+  "generation_count": 3,
+  "source_archive_complete": true,
+  "security": {
+    "code_findings": 0,
+    "new_source_findings": 0
+  },
+  "native_ui": {
+    "status": "pending",
+    "reason": "Mac is locked; user asked to unlock through the input request."
+  },
+  "reference_research": "../ChiikawaResearch-v25/sources.json",
+  "art_review": "Review/chiikawa-life-v26.png",
+  "animation_review": "Review/chiikawa-study-v26.gif"
+}

@@ -15,9 +15,9 @@ enum ChiikawaDirection: String, CaseIterable {
 }
 
 enum ChiikawaReaction: String, CaseIterable {
-    case happy, crying
+    case happy, crying, startled, determined, gentle
     static let greetings: [(String, ChiikawaReaction)] = [
-        ("와아…!", .happy), ("에헤헤…", .happy), ("응…!", .happy), ("으…", .crying)
+        ("와아…!", .happy), ("에헤헤…", .gentle), ("응…!", .determined), ("으…", .crying), ("앗…!", .startled)
     ]
 }
 
@@ -45,7 +45,8 @@ final class ChiikawaSprites {
             frames[direction] = cycle
         }
         for reaction in ChiikawaReaction.allCases {
-            guard let url = HachiwareSprites.assetURL(named: "chiikawa-\(reaction.rawValue)-v23"),
+            let version = reaction == .happy || reaction == .crying ? "v23" : "v26"
+            guard let url = HachiwareSprites.assetURL(named: "chiikawa-\(reaction.rawValue)-\(version)"),
                   let source = NSImage(contentsOf: url) else { continue }
             reactions[reaction] = source
         }
@@ -75,12 +76,18 @@ final class ChiikawaSprites {
 }
 
 enum ChiikawaItem: String, CaseIterable, Codable, Identifiable, DesktopProp {
-    case pochette, pinkSasumata
+    case pochette, pinkSasumata, houseKey, stuffedToy
     var id: String { rawValue }
     var owner: Friend { .chiikawa }
-    var name: String { self == .pochette ? "분홍 포셰트" : "분홍 사스마타" }
-    var symbol: String { self == .pochette ? "bag" : "sparkles" }
-    var spawnFraction: (CGFloat, CGFloat) { self == .pochette ? (0.58, 0.26) : (0.66, 0.78) }
+    var name: String {
+        switch self { case .pochette: return "곰 포셰트"; case .pinkSasumata: return "분홍 사스마타"; case .houseKey: return "집 열쇠"; case .stuffedToy: return "소중한 인형" }
+    }
+    var symbol: String {
+        switch self { case .pochette: return "bag"; case .pinkSasumata: return "sparkles"; case .houseKey: return "key"; case .stuffedToy: return "heart" }
+    }
+    var spawnFraction: (CGFloat, CGFloat) {
+        switch self { case .pochette: return (0.58,0.26); case .pinkSasumata: return (0.66,0.78); case .houseKey: return (0.78,0.15); case .stuffedToy: return (0.88,0.40) }
+    }
     func draw(in rect: NSRect) { ChiikawaItemArtwork.draw(self, in: rect) }
 }
 
@@ -96,6 +103,8 @@ enum ChiikawaItemArtwork {
         if line > 0 { ink.setStroke(); p.lineWidth = line; p.stroke() }
     }
     static func draw(_ item: ChiikawaItem, in rect: NSRect, strap: Bool = true) {
+        if item == .houseKey { ChiikawaLifeItemArtwork.drawKey(in: rect); return }
+        if item == .stuffedToy { ChiikawaLifeItemArtwork.drawToy(in: rect); return }
         guard let cg = NSGraphicsContext.current?.cgContext else { return }
         cg.saveGState(); cg.translateBy(x: rect.minX, y: rect.minY); cg.scaleBy(x: rect.width / 256, y: rect.height / 256)
         if item == .pochette {
@@ -131,10 +140,12 @@ enum ChiikawaItemArtwork {
         let back = pose == .back || pose == .backDiagonal, side = pose == .side
         if item == .pinkSasumata {
             if behind == back { draw(item, in: NSRect(x: back ? 165 : 151, y: 17, width: 90, height: 212)) }
-        } else if !behind {
+        } else if item == .pochette && !behind {
             let strap = [NSPoint(x: 78, y: 118), NSPoint(x: 174, y: 60)]
             stroke(strap, width: 8, color: ink); stroke(strap, width: 4, color: .white)
             if !back { draw(item, in: NSRect(x: side ? 43 : 103, y: 30, width: 90, height: 78), strap: false) }
+        } else if !behind && !back {
+            draw(item, in: NSRect(x: side ? 58 : 138, y: 43, width: 62, height: 72), strap: false)
         }
         cg.restoreGState()
     }

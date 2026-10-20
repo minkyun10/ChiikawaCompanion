@@ -126,6 +126,7 @@ enum ActivitySpotArtwork {
 
 final class ActivitySpotView: NSView {
     let spot: ActivitySpot
+    let owner: Friend
     var hovered = false
     var isDragging = false
     var onSeek: (() -> Void)?
@@ -133,10 +134,10 @@ final class ActivitySpotView: NSView {
     var onMoveEnd: (() -> Void)?
     private var down = NSPoint.zero, origin = NSPoint.zero
     private var moved = false
-    init(spot: ActivitySpot) {
-        self.spot = spot; super.init(frame: NSRect(x: 0,y: 0,width: 104,height: 100))
+    init(spot: ActivitySpot, owner: Friend = .hachiware) {
+        self.spot = spot; self.owner = owner; super.init(frame: NSRect(x: 0,y: 0,width: 104,height: 100))
         setAccessibilityElement(true); setAccessibilityRole(.button)
-        setAccessibilityLabel("\(spot.name) — 클릭하면 하치와레가 걸어와 \(spot.action.title). 드래그로 옮기기.")
+        setAccessibilityLabel("\(owner.name) \(spot.name) — 클릭하면 \(owner.name)가 걸어와 \(spot.action.title). 드래그로 옮기기.")
         toolTip = "\(spot.name) · 가까이 가면 \(spot.action.title) · 드래그로 옮기기"
     }
     required init?(coder: NSCoder) { fatalError("init(coder:) is unavailable") }
@@ -146,7 +147,8 @@ final class ActivitySpotView: NSView {
     override func draw(_ dirtyRect: NSRect) {
         NSColor.black.withAlphaComponent(0.08).setFill()
         NSBezierPath(ovalIn: NSRect(x: 23,y: 13,width: 58,height: 5)).fill()
-        ActivitySpotArtwork.draw(spot, in: bounds)
+        if owner == .chiikawa { ChiikawaLifeItemArtwork.drawDesk(in: bounds) }
+        else { ActivitySpotArtwork.draw(spot, in: bounds) }
         if hovered {
             let path = NSBezierPath(roundedRect: bounds.insetBy(dx: 5,dy: 7), xRadius: 12,yRadius: 12)
             NSColor(hex: 0x7DA6BC,alpha: 0.55).setStroke(); path.lineWidth = 1.5; path.stroke()
@@ -170,8 +172,8 @@ final class ActivitySpotView: NSView {
 final class DesktopActivitySpot {
     let panel: FriendPanel
     let view: ActivitySpotView
-    init(spot: ActivitySpot) {
-        view = ActivitySpotView(spot: spot)
+    init(spot: ActivitySpot, owner: Friend = .hachiware) {
+        view = ActivitySpotView(spot: spot, owner: owner)
         panel = FriendPanel(contentRect: view.bounds, styleMask: [.borderless,.nonactivatingPanel], backing: .buffered,defer: false)
         panel.contentView = view; panel.title = "생활 소품 · \(spot.name)"
         panel.isOpaque = false; panel.backgroundColor = .clear; panel.hasShadow = false

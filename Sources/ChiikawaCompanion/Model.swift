@@ -63,6 +63,25 @@ final class AppState: ObservableObject {
     }
     @Published var chiikawaEquipped: ChiikawaItem?
     @Published var chiikawaItemStatus = "분홍 소품을 찾아요"
+    @Published var chiikawaHomeEnabled: Bool { didSet { defaults.set(chiikawaHomeEnabled, forKey: "chiikawaHomeEnabled") } }
+    @Published var chiikawaAutomaticRest: Bool { didSet { defaults.set(chiikawaAutomaticRest, forKey: "chiikawaAutomaticRest") } }
+    @Published var chiikawaStudyEnabled: Bool { didSet { defaults.set(chiikawaStudyEnabled, forKey: "chiikawaStudyEnabled") } }
+    @Published var chiikawaAutomaticActivities: Bool { didSet { defaults.set(chiikawaAutomaticActivities, forKey: "chiikawaAutomaticActivities") } }
+    @Published var chiikawaVoice: Bool {
+        didSet { defaults.set(chiikawaVoice, forKey: "chiikawaVoice"); if !chiikawaVoice { onStopChiikawaVoice?() } }
+    }
+    @Published var chiikawaHomeStatus = "집을 클릭하면 열쇠를 챙겨 귀가해요"
+    @Published var chiikawaResting = false
+    @Published var chiikawaLifeStatus = "공부하고, 인형을 안고, 잠옷으로 쉬어요"
+    @Published var chiikawaLifeRunning = false
+    @Published var chiikawaVoiceStatus = "클릭하면 이주은 성우의 짧은 반응을 들려줘요"
+    var onChiikawaGoHome: (() -> Void)?
+    var onChiikawaWake: (() -> Void)?
+    var onChiikawaStudy: (() -> Void)?
+    var onChiikawaLife: ((ChiikawaLifeAction) -> Void)?
+    var onStopChiikawaLife: (() -> Void)?
+    var onChiikawaVoicePreview: (() -> Void)?
+    var onStopChiikawaVoice: (() -> Void)?
     var onCallFriend: ((Friend) -> Void)?
     var onChiikawaSeekItem: ((ChiikawaItem) -> Void)?
     var onChiikawaDropItem: (() -> Void)?
@@ -115,9 +134,20 @@ final class AppState: ObservableObject {
             .compactMap(Friend.init(rawValue:))).intersection(roster)
         walkingFriends = Set((defaults.stringArray(forKey: "walkingFriends") ?? Friend.developmentRoster.map(\.rawValue))
             .compactMap(Friend.init(rawValue:))).intersection(roster)
-        chiikawaItems = Set((defaults.stringArray(forKey: "chiikawaItems") ?? ChiikawaItem.allCases.map(\.rawValue))
+        var restoredChiikawaItems = Set((defaults.stringArray(forKey: "chiikawaItems") ?? ChiikawaItem.allCases.map(\.rawValue))
             .compactMap(ChiikawaItem.init(rawValue:)))
+        if !defaults.bool(forKey: "chiikawaLifeV26Installed") {
+            restoredChiikawaItems.formUnion([.houseKey,.stuffedToy])
+            defaults.set(restoredChiikawaItems.map(\.rawValue).sorted(), forKey: "chiikawaItems")
+            defaults.set(true, forKey: "chiikawaLifeV26Installed")
+        }
+        chiikawaItems = restoredChiikawaItems
         chiikawaAutomaticItems = defaults.object(forKey: "chiikawaAutomaticItems") as? Bool ?? true
+        chiikawaHomeEnabled = defaults.object(forKey: "chiikawaHomeEnabled") as? Bool ?? true
+        chiikawaAutomaticRest = defaults.object(forKey: "chiikawaAutomaticRest") as? Bool ?? true
+        chiikawaStudyEnabled = defaults.object(forKey: "chiikawaStudyEnabled") as? Bool ?? true
+        chiikawaAutomaticActivities = defaults.object(forKey: "chiikawaAutomaticActivities") as? Bool ?? true
+        chiikawaVoice = defaults.object(forKey: "chiikawaVoice") as? Bool ?? true
         // Remove preferences belonging to the retired chat-notification integration.
         for key in ["assignments", "voice", "hachiwareWalkStage", "monitoring", "monitoringStatus", "lastEvent", "verifiedSession"] {
             defaults.removeObject(forKey: key)

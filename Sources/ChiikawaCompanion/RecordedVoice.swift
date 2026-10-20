@@ -16,14 +16,16 @@ struct RecordingCatalog: Decodable {
     let sourceProfile: String
     let clips: [RecordedLine]
     static let fileName = "hachiware-recordings-v13.json"
-    static let shared: RecordingCatalog = {
+    static let shared = load(fileName, speaker: "손정민")
+    static let chiikawa = load("chiikawa-recordings-v26.json", speaker: "이주은")
+    private static func load(_ fileName: String, speaker: String) -> RecordingCatalog {
         guard let url = resourceURL(file: fileName), let data = try? Data(contentsOf: url),
               let result = try? JSONDecoder().decode(RecordingCatalog.self, from: data),
               result.isValid else {
-            return RecordingCatalog(speaker: "손정민", sourceTitle: "", sourceProfile: "", clips: [])
+            return RecordingCatalog(speaker: speaker, sourceTitle: "", sourceProfile: "", clips: [])
         }
         return result
-    }()
+    }
     var isValid: Bool {
         !clips.isEmpty && Set(clips.map(\.id)).count == clips.count && clips.allSatisfy {
             !$0.id.isEmpty && !$0.text.isEmpty && $0.duration > 0 && $0.duration <= 15
@@ -70,7 +72,10 @@ private extension URL {
 /// One local player replaces the current utterance on every click. No audio leaves the Mac.
 final class RecordedVoicePlayer: NSObject, AVAudioPlayerDelegate {
     private let startPlayback: (AVAudioPlayer) -> Bool
-    init(startPlayback: @escaping (AVAudioPlayer) -> Bool = { $0.play() }) {
+    private let idleStatus: String
+    init(idleStatus: String = "클릭하면 14개 대사 중 하나를 보여줘요",
+         startPlayback: @escaping (AVAudioPlayer) -> Bool = { $0.play() }) {
+        self.idleStatus = idleStatus
         self.startPlayback = startPlayback
         super.init()
     }
@@ -109,7 +114,7 @@ final class RecordedVoicePlayer: NSObject, AVAudioPlayerDelegate {
     }
     func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
         guard self.player === player else { return }
-        stop(); onStatus?(flag ? "클릭하면 14개 대사 중 하나를 보여줘요" : "재생이 중단됐어요")
+        stop(); onStatus?(flag ? idleStatus : "재생이 중단됐어요")
     }
     func audioPlayerDecodeErrorDidOccur(_ player: AVAudioPlayer, error: Error?) {
         guard self.player === player else { return }

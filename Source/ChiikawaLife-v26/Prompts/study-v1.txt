@@ -1,0 +1,6 @@
+Use case: illustration-story.
+Asset type: transparent 2D animation sprite sheet for the existing desktop Chiikawa.
+Primary request: Draw a chronological 12-frame loop of Chiikawa quietly studying for the weeding qualification exam at a tiny low PINK ROUND TABLE with an open notebook and small red pencil. Match the supplied model sheet EXACTLY: rounded white body, round ears, short connected paws, tiny feet, warm thick dark-brown outlines, black shiny eyes and pink cheeks. No blue hair and no other character.
+Layout: EXACTLY 4 columns by 3 rows, TWELVE distinct full-body poses, equal square cells, read left to right then next row. Every character AND entire table is fully visible. Same head size, same camera and same table position in every cell. Large transparent gutters and outer margins, nothing touches cell edges.
+Motion: a modest seamless writing loop, pencil paw moves in a tiny left-right writing arc across the notebook during frames 1–6, then returns identically during 7–12. Other paw rests on the book. Body barely breathes. Concentrated slightly worried face, occasional small blink; subtle tongue tip from concentration is okay. Keep head and torso steady, limbs visibly connected, no random poses or extra fingers.
+Background genuinely transparent. No text, labels, frame numbers, scenery, shadows, borders or symbols.
