@@ -1,0 +1,65 @@
+PASS: six by two runtime atlas with 256-point cells
+PASS: frame 1 dimensions
+PASS: frame 1 matches atlas chronological slot
+frame 1 maximum border alpha: 1/255
+PASS: frame 1 border alpha stays below 4 percent, with no clipped opaque drawing
+PASS: frame 1 one connected body, paws and weapon silhouette
+PASS: frame 2 dimensions
+PASS: frame 2 matches atlas chronological slot
+frame 2 maximum border alpha: 0/255
+PASS: frame 2 border alpha stays below 4 percent, with no clipped opaque drawing
+PASS: frame 2 one connected body, paws and weapon silhouette
+PASS: frame 3 dimensions
+PASS: frame 3 matches atlas chronological slot
+frame 3 maximum border alpha: 0/255
+PASS: frame 3 border alpha stays below 4 percent, with no clipped opaque drawing
+PASS: frame 3 one connected body, paws and weapon silhouette
+PASS: frame 4 dimensions
+PASS: frame 4 matches atlas chronological slot
+frame 4 maximum border alpha: 0/255
+PASS: frame 4 border alpha stays below 4 percent, with no clipped opaque drawing
+PASS: frame 4 one connected body, paws and weapon silhouette
+PASS: frame 5 dimensions
+PASS: frame 5 matches atlas chronological slot
+frame 5 maximum border alpha: 0/255
+PASS: frame 5 border alpha stays below 4 percent, with no clipped opaque drawing
+PASS: frame 5 one connected body, paws and weapon silhouette
+PASS: frame 6 dimensions
+PASS: frame 6 matches atlas chronological slot
+frame 6 maximum border alpha: 0/255
+PASS: frame 6 border alpha stays below 4 percent, with no clipped opaque drawing
+PASS: frame 6 one connected body, paws and weapon silhouette
+PASS: frame 7 dimensions
+PASS: frame 7 matches atlas chronological slot
+frame 7 maximum border alpha: 1/255
+PASS: frame 7 border alpha stays below 4 percent, with no clipped opaque drawing
+PASS: frame 7 one connected body, paws and weapon silhouette
+PASS: frame 8 dimensions
+PASS: frame 8 matches atlas chronological slot
+frame 8 maximum border alpha: 0/255
+PASS: frame 8 border alpha stays below 4 percent, with no clipped opaque drawing
+PASS: frame 8 one connected body, paws and weapon silhouette
+PASS: frame 9 dimensions
+PASS: frame 9 matches atlas chronological slot
+frame 9 maximum border alpha: 0/255
+PASS: frame 9 border alpha stays below 4 percent, with no clipped opaque drawing
+PASS: frame 9 one connected body, paws and weapon silhouette
+PASS: frame 10 dimensions
+PASS: frame 10 matches atlas chronological slot
+frame 10 maximum border alpha: 0/255
+PASS: frame 10 border alpha stays below 4 percent, with no clipped opaque drawing
+PASS: frame 10 one connected body, paws and weapon silhouette
+PASS: frame 11 dimensions
+PASS: frame 11 matches atlas chronological slot
+frame 11 maximum border alpha: 0/255
+PASS: frame 11 border alpha stays below 4 percent, with no clipped opaque drawing
+PASS: frame 11 one connected body, paws and weapon silhouette
+PASS: frame 12 dimensions
+PASS: frame 12 matches atlas chronological slot
+frame 12 maximum border alpha: 0/255
+PASS: frame 12 border alpha stays below 4 percent, with no clipped opaque drawing
+PASS: frame 12 one connected body, paws and weapon silhouette
+PASS: twelve distinct saved poses
+PASS: GIF contains twelve poses held for two samples each
+PASS: GIF uses the same 1.2-second cadence as Hachiware
+52 asset checks passed.

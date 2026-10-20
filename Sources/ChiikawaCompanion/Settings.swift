@@ -156,7 +156,7 @@ struct SettingsView: View {
                     FriendPortrait(friend: friend).frame(width: 72, height: 82)
                     VStack(alignment: .leading, spacing: 5) {
                         Text(friend.name).font(.system(size: 15, weight: .semibold))
-                        Text(friend == .chiikawa ? "8방향 산책 · 웃음과 울음 · 분홍 소품" : "산책 · 소품 · 일상 동작 · 동굴 집")
+                        Text(friend == .chiikawa ? "8방향 산책 · 표정 · 분홍 소품 · 무기 공격" : "산책 · 소품 · 일상 동작 · 동굴 집")
                             .font(.system(size: 10)).foregroundStyle(mutedInk)
                     }
                     Spacer()
@@ -206,7 +206,7 @@ struct SettingsView: View {
             }
             Text(state.chiikawaEquipped.map { "지금은 \($0.name)와 함께 · \(state.chiikawaItemStatus)" } ?? state.chiikawaItemStatus)
                 .font(.system(size: 10)).foregroundStyle(mutedInk)
-            Text("치이카와 위에 드래그해 건네거나, 소품을 클릭해 부를 수 있어요.\n치이카와의 목소리·집·일상 동작은 자료를 더 준비한 뒤 추가할 예정이에요.")
+            Text("치이카와 위에 드래그해 건네거나, 소품을 클릭해 부를 수 있어요.\n분홍 사스마타를 들었을 때 마우스를 올리면 에잇! 떼면 다시 산책해요.\n치이카와의 목소리·집·일상 동작은 자료를 더 준비한 뒤 추가할 예정이에요.")
                 .font(.system(size: 10)).foregroundStyle(mutedInk).lineSpacing(3)
         }.padding(20).background(.white.opacity(0.9), in: RoundedRectangle(cornerRadius: 20))
     }

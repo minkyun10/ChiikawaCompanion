@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-20",
+  "generations": [
+    {
+      "version": 1,
+      "tool": "built-in image_gen",
+      "original_filename": "exec-e9af375b-58db-4ad6-9a0e-77fb0e507477.png",
+      "archived_path": "Generated/attack-original-v1.png",
+      "sha256": "307b3f9d32e952fc592ae6be02ac367ff0c8a722ba0c6d684ccf165cd45dec95",
+      "prompt": "Prompts/attack-v1.txt",
+      "inputs": [
+        "References/attack-reference.jpg",
+        "References/chiikawa-model-sheet-v22.png"
+      ]
+    },
+    {
+      "version": 2,
+      "tool": "built-in image_gen",
+      "original_filename": "exec-b920bf2b-9347-4028-b492-d2faaccb2644.png",
+      "archived_path": "Generated/attack-original-v2.png",
+      "sha256": "1828b37297eaefa4a9a39c2cb493871830d06e4b512f849cd69b56f6e10962be",
+      "prompt": "Prompts/attack-v2-padding.txt",
+      "inputs": [
+        "Generated/attack-original-v1.png"
+      ]
+    }
+  ]
+}

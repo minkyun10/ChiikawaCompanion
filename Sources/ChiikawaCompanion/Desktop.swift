@@ -227,6 +227,7 @@ final class DesktopController {
         self.state = state
         self.recordedVoice = recordedVoice
         // Decode and register once at launch, never on the first pointer hover.
+        _ = ChiikawaAttackSprites.shared
         _ = ChiikawaSprites.shared
         _ = HachiwareSprites.shared
         _ = HachiwareActions.shared

@@ -220,6 +220,7 @@ enum SelfTest {
         runWeaponAttackChecks(defaults: testDefaults) { check($0, $1) }
         runNearbyPickupChecks(defaults: testDefaults) { check($0, $1) }
         runChiikawaChecks(defaults: testDefaults) { check($0, $1) }
+        runChiikawaAttackChecks { check($0, $1) }
         runHomeTests(desktop: desktop, now: now) { check($0, $1) }
         var performance = CompanionPerformance()
         performance.begin(.camera, now: now, pickingUp: true)
@@ -441,6 +442,7 @@ enum SelfTest {
         renderWeaponAttack(to: directory)
         renderHome(to: directory)
         renderChiikawaReview(to: directory)
+        renderChiikawaAttack(to: directory)
     }
 
     static func renderItems(to directory: URL) {

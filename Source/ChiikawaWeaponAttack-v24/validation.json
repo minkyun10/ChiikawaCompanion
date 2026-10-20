@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-20",
+  "app_version": "0.14.1",
+  "build": 27,
+  "cli_checks": 264,
+  "packaged_checks": 271,
+  "cycle_frames": 12,
+  "cycle_duration": 1.2,
+  "update_hz": 60,
+  "existing_resources_preserved": 31,
+  "codesign": "strict verification passed",
+  "ui": "Updated app relaunched; new attack description and controls observed in settings. Settings screenshot saved. User changed foreground application during later window-close attempt; no further UI actions forced.",
+  "independent_asset_checks": 52
+}

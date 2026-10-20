@@ -1,10 +1,10 @@
 {
   "created_at": "2026-10-16T12:08:58.617148+00:00",
   "operation": "copy; originals preserved",
-  "image_file_count": 1930,
-  "unique_image_content_count": 1305,
-  "supporting_file_count": 240,
-  "image_bytes": 418517492,
+  "image_file_count": 1970,
+  "unique_image_content_count": 1323,
+  "supporting_file_count": 260,
+  "image_bytes": 431502292,
   "symmetric_walk_runtime_applied": true,
   "files": [
     {
@@ -5720,6 +5720,377 @@
       "sha256": "b341ea935fd82b5d369d74e8ad50cc94a8852deaecbe8029a8f246eb825ccea7"
     },
     {
+      "kind": "image",
+      "source": "Source/ChiikawaWeaponAttack-v24/Final/Frames/chiikawa-attack-01.png",
+      "archive_path": "ChiikawaWeaponAttack-v24/Final/Frames/chiikawa-attack-01.png",
+      "bytes": 51960,
+      "sha256": "b014f78c1fcca727eb223fae3784ce008ba934eabc051f051c73ed60a58e549a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaWeaponAttack-v24/Final/Frames/chiikawa-attack-02.png",
+      "archive_path": "ChiikawaWeaponAttack-v24/Final/Frames/chiikawa-attack-02.png",
+      "bytes": 53791,
+      "sha256": "9200946b2d4448ec1ef51ba4539ffae3e44c4b19969d886d0d425441e6208d08"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaWeaponAttack-v24/Final/Frames/chiikawa-attack-03.png",
+      "archive_path": "ChiikawaWeaponAttack-v24/Final/Frames/chiikawa-attack-03.png",
+      "bytes": 50196,
+      "sha256": "6336f958454ee5fd1d76410e8145945f671b0ac9904a8860641829e29d31de2a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaWeaponAttack-v24/Final/Frames/chiikawa-attack-04.png",
+      "archive_path": "ChiikawaWeaponAttack-v24/Final/Frames/chiikawa-attack-04.png",
+      "bytes": 53392,
+      "sha256": "6e53c64d5c8041228d70c180916058eb994676ab43aa057e5f2a38faea8a2a2d"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaWeaponAttack-v24/Final/Frames/chiikawa-attack-05.png",
+      "archive_path": "ChiikawaWeaponAttack-v24/Final/Frames/chiikawa-attack-05.png",
+      "bytes": 53784,
+      "sha256": "f87fa1b560fadda9963775a3bba1aefd4cf0b9214c2a697983f97e91eaf01fbb"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaWeaponAttack-v24/Final/Frames/chiikawa-attack-06.png",
+      "archive_path": "ChiikawaWeaponAttack-v24/Final/Frames/chiikawa-attack-06.png",
+      "bytes": 54300,
+      "sha256": "4d1b895ad35b607e578ec637749340a1a1d7371e7f0a4e0f1b51bb61a3d119aa"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaWeaponAttack-v24/Final/Frames/chiikawa-attack-07.png",
+      "archive_path": "ChiikawaWeaponAttack-v24/Final/Frames/chiikawa-attack-07.png",
+      "bytes": 52398,
+      "sha256": "bb8afe03c9af1689f51750d01f51656789dd609dd3020e68af671d58ac520429"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaWeaponAttack-v24/Final/Frames/chiikawa-attack-08.png",
+      "archive_path": "ChiikawaWeaponAttack-v24/Final/Frames/chiikawa-attack-08.png",
+      "bytes": 53736,
+      "sha256": "50cf553886a0a12178f90aa8b9447c9f4bac842ae027aeffb1067b9478bf3ca3"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaWeaponAttack-v24/Final/Frames/chiikawa-attack-09.png",
+      "archive_path": "ChiikawaWeaponAttack-v24/Final/Frames/chiikawa-attack-09.png",
+      "bytes": 53389,
+      "sha256": "236f2f428792fcd0f42c32c5447c4883498d62a46bf9fb343508f47e68a03a40"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaWeaponAttack-v24/Final/Frames/chiikawa-attack-10.png",
+      "archive_path": "ChiikawaWeaponAttack-v24/Final/Frames/chiikawa-attack-10.png",
+      "bytes": 52792,
+      "sha256": "7ff92dd365e2c0cf223216a8cdfffe43d2df15047fe879b7393873e8f43721e8"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaWeaponAttack-v24/Final/Frames/chiikawa-attack-11.png",
+      "archive_path": "ChiikawaWeaponAttack-v24/Final/Frames/chiikawa-attack-11.png",
+      "bytes": 51213,
+      "sha256": "8f3df220ab69207c8fca9b5ddae49939fb0b5bb258455c52e4e4807701b4ade5"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaWeaponAttack-v24/Final/Frames/chiikawa-attack-12.png",
+      "archive_path": "ChiikawaWeaponAttack-v24/Final/Frames/chiikawa-attack-12.png",
+      "bytes": 51544,
+      "sha256": "2e436a24bf80594f771c1ac58e883111cb2dd7bb8eb76b7e463d8c1cc2c9ebd0"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaWeaponAttack-v24/Final/chiikawa-attack-v24.png",
+      "archive_path": "ChiikawaWeaponAttack-v24/Final/chiikawa-attack-v24.png",
+      "bytes": 621376,
+      "sha256": "926974f55679babb9a21fe46c518a26c9efa5dc525168ec7102b51d37978a538"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaWeaponAttack-v24/Final/registration.json",
+      "archive_path": "ChiikawaWeaponAttack-v24/Final/registration.json",
+      "bytes": 3365,
+      "sha256": "02b6165777aa58078d96222b9e1de3ee2344df3b7f1069640b28220a8f44e60d"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaWeaponAttack-v24/Generated/attack-original-v1.png",
+      "archive_path": "ChiikawaWeaponAttack-v24/Generated/attack-original-v1.png",
+      "bytes": 1349126,
+      "sha256": "307b3f9d32e952fc592ae6be02ac367ff0c8a722ba0c6d684ccf165cd45dec95"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaWeaponAttack-v24/Generated/attack-original-v2.png",
+      "archive_path": "ChiikawaWeaponAttack-v24/Generated/attack-original-v2.png",
+      "bytes": 1228829,
+      "sha256": "1828b37297eaefa4a9a39c2cb493871830d06e4b512f849cd69b56f6e10962be"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaWeaponAttack-v24/Iterations/02-registered/Frames/chiikawa-attack-01.png",
+      "archive_path": "ChiikawaWeaponAttack-v24/Iterations/02-registered/Frames/chiikawa-attack-01.png",
+      "bytes": 51960,
+      "sha256": "b014f78c1fcca727eb223fae3784ce008ba934eabc051f051c73ed60a58e549a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaWeaponAttack-v24/Iterations/02-registered/Frames/chiikawa-attack-02.png",
+      "archive_path": "ChiikawaWeaponAttack-v24/Iterations/02-registered/Frames/chiikawa-attack-02.png",
+      "bytes": 53791,
+      "sha256": "9200946b2d4448ec1ef51ba4539ffae3e44c4b19969d886d0d425441e6208d08"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaWeaponAttack-v24/Iterations/02-registered/Frames/chiikawa-attack-03.png",
+      "archive_path": "ChiikawaWeaponAttack-v24/Iterations/02-registered/Frames/chiikawa-attack-03.png",
+      "bytes": 50196,
+      "sha256": "6336f958454ee5fd1d76410e8145945f671b0ac9904a8860641829e29d31de2a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaWeaponAttack-v24/Iterations/02-registered/Frames/chiikawa-attack-04.png",
+      "archive_path": "ChiikawaWeaponAttack-v24/Iterations/02-registered/Frames/chiikawa-attack-04.png",
+      "bytes": 53392,
+      "sha256": "6e53c64d5c8041228d70c180916058eb994676ab43aa057e5f2a38faea8a2a2d"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaWeaponAttack-v24/Iterations/02-registered/Frames/chiikawa-attack-05.png",
+      "archive_path": "ChiikawaWeaponAttack-v24/Iterations/02-registered/Frames/chiikawa-attack-05.png",
+      "bytes": 53784,
+      "sha256": "f87fa1b560fadda9963775a3bba1aefd4cf0b9214c2a697983f97e91eaf01fbb"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaWeaponAttack-v24/Iterations/02-registered/Frames/chiikawa-attack-06.png",
+      "archive_path": "ChiikawaWeaponAttack-v24/Iterations/02-registered/Frames/chiikawa-attack-06.png",
+      "bytes": 54300,
+      "sha256": "4d1b895ad35b607e578ec637749340a1a1d7371e7f0a4e0f1b51bb61a3d119aa"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaWeaponAttack-v24/Iterations/02-registered/Frames/chiikawa-attack-07.png",
+      "archive_path": "ChiikawaWeaponAttack-v24/Iterations/02-registered/Frames/chiikawa-attack-07.png",
+      "bytes": 52398,
+      "sha256": "bb8afe03c9af1689f51750d01f51656789dd609dd3020e68af671d58ac520429"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaWeaponAttack-v24/Iterations/02-registered/Frames/chiikawa-attack-08.png",
+      "archive_path": "ChiikawaWeaponAttack-v24/Iterations/02-registered/Frames/chiikawa-attack-08.png",
+      "bytes": 53736,
+      "sha256": "50cf553886a0a12178f90aa8b9447c9f4bac842ae027aeffb1067b9478bf3ca3"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaWeaponAttack-v24/Iterations/02-registered/Frames/chiikawa-attack-09.png",
+      "archive_path": "ChiikawaWeaponAttack-v24/Iterations/02-registered/Frames/chiikawa-attack-09.png",
+      "bytes": 53389,
+      "sha256": "236f2f428792fcd0f42c32c5447c4883498d62a46bf9fb343508f47e68a03a40"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaWeaponAttack-v24/Iterations/02-registered/Frames/chiikawa-attack-10.png",
+      "archive_path": "ChiikawaWeaponAttack-v24/Iterations/02-registered/Frames/chiikawa-attack-10.png",
+      "bytes": 52792,
+      "sha256": "7ff92dd365e2c0cf223216a8cdfffe43d2df15047fe879b7393873e8f43721e8"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaWeaponAttack-v24/Iterations/02-registered/Frames/chiikawa-attack-11.png",
+      "archive_path": "ChiikawaWeaponAttack-v24/Iterations/02-registered/Frames/chiikawa-attack-11.png",
+      "bytes": 51213,
+      "sha256": "8f3df220ab69207c8fca9b5ddae49939fb0b5bb258455c52e4e4807701b4ade5"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaWeaponAttack-v24/Iterations/02-registered/Frames/chiikawa-attack-12.png",
+      "archive_path": "ChiikawaWeaponAttack-v24/Iterations/02-registered/Frames/chiikawa-attack-12.png",
+      "bytes": 51544,
+      "sha256": "2e436a24bf80594f771c1ac58e883111cb2dd7bb8eb76b7e463d8c1cc2c9ebd0"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaWeaponAttack-v24/Iterations/02-registered/chiikawa-attack-v24.png",
+      "archive_path": "ChiikawaWeaponAttack-v24/Iterations/02-registered/chiikawa-attack-v24.png",
+      "bytes": 621376,
+      "sha256": "926974f55679babb9a21fe46c518a26c9efa5dc525168ec7102b51d37978a538"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaWeaponAttack-v24/Iterations/02-registered/registration.json",
+      "archive_path": "ChiikawaWeaponAttack-v24/Iterations/02-registered/registration.json",
+      "bytes": 3365,
+      "sha256": "02b6165777aa58078d96222b9e1de3ee2344df3b7f1069640b28220a8f44e60d"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaWeaponAttack-v24/Iterations/03-verifier-first/README.txt",
+      "archive_path": "ChiikawaWeaponAttack-v24/Iterations/03-verifier-first/README.txt",
+      "bytes": 525,
+      "sha256": "7f69967852ea18d6bb2e73a191f55582f7a7887cfb1d4b5b1c6f41b01db45321"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaWeaponAttack-v24/Iterations/03-verifier-first/VerifyAssets.swift",
+      "archive_path": "ChiikawaWeaponAttack-v24/Iterations/03-verifier-first/VerifyAssets.swift",
+      "bytes": 3744,
+      "sha256": "f31f68f2574a1f9269163d7a1e17f8e12dba28f4d2cb0114965dce2982f7cea3"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaWeaponAttack-v24/Iterations/03-verifier-first/verification-log.txt",
+      "archive_path": "ChiikawaWeaponAttack-v24/Iterations/03-verifier-first/verification-log.txt",
+      "bytes": 188,
+      "sha256": "3844183142cb217acf051afd8648773e0faa4c1a81f1cda976dae1392154e89a"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaWeaponAttack-v24/Iterations/registration-log.txt",
+      "archive_path": "ChiikawaWeaponAttack-v24/Iterations/registration-log.txt",
+      "bytes": 103,
+      "sha256": "b0031d948f46b5f58c3a33fc54593358b57fe6ecf25af1474af36b6f57de9a49"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaWeaponAttack-v24/PrepareAttackAtlas.swift",
+      "archive_path": "ChiikawaWeaponAttack-v24/PrepareAttackAtlas.swift",
+      "bytes": 6572,
+      "sha256": "db780a516dfebf589709d7125ff94e3309c0e18504dcdbc1bb839591ea4133b4"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaWeaponAttack-v24/Prompts/attack-v1.txt",
+      "archive_path": "ChiikawaWeaponAttack-v24/Prompts/attack-v1.txt",
+      "bytes": 3044,
+      "sha256": "1eeae39c9ab0173beff32017af4c8e89382c3a09b26e37e1772d356296fe6d6b"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaWeaponAttack-v24/Prompts/attack-v2-padding.txt",
+      "archive_path": "ChiikawaWeaponAttack-v24/Prompts/attack-v2-padding.txt",
+      "bytes": 1519,
+      "sha256": "238c87bd84a2a29520fa13ab1c19751ecd45c09f4120f27b1957bbe8e9b2dd23"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaWeaponAttack-v24/README.txt",
+      "archive_path": "ChiikawaWeaponAttack-v24/README.txt",
+      "bytes": 3913,
+      "sha256": "135041906c912bcbde0de7d7c828b6dae1495795eb7e6de3fa7267622dc3387c"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaWeaponAttack-v24/References/attack-reference.jpg",
+      "archive_path": "ChiikawaWeaponAttack-v24/References/attack-reference.jpg",
+      "bytes": 46546,
+      "sha256": "e69ee3bb7718f1114b219482a1451b731e6b8e356d12bb535dc4e875fbb810f7"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaWeaponAttack-v24/References/chiikawa-model-sheet-v22.png",
+      "archive_path": "ChiikawaWeaponAttack-v24/References/chiikawa-model-sheet-v22.png",
+      "bytes": 1563760,
+      "sha256": "70c69248eee0b85f9a3823e6f28447c0de02353a95b54d064d16fc9902672384"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaWeaponAttack-v24/Review/app-settings-v24.png",
+      "archive_path": "ChiikawaWeaponAttack-v24/Review/app-settings-v24.png",
+      "bytes": 167690,
+      "sha256": "a06e156643f563005c723be18b13ff4deea9a95fe67a40cd206a4821be4ba374"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaWeaponAttack-v24/Review/chiikawa-attack-frames-v24.png",
+      "archive_path": "ChiikawaWeaponAttack-v24/Review/chiikawa-attack-frames-v24.png",
+      "bytes": 522211,
+      "sha256": "3c16e669910b3b9cb24aa1752ca36a1323551da65d21c8e8cf938d38fdf356ba"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaWeaponAttack-v24/Review/chiikawa-hover-attack-v24.gif",
+      "archive_path": "ChiikawaWeaponAttack-v24/Review/chiikawa-hover-attack-v24.gif",
+      "bytes": 317301,
+      "sha256": "6c47831b9500f53d8ea25a376351aa5bb616f243b1ca3ad4fc90debb16e046f2"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaWeaponAttack-v24/VerifyAssets.swift",
+      "archive_path": "ChiikawaWeaponAttack-v24/VerifyAssets.swift",
+      "bytes": 4066,
+      "sha256": "c9b8d3c9ba4b269985ecdc6baa9537f1ee5ed8975e00ce28ffb044f405d8332b"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaWeaponAttack-v24/asset-verification-log.txt",
+      "archive_path": "ChiikawaWeaponAttack-v24/asset-verification-log.txt",
+      "bytes": 3239,
+      "sha256": "8be69e7dfd4c99ed54c04734f0511ac599a53bba2420f1748b2bde60015c3c62"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaWeaponAttack-v24/asset-verification.json",
+      "archive_path": "ChiikawaWeaponAttack-v24/asset-verification.json",
+      "bytes": 309,
+      "sha256": "a84a5852303e9148a7594f563100a50f57a1a7da613a55f954e703cff59702b6"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaWeaponAttack-v24/build-log.txt",
+      "archive_path": "ChiikawaWeaponAttack-v24/build-log.txt",
+      "bytes": 420,
+      "sha256": "c7eec550941c35c7b94200db637ae95504017e56ca242619a7c7f63a72e867aa"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaWeaponAttack-v24/existing-resources-preserved.json",
+      "archive_path": "ChiikawaWeaponAttack-v24/existing-resources-preserved.json",
+      "bytes": 5735,
+      "sha256": "c1797f5745d55c6e1d68b33a37bbfe60e2f8fd1e6c174a839de5c1b498a33963"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaWeaponAttack-v24/generations.json",
+      "archive_path": "ChiikawaWeaponAttack-v24/generations.json",
+      "bytes": 904,
+      "sha256": "9b972a8878e17d7bdfc9307f3feaea26d72847606ba0d23cf3ac862a931225af"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaWeaponAttack-v24/security-scan.json",
+      "archive_path": "ChiikawaWeaponAttack-v24/security-scan.json",
+      "bytes": 241,
+      "sha256": "2d6e6f5bc340be07cbe2484d543b5b6180c73d133fdc2c58b3c218db7cab4aee"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaWeaponAttack-v24/self-test-app.txt",
+      "archive_path": "ChiikawaWeaponAttack-v24/self-test-app.txt",
+      "bytes": 20179,
+      "sha256": "2f57f57062090e00d549a4897e04525541c6038c2ea5be1b75bd6ec3e17d6814"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaWeaponAttack-v24/self-test-cli.txt",
+      "archive_path": "ChiikawaWeaponAttack-v24/self-test-cli.txt",
+      "bytes": 19588,
+      "sha256": "ad4025294c6742dd25750be53cf0c19ddefc4eb0432fc875e522e8bf612564b8"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaWeaponAttack-v24/validation.json",
+      "archive_path": "ChiikawaWeaponAttack-v24/validation.json",
+      "bytes": 519,
+      "sha256": "4822a2757d01dbc7e951ea9deaf2af91b2624674a3cb1bdbebf9f237fba0ef49"
+    },
+    {
       "kind": "supporting",
       "source": "Source/ClickQuotes-v12/README.txt",
       "archive_path": "ClickQuotes-v12/README.txt",
@@ -9599,6 +9970,13 @@
     },
     {
       "kind": "image",
+      "source": "Source/GeneratedOriginals/exec-b920bf2b-9347-4028-b492-d2faaccb2644.png",
+      "archive_path": "GeneratedOriginals/exec-b920bf2b-9347-4028-b492-d2faaccb2644.png",
+      "bytes": 1228829,
+      "sha256": "1828b37297eaefa4a9a39c2cb493871830d06e4b512f849cd69b56f6e10962be"
+    },
+    {
+      "kind": "image",
       "source": "Source/GeneratedOriginals/exec-c8dfc9b7-2bd2-40ab-8981-3e41285f8fb5.png",
       "archive_path": "GeneratedOriginals/exec-c8dfc9b7-2bd2-40ab-8981-3e41285f8fb5.png",
       "bytes": 1296985,
@@ -9652,6 +10030,13 @@
       "archive_path": "GeneratedOriginals/exec-e25b655d-f888-492f-a1c0-bf18a619efce.png",
       "bytes": 1758422,
       "sha256": "1a24baf6cb5373c02cdb54e508fa608f7d0f4ac051e4a6bfbab164ca7dc9e94d"
+    },
+    {
+      "kind": "image",
+      "source": "Source/GeneratedOriginals/exec-e9af375b-58db-4ad6-9a0e-77fb0e507477.png",
+      "archive_path": "GeneratedOriginals/exec-e9af375b-58db-4ad6-9a0e-77fb0e507477.png",
+      "bytes": 1349126,
+      "sha256": "307b3f9d32e952fc592ae6be02ac367ff0c8a722ba0c6d684ccf165cd45dec95"
     },
     {
       "kind": "image",
@@ -13281,6 +13666,13 @@
     },
     {
       "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/chiikawa-attack-v24.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/chiikawa-attack-v24.png",
+      "bytes": 621376,
+      "sha256": "926974f55679babb9a21fe46c518a26c9efa5dc525168ec7102b51d37978a538"
+    },
+    {
+      "kind": "image",
       "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/chiikawa-crying-v23.png",
       "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/chiikawa-crying-v23.png",
       "bytes": 153147,
@@ -13589,6 +13981,13 @@
     },
     {
       "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/chiikawa-attack-v24.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/chiikawa-attack-v24.png",
+      "bytes": 621376,
+      "sha256": "926974f55679babb9a21fe46c518a26c9efa5dc525168ec7102b51d37978a538"
+    },
+    {
+      "kind": "image",
       "source": "Sources/ChiikawaCompanion/Resources/chiikawa-crying-v23.png",
       "archive_path": "Project/Sources/ChiikawaCompanion/Resources/chiikawa-crying-v23.png",
       "bytes": 153147,
@@ -13848,6 +14247,13 @@
     },
     {
       "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/chiikawa-attack-v24.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/chiikawa-attack-v24.png",
+      "bytes": 621376,
+      "sha256": "926974f55679babb9a21fe46c518a26c9efa5dc525168ec7102b51d37978a538"
+    },
+    {
+      "kind": "image",
       "source": "build/ChiikawaCompanion.app/Contents/Resources/chiikawa-crying-v23.png",
       "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/chiikawa-crying-v23.png",
       "bytes": 153147,
@@ -14027,6 +14433,20 @@
       "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/hachiware-walk-bodies-v1.png",
       "bytes": 1290237,
       "sha256": "a8d2d88fda86ce32314d2b664cd1efa856975483ec02ada07a83fbba0de7db75"
+    },
+    {
+      "kind": "image",
+      "source": "build/artwork/chiikawa-attack-frames-v24.png",
+      "archive_path": "Project/build/artwork/chiikawa-attack-frames-v24.png",
+      "bytes": 522211,
+      "sha256": "3c16e669910b3b9cb24aa1752ca36a1323551da65d21c8e8cf938d38fdf356ba"
+    },
+    {
+      "kind": "image",
+      "source": "build/artwork/chiikawa-hover-attack-v24.gif",
+      "archive_path": "Project/build/artwork/chiikawa-hover-attack-v24.gif",
+      "bytes": 317301,
+      "sha256": "6c47831b9500f53d8ea25a376351aa5bb616f243b1ca3ad4fc90debb16e046f2"
     },
     {
       "kind": "image",
@@ -14249,8 +14669,8 @@
       "kind": "supporting",
       "source": "Source/README.txt",
       "archive_path": "README.txt",
-      "bytes": 5552,
-      "sha256": "8adbca7530f2b59db6ef46b24542a85956d14f482eac6ee0ddf2e5641d01e221"
+      "bytes": 5934,
+      "sha256": "1e28b6979571a0804fc9d9023467839b842ecfb86790380ec421e936d82422b8"
     },
     {
       "kind": "image",
@@ -15198,8 +15618,8 @@
       "sha256": "8a42caa40e469a5ee00fa2b860d14756cc1fd73bc8fcf73332c50b87a92c9c3b"
     }
   ],
-  "updated_at": "2026-10-20T10:46:59.056284+00:00",
-  "latest_applied": "ChiikawaRuntime-v23",
+  "updated_at": "2026-10-20T11:11:12.498545+00:00",
+  "latest_applied": "ChiikawaWeaponAttack-v24",
   "applied_directions": [
     "down-left",
     "down-right"

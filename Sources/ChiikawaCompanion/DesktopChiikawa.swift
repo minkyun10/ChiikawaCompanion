@@ -85,6 +85,7 @@ extension DesktopController {
         let visible = state.isVisible(.chiikawa)
         guard visible else {
             actor.panel.orderOut(nil); actor.dismissBubble(); actor.motion.stop(); actor.wasHovered = false
+            actor.view.action = nil; actor.view.actionTime = nil
             for object in chiikawaDesktopItems.values { object.update(position: nil, visible: false, mouse: mouse) }
             return
         }
@@ -94,6 +95,7 @@ extension DesktopController {
         actor.panel.ignoresMouseEvents = !hovered && !actor.view.isDragging
         let activity = DesktopActivity.resolve(roaming: state.isWalking(.chiikawa), hovered: hovered,
             dragging: actor.view.isDragging, dialogueUntil: actor.bubbleUntil, now: now)
+        if hovered && !actor.wasHovered { actor.hoverStarted = now }
         actor.wasHovered = hovered
         if activity == .walking, let screen = actor.panel.screen ?? NSScreen.main {
             let frame = actor.panel.frame
@@ -127,6 +129,10 @@ extension DesktopController {
         actor.view.happy = state.expressive && activity.reacts
         actor.view.chiikawaReaction = state.expressive
             ? (activity == .hovering ? .happy : activity == .speaking ? actor.clickReaction : nil) : nil
+        let attacking = state.expressive && activity == .hovering && chiikawaWorld.equipped == .pinkSasumata
+        actor.view.action = attacking ? .attack : nil
+        actor.view.actionTime = attacking ? max(0, now.timeIntervalSince(actor.hoverStarted)) : nil
+        if attacking { actor.view.chiikawaReaction = nil }
         actor.view.chiikawaItem = chiikawaWorld.equipped; actor.view.needsDisplay = true
         if now < actor.bubbleUntil { actor.positionBubble() } else if actor.bubble != nil { actor.dismissBubble() }
         for (item, object) in chiikawaDesktopItems { object.update(position: chiikawaWorld.ground[item], visible: visible, mouse: mouse) }

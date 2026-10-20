@@ -1,0 +1,5 @@
+PASS: six by two runtime atlas with 256-point cells
+PASS: frame 1 dimensions
+comparison max delta 0
+PASS: frame 1 matches atlas chronological slot
+FAIL: frame 1 all four edges transparent

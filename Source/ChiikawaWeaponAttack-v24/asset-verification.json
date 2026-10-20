@@ -1,0 +1,23 @@
+{
+  "alpha_preserved" : true,
+  "date" : "2026-10-20",
+  "frame_count" : 12,
+  "gif_duration" : 1.2000000000000004,
+  "gif_samples" : 24,
+  "major_connected_components" : [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "passed" : 52,
+  "row_major_verified" : true
+}
