@@ -225,20 +225,25 @@ struct SettingsView: View {
             Label("치이카와의 하루",systemImage: "house").font(.system(size: 16,weight: .semibold))
             HStack {
                 Toggle("분홍 공부 책상",isOn: $state.chiikawaStudyEnabled)
-                Toggle("가까이 가면 공부하기",isOn: $state.chiikawaAutomaticActivities)
+                Toggle("가까이 가면 행동하기",isOn: $state.chiikawaAutomaticActivities)
                 Spacer()
                 Button("책상으로 가기") { state.onChiikawaStudy?() }
+            }.toggleStyle(.switch).controlSize(.small).font(.system(size: 11))
+            HStack {
+                Toggle("치이카와 밥그릇", isOn: $state.chiikawaFoodEnabled)
+                Spacer()
+                Button("밥그릇으로 가기") { state.onChiikawaEat?() }
             }.toggleStyle(.switch).controlSize(.small).font(.system(size: 11))
             HStack(spacing: 10) {
                 ForEach(ChiikawaLifeAction.allCases) { action in
                     Button(action.title) {
-                        if action == .study { state.onChiikawaStudy?() } else { state.onChiikawaLife?(action) }
+                        if action == .study { state.onChiikawaStudy?() } else if action == .eat { state.onChiikawaEat?() } else { state.onChiikawaLife?(action) }
                     }.frame(maxWidth: .infinity).accessibilityLabel("치이카와 \(action.title)")
                 }
                 Button("동작 멈추기") { state.onStopChiikawaLife?() }.disabled(!state.chiikawaLifeRunning)
             }.font(.system(size: 11))
             Text(state.chiikawaLifeStatus).font(.system(size: 10)).foregroundStyle(mutedInk)
-            Text("공용 집으로 귀가할 때 열쇠를 챙기고, 잠옷을 입고 이불을 덮어 쉬어요.\n분홍 책상은 드래그로 옮길 수 있어요. 책상·소품 위치는 캐릭터 이동과 독립적이에요.")
+            Text("공용 집으로 귀가할 때 열쇠를 챙기고, 잠옷을 입고 이불을 덮어 쉬어요.\n책상과 밥그릇은 따로 옮길 수 있어요. 가까이 가면 공부하거나 밥을 먹어요.")
                 .font(.system(size: 10)).lineSpacing(3).foregroundStyle(mutedInk)
         }.padding(20).background(.white.opacity(0.9),in: RoundedRectangle(cornerRadius: 20))
     }

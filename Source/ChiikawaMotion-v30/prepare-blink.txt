@@ -1,0 +1,1 @@
+Registered 6 blink frames; native alpha preserved.

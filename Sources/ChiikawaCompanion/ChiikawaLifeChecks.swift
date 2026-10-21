@@ -49,7 +49,7 @@ extension SelfTest {
             desktop.desktopItems.values.forEach { $0.panel.orderOut(nil) }
             desktop.chiikawaDesktopItems.values.forEach { $0.panel.orderOut(nil) }
             desktop.desktopActivitySpots.values.forEach { $0.panel.orderOut(nil) }
-            desktop.home.panel.orderOut(nil); desktop.chiikawaDesk.panel.orderOut(nil)
+            desktop.home.panel.orderOut(nil); desktop.chiikawaDesk.panel.orderOut(nil); desktop.chiikawaFood.panel.orderOut(nil)
         }
         func tick(_ offset: Double) {
             let date = now.addingTimeInterval(offset); desktop.lastTick = date.addingTimeInterval(-1.0/60)
@@ -116,25 +116,25 @@ extension SelfTest {
         check(desktop.chiikawaHomeRoutine.phase == .sleeping && !chii.panel.isVisible && hachi.panel.isVisible,
               "Chiikawa sleeps in pajamas after entry while Hachiware stays active")
         let homeFrame = desktop.home.panel.frame
-        tick(21.4)
+        tick(21.4); tick(22.4)
         check(desktop.chiikawaHomeRoutine.phase == .outside && !state.chiikawaResting && chii.panel.isVisible
               && desktop.home.panel.frame == homeFrame,
               "twenty seconds of sleep wakes Chiikawa without moving its house")
-        desktop.goChiikawaHome(now: now.addingTimeInterval(21.5))
+        desktop.goChiikawaHome(now: now.addingTimeInterval(22.7))
         let returnBody = NSPoint(x: chii.panel.frame.midX,y: chii.panel.frame.midY)
-        check(desktop.receiveChiikawaItem(.houseKey,at: returnBody,now: now.addingTimeInterval(21.6))
+        check(desktop.receiveChiikawaItem(.houseKey,at: returnBody,now: now.addingTimeInterval(22.8))
               && desktop.chiikawaHomeRoutine.phase == .returning && !desktop.chiikawaSeekingHomeKey,
               "handing over the key during a return journey continues toward home without cancelling it")
-        desktop.wakeChiikawa(now: now.addingTimeInterval(21.7))
+        desktop.wakeChiikawa(now: now.addingTimeInterval(22.9))
         // Test explicit wake and hiding with the same production callbacks.
-        desktop.didMoveChiikawa(chii,now: now.addingTimeInterval(22))
-        desktop.chiikawaHomeRoutine.request(now: now.addingTimeInterval(22))
+        desktop.didMoveChiikawa(chii,now: now.addingTimeInterval(23.2))
+        desktop.chiikawaHomeRoutine.request(now: now.addingTimeInterval(23.2))
         chii.panel.setFrameOrigin(ItemWorld.destination(for: desktop.home.entrance))
-        _ = desktop.enterChiikawaHomeIfReached(chii,now: now.addingTimeInterval(22))
-        state.visibleFriends.remove(.chiikawa); tick(22.1)
+        _ = desktop.enterChiikawaHomeIfReached(chii,now: now.addingTimeInterval(23.2))
+        state.visibleFriends.remove(.chiikawa); tick(23.3)
         check(desktop.chiikawaHomeRoutine.phase == .outside && desktop.home.panel.isVisible && !chii.panel.isVisible,
               "hiding one occupant clears only its rest routine and preserves the shared home")
-        state.visibleFriends.insert(.chiikawa); tick(22.2)
+        state.visibleFriends.insert(.chiikawa); tick(23.4)
         let catalog = RecordingCatalog.chiikawa
         check(catalog.isValid && catalog.speaker == "이주은" && catalog.clips.count == 4,
               "Chiikawa has four independently packaged original Korean voice clips")
@@ -142,16 +142,16 @@ extension SelfTest {
               "short Chiikawa clips resolve to their own safe local resources")
         let line = RecordingCatalog.shared.clips[0]
         voice.play(line,volume: 0.3)
-        desktop.sayChiikawa(now: now.addingTimeInterval(23))
+        desktop.sayChiikawa(now: now.addingTimeInterval(24.2))
         let previous = chiiVoice.currentID
         check(previous != nil && voice.currentID == line.id && chii.bubble != nil,
               "Chiikawa's voice and bubble never replace Hachiware's current player")
-        desktop.sayChiikawa(now: now.addingTimeInterval(23.1))
+        desktop.sayChiikawa(now: now.addingTimeInterval(24.3))
         check(chiiVoice.currentID != previous, "Chiikawa voice selection avoids immediate repeats")
         state.chiikawaVoice = false
         check(chiiVoice.currentID == nil && voice.currentID == line.id, "muting Chiikawa stops only its own recording")
-        state.chiikawaVoice = true; desktop.sayChiikawa(preview: true,now: now.addingTimeInterval(23.2))
-        state.visibleFriends.remove(.chiikawa); tick(23.3)
+        state.chiikawaVoice = true; desktop.sayChiikawa(preview: true,now: now.addingTimeInterval(24.4))
+        state.visibleFriends.remove(.chiikawa); tick(24.5)
         check(chiiVoice.currentID == nil && !desktop.chiikawaDesk.panel.isVisible && desktop.home.panel.isVisible,
               "hiding Chiikawa stops its audio and desk while preserving the shared house")
     }
@@ -159,9 +159,9 @@ extension SelfTest {
     static func renderChiikawaLife(to directory: URL) {
         png(width: 1440,height: 880,to: directory.appendingPathComponent("chiikawa-life-v26.png")) {
             NSColor(hex: 0xF7F4EB).setFill(); NSRect(x: 0,y: 0,width: 1440,height: 880).fill()
-            let labels = ["STUDY","PAJAMAS","HUG"]
+            let labels = ["STUDY","EAT","PAJAMAS","HUG"]
             for (index,action) in ChiikawaLifeAction.allCases.enumerated() {
-                let rect = NSRect(x: index*460+30,y: 450,width: 420,height: 390)
+                let rect = NSRect(x: index*350+20,y: 450,width: 330,height: 390)
                 _ = ChiikawaLifeSprites.shared.draw(action,in: rect,elapsed: 0.5)
                 (labels[index] as NSString).draw(at: NSPoint(x: rect.midX-35,y: 425),withAttributes: [.font: NSFont.systemFont(ofSize: 20),.foregroundColor: FriendArtwork.ink])
             }

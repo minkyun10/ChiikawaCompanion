@@ -3,8 +3,10 @@ import AppKit
 extension DesktopController {
     var homeOccupants: [HomeOccupant] {
         actors.compactMap { actor in
-            guard state.isVisible(actor.friend), let routine = homeRoutines[actor.friend], routine.isInside else { return nil }
-            return HomeOccupant(friend: actor.friend, routine: routine)
+            guard state.isVisible(actor.friend), let routine = homeRoutines[actor.friend] else { return nil }
+            let waking = actor.friend == .chiikawa ? chiikawaWakingAt : nil
+            guard routine.isInside || waking != nil else { return nil }
+            return HomeOccupant(friend: actor.friend, routine: routine, wakingStarted: waking)
         }
     }
 
@@ -29,7 +31,7 @@ extension DesktopController {
     func wakeFriend(_ friend: Friend, now: Date = Date()) {
         switch friend {
         case .hachiware: wakeFromHome(now: now)
-        case .chiikawa: wakeChiikawa(now: now)
+        case .chiikawa: wakeChiikawa(now: now, animated: true)
         default: break
         }
     }

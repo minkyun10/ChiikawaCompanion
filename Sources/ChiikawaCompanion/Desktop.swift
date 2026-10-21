@@ -29,7 +29,13 @@ final class DesktopFriendView: NSView {
     var actionTime: Double?
     var equipped: CompanionItem?
     var chiikawaItem: ChiikawaItem?
-    var chiikawaReaction: ChiikawaReaction?
+    var previousChiikawaReaction: ChiikawaReaction?
+    var chiikawaReactionChanged = -Double.infinity
+    var chiikawaReaction: ChiikawaReaction? {
+        didSet {
+            if oldValue != chiikawaReaction { previousChiikawaReaction = oldValue; chiikawaReactionChanged = time }
+        }
+    }
     var chiikawaLife: ChiikawaLifeAction?
     var attackUsesOverlay = false
     var isDragging = false
@@ -62,7 +68,8 @@ final class DesktopFriendView: NSView {
         FriendArtwork.draw(friend, in: bounds, time: time, happy: happy, walking: walking,
                            looking: looking, facing: facing, walkPhase: walkPhase, pose: pose,
                            action: action, equipped: equipped, actionTime: actionTime,
-                           chiikawaReaction: chiikawaReaction, chiikawaItem: chiikawaItem, chiikawaLife: chiikawaLife)
+                           chiikawaReaction: chiikawaReaction, chiikawaItem: chiikawaItem, chiikawaLife: chiikawaLife,
+                           previousChiikawaReaction: previousChiikawaReaction, reactionProgress: min(1,max(0,(time-chiikawaReactionChanged)/0.1)))
     }
     override func rightMouseDown(with event: NSEvent) {
         let menu = NSMenu()
@@ -238,6 +245,8 @@ final class DesktopController {
         set { homeRoutines[.chiikawa] = newValue }
     }
     var chiikawaSeekingHomeKey = false
+    var chiikawaWakingAt: Date?
+    let chiikawaFood = DesktopActivitySpot(spot: .rice, owner: .chiikawa)
     let chiikawaDesk = DesktopActivitySpot(spot: .desk, owner: .chiikawa)
     var chiikawaStudyWorld = ActivitySpotWorld()
     var chiikawaLifeRoutine = ChiikawaLifeRoutine()
@@ -271,6 +280,8 @@ final class DesktopController {
         // Decode and register once at launch, never on the first pointer hover.
         _ = ChiikawaAttackSprites.shared
         _ = ChiikawaSprites.shared
+        _ = ChiikawaMotionSprites.shared
+        _ = ChiikawaBlinkArtwork.shared
         _ = HachiwareSprites.shared
         _ = HachiwareActions.shared
         _ = WeaponAttackSprites.shared
@@ -391,7 +402,7 @@ final class DesktopController {
         actors.forEach { $0.dismissBubble(); $0.panel.close(); $0.attackOverlay.panel.close() }
         desktopItems.values.forEach { $0.panel.close() }
         chiikawaDesktopItems.values.forEach { $0.panel.close() }
-        chiikawaDesk.panel.close(); chiikawaVoice.stop()
+        chiikawaDesk.panel.close(); chiikawaFood.panel.close(); chiikawaVoice.stop()
         home.panel.close()
         desktopActivitySpots.values.forEach { $0.panel.close() }
         if let screenObserver { NotificationCenter.default.removeObserver(screenObserver) }
@@ -399,7 +410,7 @@ final class DesktopController {
     func resetPositions() {
         stopDailyAction()
         stopChiikawaLife()
-        if chiikawaHomeRoutine.phase != .outside { wakeChiikawa() }
+        if chiikawaHomeRoutine.phase != .outside || chiikawaWakingAt != nil { wakeChiikawa() }
         if homeRoutine.phase != .outside { wakeFromHome() }
         guard let screen = NSScreen.main ?? NSScreen.screens.first else { return }
         let visible = screen.visibleFrame

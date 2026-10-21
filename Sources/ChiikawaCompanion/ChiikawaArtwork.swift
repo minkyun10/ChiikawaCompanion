@@ -52,7 +52,8 @@ final class ChiikawaSprites {
         }
     }
     func draw(in rect: NSRect, time: Double, walking: Bool, facing: CGFloat,
-              phase: Double, pose: HachiwarePose, reaction: ChiikawaReaction?, equipped: ChiikawaItem?) {
+              phase: Double, pose: HachiwarePose, reaction: ChiikawaReaction?, equipped: ChiikawaItem?,
+              previousReaction: ChiikawaReaction? = nil, reactionProgress: Double = 1) {
         let shownPose = walking && reaction == nil ? pose : .front
         let direction = ChiikawaDirection.resolve(pose: shownPose, facing: facing)
         let index = walking && reaction == nil ? HachiwareSprites.frameIndex(phase: phase, count: Self.frameCount) : 0
@@ -63,14 +64,23 @@ final class ChiikawaSprites {
         let equipmentRect = destination.offsetBy(dx: 0, dy: walking ? -5.5 * sin(Double(index) / 24 * 4 * .pi) * length / 256 : 0)
         if let equipped { ChiikawaItemArtwork.drawEquipped(equipped, in: equipmentRect, pose: shownPose, facing: facing, behind: true) }
         NSGraphicsContext.current?.imageInterpolation = .high
-        if let reaction, let image = reactions[reaction] {
-            // Alpha cutouts were retained as complete poses; register by the same
-            // 214-point height and 26-point foot baseline used in the walk renderer.
-            let height = length * 214 / 256
-            let width = image.size.width / image.size.height * height
-            image.draw(in: NSRect(x: rect.midX - width / 2, y: destination.minY + length * 26 / 256,
-                                  width: width, height: height))
-        } else { frame.draw(in: destination) }
+        func drawBody(_ reaction: ChiikawaReaction?, fraction: CGFloat, operation: NSCompositingOperation = .sourceOver) {
+            if let reaction, let image = reactions[reaction] {
+                let height = length*214/256, width = image.size.width/image.size.height*length*214/256
+                image.draw(in: NSRect(x: rect.midX-width/2,y: destination.minY+length*26/256,width: width,height: height),
+                           from: .zero, operation: operation, fraction: fraction)
+            } else { frame.draw(in: destination,from: .zero,operation: operation,fraction: fraction) }
+        }
+        let progress = CGFloat(min(1,max(0,reactionProgress)))
+        if progress < 1, let context = NSGraphicsContext.current?.cgContext {
+            context.beginTransparencyLayer(auxiliaryInfo: nil)
+            drawBody(previousReaction, fraction: 1-progress)
+            drawBody(reaction, fraction: progress, operation: .plusLighter)
+            context.endTransparencyLayer()
+        } else { drawBody(reaction, fraction: 1) }
+        if reaction == nil && progress == 1 && direction == .down {
+            ChiikawaBlinkArtwork.shared.draw(in: equipmentRect, time: time)
+        }
         if let equipped { ChiikawaItemArtwork.drawEquipped(equipped, in: equipmentRect, pose: shownPose, facing: facing, behind: false) }
     }
 }

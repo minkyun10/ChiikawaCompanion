@@ -10,7 +10,7 @@ extension DesktopController {
             itemTarget = nil
         } else {
             stopChiikawaLife(); stopChiikawaVoice()
-            if chiikawaHomeRoutine.phase != .outside { wakeChiikawa() }
+            if chiikawaHomeRoutine.phase != .outside || chiikawaWakingAt != nil { wakeChiikawa() }
             chiikawaItemTarget = nil
         }
         state.showFriends = true; state.visibleFriends.insert(friend)
@@ -45,7 +45,7 @@ extension DesktopController {
     func seekChiikawaItem(_ item: ChiikawaItem) {
         guard chiikawaWorld.ground[item] != nil else { return }
         stopChiikawaLife(); stopChiikawaVoice()
-        if chiikawaHomeRoutine.phase != .outside { wakeChiikawa() }
+        if chiikawaHomeRoutine.phase != .outside || chiikawaWakingAt != nil { wakeChiikawa() }
         state.showFriends = true; state.roaming = true
         state.visibleFriends.insert(.chiikawa); state.walkingFriends.insert(.chiikawa)
         chiikawaActor?.dismissBubble(); chiikawaActor?.motion.retarget()
@@ -107,17 +107,18 @@ extension DesktopController {
         let visible = state.isVisible(.chiikawa)
         guard visible else {
             stopChiikawaLife(); stopChiikawaVoice()
-            if chiikawaHomeRoutine.phase != .outside { wakeChiikawa(now: now) }
+            if chiikawaHomeRoutine.phase != .outside || chiikawaWakingAt != nil { wakeChiikawa(now: now) }
             actor.panel.orderOut(nil); actor.dismissBubble(); actor.motion.stop(); actor.wasHovered = false
             actor.view.action = nil; actor.view.actionTime = nil; actor.view.chiikawaLife = nil
             updateChiikawaLifeObjects(visible: false, mouse: mouse, actor: actor, now: now, time: time)
             return
         }
         chiikawaHomeRoutine.advance(now: now)
-        if chiikawaHomeRoutine.shouldWake(now: now) { wakeChiikawa(now: now) }
+        if chiikawaHomeRoutine.shouldWake(now: now) { wakeChiikawa(now: now, animated: true) }
         if chiikawaLifeRoutine.selected != nil && chiikawaLifeRoutine.action(now: now) == nil { stopChiikawaLife() }
-        if !chiikawaHomeRoutine.isInside { _ = enterChiikawaHomeIfReached(actor, now: now) }
-        if chiikawaHomeRoutine.isInside {
+        if let waking = chiikawaWakingAt, now.timeIntervalSince(waking) >= ChiikawaMotionSprites.wakeDuration { wakeChiikawa(now: now) }
+        if !chiikawaHomeRoutine.isInside && chiikawaWakingAt == nil { _ = enterChiikawaHomeIfReached(actor, now: now) }
+        if chiikawaHomeRoutine.isInside || chiikawaWakingAt != nil {
             actor.panel.orderOut(nil); actor.motion.stop()
             publishChiikawaHome()
             updateChiikawaLifeObjects(visible: visible, mouse: mouse, actor: actor, now: now, time: time)

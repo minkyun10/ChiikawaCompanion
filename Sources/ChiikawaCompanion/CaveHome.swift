@@ -10,6 +10,8 @@ enum HomeStyle: String, CaseIterable, Identifiable {
 struct HomeOccupant {
     let friend: Friend
     let routine: HomeRoutine
+    var wakingStarted: Date? = nil
+    var isPresent: Bool { routine.isInside || wakingStarted != nil }
 }
 
 enum HomePhase { case outside, returning, entering, sleeping }
@@ -131,7 +133,7 @@ final class HomeArtwork {
         NSGraphicsContext.current?.imageInterpolation = .high
         // Preserve each original design's proportions inside the one fixed house window.
         background.draw(in: Self.fitted(background.size, in: rect.insetBy(dx: 4, dy: 4)))
-        let inside = occupants.filter { $0.routine.isInside }
+        let inside = occupants.filter { $0.isPresent }
         for (index, occupant) in inside.enumerated() {
             drawOccupant(occupant, index: index, count: inside.count, in: rect, now: now, time: time)
         }
@@ -140,6 +142,26 @@ final class HomeArtwork {
     private func drawOccupant(_ occupant: HomeOccupant, index: Int, count: Int, in rect: NSRect, now: Date, time: Double) {
         let phase = occupant.routine.phase
         let elapsed = max(0, now.timeIntervalSince(occupant.routine.phaseStarted))
+        let columns = max(1, Int(ceil(sqrt(Double(count)))))
+        let rows = max(1, Int(ceil(Double(count) / Double(columns))))
+        let area = NSRect(x: rect.minX + rect.width * 0.225, y: rect.minY + rect.height * 0.105,
+                          width: rect.width * (count == 1 ? 0.465 : 0.55), height: rect.height * 0.40)
+        let bed = NSRect(x: area.minX + CGFloat(index % columns) * area.width / CGFloat(columns),
+                         y: area.minY + CGFloat(index / columns) * area.height / CGFloat(rows),
+                         width: area.width / CGFloat(columns), height: area.height / CGFloat(rows))
+        if occupant.friend == .chiikawa, ChiikawaMotionSprites.shared.frames[.rest]?.count == 16 {
+            let index: Int
+            if let started = occupant.wakingStarted {
+                index = 8+min(7, Int(max(0, now.timeIntervalSince(started))/ChiikawaMotionSprites.wakeDuration*8))
+            } else if phase == .entering {
+                index = min(7, Int(elapsed/HomeRoutine.entryDuration*8))
+            } else { index = 7 }
+            // The atlas includes the futon, yawning, lying down, blanket and stretch.
+            let destination = NSRect(x: bed.minX, y: bed.minY, width: bed.width,
+                                     height: bed.width * Self.breathingScale(time: time))
+            _ = ChiikawaMotionSprites.shared.draw(.rest, index: index, in: destination)
+            return
+        }
         let entry = min(1, max(0, elapsed / HomeRoutine.entryDuration))
         if phase == .entering {
             let length = rect.width * CGFloat(0.32 - entry * 0.07)
@@ -159,13 +181,6 @@ final class HomeArtwork {
         guard phase == .sleeping || phase == .entering else { return }
         let opacity = phase == .sleeping ? 1 : max(0, (entry - 0.45) / 0.55)
         guard let sleeper = occupant.friend == .chiikawa ? ChiikawaLifeSprites.shared.sleeper : sleeper else { return }
-        let columns = max(1, Int(ceil(sqrt(Double(count)))))
-        let rows = max(1, Int(ceil(Double(count) / Double(columns))))
-        let area = NSRect(x: rect.minX + rect.width * 0.225, y: rect.minY + rect.height * 0.105,
-                          width: rect.width * (count == 1 ? 0.465 : 0.55), height: rect.height * 0.40)
-        let bed = NSRect(x: area.minX + CGFloat(index % columns) * area.width / CGFloat(columns),
-                         y: area.minY + CGFloat(index / columns) * area.height / CGFloat(rows),
-                         width: area.width / CGFloat(columns), height: area.height / CGFloat(rows))
         var sleeping = Self.fitted(sleeper.size, in: bed)
         sleeping.size.height *= Self.breathingScale(time: time)
         sleeper.draw(in: sleeping, from: .zero, operation: .sourceOver, fraction: opacity)
@@ -192,7 +207,7 @@ final class HomeView: NSView {
         updateDescription()
     }
     func updateDescription() {
-        let names = occupants.filter { $0.routine.isInside }.map { $0.friend.name }.joined(separator: ", ")
+        let names = occupants.filter { $0.isPresent }.map { $0.friend.name }.joined(separator: ", ")
         let action = names.isEmpty ? "클릭하면 보이는 친구들이 함께 쉬러 가요" : "\(names) 자는 중 · 클릭하면 깨워요"
         setAccessibilityLabel("공용 집 · \(style.title) — \(action)")
         toolTip = "공용 집 · \(style.title) · \(action)"
@@ -236,8 +251,9 @@ final class DesktopHome {
         panel.ignoresMouseEvents = !(panel.occlusionState.contains(.visible) && HomeGeometry.hit(mouse, in: panel.frame))
         let changed = view.style != style || view.occupants.map(\.friend) != occupants.map(\.friend)
             || view.occupants.map(\.routine.phase) != occupants.map(\.routine.phase)
+            || view.occupants.map(\.wakingStarted) != occupants.map(\.wakingStarted)
         view.style = style; view.occupants = occupants; view.now = now; view.time = time
         if changed { view.updateDescription() }
-        if changed || occupants.contains(where: { $0.routine.isInside }) { view.needsDisplay = true }
+        if changed || occupants.contains(where: { $0.isPresent }) { view.needsDisplay = true }
     }
 }

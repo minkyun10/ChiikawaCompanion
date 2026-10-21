@@ -64,6 +64,7 @@ final class AppState: ObservableObject {
     @Published var chiikawaEquipped: ChiikawaItem?
     @Published var chiikawaItemStatus = "분홍 소품을 찾아요"
     @Published var chiikawaAutomaticRest: Bool { didSet { defaults.set(chiikawaAutomaticRest, forKey: "chiikawaAutomaticRest") } }
+    @Published var chiikawaFoodEnabled: Bool { didSet { defaults.set(chiikawaFoodEnabled, forKey: "chiikawaFoodEnabled") } }
     @Published var chiikawaStudyEnabled: Bool { didSet { defaults.set(chiikawaStudyEnabled, forKey: "chiikawaStudyEnabled") } }
     @Published var chiikawaAutomaticActivities: Bool { didSet { defaults.set(chiikawaAutomaticActivities, forKey: "chiikawaAutomaticActivities") } }
     @Published var chiikawaVoice: Bool {
@@ -71,11 +72,12 @@ final class AppState: ObservableObject {
     }
     @Published var chiikawaHomeStatus = "공용 집에서 함께 쉴 수 있어요"
     @Published var chiikawaResting = false
-    @Published var chiikawaLifeStatus = "공부하고, 인형을 안고, 잠옷으로 쉬어요"
+    @Published var chiikawaLifeStatus = "공부하고, 밥 먹고, 인형을 안고 쉬어요"
     @Published var chiikawaLifeRunning = false
     @Published var chiikawaVoiceStatus = "클릭하면 이주은 성우의 짧은 반응을 들려줘요"
     var onChiikawaGoHome: (() -> Void)?
     var onChiikawaWake: (() -> Void)?
+    var onChiikawaEat: (() -> Void)?
     var onChiikawaStudy: (() -> Void)?
     var onChiikawaLife: ((ChiikawaLifeAction) -> Void)?
     var onStopChiikawaLife: (() -> Void)?
@@ -143,6 +145,7 @@ final class AppState: ObservableObject {
         chiikawaItems = restoredChiikawaItems
         chiikawaAutomaticItems = defaults.object(forKey: "chiikawaAutomaticItems") as? Bool ?? true
         chiikawaAutomaticRest = defaults.object(forKey: "chiikawaAutomaticRest") as? Bool ?? true
+        chiikawaFoodEnabled = defaults.object(forKey: "chiikawaFoodEnabled") as? Bool ?? true
         chiikawaStudyEnabled = defaults.object(forKey: "chiikawaStudyEnabled") as? Bool ?? true
         chiikawaAutomaticActivities = defaults.object(forKey: "chiikawaAutomaticActivities") as? Bool ?? true
         chiikawaVoice = defaults.object(forKey: "chiikawaVoice") as? Bool ?? true

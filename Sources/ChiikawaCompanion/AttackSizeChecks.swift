@@ -57,7 +57,7 @@ extension SelfTest {
         let away = NSPoint(x: -10000,y: -10000)
         defer {
             desktop.actors.forEach { $0.dismissBubble(); $0.panel.orderOut(nil); $0.attackOverlay.panel.orderOut(nil) }
-            desktop.home.panel.orderOut(nil); desktop.chiikawaDesk.panel.orderOut(nil)
+            desktop.home.panel.orderOut(nil); desktop.chiikawaDesk.panel.orderOut(nil); desktop.chiikawaFood.panel.orderOut(nil)
             desktop.desktopItems.values.forEach { $0.panel.orderOut(nil) }
             desktop.chiikawaDesktopItems.values.forEach { $0.panel.orderOut(nil) }
             desktop.desktopActivitySpots.values.forEach { $0.panel.orderOut(nil) }

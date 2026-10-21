@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-21",
+  "version": "0.17.0",
+  "build": 32,
+  "baseline_commit": "93f89d8",
+  "new_ai_originals": 5,
+  "registered_frames": 58,
+  "atlases": {
+    "eat": 12,
+    "hug": 12,
+    "pajamas": 12,
+    "rest": 16,
+    "blink": 6
+  },
+  "new_runtime_resources": 5,
+  "previous_runtime_resources_preserved": 46,
+  "cli_checks_passed": 357,
+  "packaged_checks_passed": 364,
+  "new_checks": 28,
+  "codesign_verification": "passed",
+  "chiikawa_vomit_added": false,
+  "food_world_coordinates_independent": true,
+  "walking_body_and_limb_pixels_preserved_by_blink_overlay": true,
+  "expression_transition_seconds": 0.1,
+  "wake_animation_seconds": 0.96,
+  "shared_home_count": 1,
+  "default_home_style": "hachiware",
+  "rounded_chiikawa_home_preserved": true,
+  "native_updated_app_observed": true,
+  "native_food_journey_started": true,
+  "native_pajama_action_started": true,
+  "native_settings_closed": true,
+  "security_scope": [
+    "Sources/ChiikawaCompanion",
+    "Source/ChiikawaMotion-v30"
+  ],
+  "security_findings": 0
+}

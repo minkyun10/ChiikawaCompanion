@@ -27,7 +27,7 @@ extension SelfTest {
         func tick(_ offset: Double) { desktop.tick(now: now.addingTimeInterval(offset), pointer: away, pointerCanReachCharacter: false) }
         defer {
             desktop.actors.forEach { $0.dismissBubble(); $0.panel.orderOut(nil); $0.attackOverlay.panel.orderOut(nil) }
-            desktop.home.panel.orderOut(nil); desktop.chiikawaDesk.panel.orderOut(nil)
+            desktop.home.panel.orderOut(nil); desktop.chiikawaDesk.panel.orderOut(nil); desktop.chiikawaFood.panel.orderOut(nil)
             desktop.desktopItems.values.forEach { $0.panel.orderOut(nil) }
             desktop.chiikawaDesktopItems.values.forEach { $0.panel.orderOut(nil) }
             desktop.desktopActivitySpots.values.forEach { $0.panel.orderOut(nil) }
@@ -63,21 +63,21 @@ extension SelfTest {
               "changing the design while sleeping preserves both occupants and their sleep clocks")
         check(desktop.itemWorld.ground == hachiGround && desktop.chiikawaWorld.ground == chiiGround,
               "sharing or switching the home never relocates either friend's ground inventory")
-        desktop.activateSharedHome(now: now.addingTimeInterval(1.3)); tick(1.31)
+        desktop.activateSharedHome(now: now.addingTimeInterval(1.3)); tick(1.31); tick(2.31)
         check(!desktop.homeRoutine.isInside && !desktop.chiikawaHomeRoutine.isInside
               && hachi.panel.isVisible && chii.panel.isVisible && desktop.homeOccupants.isEmpty,
               "clicking the occupied shared house wakes all sleepers without creating another house")
         chii.panel.setFrameOrigin(ItemWorld.destination(for: door))
-        desktop.didMoveChiikawa(chii, now: now.addingTimeInterval(2)); tick(3)
+        desktop.didMoveChiikawa(chii, now: now.addingTimeInterval(3)); tick(4)
         check(desktop.chiikawaHomeRoutine.isInside && desktop.home.view.occupants.contains { $0.friend == .chiikawa },
               "Chiikawa can enter and sleep in the default Hachiware design")
-        state.visibleFriends.remove(.hachiware); tick(3.1)
+        state.visibleFriends.remove(.hachiware); tick(4.1)
         check(desktop.chiikawaHomeRoutine.isInside && desktop.home.panel.isVisible,
               "hiding Hachiware never evicts Chiikawa from the shared Hachiware house")
-        state.showFriends = false; tick(3.2)
+        state.showFriends = false; tick(4.2)
         check(!desktop.home.panel.isVisible && desktop.homeOccupants.isEmpty && !desktop.chiikawaHomeRoutine.isInside,
               "global hide clears sleepers and hides the single desktop home safely")
-        state.showFriends = true; tick(3.3)
+        state.showFriends = true; tick(4.3)
         check(desktop.home.panel.isVisible && desktop.home.panel.windowNumber == houseID && desktop.home.panel.frame == fixed,
               "showing friends restores exactly the same anchored home window")
     }

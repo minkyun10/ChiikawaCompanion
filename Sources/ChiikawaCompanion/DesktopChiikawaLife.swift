@@ -14,9 +14,21 @@ extension DesktopController {
             guard let self, let actor = self.chiikawaActor else { return }
             _ = self.triggerChiikawaStudy(actor, now: Date())
         }
+        chiikawaFood.view.onSeek = { [weak self] in self?.seekChiikawaFood() }
+        chiikawaFood.view.onMove = { [weak self] point in
+            guard let self, let bounds = (NSScreen.screens.first { $0.frame.contains(point) } ?? NSScreen.main)?.visibleFrame else { return }
+            if self.chiikawaLifeRoutine.selected == .eat { self.stopChiikawaLife() }
+            self.chiikawaStudyWorld.move(.rice, to: point, bounds: bounds)
+            if self.chiikawaStudyWorld.requested == .rice { self.chiikawaActor?.motion.retarget() }
+        }
+        chiikawaFood.view.onMoveEnd = { [weak self] in
+            guard let self, let actor = self.chiikawaActor else { return }
+            _ = self.triggerChiikawaStudy(actor, now: Date())
+        }
         chiikawaVoice.onStatus = { [weak state] status in state?.chiikawaVoiceStatus = status }
         state.onChiikawaGoHome = { [weak self] in self?.goChiikawaHome() }
-        state.onChiikawaWake = { [weak self] in self?.wakeChiikawa() }
+        state.onChiikawaWake = { [weak self] in self?.wakeChiikawa(animated: true) }
+        state.onChiikawaEat = { [weak self] in self?.seekChiikawaFood() }
         state.onChiikawaStudy = { [weak self] in self?.seekChiikawaStudy() }
         state.onChiikawaLife = { [weak self] action in self?.playChiikawaLife(action) }
         state.onStopChiikawaLife = { [weak self] in self?.stopChiikawaLife() }
@@ -26,48 +38,62 @@ extension DesktopController {
 
     func configureChiikawaStudy(in bounds: NSRect) {
         let wasEnabled = chiikawaStudyWorld.enabled.contains(.desk)
-        chiikawaStudyWorld.configure(enabled: state.chiikawaStudyEnabled ? [.desk] : [], bounds: bounds)
+        let foodWasEnabled = chiikawaStudyWorld.enabled.contains(.rice)
+        let requested = chiikawaStudyWorld.requested
+        var enabled = Set<ActivitySpot>()
+        if state.chiikawaStudyEnabled { enabled.insert(.desk) }
+        if state.chiikawaFoodEnabled { enabled.insert(.rice) }
+        chiikawaStudyWorld.configure(enabled: enabled, bounds: bounds)
+        if let requested, !enabled.contains(requested) { stopChiikawaLife() }
+        if !foodWasEnabled && state.chiikawaFoodEnabled {
+            let point = ItemWorld.contactPoint(origin: RoamingMotion.target(in: bounds, size: NSSize(width: 132,height: 150), xFraction: 0.66,yFraction: 0.49))
+            chiikawaStudyWorld.move(.rice, to: point, bounds: bounds)
+        }
         if !wasEnabled && state.chiikawaStudyEnabled {
             let point = ItemWorld.contactPoint(origin: RoamingMotion.target(in: bounds, size: NSSize(width: 132,height: 150), xFraction: 0.80,yFraction: 0.64))
             chiikawaStudyWorld.move(.desk, to: point, bounds: bounds)
         }
-        if !state.chiikawaStudyEnabled && chiikawaLifeRoutine.selected == .study { stopChiikawaLife() }
+        if (!state.chiikawaStudyEnabled && chiikawaLifeRoutine.selected == .study) || (!state.chiikawaFoodEnabled && chiikawaLifeRoutine.selected == .eat) { stopChiikawaLife() }
     }
 
-    func seekChiikawaStudy(now: Date = Date()) {
-        state.chiikawaStudyEnabled = true
+    func seekChiikawaStudy(now: Date = Date()) { seekChiikawaActivity(.desk, now: now) }
+    func seekChiikawaFood(now: Date = Date()) { seekChiikawaActivity(.rice, now: now) }
+    private func seekChiikawaActivity(_ spot: ActivitySpot, now: Date) {
+        guard spot == .desk || spot == .rice else { return }
+        if spot == .desk { state.chiikawaStudyEnabled = true } else { state.chiikawaFoodEnabled = true }
         if let bounds = NSScreen.main?.visibleFrame { configureChiikawaStudy(in: bounds) }
-        guard chiikawaStudyWorld.positions[.desk] != nil else { return }
+        guard chiikawaStudyWorld.positions[spot] != nil else { return }
         stopChiikawaLife(); stopChiikawaVoice()
-        if chiikawaHomeRoutine.phase != .outside { wakeChiikawa(now: now) }
+        if chiikawaHomeRoutine.phase != .outside || chiikawaWakingAt != nil { wakeChiikawa(now: now) }
         state.showFriends = true; state.roaming = true
         state.visibleFriends.insert(.chiikawa); state.walkingFriends.insert(.chiikawa)
         chiikawaActor?.dismissBubble(); chiikawaActor?.motion.retarget()
         chiikawaWorld.requested = nil; chiikawaItemTarget = nil
-        chiikawaStudyWorld.requested = .desk
-        state.chiikawaLifeRunning = true; state.chiikawaLifeStatus = "분홍 책상으로 걸어가는 중"
+        chiikawaStudyWorld.requested = spot
+        state.chiikawaLifeRunning = true; state.chiikawaLifeStatus = "\(spot == .desk ? "분홍 책상" : "밥그릇")으로 걸어가는 중"
     }
 
     @discardableResult
     func triggerChiikawaStudy(_ actor: FriendActor, now: Date) -> Bool {
         guard actor.friend == .chiikawa, !actor.view.isDragging, now >= actor.bubbleUntil,
               chiikawaLifeRoutine.action(now: now) == nil, chiikawaHomeRoutine.phase == .outside,
-              chiikawaWorld.requested == nil, !chiikawaDesk.view.isDragging else { return false }
+              chiikawaWorld.requested == nil, !chiikawaDesk.view.isDragging, !chiikawaFood.view.isDragging, chiikawaWakingAt == nil else { return false }
         let contact = ItemWorld.contactPoint(origin: actor.panel.frame.origin)
         chiikawaStudyWorld.observe(contact: contact)
-        guard chiikawaStudyWorld.encounter(contact: contact, automatic: state.chiikawaAutomaticActivities, now: now) == .desk else { return false }
-        playChiikawaLife(.study, atDesk: true, now: now)
+        guard let spot = chiikawaStudyWorld.encounter(contact: contact, automatic: state.chiikawaAutomaticActivities, now: now), spot == .desk || spot == .rice else { return false }
+        playChiikawaLife(spot == .desk ? .study : .eat, atDesk: true, now: now)
         return true
     }
 
     func playChiikawaLife(_ action: ChiikawaLifeAction, atDesk: Bool = false, now: Date = Date()) {
         guard let actor = chiikawaActor else { return }
-        if chiikawaHomeRoutine.phase != .outside { wakeChiikawa(now: now) }
+        if chiikawaHomeRoutine.phase != .outside || chiikawaWakingAt != nil { wakeChiikawa(now: now) }
         stopChiikawaVoice(); actor.dismissBubble(); actor.motion.retarget()
         chiikawaWorld.requested = nil; chiikawaItemTarget = nil; chiikawaSeekingHomeKey = false
         chiikawaStudyWorld.requested = nil
-        if atDesk, action == .study, let point = chiikawaStudyWorld.positions[.desk] {
-            actor.panel.setFrameOrigin(ItemWorld.destination(for: point)); chiikawaStudyWorld.consume(.desk, now: now)
+        let spot: ActivitySpot = action == .eat ? .rice : .desk
+        if atDesk, action == .study || action == .eat, let point = chiikawaStudyWorld.positions[spot] {
+            actor.panel.setFrameOrigin(ItemWorld.destination(for: point)); chiikawaStudyWorld.consume(spot, now: now)
         }
         chiikawaStudyingAtDesk = atDesk && action == .study
         chiikawaLifeRoutine.begin(action, now: now)
@@ -85,12 +111,13 @@ extension DesktopController {
             chiikawaActor?.motion.retarget(); chiikawaActor?.view.needsDisplay = true
         }
         if state.chiikawaLifeRunning { state.chiikawaLifeRunning = false }
-        let status = "공부하고, 인형을 안고, 잠옷으로 쉬어요"
+        let status = "공부하고, 밥 먹고, 인형을 안고 쉬어요"
         if state.chiikawaLifeStatus != status { state.chiikawaLifeStatus = status }
     }
 
     func goChiikawaHome(now: Date = Date()) {
         guard !chiikawaHomeRoutine.isInside else { return }
+        if chiikawaWakingAt != nil { wakeChiikawa(now: now) }
         stopChiikawaLife(); stopChiikawaVoice()
         state.showFriends = true; state.roaming = true
         state.visibleFriends.insert(.chiikawa); state.walkingFriends.insert(.chiikawa)
@@ -101,8 +128,14 @@ extension DesktopController {
         chiikawaItemTarget = nil; publishChiikawaHome()
     }
 
-    func wakeChiikawa(now: Date = Date()) {
-        let wasInside = chiikawaHomeRoutine.isInside
+    func wakeChiikawa(now: Date = Date(), animated: Bool = false) {
+        if animated && chiikawaWakingAt != nil { return }
+        let wasInside = chiikawaHomeRoutine.isInside || chiikawaWakingAt != nil
+        if animated && chiikawaHomeRoutine.isInside {
+            chiikawaHomeRoutine.wake(now: now); chiikawaWakingAt = now
+            publishChiikawaHome(); return
+        }
+        chiikawaWakingAt = nil
         chiikawaHomeRoutine.wake(now: now)
         if chiikawaSeekingHomeKey { chiikawaWorld.requested = nil }
         chiikawaSeekingHomeKey = false; chiikawaItemTarget = nil
@@ -134,10 +167,11 @@ extension DesktopController {
     }
 
     func publishChiikawaHome() {
-        let status = chiikawaSeekingHomeKey ? "집 열쇠를 챙기러 가는 중" : chiikawaHomeRoutine.phase == .outside
+        let status = chiikawaWakingAt != nil ? "이불을 걷고 기지개 켜는 중…" : chiikawaSeekingHomeKey ? "집 열쇠를 챙기러 가는 중" : chiikawaHomeRoutine.phase == .outside
             ? "공용 집에서 함께 쉴 수 있어요" : chiikawaHomeRoutine.status
         if state.chiikawaHomeStatus != status { state.chiikawaHomeStatus = status }
-        if state.chiikawaResting != chiikawaHomeRoutine.isInside { state.chiikawaResting = chiikawaHomeRoutine.isInside }
+        let resting = chiikawaHomeRoutine.isInside || chiikawaWakingAt != nil
+        if state.chiikawaResting != resting { state.chiikawaResting = resting }
     }
 
     func didMoveChiikawa(_ actor: FriendActor, now: Date = Date()) {
@@ -152,7 +186,7 @@ extension DesktopController {
     func sayChiikawa(preview: Bool = false, now: Date = Date()) {
         guard let actor = chiikawaActor else { return }
         stopChiikawaLife()
-        if chiikawaHomeRoutine.phase != .outside { wakeChiikawa(now: now) }
+        if chiikawaHomeRoutine.phase != .outside || chiikawaWakingAt != nil { wakeChiikawa(now: now) }
         if let line = RecordingCatalog.chiikawa.choose(excluding: lastChiikawaVoiceID) {
             lastChiikawaVoiceID = line.id; actor.lastGreeting = line.id
             actor.clickReaction = Self.chiikawaReaction(for: line.id)
@@ -181,6 +215,9 @@ extension DesktopController {
     func updateChiikawaLifeObjects(visible: Bool, mouse: NSPoint, actor: FriendActor, now: Date, time: Double) {
         chiikawaDesk.update(position: chiikawaStudyWorld.positions[.desk],
             visible: visible && !(chiikawaStudyingAtDesk && chiikawaLifeRoutine.selected == .study), mouse: mouse,
+            behind: actor.panel.isVisible ? actor.panel.windowNumber : nil)
+        chiikawaFood.update(position: chiikawaStudyWorld.positions[.rice],
+            visible: visible && chiikawaLifeRoutine.selected != .eat, mouse: mouse,
             behind: actor.panel.isVisible ? actor.panel.windowNumber : nil)
         for (item,object) in chiikawaDesktopItems { object.update(position: chiikawaWorld.ground[item], visible: visible, mouse: mouse) }
     }

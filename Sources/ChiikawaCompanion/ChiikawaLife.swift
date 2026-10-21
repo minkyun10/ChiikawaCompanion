@@ -1,12 +1,12 @@
 import AppKit
 
 enum ChiikawaLifeAction: String, CaseIterable, Identifiable {
-    case study, pajamas, hug
+    case study, eat, pajamas, hug
     var id: String { rawValue }
     var title: String {
-        switch self { case .study: return "제초 시험 공부"; case .pajamas: return "잠옷 입기"; case .hug: return "인형 안기" }
+        switch self { case .study: return "제초 시험 공부"; case .eat: return "밥 먹기"; case .pajamas: return "잠옷 입기"; case .hug: return "인형 안기" }
     }
-    var duration: TimeInterval { self == .study ? 9 : 5 }
+    var duration: TimeInterval { self == .study ? 9 : self == .eat ? 6 : 5 }
 }
 
 struct ChiikawaLifeRoutine {
@@ -29,7 +29,7 @@ final class ChiikawaLifeSprites {
     let pajamas: NSImage?
     let hug: NSImage?
     private(set) var studyFrames: [NSImage] = []
-    var isReady: Bool { house != nil && sleeper != nil && pajamas != nil && hug != nil && studyFrames.count == 12 }
+    var isReady: Bool { house != nil && sleeper != nil && pajamas != nil && hug != nil && studyFrames.count == 12 && ChiikawaMotionSprites.shared.isReady }
     private init() {
         house = Self.load("chiikawa-house-v26"); sleeper = Self.load("chiikawa-sleep-v26")
         pajamas = Self.load("chiikawa-pajamas-v26"); hug = Self.load("chiikawa-hug-v26")
@@ -58,12 +58,9 @@ final class ChiikawaLifeSprites {
             studyFrames[Self.studyIndex(time: elapsed)].draw(in: NSRect(x: rect.midX-side/2, y: rect.midY-side/2, width: side, height: side))
             return true
         }
-        guard let image = action == .pajamas ? pajamas : hug else { return false }
+        let motion: ChiikawaMotion = action == .eat ? .eat : action == .pajamas ? .pajamas : .hug
         let side = min(rect.width, rect.height)
-        var fitted = HomeArtwork.fitted(image.size, in: NSRect(x: rect.midX-side*0.43, y: rect.minY+side*0.13, width: side*0.86, height: side*0.84))
-        fitted.origin.y += CGFloat(sin(elapsed * 2.5)) * side * 0.006
-        image.draw(in: fitted)
-        return true
+        return ChiikawaMotionSprites.shared.draw(motion, in: NSRect(x: rect.midX-side/2, y: rect.midY-side/2, width: side, height: side), elapsed: elapsed)
     }
 }
 

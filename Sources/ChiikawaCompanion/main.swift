@@ -98,10 +98,10 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
     @objc func stopDailyAction() { desktop.stopDailyAction() }
     @objc func playChiikawaLife(_ sender: NSMenuItem) {
         guard let raw = sender.representedObject as? String, let action = ChiikawaLifeAction(rawValue: raw) else { return }
-        if action == .study { desktop.seekChiikawaStudy() } else { desktop.playChiikawaLife(action) }
+        if action == .study { desktop.seekChiikawaStudy() } else if action == .eat { desktop.seekChiikawaFood() } else { desktop.playChiikawaLife(action) }
     }
     @objc func chiikawaGoHome() { desktop.goChiikawaHome() }
-    @objc func chiikawaWake() { desktop.wakeChiikawa() }
+    @objc func chiikawaWake() { desktop.wakeChiikawa(animated: true) }
     @objc func chiikawaVoicePreview() { desktop.sayChiikawa(preview: true) }
     @objc func stopChiikawaLife() { desktop.stopChiikawaLife() }
     @objc func quit() { NSApp.terminate(nil) }

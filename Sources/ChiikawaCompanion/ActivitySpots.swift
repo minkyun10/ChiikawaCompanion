@@ -147,7 +147,7 @@ final class ActivitySpotView: NSView {
     override func draw(_ dirtyRect: NSRect) {
         NSColor.black.withAlphaComponent(0.08).setFill()
         NSBezierPath(ovalIn: NSRect(x: 23,y: 13,width: 58,height: 5)).fill()
-        if owner == .chiikawa { ChiikawaLifeItemArtwork.drawDesk(in: bounds) }
+        if owner == .chiikawa && spot == .desk { ChiikawaLifeItemArtwork.drawDesk(in: bounds) }
         else { ActivitySpotArtwork.draw(spot, in: bounds) }
         if hovered {
             let path = NSBezierPath(roundedRect: bounds.insetBy(dx: 5,dy: 7), xRadius: 12,yRadius: 12)

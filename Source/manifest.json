@@ -1,10 +1,10 @@
 {
   "created_at": "2026-10-16T12:08:58.617148+00:00",
   "operation": "copy; originals preserved",
-  "image_file_count": 2143,
-  "unique_image_content_count": 1367,
-  "supporting_file_count": 335,
-  "image_bytes": 523446265,
+  "image_file_count": 2291,
+  "unique_image_content_count": 1447,
+  "supporting_file_count": 366,
+  "image_bytes": 580152648,
   "symmetric_walk_runtime_applied": true,
   "files": [
     {
@@ -6509,6 +6509,1049 @@
       "archive_path": "ChiikawaLife-v26/validation.json",
       "bytes": 798,
       "sha256": "de0c64aac25b3832a01d537e414d7d5c1da094ef15c28821892a8caccdfef98d"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaMotion-v30/ExtractReviewFrame.swift",
+      "archive_path": "ChiikawaMotion-v30/ExtractReviewFrame.swift",
+      "bytes": 431,
+      "sha256": "7e50e55d4cb6b9391d51337037c84c2b90c04338b98428114152ed831d6ef051"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Final/blink/Frames/chiikawa-blink-01.png",
+      "archive_path": "ChiikawaMotion-v30/Final/blink/Frames/chiikawa-blink-01.png",
+      "bytes": 52349,
+      "sha256": "9ea11879a2aee7ed70b85cafe747e18a9c5d72a1f90e058e397b1286607997c2"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Final/blink/Frames/chiikawa-blink-02.png",
+      "archive_path": "ChiikawaMotion-v30/Final/blink/Frames/chiikawa-blink-02.png",
+      "bytes": 51594,
+      "sha256": "02b900857513f310efe43e99fe3b051d8804f191b893e6fcfe1767a682bbf071"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Final/blink/Frames/chiikawa-blink-03.png",
+      "archive_path": "ChiikawaMotion-v30/Final/blink/Frames/chiikawa-blink-03.png",
+      "bytes": 50812,
+      "sha256": "cc662f8defd841c736c82630adc213b35ab77c686d0d47b73334e1715de87cc9"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Final/blink/Frames/chiikawa-blink-04.png",
+      "archive_path": "ChiikawaMotion-v30/Final/blink/Frames/chiikawa-blink-04.png",
+      "bytes": 51264,
+      "sha256": "fac834983f8a0ad3c47b0f2872b270d45be4dcf08898d8ab1560fba715c74f13"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Final/blink/Frames/chiikawa-blink-05.png",
+      "archive_path": "ChiikawaMotion-v30/Final/blink/Frames/chiikawa-blink-05.png",
+      "bytes": 52408,
+      "sha256": "4444b0fe28ac2d3116728a6ccfbb6ab08fa51eca6ba828a4a0684485f939d994"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Final/blink/Frames/chiikawa-blink-06.png",
+      "archive_path": "ChiikawaMotion-v30/Final/blink/Frames/chiikawa-blink-06.png",
+      "bytes": 52286,
+      "sha256": "142fb78088f8013e36a6fff44d36b09770dbd488e0cdf7437f5e7deb38c3eceb"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Final/blink/chiikawa-blink-motion-v30.png",
+      "archive_path": "ChiikawaMotion-v30/Final/blink/chiikawa-blink-motion-v30.png",
+      "bytes": 304871,
+      "sha256": "47400bf7b2b7500dc213b4f548c8a9aca97df20ebee83fab6f18c56b231a9727"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaMotion-v30/Final/blink/registration.json",
+      "archive_path": "ChiikawaMotion-v30/Final/blink/registration.json",
+      "bytes": 1829,
+      "sha256": "a3723ba3576c3342b7233150bb510711fa8c75b3a5bdeca6d2fe14792310547a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Final/eat/Frames/chiikawa-eat-01.png",
+      "archive_path": "ChiikawaMotion-v30/Final/eat/Frames/chiikawa-eat-01.png",
+      "bytes": 63372,
+      "sha256": "0a5f9006941dd008c318bdff512de82b94707d446e2beb3e21db9108f62b2c6a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Final/eat/Frames/chiikawa-eat-02.png",
+      "archive_path": "ChiikawaMotion-v30/Final/eat/Frames/chiikawa-eat-02.png",
+      "bytes": 65281,
+      "sha256": "aace2ee0c863a862981fb7c98dbec4855ffbd184dceece770d49845e2aabe489"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Final/eat/Frames/chiikawa-eat-03.png",
+      "archive_path": "ChiikawaMotion-v30/Final/eat/Frames/chiikawa-eat-03.png",
+      "bytes": 63760,
+      "sha256": "d55579b438b913230e81012156b40731dfffcbad4ab6936be4022ef17bdbd652"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Final/eat/Frames/chiikawa-eat-04.png",
+      "archive_path": "ChiikawaMotion-v30/Final/eat/Frames/chiikawa-eat-04.png",
+      "bytes": 66115,
+      "sha256": "21f028df8aa1dbe58b22ddf8f386eb33c166ccf839c37041bd1f3ab45ee5880b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Final/eat/Frames/chiikawa-eat-05.png",
+      "archive_path": "ChiikawaMotion-v30/Final/eat/Frames/chiikawa-eat-05.png",
+      "bytes": 64338,
+      "sha256": "3d7a4609275a64595ddbf8edea51c237dea720b61002821babbce5a385a12f13"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Final/eat/Frames/chiikawa-eat-06.png",
+      "archive_path": "ChiikawaMotion-v30/Final/eat/Frames/chiikawa-eat-06.png",
+      "bytes": 66427,
+      "sha256": "b2beb6efa66f7ac825f69dea6a7f0b914df5dc5ee539046bab479ea74cacef11"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Final/eat/Frames/chiikawa-eat-07.png",
+      "archive_path": "ChiikawaMotion-v30/Final/eat/Frames/chiikawa-eat-07.png",
+      "bytes": 66545,
+      "sha256": "4d828d6042488d9c8c55ed4929b149e97c46035f9ea1801ae4777ec3df518906"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Final/eat/Frames/chiikawa-eat-08.png",
+      "archive_path": "ChiikawaMotion-v30/Final/eat/Frames/chiikawa-eat-08.png",
+      "bytes": 64600,
+      "sha256": "c4f2a366d50e5072c69ff48715967c5ef7fce84eb3e44e4064aaed6ce7be8ab9"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Final/eat/Frames/chiikawa-eat-09.png",
+      "archive_path": "ChiikawaMotion-v30/Final/eat/Frames/chiikawa-eat-09.png",
+      "bytes": 62755,
+      "sha256": "f23cce55751e6ef31d1cbc3a48871586a9e709819ba6b5f9ef6f75ac835004cb"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Final/eat/Frames/chiikawa-eat-10.png",
+      "archive_path": "ChiikawaMotion-v30/Final/eat/Frames/chiikawa-eat-10.png",
+      "bytes": 63869,
+      "sha256": "eb212251fbbfdbe8b8bdd684876ca7407b2713a74be057f2f480c5cb41106f1e"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Final/eat/Frames/chiikawa-eat-11.png",
+      "archive_path": "ChiikawaMotion-v30/Final/eat/Frames/chiikawa-eat-11.png",
+      "bytes": 63861,
+      "sha256": "99a4ef5b18a80f4ea7c14b6f23717732109da5635b21ae688d5d985446c70828"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Final/eat/Frames/chiikawa-eat-12.png",
+      "archive_path": "ChiikawaMotion-v30/Final/eat/Frames/chiikawa-eat-12.png",
+      "bytes": 63191,
+      "sha256": "7e987e6f92b030d137a583e169c0b773190482cf8f625551fabc8435e99e6d08"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Final/eat/chiikawa-eat-motion-v30.png",
+      "archive_path": "ChiikawaMotion-v30/Final/eat/chiikawa-eat-motion-v30.png",
+      "bytes": 763011,
+      "sha256": "b9ec72090a413acd6544eba8b9bde3e14fa715d524f36b93e68d209929b864d8"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaMotion-v30/Final/eat/registration.json",
+      "archive_path": "ChiikawaMotion-v30/Final/eat/registration.json",
+      "bytes": 3323,
+      "sha256": "8d5742f46e13012752f7892faa3ec64041ab7f0ecb14b74b0909997697e2d643"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Final/hug/Frames/chiikawa-hug-01.png",
+      "archive_path": "ChiikawaMotion-v30/Final/hug/Frames/chiikawa-hug-01.png",
+      "bytes": 75420,
+      "sha256": "1958b56b92a5acdd28609243e7cf0222b46c6db18b6fb0edd21b3babbed34a7a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Final/hug/Frames/chiikawa-hug-02.png",
+      "archive_path": "ChiikawaMotion-v30/Final/hug/Frames/chiikawa-hug-02.png",
+      "bytes": 76110,
+      "sha256": "e5192eb36e844dc3d57730ce8f5cc1f25932dcd24b8f2fbd26f7e3c39701a052"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Final/hug/Frames/chiikawa-hug-03.png",
+      "archive_path": "ChiikawaMotion-v30/Final/hug/Frames/chiikawa-hug-03.png",
+      "bytes": 77260,
+      "sha256": "b22e57fc050668f480ba809e611581916adef23c5def64e479921e0d354e7f44"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Final/hug/Frames/chiikawa-hug-04.png",
+      "archive_path": "ChiikawaMotion-v30/Final/hug/Frames/chiikawa-hug-04.png",
+      "bytes": 73604,
+      "sha256": "5d6e0735ad3e3d695f32a1e21f245c0798a831aaf1f41b49f965898e5bfcfa64"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Final/hug/Frames/chiikawa-hug-05.png",
+      "archive_path": "ChiikawaMotion-v30/Final/hug/Frames/chiikawa-hug-05.png",
+      "bytes": 75594,
+      "sha256": "113548858173519f78cff341b19de17e3635e73555cd6019d85f5d8df9139c0a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Final/hug/Frames/chiikawa-hug-06.png",
+      "archive_path": "ChiikawaMotion-v30/Final/hug/Frames/chiikawa-hug-06.png",
+      "bytes": 73558,
+      "sha256": "466e0ba44acf2bc6d6f466dac4974327ddeff89a3d46f755e2fd37a33607d0f8"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Final/hug/Frames/chiikawa-hug-07.png",
+      "archive_path": "ChiikawaMotion-v30/Final/hug/Frames/chiikawa-hug-07.png",
+      "bytes": 79016,
+      "sha256": "88a9b75d52c76b7a58dd91e3510b855559bbdf77d0062203e46aa7c8a23db7b3"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Final/hug/Frames/chiikawa-hug-08.png",
+      "archive_path": "ChiikawaMotion-v30/Final/hug/Frames/chiikawa-hug-08.png",
+      "bytes": 79285,
+      "sha256": "3aa8d4b1d28d8ef656a6d9fe4cddca3e1f69d663bbb5d86270ce4fa1655a8480"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Final/hug/Frames/chiikawa-hug-09.png",
+      "archive_path": "ChiikawaMotion-v30/Final/hug/Frames/chiikawa-hug-09.png",
+      "bytes": 83353,
+      "sha256": "8ca9695497a765334305710e32dcfecf9e2ba7e6d7ddedc117512a2a4c86e96d"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Final/hug/Frames/chiikawa-hug-10.png",
+      "archive_path": "ChiikawaMotion-v30/Final/hug/Frames/chiikawa-hug-10.png",
+      "bytes": 75335,
+      "sha256": "25d0648cd72c4087a6b689dffb181ba92311ed0195e80393633e83577a609b9b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Final/hug/Frames/chiikawa-hug-11.png",
+      "archive_path": "ChiikawaMotion-v30/Final/hug/Frames/chiikawa-hug-11.png",
+      "bytes": 73436,
+      "sha256": "da8a34698ab0d694bf6f1558fda42451bdd7c9edac9623fc982f75fb700a5438"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Final/hug/Frames/chiikawa-hug-12.png",
+      "archive_path": "ChiikawaMotion-v30/Final/hug/Frames/chiikawa-hug-12.png",
+      "bytes": 74250,
+      "sha256": "4e65b3eb56251466de310a8a2a68f39e7d0857c003d08b6f4f46051b9089dd52"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Final/hug/chiikawa-hug-motion-v30.png",
+      "archive_path": "ChiikawaMotion-v30/Final/hug/chiikawa-hug-motion-v30.png",
+      "bytes": 907079,
+      "sha256": "3d091ae39de58c50cc81746c164e0412c0a1041831268b1502fa329c0d58c114"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaMotion-v30/Final/hug/registration.json",
+      "archive_path": "ChiikawaMotion-v30/Final/hug/registration.json",
+      "bytes": 3348,
+      "sha256": "ed6f67a86134aef83fd0e956a8811a950b1f9972afba336f9838ce1d580e65b8"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Final/pajamas/Frames/chiikawa-pajamas-01.png",
+      "archive_path": "ChiikawaMotion-v30/Final/pajamas/Frames/chiikawa-pajamas-01.png",
+      "bytes": 53206,
+      "sha256": "85cf219bf217e1146aabfec4cab2b65b3cd37121c826194e3db96989a517766b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Final/pajamas/Frames/chiikawa-pajamas-02.png",
+      "archive_path": "ChiikawaMotion-v30/Final/pajamas/Frames/chiikawa-pajamas-02.png",
+      "bytes": 53547,
+      "sha256": "78b4c98c60f1715783855224cac0a710ab251d6c702f7593311effba7e7fcc5b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Final/pajamas/Frames/chiikawa-pajamas-03.png",
+      "archive_path": "ChiikawaMotion-v30/Final/pajamas/Frames/chiikawa-pajamas-03.png",
+      "bytes": 51951,
+      "sha256": "7e59725e9364c69fa0655e00ad78fb5c19edd0b62ae1c29f79a3df4e7cabce0c"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Final/pajamas/Frames/chiikawa-pajamas-04.png",
+      "archive_path": "ChiikawaMotion-v30/Final/pajamas/Frames/chiikawa-pajamas-04.png",
+      "bytes": 50800,
+      "sha256": "32b8b27c541b27f83c28a7b7f51ebe7abcda08abec37d467f3600ae7d4056bf1"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Final/pajamas/Frames/chiikawa-pajamas-05.png",
+      "archive_path": "ChiikawaMotion-v30/Final/pajamas/Frames/chiikawa-pajamas-05.png",
+      "bytes": 53802,
+      "sha256": "bcc801f2f63fd1c8bcd79898fb6fe4f3f393722e451e7fd56274021b606f9f66"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Final/pajamas/Frames/chiikawa-pajamas-06.png",
+      "archive_path": "ChiikawaMotion-v30/Final/pajamas/Frames/chiikawa-pajamas-06.png",
+      "bytes": 53246,
+      "sha256": "d02dcb05c2ab0ecd23c11d9b9df46b3f4eeebd9b9c28e9b1c2ba580c15de6b5c"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Final/pajamas/Frames/chiikawa-pajamas-07.png",
+      "archive_path": "ChiikawaMotion-v30/Final/pajamas/Frames/chiikawa-pajamas-07.png",
+      "bytes": 80112,
+      "sha256": "0bfe180d9d07c8eda5d51b0c9e174ce716795b94527cd9529789dc3bb6fac911"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Final/pajamas/Frames/chiikawa-pajamas-08.png",
+      "archive_path": "ChiikawaMotion-v30/Final/pajamas/Frames/chiikawa-pajamas-08.png",
+      "bytes": 72663,
+      "sha256": "a457001fe072744391188558c4ce48d11ce023450a368eaa572b4bc35af1a153"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Final/pajamas/Frames/chiikawa-pajamas-09.png",
+      "archive_path": "ChiikawaMotion-v30/Final/pajamas/Frames/chiikawa-pajamas-09.png",
+      "bytes": 75788,
+      "sha256": "dea33faaa3aaae9598019b577c5e853d5e76f7fc1cafa8454a0fec1c0f330e87"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Final/pajamas/Frames/chiikawa-pajamas-10.png",
+      "archive_path": "ChiikawaMotion-v30/Final/pajamas/Frames/chiikawa-pajamas-10.png",
+      "bytes": 65588,
+      "sha256": "be9f0393f9342f1c4f0893dadb0df5f645c8c6b4f6af4f0e4f7efba993eb7620"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Final/pajamas/Frames/chiikawa-pajamas-11.png",
+      "archive_path": "ChiikawaMotion-v30/Final/pajamas/Frames/chiikawa-pajamas-11.png",
+      "bytes": 66927,
+      "sha256": "793461652d27237e9b0921b7b581c507c99462fd177ae876d5e644685d51c2fd"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Final/pajamas/Frames/chiikawa-pajamas-12.png",
+      "archive_path": "ChiikawaMotion-v30/Final/pajamas/Frames/chiikawa-pajamas-12.png",
+      "bytes": 67476,
+      "sha256": "68195fa69871ad5f32d4a9c6a6ade127a4e230134d64545b43794fcfc85b422c"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Final/pajamas/chiikawa-pajamas-motion-v30.png",
+      "archive_path": "ChiikawaMotion-v30/Final/pajamas/chiikawa-pajamas-motion-v30.png",
+      "bytes": 738368,
+      "sha256": "2516edc240f6ec86ec07592d861b5c3ad90c80384976abd9bc143c82d9060117"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaMotion-v30/Final/pajamas/registration.json",
+      "archive_path": "ChiikawaMotion-v30/Final/pajamas/registration.json",
+      "bytes": 3348,
+      "sha256": "4b6a7e8a5b7e6fe68e171bb1abd05ed731917e00a94a1529e868f248f0ebb11b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Final/rest/Frames/chiikawa-rest-01.png",
+      "archive_path": "ChiikawaMotion-v30/Final/rest/Frames/chiikawa-rest-01.png",
+      "bytes": 52700,
+      "sha256": "39bb08d440e5168770ce066b89bdec8f256d59de8c4235efd1f76196a5035e09"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Final/rest/Frames/chiikawa-rest-02.png",
+      "archive_path": "ChiikawaMotion-v30/Final/rest/Frames/chiikawa-rest-02.png",
+      "bytes": 53360,
+      "sha256": "849dd96d8974edc7e22a9b37888e6a309b5f4f2aa65771dcfe4983baedca200f"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Final/rest/Frames/chiikawa-rest-03.png",
+      "archive_path": "ChiikawaMotion-v30/Final/rest/Frames/chiikawa-rest-03.png",
+      "bytes": 45507,
+      "sha256": "caccc04229981ae56f657e0f72c01c8dc782520721671a620f36c68704ac0fba"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Final/rest/Frames/chiikawa-rest-04.png",
+      "archive_path": "ChiikawaMotion-v30/Final/rest/Frames/chiikawa-rest-04.png",
+      "bytes": 42197,
+      "sha256": "bdf51d9b41b2e03a95242af9e6759fd9ba95dc0419333842aa337038538b6f8a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Final/rest/Frames/chiikawa-rest-05.png",
+      "archive_path": "ChiikawaMotion-v30/Final/rest/Frames/chiikawa-rest-05.png",
+      "bytes": 48354,
+      "sha256": "d7f7423ae2d4e7cd3ef8a9d998d12af06d4b21ba9035ccc0c4eba861dafe248b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Final/rest/Frames/chiikawa-rest-06.png",
+      "archive_path": "ChiikawaMotion-v30/Final/rest/Frames/chiikawa-rest-06.png",
+      "bytes": 47338,
+      "sha256": "c740009ef6669a9d472f58583629bba4c63fd30bf864d237ac751b1a4f93aff8"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Final/rest/Frames/chiikawa-rest-07.png",
+      "archive_path": "ChiikawaMotion-v30/Final/rest/Frames/chiikawa-rest-07.png",
+      "bytes": 47867,
+      "sha256": "dab6825ee07a882dc3fc74d8583a3951d2cbab484c2b76a0cc178bef276c0e0e"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Final/rest/Frames/chiikawa-rest-08.png",
+      "archive_path": "ChiikawaMotion-v30/Final/rest/Frames/chiikawa-rest-08.png",
+      "bytes": 46251,
+      "sha256": "0c02a4b556f905c3d5671829eeb28b02c86c0a3c48f3c17805e081a744188cda"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Final/rest/Frames/chiikawa-rest-09.png",
+      "archive_path": "ChiikawaMotion-v30/Final/rest/Frames/chiikawa-rest-09.png",
+      "bytes": 47039,
+      "sha256": "76663dadabdf92440e2bd3973f807cc091b88b60feb19843ae122c7cdfb7fca8"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Final/rest/Frames/chiikawa-rest-10.png",
+      "archive_path": "ChiikawaMotion-v30/Final/rest/Frames/chiikawa-rest-10.png",
+      "bytes": 48244,
+      "sha256": "a77ced8b446e66e5efe51004e059700c4f69824cb33a905f68d25b286f0efbf2"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Final/rest/Frames/chiikawa-rest-11.png",
+      "archive_path": "ChiikawaMotion-v30/Final/rest/Frames/chiikawa-rest-11.png",
+      "bytes": 51249,
+      "sha256": "ab8bc541e124525826104d72037631bd44b21affa00c12c4d02eff1b19d45c88"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Final/rest/Frames/chiikawa-rest-12.png",
+      "archive_path": "ChiikawaMotion-v30/Final/rest/Frames/chiikawa-rest-12.png",
+      "bytes": 51430,
+      "sha256": "1c03395e59998657b57662fe0055dec1b5fd93498e3c346a4a213ed833f84275"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Final/rest/Frames/chiikawa-rest-13.png",
+      "archive_path": "ChiikawaMotion-v30/Final/rest/Frames/chiikawa-rest-13.png",
+      "bytes": 55498,
+      "sha256": "b8664746255dec9c6cc7b7d144c1f3fc3f7ac84734a2f724b26a89789ffd0a35"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Final/rest/Frames/chiikawa-rest-14.png",
+      "archive_path": "ChiikawaMotion-v30/Final/rest/Frames/chiikawa-rest-14.png",
+      "bytes": 54999,
+      "sha256": "aeb6465f357862dc90f6f243c02af39fc82657d1055b5bc79c79a7968e7ba61a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Final/rest/Frames/chiikawa-rest-15.png",
+      "archive_path": "ChiikawaMotion-v30/Final/rest/Frames/chiikawa-rest-15.png",
+      "bytes": 53566,
+      "sha256": "43cac1bc54c5ff566c3805eb35652d3f2029d618953964d6ba8e5b3cf1abcb44"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Final/rest/Frames/chiikawa-rest-16.png",
+      "archive_path": "ChiikawaMotion-v30/Final/rest/Frames/chiikawa-rest-16.png",
+      "bytes": 53801,
+      "sha256": "8826c0ba936f677ac9d8906e9277906d9e3e2b780a7bb104a0304e7ce8521cd3"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Final/rest/chiikawa-rest-motion-v30.png",
+      "archive_path": "ChiikawaMotion-v30/Final/rest/chiikawa-rest-motion-v30.png",
+      "bytes": 788328,
+      "sha256": "0cc2d3f6fc13f4adb04003cd0b1c5b99957c45be4230fe357ed4fa591290c626"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaMotion-v30/Final/rest/registration.json",
+      "archive_path": "ChiikawaMotion-v30/Final/rest/registration.json",
+      "bytes": 4368,
+      "sha256": "9eda629030e69cab7c7d93043db637ffeaa4b46169c6162c7741bf27eb4302aa"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Generated/blink-original.png",
+      "archive_path": "ChiikawaMotion-v30/Generated/blink-original.png",
+      "bytes": 1529227,
+      "sha256": "62b6858ce117b9bf7911e8ec8da00e5bb70734d99acea7fe83100967bd194e9e"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Generated/eat-original.png",
+      "archive_path": "ChiikawaMotion-v30/Generated/eat-original.png",
+      "bytes": 1572937,
+      "sha256": "082cb9f9c620d469e9a1ddb29597c1ff8a67712e7dac8cd762a8669c0107ade6"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Generated/hug-original.png",
+      "archive_path": "ChiikawaMotion-v30/Generated/hug-original.png",
+      "bytes": 1784170,
+      "sha256": "8a71eb26a3bcd9b88e1a1c0d794051fd509342c63b1ab19092cc8590e439dad5"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Generated/pajamas-original.png",
+      "archive_path": "ChiikawaMotion-v30/Generated/pajamas-original.png",
+      "bytes": 1480425,
+      "sha256": "d496d193a9cb3fb8ae7d40f9bb1768015baceabf68d99bf6cabbcf67d62d7f1c"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Generated/rest-original.png",
+      "archive_path": "ChiikawaMotion-v30/Generated/rest-original.png",
+      "bytes": 1971104,
+      "sha256": "156f83648e570ab087bc5f7fc5c23f2caf9f6c6db459e54fab476a09191cb749"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaMotion-v30/PrepareMotionAtlas.swift",
+      "archive_path": "ChiikawaMotion-v30/PrepareMotionAtlas.swift",
+      "bytes": 6898,
+      "sha256": "b1205f3cd3195341208a8b65dc2cf4572b5988ae67600716ccf0d02b1981f048"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaMotion-v30/Prompts/blink.txt",
+      "archive_path": "ChiikawaMotion-v30/Prompts/blink.txt",
+      "bytes": 1329,
+      "sha256": "46c300301c471a98e7e0c0ec291d17beafa80bfdcc75f99854795c0869d11529"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaMotion-v30/Prompts/eat.txt",
+      "archive_path": "ChiikawaMotion-v30/Prompts/eat.txt",
+      "bytes": 1367,
+      "sha256": "7c473a47e2f89b5eb3bfc7b72fa8656f27a9bca850eaf3dffefe8695af2807ec"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaMotion-v30/Prompts/hug.txt",
+      "archive_path": "ChiikawaMotion-v30/Prompts/hug.txt",
+      "bytes": 1304,
+      "sha256": "90c653d1bafbc358716f038b4e0f4d9eb42a16888db2933d2ff2cc10cefc9e73"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaMotion-v30/Prompts/pajamas.txt",
+      "archive_path": "ChiikawaMotion-v30/Prompts/pajamas.txt",
+      "bytes": 1426,
+      "sha256": "d439156dc91734d46de1b3cc2a164e79ebaa86d76333b70cf15b5508664cd707"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaMotion-v30/Prompts/rest.txt",
+      "archive_path": "ChiikawaMotion-v30/Prompts/rest.txt",
+      "bytes": 1584,
+      "sha256": "eb40fae991de56c5b94f8f1a95e6197d962980c3743da881cc2062d0039fdc9f"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaMotion-v30/README.txt",
+      "archive_path": "ChiikawaMotion-v30/README.txt",
+      "bytes": 3930,
+      "sha256": "5d523bedeeb651a4527eb1654503a916fdb14520b7ce0d22483ba10f2031b855"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/References/chiikawa-cardinal-keyposes-v22.png",
+      "archive_path": "ChiikawaMotion-v30/References/chiikawa-cardinal-keyposes-v22.png",
+      "bytes": 414023,
+      "sha256": "26e1519326c2e7d925423ae077f5661e4002cb2cc25d424a4c90a4a511559d0b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/References/chiikawa-expressions-items-v22.png",
+      "archive_path": "ChiikawaMotion-v30/References/chiikawa-expressions-items-v22.png",
+      "bytes": 1543693,
+      "sha256": "12034a91a4599643ac25353e55f5096e888e3f852ee7e243d41795906f7ede12"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/References/chiikawa-hug-v26.png",
+      "archive_path": "ChiikawaMotion-v30/References/chiikawa-hug-v26.png",
+      "bytes": 220996,
+      "sha256": "238ccc7943af8bb0e135538317bdf80c101a4c1184967f85c6cc84a1fd15f1b2"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/References/chiikawa-pajamas-v26.png",
+      "archive_path": "ChiikawaMotion-v30/References/chiikawa-pajamas-v26.png",
+      "bytes": 236830,
+      "sha256": "b57ebb01b6c7df1183265bee3ed1eeb707c2728167ce965c1aed59ffd898ba1c"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/References/chiikawa-sleep-v26.png",
+      "archive_path": "ChiikawaMotion-v30/References/chiikawa-sleep-v26.png",
+      "bytes": 313801,
+      "sha256": "c9bb0b5a5db990df3168b66f33c01bd1c96cc2ffe22114cb1b424cbc5baef100"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Review/app-motion-settings-v30.png",
+      "archive_path": "ChiikawaMotion-v30/Review/app-motion-settings-v30.png",
+      "bytes": 199791,
+      "sha256": "cffbd0c2f574e203bb3a0edd5190468856f8e68e0badab76680dcc820bc0a999"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaMotion-v30/Review/body-measurements.json",
+      "archive_path": "ChiikawaMotion-v30/Review/body-measurements.json",
+      "bytes": 1018,
+      "sha256": "4a5b023d4eb9b7c745dcda3344d584e77c8c2bcd8345fdecbfbd96863f7fd85f"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Review/chiikawa-attack-frames-v24.png",
+      "archive_path": "ChiikawaMotion-v30/Review/chiikawa-attack-frames-v24.png",
+      "bytes": 771618,
+      "sha256": "f9de2b9c93f491c0d2b405c49a529924ff96cea86dd514e52073b8ddf2198d94"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Review/chiikawa-blink-frames-v30.png",
+      "archive_path": "ChiikawaMotion-v30/Review/chiikawa-blink-frames-v30.png",
+      "bytes": 304871,
+      "sha256": "47400bf7b2b7500dc213b4f548c8a9aca97df20ebee83fab6f18c56b231a9727"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Review/chiikawa-blink-v30.gif",
+      "archive_path": "ChiikawaMotion-v30/Review/chiikawa-blink-v30.gif",
+      "bytes": 139881,
+      "sha256": "858e0bf7723f128c605b3db4d2a2eb4be70a799355352431cd4f3d3034837492"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Review/chiikawa-eat-frames-v30.png",
+      "archive_path": "ChiikawaMotion-v30/Review/chiikawa-eat-frames-v30.png",
+      "bytes": 763011,
+      "sha256": "b9ec72090a413acd6544eba8b9bde3e14fa715d524f36b93e68d209929b864d8"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Review/chiikawa-eat-v30.gif",
+      "archive_path": "ChiikawaMotion-v30/Review/chiikawa-eat-v30.gif",
+      "bytes": 422779,
+      "sha256": "b041c08960863c3f9e67446dfb1c553768cbcfc86aa0203ad0230c672eea445f"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Review/chiikawa-expression-transition-v30.gif",
+      "archive_path": "ChiikawaMotion-v30/Review/chiikawa-expression-transition-v30.gif",
+      "bytes": 225907,
+      "sha256": "576f17fcb2dee68ce433dcf5a707c327a6c81434861dd529887e9dd6310a4524"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Review/chiikawa-hover-attack-v24.gif",
+      "archive_path": "ChiikawaMotion-v30/Review/chiikawa-hover-attack-v24.gif",
+      "bytes": 504820,
+      "sha256": "a7375cb1c0a342fe72baf68d6257b23cfdf32fc38dd17f961078a8d5bc9a8d3a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Review/chiikawa-hug-frames-v30.png",
+      "archive_path": "ChiikawaMotion-v30/Review/chiikawa-hug-frames-v30.png",
+      "bytes": 907079,
+      "sha256": "3d091ae39de58c50cc81746c164e0412c0a1041831268b1502fa329c0d58c114"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Review/chiikawa-hug-v30.gif",
+      "archive_path": "ChiikawaMotion-v30/Review/chiikawa-hug-v30.gif",
+      "bytes": 347122,
+      "sha256": "a926967a1fff07bb695050daa3c2ce9b2cfcd44347c32a484d8047f880ca12ab"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Review/chiikawa-life-v26.png",
+      "archive_path": "ChiikawaMotion-v30/Review/chiikawa-life-v26.png",
+      "bytes": 785833,
+      "sha256": "179982df04d37d41741922c2cd89fa7240f6915cc338d6c332910da1d8eaefa5"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Review/chiikawa-pajamas-frames-v30.png",
+      "archive_path": "ChiikawaMotion-v30/Review/chiikawa-pajamas-frames-v30.png",
+      "bytes": 738368,
+      "sha256": "2516edc240f6ec86ec07592d861b5c3ad90c80384976abd9bc143c82d9060117"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Review/chiikawa-pajamas-v30.gif",
+      "archive_path": "ChiikawaMotion-v30/Review/chiikawa-pajamas-v30.gif",
+      "bytes": 216362,
+      "sha256": "fe96002659ed7632440ef14a6b82ad293b69e1db325aa948a610cb1160ddbbbb"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Review/chiikawa-rest-frames-v30.png",
+      "archive_path": "ChiikawaMotion-v30/Review/chiikawa-rest-frames-v30.png",
+      "bytes": 788328,
+      "sha256": "0cc2d3f6fc13f4adb04003cd0b1c5b99957c45be4230fe357ed4fa591290c626"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Review/chiikawa-rest-v30.gif",
+      "archive_path": "ChiikawaMotion-v30/Review/chiikawa-rest-v30.gif",
+      "bytes": 263875,
+      "sha256": "b22847e70f93026d667ea6754a3945a8be2ec8b646c99cdf77c3d8bdb7040bb6"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Review/chiikawa-runtime-equipment-v23.png",
+      "archive_path": "ChiikawaMotion-v30/Review/chiikawa-runtime-equipment-v23.png",
+      "bytes": 1094011,
+      "sha256": "53a74564e3be5356af8141ae7304eebfbef113d21bf5aa636a312e598fc59fc5"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Review/chiikawa-runtime-walk-v23.gif",
+      "archive_path": "ChiikawaMotion-v30/Review/chiikawa-runtime-walk-v23.gif",
+      "bytes": 942413,
+      "sha256": "f9f94cf094de33f0bfbeea5e20df587914ea6a7c0c136112dfc0e9545476e3c7"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Review/chiikawa-study-v26.gif",
+      "archive_path": "ChiikawaMotion-v30/Review/chiikawa-study-v26.gif",
+      "bytes": 338884,
+      "sha256": "135e1df75a4910da49ad582b46de0b5aad618ac6064f27af7aaa9f7e9bfc17f7"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Review/chiikawa-walking-blink-closed-v30.png",
+      "archive_path": "ChiikawaMotion-v30/Review/chiikawa-walking-blink-closed-v30.png",
+      "bytes": 18572,
+      "sha256": "83dd789faafa3675d638aedaab4532fe634004e01e7c5168fb4f892b13911ca4"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Review/chiikawa-walking-blink-v30.gif",
+      "archive_path": "ChiikawaMotion-v30/Review/chiikawa-walking-blink-v30.gif",
+      "bytes": 577850,
+      "sha256": "e8d055943baf601bc8a02eb1c63695e6650dd58f2cfcf64bad13a4c62e036881"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Review/friends.png",
+      "archive_path": "ChiikawaMotion-v30/Review/friends.png",
+      "bytes": 174820,
+      "sha256": "093914a47e35f0a406674ae65f26873b66d519c816ba2d2a5a2c734e84ccbefb"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Review/hachiware-attack-frames-v19.png",
+      "archive_path": "ChiikawaMotion-v30/Review/hachiware-attack-frames-v19.png",
+      "bytes": 627298,
+      "sha256": "5d3ad7baec89d0de923f543f447ca1069e3ea1c49d55ab930c13bf310b621ff8"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Review/hachiware-cave-home-v11.png",
+      "archive_path": "ChiikawaMotion-v30/Review/hachiware-cave-home-v11.png",
+      "bytes": 373145,
+      "sha256": "c07da50b1919b1012dc1bed35d68833c02da01bf5791b436de85f33de8da54c6"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Review/hachiware-daily-frames-v16.png",
+      "archive_path": "ChiikawaMotion-v30/Review/hachiware-daily-frames-v16.png",
+      "bytes": 666252,
+      "sha256": "a64ac89f71591894f34f509d3e75b64180912291022c506ebe241861c1531c79"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Review/hachiware-eat-v16.gif",
+      "archive_path": "ChiikawaMotion-v30/Review/hachiware-eat-v16.gif",
+      "bytes": 221083,
+      "sha256": "549f4f2875bde1c9be09c2b3b3fbab3a9fb0b8733a55ab95961503717ad041d0"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Review/hachiware-eight-directions-v10.gif",
+      "archive_path": "ChiikawaMotion-v30/Review/hachiware-eight-directions-v10.gif",
+      "bytes": 608909,
+      "sha256": "0aa86b98ca9e08f3c71468e7bbdab1743344f8bf92ad80e6bd0d8eb8babb964a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Review/hachiware-equipped-directions-v11.png",
+      "archive_path": "ChiikawaMotion-v30/Review/hachiware-equipped-directions-v11.png",
+      "bytes": 583384,
+      "sha256": "b05323d89f4ded4008682dda8aa4ecb31bf0ad03002312120ea38364c334a98a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Review/hachiware-expressions-v11.png",
+      "archive_path": "ChiikawaMotion-v30/Review/hachiware-expressions-v11.png",
+      "bytes": 451935,
+      "sha256": "71309900abc75f15becdc7f339510bd084b568505e5c5675df5b251e15d5b322"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Review/hachiware-home-sleep-v11.gif",
+      "archive_path": "ChiikawaMotion-v30/Review/hachiware-home-sleep-v11.gif",
+      "bytes": 595813,
+      "sha256": "3e9c54195b9476fdf45bad59bd187e43b095b42bb9c2883efe171e07d3313587"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Review/hachiware-hover-attack-v19.gif",
+      "archive_path": "ChiikawaMotion-v30/Review/hachiware-hover-attack-v19.gif",
+      "bytes": 408145,
+      "sha256": "c8d3ec8fc8b27f65508c8957c51aa0cd84f5a2c42783eb15c0a0a307631f3521"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Review/hachiware-items-v11.gif",
+      "archive_path": "ChiikawaMotion-v30/Review/hachiware-items-v11.gif",
+      "bytes": 550859,
+      "sha256": "863cf17650a351eeb4ec8af250f279c743215f66f5cb17c71111ac360f3fcb2a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Review/hachiware-proximity-actions-v17.png",
+      "archive_path": "ChiikawaMotion-v30/Review/hachiware-proximity-actions-v17.png",
+      "bytes": 195647,
+      "sha256": "c02ec015715c554b1ff63811d54e16cb7d03620a4bd353f3e1695e9121fa435f"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Review/hachiware-side-cycle.png",
+      "archive_path": "ChiikawaMotion-v30/Review/hachiware-side-cycle.png",
+      "bytes": 791623,
+      "sha256": "56232bb7b3fc78aaec9e6c94cb49bf64de941422119a108cf2428b1fb413de9f"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Review/hachiware-sprite-preview.png",
+      "archive_path": "ChiikawaMotion-v30/Review/hachiware-sprite-preview.png",
+      "bytes": 266383,
+      "sha256": "62b8b826f3d7ec00fb5987636f46627b104ec01bd6b2c2ab62aaf9e28b0466cd"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Review/hachiware-study-v16.gif",
+      "archive_path": "ChiikawaMotion-v30/Review/hachiware-study-v16.gif",
+      "bytes": 236231,
+      "sha256": "2d52c80db026ab3b3d2ad81ab8aaf51d41774d1933d77a8c4ebdcfd120c95c60"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Review/hachiware-vomit-v16.gif",
+      "archive_path": "ChiikawaMotion-v30/Review/hachiware-vomit-v16.gif",
+      "bytes": 209889,
+      "sha256": "1e6f36dc62e8f3f79ca2541a8b00aa29db65e2506108891e140bebee9b5e3c03"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Review/hachiware-walk.png",
+      "archive_path": "ChiikawaMotion-v30/Review/hachiware-walk.png",
+      "bytes": 136739,
+      "sha256": "54bfabb78c7f56e08fd0262c4e2fd12067405b766a5b4a474df8379234184c6f"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Review/icon.png",
+      "archive_path": "ChiikawaMotion-v30/Review/icon.png",
+      "bytes": 257854,
+      "sha256": "fadb9924edc62d95697cdefc883dbb54e597c528d87278bf12af3ed433319587"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Review/life-prop-desk-v17.png",
+      "archive_path": "ChiikawaMotion-v30/Review/life-prop-desk-v17.png",
+      "bytes": 5048,
+      "sha256": "b3bf50da9919d286490de0b1bc75165225187ce96530ab191870413bdeb2c805"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Review/life-prop-furball-v17.png",
+      "archive_path": "ChiikawaMotion-v30/Review/life-prop-furball-v17.png",
+      "bytes": 3314,
+      "sha256": "300da36602f4db21e52c44827e33e6144e244d0aaaed6437ea99a8f11e8fa75b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Review/life-prop-rice-v17.png",
+      "archive_path": "ChiikawaMotion-v30/Review/life-prop-rice-v17.png",
+      "bytes": 3646,
+      "sha256": "07dd6416c0a2ba2c46cca8e12db5ee0b6e5078d3e36bbd94c6a6d548cf1e1361"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Review/shared-home-designs-v29.png",
+      "archive_path": "ChiikawaMotion-v30/Review/shared-home-designs-v29.png",
+      "bytes": 905522,
+      "sha256": "db7dafea36a93a2dd90d3f6b662aa2291f9960bd1a54084212240c70346bd7aa"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Review/shared-home-sleep-v29.gif",
+      "archive_path": "ChiikawaMotion-v30/Review/shared-home-sleep-v29.gif",
+      "bytes": 386120,
+      "sha256": "d16f72e9da9be22249268c28f6bea58baf54ed23e7473a17e5e7486f123fb8e7"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Review/weapon-hover-size-v27.gif",
+      "archive_path": "ChiikawaMotion-v30/Review/weapon-hover-size-v27.gif",
+      "bytes": 893121,
+      "sha256": "3c0149601d6146db9ff1ba8f776416162e3b87f00b687ea596032e25d1cda14d"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotion-v30/Review/weapon-hover-size-v27.png",
+      "archive_path": "ChiikawaMotion-v30/Review/weapon-hover-size-v27.png",
+      "bytes": 409932,
+      "sha256": "6a3fb238d36d567e0c64cf8b94f35fd3a37b0e7c312224f2f67a30d4637827f1"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaMotion-v30/build-cli.txt",
+      "archive_path": "ChiikawaMotion-v30/build-cli.txt",
+      "bytes": 265,
+      "sha256": "865619e83fea4335c64a89e3272eeed9dff104e06a07387b2efc914441858a09"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaMotion-v30/build-log.txt",
+      "archive_path": "ChiikawaMotion-v30/build-log.txt",
+      "bytes": 472,
+      "sha256": "171f5fe3713065896c3c407fd20e3d4cf74438ecb3e81df5bdfb0ec0cb9789ce"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaMotion-v30/codesign.txt",
+      "archive_path": "ChiikawaMotion-v30/codesign.txt",
+      "bytes": 109,
+      "sha256": "6210c61790ac2c9d268a576bdecb1c906f66d332a0c64871ceff1469e071d542"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaMotion-v30/generations.json",
+      "archive_path": "ChiikawaMotion-v30/generations.json",
+      "bytes": 1984,
+      "sha256": "dce956cc5fc810c34e08cd2c155770e403ccbca47157106a626a4b8d7d97ab1a"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaMotion-v30/prepare-blink.txt",
+      "archive_path": "ChiikawaMotion-v30/prepare-blink.txt",
+      "bytes": 51,
+      "sha256": "baa9268e6ba0924482564ba16e474533dc018efc01726b3e547da378017b7119"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaMotion-v30/prepare-eat.txt",
+      "archive_path": "ChiikawaMotion-v30/prepare-eat.txt",
+      "bytes": 50,
+      "sha256": "be98b0da7a7937ae86c921a42a0c6292fd7a5afd1c05be1b3b7c17e890710d5d"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaMotion-v30/prepare-hug.txt",
+      "archive_path": "ChiikawaMotion-v30/prepare-hug.txt",
+      "bytes": 50,
+      "sha256": "4bad91284804c3b78a38c850f6907e71aaf25b45090260fdc6a315508dbc3fa2"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaMotion-v30/prepare-rest.txt",
+      "archive_path": "ChiikawaMotion-v30/prepare-rest.txt",
+      "bytes": 51,
+      "sha256": "d0c99b2cdc40e00bb35c3b3bc67d67105ff8f35a39c6bfb7e93981357fb9405b"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaMotion-v30/render-log.txt",
+      "archive_path": "ChiikawaMotion-v30/render-log.txt",
+      "bytes": 18,
+      "sha256": "e4e815f865d1d6b4f0ba8e7a4cf091562580558fb1729df68d170f0246609404"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaMotion-v30/resources-preserved.json",
+      "archive_path": "ChiikawaMotion-v30/resources-preserved.json",
+      "bytes": 8808,
+      "sha256": "2e2c88efa3d16a148c5a23122addb729e1ae2a73b73fffaf35991f47fe0a0af2"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaMotion-v30/security-assets.json",
+      "archive_path": "ChiikawaMotion-v30/security-assets.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaMotion-v30/security-assets.txt",
+      "archive_path": "ChiikawaMotion-v30/security-assets.txt",
+      "bytes": 81,
+      "sha256": "4d9c490f2b450317c9cf565f8867331c5ff04e7093415fe482a22d354551cb2e"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaMotion-v30/security-code.json",
+      "archive_path": "ChiikawaMotion-v30/security-code.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaMotion-v30/security-code.txt",
+      "archive_path": "ChiikawaMotion-v30/security-code.txt",
+      "bytes": 81,
+      "sha256": "a72e0ebe11c22a762c1fb1f108f927c817c751e3781cc96225b4fb9042cb9a13"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaMotion-v30/self-test-app.txt",
+      "archive_path": "ChiikawaMotion-v30/self-test-app.txt",
+      "bytes": 27166,
+      "sha256": "155a96ebd8bab8e16f3520e37ccc0b33b1b2066f6821d917bf3da047421be6df"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaMotion-v30/self-test-cli.txt",
+      "archive_path": "ChiikawaMotion-v30/self-test-cli.txt",
+      "bytes": 26575,
+      "sha256": "7067f5b739a4a3bafe3041da80d33b3f94031b487a50319d2653ca2916141b75"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaMotion-v30/validation.json",
+      "archive_path": "ChiikawaMotion-v30/validation.json",
+      "bytes": 1039,
+      "sha256": "663b942560a1e5b61b7b7b60c84fc5efbf169f655430c903715a0d667c6f946b"
     },
     {
       "kind": "supporting",
@@ -14660,6 +15703,13 @@
     },
     {
       "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/chiikawa-blink-motion-v30.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/chiikawa-blink-motion-v30.png",
+      "bytes": 304871,
+      "sha256": "47400bf7b2b7500dc213b4f548c8a9aca97df20ebee83fab6f18c56b231a9727"
+    },
+    {
+      "kind": "image",
       "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/chiikawa-crying-v23.png",
       "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/chiikawa-crying-v23.png",
       "bytes": 153147,
@@ -14695,6 +15745,13 @@
     },
     {
       "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/chiikawa-eat-motion-v30.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/chiikawa-eat-motion-v30.png",
+      "bytes": 763011,
+      "sha256": "b9ec72090a413acd6544eba8b9bde3e14fa715d524f36b93e68d209929b864d8"
+    },
+    {
+      "kind": "image",
       "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/chiikawa-gentle-v26.png",
       "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/chiikawa-gentle-v26.png",
       "bytes": 192898,
@@ -14716,6 +15773,13 @@
     },
     {
       "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/chiikawa-hug-motion-v30.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/chiikawa-hug-motion-v30.png",
+      "bytes": 907079,
+      "sha256": "3d091ae39de58c50cc81746c164e0412c0a1041831268b1502fa329c0d58c114"
+    },
+    {
+      "kind": "image",
       "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/chiikawa-hug-v26.png",
       "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/chiikawa-hug-v26.png",
       "bytes": 220996,
@@ -14730,10 +15794,24 @@
     },
     {
       "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/chiikawa-pajamas-motion-v30.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/chiikawa-pajamas-motion-v30.png",
+      "bytes": 738368,
+      "sha256": "2516edc240f6ec86ec07592d861b5c3ad90c80384976abd9bc143c82d9060117"
+    },
+    {
+      "kind": "image",
       "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/chiikawa-pajamas-v26.png",
       "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/chiikawa-pajamas-v26.png",
       "bytes": 236830,
       "sha256": "b57ebb01b6c7df1183265bee3ed1eeb707c2728167ce965c1aed59ffd898ba1c"
+    },
+    {
+      "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/chiikawa-rest-motion-v30.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/chiikawa-rest-motion-v30.png",
+      "bytes": 788328,
+      "sha256": "0cc2d3f6fc13f4adb04003cd0b1c5b99957c45be4230fe357ed4fa591290c626"
     },
     {
       "kind": "image",
@@ -15038,6 +16116,13 @@
     },
     {
       "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/chiikawa-blink-motion-v30.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/chiikawa-blink-motion-v30.png",
+      "bytes": 304871,
+      "sha256": "47400bf7b2b7500dc213b4f548c8a9aca97df20ebee83fab6f18c56b231a9727"
+    },
+    {
+      "kind": "image",
       "source": "Sources/ChiikawaCompanion/Resources/chiikawa-crying-v23.png",
       "archive_path": "Project/Sources/ChiikawaCompanion/Resources/chiikawa-crying-v23.png",
       "bytes": 153147,
@@ -15073,6 +16158,13 @@
     },
     {
       "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/chiikawa-eat-motion-v30.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/chiikawa-eat-motion-v30.png",
+      "bytes": 763011,
+      "sha256": "b9ec72090a413acd6544eba8b9bde3e14fa715d524f36b93e68d209929b864d8"
+    },
+    {
+      "kind": "image",
       "source": "Sources/ChiikawaCompanion/Resources/chiikawa-gentle-v26.png",
       "archive_path": "Project/Sources/ChiikawaCompanion/Resources/chiikawa-gentle-v26.png",
       "bytes": 192898,
@@ -15094,6 +16186,13 @@
     },
     {
       "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/chiikawa-hug-motion-v30.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/chiikawa-hug-motion-v30.png",
+      "bytes": 907079,
+      "sha256": "3d091ae39de58c50cc81746c164e0412c0a1041831268b1502fa329c0d58c114"
+    },
+    {
+      "kind": "image",
       "source": "Sources/ChiikawaCompanion/Resources/chiikawa-hug-v26.png",
       "archive_path": "Project/Sources/ChiikawaCompanion/Resources/chiikawa-hug-v26.png",
       "bytes": 220996,
@@ -15108,10 +16207,24 @@
     },
     {
       "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/chiikawa-pajamas-motion-v30.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/chiikawa-pajamas-motion-v30.png",
+      "bytes": 738368,
+      "sha256": "2516edc240f6ec86ec07592d861b5c3ad90c80384976abd9bc143c82d9060117"
+    },
+    {
+      "kind": "image",
       "source": "Sources/ChiikawaCompanion/Resources/chiikawa-pajamas-v26.png",
       "archive_path": "Project/Sources/ChiikawaCompanion/Resources/chiikawa-pajamas-v26.png",
       "bytes": 236830,
       "sha256": "b57ebb01b6c7df1183265bee3ed1eeb707c2728167ce965c1aed59ffd898ba1c"
+    },
+    {
+      "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/chiikawa-rest-motion-v30.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/chiikawa-rest-motion-v30.png",
+      "bytes": 788328,
+      "sha256": "0cc2d3f6fc13f4adb04003cd0b1c5b99957c45be4230fe357ed4fa591290c626"
     },
     {
       "kind": "image",
@@ -15367,6 +16480,13 @@
     },
     {
       "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/chiikawa-blink-motion-v30.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/chiikawa-blink-motion-v30.png",
+      "bytes": 304871,
+      "sha256": "47400bf7b2b7500dc213b4f548c8a9aca97df20ebee83fab6f18c56b231a9727"
+    },
+    {
+      "kind": "image",
       "source": "build/ChiikawaCompanion.app/Contents/Resources/chiikawa-crying-v23.png",
       "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/chiikawa-crying-v23.png",
       "bytes": 153147,
@@ -15402,6 +16522,13 @@
     },
     {
       "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/chiikawa-eat-motion-v30.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/chiikawa-eat-motion-v30.png",
+      "bytes": 763011,
+      "sha256": "b9ec72090a413acd6544eba8b9bde3e14fa715d524f36b93e68d209929b864d8"
+    },
+    {
+      "kind": "image",
       "source": "build/ChiikawaCompanion.app/Contents/Resources/chiikawa-gentle-v26.png",
       "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/chiikawa-gentle-v26.png",
       "bytes": 192898,
@@ -15423,6 +16550,13 @@
     },
     {
       "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/chiikawa-hug-motion-v30.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/chiikawa-hug-motion-v30.png",
+      "bytes": 907079,
+      "sha256": "3d091ae39de58c50cc81746c164e0412c0a1041831268b1502fa329c0d58c114"
+    },
+    {
+      "kind": "image",
       "source": "build/ChiikawaCompanion.app/Contents/Resources/chiikawa-hug-v26.png",
       "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/chiikawa-hug-v26.png",
       "bytes": 220996,
@@ -15437,10 +16571,24 @@
     },
     {
       "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/chiikawa-pajamas-motion-v30.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/chiikawa-pajamas-motion-v30.png",
+      "bytes": 738368,
+      "sha256": "2516edc240f6ec86ec07592d861b5c3ad90c80384976abd9bc143c82d9060117"
+    },
+    {
+      "kind": "image",
       "source": "build/ChiikawaCompanion.app/Contents/Resources/chiikawa-pajamas-v26.png",
       "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/chiikawa-pajamas-v26.png",
       "bytes": 236830,
       "sha256": "b57ebb01b6c7df1183265bee3ed1eeb707c2728167ce965c1aed59ffd898ba1c"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/chiikawa-rest-motion-v30.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/chiikawa-rest-motion-v30.png",
+      "bytes": 788328,
+      "sha256": "0cc2d3f6fc13f4adb04003cd0b1c5b99957c45be4230fe357ed4fa591290c626"
     },
     {
       "kind": "image",
@@ -15619,6 +16767,41 @@
     },
     {
       "kind": "image",
+      "source": "build/artwork/chiikawa-blink-frames-v30.png",
+      "archive_path": "Project/build/artwork/chiikawa-blink-frames-v30.png",
+      "bytes": 304871,
+      "sha256": "47400bf7b2b7500dc213b4f548c8a9aca97df20ebee83fab6f18c56b231a9727"
+    },
+    {
+      "kind": "image",
+      "source": "build/artwork/chiikawa-blink-v30.gif",
+      "archive_path": "Project/build/artwork/chiikawa-blink-v30.gif",
+      "bytes": 139881,
+      "sha256": "858e0bf7723f128c605b3db4d2a2eb4be70a799355352431cd4f3d3034837492"
+    },
+    {
+      "kind": "image",
+      "source": "build/artwork/chiikawa-eat-frames-v30.png",
+      "archive_path": "Project/build/artwork/chiikawa-eat-frames-v30.png",
+      "bytes": 763011,
+      "sha256": "b9ec72090a413acd6544eba8b9bde3e14fa715d524f36b93e68d209929b864d8"
+    },
+    {
+      "kind": "image",
+      "source": "build/artwork/chiikawa-eat-v30.gif",
+      "archive_path": "Project/build/artwork/chiikawa-eat-v30.gif",
+      "bytes": 422779,
+      "sha256": "b041c08960863c3f9e67446dfb1c553768cbcfc86aa0203ad0230c672eea445f"
+    },
+    {
+      "kind": "image",
+      "source": "build/artwork/chiikawa-expression-transition-v30.gif",
+      "archive_path": "Project/build/artwork/chiikawa-expression-transition-v30.gif",
+      "bytes": 225907,
+      "sha256": "576f17fcb2dee68ce433dcf5a707c327a6c81434861dd529887e9dd6310a4524"
+    },
+    {
+      "kind": "image",
       "source": "build/artwork/chiikawa-hover-attack-v24.gif",
       "archive_path": "Project/build/artwork/chiikawa-hover-attack-v24.gif",
       "bytes": 504820,
@@ -15626,10 +16809,52 @@
     },
     {
       "kind": "image",
+      "source": "build/artwork/chiikawa-hug-frames-v30.png",
+      "archive_path": "Project/build/artwork/chiikawa-hug-frames-v30.png",
+      "bytes": 907079,
+      "sha256": "3d091ae39de58c50cc81746c164e0412c0a1041831268b1502fa329c0d58c114"
+    },
+    {
+      "kind": "image",
+      "source": "build/artwork/chiikawa-hug-v30.gif",
+      "archive_path": "Project/build/artwork/chiikawa-hug-v30.gif",
+      "bytes": 347122,
+      "sha256": "a926967a1fff07bb695050daa3c2ce9b2cfcd44347c32a484d8047f880ca12ab"
+    },
+    {
+      "kind": "image",
       "source": "build/artwork/chiikawa-life-v26.png",
       "archive_path": "Project/build/artwork/chiikawa-life-v26.png",
-      "bytes": 822627,
-      "sha256": "ce9b012401bbcd39bb42a9940dc1687142ba1602a82c64ed12277e7981945ca8"
+      "bytes": 785833,
+      "sha256": "179982df04d37d41741922c2cd89fa7240f6915cc338d6c332910da1d8eaefa5"
+    },
+    {
+      "kind": "image",
+      "source": "build/artwork/chiikawa-pajamas-frames-v30.png",
+      "archive_path": "Project/build/artwork/chiikawa-pajamas-frames-v30.png",
+      "bytes": 738368,
+      "sha256": "2516edc240f6ec86ec07592d861b5c3ad90c80384976abd9bc143c82d9060117"
+    },
+    {
+      "kind": "image",
+      "source": "build/artwork/chiikawa-pajamas-v30.gif",
+      "archive_path": "Project/build/artwork/chiikawa-pajamas-v30.gif",
+      "bytes": 216362,
+      "sha256": "fe96002659ed7632440ef14a6b82ad293b69e1db325aa948a610cb1160ddbbbb"
+    },
+    {
+      "kind": "image",
+      "source": "build/artwork/chiikawa-rest-frames-v30.png",
+      "archive_path": "Project/build/artwork/chiikawa-rest-frames-v30.png",
+      "bytes": 788328,
+      "sha256": "0cc2d3f6fc13f4adb04003cd0b1c5b99957c45be4230fe357ed4fa591290c626"
+    },
+    {
+      "kind": "image",
+      "source": "build/artwork/chiikawa-rest-v30.gif",
+      "archive_path": "Project/build/artwork/chiikawa-rest-v30.gif",
+      "bytes": 263875,
+      "sha256": "b22847e70f93026d667ea6754a3945a8be2ec8b646c99cdf77c3d8bdb7040bb6"
     },
     {
       "kind": "image",
@@ -15651,6 +16876,13 @@
       "archive_path": "Project/build/artwork/chiikawa-study-v26.gif",
       "bytes": 338884,
       "sha256": "135e1df75a4910da49ad582b46de0b5aad618ac6064f27af7aaa9f7e9bfc17f7"
+    },
+    {
+      "kind": "image",
+      "source": "build/artwork/chiikawa-walking-blink-v30.gif",
+      "archive_path": "Project/build/artwork/chiikawa-walking-blink-v30.gif",
+      "bytes": 577850,
+      "sha256": "e8d055943baf601bc8a02eb1c63695e6650dd58f2cfcf64bad13a4c62e036881"
     },
     {
       "kind": "image",
@@ -15838,8 +17070,8 @@
       "kind": "image",
       "source": "build/artwork/shared-home-designs-v29.png",
       "archive_path": "Project/build/artwork/shared-home-designs-v29.png",
-      "bytes": 905178,
-      "sha256": "507decf3dc976cbc3ce62a287bbb861c7f98bc4253899da0e321f17bd99ccd69"
+      "bytes": 905522,
+      "sha256": "db7dafea36a93a2dd90d3f6b662aa2291f9960bd1a54084212240c70346bd7aa"
     },
     {
       "kind": "image",
@@ -15852,8 +17084,8 @@
       "kind": "image",
       "source": "build/artwork/shared-home-sleep-v29.gif",
       "archive_path": "Project/build/artwork/shared-home-sleep-v29.gif",
-      "bytes": 464534,
-      "sha256": "793885f164d612ae426235698a7395efffdedcce80a9ec9f5cc341fa0fc4a68e"
+      "bytes": 386120,
+      "sha256": "d16f72e9da9be22249268c28f6bea58baf54ed23e7473a17e5e7486f123fb8e7"
     },
     {
       "kind": "image",
@@ -15901,8 +17133,8 @@
       "kind": "supporting",
       "source": "Source/README.txt",
       "archive_path": "README.txt",
-      "bytes": 7517,
-      "sha256": "eac3c420135d81028a7a96c207e79cf14fd2cb331376df680c72a5a70ccb326d"
+      "bytes": 7843,
+      "sha256": "8d50fd1dabdfd24959e8f71b06a040926c652301fb0f185ac6d9c146d3aa934a"
     },
     {
       "kind": "supporting",
@@ -16424,6 +17656,13 @@
     },
     {
       "kind": "image",
+      "source": "Source/Versions/507decf3dc976cbc/build/artwork/shared-home-designs-v29.png",
+      "archive_path": "Versions/507decf3dc976cbc/build/artwork/shared-home-designs-v29.png",
+      "bytes": 905178,
+      "sha256": "507decf3dc976cbc3ce62a287bbb861c7f98bc4253899da0e321f17bd99ccd69"
+    },
+    {
+      "kind": "image",
       "source": "Source/Versions/5d0f3f13809fe8bd/build/artwork/hachiware-sprite-preview.png",
       "archive_path": "Versions/5d0f3f13809fe8bd/build/artwork/hachiware-sprite-preview.png",
       "bytes": 273169,
@@ -16449,6 +17688,13 @@
       "archive_path": "Versions/78caee79f5dc1509/build/artwork/hachiware-hover-attack-v19.gif",
       "bytes": 233860,
       "sha256": "78caee79f5dc15090f139a42b8add077a4df55730e5727fd40a447c64df91546"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/793885f164d612ae/build/artwork/shared-home-sleep-v29.gif",
+      "archive_path": "Versions/793885f164d612ae/build/artwork/shared-home-sleep-v29.gif",
+      "bytes": 464534,
+      "sha256": "793885f164d612ae426235698a7395efffdedcce80a9ec9f5cc341fa0fc4a68e"
     },
     {
       "kind": "image",
@@ -16519,6 +17765,13 @@
       "archive_path": "Versions/ce1745e702907101/build/artwork/hachiware-equipped-directions-v7.png",
       "bytes": 795396,
       "sha256": "ce1745e702907101647deb1efd01f1d211f266193e4a953d4703a755a5505b74"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/ce9b012401bbcd39/build/artwork/chiikawa-life-v26.png",
+      "archive_path": "Versions/ce9b012401bbcd39/build/artwork/chiikawa-life-v26.png",
+      "bytes": 822627,
+      "sha256": "ce9b012401bbcd39bb42a9940dc1687142ba1602a82c64ed12277e7981945ca8"
     },
     {
       "kind": "image",
@@ -17354,8 +18607,8 @@
       "sha256": "8a42caa40e469a5ee00fa2b860d14756cc1fd73bc8fcf73332c50b87a92c9c3b"
     }
   ],
-  "updated_at": "2026-10-21T05:36:03.505099+00:00",
-  "latest_applied": "RestoredChiikawaHome-v29",
+  "updated_at": "2026-10-21T07:36:14.856101+00:00",
+  "latest_applied": "ChiikawaMotion-v30",
   "applied_directions": [
     "down-left",
     "down-right"
