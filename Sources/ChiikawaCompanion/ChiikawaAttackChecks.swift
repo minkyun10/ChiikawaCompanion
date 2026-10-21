@@ -70,6 +70,9 @@ extension SelfTest {
         check(actor.view.action == .attack && abs((actor.view.actionTime ?? -1) - 0.55) < 0.00001
               && desktop.chiikawaWorld.ground == ground && desktop.itemWorld.ground == otherGround && desktop.activityWorld.positions == life,
               "holding Chiikawa hover advances a local attack clock without shifting either character's props")
+        // Keep the release check independent of a random positive diagonal and
+        // WindowServer rounding its first subpixel steps to the same origin.
+        actor.motion.destination = NSPoint(x: origin.x-220,y: origin.y)
         tick(0.75 + DesktopActivity.updateInterval)
         check(actor.view.action == nil && actor.view.actionTime == nil && actor.motion.isWalking
               && desktop.chiikawaWorld.equipped == .pinkSasumata,

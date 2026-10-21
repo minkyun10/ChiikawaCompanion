@@ -31,6 +31,7 @@ final class DesktopFriendView: NSView {
     var chiikawaItem: ChiikawaItem?
     var chiikawaReaction: ChiikawaReaction?
     var chiikawaLife: ChiikawaLifeAction?
+    var attackUsesOverlay = false
     var isDragging = false
     var onClick: (() -> Void)?
     var onToggleWalking: (() -> Void)?
@@ -57,6 +58,7 @@ final class DesktopFriendView: NSView {
     override func acceptsFirstMouse(for event: NSEvent?) -> Bool { true }
     override func accessibilityPerformPress() -> Bool { onClick?(); return true }
     override func draw(_ dirtyRect: NSRect) {
+        if action == .attack && attackUsesOverlay { return }
         FriendArtwork.draw(friend, in: bounds, time: time, happy: happy, walking: walking,
                            looking: looking, facing: facing, walkPhase: walkPhase, pose: pose,
                            action: action, equipped: equipped, actionTime: actionTime,
@@ -127,6 +129,7 @@ final class FriendActor {
     let friend: Friend
     let panel: FriendPanel
     let view: DesktopFriendView
+    let attackOverlay: AttackOverlay
     var motion = RoamingMotion()
     var gait = WalkingGait()
     let phase: Double
@@ -138,9 +141,14 @@ final class FriendActor {
     var wasHovered = false
     var lastGreeting: String?
     var clickReaction = ChiikawaReaction.happy
+    var pointerArtworkIsVisible: Bool {
+        let shown = view.attackUsesOverlay ? attackOverlay.panel : panel
+        return shown.occlusionState.contains(.visible)
+    }
 
     init(friend: Friend, index: Int) {
         self.friend = friend
+        attackOverlay = AttackOverlay(friend: friend)
         phase = Double(index) * 1.7
         view = DesktopFriendView(friend: friend)
         panel = FriendPanel(contentRect: view.bounds, styleMask: [.borderless, .nonactivatingPanel],
@@ -373,7 +381,7 @@ final class DesktopController {
     }
     deinit {
         timer?.invalidate()
-        actors.forEach { $0.dismissBubble(); $0.panel.close() }
+        actors.forEach { $0.dismissBubble(); $0.panel.close(); $0.attackOverlay.panel.close() }
         desktopItems.values.forEach { $0.panel.close() }
         chiikawaDesktopItems.values.forEach { $0.panel.close() }
         chiikawaHome.panel.close(); chiikawaDesk.panel.close(); chiikawaVoice.stop()
@@ -683,7 +691,7 @@ final class DesktopController {
                 continue
             }
             if !actor.panel.isVisible { actor.panel.orderFrontRegardless() }
-            let hovered = !actor.view.isDragging && (pointerCanReachCharacter ?? actor.panel.occlusionState.contains(.visible))
+            let hovered = !actor.view.isDragging && (pointerCanReachCharacter ?? actor.pointerArtworkIsVisible)
                 && DesktopGeometry.hit(mouse, in: actor.panel.frame)
             actor.panel.ignoresMouseEvents = !hovered && !actor.view.isDragging
             let activity = DesktopActivity.resolve(roaming: state.isWalking(actor.friend), hovered: hovered,
@@ -787,6 +795,7 @@ final class DesktopController {
         if !homeWasVisible && homeVisible && !homeRoutine.isInside {
             actors.filter { $0.panel.isVisible }.forEach { $0.panel.order(.above, relativeTo: home.panel.windowNumber) }
         }
+        actors.forEach { $0.attackOverlay.update(actor: $0) }
     }
     private func updateActivitySpots(visible: Bool, mouse: NSPoint, actor: FriendActor) {
         for (spot, object) in desktopActivitySpots {

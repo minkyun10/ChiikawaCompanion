@@ -1,10 +1,10 @@
 {
   "created_at": "2026-10-16T12:08:58.617148+00:00",
   "operation": "copy; originals preserved",
-  "image_file_count": 2059,
-  "unique_image_content_count": 1351,
-  "supporting_file_count": 295,
-  "image_bytes": 475369167,
+  "image_file_count": 2095,
+  "unique_image_content_count": 1358,
+  "supporting_file_count": 309,
+  "image_bytes": 492350210,
   "symmetric_walk_runtime_applied": true,
   "files": [
     {
@@ -440,6 +440,314 @@
       "archive_path": "AppliedWalk-v5/validation.json",
       "bytes": 956,
       "sha256": "a3f3ef4443d40a067fd0d8db150ef0bd7715194c3afbb2af48147f822e7e391a"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/AttackScale-v27/README.txt",
+      "archive_path": "AttackScale-v27/README.txt",
+      "bytes": 2794,
+      "sha256": "cd79f74b78a6a9e427841c9094649506205e9795e9e6c4efe34f550b2234de70"
+    },
+    {
+      "kind": "image",
+      "source": "Source/AttackScale-v27/Review/app-settings-v27.png",
+      "archive_path": "AttackScale-v27/Review/app-settings-v27.png",
+      "bytes": 184285,
+      "sha256": "1eaa0f6faf497f3dea647b70e40cd13b807402a74d52a1e5bc8485f9b7797c08"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/AttackScale-v27/Review/body-measurements.json",
+      "archive_path": "AttackScale-v27/Review/body-measurements.json",
+      "bytes": 1018,
+      "sha256": "4a5b023d4eb9b7c745dcda3344d584e77c8c2bcd8345fdecbfbd96863f7fd85f"
+    },
+    {
+      "kind": "image",
+      "source": "Source/AttackScale-v27/Review/chiikawa-attack-frames-v24.png",
+      "archive_path": "AttackScale-v27/Review/chiikawa-attack-frames-v24.png",
+      "bytes": 771618,
+      "sha256": "f9de2b9c93f491c0d2b405c49a529924ff96cea86dd514e52073b8ddf2198d94"
+    },
+    {
+      "kind": "image",
+      "source": "Source/AttackScale-v27/Review/chiikawa-hover-attack-v24.gif",
+      "archive_path": "AttackScale-v27/Review/chiikawa-hover-attack-v24.gif",
+      "bytes": 504820,
+      "sha256": "a7375cb1c0a342fe72baf68d6257b23cfdf32fc38dd17f961078a8d5bc9a8d3a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/AttackScale-v27/Review/chiikawa-life-v26.png",
+      "archive_path": "AttackScale-v27/Review/chiikawa-life-v26.png",
+      "bytes": 859018,
+      "sha256": "bc9258a08266868487e71878d5af783c741c38479683f69378c24d63e03a1b91"
+    },
+    {
+      "kind": "image",
+      "source": "Source/AttackScale-v27/Review/chiikawa-runtime-equipment-v23.png",
+      "archive_path": "AttackScale-v27/Review/chiikawa-runtime-equipment-v23.png",
+      "bytes": 1094011,
+      "sha256": "53a74564e3be5356af8141ae7304eebfbef113d21bf5aa636a312e598fc59fc5"
+    },
+    {
+      "kind": "image",
+      "source": "Source/AttackScale-v27/Review/chiikawa-runtime-walk-v23.gif",
+      "archive_path": "AttackScale-v27/Review/chiikawa-runtime-walk-v23.gif",
+      "bytes": 942413,
+      "sha256": "f9f94cf094de33f0bfbeea5e20df587914ea6a7c0c136112dfc0e9545476e3c7"
+    },
+    {
+      "kind": "image",
+      "source": "Source/AttackScale-v27/Review/chiikawa-study-v26.gif",
+      "archive_path": "AttackScale-v27/Review/chiikawa-study-v26.gif",
+      "bytes": 338884,
+      "sha256": "135e1df75a4910da49ad582b46de0b5aad618ac6064f27af7aaa9f7e9bfc17f7"
+    },
+    {
+      "kind": "image",
+      "source": "Source/AttackScale-v27/Review/friends.png",
+      "archive_path": "AttackScale-v27/Review/friends.png",
+      "bytes": 174820,
+      "sha256": "093914a47e35f0a406674ae65f26873b66d519c816ba2d2a5a2c734e84ccbefb"
+    },
+    {
+      "kind": "image",
+      "source": "Source/AttackScale-v27/Review/hachiware-attack-frames-v19.png",
+      "archive_path": "AttackScale-v27/Review/hachiware-attack-frames-v19.png",
+      "bytes": 627298,
+      "sha256": "5d3ad7baec89d0de923f543f447ca1069e3ea1c49d55ab930c13bf310b621ff8"
+    },
+    {
+      "kind": "image",
+      "source": "Source/AttackScale-v27/Review/hachiware-cave-home-v11.png",
+      "archive_path": "AttackScale-v27/Review/hachiware-cave-home-v11.png",
+      "bytes": 373145,
+      "sha256": "c07da50b1919b1012dc1bed35d68833c02da01bf5791b436de85f33de8da54c6"
+    },
+    {
+      "kind": "image",
+      "source": "Source/AttackScale-v27/Review/hachiware-daily-frames-v16.png",
+      "archive_path": "AttackScale-v27/Review/hachiware-daily-frames-v16.png",
+      "bytes": 666252,
+      "sha256": "a64ac89f71591894f34f509d3e75b64180912291022c506ebe241861c1531c79"
+    },
+    {
+      "kind": "image",
+      "source": "Source/AttackScale-v27/Review/hachiware-eat-v16.gif",
+      "archive_path": "AttackScale-v27/Review/hachiware-eat-v16.gif",
+      "bytes": 221083,
+      "sha256": "549f4f2875bde1c9be09c2b3b3fbab3a9fb0b8733a55ab95961503717ad041d0"
+    },
+    {
+      "kind": "image",
+      "source": "Source/AttackScale-v27/Review/hachiware-eight-directions-v10.gif",
+      "archive_path": "AttackScale-v27/Review/hachiware-eight-directions-v10.gif",
+      "bytes": 608909,
+      "sha256": "0aa86b98ca9e08f3c71468e7bbdab1743344f8bf92ad80e6bd0d8eb8babb964a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/AttackScale-v27/Review/hachiware-equipped-directions-v11.png",
+      "archive_path": "AttackScale-v27/Review/hachiware-equipped-directions-v11.png",
+      "bytes": 583384,
+      "sha256": "b05323d89f4ded4008682dda8aa4ecb31bf0ad03002312120ea38364c334a98a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/AttackScale-v27/Review/hachiware-expressions-v11.png",
+      "archive_path": "AttackScale-v27/Review/hachiware-expressions-v11.png",
+      "bytes": 451935,
+      "sha256": "71309900abc75f15becdc7f339510bd084b568505e5c5675df5b251e15d5b322"
+    },
+    {
+      "kind": "image",
+      "source": "Source/AttackScale-v27/Review/hachiware-home-sleep-v11.gif",
+      "archive_path": "AttackScale-v27/Review/hachiware-home-sleep-v11.gif",
+      "bytes": 595803,
+      "sha256": "9d8d647db89bd8f2d0e25cca5aa4565fd02dfac634f562410c0aea88e8b86def"
+    },
+    {
+      "kind": "image",
+      "source": "Source/AttackScale-v27/Review/hachiware-hover-attack-v19.gif",
+      "archive_path": "AttackScale-v27/Review/hachiware-hover-attack-v19.gif",
+      "bytes": 408145,
+      "sha256": "c8d3ec8fc8b27f65508c8957c51aa0cd84f5a2c42783eb15c0a0a307631f3521"
+    },
+    {
+      "kind": "image",
+      "source": "Source/AttackScale-v27/Review/hachiware-items-v11.gif",
+      "archive_path": "AttackScale-v27/Review/hachiware-items-v11.gif",
+      "bytes": 550859,
+      "sha256": "863cf17650a351eeb4ec8af250f279c743215f66f5cb17c71111ac360f3fcb2a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/AttackScale-v27/Review/hachiware-proximity-actions-v17.png",
+      "archive_path": "AttackScale-v27/Review/hachiware-proximity-actions-v17.png",
+      "bytes": 195647,
+      "sha256": "c02ec015715c554b1ff63811d54e16cb7d03620a4bd353f3e1695e9121fa435f"
+    },
+    {
+      "kind": "image",
+      "source": "Source/AttackScale-v27/Review/hachiware-side-cycle.png",
+      "archive_path": "AttackScale-v27/Review/hachiware-side-cycle.png",
+      "bytes": 791623,
+      "sha256": "56232bb7b3fc78aaec9e6c94cb49bf64de941422119a108cf2428b1fb413de9f"
+    },
+    {
+      "kind": "image",
+      "source": "Source/AttackScale-v27/Review/hachiware-sprite-preview.png",
+      "archive_path": "AttackScale-v27/Review/hachiware-sprite-preview.png",
+      "bytes": 266383,
+      "sha256": "62b8b826f3d7ec00fb5987636f46627b104ec01bd6b2c2ab62aaf9e28b0466cd"
+    },
+    {
+      "kind": "image",
+      "source": "Source/AttackScale-v27/Review/hachiware-study-v16.gif",
+      "archive_path": "AttackScale-v27/Review/hachiware-study-v16.gif",
+      "bytes": 236231,
+      "sha256": "2d52c80db026ab3b3d2ad81ab8aaf51d41774d1933d77a8c4ebdcfd120c95c60"
+    },
+    {
+      "kind": "image",
+      "source": "Source/AttackScale-v27/Review/hachiware-vomit-v16.gif",
+      "archive_path": "AttackScale-v27/Review/hachiware-vomit-v16.gif",
+      "bytes": 209889,
+      "sha256": "1e6f36dc62e8f3f79ca2541a8b00aa29db65e2506108891e140bebee9b5e3c03"
+    },
+    {
+      "kind": "image",
+      "source": "Source/AttackScale-v27/Review/hachiware-walk.png",
+      "archive_path": "AttackScale-v27/Review/hachiware-walk.png",
+      "bytes": 136739,
+      "sha256": "54bfabb78c7f56e08fd0262c4e2fd12067405b766a5b4a474df8379234184c6f"
+    },
+    {
+      "kind": "image",
+      "source": "Source/AttackScale-v27/Review/icon.png",
+      "archive_path": "AttackScale-v27/Review/icon.png",
+      "bytes": 257854,
+      "sha256": "fadb9924edc62d95697cdefc883dbb54e597c528d87278bf12af3ed433319587"
+    },
+    {
+      "kind": "image",
+      "source": "Source/AttackScale-v27/Review/life-prop-desk-v17.png",
+      "archive_path": "AttackScale-v27/Review/life-prop-desk-v17.png",
+      "bytes": 5048,
+      "sha256": "b3bf50da9919d286490de0b1bc75165225187ce96530ab191870413bdeb2c805"
+    },
+    {
+      "kind": "image",
+      "source": "Source/AttackScale-v27/Review/life-prop-furball-v17.png",
+      "archive_path": "AttackScale-v27/Review/life-prop-furball-v17.png",
+      "bytes": 3314,
+      "sha256": "300da36602f4db21e52c44827e33e6144e244d0aaaed6437ea99a8f11e8fa75b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/AttackScale-v27/Review/life-prop-rice-v17.png",
+      "archive_path": "AttackScale-v27/Review/life-prop-rice-v17.png",
+      "bytes": 3646,
+      "sha256": "07dd6416c0a2ba2c46cca8e12db5ee0b6e5078d3e36bbd94c6a6d548cf1e1361"
+    },
+    {
+      "kind": "image",
+      "source": "Source/AttackScale-v27/Review/weapon-hover-size-v27.gif",
+      "archive_path": "AttackScale-v27/Review/weapon-hover-size-v27.gif",
+      "bytes": 893121,
+      "sha256": "3c0149601d6146db9ff1ba8f776416162e3b87f00b687ea596032e25d1cda14d"
+    },
+    {
+      "kind": "image",
+      "source": "Source/AttackScale-v27/Review/weapon-hover-size-v27.png",
+      "archive_path": "AttackScale-v27/Review/weapon-hover-size-v27.png",
+      "bytes": 409932,
+      "sha256": "6a3fb238d36d567e0c64cf8b94f35fd3a37b0e7c312224f2f67a30d4637827f1"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/AttackScale-v27/build-cli.txt",
+      "archive_path": "AttackScale-v27/build-cli.txt",
+      "bytes": 265,
+      "sha256": "27c0226eef1dafe75be4c40b55fcdd4c50592e4a591750a913088871df44e315"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/AttackScale-v27/build-log.txt",
+      "archive_path": "AttackScale-v27/build-log.txt",
+      "bytes": 472,
+      "sha256": "615a9fc416456822f2b4aee06e3afb3d7d9df52fb4bbb9d72cdbb88cb426d90f"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/AttackScale-v27/codesign.txt",
+      "archive_path": "AttackScale-v27/codesign.txt",
+      "bytes": 109,
+      "sha256": "6210c61790ac2c9d268a576bdecb1c906f66d332a0c64871ceff1469e071d542"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/AttackScale-v27/render-log.txt",
+      "archive_path": "AttackScale-v27/render-log.txt",
+      "bytes": 18,
+      "sha256": "e4e815f865d1d6b4f0ba8e7a4cf091562580558fb1729df68d170f0246609404"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/AttackScale-v27/resources-preserved.json",
+      "archive_path": "AttackScale-v27/resources-preserved.json",
+      "bytes": 4688,
+      "sha256": "e09ac76f0b80e0863a75cb667e65371e2dcf76a8b3f92d16a7c2a49a4411a7d6"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/AttackScale-v27/security-assets.json",
+      "archive_path": "AttackScale-v27/security-assets.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/AttackScale-v27/security-assets.txt",
+      "archive_path": "AttackScale-v27/security-assets.txt",
+      "bytes": 79,
+      "sha256": "bbd1d1ceefcaba116226b73c794f671dc82b15a07c61fe0997bc4ccd7c4d7c35"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/AttackScale-v27/security-code.json",
+      "archive_path": "AttackScale-v27/security-code.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/AttackScale-v27/security-code.txt",
+      "archive_path": "AttackScale-v27/security-code.txt",
+      "bytes": 81,
+      "sha256": "d00c08ad98fd100472b633ca89b4f798288b044edb3728678d213695b4aabc8b"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/AttackScale-v27/self-test-app.txt",
+      "archive_path": "AttackScale-v27/self-test-app.txt",
+      "bytes": 24079,
+      "sha256": "ce8e65d4d66f764ac629f6988cf5824b6279652e372f2f698dcdaacf47d137e4"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/AttackScale-v27/self-test-cli.txt",
+      "archive_path": "AttackScale-v27/self-test-cli.txt",
+      "bytes": 23488,
+      "sha256": "7e04225ccc2941f3b897de2d459d449b0522d93adf308ed13e70723f1c30532b"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/AttackScale-v27/validation.json",
+      "archive_path": "AttackScale-v27/validation.json",
+      "bytes": 968,
+      "sha256": "bdc3f20e91b2d702c40bbb23fe58655dc79410a1b38b806f46906856ffe08a1a"
     },
     {
       "kind": "image",
@@ -15285,15 +15593,15 @@
       "kind": "image",
       "source": "build/artwork/chiikawa-attack-frames-v24.png",
       "archive_path": "Project/build/artwork/chiikawa-attack-frames-v24.png",
-      "bytes": 522211,
-      "sha256": "3c16e669910b3b9cb24aa1752ca36a1323551da65d21c8e8cf938d38fdf356ba"
+      "bytes": 771618,
+      "sha256": "f9de2b9c93f491c0d2b405c49a529924ff96cea86dd514e52073b8ddf2198d94"
     },
     {
       "kind": "image",
       "source": "build/artwork/chiikawa-hover-attack-v24.gif",
       "archive_path": "Project/build/artwork/chiikawa-hover-attack-v24.gif",
-      "bytes": 317301,
-      "sha256": "6c47831b9500f53d8ea25a376351aa5bb616f243b1ca3ad4fc90debb16e046f2"
+      "bytes": 504820,
+      "sha256": "a7375cb1c0a342fe72baf68d6257b23cfdf32fc38dd17f961078a8d5bc9a8d3a"
     },
     {
       "kind": "image",
@@ -15341,8 +15649,8 @@
       "kind": "image",
       "source": "build/artwork/hachiware-attack-frames-v19.png",
       "archive_path": "Project/build/artwork/hachiware-attack-frames-v19.png",
-      "bytes": 382957,
-      "sha256": "6437de74503fd088c34d11c6c63dda91013bf04d5b221d014f8c92284cba9b68"
+      "bytes": 627298,
+      "sha256": "5d3ad7baec89d0de923f543f447ca1069e3ea1c49d55ab930c13bf310b621ff8"
     },
     {
       "kind": "image",
@@ -15411,8 +15719,8 @@
       "kind": "image",
       "source": "build/artwork/hachiware-hover-attack-v19.gif",
       "archive_path": "Project/build/artwork/hachiware-hover-attack-v19.gif",
-      "bytes": 233860,
-      "sha256": "78caee79f5dc15090f139a42b8add077a4df55730e5727fd40a447c64df91546"
+      "bytes": 408145,
+      "sha256": "c8d3ec8fc8b27f65508c8957c51aa0cd84f5a2c42783eb15c0a0a307631f3521"
     },
     {
       "kind": "image",
@@ -15500,6 +15808,20 @@
     },
     {
       "kind": "image",
+      "source": "build/artwork/weapon-hover-size-v27.gif",
+      "archive_path": "Project/build/artwork/weapon-hover-size-v27.gif",
+      "bytes": 893121,
+      "sha256": "3c0149601d6146db9ff1ba8f776416162e3b87f00b687ea596032e25d1cda14d"
+    },
+    {
+      "kind": "image",
+      "source": "build/artwork/weapon-hover-size-v27.png",
+      "archive_path": "Project/build/artwork/weapon-hover-size-v27.png",
+      "bytes": 409932,
+      "sha256": "6a3fb238d36d567e0c64cf8b94f35fd3a37b0e7c312224f2f67a30d4637827f1"
+    },
+    {
+      "kind": "image",
       "source": "build/desktop-hachiware-12.png",
       "archive_path": "Project/build/desktop-hachiware-12.png",
       "bytes": 15663,
@@ -15530,8 +15852,8 @@
       "kind": "supporting",
       "source": "Source/README.txt",
       "archive_path": "README.txt",
-      "bytes": 6659,
-      "sha256": "6314b8d879d8d41242a038b0e34c2a1003775e02a3fd3b64b20cd0904a367e6a"
+      "bytes": 6930,
+      "sha256": "96c3f9a07d8cfa18c5c95071b004e34cb66665d361586baee0091f60a9a7d1f1"
     },
     {
       "kind": "image",
@@ -15570,6 +15892,13 @@
     },
     {
       "kind": "image",
+      "source": "Source/Versions/3c16e669910b3b9c/build/artwork/chiikawa-attack-frames-v24.png",
+      "archive_path": "Versions/3c16e669910b3b9c/build/artwork/chiikawa-attack-frames-v24.png",
+      "bytes": 522211,
+      "sha256": "3c16e669910b3b9cb24aa1752ca36a1323551da65d21c8e8cf938d38fdf356ba"
+    },
+    {
+      "kind": "image",
       "source": "Source/Versions/3fa9a12cb7cf2def/build/artwork/hachiware-equipped-directions-v11.png",
       "archive_path": "Versions/3fa9a12cb7cf2def/build/artwork/hachiware-equipped-directions-v11.png",
       "bytes": 586614,
@@ -15602,6 +15931,27 @@
       "archive_path": "Versions/5d0f3f13809fe8bd/build/artwork/hachiware-sprite-preview.png",
       "bytes": 273169,
       "sha256": "5d0f3f13809fe8bd7d9023bcdf6142befb673a833d62dbefeb3bfdc07720c0c0"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/6437de74503fd088/build/artwork/hachiware-attack-frames-v19.png",
+      "archive_path": "Versions/6437de74503fd088/build/artwork/hachiware-attack-frames-v19.png",
+      "bytes": 382957,
+      "sha256": "6437de74503fd088c34d11c6c63dda91013bf04d5b221d014f8c92284cba9b68"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/6c47831b9500f53d/build/artwork/chiikawa-hover-attack-v24.gif",
+      "archive_path": "Versions/6c47831b9500f53d/build/artwork/chiikawa-hover-attack-v24.gif",
+      "bytes": 317301,
+      "sha256": "6c47831b9500f53d8ea25a376351aa5bb616f243b1ca3ad4fc90debb16e046f2"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/78caee79f5dc1509/build/artwork/hachiware-hover-attack-v19.gif",
+      "archive_path": "Versions/78caee79f5dc1509/build/artwork/hachiware-hover-attack-v19.gif",
+      "bytes": 233860,
+      "sha256": "78caee79f5dc15090f139a42b8add077a4df55730e5727fd40a447c64df91546"
     },
     {
       "kind": "image",
@@ -16486,8 +16836,8 @@
       "sha256": "8a42caa40e469a5ee00fa2b860d14756cc1fd73bc8fcf73332c50b87a92c9c3b"
     }
   ],
-  "updated_at": "2026-10-20T13:13:26.751421+00:00",
-  "latest_applied": "ChiikawaLife-v26",
+  "updated_at": "2026-10-21T04:57:19.000873+00:00",
+  "latest_applied": "AttackScale-v27",
   "applied_directions": [
     "down-left",
     "down-right"

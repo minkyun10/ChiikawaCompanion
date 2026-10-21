@@ -222,6 +222,7 @@ enum SelfTest {
         runChiikawaChecks(defaults: testDefaults) { check($0, $1) }
         runChiikawaAttackChecks { check($0, $1) }
         runChiikawaLifeChecks { check($0, $1) }
+        runAttackSizeChecks { check($0, $1) }
         runHomeTests(desktop: desktop, now: now) { check($0, $1) }
         var performance = CompanionPerformance()
         performance.begin(.camera, now: now, pickingUp: true)
@@ -445,6 +446,7 @@ enum SelfTest {
         renderChiikawaReview(to: directory)
         renderChiikawaAttack(to: directory)
         renderChiikawaLife(to: directory)
+        renderAttackSizeComparison(to: directory)
     }
 
     static func renderItems(to directory: URL) {

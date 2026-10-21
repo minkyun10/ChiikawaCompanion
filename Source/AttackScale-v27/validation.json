@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-21",
+  "version": "0.15.1",
+  "build": 29,
+  "baseline_commit": "212b751c5f8da8ea406ce8591b9a5a6f9511900e",
+  "cli_checks_passed": 314,
+  "final_packaged_checks_passed": 321,
+  "new_regression_checks": 16,
+  "characters": [
+    "hachiware",
+    "chiikawa"
+  ],
+  "rendered_attack_frames_per_character": 12,
+  "walking_body_tolerance_pixels": 2,
+  "original_actor_size_points": [
+    132,
+    150
+  ],
+  "original_runtime_resources_preserved": 45,
+  "attack_timing_preserved": {
+    "frames": 12,
+    "cycle_seconds": 1.2
+  },
+  "codesign_verification": "passed",
+  "native_app_relaunched": true,
+  "native_settings_observed": true,
+  "native_hover_capture": false,
+  "hover_verification": "Full raster measurement of every attack frame plus real desktop controller hover entry and exit tests.",
+  "new_ai_image_generation": false,
+  "security_scope": [
+    "Sources/ChiikawaCompanion",
+    "Source/AttackScale-v27"
+  ],
+  "security_findings": 0
+}
