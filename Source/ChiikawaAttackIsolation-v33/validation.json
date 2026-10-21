@@ -1,0 +1,18 @@
+{
+  "verified": "2026-10-21",
+  "version": "0.17.3",
+  "build": 35,
+  "packagedChecksPassed": 389,
+  "newRegressionChecks": 10,
+  "beforeRegression": "expected failure: previous happy body remains in reused actor drawing buffer",
+  "afterRegression": "passed",
+  "heldHoverSeconds": 6,
+  "heldHoverTicks": 360,
+  "resourceFilesPreserved": 51,
+  "codesign": "passed",
+  "nativeAppRelaunched": true,
+  "settingsClosedAfterReview": true,
+  "nativeDesktopAttackCapture": false,
+  "attackValidation": "native view raster and controller integration checks",
+  "voicePlaybackPolicy": "click and explicit preview only"
+}

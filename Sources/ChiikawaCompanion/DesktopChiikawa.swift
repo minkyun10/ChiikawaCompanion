@@ -130,6 +130,8 @@ extension DesktopController {
         actor.panel.ignoresMouseEvents = !hovered && !actor.view.isDragging
         let activity = DesktopActivity.resolve(roaming: state.isWalking(.chiikawa), hovered: hovered,
             dragging: actor.view.isDragging, dialogueUntil: actor.bubbleUntil, now: now)
+        let armedHover = state.expressive && activity == .hovering && chiikawaWorld.equipped == .pinkSasumata
+        if armedHover && chiikawaLifeRoutine.selected != nil { stopChiikawaLife() }
         if hovered && !actor.wasHovered { actor.hoverStarted = now }
         actor.wasHovered = hovered
         chiikawaStudyWorld.observe(contact: ItemWorld.contactPoint(origin: actor.panel.frame.origin))
@@ -183,16 +185,20 @@ extension DesktopController {
         actor.view.time = time + actor.phase; actor.view.walking = actor.motion.isWalking
         actor.view.facing = actor.motion.facing; actor.view.walkPhase = actor.gait.phase
         actor.view.pose = HachiwarePose.forVelocity(actor.motion.velocity)
-        actor.view.happy = state.expressive && activity.reacts
         let lifeAction = chiikawaLifeRoutine.action(now: now)
+        let attacking = armedHover && lifeAction == nil
+        if attacking && actor.view.action != .attack { actor.hoverStarted = now }
+        actor.view.happy = state.expressive && activity.reacts && !attacking
         actor.view.chiikawaLife = lifeAction
-        actor.view.chiikawaReaction = state.expressive
+        actor.view.chiikawaReaction = state.expressive && !attacking
             ? (activity == .hovering ? .happy : activity == .speaking ? actor.clickReaction : nil) : nil
-        let attacking = lifeAction == nil && state.expressive && activity == .hovering && chiikawaWorld.equipped == .pinkSasumata
         actor.view.action = attacking ? .attack : nil
         actor.view.actionTime = lifeAction != nil ? chiikawaLifeRoutine.elapsed(now: now)
             : attacking ? max(0, now.timeIntervalSince(actor.hoverStarted)) : nil
-        if attacking { actor.view.chiikawaReaction = nil }
+        if attacking {
+            actor.view.previousChiikawaReaction = nil
+            actor.view.chiikawaReactionChanged = -Double.infinity
+        }
         actor.view.chiikawaItem = chiikawaWorld.equipped; actor.view.needsDisplay = true
         if now < actor.bubbleUntil { actor.positionBubble() } else if actor.bubble != nil { actor.dismissBubble() }
         publishChiikawaHome()

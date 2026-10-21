@@ -3,7 +3,7 @@
   "operation": "copy; originals preserved",
   "image_file_count": 2292,
   "unique_image_content_count": 1448,
-  "supporting_file_count": 382,
+  "supporting_file_count": 390,
   "image_bytes": 580348580,
   "symmetric_walk_runtime_applied": true,
   "files": [
@@ -5921,6 +5921,62 @@
       "archive_path": "Chiikawa-v22/verification-log.txt",
       "bytes": 103,
       "sha256": "9d93e5e021e6e40be54a9d6d57af16661ed0491450a57444e7bd7d783ce1bb53"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaAttackIsolation-v33/README.txt",
+      "archive_path": "ChiikawaAttackIsolation-v33/README.txt",
+      "bytes": 2455,
+      "sha256": "c1b2cdbbcc58be4ca85b38b85b616cce0170957a90a0ec09690dadccc4c78be2"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaAttackIsolation-v33/Review/relaunched-settings-ax.txt",
+      "archive_path": "ChiikawaAttackIsolation-v33/Review/relaunched-settings-ax.txt",
+      "bytes": 6158,
+      "sha256": "dd2fe5538bc6e47ecfdcc4c81bfa4c60401030e965ea79f476312586fd64f200"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaAttackIsolation-v33/build.log",
+      "archive_path": "ChiikawaAttackIsolation-v33/build.log",
+      "bytes": 472,
+      "sha256": "fb5384459e69b2e78e07b26efa8128d025455d2f7b57468b10ab89a67ffe2105"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaAttackIsolation-v33/codesign.log",
+      "archive_path": "ChiikawaAttackIsolation-v33/codesign.log",
+      "bytes": 109,
+      "sha256": "6210c61790ac2c9d268a576bdecb1c906f66d332a0c64871ceff1469e071d542"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaAttackIsolation-v33/regression-before.log",
+      "archive_path": "ChiikawaAttackIsolation-v33/regression-before.log",
+      "bytes": 24040,
+      "sha256": "a55def89b75744689910c842cd92089df686d0f43a33b5e3a300308aecddaf05"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaAttackIsolation-v33/resources-preserved.json",
+      "archive_path": "ChiikawaAttackIsolation-v33/resources-preserved.json",
+      "bytes": 9109,
+      "sha256": "2da596a758b5e97a0ff83d72f298f34d4ab7c294fbe68e2d5eb0a69af330c793"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaAttackIsolation-v33/self-test-app.log",
+      "archive_path": "ChiikawaAttackIsolation-v33/self-test-app.log",
+      "bytes": 29203,
+      "sha256": "f4e7e333a31d2efc6288a159c4c7087b5fc41285abf8a416ccec88bcb964d695"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaAttackIsolation-v33/validation.json",
+      "archive_path": "ChiikawaAttackIsolation-v33/validation.json",
+      "bytes": 613,
+      "sha256": "c04884b9d2d11b1a03135f419e2666101079ad4e00c73f326fdae8206ee93c32"
     },
     {
       "kind": "supporting",
@@ -17252,8 +17308,8 @@
       "kind": "supporting",
       "source": "Source/README.txt",
       "archive_path": "README.txt",
-      "bytes": 8476,
-      "sha256": "e907f2462f1f20d5814834ec1796018f4b87932b66c0ee73440a7980e99264f2"
+      "bytes": 8727,
+      "sha256": "88df420b6455347e8b9d7211e9e777567a907041e52fd147d7823f504af8f1f9"
     },
     {
       "kind": "supporting",
@@ -18726,8 +18782,8 @@
       "sha256": "8a42caa40e469a5ee00fa2b860d14756cc1fd73bc8fcf73332c50b87a92c9c3b"
     }
   ],
-  "updated_at": "2026-10-21T09:15:07.867573+00:00",
-  "latest_applied": "ChiikawaClickVoice-v32",
+  "updated_at": "2026-10-21T09:22:45.777098+00:00",
+  "latest_applied": "ChiikawaAttackIsolation-v33",
   "applied_directions": [
     "down-left",
     "down-right"

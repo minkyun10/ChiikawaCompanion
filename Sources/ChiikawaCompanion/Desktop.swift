@@ -64,6 +64,9 @@ final class DesktopFriendView: NSView {
     override func acceptsFirstMouse(for event: NSEvent?) -> Bool { true }
     override func accessibilityPerformPress() -> Bool { onClick?(); return true }
     override func draw(_ dirtyRect: NSRect) {
+        // The transparent actor remains the pointer target while the attack
+        // overlay paints the body. Remove the previous pose from its backing.
+        NSGraphicsContext.current?.cgContext.clear(bounds)
         if action == .attack && attackUsesOverlay { return }
         FriendArtwork.draw(friend, in: bounds, time: time, happy: happy, walking: walking,
                            looking: looking, facing: facing, walkPhase: walkPhase, pose: pose,

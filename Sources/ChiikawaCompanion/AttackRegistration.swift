@@ -84,6 +84,7 @@ final class AttackOverlayView: NSView {
     }
     required init?(coder: NSCoder) { fatalError("init(coder:) is unavailable") }
     override func draw(_ dirtyRect: NSRect) {
+        NSGraphicsContext.current?.cgContext.clear(bounds)
         if friend == .chiikawa { _ = ChiikawaAttackSprites.shared.draw(in: body,time: time) }
         else { _ = WeaponAttackSprites.shared.draw(in: body,time: time) }
     }
