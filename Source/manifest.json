@@ -1,10 +1,10 @@
 {
   "created_at": "2026-10-16T12:08:58.617148+00:00",
   "operation": "copy; originals preserved",
-  "image_file_count": 2294,
-  "unique_image_content_count": 1449,
-  "supporting_file_count": 421,
-  "image_bytes": 580369762,
+  "image_file_count": 2433,
+  "unique_image_content_count": 1507,
+  "supporting_file_count": 437,
+  "image_bytes": 602649781,
   "symmetric_walk_runtime_applied": true,
   "files": [
     {
@@ -7832,6 +7832,1035 @@
       "archive_path": "ChiikawaMotionVoice-v31/validation.json",
       "bytes": 451,
       "sha256": "530a21ea06ceccb95fd749a674d575d433cd913f95543a941216a5b450452400"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Final/Atlases/chiikawa-up-left-24.png",
+      "archive_path": "ChiikawaRearArms-v37/Final/Atlases/chiikawa-up-left-24.png",
+      "bytes": 723470,
+      "sha256": "bbcce242784793dca21abe73af31d1ccb7bb4a83bf49a7310c14cc99eeecda86"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Final/Atlases/chiikawa-up-right-24.png",
+      "archive_path": "ChiikawaRearArms-v37/Final/Atlases/chiikawa-up-right-24.png",
+      "bytes": 712176,
+      "sha256": "10da9d63fc82f2861cbf84069ed6fb1e58b29e428fa78488165a6c67654f4080"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Final/Frames/up-left-01.png",
+      "archive_path": "ChiikawaRearArms-v37/Final/Frames/up-left-01.png",
+      "bytes": 47468,
+      "sha256": "65d661b040ba72d3cf4a5efe804408e25ce2c27ad253f7405770ada8f80075dd"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Final/Frames/up-left-02.png",
+      "archive_path": "ChiikawaRearArms-v37/Final/Frames/up-left-02.png",
+      "bytes": 47435,
+      "sha256": "77b1cc771640f4b98ffbc19aae2d43bdfa04ca934303b5dadd0b281a5e511530"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Final/Frames/up-left-03.png",
+      "archive_path": "ChiikawaRearArms-v37/Final/Frames/up-left-03.png",
+      "bytes": 47204,
+      "sha256": "32350bb663e723f8757dbc5219a30c181ac9a80ab04d32c4424b3c1f1104a2ce"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Final/Frames/up-left-04.png",
+      "archive_path": "ChiikawaRearArms-v37/Final/Frames/up-left-04.png",
+      "bytes": 46933,
+      "sha256": "855cfd5707c7e45ac3ed8224731b5c002020994bae680a958f87235c0b1ac3a1"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Final/Frames/up-left-05.png",
+      "archive_path": "ChiikawaRearArms-v37/Final/Frames/up-left-05.png",
+      "bytes": 46714,
+      "sha256": "de504d85baff58354a8764c82121252d4610630592ea2054a32af9fdd6a76d79"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Final/Frames/up-left-06.png",
+      "archive_path": "ChiikawaRearArms-v37/Final/Frames/up-left-06.png",
+      "bytes": 46665,
+      "sha256": "116a1bfda7775ae904940bfad13bf024661f95c5cf1def86af9ac7477b81d0a3"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Final/Frames/up-left-07.png",
+      "archive_path": "ChiikawaRearArms-v37/Final/Frames/up-left-07.png",
+      "bytes": 46487,
+      "sha256": "b13c33cc1b764192b8f3557706c3ce0ee7518134163d57e776a128e7d63d6f86"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Final/Frames/up-left-08.png",
+      "archive_path": "ChiikawaRearArms-v37/Final/Frames/up-left-08.png",
+      "bytes": 46965,
+      "sha256": "ff47b2bbd93734ffbc1f7b7bd6baf0d75b0c6d2fb9e2b4b1b888a7eef56a1cd2"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Final/Frames/up-left-09.png",
+      "archive_path": "ChiikawaRearArms-v37/Final/Frames/up-left-09.png",
+      "bytes": 46843,
+      "sha256": "2100e5aa367c723024fc44fdd8e973ebedbac3cecca62a485cd5f15b3cb58bc5"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Final/Frames/up-left-10.png",
+      "archive_path": "ChiikawaRearArms-v37/Final/Frames/up-left-10.png",
+      "bytes": 46805,
+      "sha256": "2e2f958095f76d52d21b0d8fa89e7ae917ddc92b7e8107f978242ef1a829c279"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Final/Frames/up-left-11.png",
+      "archive_path": "ChiikawaRearArms-v37/Final/Frames/up-left-11.png",
+      "bytes": 46971,
+      "sha256": "3f03f1835c197748844f144a1f7de89a762fd4c76b4c883a67966910262f6b99"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Final/Frames/up-left-12.png",
+      "archive_path": "ChiikawaRearArms-v37/Final/Frames/up-left-12.png",
+      "bytes": 47042,
+      "sha256": "60c86f55748a9f7d0d315f77b381a2ebed4db253941a733461cd8d0b4b6a7f5e"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Final/Frames/up-left-13.png",
+      "archive_path": "ChiikawaRearArms-v37/Final/Frames/up-left-13.png",
+      "bytes": 46934,
+      "sha256": "256c20e04ac6f5dbbbc33d1cdc1c242f96b387688960d4f836e485704a648e63"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Final/Frames/up-left-14.png",
+      "archive_path": "ChiikawaRearArms-v37/Final/Frames/up-left-14.png",
+      "bytes": 46849,
+      "sha256": "294506e621806d1b3c8004c87be36a452711cde21a3096d0c8740416fb00c626"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Final/Frames/up-left-15.png",
+      "archive_path": "ChiikawaRearArms-v37/Final/Frames/up-left-15.png",
+      "bytes": 46672,
+      "sha256": "2e282eed6c778f20d293b276c34a80a84890d0d8079b58c07289f2c329946af6"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Final/Frames/up-left-16.png",
+      "archive_path": "ChiikawaRearArms-v37/Final/Frames/up-left-16.png",
+      "bytes": 46609,
+      "sha256": "c985104f45f5b8e0867926c6cc003c96ae8c98e980fa3582429579729608f45d"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Final/Frames/up-left-17.png",
+      "archive_path": "ChiikawaRearArms-v37/Final/Frames/up-left-17.png",
+      "bytes": 46542,
+      "sha256": "b9ab4132aace90bd517d9785f820f01e18775bdb4999bee97ac19c3e85bc2aaa"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Final/Frames/up-left-18.png",
+      "archive_path": "ChiikawaRearArms-v37/Final/Frames/up-left-18.png",
+      "bytes": 46779,
+      "sha256": "35a2e6e862168c14cf2369081abbe6a2ae204da31c8dc6ba686c29094654709e"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Final/Frames/up-left-19.png",
+      "archive_path": "ChiikawaRearArms-v37/Final/Frames/up-left-19.png",
+      "bytes": 46418,
+      "sha256": "14e2116e8ba0c5e703600f8ad3601669bf97a9014c6dbd805a95278f9a79a0ff"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Final/Frames/up-left-20.png",
+      "archive_path": "ChiikawaRearArms-v37/Final/Frames/up-left-20.png",
+      "bytes": 47002,
+      "sha256": "63b5c61d70efa40bc0a9508a3c70aa7842133fd0d3085b5757d32852604cb841"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Final/Frames/up-left-21.png",
+      "archive_path": "ChiikawaRearArms-v37/Final/Frames/up-left-21.png",
+      "bytes": 47264,
+      "sha256": "0b320cdc2df7725c4b0518a467b3f64d3eb864118348eff13953019ed525003c"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Final/Frames/up-left-22.png",
+      "archive_path": "ChiikawaRearArms-v37/Final/Frames/up-left-22.png",
+      "bytes": 47466,
+      "sha256": "4fdd99b5f58118a7be62da7da3b7b3b810ca0419e214a1fcf1b32cce8a296efe"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Final/Frames/up-left-23.png",
+      "archive_path": "ChiikawaRearArms-v37/Final/Frames/up-left-23.png",
+      "bytes": 47574,
+      "sha256": "9f3825dd187ec599c9cad56c4242510cf88e79ffad1653cd79b483576d859bba"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Final/Frames/up-left-24.png",
+      "archive_path": "ChiikawaRearArms-v37/Final/Frames/up-left-24.png",
+      "bytes": 47692,
+      "sha256": "726b3b9ae4fa0b9691ccb90065a77c0cbca0fb4fe61359084e64f72f0d8b2aff"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Final/Frames/up-right-01.png",
+      "archive_path": "ChiikawaRearArms-v37/Final/Frames/up-right-01.png",
+      "bytes": 47419,
+      "sha256": "e91d65ecec55458a13311785fb99ff1c745e42c1c9355e00310067e489d437d1"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Final/Frames/up-right-02.png",
+      "archive_path": "ChiikawaRearArms-v37/Final/Frames/up-right-02.png",
+      "bytes": 47399,
+      "sha256": "ea5b6b14dd8d62726da989dca7e4910d7a8091a959894e5885d5531a66ddb8ed"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Final/Frames/up-right-03.png",
+      "archive_path": "ChiikawaRearArms-v37/Final/Frames/up-right-03.png",
+      "bytes": 47155,
+      "sha256": "9a5da53a9e219e4dfbb6a75e7b949e70435334d9c9d400d946656e31f08065c5"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Final/Frames/up-right-04.png",
+      "archive_path": "ChiikawaRearArms-v37/Final/Frames/up-right-04.png",
+      "bytes": 46835,
+      "sha256": "3b98e2a644fecc07b5ff56156f87aae162550679663d1f324d8b2695841c3252"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Final/Frames/up-right-05.png",
+      "archive_path": "ChiikawaRearArms-v37/Final/Frames/up-right-05.png",
+      "bytes": 46739,
+      "sha256": "1d9d87f0bdf7502f93c3cb65c36e65989888268a788ea2fb32a39d78f335ca9b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Final/Frames/up-right-06.png",
+      "archive_path": "ChiikawaRearArms-v37/Final/Frames/up-right-06.png",
+      "bytes": 46674,
+      "sha256": "8bd7ed9b2af327b9750ce1865945c683eb90de58024ab1636f99bb853a244064"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Final/Frames/up-right-07.png",
+      "archive_path": "ChiikawaRearArms-v37/Final/Frames/up-right-07.png",
+      "bytes": 46426,
+      "sha256": "452270bd4679c21e259fc52b173807c1d3d42eb69f8494e392a5dbe2f3b91617"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Final/Frames/up-right-08.png",
+      "archive_path": "ChiikawaRearArms-v37/Final/Frames/up-right-08.png",
+      "bytes": 47014,
+      "sha256": "1195bad1b6739df6a1e512df8e8f563abf628f5f60597059c57379c2313b936e"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Final/Frames/up-right-09.png",
+      "archive_path": "ChiikawaRearArms-v37/Final/Frames/up-right-09.png",
+      "bytes": 46750,
+      "sha256": "97bacf9a4dccd6b07b40db8e421e6d5be956f6953ef882fd7a2c1bcad93a762c"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Final/Frames/up-right-10.png",
+      "archive_path": "ChiikawaRearArms-v37/Final/Frames/up-right-10.png",
+      "bytes": 46954,
+      "sha256": "39bf9f52f56573881958b134e0c5f79e40fb20fb3322a442a646d50a722edf6c"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Final/Frames/up-right-11.png",
+      "archive_path": "ChiikawaRearArms-v37/Final/Frames/up-right-11.png",
+      "bytes": 46845,
+      "sha256": "4be833c93be26f9317d36c55973d5a6de7a2ba243cef3427fe3b428e867b0876"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Final/Frames/up-right-12.png",
+      "archive_path": "ChiikawaRearArms-v37/Final/Frames/up-right-12.png",
+      "bytes": 47041,
+      "sha256": "20911c481f203f472a81dfc11d7a0b11ffe439cfdef42f450471cb08f3c43436"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Final/Frames/up-right-13.png",
+      "archive_path": "ChiikawaRearArms-v37/Final/Frames/up-right-13.png",
+      "bytes": 46832,
+      "sha256": "89861340d5068780d43d167546ac2638cf1f1feb72d447a38cdf00b9c3d0f075"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Final/Frames/up-right-14.png",
+      "archive_path": "ChiikawaRearArms-v37/Final/Frames/up-right-14.png",
+      "bytes": 46849,
+      "sha256": "d3e34184fe12706093887e75cde313b9a669034a36a8ea35eb9de046b519c7fc"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Final/Frames/up-right-15.png",
+      "archive_path": "ChiikawaRearArms-v37/Final/Frames/up-right-15.png",
+      "bytes": 46624,
+      "sha256": "79167299cc39bb55e6d2340a2cccfae42db759d6e6bc552ae66648bcdec51324"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Final/Frames/up-right-16.png",
+      "archive_path": "ChiikawaRearArms-v37/Final/Frames/up-right-16.png",
+      "bytes": 46484,
+      "sha256": "d3d8ee31715c8c6ac934efa0502133c0251453ebf971857df0c4e0a1d0c423e8"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Final/Frames/up-right-17.png",
+      "archive_path": "ChiikawaRearArms-v37/Final/Frames/up-right-17.png",
+      "bytes": 46550,
+      "sha256": "d61ad5df70e8943c4847abb51665d8d5d3db641a37e6f179f32464a257a020c5"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Final/Frames/up-right-18.png",
+      "archive_path": "ChiikawaRearArms-v37/Final/Frames/up-right-18.png",
+      "bytes": 46715,
+      "sha256": "29bd8ffe83677d3e6bb2cef2528c7f250a16c502269cbf606079400d765debfc"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Final/Frames/up-right-19.png",
+      "archive_path": "ChiikawaRearArms-v37/Final/Frames/up-right-19.png",
+      "bytes": 46288,
+      "sha256": "a6d67b4ce2970818068f68a0cc89ace3bf4cab6df4d8ce2eb83dd4eca2f3e705"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Final/Frames/up-right-20.png",
+      "archive_path": "ChiikawaRearArms-v37/Final/Frames/up-right-20.png",
+      "bytes": 47012,
+      "sha256": "5123a737653ed62142375d5996dcd1b4b094647c847955865bca593ae7a5f9fb"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Final/Frames/up-right-21.png",
+      "archive_path": "ChiikawaRearArms-v37/Final/Frames/up-right-21.png",
+      "bytes": 47115,
+      "sha256": "3f07e5608ab3d6150903d5c9ff89f80f812fcee34ec2f2aa2e9de55c7ed4e193"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Final/Frames/up-right-22.png",
+      "archive_path": "ChiikawaRearArms-v37/Final/Frames/up-right-22.png",
+      "bytes": 47602,
+      "sha256": "b633f701822123adff4bd11903d7fafb3936aed16365496bc2d48204c16be542"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Final/Frames/up-right-23.png",
+      "archive_path": "ChiikawaRearArms-v37/Final/Frames/up-right-23.png",
+      "bytes": 47478,
+      "sha256": "5e5050f882ce8218ccb13ffc666d5772835366d372a0a2d3d33f29af21547b4d"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Final/Frames/up-right-24.png",
+      "archive_path": "ChiikawaRearArms-v37/Final/Frames/up-right-24.png",
+      "bytes": 47598,
+      "sha256": "ab8eb8761e5dde003537a96d4d5322a1d521be97441e2e81af83a0bcd348f7e6"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Final/Parts/arm-bold.png",
+      "archive_path": "ChiikawaRearArms-v37/Final/Parts/arm-bold.png",
+      "bytes": 113400,
+      "sha256": "e9049925aca21d2850d80f423a2d9487b969daab246a2b086f5623f2abf9df12"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Final/Parts/arm.png",
+      "archive_path": "ChiikawaRearArms-v37/Final/Parts/arm.png",
+      "bytes": 29688,
+      "sha256": "76df61da2c9d78819841b90c64f8a907eef4a05ce44e86b55803e9de71d18839"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Final/Parts/back-body.png",
+      "archive_path": "ChiikawaRearArms-v37/Final/Parts/back-body.png",
+      "bytes": 124635,
+      "sha256": "bc289b54aa5589d964202eb8b5c9d53de66fc1e0f86fc4451021e71bd8ba9659"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Final/Parts/back-diagonal-body.png",
+      "archive_path": "ChiikawaRearArms-v37/Final/Parts/back-diagonal-body.png",
+      "bytes": 115663,
+      "sha256": "29fde672e66d073246e41de90da09bd41ac8a8fce57057fca57495a329552fd2"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Final/Parts/crying.png",
+      "archive_path": "ChiikawaRearArms-v37/Final/Parts/crying.png",
+      "bytes": 153147,
+      "sha256": "5c4077847d05adfcc96f83cbffea0a2dedc995860fca9bc2bd39c524d8f10a83"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Final/Parts/foot-bold.png",
+      "archive_path": "ChiikawaRearArms-v37/Final/Parts/foot-bold.png",
+      "bytes": 102840,
+      "sha256": "27616bbe8a6558ba354fc77155babab84b65e8367c48bc2660cfc842e8f044e4"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Final/Parts/foot.png",
+      "archive_path": "ChiikawaRearArms-v37/Final/Parts/foot.png",
+      "bytes": 34215,
+      "sha256": "1e202ea89d4435780a206df683b95e3ac4da61768c6973a6c71682a0d3e3af48"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Final/Parts/front-body.png",
+      "archive_path": "ChiikawaRearArms-v37/Final/Parts/front-body.png",
+      "bytes": 142631,
+      "sha256": "7cfb906a750625859f2d2ecee25186b432acd940bcf134f220821ab0e53a7a00"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Final/Parts/front-diagonal-body.png",
+      "archive_path": "ChiikawaRearArms-v37/Final/Parts/front-diagonal-body.png",
+      "bytes": 133862,
+      "sha256": "ee59f729cea52e039bd6acd88d9d506d1d744154800eebeab6be8da4fdc0b762"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Final/Parts/happy.png",
+      "archive_path": "ChiikawaRearArms-v37/Final/Parts/happy.png",
+      "bytes": 147947,
+      "sha256": "1a03e5f965d7ca8e7408af40f3ff2b12c4ceac1e4afa91d804a789bb7a70c67b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Final/Parts/side-body.png",
+      "archive_path": "ChiikawaRearArms-v37/Final/Parts/side-body.png",
+      "bytes": 123121,
+      "sha256": "32e09e482840b0c9a86a1ec4dd99f8204ceac273693d16fce46bdfe25148fc51"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Final/hand-comparison-slow-v37.gif",
+      "archive_path": "ChiikawaRearArms-v37/Final/hand-comparison-slow-v37.gif",
+      "bytes": 827563,
+      "sha256": "f1a6dfd6b1e2edfd79385195a906da3061c1b5fa78c62c4dcd815e7d364efcd6"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Final/hand-comparison-v37.gif",
+      "archive_path": "ChiikawaRearArms-v37/Final/hand-comparison-v37.gif",
+      "bytes": 827563,
+      "sha256": "4a1cc651024b619a2cbad39be0736e86b0ddefdb5ed90d7e6390229b78765f00"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Final/hand-comparison-v37.png",
+      "archive_path": "ChiikawaRearArms-v37/Final/hand-comparison-v37.png",
+      "bytes": 179232,
+      "sha256": "251fbeb9e11cb72081fdbc4a506a42901e0d2edfabc9d3cfb583dd979dc9434d"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaRearArms-v37/Final/hand-edit-regions.json",
+      "archive_path": "ChiikawaRearArms-v37/Final/hand-edit-regions.json",
+      "bytes": 3715,
+      "sha256": "a80c30728820f6c1b0bd7709606f35e7cd51a9c39568c347f01a076e352cda99"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaRearArms-v37/FinalRenderer/main.swift",
+      "archive_path": "ChiikawaRearArms-v37/FinalRenderer/main.swift",
+      "bytes": 19491,
+      "sha256": "dadba465cf0e1e2098fa9bc796341cf8e92ddf533632d3e1ae996d2d7674f5a5"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Iterations/01-native/Rendered/Atlases/chiikawa-up-left-24.png",
+      "archive_path": "ChiikawaRearArms-v37/Iterations/01-native/Rendered/Atlases/chiikawa-up-left-24.png",
+      "bytes": 723470,
+      "sha256": "bbcce242784793dca21abe73af31d1ccb7bb4a83bf49a7310c14cc99eeecda86"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Iterations/01-native/Rendered/Atlases/chiikawa-up-right-24.png",
+      "archive_path": "ChiikawaRearArms-v37/Iterations/01-native/Rendered/Atlases/chiikawa-up-right-24.png",
+      "bytes": 712176,
+      "sha256": "10da9d63fc82f2861cbf84069ed6fb1e58b29e428fa78488165a6c67654f4080"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-left-01.png",
+      "archive_path": "ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-left-01.png",
+      "bytes": 47468,
+      "sha256": "65d661b040ba72d3cf4a5efe804408e25ce2c27ad253f7405770ada8f80075dd"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-left-02.png",
+      "archive_path": "ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-left-02.png",
+      "bytes": 47435,
+      "sha256": "77b1cc771640f4b98ffbc19aae2d43bdfa04ca934303b5dadd0b281a5e511530"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-left-03.png",
+      "archive_path": "ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-left-03.png",
+      "bytes": 47204,
+      "sha256": "32350bb663e723f8757dbc5219a30c181ac9a80ab04d32c4424b3c1f1104a2ce"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-left-04.png",
+      "archive_path": "ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-left-04.png",
+      "bytes": 46933,
+      "sha256": "855cfd5707c7e45ac3ed8224731b5c002020994bae680a958f87235c0b1ac3a1"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-left-05.png",
+      "archive_path": "ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-left-05.png",
+      "bytes": 46714,
+      "sha256": "de504d85baff58354a8764c82121252d4610630592ea2054a32af9fdd6a76d79"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-left-06.png",
+      "archive_path": "ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-left-06.png",
+      "bytes": 46665,
+      "sha256": "116a1bfda7775ae904940bfad13bf024661f95c5cf1def86af9ac7477b81d0a3"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-left-07.png",
+      "archive_path": "ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-left-07.png",
+      "bytes": 46487,
+      "sha256": "b13c33cc1b764192b8f3557706c3ce0ee7518134163d57e776a128e7d63d6f86"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-left-08.png",
+      "archive_path": "ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-left-08.png",
+      "bytes": 46965,
+      "sha256": "ff47b2bbd93734ffbc1f7b7bd6baf0d75b0c6d2fb9e2b4b1b888a7eef56a1cd2"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-left-09.png",
+      "archive_path": "ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-left-09.png",
+      "bytes": 46843,
+      "sha256": "2100e5aa367c723024fc44fdd8e973ebedbac3cecca62a485cd5f15b3cb58bc5"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-left-10.png",
+      "archive_path": "ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-left-10.png",
+      "bytes": 46805,
+      "sha256": "2e2f958095f76d52d21b0d8fa89e7ae917ddc92b7e8107f978242ef1a829c279"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-left-11.png",
+      "archive_path": "ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-left-11.png",
+      "bytes": 46971,
+      "sha256": "3f03f1835c197748844f144a1f7de89a762fd4c76b4c883a67966910262f6b99"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-left-12.png",
+      "archive_path": "ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-left-12.png",
+      "bytes": 47042,
+      "sha256": "60c86f55748a9f7d0d315f77b381a2ebed4db253941a733461cd8d0b4b6a7f5e"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-left-13.png",
+      "archive_path": "ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-left-13.png",
+      "bytes": 46934,
+      "sha256": "256c20e04ac6f5dbbbc33d1cdc1c242f96b387688960d4f836e485704a648e63"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-left-14.png",
+      "archive_path": "ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-left-14.png",
+      "bytes": 46849,
+      "sha256": "294506e621806d1b3c8004c87be36a452711cde21a3096d0c8740416fb00c626"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-left-15.png",
+      "archive_path": "ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-left-15.png",
+      "bytes": 46672,
+      "sha256": "2e282eed6c778f20d293b276c34a80a84890d0d8079b58c07289f2c329946af6"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-left-16.png",
+      "archive_path": "ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-left-16.png",
+      "bytes": 46609,
+      "sha256": "c985104f45f5b8e0867926c6cc003c96ae8c98e980fa3582429579729608f45d"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-left-17.png",
+      "archive_path": "ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-left-17.png",
+      "bytes": 46542,
+      "sha256": "b9ab4132aace90bd517d9785f820f01e18775bdb4999bee97ac19c3e85bc2aaa"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-left-18.png",
+      "archive_path": "ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-left-18.png",
+      "bytes": 46779,
+      "sha256": "35a2e6e862168c14cf2369081abbe6a2ae204da31c8dc6ba686c29094654709e"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-left-19.png",
+      "archive_path": "ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-left-19.png",
+      "bytes": 46418,
+      "sha256": "14e2116e8ba0c5e703600f8ad3601669bf97a9014c6dbd805a95278f9a79a0ff"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-left-20.png",
+      "archive_path": "ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-left-20.png",
+      "bytes": 47002,
+      "sha256": "63b5c61d70efa40bc0a9508a3c70aa7842133fd0d3085b5757d32852604cb841"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-left-21.png",
+      "archive_path": "ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-left-21.png",
+      "bytes": 47264,
+      "sha256": "0b320cdc2df7725c4b0518a467b3f64d3eb864118348eff13953019ed525003c"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-left-22.png",
+      "archive_path": "ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-left-22.png",
+      "bytes": 47466,
+      "sha256": "4fdd99b5f58118a7be62da7da3b7b3b810ca0419e214a1fcf1b32cce8a296efe"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-left-23.png",
+      "archive_path": "ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-left-23.png",
+      "bytes": 47574,
+      "sha256": "9f3825dd187ec599c9cad56c4242510cf88e79ffad1653cd79b483576d859bba"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-left-24.png",
+      "archive_path": "ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-left-24.png",
+      "bytes": 47692,
+      "sha256": "726b3b9ae4fa0b9691ccb90065a77c0cbca0fb4fe61359084e64f72f0d8b2aff"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-right-01.png",
+      "archive_path": "ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-right-01.png",
+      "bytes": 47419,
+      "sha256": "e91d65ecec55458a13311785fb99ff1c745e42c1c9355e00310067e489d437d1"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-right-02.png",
+      "archive_path": "ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-right-02.png",
+      "bytes": 47399,
+      "sha256": "ea5b6b14dd8d62726da989dca7e4910d7a8091a959894e5885d5531a66ddb8ed"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-right-03.png",
+      "archive_path": "ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-right-03.png",
+      "bytes": 47155,
+      "sha256": "9a5da53a9e219e4dfbb6a75e7b949e70435334d9c9d400d946656e31f08065c5"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-right-04.png",
+      "archive_path": "ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-right-04.png",
+      "bytes": 46835,
+      "sha256": "3b98e2a644fecc07b5ff56156f87aae162550679663d1f324d8b2695841c3252"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-right-05.png",
+      "archive_path": "ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-right-05.png",
+      "bytes": 46739,
+      "sha256": "1d9d87f0bdf7502f93c3cb65c36e65989888268a788ea2fb32a39d78f335ca9b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-right-06.png",
+      "archive_path": "ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-right-06.png",
+      "bytes": 46674,
+      "sha256": "8bd7ed9b2af327b9750ce1865945c683eb90de58024ab1636f99bb853a244064"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-right-07.png",
+      "archive_path": "ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-right-07.png",
+      "bytes": 46426,
+      "sha256": "452270bd4679c21e259fc52b173807c1d3d42eb69f8494e392a5dbe2f3b91617"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-right-08.png",
+      "archive_path": "ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-right-08.png",
+      "bytes": 47014,
+      "sha256": "1195bad1b6739df6a1e512df8e8f563abf628f5f60597059c57379c2313b936e"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-right-09.png",
+      "archive_path": "ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-right-09.png",
+      "bytes": 46750,
+      "sha256": "97bacf9a4dccd6b07b40db8e421e6d5be956f6953ef882fd7a2c1bcad93a762c"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-right-10.png",
+      "archive_path": "ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-right-10.png",
+      "bytes": 46954,
+      "sha256": "39bf9f52f56573881958b134e0c5f79e40fb20fb3322a442a646d50a722edf6c"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-right-11.png",
+      "archive_path": "ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-right-11.png",
+      "bytes": 46845,
+      "sha256": "4be833c93be26f9317d36c55973d5a6de7a2ba243cef3427fe3b428e867b0876"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-right-12.png",
+      "archive_path": "ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-right-12.png",
+      "bytes": 47041,
+      "sha256": "20911c481f203f472a81dfc11d7a0b11ffe439cfdef42f450471cb08f3c43436"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-right-13.png",
+      "archive_path": "ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-right-13.png",
+      "bytes": 46832,
+      "sha256": "89861340d5068780d43d167546ac2638cf1f1feb72d447a38cdf00b9c3d0f075"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-right-14.png",
+      "archive_path": "ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-right-14.png",
+      "bytes": 46849,
+      "sha256": "d3e34184fe12706093887e75cde313b9a669034a36a8ea35eb9de046b519c7fc"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-right-15.png",
+      "archive_path": "ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-right-15.png",
+      "bytes": 46624,
+      "sha256": "79167299cc39bb55e6d2340a2cccfae42db759d6e6bc552ae66648bcdec51324"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-right-16.png",
+      "archive_path": "ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-right-16.png",
+      "bytes": 46484,
+      "sha256": "d3d8ee31715c8c6ac934efa0502133c0251453ebf971857df0c4e0a1d0c423e8"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-right-17.png",
+      "archive_path": "ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-right-17.png",
+      "bytes": 46550,
+      "sha256": "d61ad5df70e8943c4847abb51665d8d5d3db641a37e6f179f32464a257a020c5"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-right-18.png",
+      "archive_path": "ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-right-18.png",
+      "bytes": 46715,
+      "sha256": "29bd8ffe83677d3e6bb2cef2528c7f250a16c502269cbf606079400d765debfc"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-right-19.png",
+      "archive_path": "ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-right-19.png",
+      "bytes": 46288,
+      "sha256": "a6d67b4ce2970818068f68a0cc89ace3bf4cab6df4d8ce2eb83dd4eca2f3e705"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-right-20.png",
+      "archive_path": "ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-right-20.png",
+      "bytes": 47012,
+      "sha256": "5123a737653ed62142375d5996dcd1b4b094647c847955865bca593ae7a5f9fb"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-right-21.png",
+      "archive_path": "ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-right-21.png",
+      "bytes": 47115,
+      "sha256": "3f07e5608ab3d6150903d5c9ff89f80f812fcee34ec2f2aa2e9de55c7ed4e193"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-right-22.png",
+      "archive_path": "ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-right-22.png",
+      "bytes": 47602,
+      "sha256": "b633f701822123adff4bd11903d7fafb3936aed16365496bc2d48204c16be542"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-right-23.png",
+      "archive_path": "ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-right-23.png",
+      "bytes": 47478,
+      "sha256": "5e5050f882ce8218ccb13ffc666d5772835366d372a0a2d3d33f29af21547b4d"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-right-24.png",
+      "archive_path": "ChiikawaRearArms-v37/Iterations/01-native/Rendered/Frames/up-right-24.png",
+      "bytes": 47598,
+      "sha256": "ab8eb8761e5dde003537a96d4d5322a1d521be97441e2e81af83a0bcd348f7e6"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Iterations/01-native/Rendered/Parts/arm-bold.png",
+      "archive_path": "ChiikawaRearArms-v37/Iterations/01-native/Rendered/Parts/arm-bold.png",
+      "bytes": 113400,
+      "sha256": "e9049925aca21d2850d80f423a2d9487b969daab246a2b086f5623f2abf9df12"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Iterations/01-native/Rendered/Parts/arm.png",
+      "archive_path": "ChiikawaRearArms-v37/Iterations/01-native/Rendered/Parts/arm.png",
+      "bytes": 29688,
+      "sha256": "76df61da2c9d78819841b90c64f8a907eef4a05ce44e86b55803e9de71d18839"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Iterations/01-native/Rendered/Parts/back-body.png",
+      "archive_path": "ChiikawaRearArms-v37/Iterations/01-native/Rendered/Parts/back-body.png",
+      "bytes": 124635,
+      "sha256": "bc289b54aa5589d964202eb8b5c9d53de66fc1e0f86fc4451021e71bd8ba9659"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Iterations/01-native/Rendered/Parts/back-diagonal-body.png",
+      "archive_path": "ChiikawaRearArms-v37/Iterations/01-native/Rendered/Parts/back-diagonal-body.png",
+      "bytes": 115663,
+      "sha256": "29fde672e66d073246e41de90da09bd41ac8a8fce57057fca57495a329552fd2"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Iterations/01-native/Rendered/Parts/crying.png",
+      "archive_path": "ChiikawaRearArms-v37/Iterations/01-native/Rendered/Parts/crying.png",
+      "bytes": 153147,
+      "sha256": "5c4077847d05adfcc96f83cbffea0a2dedc995860fca9bc2bd39c524d8f10a83"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Iterations/01-native/Rendered/Parts/foot-bold.png",
+      "archive_path": "ChiikawaRearArms-v37/Iterations/01-native/Rendered/Parts/foot-bold.png",
+      "bytes": 102840,
+      "sha256": "27616bbe8a6558ba354fc77155babab84b65e8367c48bc2660cfc842e8f044e4"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Iterations/01-native/Rendered/Parts/foot.png",
+      "archive_path": "ChiikawaRearArms-v37/Iterations/01-native/Rendered/Parts/foot.png",
+      "bytes": 34215,
+      "sha256": "1e202ea89d4435780a206df683b95e3ac4da61768c6973a6c71682a0d3e3af48"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Iterations/01-native/Rendered/Parts/front-body.png",
+      "archive_path": "ChiikawaRearArms-v37/Iterations/01-native/Rendered/Parts/front-body.png",
+      "bytes": 142631,
+      "sha256": "7cfb906a750625859f2d2ecee25186b432acd940bcf134f220821ab0e53a7a00"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Iterations/01-native/Rendered/Parts/front-diagonal-body.png",
+      "archive_path": "ChiikawaRearArms-v37/Iterations/01-native/Rendered/Parts/front-diagonal-body.png",
+      "bytes": 133862,
+      "sha256": "ee59f729cea52e039bd6acd88d9d506d1d744154800eebeab6be8da4fdc0b762"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Iterations/01-native/Rendered/Parts/happy.png",
+      "archive_path": "ChiikawaRearArms-v37/Iterations/01-native/Rendered/Parts/happy.png",
+      "bytes": 147947,
+      "sha256": "1a03e5f965d7ca8e7408af40f3ff2b12c4ceac1e4afa91d804a789bb7a70c67b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Iterations/01-native/Rendered/Parts/side-body.png",
+      "archive_path": "ChiikawaRearArms-v37/Iterations/01-native/Rendered/Parts/side-body.png",
+      "bytes": 123121,
+      "sha256": "32e09e482840b0c9a86a1ec4dd99f8204ceac273693d16fce46bdfe25148fc51"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Iterations/01-native/Rendered/hand-comparison-slow-v37.gif",
+      "archive_path": "ChiikawaRearArms-v37/Iterations/01-native/Rendered/hand-comparison-slow-v37.gif",
+      "bytes": 471659,
+      "sha256": "9972af976d78e3f95b03abf5cefc1ad3427fae4d01fe82a4c7e4a806fbe8b3e9"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Iterations/01-native/Rendered/hand-comparison-v37.gif",
+      "archive_path": "ChiikawaRearArms-v37/Iterations/01-native/Rendered/hand-comparison-v37.gif",
+      "bytes": 471659,
+      "sha256": "f65bea37f64aa9050d5d883c70e7a2b6be93023b06a0ded14c4ddc646c4835f0"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/Iterations/01-native/Rendered/hand-comparison-v37.png",
+      "archive_path": "ChiikawaRearArms-v37/Iterations/01-native/Rendered/hand-comparison-v37.png",
+      "bytes": 98256,
+      "sha256": "93a32ca787aaad2f1fecdd1c6c32a754e11849b750f358dd2e66cbd0acda75a8"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaRearArms-v37/Iterations/01-native/Rendered/hand-edit-regions.json",
+      "archive_path": "ChiikawaRearArms-v37/Iterations/01-native/Rendered/hand-edit-regions.json",
+      "bytes": 3715,
+      "sha256": "a80c30728820f6c1b0bd7709606f35e7cd51a9c39568c347f01a076e352cda99"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaRearArms-v37/Iterations/01-native/main.swift",
+      "archive_path": "ChiikawaRearArms-v37/Iterations/01-native/main.swift",
+      "bytes": 19499,
+      "sha256": "ab11b1150fd49826976283a48fa6d8efe5f78c0c65889dd436b5bfaa36d1debe"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaRearArms-v37/Iterations/01-native/render.log",
+      "archive_path": "ChiikawaRearArms-v37/Iterations/01-native/render.log",
+      "bytes": 81,
+      "sha256": "4b9fdaad4a77a2870b84349cfad446845a93cafb763c7a9ec76f7f493775f871"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaRearArms-v37/README.txt",
+      "archive_path": "ChiikawaRearArms-v37/README.txt",
+      "bytes": 2546,
+      "sha256": "d02c8b9cad6db0cdced9f63dbacb169cec7b18ff7faeee34ce0219d0e8b5b32e"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/References/chiikawa-up-left-24.png",
+      "archive_path": "ChiikawaRearArms-v37/References/chiikawa-up-left-24.png",
+      "bytes": 746136,
+      "sha256": "3d0e710fc064e188efc8966bf57867181fa22c642835636d8bd4cba3be2a4302"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/References/chiikawa-up-right-24.png",
+      "archive_path": "ChiikawaRearArms-v37/References/chiikawa-up-right-24.png",
+      "bytes": 744901,
+      "sha256": "752c763a706eec67fa2db623b094d5a03a3b285154fb2ddd42e80b6371ed9dbc"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaRearArms-v37/References/hachiware-diagonal-walk-12-v2.png",
+      "archive_path": "ChiikawaRearArms-v37/References/hachiware-diagonal-walk-12-v2.png",
+      "bytes": 1758422,
+      "sha256": "1a24baf6cb5373c02cdb54e508fa608f7d0f4ac051e4a6bfbab164ca7dc9e94d"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaRearArms-v37/VerifyRearHands.py",
+      "archive_path": "ChiikawaRearArms-v37/VerifyRearHands.py",
+      "bytes": 3956,
+      "sha256": "3cdfcc905c96cf8f66719ddfe054ea3d2656dc7d908aaefc1885ec50733655f6"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaRearArms-v37/asset-verification.json",
+      "archive_path": "ChiikawaRearArms-v37/asset-verification.json",
+      "bytes": 9173,
+      "sha256": "d0897bfd90ad3dc8d14f05a22c661cae71d1b8001fd8e43edfbe01fd38e89e70"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaRearArms-v37/asset-verification.log",
+      "archive_path": "ChiikawaRearArms-v37/asset-verification.log",
+      "bytes": 61,
+      "sha256": "51d531abe0748f63300dcbc248471af88571596fed2923a02bee732efb8aaea8"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaRearArms-v37/build.log",
+      "archive_path": "ChiikawaRearArms-v37/build.log",
+      "bytes": 351,
+      "sha256": "25dc2259e99de31d2243e5d125535841861f344c9811e1b41ec209b753a01616"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaRearArms-v37/codesign.log",
+      "archive_path": "ChiikawaRearArms-v37/codesign.log",
+      "bytes": 109,
+      "sha256": "6210c61790ac2c9d268a576bdecb1c906f66d332a0c64871ceff1469e071d542"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaRearArms-v37/packaged-self-test.log",
+      "archive_path": "ChiikawaRearArms-v37/packaged-self-test.log",
+      "bytes": 33804,
+      "sha256": "c80847058d5f878b381b701d43a0d78b69086bad515cf020c273a772d91fc6f3"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaRearArms-v37/render.log",
+      "archive_path": "ChiikawaRearArms-v37/render.log",
+      "bytes": 81,
+      "sha256": "4b9fdaad4a77a2870b84349cfad446845a93cafb763c7a9ec76f7f493775f871"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaRearArms-v37/resources-before.json",
+      "archive_path": "ChiikawaRearArms-v37/resources-before.json",
+      "bytes": 7912,
+      "sha256": "45d0a3edc2f722e1549d1777a9d766440eed531e7a00e323216f35c5795acb55"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaRearArms-v37/resources-preserved.json",
+      "archive_path": "ChiikawaRearArms-v37/resources-preserved.json",
+      "bytes": 4176,
+      "sha256": "22422870e7c3a33be71b03b7a14513cb90dce2cfd2e10a61a063aef737c07494"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaRearArms-v37/validation.json",
+      "archive_path": "ChiikawaRearArms-v37/validation.json",
+      "bytes": 736,
+      "sha256": "50207d9102de51be4071793d2d508a3723e8c6088fc43ee2a47324d110c1382a"
     },
     {
       "kind": "supporting",
@@ -16258,15 +17287,15 @@
       "kind": "image",
       "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/chiikawa-up-left-24.png",
       "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/chiikawa-up-left-24.png",
-      "bytes": 746136,
-      "sha256": "3d0e710fc064e188efc8966bf57867181fa22c642835636d8bd4cba3be2a4302"
+      "bytes": 723470,
+      "sha256": "bbcce242784793dca21abe73af31d1ccb7bb4a83bf49a7310c14cc99eeecda86"
     },
     {
       "kind": "image",
       "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/chiikawa-up-right-24.png",
       "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/chiikawa-up-right-24.png",
-      "bytes": 744901,
-      "sha256": "752c763a706eec67fa2db623b094d5a03a3b285154fb2ddd42e80b6371ed9dbc"
+      "bytes": 712176,
+      "sha256": "10da9d63fc82f2861cbf84069ed6fb1e58b29e428fa78488165a6c67654f4080"
     },
     {
       "kind": "image",
@@ -16671,15 +17700,15 @@
       "kind": "image",
       "source": "Sources/ChiikawaCompanion/Resources/chiikawa-up-left-24.png",
       "archive_path": "Project/Sources/ChiikawaCompanion/Resources/chiikawa-up-left-24.png",
-      "bytes": 746136,
-      "sha256": "3d0e710fc064e188efc8966bf57867181fa22c642835636d8bd4cba3be2a4302"
+      "bytes": 723470,
+      "sha256": "bbcce242784793dca21abe73af31d1ccb7bb4a83bf49a7310c14cc99eeecda86"
     },
     {
       "kind": "image",
       "source": "Sources/ChiikawaCompanion/Resources/chiikawa-up-right-24.png",
       "archive_path": "Project/Sources/ChiikawaCompanion/Resources/chiikawa-up-right-24.png",
-      "bytes": 744901,
-      "sha256": "752c763a706eec67fa2db623b094d5a03a3b285154fb2ddd42e80b6371ed9dbc"
+      "bytes": 712176,
+      "sha256": "10da9d63fc82f2861cbf84069ed6fb1e58b29e428fa78488165a6c67654f4080"
     },
     {
       "kind": "image",
@@ -17035,15 +18064,15 @@
       "kind": "image",
       "source": "build/ChiikawaCompanion.app/Contents/Resources/chiikawa-up-left-24.png",
       "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/chiikawa-up-left-24.png",
-      "bytes": 746136,
-      "sha256": "3d0e710fc064e188efc8966bf57867181fa22c642835636d8bd4cba3be2a4302"
+      "bytes": 723470,
+      "sha256": "bbcce242784793dca21abe73af31d1ccb7bb4a83bf49a7310c14cc99eeecda86"
     },
     {
       "kind": "image",
       "source": "build/ChiikawaCompanion.app/Contents/Resources/chiikawa-up-right-24.png",
       "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/chiikawa-up-right-24.png",
-      "bytes": 744901,
-      "sha256": "752c763a706eec67fa2db623b094d5a03a3b285154fb2ddd42e80b6371ed9dbc"
+      "bytes": 712176,
+      "sha256": "10da9d63fc82f2861cbf84069ed6fb1e58b29e428fa78488165a6c67654f4080"
     },
     {
       "kind": "image",
@@ -17259,15 +18288,15 @@
       "kind": "image",
       "source": "build/artwork/chiikawa-runtime-equipment-v23.png",
       "archive_path": "Project/build/artwork/chiikawa-runtime-equipment-v23.png",
-      "bytes": 1094011,
-      "sha256": "53a74564e3be5356af8141ae7304eebfbef113d21bf5aa636a312e598fc59fc5"
+      "bytes": 1094357,
+      "sha256": "d5bb1e1ed8f0e3ec412fa13e97da478bd68398f560e1cb6c3e48dda64778c0a0"
     },
     {
       "kind": "image",
       "source": "build/artwork/chiikawa-runtime-walk-v23.gif",
       "archive_path": "Project/build/artwork/chiikawa-runtime-walk-v23.gif",
-      "bytes": 942413,
-      "sha256": "f9f94cf094de33f0bfbeea5e20df587914ea6a7c0c136112dfc0e9545476e3c7"
+      "bytes": 932281,
+      "sha256": "9fddb7db559189db6e09e72f222776d98716ae51d9999e9defb55ab860a21d09"
     },
     {
       "kind": "image",
@@ -17539,8 +18568,8 @@
       "kind": "supporting",
       "source": "Source/README.txt",
       "archive_path": "README.txt",
-      "bytes": 9322,
-      "sha256": "15d36343d16a397592dab457c8e9b119ccf685efe6797216432f017e8a87b725"
+      "bytes": 9550,
+      "sha256": "c1d0915051512001bf31fed5e2553467a650235268888cd2aac9bb5e913e8415"
     },
     {
       "kind": "supporting",
@@ -18034,6 +19063,27 @@
     },
     {
       "kind": "image",
+      "source": "Source/Versions/3d0e710fc064e188/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/chiikawa-up-left-24.png",
+      "archive_path": "Versions/3d0e710fc064e188/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/chiikawa-up-left-24.png",
+      "bytes": 746136,
+      "sha256": "3d0e710fc064e188efc8966bf57867181fa22c642835636d8bd4cba3be2a4302"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/3d0e710fc064e188/Sources/ChiikawaCompanion/Resources/chiikawa-up-left-24.png",
+      "archive_path": "Versions/3d0e710fc064e188/Sources/ChiikawaCompanion/Resources/chiikawa-up-left-24.png",
+      "bytes": 746136,
+      "sha256": "3d0e710fc064e188efc8966bf57867181fa22c642835636d8bd4cba3be2a4302"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/3d0e710fc064e188/build/ChiikawaCompanion.app/Contents/Resources/chiikawa-up-left-24.png",
+      "archive_path": "Versions/3d0e710fc064e188/build/ChiikawaCompanion.app/Contents/Resources/chiikawa-up-left-24.png",
+      "bytes": 746136,
+      "sha256": "3d0e710fc064e188efc8966bf57867181fa22c642835636d8bd4cba3be2a4302"
+    },
+    {
+      "kind": "image",
       "source": "Source/Versions/3fa9a12cb7cf2def/build/artwork/hachiware-equipped-directions-v11.png",
       "archive_path": "Versions/3fa9a12cb7cf2def/build/artwork/hachiware-equipped-directions-v11.png",
       "bytes": 586614,
@@ -18069,6 +19119,13 @@
     },
     {
       "kind": "image",
+      "source": "Source/Versions/53a74564e3be5356/build/artwork/chiikawa-runtime-equipment-v23.png",
+      "archive_path": "Versions/53a74564e3be5356/build/artwork/chiikawa-runtime-equipment-v23.png",
+      "bytes": 1094011,
+      "sha256": "53a74564e3be5356af8141ae7304eebfbef113d21bf5aa636a312e598fc59fc5"
+    },
+    {
+      "kind": "image",
       "source": "Source/Versions/5d0f3f13809fe8bd/build/artwork/hachiware-sprite-preview.png",
       "archive_path": "Versions/5d0f3f13809fe8bd/build/artwork/hachiware-sprite-preview.png",
       "bytes": 273169,
@@ -18087,6 +19144,27 @@
       "archive_path": "Versions/6c47831b9500f53d/build/artwork/chiikawa-hover-attack-v24.gif",
       "bytes": 317301,
       "sha256": "6c47831b9500f53d8ea25a376351aa5bb616f243b1ca3ad4fc90debb16e046f2"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/752c763a706eec67/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/chiikawa-up-right-24.png",
+      "archive_path": "Versions/752c763a706eec67/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/chiikawa-up-right-24.png",
+      "bytes": 744901,
+      "sha256": "752c763a706eec67fa2db623b094d5a03a3b285154fb2ddd42e80b6371ed9dbc"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/752c763a706eec67/Sources/ChiikawaCompanion/Resources/chiikawa-up-right-24.png",
+      "archive_path": "Versions/752c763a706eec67/Sources/ChiikawaCompanion/Resources/chiikawa-up-right-24.png",
+      "bytes": 744901,
+      "sha256": "752c763a706eec67fa2db623b094d5a03a3b285154fb2ddd42e80b6371ed9dbc"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/752c763a706eec67/build/ChiikawaCompanion.app/Contents/Resources/chiikawa-up-right-24.png",
+      "archive_path": "Versions/752c763a706eec67/build/ChiikawaCompanion.app/Contents/Resources/chiikawa-up-right-24.png",
+      "bytes": 744901,
+      "sha256": "752c763a706eec67fa2db623b094d5a03a3b285154fb2ddd42e80b6371ed9dbc"
     },
     {
       "kind": "image",
@@ -18213,6 +19291,13 @@
       "archive_path": "Versions/e38bc78ea5ced5b4/build/artwork/chiikawa-runtime-equipment-v23.png",
       "bytes": 546838,
       "sha256": "e38bc78ea5ced5b4f85b7d102d14fc781ab02b3cc177dc4d7456992169d41ba2"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/f9f94cf094de33f0/build/artwork/chiikawa-runtime-walk-v23.gif",
+      "archive_path": "Versions/f9f94cf094de33f0/build/artwork/chiikawa-runtime-walk-v23.gif",
+      "bytes": 942413,
+      "sha256": "f9f94cf094de33f0bfbeea5e20df587914ea6a7c0c136112dfc0e9545476e3c7"
     },
     {
       "kind": "supporting",
@@ -19013,8 +20098,8 @@
       "sha256": "8a42caa40e469a5ee00fa2b860d14756cc1fd73bc8fcf73332c50b87a92c9c3b"
     }
   ],
-  "updated_at": "2026-10-21T10:10:24.522220+00:00",
-  "latest_applied": "PinkRice-v36",
+  "updated_at": "2026-10-21T10:31:17.940666+00:00",
+  "latest_applied": "ChiikawaRearArms-v37",
   "applied_directions": [
     "down-left",
     "down-right"

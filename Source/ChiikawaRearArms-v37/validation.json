@@ -1,0 +1,24 @@
+{
+  "verified": "2026-10-21",
+  "version": "0.17.7",
+  "build": 39,
+  "packagedChecksPassed": 431,
+  "assetChecksPassed": 320,
+  "directionsChanged": [
+    "up-left",
+    "up-right"
+  ],
+  "framesPerDirection": 24,
+  "all48FootRgbaRegionsExactlyPreserved": true,
+  "all48HeadRgbaRegionsExactlyPreserved": true,
+  "centralTorsoRgbaExactlyPreserved": true,
+  "rightExactlyMirrorsCompletedLeft": true,
+  "footTimingAndMovementSpeedChanged": false,
+  "handShape": "short rounded open root matching Hachiware; far hand behind torso",
+  "otherBundledResourceFilesUnchanged": 49,
+  "comparisonsVisuallyReviewed": true,
+  "codesign": "passed",
+  "nativeAppRelaunched": true,
+  "settingsClosedAfterReview": true,
+  "voicePolicyChanged": false
+}

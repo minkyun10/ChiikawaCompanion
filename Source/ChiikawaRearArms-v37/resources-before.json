@@ -1,0 +1,209 @@
+{
+  "baseline": "088f8c2821959dde05fcdb2ab567f85a8bbf35a0",
+  "files": [
+    {
+      "path": "Sources/ChiikawaCompanion/Resources/Voice/chiikawa-cry-v26.m4a",
+      "gitBlob": "1f974e14559743f2599d10f1d76162e4b16d933b"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Resources/Voice/chiikawa-effort-v26.m4a",
+      "gitBlob": "56eb3d41b378f00a751bcefb6777ffc892d3789d"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Resources/Voice/chiikawa-happy-v26.m4a",
+      "gitBlob": "5ccca9ff2aae882fb4f33743aaa2888d9b3688df"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Resources/Voice/chiikawa-recordings-v26.json",
+      "gitBlob": "871edf3a795bc04878cb49a6ae3e29b3dd1d7ead"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Resources/Voice/chiikawa-surprise-v26.m4a",
+      "gitBlob": "ca5116c9098b5f297844eb53bfe442f92f4709cf"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Resources/Voice/hachiware-mixed-v13.m4a",
+      "gitBlob": "70d5d44d1bb5213b3f8a2d7bb087ca392b635ab1"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Resources/Voice/hachiware-recordings-v13.json",
+      "gitBlob": "f04b82f70f8a6dd98ed133e64758b179d835ca96"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Resources/Voice/hachiware-story-v13.m4a",
+      "gitBlob": "562a028bc3011ee7c5c4cccef7698fd6bf658ace"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Resources/Voice/hachiware-sushi-v13.m4a",
+      "gitBlob": "9b31c127b23e23c6d8a541aeab26fdfab59b0baa"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Resources/Voice/hachiware-tasty-v13.m4a",
+      "gitBlob": "6c304f472a9ad40d4e59f8e3b30e979209a4174d"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Resources/chiikawa-attack-v24.png",
+      "gitBlob": "3456a06a01bad369e93232c6ef361dfb9f5356a0"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Resources/chiikawa-blink-motion-v30.png",
+      "gitBlob": "0ed9afca647bb92d533d9f0342a138f3fb32356c"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Resources/chiikawa-crying-v23.png",
+      "gitBlob": "6241ee71f2c7a8f54fd19e936bf3a5c2ba8ee0f2"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Resources/chiikawa-determined-v26.png",
+      "gitBlob": "fc55b8f6ab4529328cd44207947d6017236084f3"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Resources/chiikawa-down-24.png",
+      "gitBlob": "582f14f44620fa61a98354e905df76de2457ea97"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Resources/chiikawa-down-left-24.png",
+      "gitBlob": "b2578c1dc7074fe1f6436b0a84c7633e2e4b9a29"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Resources/chiikawa-down-right-24.png",
+      "gitBlob": "a3c89986dbc9c1feff0fd7b29e0429e84152afb0"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Resources/chiikawa-eat-motion-v30.png",
+      "gitBlob": "bb120ce16491a5ae0ad049870b6b0bf200605523"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Resources/chiikawa-gentle-v26.png",
+      "gitBlob": "85bb43b10f68265734edcdc42d469712060298fc"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Resources/chiikawa-happy-v23.png",
+      "gitBlob": "b77c2f9afc64a9ee09dbf2cdcf95f686c50e63ee"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Resources/chiikawa-house-v26.png",
+      "gitBlob": "36652d61b7d51f17d60882d6ea27eaae47083b85"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Resources/chiikawa-hug-motion-v30.png",
+      "gitBlob": "fe7fbafd95c92a48712e727f6779b9fc6f49a0d3"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Resources/chiikawa-hug-v26.png",
+      "gitBlob": "2c59cbe62d0f9a82a0e99d35699416b46aaf4f0a"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Resources/chiikawa-left-24.png",
+      "gitBlob": "3ec925721227c86c31727cc98b601dbe6faf6088"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Resources/chiikawa-pajamas-motion-v30.png",
+      "gitBlob": "f61e976564a41bff355f18793788a592579d5e4e"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Resources/chiikawa-pajamas-v26.png",
+      "gitBlob": "2ed11e80a8011621e6a061ad6526a821f4148130"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Resources/chiikawa-rest-motion-v30.png",
+      "gitBlob": "abc588538a9734e3071addc66f48f2aaf70e9240"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Resources/chiikawa-right-24.png",
+      "gitBlob": "306670787dd70293df5872e4e01573963a3e6f26"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Resources/chiikawa-shared-home-v28.png",
+      "gitBlob": "b73e22e07c84c6cf4ef23b743a3315941fc64494"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Resources/chiikawa-sleep-v26.png",
+      "gitBlob": "eb6ef309082b45dc044db30a6dc7d5d0bc1d7e73"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Resources/chiikawa-startled-v26.png",
+      "gitBlob": "70a757453cac1fbc055bdb8dc04a63f47d9e553a"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Resources/chiikawa-study-v26.png",
+      "gitBlob": "1b8351412cfcec7a0177425fbddd7ce5bd0b3d3a"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Resources/chiikawa-up-24.png",
+      "gitBlob": "a964aaf885a93da9947d458fc7e1fd23f8271d90"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Resources/chiikawa-up-left-24.png",
+      "gitBlob": "3f57bb1b751d81d9ad958a06a24338af0a6c6086"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Resources/chiikawa-up-right-24.png",
+      "gitBlob": "bb8f3cb8b357b215b1ec90a83d8a800a62564a38"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Resources/hachiware-actions-v7.png",
+      "gitBlob": "44a54d38c68dbf738cc304deecdc2a75c222e864"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Resources/hachiware-attack-v19.png",
+      "gitBlob": "df2fc15a143f6345381b31e359789ef5e64b6fc5"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Resources/hachiware-cardinal-walk-12-v3.png",
+      "gitBlob": "d92ff4500a22abd1b52a82f2cd7cbe869cc197e6"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Resources/hachiware-cardinal-walk-approved-v5.png",
+      "gitBlob": "25d121a171a6ec6a10940d82369edc7cee082ec2"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Resources/hachiware-cave-v11.png",
+      "gitBlob": "cd5a35d08850fbd165ebca60bab3ff007052993f"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Resources/hachiware-diagonal-matched-walk-v5.png",
+      "gitBlob": "634037e9ff32b61d61c79af3c949a4a8b48383b4"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Resources/hachiware-diagonal-walk-12-v2.png",
+      "gitBlob": "6923aa0c4dc8b7da9f26b11f2dc0108586d53d55"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Resources/hachiware-eat-v16.png",
+      "gitBlob": "9e0615a21300311fdfed79e958056fb4575ad5a4"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Resources/hachiware-side-walk-24-joined-v14.png",
+      "gitBlob": "0357e461f71d6d0c9400e2c5022454d5597cc84d"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Resources/hachiware-side-walk-24-joined-v15.png",
+      "gitBlob": "87490ea0747cdab957407a02d7ffe6e40c60da8a"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Resources/hachiware-side-walk-24-v9.png",
+      "gitBlob": "f94467cda2f2fed2ad6f55ce15486fa17e7bd0a0"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Resources/hachiware-sleep-v11.png",
+      "gitBlob": "13994b5291b8588d44bed27783b190bff224f6bc"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Resources/hachiware-sprites-v1.png",
+      "gitBlob": "ec3c97a0c32f9bcb53339b46d7ab59c92f8a8cf3"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Resources/hachiware-study-v16.png",
+      "gitBlob": "f8940ca6615c427efbc8f24ed2a5f69a78f6f5f4"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Resources/hachiware-vomit-v16.png",
+      "gitBlob": "6e52bc9160b0daa1fdc5a58750dbde0071469dc0"
+    },
+    {
+      "path": "Sources/ChiikawaCompanion/Resources/hachiware-walk-bodies-v1.png",
+      "gitBlob": "37d833f6fb799cb4a55b3bde51972c8856fb0431"
+    }
+  ]
+}
