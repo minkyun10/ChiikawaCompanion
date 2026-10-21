@@ -1,0 +1,18 @@
+{
+  "verified": "2026-10-21",
+  "version": "0.17.2",
+  "build": 34,
+  "packagedChecksPassed": 379,
+  "resourceFilesPreserved": 51,
+  "codesign": "passed",
+  "playbackPolicy": "character click and explicitly requested preview only",
+  "automaticVoiceRemoved": true,
+  "nativeApp": {
+    "relaunched": true,
+    "voiceEnabled": true,
+    "testedAction": "pajamas",
+    "lifeStatus": "잠옷 입기 · 끝나면 다시 산책해요",
+    "voiceStatus": "클릭하면 이주은 성우의 짧은 반응을 들려줘요",
+    "settingsClosedAfterReview": true
+  }
+}

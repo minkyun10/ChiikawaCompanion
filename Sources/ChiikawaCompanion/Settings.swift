@@ -253,10 +253,10 @@ struct SettingsView: View {
             HStack {
                 Label("치이카와의 목소리",systemImage: "waveform").font(.system(size: 16,weight: .semibold))
                 Spacer()
-                Toggle("목소리",isOn: $state.chiikawaVoice)
+                Toggle("클릭 목소리",isOn: $state.chiikawaVoice)
                     .toggleStyle(.switch).controlSize(.small).font(.system(size: 11))
             }
-            Text("클릭하면 반응 4개 중 하나를 들려줘요. 공부·공격에는 힘주는 소리, 식사·인형 안기·잠옷·기상에는 기쁜 반응이 나와요. 행동 음성은 시작할 때 한 번, 최소 8초 간격으로 들려줘요.")
+            Text("클릭하면 이주은 성우의 짧은 반응 4개 중 하나를 무작위로 들려줘요. 공부·식사·공격·기상 같은 행동에서는 소리가 나지 않아요.")
                 .font(.system(size: 11)).foregroundStyle(mutedInk)
             HStack {
                 Image(systemName: "speaker.wave.2.fill").foregroundStyle(blue)

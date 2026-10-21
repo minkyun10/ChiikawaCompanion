@@ -253,8 +253,6 @@ final class DesktopController {
     var chiikawaStudyingAtDesk = false
     let chiikawaVoice: RecordedVoicePlayer
     var lastChiikawaVoiceID: String?
-    var lastChiikawaVoiceStarted: Date?
-    var chiikawaAutomaticVoiceCue: ChiikawaVoiceCue?
     var timer: Timer?
     let recordedVoice: RecordedVoicePlayer
     var lastRecordedLine: String?
@@ -275,7 +273,7 @@ final class DesktopController {
     }
 
     init(state: AppState, startTimer: Bool = true, recordedVoice: RecordedVoicePlayer = RecordedVoicePlayer(),
-         chiikawaVoice: RecordedVoicePlayer = RecordedVoicePlayer(idleStatus: "클릭하거나 행동할 때 짧은 반응을 들려줘요")) {
+         chiikawaVoice: RecordedVoicePlayer = RecordedVoicePlayer(idleStatus: "클릭하면 치이카와의 짧은 반응을 들려줘요")) {
         self.state = state
         self.recordedVoice = recordedVoice
         self.chiikawaVoice = chiikawaVoice

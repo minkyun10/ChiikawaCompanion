@@ -3,7 +3,7 @@
   "operation": "copy; originals preserved",
   "image_file_count": 2292,
   "unique_image_content_count": 1448,
-  "supporting_file_count": 375,
+  "supporting_file_count": 382,
   "image_bytes": 580348580,
   "symmetric_walk_runtime_applied": true,
   "files": [
@@ -5921,6 +5921,55 @@
       "archive_path": "Chiikawa-v22/verification-log.txt",
       "bytes": 103,
       "sha256": "9d93e5e021e6e40be54a9d6d57af16661ed0491450a57444e7bd7d783ce1bb53"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaClickVoice-v32/README.txt",
+      "archive_path": "ChiikawaClickVoice-v32/README.txt",
+      "bytes": 1367,
+      "sha256": "058897a34979a7aab3a0940d5fadbcc253c855ce8281d1ee9c81141d88610134"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaClickVoice-v32/Review/pajamas-silent-ax.txt",
+      "archive_path": "ChiikawaClickVoice-v32/Review/pajamas-silent-ax.txt",
+      "bytes": 6539,
+      "sha256": "a00c7875f4677e3851edbee53b2db136596202be14f8d009339c18d725ebcc9a"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaClickVoice-v32/build.log",
+      "archive_path": "ChiikawaClickVoice-v32/build.log",
+      "bytes": 327,
+      "sha256": "0733feae631d0ad950890cdd620ce1728fba9f0e9737dfeb05cfe0ec8257cb51"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaClickVoice-v32/codesign.log",
+      "archive_path": "ChiikawaClickVoice-v32/codesign.log",
+      "bytes": 109,
+      "sha256": "6210c61790ac2c9d268a576bdecb1c906f66d332a0c64871ceff1469e071d542"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaClickVoice-v32/resources-preserved.json",
+      "archive_path": "ChiikawaClickVoice-v32/resources-preserved.json",
+      "bytes": 9109,
+      "sha256": "675ebba74c852010b64fdb0bcd7dc8da34847b1f78adaf9d81a5b5580de570b0"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaClickVoice-v32/self-test-app.log",
+      "archive_path": "ChiikawaClickVoice-v32/self-test-app.log",
+      "bytes": 28284,
+      "sha256": "6218843e616a782563aa749c169d55bfbe0b029d93a5f0da25fb73dfde00409e"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaClickVoice-v32/validation.json",
+      "archive_path": "ChiikawaClickVoice-v32/validation.json",
+      "bytes": 560,
+      "sha256": "f3feb5a992417dff3c713ce8038ca2fcddded1dc12ca7ef53ee0fa02aeae2469"
     },
     {
       "kind": "supporting",
@@ -17203,8 +17252,8 @@
       "kind": "supporting",
       "source": "Source/README.txt",
       "archive_path": "README.txt",
-      "bytes": 8172,
-      "sha256": "5863c904e9beceb039ab1ea8f675113997fa87bf6e5cf1698c5e9574f9ee4ec6"
+      "bytes": 8476,
+      "sha256": "e907f2462f1f20d5814834ec1796018f4b87932b66c0ee73440a7980e99264f2"
     },
     {
       "kind": "supporting",
@@ -18677,8 +18726,8 @@
       "sha256": "8a42caa40e469a5ee00fa2b860d14756cc1fd73bc8fcf73332c50b87a92c9c3b"
     }
   ],
-  "updated_at": "2026-10-21T08:56:50.730403+00:00",
-  "latest_applied": "ChiikawaMotionVoice-v31",
+  "updated_at": "2026-10-21T09:15:07.867573+00:00",
+  "latest_applied": "ChiikawaClickVoice-v32",
   "applied_directions": [
     "down-left",
     "down-right"
