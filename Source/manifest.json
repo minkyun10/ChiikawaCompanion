@@ -1,10 +1,10 @@
 {
   "created_at": "2026-10-16T12:08:58.617148+00:00",
   "operation": "copy; originals preserved",
-  "image_file_count": 2291,
-  "unique_image_content_count": 1447,
-  "supporting_file_count": 366,
-  "image_bytes": 580152648,
+  "image_file_count": 2292,
+  "unique_image_content_count": 1448,
+  "supporting_file_count": 375,
+  "image_bytes": 580348580,
   "symmetric_walk_runtime_applied": true,
   "files": [
     {
@@ -7552,6 +7552,76 @@
       "archive_path": "ChiikawaMotion-v30/validation.json",
       "bytes": 1039,
       "sha256": "663b942560a1e5b61b7b7b60c84fc5efbf169f655430c903715a0d667c6f946b"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaMotionVoice-v31/README.txt",
+      "archive_path": "ChiikawaMotionVoice-v31/README.txt",
+      "bytes": 1802,
+      "sha256": "659a8aa70cc1069bf047325c8b0d35454a5737564efaf234f43490563a38ade3"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaMotionVoice-v31/Review/pajamas-playing-ax.txt",
+      "archive_path": "ChiikawaMotionVoice-v31/Review/pajamas-playing-ax.txt",
+      "bytes": 6174,
+      "sha256": "0b6892ef36e4a43da2a48927830c1d163714f4d44d01ae10a5ba655f521f7632"
+    },
+    {
+      "kind": "image",
+      "source": "Source/ChiikawaMotionVoice-v31/Review/settings-motion-voice.png",
+      "archive_path": "ChiikawaMotionVoice-v31/Review/settings-motion-voice.png",
+      "bytes": 195932,
+      "sha256": "ea947dd45d916a61ab7f9c0994a385e0c31764ffecdd6d2a234f842e365c7f47"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaMotionVoice-v31/build.log",
+      "archive_path": "ChiikawaMotionVoice-v31/build.log",
+      "bytes": 327,
+      "sha256": "0733feae631d0ad950890cdd620ce1728fba9f0e9737dfeb05cfe0ec8257cb51"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaMotionVoice-v31/codesign.log",
+      "archive_path": "ChiikawaMotionVoice-v31/codesign.log",
+      "bytes": 109,
+      "sha256": "6210c61790ac2c9d268a576bdecb1c906f66d332a0c64871ceff1469e071d542"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaMotionVoice-v31/cue-map.json",
+      "archive_path": "ChiikawaMotionVoice-v31/cue-map.json",
+      "bytes": 444,
+      "sha256": "3177805b9147d41db30ea992d7cb79f5f07c3e1b9ff1134148bde54cf6e426ad"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaMotionVoice-v31/resources-preserved.json",
+      "archive_path": "ChiikawaMotionVoice-v31/resources-preserved.json",
+      "bytes": 9109,
+      "sha256": "5e85e90eaac6281762e82f9ea899208a930aca7f53a90ad44e71f3ca75eb6fd6"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaMotionVoice-v31/self-test-app.log",
+      "archive_path": "ChiikawaMotionVoice-v31/self-test-app.log",
+      "bytes": 29462,
+      "sha256": "0053b68a4d72665d5d19814b4b6ad5e5a725af88a5d6ff5c7d1ab906850ef68c"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaMotionVoice-v31/self-test-cli.log",
+      "archive_path": "ChiikawaMotionVoice-v31/self-test-cli.log",
+      "bytes": 28871,
+      "sha256": "08c66a26b5ad2d6072966e56aa8b2ef875ee56880fe2628413bbd03583a6c379"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ChiikawaMotionVoice-v31/validation.json",
+      "archive_path": "ChiikawaMotionVoice-v31/validation.json",
+      "bytes": 451,
+      "sha256": "530a21ea06ceccb95fd749a674d575d433cd913f95543a941216a5b450452400"
     },
     {
       "kind": "supporting",
@@ -17133,8 +17203,8 @@
       "kind": "supporting",
       "source": "Source/README.txt",
       "archive_path": "README.txt",
-      "bytes": 7843,
-      "sha256": "8d50fd1dabdfd24959e8f71b06a040926c652301fb0f185ac6d9c146d3aa934a"
+      "bytes": 8172,
+      "sha256": "5863c904e9beceb039ab1ea8f675113997fa87bf6e5cf1698c5e9574f9ee4ec6"
     },
     {
       "kind": "supporting",
@@ -18607,8 +18677,8 @@
       "sha256": "8a42caa40e469a5ee00fa2b860d14756cc1fd73bc8fcf73332c50b87a92c9c3b"
     }
   ],
-  "updated_at": "2026-10-21T07:36:14.856101+00:00",
-  "latest_applied": "ChiikawaMotion-v30",
+  "updated_at": "2026-10-21T08:56:50.730403+00:00",
+  "latest_applied": "ChiikawaMotionVoice-v31",
   "applied_directions": [
     "down-left",
     "down-right"

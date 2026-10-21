@@ -80,6 +80,8 @@ extension SelfTest {
         desktop.seekChiikawaFood(now: now.addingTimeInterval(6.3)); tick(6.31)
         check(desktop.chiikawaStudyWorld.requested == .rice && actor.motion.isWalking && actor.view.chiikawaLife == nil,
               "explicit food requests walk to the bowl even with automatic actions off")
+        check(actor.motion.destination == ItemWorld.destination(for: bowl),
+              "the meal route targets the requested food bowl rather than the study desk")
         actor.panel.setFrameOrigin(ItemWorld.destination(for: bowl)); tick(6.4)
         check(actor.view.chiikawaLife == .eat, "reaching an explicitly requested bowl begins the meal")
         state.chiikawaFoodEnabled = false; tick(6.5)

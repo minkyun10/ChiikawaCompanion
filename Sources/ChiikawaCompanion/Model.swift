@@ -74,7 +74,7 @@ final class AppState: ObservableObject {
     @Published var chiikawaResting = false
     @Published var chiikawaLifeStatus = "공부하고, 밥 먹고, 인형을 안고 쉬어요"
     @Published var chiikawaLifeRunning = false
-    @Published var chiikawaVoiceStatus = "클릭하면 이주은 성우의 짧은 반응을 들려줘요"
+    @Published var chiikawaVoiceStatus = "클릭하거나 행동할 때 이주은 성우의 짧은 반응을 들려줘요"
     var onChiikawaGoHome: (() -> Void)?
     var onChiikawaWake: (() -> Void)?
     var onChiikawaEat: (() -> Void)?

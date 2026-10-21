@@ -155,7 +155,7 @@ extension DesktopController {
             }
             if followingHome && !chiikawaSeekingHomeKey {
                 actor.motion.destination = ItemWorld.destination(for: home.entrance)
-            } else if followingStudy, let point = chiikawaStudyWorld.positions[.desk] {
+            } else if followingStudy, let spot = chiikawaStudyWorld.requested, let point = chiikawaStudyWorld.positions[spot] {
                 actor.motion.destination = ItemWorld.destination(for: point)
             }
             if actor.motion.destination == nil {
@@ -189,6 +189,8 @@ extension DesktopController {
         actor.view.chiikawaReaction = state.expressive
             ? (activity == .hovering ? .happy : activity == .speaking ? actor.clickReaction : nil) : nil
         let attacking = lifeAction == nil && state.expressive && activity == .hovering && chiikawaWorld.equipped == .pinkSasumata
+        if attacking && actor.view.action != .attack { playChiikawaMotionVoice(.attack, now: now) }
+        if !attacking && actor.view.action == .attack { stopChiikawaMotionVoice(.attack) }
         actor.view.action = attacking ? .attack : nil
         actor.view.actionTime = lifeAction != nil ? chiikawaLifeRoutine.elapsed(now: now)
             : attacking ? max(0, now.timeIntervalSince(actor.hoverStarted)) : nil

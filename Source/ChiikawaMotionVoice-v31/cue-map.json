@@ -1,0 +1,18 @@
+{
+  "verified": "2026-10-21",
+  "catalog": "../ChiikawaLife-v26/Audio/catalog.json",
+  "minimumIntervalSeconds": 8,
+  "trigger": "motion start only",
+  "clickPriority": true,
+  "sleepVoice": null,
+  "cues": {
+    "study": "chiikawa-effort",
+    "attack": "chiikawa-effort",
+    "eat": "chiikawa-happy",
+    "hug": "chiikawa-happy",
+    "pajamas": "chiikawa-happy",
+    "wake": "chiikawa-happy"
+  },
+  "newAudio": false,
+  "newArtwork": false
+}

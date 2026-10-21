@@ -1,0 +1,95 @@
+Window: "치이카와 데스크톱 · 친구 설정", App: 치이카와 데스크톱.
+0 standard window 치이카와 데스크톱 · 친구 설정, Secondary Actions: Raise
+	1 container
+		2 scroll area Secondary Actions: Scroll Up, Scroll Down (showing 0-100 of 123 items)
+			3 text DESKTOP COMPANION 두 친구와 함께 두 친구와
+바탕화면 산책.
+			4 button 모두 부르기
+			5 text 설정 창을 닫으면, 바탕화면에서 만나요. 하치와레
+			6 switch 표시, Description: 하치와레 표시, Value: on
+			7 switch 산책, Description: 하치와레 산책, Value: on
+			8 button 하치와레 부르기
+			9 text 산책 · 소품 · 일상 동작 · 동굴 집 치이카와
+			10 switch 표시, Description: 치이카와 표시, Value: on
+			11 switch 산책, Description: 치이카와 산책, Value: on
+			12 button 치이카와 부르기
+			13 text 산책 · 소품 · 공부 · 잠옷 · 집 · 한국어 음성 마우스를 올리면 반응하고, 떼면 다시 걸어요. 클릭해 인사하거나 드래그해 옮겨 보세요.
+일반 앱 창 뒤, 바탕화면 아이콘 앞에서 함께 지내요. 치이카와의 소품
+			14 button 다시 흩어 놓기
+			15 collection Secondary Actions: AXScrollToTop, AXScrollToBottom
+				16 text 곰 포셰트
+				17 toggle button Description: 치이카와 곰 포셰트 바탕화면에 놓기, Value: on
+				18 text 분홍 사스마타
+				19 toggle button Description: 치이카와 분홍 사스마타 바탕화면에 놓기, Value: on
+				20 text 집 열쇠
+				21 toggle button Description: 치이카와 집 열쇠 바탕화면에 놓기, Value: on
+				22 text 소중한 인형
+				23 toggle button Description: 치이카와 소중한 인형 바탕화면에 놓기, Value: on
+			24 switch 스스로 주워 입기, Value: on
+			25 menu button 주우러 가기
+			26 button 내려놓기
+			27 text 지금은 분홍 사스마타와 함께 · 분홍 사스마타를 주웠어요 치이카와 위에 드래그해 건네거나, 소품을 클릭해 부를 수 있어요.
+분홍 사스마타를 들고 호버하면 공격하고, 인형을 주우면 꼭 안아요. 열쇠는 귀가할 때 챙겨요. 치이카와의 하루
+			28 switch 분홍 공부 책상, Value: on
+			29 switch 가까이 가면 행동하기, Value: on
+			30 button 책상으로 가기
+			31 switch 치이카와 밥그릇, Value: on
+			32 button 밥그릇으로 가기
+			33 button 치이카와 제초 시험 공부
+			34 button 치이카와 밥 먹기
+			35 button 치이카와 잠옷 입기
+			36 button 치이카와 인형 안기
+			37 button 동작 멈추기
+			38 text 잠옷 입기 · 끝나면 다시 산책해요 공용 집으로 귀가할 때 열쇠를 챙기고, 잠옷을 입고 이불을 덮어 쉬어요.
+책상과 밥그릇은 따로 옮길 수 있어요. 가까이 가면 공부하거나 밥을 먹어요. 치이카와의 목소리
+			39 switch 목소리, Value: on
+			40 text 클릭하면 반응 4개 중 하나를 들려줘요. 공부·공격에는 힘주는 소리, 식사·인형 안기·잠옷·기상에는 기쁜 반응이 나와요. 행동 음성은 시작할 때 한 번, 최소 8초 간격으로 들려줘요.
+			41 image Description: 음량 높게, ID: speaker.wave.2.fill
+			42 slider Description: 두 친구 목소리 음량, Value: 0.65, Secondary Actions: Increment, Decrement
+				43 value indicator 0.65
+			44 button 치이카와 목소리 들어보기
+			45 button 멈추기
+			46 text 재생 중 · …♡ 하치와레의 소품
+			47 button 다시 흩어 놓기
+			48 text 바탕화면 소품을 발견하면 주워서 착용해요.
+			49 switch 스스로 주워 입기, Value: on
+			50 switch 표정과 소품 동작, Value: on
+			51 text 지금은 파란 사스마타와 함께 파란 사스마타를 주웠어요
+			52 menu button 주우러 가기
+			53 button 내려놓기
+			54 text 소품이 몸에 닿으면 지나가면서도 주워요. 하치와레 위에 드래그해 건넬 수도 있어요.
+바닥에 드래그하면 옮기고, 클릭하면 주우러 와요. 새 소품을 들면 이전 것은 내려놓아요. 하치와레의 하루
+			55 switch 가까이 가면 행동하기, Value: on
+			56 button 동작 멈추기
+			57 text 책상
+			58 toggle button Description: 책상 바탕화면에 놓기, Value: on
+			59 text 털뭉치
+			60 toggle button Description: 털뭉치 바탕화면에 놓기, Value: on
+			61 text 밥
+			62 toggle button Description: 밥 바탕화면에 놓기, Value: on
+			63 text 가까이 가면 공부하기 가까이 가면 토하기 가까이 가면 밥 먹기
+			64 button 하치와레 책상으로 가기
+			65 button 하치와레 털뭉치로 가기
+			66 button 하치와레 밥으로 가기
+			67 button 하치와레 공부하기
+			68 button 하치와레 밥 먹기
+			69 button 하치와레 토하기
+			70 text 토하기 · 끝나면 다시 산책해요 책상·털뭉치·밥 근처에 가면 해당 동작을 해요. 소품을 클릭하면 걸어가고, 드래그로 자리를 바꿀 수 있어요.
+한 번 행동한 곳은 멀어졌다 돌아와야 다시 반응해요. 동작 버튼이나 캐릭터 우클릭으로 바로 볼 수도 있어요. 하치와레의 목소리
+			71 switch 클릭 목소리, Value: on
+			72 text 클릭하면 음성 대사 4개와 명대사 10개, 총 14개 중 하나가 랜덤으로 나와요. 녹음이 있는 4개는 말풍선과 함께 목소리를 들려줘요.
+			73 image Description: 음량 높게, ID: speaker.wave.2.fill
+			74 slider Description: 클릭 목소리 음량, Value: 0.65, Secondary Actions: Increment, Decrement
+				75 value indicator 0.65
+			76 text 65%
+			77 button 하치와레 목소리 들어보기
+			78 button 멈추기
+			79 text 클릭하면 음성 4개와 명대사 10개 중 하나를 보여줘요 손정민 성우 녹음: 초밥이다! · 엉망진창으로 뒤섞였어 · 맛있다! · 그래서 말이야
+명대사 10개는 글로 보여줘요. 함께 쉬는 집 집 디자인
+	80 close button
+	81 zoom button (disabled)
+	82 minimize button
+83 menu bar
+	84 ChiikawaCompanion
+
+The focused UI element is 0 standard window 치이카와 데스크톱 · 친구 설정, Secondary Actions: Raise

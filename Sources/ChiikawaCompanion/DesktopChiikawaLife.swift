@@ -25,7 +25,11 @@ extension DesktopController {
             guard let self, let actor = self.chiikawaActor else { return }
             _ = self.triggerChiikawaStudy(actor, now: Date())
         }
-        chiikawaVoice.onStatus = { [weak state] status in state?.chiikawaVoiceStatus = status }
+        chiikawaVoice.onStatus = { [weak self] status in
+            guard let self else { return }
+            if self.chiikawaVoice.player == nil { self.chiikawaAutomaticVoiceCue = nil }
+            self.state.chiikawaVoiceStatus = status
+        }
         state.onChiikawaGoHome = { [weak self] in self?.goChiikawaHome() }
         state.onChiikawaWake = { [weak self] in self?.wakeChiikawa(animated: true) }
         state.onChiikawaEat = { [weak self] in self?.seekChiikawaFood() }
@@ -101,9 +105,11 @@ extension DesktopController {
         actor.view.chiikawaLife = action; actor.view.actionTime = 0; actor.view.walking = false
         actor.view.needsDisplay = true; actor.panel.orderFrontRegardless()
         state.chiikawaLifeRunning = true; state.chiikawaLifeStatus = "\(action.title) · 끝나면 다시 산책해요"
+        playChiikawaMotionVoice(ChiikawaVoiceCue(action), now: now)
     }
 
     func stopChiikawaLife() {
+        if let action = chiikawaLifeRoutine.selected { stopChiikawaMotionVoice(ChiikawaVoiceCue(action)) }
         chiikawaLifeRoutine.cancel(); chiikawaStudyingAtDesk = false
         if chiikawaStudyWorld.requested != nil { chiikawaStudyWorld.requested = nil; chiikawaActor?.motion.retarget() }
         if chiikawaActor?.view.chiikawaLife != nil {
@@ -133,6 +139,7 @@ extension DesktopController {
         let wasInside = chiikawaHomeRoutine.isInside || chiikawaWakingAt != nil
         if animated && chiikawaHomeRoutine.isInside {
             chiikawaHomeRoutine.wake(now: now); chiikawaWakingAt = now
+            playChiikawaMotionVoice(.wake, now: now)
             publishChiikawaHome(); return
         }
         chiikawaWakingAt = nil
@@ -192,8 +199,9 @@ extension DesktopController {
             actor.clickReaction = Self.chiikawaReaction(for: line.id)
             if state.isVisible(.chiikawa) { actor.say(line.text, now: now, duration: max(2,line.duration+0.35)) }
             if preview || state.chiikawaVoice {
-                chiikawaVoice.play(line, volume: state.characterVolume)
-            } else { state.chiikawaVoiceStatus = "치이카와 클릭 목소리를 꺼 두었어요" }
+                chiikawaAutomaticVoiceCue = nil
+                if chiikawaVoice.play(line, volume: state.characterVolume) { lastChiikawaVoiceStarted = now }
+            } else { state.chiikawaVoiceStatus = "치이카와 목소리를 꺼 두었어요" }
         } else {
             let choices = ChiikawaReaction.greetings.filter { $0.0 != actor.lastGreeting }
             guard let selected = choices.randomElement() else { return }
@@ -209,6 +217,7 @@ extension DesktopController {
         return .gentle
     }
     func stopChiikawaVoice() {
+        chiikawaAutomaticVoiceCue = nil
         guard chiikawaVoice.player != nil else { return }
         chiikawaVoice.stop(); state.chiikawaVoiceStatus = "목소리 재생을 멈췄어요"
     }
