@@ -3,7 +3,7 @@
   "operation": "copy; originals preserved",
   "image_file_count": 2292,
   "unique_image_content_count": 1448,
-  "supporting_file_count": 401,
+  "supporting_file_count": 416,
   "image_bytes": 580348580,
   "symmetric_walk_runtime_applied": true,
   "files": [
@@ -440,6 +440,111 @@
       "archive_path": "AppliedWalk-v5/validation.json",
       "bytes": 956,
       "sha256": "a3f3ef4443d40a067fd0d8db150ef0bd7715194c3afbb2af48147f822e7e391a"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ArmedHover-v35/NativePointerProbe.swift",
+      "archive_path": "ArmedHover-v35/NativePointerProbe.swift",
+      "bytes": 3383,
+      "sha256": "4df03165b2ef6febd06dd6fb913515dceed5ba5b5ad0c2a25cc97ec17673ff86"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ArmedHover-v35/README.txt",
+      "archive_path": "ArmedHover-v35/README.txt",
+      "bytes": 4485,
+      "sha256": "180ce7d17f69e134a9d2f983cee0b8ac0edf8abdfcdafb979a16e1076ab46126"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ArmedHover-v35/build.log",
+      "archive_path": "ArmedHover-v35/build.log",
+      "bytes": 327,
+      "sha256": "0733feae631d0ad950890cdd620ce1728fba9f0e9737dfeb05cfe0ec8257cb51"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ArmedHover-v35/codesign.log",
+      "archive_path": "ArmedHover-v35/codesign.log",
+      "bytes": 109,
+      "sha256": "6210c61790ac2c9d268a576bdecb1c906f66d332a0c64871ceff1469e071d542"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ArmedHover-v35/native-app-settings.txt",
+      "archive_path": "ArmedHover-v35/native-app-settings.txt",
+      "bytes": 6158,
+      "sha256": "dd2fe5538bc6e47ecfdcc4c81bfa4c60401030e965ea79f476312586fd64f200"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ArmedHover-v35/packaged-self-test.log",
+      "archive_path": "ArmedHover-v35/packaged-self-test.log",
+      "bytes": 33804,
+      "sha256": "d60ab78c627e452a23f76d0826b2fb03f9ed45bb227dab6306322b8c4faaac53"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ArmedHover-v35/regression-after-initial.log",
+      "archive_path": "ArmedHover-v35/regression-after-initial.log",
+      "bytes": 30948,
+      "sha256": "0b34e5c1ac13b7cf5d9c49d1a69a010415a7637694cf4b66005d0d70edecd81e"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ArmedHover-v35/regression-after-native-launch.log",
+      "archive_path": "ArmedHover-v35/regression-after-native-launch.log",
+      "bytes": 27892,
+      "sha256": "dd0ec0c3ab1a6ca19b61b2a262d1a174a9f6e7f994670126d883f8086df462d0"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ArmedHover-v35/regression-after-native-paint.log",
+      "archive_path": "ArmedHover-v35/regression-after-native-paint.log",
+      "bytes": 33510,
+      "sha256": "1197646e1b1a29a33011ffb83ef7e2c65158b7c0d3f6144aa7aa8ec3f780ee23"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ArmedHover-v35/regression-after-native.log",
+      "archive_path": "ArmedHover-v35/regression-after-native.log",
+      "bytes": 27639,
+      "sha256": "a7893634cefcbc2dcac846edf9786af5d7b8e0d47d53d6cb11ce6283b287a923"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ArmedHover-v35/regression-after-window-order.log",
+      "archive_path": "ArmedHover-v35/regression-after-window-order.log",
+      "bytes": 29298,
+      "sha256": "5942b0e11c0629ef482dbbbdf8dc890cd87011f3ee72e013f99db199548242a5"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ArmedHover-v35/regression-after.log",
+      "archive_path": "ArmedHover-v35/regression-after.log",
+      "bytes": 27454,
+      "sha256": "3f758d4d8d773d98f270e77a87d9c5e7aaf1759df3dd0acd245593f95829ee4a"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ArmedHover-v35/regression-before.log",
+      "archive_path": "ArmedHover-v35/regression-before.log",
+      "bytes": 25690,
+      "sha256": "ab7bda82d7a5abbff004d7dd14a9ca4aa96a476265695657b739a8071c800579"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ArmedHover-v35/resources-preserved.json",
+      "archive_path": "ArmedHover-v35/resources-preserved.json",
+      "bytes": 12235,
+      "sha256": "f93594db04c7b46dbac4c907d506c94d914ce331910799a9d2fa233885c9d1a5"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ArmedHover-v35/validation.json",
+      "archive_path": "ArmedHover-v35/validation.json",
+      "bytes": 884,
+      "sha256": "0adb61208c0a5e148da607fc280b5b647905e971bc7162b3effd9b7363b6f011"
     },
     {
       "kind": "supporting",
@@ -17385,8 +17490,8 @@
       "kind": "supporting",
       "source": "Source/README.txt",
       "archive_path": "README.txt",
-      "bytes": 9125,
-      "sha256": "081baeb831b23fb747e249084431832fcfe3adbe84c3ab194989fb56177a8ddb"
+      "bytes": 9344,
+      "sha256": "133626ef39356fcac31f7ef4bb820835ede699468765a9b834a884aeeaa17a26"
     },
     {
       "kind": "supporting",
@@ -18859,8 +18964,8 @@
       "sha256": "8a42caa40e469a5ee00fa2b860d14756cc1fd73bc8fcf73332c50b87a92c9c3b"
     }
   ],
-  "updated_at": "2026-10-21T09:47:39.222711+00:00",
-  "latest_applied": "ContinuousRoaming-v34",
+  "updated_at": "2026-10-21T10:05:50.519654+00:00",
+  "latest_applied": "ArmedHover-v35",
   "applied_directions": [
     "down-left",
     "down-right"

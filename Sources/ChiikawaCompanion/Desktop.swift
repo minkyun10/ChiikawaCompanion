@@ -156,10 +156,7 @@ final class FriendActor {
     var wasHovered = false
     var lastGreeting: String?
     var clickReaction = ChiikawaReaction.happy
-    var pointerArtworkIsVisible: Bool {
-        let shown = view.attackUsesOverlay ? attackOverlay.panel : panel
-        return shown.occlusionState.contains(.visible)
-    }
+    var armedHoverContact: CharacterPointerMask?
 
     init(friend: Friend, index: Int) {
         self.friend = friend
@@ -427,6 +424,7 @@ final class DesktopController {
             let origin = RoamingMotion.target(in: visible, size: size,
                                               xFraction: 0.18 + CGFloat(index) * 0.16, yFraction: 0.28)
             actor.panel.setFrameOrigin(origin)
+            actor.armedHoverContact = nil; actor.wasHovered = false
             actor.motion.retarget()
             actor.motion.destination = RoamingMotion.target(in: visible, size: size, xFraction: 0.8, yFraction: 0.72)
         }
@@ -731,8 +729,8 @@ final class DesktopController {
                 continue
             }
             if !actor.panel.isVisible { actor.panel.orderFrontRegardless() }
-            let hovered = !actor.view.isDragging && (pointerCanReachCharacter ?? actor.pointerArtworkIsVisible)
-                && DesktopGeometry.hit(mouse, in: actor.panel.frame)
+            let hovered = actor.pointerIsHovering(at: mouse,
+                armed: state.expressive && itemWorld.equipped == .sasumata, canReach: pointerCanReachCharacter)
             actor.panel.ignoresMouseEvents = !hovered && !actor.view.isDragging
             let activity = DesktopActivity.resolve(roaming: state.isWalking(actor.friend), hovered: hovered,
                                                    dragging: actor.view.isDragging,
@@ -817,6 +815,7 @@ final class DesktopController {
             } else if state.expressive && activity == .speaking {
                 action = .surprised
             }
+            if action == .attack && actor.view.action != .attack { actor.hoverStarted = now }
             actor.view.action = action
             actor.view.actionTime = actor.dailyPerformance.action(now: now) == nil ? nil : actor.dailyPerformance.elapsed(now: now)
             if action == .attack { actor.view.actionTime = max(0, now.timeIntervalSince(actor.hoverStarted)) }

@@ -1,0 +1,27 @@
+{
+  "verified": "2026-10-21",
+  "version": "0.17.5",
+  "build": 37,
+  "packagedChecksPassed": 431,
+  "newRegressionChecks": 29,
+  "companions": [
+    "hachiware",
+    "chiikawa"
+  ],
+  "attackFramesCoveredPerCompanion": 12,
+  "walkingDirectionsCoveredPerCompanion": 8,
+  "continuousWeaponHoverTicksPerCompanion": 360,
+  "continuousWeaponHoverSecondsPerCompanion": 6,
+  "outlineTolerancePoints": 2,
+  "hoverRelease": "next 60Hz tick",
+  "foregroundOcclusion": "actual native mouse-down target and active-space window order",
+  "nativeForegroundFixtureConfirmed": true,
+  "nativeTransparentActorAndAttackOverlayConfirmed": true,
+  "nativeMouseInputSynthesized": false,
+  "nativeAppRelaunched": true,
+  "settingsClosedAfterReview": true,
+  "resourceFilesPreserved": 51,
+  "codesign": "passed",
+  "runtimeLoggingAdded": false,
+  "voicePlaybackPolicy": "click and explicit preview only"
+}

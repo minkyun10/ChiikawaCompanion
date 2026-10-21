@@ -125,8 +125,8 @@ extension DesktopController {
             return
         }
         if !actor.panel.isVisible { actor.panel.orderFrontRegardless() }
-        let hovered = !actor.view.isDragging && (pointerCanReachCharacter ?? actor.pointerArtworkIsVisible)
-            && DesktopGeometry.hit(mouse, in: actor.panel.frame)
+        let hovered = actor.pointerIsHovering(at: mouse,
+            armed: state.expressive && chiikawaWorld.equipped == .pinkSasumata, canReach: pointerCanReachCharacter)
         actor.panel.ignoresMouseEvents = !hovered && !actor.view.isDragging
         let activity = DesktopActivity.resolve(roaming: state.isWalking(.chiikawa), hovered: hovered,
             dragging: actor.view.isDragging, dialogueUntil: actor.bubbleUntil, now: now)

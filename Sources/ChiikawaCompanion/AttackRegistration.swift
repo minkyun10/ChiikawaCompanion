@@ -91,7 +91,8 @@ final class AttackOverlayView: NSView {
 }
 
 /// A transparent, click-through viewport for the long spear. The actor's panel,
-/// world coordinates, pointer target and physics retain their original 132 × 150 size.
+/// world coordinates and physics retain their original 132 × 150 size. Logical
+/// armed hover includes its stable artwork silhouette outside those bounds.
 final class AttackOverlay {
     let panel: FriendPanel
     let view: AttackOverlayView
@@ -108,6 +109,9 @@ final class AttackOverlay {
         let active = actor.panel.isVisible && actor.view.action == .attack && !actor.view.isDragging
         let registration = actor.friend == .chiikawa ? ChiikawaAttackSprites.shared.registration : WeaponAttackSprites.shared.registration
         guard active, let registration else {
+            if !actor.panel.isVisible || actor.view.isDragging {
+                actor.armedHoverContact = nil; actor.wasHovered = false
+            }
             if actor.view.attackUsesOverlay { actor.view.attackUsesOverlay = false; actor.view.needsDisplay = true }
             if panel.isVisible { panel.orderOut(nil) }; return
         }

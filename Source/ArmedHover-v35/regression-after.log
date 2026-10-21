@@ -1,0 +1,354 @@
+PASS: desktop positions clamp to negative-coordinate screen
+PASS: transparent margins are click-through
+PASS: character body receives pointer
+PASS: character is above desktop icons
+PASS: character stays below normal app windows
+PASS: speech bubble stays on desktop, below app windows
+PASS: desktop character does not join full-screen overlays
+PASS: Hachiware and Chiikawa are the active companions
+PASS: destination can reach upper-right desktop
+PASS: walking moves in both desktop axes
+PASS: walking state follows actual movement
+PASS: long journey never crosses screen edges
+PASS: arrival clears target for a new journey
+PASS: walking left turns the character left
+PASS: hover pause stops motion without advancing gait
+PASS: drag release discards previous route
+PASS: zero elapsed time does not move character
+PASS: rounded windows finish journeys, start the next route, and resume from dragged positions
+PASS: short and long hovers release reaction and resume movement within the next sub-100ms update
+PASS: leaving hover respects the user's paused walking preference
+PASS: leaving hover does not interrupt a drag
+PASS: click dialogue reaction remains independent of hover release
+PASS: click dialogue reaction ends at its own deadline
+PASS: launch removes retired sender mappings and notification preferences
+PASS: removing chat preferences preserves walking and recorded-click voice settings
+PASS: later launches preserve the user's walking preference
+PASS: three enabled props spawn on the desktop
+PASS: props stay reachable on negative-coordinate displays
+PASS: a distant prop cannot be equipped by teleporting
+PASS: disabling automatic pickup still leaves props on the desktop
+PASS: clicking a prop requests a journey even with automatic pickup off
+PASS: a requested prop is not picked up while the user is dragging it
+PASS: reaching a prop transfers it from ground to equipment
+PASS: new equipment is carried for a while before seeking another prop
+PASS: swapping equipment drops the old prop without duplicating or losing it
+PASS: manual drops restore the ground item within reachable screen bounds
+PASS: a dropped item is not immediately picked up again
+PASS: turning off a carried prop removes it from both equipment and ground
+PASS: scattering preserves exactly one instance of every enabled prop
+PASS: dragging the character leaves every ground prop at its exact original coordinate
+PASS: drag release rebuilds the character route while preserving the requested item interaction
+PASS: calling the character back never resets or scatters ground props
+PASS: dragging one prop moves only that prop, independently of the character and other props
+PASS: pickup still uses the unchanged ground coordinate after moving character and props independently
+PASS: prop and expression choices survive relaunch independently of other character settings
+PASS: legacy bag preference is removed without changing the other prop choices
+PASS: four real spoken excerpts and their matching captions load from local resources
+PASS: every bundled recording decodes and preserves its caption timing
+PASS: missing or invalid audio paths cannot escape the bundled voice directory
+PASS: recorded dialogue varies without immediately repeating the same excerpt
+PASS: the original ten quotes stay intact and are never paired with unrelated spoken words
+PASS: audio gain clamps out-of-range values and safely handles invalid saved volume
+PASS: a recording prepares a single player at the requested volume
+PASS: rapid clicks replace and release the previous recording instead of overlapping audio
+PASS: a missing clip clears old playback and fails without silently retaining stale audio
+PASS: an output-device failure releases the prepared player
+PASS: one click pool contains exactly four voiced entries and all ten unmodified text quotes
+PASS: all fourteen lines share the same random selection pool without immediate repeats
+PASS: an older text-only mode preference cannot exclude the four recordings
+PASS: all fourteen selections show their own text and only the four matching recordings play
+PASS: the real character click callback selects a new entry from the combined pool
+PASS: turning off click voice stops current playback immediately
+PASS: muting audio keeps every one of the fourteen click captions available
+PASS: starting a daily action stops the recording and its old click bubble
+PASS: recorded click voice and volume still persist after chat integration removal
+PASS: study, eating and comic spit-up each load twelve transparent animation frames
+PASS: daily sprites retain clean transparent corners without a room background
+PASS: every daily animation advances through its twelve frames chronologically before looping
+PASS: all twelve study frames retain the requested pink tongue in the central mouth region
+PASS: studying uses its own duration and finishes without leaving a permanent stopped pose
+PASS: a new selected action replaces the previous one and spit-up runs only once
+PASS: manual stop releases a daily animation immediately
+PASS: the settings action callback pauses travel at the current position and advances a local study clock
+PASS: hovering preserves an explicitly selected study animation and never moves the ground props
+PASS: the character menu callback starts eating directly
+PASS: dragging interrupts the daily action immediately
+PASS: ordinary clicks stop studying and retain the fourteen-line dialogue behavior
+PASS: the stop callback interrupts eating immediately
+PASS: spit-up finishes in the live update path and yields to the existing roaming behavior
+PASS: hiding the character cancels its active daily action
+PASS: the independent desk, furball and rice props map to the three approved daily actions
+PASS: proximity actions obey the automatic-reaction switch
+PASS: a dragged prop cannot trigger its action before release
+PASS: standing at the same desk never repeatedly restarts studying after a timeout
+PASS: a repeat encounter needs both leaving the prop and finishing its cooldown
+PASS: explicitly clicking a prop can request another visit without waiting for automatic rearming
+PASS: dragging one life prop leaves the other world coordinates unchanged
+PASS: hiding a prop removes its trigger and clears a pending visit
+PASS: desk direct-anchor action starts (window/anchor distance 1.0621205204684503pt, action Optional(ChiikawaCompanion.HachiwareAction.study), active Optional(ChiikawaCompanion.ActivitySpot.desk))
+PASS: a running 책상 action cannot be replaced by another automatic proximity check
+PASS: furball direct-anchor action starts (window/anchor distance 0.466476151587658pt, action Optional(ChiikawaCompanion.HachiwareAction.vomit), active Optional(ChiikawaCompanion.ActivitySpot.furball))
+PASS: a running 털뭉치 action cannot be replaced by another automatic proximity check
+PASS: rice direct-anchor action starts (window/anchor distance 0.8160882305241115pt, action Optional(ChiikawaCompanion.HachiwareAction.eat), active Optional(ChiikawaCompanion.ActivitySpot.rice))
+PASS: a running 밥 action cannot be replaced by another automatic proximity check
+PASS: the live update starts study, spit-up and eating at their own fixed prop anchors without moving any prop
+PASS: finished actions reveal the same props and stay idle until the character leaves
+PASS: clicking a life prop walks toward it before starting its action
+PASS: an explicit visit triggers the selected desk only on arrival
+PASS: dropping the character beside a life prop triggers the matching action immediately
+PASS: turning off automatic reactions keeps nearby props visible without starting actions
+PASS: a requested rice visit still works while automatic proximity is off
+PASS: calling or moving the character never scatters life props or carried-item world positions
+PASS: life-prop visibility and proximity preferences persist independently
+PASS: dropping a dragged item away from the character leaves it on the desktop
+PASS: the body-level handoff is reachable without equipping an item that is still being moved
+PASS: holding a dragged item over the character does not equip it before release
+PASS: the actual item drag-release callback immediately equips and displays a body-level handoff
+PASS: direct handoff works with automatic pickup and walking off without moving the character
+PASS: handing over a replacement stops studying and drops the old item without duplication
+PASS: a replacement handoff never relocates unrelated carried-item or life-prop coordinates
+PASS: an already carried item cannot be handed over or duplicated a second time
+PASS: an intentional handoff cancels a pending prop visit while preserving click dialogue and its reaction
+PASS: an invisible character does not accept an item dropped at its old coordinates
+PASS: a disabled item cannot be handed over before the next display update
+PASS: weapon hover loads twelve dedicated attack frames
+PASS: the attack contains twelve distinct drawings rather than one rotated still
+PASS: attack sprites retain transparent corners without the reference cave or other character
+PASS: attack playback stays chronological, loops cleanly and rejects invalid clocks
+PASS: only a held sasumata changes the regular greeting into the determined attack
+PASS: the attack already includes one weapon and never receives a duplicate equipment overlay
+PASS: weapon hover starts the attack immediately on a local clock without advancing travel
+PASS: holding hover advances the attack without moving props or replacing equipment
+PASS: leaving weapon hover releases the attack and resumes the existing gait on the next sub-100ms tick
+PASS: distance-based gait resumes within 100ms even when the first resumed window position rounds to the same pixel
+PASS: leaving weapon hover preserves paused walking
+PASS: dragging the armed character does not continue a hover attack
+PASS: a new weapon hover restarts at frame one
+PASS: click dialogue retains priority over the weapon attack while hovered
+PASS: explicit study animation keeps priority over armed hover
+PASS: the expression switch also disables the weapon hover animation
+PASS: replacing the weapon restores the normal hover greeting immediately
+PASS: a prop touching the upper side of the drawn body is reachable beyond the old 30-point foot circle
+PASS: the visual pickup area does not grab distant props
+PASS: a nearby encounter is independent of the 24-second automatic seek cooldown
+PASS: the short three-second encounter cooldown prevents rapid automatic item flicker
+PASS: passing pickup respects automatic-off and never grabs a prop during its drag
+PASS: visual contact swaps the held item while keeping unrelated props fixed
+PASS: a recently dropped old item keeps its own twelve-second no-repickup delay
+PASS: incidental contact does not replace an explicitly requested item journey
+PASS: the live update grabs a body-touching item during the seek cooldown even with a different old route target
+PASS: a passing pickup keeps other item and life-prop coordinates unchanged
+PASS: the encounter boundary fixture begins outside contact
+PASS: the post-movement check equips on the same tick that the body first touches a prop
+PASS: existing installations start with both companions visible and walking
+PASS: two independent nonactivating character panels share the desktop-only layer
+PASS: Chiikawa loads eight independent 24-frame cycles plus both alpha reaction poses
+PASS: Chiikawa down retains all 24 distinct chronological drawings
+PASS: Chiikawa down runtime frames exactly match atlas row-major order
+PASS: Chiikawa up retains all 24 distinct chronological drawings
+PASS: Chiikawa up runtime frames exactly match atlas row-major order
+PASS: Chiikawa left retains all 24 distinct chronological drawings
+PASS: Chiikawa left runtime frames exactly match atlas row-major order
+PASS: Chiikawa right retains all 24 distinct chronological drawings
+PASS: Chiikawa right runtime frames exactly match atlas row-major order
+PASS: Chiikawa down-left retains all 24 distinct chronological drawings
+PASS: Chiikawa down-left runtime frames exactly match atlas row-major order
+PASS: Chiikawa down-right retains all 24 distinct chronological drawings
+PASS: Chiikawa down-right runtime frames exactly match atlas row-major order
+PASS: Chiikawa up-left retains all 24 distinct chronological drawings
+PASS: Chiikawa up-left runtime frames exactly match atlas row-major order
+PASS: Chiikawa up-right retains all 24 distinct chronological drawings
+PASS: Chiikawa up-right runtime frames exactly match atlas row-major order
+PASS: live velocity maps to the correct front/back diagonal and side assets
+PASS: Chiikawa travels across both desktop axes and advances gait from actual displayed distance
+PASS: hover pauses only Chiikawa's gait and displays the prepared happy pose
+PASS: leaving Chiikawa clears the reaction and resumes walking within 20ms
+PASS: walking never moves either companion's independent ground-item coordinates
+PASS: pausing Chiikawa preserves Hachiware's roaming
+PASS: Chiikawa click creates its own greeting without replacing Hachiware's voice or dialogue history
+PASS: Chiikawa greetings avoid immediate repeats
+PASS: dragging Chiikawa does not cancel Hachiware's studying
+PASS: calling Chiikawa resets only that character and preserves all desktop props
+PASS: a ground prop cannot be handed to the other character
+PASS: Chiikawa handoff waits until mouse release
+PASS: direct drop immediately dresses Chiikawa even with walking and automatic pickup disabled
+PASS: Chiikawa item replacement drops the previous item without duplicating or moving Hachiware props
+PASS: putting down a Chiikawa item preserves ground coordinates and applies re-pickup cooldown
+PASS: the Hachiware entry handler cannot change the separate Chiikawa rest clock
+PASS: Hachiware still reaches and enters its own home
+PASS: Hachiware sleeps in the cave while Chiikawa remains visible and keeps walking
+PASS: Chiikawa click and drag leave sleeping Hachiware asleep
+PASS: hiding Chiikawa hides its bubble and both dedicated ground props
+PASS: hiding Hachiware leaves Chiikawa and the shared house visible
+PASS: disabled Chiikawa items disappear and cannot be handed over
+PASS: visibility, walking, Chiikawa inventory and automatic pickup preferences survive relaunch independently
+PASS: saved roster preferences cannot expose unfinished or unknown characters
+PASS: clicking a distant Chiikawa prop walks to and picks it up with automatic pickup off
+PASS: Chiikawa's live loop picks up a touched prop after cooldown without altering Hachiware inventory
+PASS: Chiikawa armed hover loads twelve dedicated pink-weapon frames
+PASS: Chiikawa attack keeps twelve distinct poses rather than rotating a still
+PASS: Chiikawa attack alpha corners remain empty and no cave or Hachiware is included
+PASS: Chiikawa attack plays in chronological order and uses Hachiware's 1.2-second loop
+PASS: Chiikawa attack draws exactly one weapon without a second walking-equipment overlay
+PASS: Chiikawa's live artwork dispatch visits all twelve attack drawings
+PASS: unarmed Chiikawa retains the normal happy hover
+PASS: pink weapon can still be handed directly to Chiikawa
+PASS: armed Chiikawa immediately starts attack frame one without moving its body or gait
+PASS: holding Chiikawa hover advances a local attack clock without shifting either character's props
+PASS: leaving Chiikawa hover clears attack and resumes distance-based walking on the next 60Hz tick
+PASS: Chiikawa's normal walking gait advances again within 100ms after attacking
+PASS: attack release respects Chiikawa's paused walking
+PASS: dragging an armed Chiikawa suppresses the hover attack
+PASS: a new Chiikawa hover restarts the cycle at frame one
+PASS: Chiikawa click dialogue keeps priority over armed hover
+PASS: the shared expression switch disables Chiikawa attack
+PASS: equipping a pochette restores Chiikawa's ordinary happy hover
+PASS: disabling the equipped pink weapon clears the attack immediately
+PASS: Chiikawa attacks independently while Hachiware continues studying
+PASS: hiding an attacking Chiikawa also clears its attack state
+PASS: showing Chiikawa under the pointer starts a fresh attack clock
+PASS: Chiikawa owns a house, sleeping/pajama/hug cutouts and twelve study frames
+PASS: all twelve registered Chiikawa study frames are distinct
+PASS: study is chronological, loops at 1.8 seconds and handles invalid elapsed time
+PASS: new startled, determined and gentle reaction poses load alongside the original two
+PASS: the shared home retains the original cave position above the Dock on a negative-coordinate screen
+PASS: Chiikawa home stays in a 800-point visible frame
+PASS: Chiikawa home stays in a 1024-point visible frame
+PASS: Chiikawa home stays in a 1920-point visible frame
+PASS: study ends on time and returns control to roaming
+PASS: life actions can be cancelled immediately
+PASS: v26 migration adds only the new key and toy, preserving old disabled props
+PASS: a disabled new prop does not reappear on subsequent launches
+PASS: the shared house and Chiikawa desk use independent nonactivating desktop-only windows
+PASS: asking to study starts a real walk rather than teleporting to the table
+PASS: arrival starts the study loop and hides only the table already included in the pose
+PASS: studying never relocates either inventory
+PASS: dragging Chiikawa cancels only its study and leaves Hachiware eating
+PASS: calling or dragging Chiikawa preserves the desk and all ground prop coordinates
+PASS: dropping the toy directly onto a stationary Chiikawa immediately starts a hug
+PASS: pajama pose replaces only the selected character
+PASS: going home explicitly routes to the ground key even when automatic pickup is off
+PASS: picking up the key continues the same journey toward home
+PASS: reaching the shared door hides Chiikawa for the pajama entrance transition
+PASS: entering drops only the carried key and preserves every other ground prop
+PASS: Chiikawa sleeps in pajamas after entry while Hachiware stays active
+PASS: twenty seconds of sleep wakes Chiikawa without moving its house
+PASS: handing over the key during a return journey continues toward home without cancelling it
+PASS: hiding one occupant clears only its rest routine and preserves the shared home
+PASS: Chiikawa has four independently packaged original Korean voice clips
+PASS: short Chiikawa clips resolve to their own safe local resources
+PASS: Chiikawa's voice and bubble never replace Hachiware's current player
+PASS: Chiikawa voice selection avoids immediate repeats
+PASS: muting Chiikawa stops only its own recording
+PASS: hiding Chiikawa stops its audio and desk while preserving the shared house
+PASS: Hachiware all twelve rendered attack heads match the actual walking head within two pixels
+PASS: Hachiware attack keeps the same body center instead of centering the long weapon
+PASS: Hachiware attack feet stay on the walking baseline (expected 23.4375, measured [23.0, 23.0, 23.0, 23.0, 24.0, 23.0, 23.0, 23.0, 24.0, 24.0, 23.0, 23.0])
+PASS: Hachiware wider attack viewport preserves the entire spear in every frame
+PASS: Chiikawa all twelve rendered attack heads match the actual walking head within two pixels
+PASS: Chiikawa attack keeps the same body center instead of centering the long weapon
+PASS: Chiikawa attack feet stay on the walking baseline (expected 18.796875, measured [19.0, 19.0, 19.0, 19.0, 19.0, 18.0, 19.0, 19.0, 19.0, 18.0, 19.0, 19.0])
+PASS: Chiikawa wider attack viewport preserves the entire spear in every frame
+PASS: 하치와레 armed hover expands only its artwork viewport, preserving the actor frame
+PASS: 하치와레 long weapon is click-through and remains behind normal apps
+PASS: 하치와레 size correction never moves either inventory
+PASS: 하치와레 leaving hover removes the expanded drawing on the next frame
+PASS: 치이카와 armed hover expands only its artwork viewport, preserving the actor frame
+PASS: 치이카와 long weapon is click-through and remains behind normal apps
+PASS: 치이카와 size correction never moves either inventory
+PASS: 치이카와 leaving hover removes the expanded drawing on the next frame
+PASS: old separate home toggles migrate to one shared house with Hachiware as the default
+PASS: the single selected home design survives relaunch
+PASS: an unavailable saved home design falls back to Hachiware
+PASS: the only house uses the original Hachiware size and anchored Dock position
+PASS: the shared house remains when only Chiikawa is visible
+PASS: switching house designs reuses the same window, size, position and entrance
+PASS: clicking the empty shared house invites both visible friends
+PASS: Hachiware and Chiikawa sleep together in the Chiikawa design of the same house
+PASS: changing the design while sleeping preserves both occupants and their sleep clocks
+PASS: sharing or switching the home never relocates either friend's ground inventory
+PASS: clicking the occupied shared house wakes all sleepers without creating another house
+PASS: Chiikawa can enter and sleep in the default Hachiware design
+PASS: hiding Hachiware never evicts Chiikawa from the shared Hachiware house
+PASS: global hide clears sleepers and hides the single desktop home safely
+PASS: showing friends restores exactly the same anchored home window
+PASS: all five new Chiikawa animation atlases load
+PASS: eat contains 12 distinct chronological drawings
+PASS: eat preserves transparent sprite corners
+PASS: hug contains 12 distinct chronological drawings
+PASS: hug preserves transparent sprite corners
+PASS: pajamas contains 12 distinct chronological drawings
+PASS: pajamas preserves transparent sprite corners
+PASS: rest contains 16 distinct chronological drawings
+PASS: rest preserves transparent sprite corners
+PASS: blink contains 6 distinct chronological drawings
+PASS: blink preserves transparent sprite corners
+PASS: the eating cycle visits all twelve cells in order before looping
+PASS: dressing finishes in the final clothed pose and safely holds it
+PASS: blinks register only the two eyes and occur briefly at a controlled interval
+PASS: blinking changes eye pixels while preserving every walking limb and body pixel
+PASS: Chiikawa has no vomiting action
+PASS: Chiikawa owns an independent desk and food bowl, with no furball
+PASS: entering the bowl radius starts eating and hides only the bowl included in the animation
+PASS: eating keeps both characters' inventories at their existing world coordinates
+PASS: eating ends after six seconds and restores the same ground bowl without repeating in place
+PASS: explicit food requests walk to the bowl even with automatic actions off
+PASS: the meal route targets the requested food bowl rather than the study desk
+PASS: reaching an explicitly requested bowl begins the meal
+PASS: disabling the bowl cancels its meal and removes only that activity spot
+PASS: food visibility persists independently
+PASS: waking renders the blanket and stretching sequence inside the shared home before walking
+PASS: finishing the wake animation restores the character without moving the house
+PASS: dragging interrupts the dressing sequence without touching the other character
+PASS: expression changes keep the previous pose for a local one-tenth-second transition
+PASS: study animates silently even when Chiikawa click voice is enabled
+PASS: eat animates silently even when Chiikawa click voice is enabled
+PASS: pajamas animates silently even when Chiikawa click voice is enabled
+PASS: hug animates silently even when Chiikawa click voice is enabled
+PASS: ordinary hover and walking never trigger Chiikawa audio
+PASS: armed hover, attack loops and renewed hover all stay silent
+PASS: automatic desk proximity starts the animation without sound
+PASS: automatic rice proximity starts the animation without sound
+PASS: entering, sleeping and waking animations never start a recording
+PASS: the real Chiikawa click callback still plays a random bundled reaction
+PASS: a rapid second click immediately replaces the recording without a cooldown or repeat
+PASS: muting click voice keeps click captions available without audio
+PASS: the explicit voice-preview button can still play a sample while ordinary clicks are muted
+PASS: Chiikawa playback and stopping leave Hachiware's independent recording untouched
+PASS: switching to the attack overlay clears the previously drawn happy body from the actor buffer
+PASS: an attack frame replaces its previous drawing without leaving another pose underneath
+PASS: the attack renderer exclusively draws attack even if other animation inputs are stale
+PASS: six seconds of arFAIL: native pointer visibility rejects a small foreground window even if the rest of the character is visible
+med hover contain only attack without happy transitions, life actions or walking
+PASS: equipping a weapon while already hovered starts frame one and keeps one continuous attack clock
+PASS: leaving attack restores the character without fading in a stale smile
+PASS: armed hover interrupts each life animation and immediately begins an exclusive attack
+PASS: explicit click dialogue still takes priority over armed hover
+PASS: after click dialogue ends, hovering resumes at attack frame one without mixing the click expression
+PASS: exclusive attacks and interrupted life actions preserve click-only voice playback
+PASS: 하치와레 regression fixture has visible armed pixels outside the old hover rectangle
+PASS: 하치와레 visible body and carried weapon outside the old inset start attack without a walking frame
+PASS: 하치와레 stable hover silhouette covers the actual body and spear in all twelve attack drawings
+PASS: 하치와레 armed hover covers rendered walking outlines in all eight directions
+PASS: 하치와레 attack fixture includes a spear outside the actor window
+PASS: 하치와레 six seconds on the extended weapon keep one uninterrupted attack clock and position
+PASS: 하치와레 a foreground window immediately releases armed hover
+PASS: 하치와레 an empty future swing area cannot start another attack
+PASS: 하치와레 returning to the visible body restarts attack
+PASS: 하치와레 leaving the whole silhouette resumes walking in one 60Hz update
+PASS: 하치와레 transparent expanded corners do not retain hover
+PASS: 치이카와 regression fixture has visible armed pixels outside the old hover rectangle
+PASS: 치이카와 visible body and carried weapon outside the old inset start attack without a walking frame
+PASS: 치이카와 stable hover silhouette covers the actual body and spear in all twelve attack drawings
+PASS: 치이카와 armed hover covers rendered walking outlines in all eight directions
+PASS: 치이카와 attack fixture includes a spear outside the actor window
+PASS: 치이카와 six seconds on the extended weapon keep one uninterrupted attack clock and position
+PASS: 치이카와 a foreground window immediately releases armed hover
+PASS: 치이카와 an empty future swing area cannot start another attack
+PASS: 치이카와 returning to the visible body restarts attack
+PASS: 치이카와 leaving the whole silhouette resumes walking in one 60Hz update
+PASS: 치이카와 transparent expanded corners do not retain hover
+PASS: armed pointer regression never plays click-only voices
+PASS: pointer stacking rejects foreground apps and hidden-space actors while allowing the actor and desktop behind it
+PASS: native hover visibility remains true when the actor changes its mouse-event transparency
