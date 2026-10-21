@@ -66,14 +66,20 @@ struct RoamingMotion {
                        y: bounds.minY + height * min(1, max(0, yFraction)))
     }
 
-    mutating func advance(from origin: NSPoint, dt: TimeInterval, bounds: NSRect, size: NSSize) -> NSPoint {
+    mutating func advance(from origin: NSPoint, dt: TimeInterval, bounds: NSRect, size: NSSize,
+                          stoppingDistance: CGFloat = 5) -> NSPoint {
+        // Preserve subpixel accumulation, but do not return to an old location
+        // after AppKit or a display change has moved the real window.
+        if let precisePosition, hypot(precisePosition.x - origin.x, precisePosition.y - origin.y) > 2 {
+            stop()
+        }
         let current = DesktopGeometry.clamp(precisePosition ?? origin, size: size, to: bounds)
         guard dt > 0, let destination else { stop(); return current }
         let goal = DesktopGeometry.clamp(destination, size: size, to: bounds)
         self.destination = goal
         let dx = goal.x - current.x, dy = goal.y - current.y
         let distance = hypot(dx, dy)
-        guard distance > 5 else {
+        guard distance > max(0.1, stoppingDistance) else {
             self.destination = nil; stop(); return current
         }
         let step = CGFloat(min(dt, 0.06))

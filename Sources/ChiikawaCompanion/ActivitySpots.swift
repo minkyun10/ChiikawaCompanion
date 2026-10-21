@@ -13,6 +13,10 @@ enum ActivitySpot: String, CaseIterable, Codable, Identifiable {
 /// Life props own world coordinates, separately from the character and carried items.
 struct ActivitySpotWorld {
     static let triggerRadius: CGFloat = 34
+    // NSWindow can quantize each axis by a point even for an exact requested
+    // anchor. Allow that diagonal error, then begin in place without snapping.
+    static let arrivalRadius: CGFloat = 2
+    static let stoppingDistance: CGFloat = 0.5
     static let exitRadius: CGFloat = 84
     private(set) var positions: [ActivitySpot: NSPoint] = [:]
     private(set) var enabled = Set<ActivitySpot>()
@@ -60,6 +64,10 @@ struct ActivitySpotWorld {
             guard $0.action == action, let point = positions[$0] else { return false }
             return hypot(contact.x - point.x, contact.y - point.y) <= Self.triggerRadius
         }
+    }
+    func hasArrived(at spot: ActivitySpot, contact: NSPoint) -> Bool {
+        guard let point = positions[spot] else { return false }
+        return hypot(contact.x - point.x, contact.y - point.y) <= Self.arrivalRadius
     }
     mutating func consume(_ spot: ActivitySpot, now: Date) {
         latched.insert(spot); availableAfter[spot] = now.addingTimeInterval(spot.cooldown)

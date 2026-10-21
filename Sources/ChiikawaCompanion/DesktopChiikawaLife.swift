@@ -81,19 +81,31 @@ extension DesktopController {
         let contact = ItemWorld.contactPoint(origin: actor.panel.frame.origin)
         chiikawaStudyWorld.observe(contact: contact)
         guard let spot = chiikawaStudyWorld.encounter(contact: contact, automatic: state.chiikawaAutomaticActivities, now: now), spot == .desk || spot == .rice else { return false }
+        if !chiikawaStudyWorld.hasArrived(at: spot, contact: contact) {
+            guard state.isWalking(.chiikawa) else { return false }
+            if chiikawaStudyWorld.requested != spot {
+                if spot == .desk { seekChiikawaStudy(now: now) } else { seekChiikawaFood(now: now) }
+            }
+            return false
+        }
         playChiikawaLife(spot == .desk ? .study : .eat, atDesk: true, now: now)
         return true
     }
 
     func playChiikawaLife(_ action: ChiikawaLifeAction, atDesk: Bool = false, now: Date = Date()) {
         guard let actor = chiikawaActor else { return }
+        let spot: ActivitySpot = action == .eat ? .rice : .desk
+        if atDesk, action == .study || action == .eat,
+           !chiikawaStudyWorld.hasArrived(at: spot, contact: ItemWorld.contactPoint(origin: actor.panel.frame.origin)) {
+            if spot == .desk { seekChiikawaStudy(now: now) } else { seekChiikawaFood(now: now) }
+            return
+        }
         if chiikawaHomeRoutine.phase != .outside || chiikawaWakingAt != nil { wakeChiikawa(now: now) }
         stopChiikawaVoice(); actor.dismissBubble(); actor.motion.retarget()
         chiikawaWorld.requested = nil; chiikawaItemTarget = nil; chiikawaSeekingHomeKey = false
         chiikawaStudyWorld.requested = nil
-        let spot: ActivitySpot = action == .eat ? .rice : .desk
-        if atDesk, action == .study || action == .eat, let point = chiikawaStudyWorld.positions[spot] {
-            actor.panel.setFrameOrigin(ItemWorld.destination(for: point)); chiikawaStudyWorld.consume(spot, now: now)
+        if atDesk, action == .study || action == .eat, chiikawaStudyWorld.positions[spot] != nil {
+            chiikawaStudyWorld.consume(spot, now: now)
         }
         chiikawaStudyingAtDesk = atDesk && action == .study
         chiikawaLifeRoutine.begin(action, now: now)

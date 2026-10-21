@@ -44,6 +44,9 @@ extension SelfTest {
         for spot in ActivitySpot.allCases {
             actor.panel.setFrameOrigin(ItemWorld.destination(for: spots[spot]!))
             desktop.tick(now: time, pointer: away)
+            let actualContact = ItemWorld.contactPoint(origin: actor.panel.frame.origin), anchor = spots[spot]!
+            check(actor.view.action == spot.action && desktop.activeActivitySpot == spot,
+                  "\(spot.rawValue) direct-anchor action starts (window/anchor distance \(hypot(actualContact.x-anchor.x,actualContact.y-anchor.y))pt, action \(String(describing: actor.view.action)), active \(String(describing: desktop.activeActivitySpot)))")
             allActions = allActions && actor.view.action == spot.action && desktop.activeActivitySpot == spot
                 && state.dailyActionRunning && desktop.activityWorld.positions == spots && desktop.itemWorld.ground == items
             if spot != .furball { allActions = allActions && !desktop.desktopActivitySpots[spot]!.panel.isVisible }
@@ -86,7 +89,12 @@ extension SelfTest {
         time = time.addingTimeInterval(200); desktop.tick(now: time, pointer: away)
         check(!state.dailyActionRunning, "turning off automatic reactions keeps nearby props visible without starting actions")
         state.onSeekActivitySpot?(.rice)
-        desktop.tick(now: time.addingTimeInterval(0.2), pointer: away)
+        for _ in 0..<360 {
+            time = time.addingTimeInterval(DesktopActivity.updateInterval)
+            desktop.lastTick = time.addingTimeInterval(-DesktopActivity.updateInterval)
+            desktop.tick(now: time, pointer: away)
+            if actor.view.action == .eat { break }
+        }
         check(actor.view.action == .eat, "a requested rice visit still works while automatic proximity is off")
         desktop.resetPositions()
         check(desktop.activityWorld.positions == spots && desktop.itemWorld.ground == items,

@@ -227,6 +227,7 @@ enum SelfTest {
         runChiikawaMotionChecks { check($0, $1) }
         runChiikawaClickVoiceChecks { check($0, $1) }
         runChiikawaAttackIsolationChecks { check($0, $1) }
+        runContinuousRoamingChecks { check($0, $1) }
         runHomeTests(desktop: desktop, now: now) { check($0, $1) }
         var performance = CompanionPerformance()
         performance.begin(.camera, now: now, pickingUp: true)

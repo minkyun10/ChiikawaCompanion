@@ -1,0 +1,76 @@
+{
+  "verified": "2026-10-21",
+  "version": "0.17.4",
+  "build": 36,
+  "packagedChecksPassed": 402,
+  "newRegressionChecks": 13,
+  "automaticEncountersBefore": [
+    {
+      "friend": "hachiware",
+      "spot": "desk",
+      "maxStepPoints": 28.0
+    },
+    {
+      "friend": "hachiware",
+      "spot": "rice",
+      "maxStepPoints": 28.0
+    },
+    {
+      "friend": "hachiware",
+      "spot": "furball",
+      "maxStepPoints": 28.0
+    },
+    {
+      "friend": "chiikawa",
+      "spot": "desk",
+      "maxStepPoints": 28.0
+    },
+    {
+      "friend": "chiikawa",
+      "spot": "rice",
+      "maxStepPoints": 28.0
+    }
+  ],
+  "automaticEncountersAfter": [
+    {
+      "friend": "hachiware",
+      "spot": "desk",
+      "maxStepPoints": 1.0
+    },
+    {
+      "friend": "hachiware",
+      "spot": "rice",
+      "maxStepPoints": 1.0
+    },
+    {
+      "friend": "hachiware",
+      "spot": "furball",
+      "maxStepPoints": 1.0
+    },
+    {
+      "friend": "chiikawa",
+      "spot": "desk",
+      "maxStepPoints": 1.0
+    },
+    {
+      "friend": "chiikawa",
+      "spot": "rice",
+      "maxStepPoints": 1.0
+    }
+  ],
+  "encounterRadiusPoints": 34,
+  "arrivalRadiusPoints": 2,
+  "forcedCoordinateAlignment": false,
+  "approachStoppingDistancePoints": 0.5,
+  "screenNotificationsPreservePositionAndAction": true,
+  "removedScreenRepair": "nearest valid point only",
+  "externalWindowCoordinateRebaseThresholdPoints": 2,
+  "standardAndRetinaApproachCases": 96,
+  "resourceFilesPreserved": 51,
+  "codesign": "passed",
+  "nativeAppRelaunched": true,
+  "settingsClosedAfterReview": true,
+  "persistentPositionStorageAdded": false,
+  "runtimeHistoryLoggingAdded": false,
+  "voicePlaybackPolicy": "click and explicit preview only"
+}

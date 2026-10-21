@@ -171,7 +171,8 @@ extension DesktopController {
             }
             if chiikawaLifeRoutine.action(now: now) == nil {
                 let bounds = followingHome ? screen.visibleFrame.union(home.panel.screen?.visibleFrame ?? screen.visibleFrame) : screen.visibleFrame
-                actor.panel.setFrameOrigin(actor.motion.advance(from: frame.origin, dt: dt, bounds: bounds, size: frame.size))
+                actor.panel.setFrameOrigin(actor.motion.advance(from: frame.origin, dt: dt, bounds: bounds, size: frame.size,
+                    stoppingDistance: chiikawaStudyWorld.requested == nil ? 5 : ActivitySpotWorld.stoppingDistance))
             } else { actor.motion.stop() }
             actor.gait.recordMovement(from: frame.origin, to: actor.panel.frame.origin)
             _ = enterChiikawaHomeIfReached(actor, now: now)

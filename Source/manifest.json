@@ -3,7 +3,7 @@
   "operation": "copy; originals preserved",
   "image_file_count": 2292,
   "unique_image_content_count": 1448,
-  "supporting_file_count": 390,
+  "supporting_file_count": 401,
   "image_bytes": 580348580,
   "symmetric_walk_runtime_applied": true,
   "files": [
@@ -8287,6 +8287,83 @@
       "archive_path": "ClickQuotes-v12/validation.json",
       "bytes": 667,
       "sha256": "cfcb5e8db8db6c652130458e397d665609118270a91929720035ab546636edac"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ContinuousRoaming-v34/README.txt",
+      "archive_path": "ContinuousRoaming-v34/README.txt",
+      "bytes": 2786,
+      "sha256": "d98f87269d49ae5432e9a84c6b3ea8c7604ef32e4b26c20aa44552a122fcf09a"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ContinuousRoaming-v34/Review/relaunched-settings-ax.txt",
+      "archive_path": "ContinuousRoaming-v34/Review/relaunched-settings-ax.txt",
+      "bytes": 6184,
+      "sha256": "b9bfc467ff80e44ae56a0edeaccf260c65a829f5850c8f8622c620612913cc55"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ContinuousRoaming-v34/build.log",
+      "archive_path": "ContinuousRoaming-v34/build.log",
+      "bytes": 472,
+      "sha256": "da6bae7610a435415803ffbf26364f20ea4157ebf880bf70406f0b02afb6d426"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ContinuousRoaming-v34/codesign.log",
+      "archive_path": "ContinuousRoaming-v34/codesign.log",
+      "bytes": 109,
+      "sha256": "6210c61790ac2c9d268a576bdecb1c906f66d332a0c64871ceff1469e071d542"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ContinuousRoaming-v34/regression-before.log",
+      "archive_path": "ContinuousRoaming-v34/regression-before.log",
+      "bytes": 25233,
+      "sha256": "e87c0b948dd7f51f9c418c9f629885305a2d441acda6fd694a9f594d39b62120"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ContinuousRoaming-v34/resources-preserved.json",
+      "archive_path": "ContinuousRoaming-v34/resources-preserved.json",
+      "bytes": 9109,
+      "sha256": "6c3a87b7aa19901640ce7c9930c1eeca64859082f8c8a3b6b9c9240452c92582"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ContinuousRoaming-v34/rounding-diagnostic.log",
+      "archive_path": "ContinuousRoaming-v34/rounding-diagnostic.log",
+      "bytes": 6628,
+      "sha256": "a614fb414e4a538e631885bc0d4cbde68ad5fa592afc722a8fada0f9a80454d7"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ContinuousRoaming-v34/self-test-app.log",
+      "archive_path": "ContinuousRoaming-v34/self-test-app.log",
+      "bytes": 31069,
+      "sha256": "5cc74025200738cd85aace0ce5bbb491b31049e0bc1d2667a5501f5ac6c539ea"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ContinuousRoaming-v34/self-test-failed-arrival-1pt.log",
+      "archive_path": "ContinuousRoaming-v34/self-test-failed-arrival-1pt.log",
+      "bytes": 6803,
+      "sha256": "a1afa69278d3472727b0e4744e86722700d3d02b2e06e0ea00fa28e35b7732d6"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ContinuousRoaming-v34/self-test-failed-request-1tick.log",
+      "archive_path": "ContinuousRoaming-v34/self-test-failed-request-1tick.log",
+      "bytes": 7874,
+      "sha256": "cd30742edcb7dd6f137ed9d22ce86010609d3abcd62eafee6e19c1d75b009fbd"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/ContinuousRoaming-v34/validation.json",
+      "archive_path": "ContinuousRoaming-v34/validation.json",
+      "bytes": 1726,
+      "sha256": "873a2e36c53b99d6abf0fbe11be87ad888326d6b17f895981c8f9706aba72521"
     },
     {
       "kind": "image",
@@ -17308,8 +17385,8 @@
       "kind": "supporting",
       "source": "Source/README.txt",
       "archive_path": "README.txt",
-      "bytes": 8727,
-      "sha256": "88df420b6455347e8b9d7211e9e777567a907041e52fd147d7823f504af8f1f9"
+      "bytes": 9125,
+      "sha256": "081baeb831b23fb747e249084431832fcfe3adbe84c3ab194989fb56177a8ddb"
     },
     {
       "kind": "supporting",
@@ -18782,8 +18859,8 @@
       "sha256": "8a42caa40e469a5ee00fa2b860d14756cc1fd73bc8fcf73332c50b87a92c9c3b"
     }
   ],
-  "updated_at": "2026-10-21T09:22:45.777098+00:00",
-  "latest_applied": "ChiikawaAttackIsolation-v33",
+  "updated_at": "2026-10-21T09:47:39.222711+00:00",
+  "latest_applied": "ContinuousRoaming-v34",
   "applied_directions": [
     "down-left",
     "down-right"

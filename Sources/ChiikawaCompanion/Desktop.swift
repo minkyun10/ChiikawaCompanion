@@ -14,6 +14,11 @@ enum DesktopGeometry {
         // Leave the transparent corners and space above the character click-through.
         rect.insetBy(dx: rect.width * 0.13, dy: rect.height * 0.06).contains(point)
     }
+    static func repairedOrigin(_ origin: NSPoint, size: NSSize, visibleFrames: [NSRect]) -> NSPoint {
+        visibleFrames.map { clamp(origin, size: size, to: $0) }.min {
+            hypot($0.x - origin.x, $0.y - origin.y) < hypot($1.x - origin.x, $1.y - origin.y)
+        } ?? origin
+    }
 }
 
 final class DesktopFriendView: NSView {
@@ -428,7 +433,15 @@ final class DesktopController {
         itemTarget = nil; chiikawaItemTarget = nil
     }
     private func screenLayoutChanged() {
-        resetPositions()
+        let frames = NSScreen.screens.map(\.visibleFrame)
+        for actor in actors {
+            let current = actor.panel.frame.origin
+            let repaired = DesktopGeometry.repairedOrigin(current, size: actor.panel.frame.size, visibleFrames: frames)
+            if repaired != current {
+                actor.panel.setFrameOrigin(repaired)
+                actor.motion.retarget()
+            }
+        }
         home.anchorToScreen()
         for (spot,point) in chiikawaStudyWorld.positions {
             guard let screen = NSScreen.screens.first(where: { $0.frame.contains(point) }) ?? NSScreen.main else { continue }
@@ -449,16 +462,16 @@ final class DesktopController {
             activityWorld.move(spot, to: point, bounds: screen.visibleFrame)
         }
     }
-    func seekActivitySpot(_ spot: ActivitySpot) {
+    func seekActivitySpot(_ spot: ActivitySpot, now: Date = Date()) {
         guard activityWorld.positions[spot] != nil else { return }
         stopDailyAction()
-        if homeRoutine.phase != .outside { wakeFromHome() }
+        if homeRoutine.phase != .outside { wakeFromHome(now: now) }
         state.roaming = true; state.showFriends = true
         state.visibleFriends.insert(.hachiware); state.walkingFriends.insert(.hachiware)
         hachiwareActor?.dismissBubble(); stopCharacterVoice()
         activityWorld.requested = spot; itemWorld.requested = nil; itemTarget = nil
         state.activityJourneyRunning = true
-        hachiwareActor?.performance.cancel(now: Date()); hachiwareActor?.motion.retarget()
+        hachiwareActor?.performance.cancel(now: now); hachiwareActor?.motion.retarget()
         state.dailyActionStatus = "\(spot.name) 쪽으로 걸어가는 중"
     }
     @discardableResult
@@ -470,6 +483,11 @@ final class DesktopController {
         activityWorld.observe(contact: contact)
         let dragged = Set(desktopActivitySpots.filter { $0.value.view.isDragging }.map(\.key))
         guard let spot = activityWorld.encounter(contact: contact, automatic: state.automaticActivities, now: now, excluding: dragged) else { return false }
+        if !activityWorld.hasArrived(at: spot, contact: contact) {
+            guard state.isWalking(.hachiware) else { return false }
+            if activityWorld.requested != spot { seekActivitySpot(spot, now: now) }
+            return false
+        }
         playDailyAction(spot.action, at: spot, now: now)
         return true
     }
@@ -572,19 +590,21 @@ final class DesktopController {
     }
     func playDailyAction(_ action: HachiwareAction, at sourceSpot: ActivitySpot? = nil, now: Date = Date()) {
         guard action.isDaily, let actor = hachiwareActor else { return }
+        let contact = ItemWorld.contactPoint(origin: actor.panel.frame.origin)
+        let spot = sourceSpot ?? activityWorld.nearbySource(for: action, contact: contact)
+        if let spot, !activityWorld.hasArrived(at: spot, contact: contact) {
+            seekActivitySpot(spot, now: now); return
+        }
         if homeRoutine.phase != .outside { wakeFromHome(now: now) }
         state.showFriends = true; state.visibleFriends.insert(.hachiware)
         stopCharacterVoice()
         actor.dismissBubble(); actor.performance.cancel(now: now)
         itemWorld.requested = nil; itemTarget = nil
-        let contact = ItemWorld.contactPoint(origin: actor.panel.frame.origin)
-        let spot = sourceSpot ?? activityWorld.nearbySource(for: action, contact: contact)
         activityWorld.requested = nil; activeActivitySpot = spot
         state.activityJourneyRunning = false
-        if let spot, let point = activityWorld.positions[spot] {
-            // The selected pose already contains its table/bowl. Align its feet to
-            // this prop's fixed anchor; never relocate the prop or any carried item.
-            actor.panel.setFrameOrigin(ItemWorld.destination(for: point))
+        if let spot, activityWorld.positions[spot] != nil {
+            // The final approach has already reached the prop. Begin at the
+            // displayed position instead of snapping the window to its anchor.
             activityWorld.consume(spot, now: now)
         }
         actor.dailyPerformance.begin(action, now: now); actor.motion.stop()
@@ -770,7 +790,8 @@ final class DesktopController {
                 if action == nil {
                     let travelBounds = homeRoutine.phase == .returning
                         ? screen.visibleFrame.union(home.panel.screen?.visibleFrame ?? screen.visibleFrame) : screen.visibleFrame
-                    let position = actor.motion.advance(from: frame.origin, dt: dt, bounds: travelBounds, size: frame.size)
+                    let position = actor.motion.advance(from: frame.origin, dt: dt, bounds: travelBounds, size: frame.size,
+                        stoppingDistance: activityWorld.requested == nil ? 5 : ActivitySpotWorld.stoppingDistance)
                     actor.panel.setFrameOrigin(position)
                 }
                 // AppKit can round or constrain the requested position. Animate only the
