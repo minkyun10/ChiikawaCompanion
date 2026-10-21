@@ -92,20 +92,20 @@ extension SelfTest {
                 return HomeOccupant(friend: friend, routine: routine)
             }
         }
-        png(width: 1280, height: 860, to: directory.appendingPathComponent("shared-home-designs-v28.png")) {
+        png(width: 1280, height: 860, to: directory.appendingPathComponent("shared-home-designs-v29.png")) {
             NSColor(hex: 0xF7F4EB).setFill(); NSRect(x: 0, y: 0, width: 1280, height: 860).fill()
             for (column, style) in HomeStyle.allCases.enumerated() {
                 for row in 0..<2 {
                     let rect = NSRect(x: 40+column*640, y: 55+row*410, width: 560, height: 333)
                     HomeArtwork.shared.draw(in: rect, style: style, occupants: row == 0 ? occupants(at: 2) : [],
                                             now: now.addingTimeInterval(2), time: 2)
-                    ("\(style.title) · \(row == 0 ? "함께 자기" : "같은 크기·시점·입구")" as NSString)
+                    ("\(style.title) · \(row == 0 ? "함께 자기" : "공용 집 디자인")" as NSString)
                         .draw(at: NSPoint(x: rect.minX+110, y: rect.minY-25), withAttributes:
                             [.font: NSFont.systemFont(ofSize: 18, weight: .medium), .foregroundColor: FriendArtwork.ink])
                 }
             }
         }
-        guard let gif = CGImageDestinationCreateWithURL(directory.appendingPathComponent("shared-home-sleep-v28.gif") as CFURL,
+        guard let gif = CGImageDestinationCreateWithURL(directory.appendingPathComponent("shared-home-sleep-v29.gif") as CFURL,
                                                         UTType.gif.identifier as CFString, 48, nil) else { return }
         CGImageDestinationSetProperties(gif, [kCGImagePropertyGIFDictionary:[kCGImagePropertyGIFLoopCount:0]] as CFDictionary)
         for index in 0..<48 {

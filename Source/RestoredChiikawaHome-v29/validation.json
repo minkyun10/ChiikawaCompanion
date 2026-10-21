@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-21",
+  "version": "0.16.1",
+  "build": 31,
+  "baseline_commit": "1e6ea57",
+  "restored_asset": "chiikawa-house-v26.png",
+  "image_editing_or_generation": false,
+  "original_aspect_ratio_preserved": true,
+  "runtime_resources_preserved": 46,
+  "packaged_checks_passed": 336,
+  "codesign_verification": "passed",
+  "one_shared_home_preserved": true,
+  "default_design": "hachiware",
+  "location_and_actor_routines_unchanged": true,
+  "native_app_relaunched": true,
+  "native_settings_closed": true,
+  "security_scope": [
+    "Sources/ChiikawaCompanion",
+    "Source/RestoredChiikawaHome-v29"
+  ],
+  "security_findings": 0
+}

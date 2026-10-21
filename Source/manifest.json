@@ -1,10 +1,10 @@
 {
   "created_at": "2026-10-16T12:08:58.617148+00:00",
   "operation": "copy; originals preserved",
-  "image_file_count": 2137,
-  "unique_image_content_count": 1364,
-  "supporting_file_count": 325,
-  "image_bytes": 518480977,
+  "image_file_count": 2143,
+  "unique_image_content_count": 1367,
+  "supporting_file_count": 335,
+  "image_bytes": 523446265,
   "symmetric_walk_runtime_applied": true,
   "files": [
     {
@@ -15628,8 +15628,8 @@
       "kind": "image",
       "source": "build/artwork/chiikawa-life-v26.png",
       "archive_path": "Project/build/artwork/chiikawa-life-v26.png",
-      "bytes": 834296,
-      "sha256": "d42a649ddc92304b7c5281fe5fd2e9cc7c3f48e28072e01dba579e688514ae6d"
+      "bytes": 822627,
+      "sha256": "ce9b012401bbcd39bb42a9940dc1687142ba1602a82c64ed12277e7981945ca8"
     },
     {
       "kind": "image",
@@ -15836,10 +15836,24 @@
     },
     {
       "kind": "image",
+      "source": "build/artwork/shared-home-designs-v29.png",
+      "archive_path": "Project/build/artwork/shared-home-designs-v29.png",
+      "bytes": 905178,
+      "sha256": "507decf3dc976cbc3ce62a287bbb861c7f98bc4253899da0e321f17bd99ccd69"
+    },
+    {
+      "kind": "image",
       "source": "build/artwork/shared-home-sleep-v28.gif",
       "archive_path": "Project/build/artwork/shared-home-sleep-v28.gif",
       "bytes": 461483,
       "sha256": "d6f68d293cad0c6f4938c560ce9f6dbb9dca279787c14b6b1fad76f086e534a5"
+    },
+    {
+      "kind": "image",
+      "source": "build/artwork/shared-home-sleep-v29.gif",
+      "archive_path": "Project/build/artwork/shared-home-sleep-v29.gif",
+      "bytes": 464534,
+      "sha256": "793885f164d612ae426235698a7395efffdedcce80a9ec9f5cc341fa0fc4a68e"
     },
     {
       "kind": "image",
@@ -15887,8 +15901,99 @@
       "kind": "supporting",
       "source": "Source/README.txt",
       "archive_path": "README.txt",
-      "bytes": 7288,
-      "sha256": "aad5389988152c47db4f44e0e242fe66685daad6aad869772bfa37194333ffb1"
+      "bytes": 7517,
+      "sha256": "eac3c420135d81028a7a96c207e79cf14fd2cb331376df680c72a5a70ccb326d"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/RestoredChiikawaHome-v29/README.txt",
+      "archive_path": "RestoredChiikawaHome-v29/README.txt",
+      "bytes": 1463,
+      "sha256": "b67aed7c00f59edeeaca37b37b3b15b4e4daa04fb6b8d458ff882cc59e9ac4d4"
+    },
+    {
+      "kind": "image",
+      "source": "Source/RestoredChiikawaHome-v29/References/chiikawa-house-v26.png",
+      "archive_path": "RestoredChiikawaHome-v29/References/chiikawa-house-v26.png",
+      "bytes": 1403237,
+      "sha256": "d6d8f5dfa6d36cb00a3c4ebd15d0a40c99ae0a1e18186ad126e0bd0e5e68f904"
+    },
+    {
+      "kind": "image",
+      "source": "Source/RestoredChiikawaHome-v29/Review/shared-home-designs-v29.png",
+      "archive_path": "RestoredChiikawaHome-v29/Review/shared-home-designs-v29.png",
+      "bytes": 905178,
+      "sha256": "507decf3dc976cbc3ce62a287bbb861c7f98bc4253899da0e321f17bd99ccd69"
+    },
+    {
+      "kind": "image",
+      "source": "Source/RestoredChiikawaHome-v29/Review/shared-home-sleep-v29.gif",
+      "archive_path": "RestoredChiikawaHome-v29/Review/shared-home-sleep-v29.gif",
+      "bytes": 464534,
+      "sha256": "793885f164d612ae426235698a7395efffdedcce80a9ec9f5cc341fa0fc4a68e"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/RestoredChiikawaHome-v29/build-log.txt",
+      "archive_path": "RestoredChiikawaHome-v29/build-log.txt",
+      "bytes": 472,
+      "sha256": "2c628bf6b0bdbd7a0ca0207666c049cbd4b10af5f2a8cc2713933a5fb3d348fd"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/RestoredChiikawaHome-v29/codesign.txt",
+      "archive_path": "RestoredChiikawaHome-v29/codesign.txt",
+      "bytes": 109,
+      "sha256": "6210c61790ac2c9d268a576bdecb1c906f66d332a0c64871ceff1469e071d542"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/RestoredChiikawaHome-v29/resources-preserved.json",
+      "archive_path": "RestoredChiikawaHome-v29/resources-preserved.json",
+      "bytes": 8808,
+      "sha256": "2e2c88efa3d16a148c5a23122addb729e1ae2a73b73fffaf35991f47fe0a0af2"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/RestoredChiikawaHome-v29/security-assets.json",
+      "archive_path": "RestoredChiikawaHome-v29/security-assets.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/RestoredChiikawaHome-v29/security-assets.txt",
+      "archive_path": "RestoredChiikawaHome-v29/security-assets.txt",
+      "bytes": 79,
+      "sha256": "fb268000eba88308c9a3f364b7a1a1ad7e5f4c1c5500646a716211231f77b2a9"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/RestoredChiikawaHome-v29/security-code.json",
+      "archive_path": "RestoredChiikawaHome-v29/security-code.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/RestoredChiikawaHome-v29/security-code.txt",
+      "archive_path": "RestoredChiikawaHome-v29/security-code.txt",
+      "bytes": 81,
+      "sha256": "724c05c6f7d2195572aef4c95df11a3d0397b11c80e44cbfb5d7e139485fada5"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/RestoredChiikawaHome-v29/self-test-app.txt",
+      "archive_path": "RestoredChiikawaHome-v29/self-test-app.txt",
+      "bytes": 25291,
+      "sha256": "08ce55eb3d31273e845b1ce1852d7cae32f691efc7e7ce19a049c48086e6be7c"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/RestoredChiikawaHome-v29/validation.json",
+      "archive_path": "RestoredChiikawaHome-v29/validation.json",
+      "bytes": 643,
+      "sha256": "01654dbe26e494289b8f2f440e21852132fe1f57e58f36af50a19f613dc83a25"
     },
     {
       "kind": "image",
@@ -16421,6 +16526,13 @@
       "archive_path": "Versions/d358479d8d5e811e/build/artwork/friends.png",
       "bytes": 130750,
       "sha256": "d358479d8d5e811e4d92ef921ce2437356ec9be1da5bff246e27a1d55b67c63e"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/d42a649ddc92304b/build/artwork/chiikawa-life-v26.png",
+      "archive_path": "Versions/d42a649ddc92304b/build/artwork/chiikawa-life-v26.png",
+      "bytes": 834296,
+      "sha256": "d42a649ddc92304b7c5281fe5fd2e9cc7c3f48e28072e01dba579e688514ae6d"
     },
     {
       "kind": "image",
@@ -17242,8 +17354,8 @@
       "sha256": "8a42caa40e469a5ee00fa2b860d14756cc1fd73bc8fcf73332c50b87a92c9c3b"
     }
   ],
-  "updated_at": "2026-10-21T05:31:56.313124+00:00",
-  "latest_applied": "SharedHome-v28",
+  "updated_at": "2026-10-21T05:36:03.505099+00:00",
+  "latest_applied": "RestoredChiikawaHome-v29",
   "applied_directions": [
     "down-left",
     "down-right"

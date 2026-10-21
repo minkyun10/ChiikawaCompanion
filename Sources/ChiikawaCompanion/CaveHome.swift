@@ -85,12 +85,12 @@ enum HomeGeometry {
 final class HomeArtwork {
     static let shared = HomeArtwork()
     let cave: NSImage?
-    let chiikawaCave: NSImage?
+    let chiikawaHouse: NSImage?
     let sleeper: NSImage?
-    var isReady: Bool { cave != nil && chiikawaCave != nil && sleeper != nil }
+    var isReady: Bool { cave != nil && chiikawaHouse != nil && sleeper != nil }
     private init() {
         cave = Self.load("hachiware-cave-v11")
-        chiikawaCave = Self.load("chiikawa-shared-home-v28")
+        chiikawaHouse = Self.load("chiikawa-house-v26")
         sleeper = Self.load("hachiware-sleep-v11")
     }
     private static func load(_ name: String) -> NSImage? {
@@ -127,10 +127,10 @@ final class HomeArtwork {
     }
 
     func draw(in rect: NSRect, style: HomeStyle, occupants: [HomeOccupant], now: Date, time: Double) {
-        guard let background = style == .chiikawa ? chiikawaCave ?? cave : cave else { return }
+        guard let background = style == .chiikawa ? chiikawaHouse ?? cave : cave else { return }
         NSGraphicsContext.current?.imageInterpolation = .high
-        // Every design uses the same registered footprint, camera and doorway.
-        background.draw(in: Self.fitted(cave?.size ?? background.size, in: rect.insetBy(dx: 4, dy: 4)))
+        // Preserve each original design's proportions inside the one fixed house window.
+        background.draw(in: Self.fitted(background.size, in: rect.insetBy(dx: 4, dy: 4)))
         let inside = occupants.filter { $0.routine.isInside }
         for (index, occupant) in inside.enumerated() {
             drawOccupant(occupant, index: index, count: inside.count, in: rect, now: now, time: time)
