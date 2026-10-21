@@ -1,0 +1,15 @@
+{
+  "verified": "2026-10-21",
+  "version": "0.17.6",
+  "build": 38,
+  "packagedChecksPassed": 431,
+  "chiikawaBowlColor": "#E8B7C7",
+  "hachiwareBowlColor": "#A3C9A2",
+  "nativeViewComparisonVisuallyReviewed": true,
+  "hachiwareRiceDrawingByteIdentical": true,
+  "existingResourceFilesUnchanged": 51,
+  "codesign": "passed",
+  "nativeAppRelaunched": true,
+  "settingsClosedAfterReview": true,
+  "newBehaviorTestsAdded": false
+}

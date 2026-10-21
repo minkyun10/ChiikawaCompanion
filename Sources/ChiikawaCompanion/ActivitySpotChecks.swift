@@ -127,5 +127,19 @@ extension SelfTest {
                 ActivitySpotArtwork.draw(spot, in: NSRect(x: 0,y: 0,width: 104,height: 100))
             }
         }
+        png(width: 416, height: 200, to: directory.appendingPathComponent("rice-bowls-v36.png")) {
+            NSColor(hex: 0xF7F4EB).setFill(); NSRect(x: 0, y: 0, width: 416, height: 200).fill()
+            for (index, owner) in [Friend.hachiware, .chiikawa].enumerated() {
+                NSGraphicsContext.saveGraphicsState()
+                let context = NSGraphicsContext.current!.cgContext
+                context.translateBy(x: CGFloat(index * 208 + 26), y: 35)
+                context.scaleBy(x: 1.5, y: 1.5)
+                let view = ActivitySpotView(spot: .rice, owner: owner)
+                view.draw(view.bounds)
+                NSGraphicsContext.restoreGraphicsState()
+                (owner.name as NSString).draw(at: NSPoint(x: index * 208 + 72, y: 24), withAttributes:
+                    [.font: NSFont.systemFont(ofSize: 14, weight: .medium), .foregroundColor: FriendArtwork.ink])
+            }
+        }
     }
 }

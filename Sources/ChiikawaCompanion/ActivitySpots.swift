@@ -83,7 +83,7 @@ enum ActivitySpotArtwork {
         fill.setFill(); path.fill(); ink.setStroke(); path.lineWidth = width; path.lineJoinStyle = .round; path.stroke()
     }
     static func line(_ points: [NSPoint], width: CGFloat = 1.8) { ItemArtwork.path(points, width: width, color: ink) }
-    static func draw(_ spot: ActivitySpot, in rect: NSRect) {
+    static func draw(_ spot: ActivitySpot, in rect: NSRect, owner: Friend = .hachiware) {
         guard let cg = NSGraphicsContext.current?.cgContext else { return }
         cg.saveGState(); cg.translateBy(x: rect.minX, y: rect.minY); cg.scaleBy(x: rect.width / 104, y: rect.height / 100)
         switch spot {
@@ -123,7 +123,8 @@ enum ActivitySpotArtwork {
             let bowl = NSBezierPath(); bowl.move(to: NSPoint(x: 24,y: 49)); bowl.line(to: NSPoint(x: 81,y: 49))
             bowl.curve(to: NSPoint(x: 52,y: 24), controlPoint1: NSPoint(x: 77,y: 29), controlPoint2: NSPoint(x: 66,y: 24))
             bowl.curve(to: NSPoint(x: 24,y: 49), controlPoint1: NSPoint(x: 36,y: 24), controlPoint2: NSPoint(x: 28,y: 29))
-            NSColor(hex: 0xA3C9A2).setFill(); bowl.fill(); ink.setStroke(); bowl.lineWidth = 2.5; bowl.stroke()
+            NSColor(hex: owner == .chiikawa ? 0xE8B7C7 : 0xA3C9A2).setFill()
+            bowl.fill(); ink.setStroke(); bowl.lineWidth = 2.5; bowl.stroke()
             line([NSPoint(x: 43,y: 23),NSPoint(x: 61,y: 23)], width: 3)
             ItemArtwork.path([NSPoint(x: 40,y: 61),NSPoint(x: 83,y: 78)], width: 3, color: NSColor(hex: 0xAD7954))
             ItemArtwork.path([NSPoint(x: 43,y: 58),NSPoint(x: 85,y: 74)], width: 3, color: NSColor(hex: 0xAD7954))
@@ -156,7 +157,7 @@ final class ActivitySpotView: NSView {
         NSColor.black.withAlphaComponent(0.08).setFill()
         NSBezierPath(ovalIn: NSRect(x: 23,y: 13,width: 58,height: 5)).fill()
         if owner == .chiikawa && spot == .desk { ChiikawaLifeItemArtwork.drawDesk(in: bounds) }
-        else { ActivitySpotArtwork.draw(spot, in: bounds) }
+        else { ActivitySpotArtwork.draw(spot, in: bounds, owner: owner) }
         if hovered {
             let path = NSBezierPath(roundedRect: bounds.insetBy(dx: 5,dy: 7), xRadius: 12,yRadius: 12)
             NSColor(hex: 0x7DA6BC,alpha: 0.55).setStroke(); path.lineWidth = 1.5; path.stroke()

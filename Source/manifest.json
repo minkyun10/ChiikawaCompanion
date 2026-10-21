@@ -1,10 +1,10 @@
 {
   "created_at": "2026-10-16T12:08:58.617148+00:00",
   "operation": "copy; originals preserved",
-  "image_file_count": 2292,
-  "unique_image_content_count": 1448,
-  "supporting_file_count": 416,
-  "image_bytes": 580348580,
+  "image_file_count": 2294,
+  "unique_image_content_count": 1449,
+  "supporting_file_count": 421,
+  "image_bytes": 580369762,
   "symmetric_walk_runtime_applied": true,
   "files": [
     {
@@ -16052,6 +16052,48 @@
       "sha256": "d84109940c85ddd25fd2770cc279ed1004ae6a5621f962a595afce547369cf8a"
     },
     {
+      "kind": "supporting",
+      "source": "Source/PinkRice-v36/README.txt",
+      "archive_path": "PinkRice-v36/README.txt",
+      "bytes": 556,
+      "sha256": "fbfb905e2653d2d635e11285b036d47525cbd439a4d8b927c86c4b362e07da63"
+    },
+    {
+      "kind": "image",
+      "source": "Source/PinkRice-v36/Review/rice-bowls-v36.png",
+      "archive_path": "PinkRice-v36/Review/rice-bowls-v36.png",
+      "bytes": 10591,
+      "sha256": "ec8ed46de8b8eb0375cfcbb37f114f81c857cc226bcde8e2a62956fb39331c79"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/PinkRice-v36/build.log",
+      "archive_path": "PinkRice-v36/build.log",
+      "bytes": 472,
+      "sha256": "eff5a4c1325dcbc2422e354c39c0b09f6aa474631ac23b3cff37d93cfe416162"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/PinkRice-v36/codesign.log",
+      "archive_path": "PinkRice-v36/codesign.log",
+      "bytes": 109,
+      "sha256": "6210c61790ac2c9d268a576bdecb1c906f66d332a0c64871ceff1469e071d542"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/PinkRice-v36/self-test.log",
+      "archive_path": "PinkRice-v36/self-test.log",
+      "bytes": 33804,
+      "sha256": "c9bf52cae864e1e0f5ed023a12707665398ccc73e47a644441170ccfa3b3270b"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/PinkRice-v36/validation.json",
+      "archive_path": "PinkRice-v36/validation.json",
+      "bytes": 428,
+      "sha256": "276bafb244ccd054bccf6f2b5c426f5185bd08b2e046fb0db9fe6e4ed67f95ae"
+    },
+    {
       "kind": "image",
       "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/chiikawa-attack-v24.png",
       "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/chiikawa-attack-v24.png",
@@ -17418,6 +17460,13 @@
     },
     {
       "kind": "image",
+      "source": "build/artwork/rice-bowls-v36.png",
+      "archive_path": "Project/build/artwork/rice-bowls-v36.png",
+      "bytes": 10591,
+      "sha256": "ec8ed46de8b8eb0375cfcbb37f114f81c857cc226bcde8e2a62956fb39331c79"
+    },
+    {
+      "kind": "image",
       "source": "build/artwork/shared-home-designs-v28.png",
       "archive_path": "Project/build/artwork/shared-home-designs-v28.png",
       "bytes": 927974,
@@ -17490,8 +17539,8 @@
       "kind": "supporting",
       "source": "Source/README.txt",
       "archive_path": "README.txt",
-      "bytes": 9344,
-      "sha256": "133626ef39356fcac31f7ef4bb820835ede699468765a9b834a884aeeaa17a26"
+      "bytes": 9322,
+      "sha256": "15d36343d16a397592dab457c8e9b119ccf685efe6797216432f017e8a87b725"
     },
     {
       "kind": "supporting",
@@ -18964,8 +19013,8 @@
       "sha256": "8a42caa40e469a5ee00fa2b860d14756cc1fd73bc8fcf73332c50b87a92c9c3b"
     }
   ],
-  "updated_at": "2026-10-21T10:05:50.519654+00:00",
-  "latest_applied": "ArmedHover-v35",
+  "updated_at": "2026-10-21T10:10:24.522220+00:00",
+  "latest_applied": "PinkRice-v36",
   "applied_directions": [
     "down-left",
     "down-right"
