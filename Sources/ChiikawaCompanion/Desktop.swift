@@ -231,8 +231,12 @@ final class DesktopController {
     var chiikawaWorld = PropWorld<ChiikawaItem>()
     var chiikawaDesktopItems: [ChiikawaItem: DesktopPropWindow<ChiikawaItem>] = [:]
     var chiikawaItemTarget: ChiikawaItem?
-    let chiikawaHome = DesktopChiikawaHome()
-    var chiikawaHomeRoutine = HomeRoutine()
+    // One house, independent rest clocks for all current and future friends.
+    var homeRoutines: [Friend: HomeRoutine] = [:]
+    var chiikawaHomeRoutine: HomeRoutine {
+        get { homeRoutines[.chiikawa] ?? HomeRoutine(now: started) }
+        set { homeRoutines[.chiikawa] = newValue }
+    }
     var chiikawaSeekingHomeKey = false
     let chiikawaDesk = DesktopActivitySpot(spot: .desk, owner: .chiikawa)
     var chiikawaStudyWorld = ActivitySpotWorld()
@@ -254,7 +258,10 @@ final class DesktopController {
     var desktopActivitySpots: [ActivitySpot: DesktopActivitySpot] = [:]
     private(set) var activeActivitySpot: ActivitySpot?
     let home = DesktopHome()
-    var homeRoutine = HomeRoutine()
+    var homeRoutine: HomeRoutine {
+        get { homeRoutines[.hachiware] ?? HomeRoutine(now: started) }
+        set { homeRoutines[.hachiware] = newValue }
+    }
 
     init(state: AppState, startTimer: Bool = true, recordedVoice: RecordedVoicePlayer = RecordedVoicePlayer(),
          chiikawaVoice: RecordedVoicePlayer = RecordedVoicePlayer(idleStatus: "클릭하면 치이카와의 짧은 반응을 들려줘요")) {
@@ -309,7 +316,7 @@ final class DesktopController {
                 // invalidates its route; it must never reposition those props.
                 self?.itemTarget = nil
                 if let self, let actor, self.triggerNearbyActivity(actor, now: Date()) { return }
-                if let self, let actor, self.state.homeEnabled {
+                if let self, let actor {
                     let contact = ItemWorld.contactPoint(origin: actor.panel.frame.origin)
                     if hypot(contact.x - self.home.entrance.x, contact.y - self.home.entrance.y) <= 24 {
                         // A deliberate drop at the doorway overrides the automatic-entry cooldown.
@@ -353,7 +360,7 @@ final class DesktopController {
         }
         home.view.onActivate = { [weak self] in
             guard let self else { return }
-            if self.homeRoutine.isInside { self.wakeFromHome() } else { self.goHome() }
+            self.activateSharedHome()
         }
         recordedVoice.onStatus = { [weak state] status in state?.voiceStatus = status }
         state.onVoicePreview = { [weak self] in self?.previewCharacterVoice() }
@@ -384,7 +391,7 @@ final class DesktopController {
         actors.forEach { $0.dismissBubble(); $0.panel.close(); $0.attackOverlay.panel.close() }
         desktopItems.values.forEach { $0.panel.close() }
         chiikawaDesktopItems.values.forEach { $0.panel.close() }
-        chiikawaHome.panel.close(); chiikawaDesk.panel.close(); chiikawaVoice.stop()
+        chiikawaDesk.panel.close(); chiikawaVoice.stop()
         home.panel.close()
         desktopActivitySpots.values.forEach { $0.panel.close() }
         if let screenObserver { NotificationCenter.default.removeObserver(screenObserver) }
@@ -409,7 +416,6 @@ final class DesktopController {
     private func screenLayoutChanged() {
         resetPositions()
         home.anchorToScreen()
-        chiikawaHome.anchorToScreen()
         for (spot,point) in chiikawaStudyWorld.positions {
             guard let screen = NSScreen.screens.first(where: { $0.frame.contains(point) }) ?? NSScreen.main else { continue }
             chiikawaStudyWorld.move(spot,to: point,bounds: screen.visibleFrame)
@@ -587,7 +593,7 @@ final class DesktopController {
     }
     func goHome(now: Date = Date()) {
         guard !homeRoutine.isInside else { return }
-        state.homeEnabled = true; state.showFriends = true; state.roaming = true
+        state.showFriends = true; state.roaming = true
         state.visibleFriends.insert(.hachiware); state.walkingFriends.insert(.hachiware)
         requestHome(now: now)
     }
@@ -622,7 +628,7 @@ final class DesktopController {
     }
     @discardableResult
     func enterHomeIfReached(_ actor: FriendActor, now: Date) -> Bool {
-        guard actor.friend == .hachiware, state.homeEnabled, !actor.view.isDragging, now >= actor.bubbleUntil,
+        guard actor.friend == .hachiware, !actor.view.isDragging, now >= actor.bubbleUntil,
               activityWorld.requested == nil,
               actor.dailyPerformance.action(now: now) == nil,
               homeRoutine.arrive(contact: ItemWorld.contactPoint(origin: actor.panel.frame.origin),
@@ -659,8 +665,8 @@ final class DesktopController {
                 state.activityJourneyRunning = activityWorld.requested != nil
             }
         }
-        let homeVisible = state.homeEnabled && state.isVisible(.hachiware)
-        if !homeVisible && homeRoutine.phase != .outside { wakeFromHome(now: now) }
+        let homeVisible = state.showFriends
+        if !state.isVisible(.hachiware) && homeRoutine.phase != .outside { wakeFromHome(now: now) }
         homeRoutine.advance(now: now)
         if homeRoutine.shouldWake(now: now) { wakeFromHome(now: now) }
         for actor in actors {
@@ -791,8 +797,8 @@ final class DesktopController {
         }
         publishHome()
         let homeWasVisible = home.panel.isVisible
-        home.update(visible: homeVisible, mouse: mouse, routine: homeRoutine, now: now, time: time)
-        if !homeWasVisible && homeVisible && !homeRoutine.isInside {
+        home.update(visible: homeVisible, mouse: mouse, style: state.homeStyle, occupants: homeOccupants, now: now, time: time)
+        if !homeWasVisible && homeVisible {
             actors.filter { $0.panel.isVisible }.forEach { $0.panel.order(.above, relativeTo: home.panel.windowNumber) }
         }
         actors.forEach { $0.attackOverlay.update(actor: $0) }

@@ -36,7 +36,7 @@ extension SelfTest {
 
         let state = AppState(defaults: defaults)
         state.enabledItems = [.sasumata,.camera]; state.automaticItems = false
-        state.automaticActivities = false; state.homeEnabled = false
+        state.automaticActivities = false;
         state.characterVoice = false; state.expressive = true
         state.showFriends = true; state.roaming = true
         let desktop = DesktopController(state:state,startTimer:false), actor = desktop.actors[0]

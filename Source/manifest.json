@@ -1,10 +1,10 @@
 {
   "created_at": "2026-10-16T12:08:58.617148+00:00",
   "operation": "copy; originals preserved",
-  "image_file_count": 2095,
-  "unique_image_content_count": 1358,
-  "supporting_file_count": 309,
-  "image_bytes": 492350210,
+  "image_file_count": 2137,
+  "unique_image_content_count": 1364,
+  "supporting_file_count": 325,
+  "image_bytes": 518480977,
   "symmetric_walk_runtime_applied": true,
   "files": [
     {
@@ -14744,6 +14744,13 @@
     },
     {
       "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/chiikawa-shared-home-v28.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/chiikawa-shared-home-v28.png",
+      "bytes": 1436137,
+      "sha256": "1a3f6040efa3f3488c490bbb1bae2d67f37bf767f7906071d6ee54d9c3207bd1"
+    },
+    {
+      "kind": "image",
       "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/chiikawa-sleep-v26.png",
       "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/chiikawa-sleep-v26.png",
       "bytes": 313801,
@@ -15115,6 +15122,13 @@
     },
     {
       "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/chiikawa-shared-home-v28.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/chiikawa-shared-home-v28.png",
+      "bytes": 1436137,
+      "sha256": "1a3f6040efa3f3488c490bbb1bae2d67f37bf767f7906071d6ee54d9c3207bd1"
+    },
+    {
+      "kind": "image",
       "source": "Sources/ChiikawaCompanion/Resources/chiikawa-sleep-v26.png",
       "archive_path": "Project/Sources/ChiikawaCompanion/Resources/chiikawa-sleep-v26.png",
       "bytes": 313801,
@@ -15437,6 +15451,13 @@
     },
     {
       "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/chiikawa-shared-home-v28.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/chiikawa-shared-home-v28.png",
+      "bytes": 1436137,
+      "sha256": "1a3f6040efa3f3488c490bbb1bae2d67f37bf767f7906071d6ee54d9c3207bd1"
+    },
+    {
+      "kind": "image",
       "source": "build/ChiikawaCompanion.app/Contents/Resources/chiikawa-sleep-v26.png",
       "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/chiikawa-sleep-v26.png",
       "bytes": 313801,
@@ -15607,8 +15628,8 @@
       "kind": "image",
       "source": "build/artwork/chiikawa-life-v26.png",
       "archive_path": "Project/build/artwork/chiikawa-life-v26.png",
-      "bytes": 859018,
-      "sha256": "bc9258a08266868487e71878d5af783c741c38479683f69378c24d63e03a1b91"
+      "bytes": 834296,
+      "sha256": "d42a649ddc92304b7c5281fe5fd2e9cc7c3f48e28072e01dba579e688514ae6d"
     },
     {
       "kind": "image",
@@ -15712,8 +15733,8 @@
       "kind": "image",
       "source": "build/artwork/hachiware-home-sleep-v11.gif",
       "archive_path": "Project/build/artwork/hachiware-home-sleep-v11.gif",
-      "bytes": 595803,
-      "sha256": "9d8d647db89bd8f2d0e25cca5aa4565fd02dfac634f562410c0aea88e8b86def"
+      "bytes": 595813,
+      "sha256": "3e9c54195b9476fdf45bad59bd187e43b095b42bb9c2883efe171e07d3313587"
     },
     {
       "kind": "image",
@@ -15808,6 +15829,20 @@
     },
     {
       "kind": "image",
+      "source": "build/artwork/shared-home-designs-v28.png",
+      "archive_path": "Project/build/artwork/shared-home-designs-v28.png",
+      "bytes": 927974,
+      "sha256": "0a0b5bdfbcc3c5883d79c818d2158bdb3b31cd8693ba37cacfa8e9d211852925"
+    },
+    {
+      "kind": "image",
+      "source": "build/artwork/shared-home-sleep-v28.gif",
+      "archive_path": "Project/build/artwork/shared-home-sleep-v28.gif",
+      "bytes": 461483,
+      "sha256": "d6f68d293cad0c6f4938c560ce9f6dbb9dca279787c14b6b1fad76f086e534a5"
+    },
+    {
+      "kind": "image",
       "source": "build/artwork/weapon-hover-size-v27.gif",
       "archive_path": "Project/build/artwork/weapon-hover-size-v27.gif",
       "bytes": 893121,
@@ -15852,8 +15887,365 @@
       "kind": "supporting",
       "source": "Source/README.txt",
       "archive_path": "README.txt",
-      "bytes": 6930,
-      "sha256": "96c3f9a07d8cfa18c5c95071b004e34cb66665d361586baee0091f60a9a7d1f1"
+      "bytes": 7288,
+      "sha256": "aad5389988152c47db4f44e0e242fe66685daad6aad869772bfa37194333ffb1"
+    },
+    {
+      "kind": "image",
+      "source": "Source/SharedHome-v28/Generated/chiikawa-shared-home-original-v28.png",
+      "archive_path": "SharedHome-v28/Generated/chiikawa-shared-home-original-v28.png",
+      "bytes": 1436137,
+      "sha256": "1a3f6040efa3f3488c490bbb1bae2d67f37bf767f7906071d6ee54d9c3207bd1"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/SharedHome-v28/Prompts/chiikawa-shared-home.txt",
+      "archive_path": "SharedHome-v28/Prompts/chiikawa-shared-home.txt",
+      "bytes": 1337,
+      "sha256": "d32859dea75a24bf3d6bc15df2a74c769c6ffbbc2f55067949edc69eab8a4277"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/SharedHome-v28/README.txt",
+      "archive_path": "SharedHome-v28/README.txt",
+      "bytes": 3492,
+      "sha256": "013c0ee994fd38e65841220b5c2714a121f354e3db60a22613ed55166226595d"
+    },
+    {
+      "kind": "image",
+      "source": "Source/SharedHome-v28/References/chiikawa-house-v26.png",
+      "archive_path": "SharedHome-v28/References/chiikawa-house-v26.png",
+      "bytes": 1403237,
+      "sha256": "d6d8f5dfa6d36cb00a3c4ebd15d0a40c99ae0a1e18186ad126e0bd0e5e68f904"
+    },
+    {
+      "kind": "image",
+      "source": "Source/SharedHome-v28/References/hachiware-cave-v11.png",
+      "archive_path": "SharedHome-v28/References/hachiware-cave-v11.png",
+      "bytes": 1427076,
+      "sha256": "5c7624f8e3e53f8146bafed8387c64e9fc68a4411fed591cc2a66e7466162be2"
+    },
+    {
+      "kind": "image",
+      "source": "Source/SharedHome-v28/Review/app-shared-home-settings-v28.png",
+      "archive_path": "SharedHome-v28/Review/app-shared-home-settings-v28.png",
+      "bytes": 189771,
+      "sha256": "3569f276355fb787d17dbf586b7584121240f1cecba3e828ddc6b08ed1c101c0"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/SharedHome-v28/Review/body-measurements.json",
+      "archive_path": "SharedHome-v28/Review/body-measurements.json",
+      "bytes": 1018,
+      "sha256": "4a5b023d4eb9b7c745dcda3344d584e77c8c2bcd8345fdecbfbd96863f7fd85f"
+    },
+    {
+      "kind": "image",
+      "source": "Source/SharedHome-v28/Review/chiikawa-attack-frames-v24.png",
+      "archive_path": "SharedHome-v28/Review/chiikawa-attack-frames-v24.png",
+      "bytes": 771618,
+      "sha256": "f9de2b9c93f491c0d2b405c49a529924ff96cea86dd514e52073b8ddf2198d94"
+    },
+    {
+      "kind": "image",
+      "source": "Source/SharedHome-v28/Review/chiikawa-hover-attack-v24.gif",
+      "archive_path": "SharedHome-v28/Review/chiikawa-hover-attack-v24.gif",
+      "bytes": 504820,
+      "sha256": "a7375cb1c0a342fe72baf68d6257b23cfdf32fc38dd17f961078a8d5bc9a8d3a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/SharedHome-v28/Review/chiikawa-life-v26.png",
+      "archive_path": "SharedHome-v28/Review/chiikawa-life-v26.png",
+      "bytes": 834296,
+      "sha256": "d42a649ddc92304b7c5281fe5fd2e9cc7c3f48e28072e01dba579e688514ae6d"
+    },
+    {
+      "kind": "image",
+      "source": "Source/SharedHome-v28/Review/chiikawa-runtime-equipment-v23.png",
+      "archive_path": "SharedHome-v28/Review/chiikawa-runtime-equipment-v23.png",
+      "bytes": 1094011,
+      "sha256": "53a74564e3be5356af8141ae7304eebfbef113d21bf5aa636a312e598fc59fc5"
+    },
+    {
+      "kind": "image",
+      "source": "Source/SharedHome-v28/Review/chiikawa-runtime-walk-v23.gif",
+      "archive_path": "SharedHome-v28/Review/chiikawa-runtime-walk-v23.gif",
+      "bytes": 942413,
+      "sha256": "f9f94cf094de33f0bfbeea5e20df587914ea6a7c0c136112dfc0e9545476e3c7"
+    },
+    {
+      "kind": "image",
+      "source": "Source/SharedHome-v28/Review/chiikawa-study-v26.gif",
+      "archive_path": "SharedHome-v28/Review/chiikawa-study-v26.gif",
+      "bytes": 338884,
+      "sha256": "135e1df75a4910da49ad582b46de0b5aad618ac6064f27af7aaa9f7e9bfc17f7"
+    },
+    {
+      "kind": "image",
+      "source": "Source/SharedHome-v28/Review/friends.png",
+      "archive_path": "SharedHome-v28/Review/friends.png",
+      "bytes": 174820,
+      "sha256": "093914a47e35f0a406674ae65f26873b66d519c816ba2d2a5a2c734e84ccbefb"
+    },
+    {
+      "kind": "image",
+      "source": "Source/SharedHome-v28/Review/hachiware-attack-frames-v19.png",
+      "archive_path": "SharedHome-v28/Review/hachiware-attack-frames-v19.png",
+      "bytes": 627298,
+      "sha256": "5d3ad7baec89d0de923f543f447ca1069e3ea1c49d55ab930c13bf310b621ff8"
+    },
+    {
+      "kind": "image",
+      "source": "Source/SharedHome-v28/Review/hachiware-cave-home-v11.png",
+      "archive_path": "SharedHome-v28/Review/hachiware-cave-home-v11.png",
+      "bytes": 373145,
+      "sha256": "c07da50b1919b1012dc1bed35d68833c02da01bf5791b436de85f33de8da54c6"
+    },
+    {
+      "kind": "image",
+      "source": "Source/SharedHome-v28/Review/hachiware-daily-frames-v16.png",
+      "archive_path": "SharedHome-v28/Review/hachiware-daily-frames-v16.png",
+      "bytes": 666252,
+      "sha256": "a64ac89f71591894f34f509d3e75b64180912291022c506ebe241861c1531c79"
+    },
+    {
+      "kind": "image",
+      "source": "Source/SharedHome-v28/Review/hachiware-eat-v16.gif",
+      "archive_path": "SharedHome-v28/Review/hachiware-eat-v16.gif",
+      "bytes": 221083,
+      "sha256": "549f4f2875bde1c9be09c2b3b3fbab3a9fb0b8733a55ab95961503717ad041d0"
+    },
+    {
+      "kind": "image",
+      "source": "Source/SharedHome-v28/Review/hachiware-eight-directions-v10.gif",
+      "archive_path": "SharedHome-v28/Review/hachiware-eight-directions-v10.gif",
+      "bytes": 608909,
+      "sha256": "0aa86b98ca9e08f3c71468e7bbdab1743344f8bf92ad80e6bd0d8eb8babb964a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/SharedHome-v28/Review/hachiware-equipped-directions-v11.png",
+      "archive_path": "SharedHome-v28/Review/hachiware-equipped-directions-v11.png",
+      "bytes": 583384,
+      "sha256": "b05323d89f4ded4008682dda8aa4ecb31bf0ad03002312120ea38364c334a98a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/SharedHome-v28/Review/hachiware-expressions-v11.png",
+      "archive_path": "SharedHome-v28/Review/hachiware-expressions-v11.png",
+      "bytes": 451935,
+      "sha256": "71309900abc75f15becdc7f339510bd084b568505e5c5675df5b251e15d5b322"
+    },
+    {
+      "kind": "image",
+      "source": "Source/SharedHome-v28/Review/hachiware-home-sleep-v11.gif",
+      "archive_path": "SharedHome-v28/Review/hachiware-home-sleep-v11.gif",
+      "bytes": 595813,
+      "sha256": "3e9c54195b9476fdf45bad59bd187e43b095b42bb9c2883efe171e07d3313587"
+    },
+    {
+      "kind": "image",
+      "source": "Source/SharedHome-v28/Review/hachiware-hover-attack-v19.gif",
+      "archive_path": "SharedHome-v28/Review/hachiware-hover-attack-v19.gif",
+      "bytes": 408145,
+      "sha256": "c8d3ec8fc8b27f65508c8957c51aa0cd84f5a2c42783eb15c0a0a307631f3521"
+    },
+    {
+      "kind": "image",
+      "source": "Source/SharedHome-v28/Review/hachiware-items-v11.gif",
+      "archive_path": "SharedHome-v28/Review/hachiware-items-v11.gif",
+      "bytes": 550859,
+      "sha256": "863cf17650a351eeb4ec8af250f279c743215f66f5cb17c71111ac360f3fcb2a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/SharedHome-v28/Review/hachiware-proximity-actions-v17.png",
+      "archive_path": "SharedHome-v28/Review/hachiware-proximity-actions-v17.png",
+      "bytes": 195647,
+      "sha256": "c02ec015715c554b1ff63811d54e16cb7d03620a4bd353f3e1695e9121fa435f"
+    },
+    {
+      "kind": "image",
+      "source": "Source/SharedHome-v28/Review/hachiware-side-cycle.png",
+      "archive_path": "SharedHome-v28/Review/hachiware-side-cycle.png",
+      "bytes": 791623,
+      "sha256": "56232bb7b3fc78aaec9e6c94cb49bf64de941422119a108cf2428b1fb413de9f"
+    },
+    {
+      "kind": "image",
+      "source": "Source/SharedHome-v28/Review/hachiware-sprite-preview.png",
+      "archive_path": "SharedHome-v28/Review/hachiware-sprite-preview.png",
+      "bytes": 266383,
+      "sha256": "62b8b826f3d7ec00fb5987636f46627b104ec01bd6b2c2ab62aaf9e28b0466cd"
+    },
+    {
+      "kind": "image",
+      "source": "Source/SharedHome-v28/Review/hachiware-study-v16.gif",
+      "archive_path": "SharedHome-v28/Review/hachiware-study-v16.gif",
+      "bytes": 236231,
+      "sha256": "2d52c80db026ab3b3d2ad81ab8aaf51d41774d1933d77a8c4ebdcfd120c95c60"
+    },
+    {
+      "kind": "image",
+      "source": "Source/SharedHome-v28/Review/hachiware-vomit-v16.gif",
+      "archive_path": "SharedHome-v28/Review/hachiware-vomit-v16.gif",
+      "bytes": 209889,
+      "sha256": "1e6f36dc62e8f3f79ca2541a8b00aa29db65e2506108891e140bebee9b5e3c03"
+    },
+    {
+      "kind": "image",
+      "source": "Source/SharedHome-v28/Review/hachiware-walk.png",
+      "archive_path": "SharedHome-v28/Review/hachiware-walk.png",
+      "bytes": 136739,
+      "sha256": "54bfabb78c7f56e08fd0262c4e2fd12067405b766a5b4a474df8379234184c6f"
+    },
+    {
+      "kind": "image",
+      "source": "Source/SharedHome-v28/Review/icon.png",
+      "archive_path": "SharedHome-v28/Review/icon.png",
+      "bytes": 257854,
+      "sha256": "fadb9924edc62d95697cdefc883dbb54e597c528d87278bf12af3ed433319587"
+    },
+    {
+      "kind": "image",
+      "source": "Source/SharedHome-v28/Review/life-prop-desk-v17.png",
+      "archive_path": "SharedHome-v28/Review/life-prop-desk-v17.png",
+      "bytes": 5048,
+      "sha256": "b3bf50da9919d286490de0b1bc75165225187ce96530ab191870413bdeb2c805"
+    },
+    {
+      "kind": "image",
+      "source": "Source/SharedHome-v28/Review/life-prop-furball-v17.png",
+      "archive_path": "SharedHome-v28/Review/life-prop-furball-v17.png",
+      "bytes": 3314,
+      "sha256": "300da36602f4db21e52c44827e33e6144e244d0aaaed6437ea99a8f11e8fa75b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/SharedHome-v28/Review/life-prop-rice-v17.png",
+      "archive_path": "SharedHome-v28/Review/life-prop-rice-v17.png",
+      "bytes": 3646,
+      "sha256": "07dd6416c0a2ba2c46cca8e12db5ee0b6e5078d3e36bbd94c6a6d548cf1e1361"
+    },
+    {
+      "kind": "image",
+      "source": "Source/SharedHome-v28/Review/shared-home-designs-v28.png",
+      "archive_path": "SharedHome-v28/Review/shared-home-designs-v28.png",
+      "bytes": 927974,
+      "sha256": "0a0b5bdfbcc3c5883d79c818d2158bdb3b31cd8693ba37cacfa8e9d211852925"
+    },
+    {
+      "kind": "image",
+      "source": "Source/SharedHome-v28/Review/shared-home-sleep-v28.gif",
+      "archive_path": "SharedHome-v28/Review/shared-home-sleep-v28.gif",
+      "bytes": 461483,
+      "sha256": "d6f68d293cad0c6f4938c560ce9f6dbb9dca279787c14b6b1fad76f086e534a5"
+    },
+    {
+      "kind": "image",
+      "source": "Source/SharedHome-v28/Review/weapon-hover-size-v27.gif",
+      "archive_path": "SharedHome-v28/Review/weapon-hover-size-v27.gif",
+      "bytes": 893121,
+      "sha256": "3c0149601d6146db9ff1ba8f776416162e3b87f00b687ea596032e25d1cda14d"
+    },
+    {
+      "kind": "image",
+      "source": "Source/SharedHome-v28/Review/weapon-hover-size-v27.png",
+      "archive_path": "SharedHome-v28/Review/weapon-hover-size-v27.png",
+      "bytes": 409932,
+      "sha256": "6a3fb238d36d567e0c64cf8b94f35fd3a37b0e7c312224f2f67a30d4637827f1"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/SharedHome-v28/build-cli.txt",
+      "archive_path": "SharedHome-v28/build-cli.txt",
+      "bytes": 265,
+      "sha256": "aa6c0e63b401579afc73af9f7a556543d85852fe956b55354e93bab0bc762842"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/SharedHome-v28/build-log.txt",
+      "archive_path": "SharedHome-v28/build-log.txt",
+      "bytes": 327,
+      "sha256": "0733feae631d0ad950890cdd620ce1728fba9f0e9737dfeb05cfe0ec8257cb51"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/SharedHome-v28/codesign.txt",
+      "archive_path": "SharedHome-v28/codesign.txt",
+      "bytes": 109,
+      "sha256": "6210c61790ac2c9d268a576bdecb1c906f66d332a0c64871ceff1469e071d542"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/SharedHome-v28/generation.json",
+      "archive_path": "SharedHome-v28/generation.json",
+      "bytes": 635,
+      "sha256": "e3e5a31e100fe3bb9d5ab792f0af64be8d811ee900cf06d1970a0b3be10bcd12"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/SharedHome-v28/render-log.txt",
+      "archive_path": "SharedHome-v28/render-log.txt",
+      "bytes": 18,
+      "sha256": "e4e815f865d1d6b4f0ba8e7a4cf091562580558fb1729df68d170f0246609404"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/SharedHome-v28/resources-preserved.json",
+      "archive_path": "SharedHome-v28/resources-preserved.json",
+      "bytes": 8615,
+      "sha256": "c8b7866cfe2393874fab590813c2559e95ce01cf5d2be6bf75e57c4226b145fd"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/SharedHome-v28/security-assets.json",
+      "archive_path": "SharedHome-v28/security-assets.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/SharedHome-v28/security-assets.txt",
+      "archive_path": "SharedHome-v28/security-assets.txt",
+      "bytes": 79,
+      "sha256": "07e947f9f33e8f4b972624ae89e4f8bf2baf47b5cbfe3c4f068d726474d78450"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/SharedHome-v28/security-code.json",
+      "archive_path": "SharedHome-v28/security-code.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/SharedHome-v28/security-code.txt",
+      "archive_path": "SharedHome-v28/security-code.txt",
+      "bytes": 81,
+      "sha256": "83559613b393d5522b8a0265187a351f3593d27897d0894b648458a103299706"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/SharedHome-v28/self-test-app.txt",
+      "archive_path": "SharedHome-v28/self-test-app.txt",
+      "bytes": 25291,
+      "sha256": "08ce55eb3d31273e845b1ce1852d7cae32f691efc7e7ce19a049c48086e6be7c"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/SharedHome-v28/self-test-cli.txt",
+      "archive_path": "SharedHome-v28/self-test-cli.txt",
+      "bytes": 24700,
+      "sha256": "02078ebb50a6cac32ac674913254cd6f983d3e224c8087993a1179680b90e77d"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/SharedHome-v28/validation.json",
+      "archive_path": "SharedHome-v28/validation.json",
+      "bytes": 1146,
+      "sha256": "350007b945fd0e8e321685f5376484185468c49848fcf627f0d4b8ab67e48f0e"
     },
     {
       "kind": "image",
@@ -15969,6 +16361,13 @@
     },
     {
       "kind": "image",
+      "source": "Source/Versions/9d8d647db89bd8f2/build/artwork/hachiware-home-sleep-v11.gif",
+      "archive_path": "Versions/9d8d647db89bd8f2/build/artwork/hachiware-home-sleep-v11.gif",
+      "bytes": 595803,
+      "sha256": "9d8d647db89bd8f2d0e25cca5aa4565fd02dfac634f562410c0aea88e8b86def"
+    },
+    {
+      "kind": "image",
       "source": "Source/Versions/ab40babb2b8de90c/build/artwork/hachiware-side-cycle.png",
       "archive_path": "Versions/ab40babb2b8de90c/build/artwork/hachiware-side-cycle.png",
       "bytes": 816408,
@@ -15980,6 +16379,13 @@
       "archive_path": "Versions/b5886b3b92e64f69/build/artwork/hachiware-items-v11.gif",
       "bytes": 552903,
       "sha256": "b5886b3b92e64f69098fa740fc2127b6ceeb5a6ea34f397f7405e73e4f941d87"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/bc9258a082668684/build/artwork/chiikawa-life-v26.png",
+      "archive_path": "Versions/bc9258a082668684/build/artwork/chiikawa-life-v26.png",
+      "bytes": 859018,
+      "sha256": "bc9258a08266868487e71878d5af783c741c38479683f69378c24d63e03a1b91"
     },
     {
       "kind": "image",
@@ -16836,8 +17242,8 @@
       "sha256": "8a42caa40e469a5ee00fa2b860d14756cc1fd73bc8fcf73332c50b87a92c9c3b"
     }
   ],
-  "updated_at": "2026-10-21T04:57:19.000873+00:00",
-  "latest_applied": "AttackScale-v27",
+  "updated_at": "2026-10-21T05:31:56.313124+00:00",
+  "latest_applied": "SharedHome-v28",
   "applied_directions": [
     "down-left",
     "down-right"

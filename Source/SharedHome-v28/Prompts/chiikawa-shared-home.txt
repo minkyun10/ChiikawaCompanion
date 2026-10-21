@@ -1,0 +1,8 @@
+Use case: precise-object-edit
+Asset type: transparent 2D desktop companion house sprite.
+Input image 1 is the EDIT TARGET and geometric master: Hachiware's cave home.
+Input image 2 is a PALETTE reference only: Chiikawa's cream and pink room.
+Primary request: produce a Chiikawa-themed color/material variant of image 1, with exactly the SAME wide cave silhouette, dimensions, straight-on slightly elevated perspective, arch opening, floor footprint, grass fringe, stone joints, hanging vine placement, and small box on the right. This is a skin for the same game house geometry, not a different building.
+Change only surface palette/material: warm ivory/blush stone outer walls, soft muted dusty-rose cave interior, pale cream floor, soft green grass, and the existing small right box in pale pink. Keep the entrance fully open and empty so sleeping characters can be drawn into the front left floor.
+Preserve the thick warm brown hand-drawn outlines and simple flat anime shading of image 1. Keep the same camera, wide shape, interior/floor proportions and layout; no new door, windows, furniture, characters, bed, text or labels. Do not use the round house architecture from image 2.
+Transparent background outside the house. Fully isolated sprite, same landscape aspect ratio and full uncut silhouette with small transparent margins.

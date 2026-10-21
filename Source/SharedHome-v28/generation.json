@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-21",
+  "tool": "built-in image_gen",
+  "use_case": "precise-object-edit",
+  "prompt": "Prompts/chiikawa-shared-home.txt",
+  "original": "Generated/chiikawa-shared-home-original-v28.png",
+  "runtime_asset": "Sources/ChiikawaCompanion/Resources/chiikawa-shared-home-v28.png",
+  "sha256": "1a3f6040efa3f3488c490bbb1bae2d67f37bf767f7906071d6ee54d9c3207bd1",
+  "transparent_background_requested": true,
+  "postprocessing": "None. Original alpha preserved; registered to the existing cave footprint at draw time.",
+  "references": [
+    "References/hachiware-cave-v11.png",
+    "References/chiikawa-house-v26.png"
+  ]
+}

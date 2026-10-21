@@ -102,31 +102,7 @@ struct SettingsView: View {
             dailyActionCard
             voiceCard
 
-            VStack(alignment: .leading, spacing: 13) {
-                HStack {
-                    Label("하치와레의 동굴 집", systemImage: "house.fill")
-                        .font(.system(size: 16, weight: .semibold))
-                    Spacer()
-                    Toggle("집 표시", isOn: $state.homeEnabled)
-                        .toggleStyle(.switch).controlSize(.small).font(.system(size: 11))
-                }
-                Text("화면 중앙 하단, Dock 위에 있어요. 일반 앱 창 뒤에 표시돼요.")
-                    .font(.system(size: 11)).foregroundStyle(mutedInk)
-                HStack {
-                    VStack(alignment: .leading, spacing: 5) {
-                        Text(state.homeStatus).font(.system(size: 11, weight: .semibold))
-                        Toggle("가끔 집에서 쉬기", isOn: $state.automaticRest)
-                            .toggleStyle(.switch).controlSize(.small).font(.system(size: 11))
-                    }
-                    Spacer()
-                    Button("집에 가서 자기") { state.onGoHome?() }
-                        .disabled(!state.homeEnabled || state.resting)
-                    Button("깨우기") { state.onWake?() }.disabled(!state.resting)
-                }
-                Text("집을 클릭하거나 하치와레를 입구에 데려다 놓으면 이불을 덮고 자요.\n잠든 집을 클릭하면 깨워요. 20초 쉬면 스스로 일어나요.")
-                    .font(.system(size: 10)).lineSpacing(3).foregroundStyle(mutedInk)
-                    .fixedSize(horizontal: false, vertical: true)
-            }.padding(20).background(.white.opacity(0.9), in: RoundedRectangle(cornerRadius: 20))
+            sharedHomeCard
 
             VStack(alignment: .leading, spacing: 15) {
                 HStack(spacing: 20) {
@@ -213,17 +189,40 @@ struct SettingsView: View {
         }.padding(20).background(.white.opacity(0.9), in: RoundedRectangle(cornerRadius: 20))
     }
 
+    private var sharedHomeCard: some View {
+        VStack(alignment: .leading, spacing: 13) {
+            Label("함께 쉬는 집", systemImage: "house.fill").font(.system(size: 16, weight: .semibold))
+            Picker("집 디자인", selection: $state.homeStyle) {
+                ForEach(HomeStyle.allCases) { style in Text(style.title).tag(style) }
+            }.pickerStyle(.segmented)
+            Text("집은 한 채만 표시해요. 화면 중앙 하단, Dock 위의 같은 자리에 있어요.")
+                .font(.system(size: 11)).foregroundStyle(mutedInk)
+            ForEach(Friend.developmentRoster) { friend in
+                HStack {
+                    Text(friend.name).font(.system(size: 11, weight: .semibold)).frame(width: 65, alignment: .leading)
+                    if friend == .hachiware {
+                        Toggle("가끔 쉬기", isOn: $state.automaticRest).toggleStyle(.switch).controlSize(.small)
+                        Spacer()
+                        Button("집에 가서 자기") { state.onGoHome?() }.disabled(state.resting)
+                        Button("깨우기") { state.onWake?() }.disabled(!state.resting)
+                    } else {
+                        Toggle("가끔 쉬기", isOn: $state.chiikawaAutomaticRest).toggleStyle(.switch).controlSize(.small)
+                        Spacer()
+                        Button("집에 가서 자기") { state.onChiikawaGoHome?() }.disabled(state.chiikawaResting)
+                        Button("깨우기") { state.onChiikawaWake?() }.disabled(!state.chiikawaResting)
+                    }
+                }.font(.system(size: 11))
+                Text(friend == .hachiware ? state.homeStatus : state.chiikawaHomeStatus)
+                    .font(.system(size: 10)).foregroundStyle(mutedInk)
+            }
+            Text("어떤 디자인이든 모든 친구가 들어가 함께 자요. 빈 집을 클릭하면 보이는 친구들이 쉬러 가요.\n입구에 데려다 놓아도 잠들고, 자는 집을 클릭하면 깨워요. 20초 쉬면 스스로 일어나요.")
+                .font(.system(size: 10)).lineSpacing(3).foregroundStyle(mutedInk)
+        }.padding(20).background(.white.opacity(0.9), in: RoundedRectangle(cornerRadius: 20))
+    }
+
     private var chiikawaLifeCard: some View {
         VStack(alignment: .leading, spacing: 13) {
             Label("치이카와의 하루",systemImage: "house").font(.system(size: 16,weight: .semibold))
-            HStack {
-                Toggle("치이카와 집",isOn: $state.chiikawaHomeEnabled)
-                Toggle("가끔 귀가해서 쉬기",isOn: $state.chiikawaAutomaticRest)
-                Spacer()
-                Button("집에 가서 자기") { state.onChiikawaGoHome?() }.disabled(state.chiikawaResting)
-                Button("깨우기") { state.onChiikawaWake?() }.disabled(!state.chiikawaResting)
-            }.toggleStyle(.switch).controlSize(.small).font(.system(size: 11))
-            Text(state.chiikawaHomeStatus).font(.system(size: 10)).foregroundStyle(mutedInk)
             HStack {
                 Toggle("분홍 공부 책상",isOn: $state.chiikawaStudyEnabled)
                 Toggle("가까이 가면 공부하기",isOn: $state.chiikawaAutomaticActivities)
@@ -239,7 +238,7 @@ struct SettingsView: View {
                 Button("동작 멈추기") { state.onStopChiikawaLife?() }.disabled(!state.chiikawaLifeRunning)
             }.font(.system(size: 11))
             Text(state.chiikawaLifeStatus).font(.system(size: 10)).foregroundStyle(mutedInk)
-            Text("동굴 옆의 둥근 집을 클릭하면 열쇠를 주워 귀가해요. 잠옷을 입고 이불을 덮어 20초 쉬어요.\n분홍 책상은 드래그로 옮길 수 있어요. 집과 책상·소품 위치는 캐릭터 이동과 독립적이에요.")
+            Text("공용 집으로 귀가할 때 열쇠를 챙기고, 잠옷을 입고 이불을 덮어 쉬어요.\n분홍 책상은 드래그로 옮길 수 있어요. 책상·소품 위치는 캐릭터 이동과 독립적이에요.")
                 .font(.system(size: 10)).lineSpacing(3).foregroundStyle(mutedInk)
         }.padding(20).background(.white.opacity(0.9),in: RoundedRectangle(cornerRadius: 20))
     }

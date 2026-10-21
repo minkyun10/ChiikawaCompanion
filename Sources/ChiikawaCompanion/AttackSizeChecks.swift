@@ -49,7 +49,7 @@ extension SelfTest {
         let suite = "AttackSizeChecks-\(UUID().uuidString)", defaults = UserDefaults(suiteName: suite)!
         defer { defaults.removePersistentDomain(forName: suite) }
         let state = AppState(defaults: defaults)
-        state.homeEnabled = false; state.chiikawaHomeEnabled = false
+
         state.automaticItems = false; state.chiikawaAutomaticItems = false
         state.automaticActivities = false; state.chiikawaAutomaticActivities = false
         state.characterVoice = false; state.chiikawaVoice = false
@@ -57,7 +57,7 @@ extension SelfTest {
         let away = NSPoint(x: -10000,y: -10000)
         defer {
             desktop.actors.forEach { $0.dismissBubble(); $0.panel.orderOut(nil); $0.attackOverlay.panel.orderOut(nil) }
-            desktop.home.panel.orderOut(nil); desktop.chiikawaHome.panel.orderOut(nil); desktop.chiikawaDesk.panel.orderOut(nil)
+            desktop.home.panel.orderOut(nil); desktop.chiikawaDesk.panel.orderOut(nil)
             desktop.desktopItems.values.forEach { $0.panel.orderOut(nil) }
             desktop.chiikawaDesktopItems.values.forEach { $0.panel.orderOut(nil) }
             desktop.desktopActivitySpots.values.forEach { $0.panel.orderOut(nil) }

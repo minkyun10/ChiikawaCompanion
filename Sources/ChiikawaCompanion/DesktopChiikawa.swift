@@ -113,7 +113,6 @@ extension DesktopController {
             updateChiikawaLifeObjects(visible: false, mouse: mouse, actor: actor, now: now, time: time)
             return
         }
-        if !state.chiikawaHomeEnabled && chiikawaHomeRoutine.phase != .outside { wakeChiikawa(now: now) }
         chiikawaHomeRoutine.advance(now: now)
         if chiikawaHomeRoutine.shouldWake(now: now) { wakeChiikawa(now: now) }
         if chiikawaLifeRoutine.selected != nil && chiikawaLifeRoutine.action(now: now) == nil { stopChiikawaLife() }
@@ -134,7 +133,7 @@ extension DesktopController {
         actor.wasHovered = hovered
         chiikawaStudyWorld.observe(contact: ItemWorld.contactPoint(origin: actor.panel.frame.origin))
         if activity == .walking || activity == .idle { _ = triggerChiikawaStudy(actor, now: now) }
-        if state.chiikawaHomeEnabled, activity == .walking, chiikawaLifeRoutine.action(now: now) == nil,
+        if activity == .walking, chiikawaLifeRoutine.action(now: now) == nil,
            chiikawaStudyWorld.requested == nil, chiikawaWorld.requested == nil,
            chiikawaHomeRoutine.shouldReturn(now: now, automatic: state.chiikawaAutomaticRest, roaming: state.isWalking(.chiikawa)) {
             goChiikawaHome(now: now)
@@ -154,7 +153,7 @@ extension DesktopController {
                 if !dragged.contains(target) { _ = pickUpChiikawaItem(target, actor: actor, bounds: screen.visibleFrame, now: now) }
             }
             if followingHome && !chiikawaSeekingHomeKey {
-                actor.motion.destination = ItemWorld.destination(for: chiikawaHome.entrance)
+                actor.motion.destination = ItemWorld.destination(for: home.entrance)
             } else if followingStudy, let point = chiikawaStudyWorld.positions[.desk] {
                 actor.motion.destination = ItemWorld.destination(for: point)
             }
@@ -168,7 +167,7 @@ extension DesktopController {
                 actor.motion.destination = target
             }
             if chiikawaLifeRoutine.action(now: now) == nil {
-                let bounds = followingHome ? screen.visibleFrame.union(chiikawaHome.panel.screen?.visibleFrame ?? screen.visibleFrame) : screen.visibleFrame
+                let bounds = followingHome ? screen.visibleFrame.union(home.panel.screen?.visibleFrame ?? screen.visibleFrame) : screen.visibleFrame
                 actor.panel.setFrameOrigin(actor.motion.advance(from: frame.origin, dt: dt, bounds: bounds, size: frame.size))
             } else { actor.motion.stop() }
             actor.gait.recordMovement(from: frame.origin, to: actor.panel.frame.origin)

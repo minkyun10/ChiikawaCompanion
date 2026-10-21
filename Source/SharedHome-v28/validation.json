@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-21",
+  "version": "0.16.0",
+  "build": 30,
+  "baseline_commit": "54fa8bf",
+  "cli_checks_passed": 329,
+  "packaged_checks_passed": 336,
+  "new_shared_home_checks": 15,
+  "house_windows_per_controller": 1,
+  "default_style": "hachiware",
+  "available_styles": [
+    "hachiware",
+    "chiikawa"
+  ],
+  "geometry_points": [
+    360,
+    214
+  ],
+  "position": "Original Hachiware home, centered 12 points above the usable screen bottom above the Dock.",
+  "shared_entrance": true,
+  "simultaneous_sleep_tested": [
+    "hachiware",
+    "chiikawa"
+  ],
+  "style_switch_preserves_sleep_and_inventory": true,
+  "previous_runtime_resources_preserved": 45,
+  "new_runtime_resources": 1,
+  "generated_original_preserved_with_alpha": true,
+  "codesign_verification": "passed",
+  "native_app_relaunched": true,
+  "native_default_style_observed": "hachiware",
+  "native_style_selection_verified": [
+    "chiikawa",
+    "hachiware"
+  ],
+  "native_final_selected_style": "hachiware",
+  "native_settings_window_closed": true,
+  "security_scope": [
+    "Sources/ChiikawaCompanion",
+    "Source/SharedHome-v28"
+  ],
+  "security_findings": 0
+}

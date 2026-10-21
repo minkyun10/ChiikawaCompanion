@@ -1,5 +1,17 @@
 import AppKit
 
+/// House skins never own geometry or character membership.
+enum HomeStyle: String, CaseIterable, Identifiable {
+    case hachiware, chiikawa
+    var id: String { rawValue }
+    var title: String { self == .hachiware ? "하치와레 집" : "치이카와 집" }
+}
+
+struct HomeOccupant {
+    let friend: Friend
+    let routine: HomeRoutine
+}
+
 enum HomePhase { case outside, returning, entering, sleeping }
 
 /// Time and arrival govern rest; the character never teleports to the house.
@@ -73,10 +85,12 @@ enum HomeGeometry {
 final class HomeArtwork {
     static let shared = HomeArtwork()
     let cave: NSImage?
+    let chiikawaCave: NSImage?
     let sleeper: NSImage?
-    var isReady: Bool { cave != nil && sleeper != nil }
+    var isReady: Bool { cave != nil && chiikawaCave != nil && sleeper != nil }
     private init() {
         cave = Self.load("hachiware-cave-v11")
+        chiikawaCave = Self.load("chiikawa-shared-home-v28")
         sleeper = Self.load("hachiware-sleep-v11")
     }
     private static func load(_ name: String) -> NSImage? {
@@ -101,9 +115,31 @@ final class HomeArtwork {
     static func breathingScale(time: Double) -> CGFloat { 1 + CGFloat(sin(time * 2 * .pi / 3.6)) * 0.018 }
 
     func draw(in rect: NSRect, phase: HomePhase, elapsed: TimeInterval, time: Double) {
-        guard let cave, let sleeper else { return }
+        let now = Date(timeIntervalSince1970: 1000)
+        var routine = HomeRoutine(now: now)
+        if phase == .entering || phase == .sleeping {
+            routine.request(now: now)
+            _ = routine.arrive(contact: .zero, entrance: .zero, now: now)
+            if phase == .sleeping { routine.advance(now: now.addingTimeInterval(HomeRoutine.entryDuration)) }
+        }
+        draw(in: rect, style: .hachiware, occupants: [HomeOccupant(friend: .hachiware, routine: routine)],
+             now: routine.phaseStarted.addingTimeInterval(elapsed), time: time)
+    }
+
+    func draw(in rect: NSRect, style: HomeStyle, occupants: [HomeOccupant], now: Date, time: Double) {
+        guard let background = style == .chiikawa ? chiikawaCave ?? cave : cave else { return }
         NSGraphicsContext.current?.imageInterpolation = .high
-        cave.draw(in: Self.fitted(cave.size, in: rect.insetBy(dx: 4, dy: 4)))
+        // Every design uses the same registered footprint, camera and doorway.
+        background.draw(in: Self.fitted(cave?.size ?? background.size, in: rect.insetBy(dx: 4, dy: 4)))
+        let inside = occupants.filter { $0.routine.isInside }
+        for (index, occupant) in inside.enumerated() {
+            drawOccupant(occupant, index: index, count: inside.count, in: rect, now: now, time: time)
+        }
+    }
+
+    private func drawOccupant(_ occupant: HomeOccupant, index: Int, count: Int, in rect: NSRect, now: Date, time: Double) {
+        let phase = occupant.routine.phase
+        let elapsed = max(0, now.timeIntervalSince(occupant.routine.phaseStarted))
         let entry = min(1, max(0, elapsed / HomeRoutine.entryDuration))
         if phase == .entering {
             let length = rect.width * CGFloat(0.32 - entry * 0.07)
@@ -112,14 +148,24 @@ final class HomeArtwork {
                              width: length, height: length * 1.12)
             NSGraphicsContext.saveGraphicsState()
             NSGraphicsContext.current?.cgContext.setAlpha(CGFloat(1 - max(0, entry - 0.4) / 0.6))
-            FriendArtwork.draw(.hachiware, in: pet, time: time, walking: true, facing: -1,
-                               walkPhase: entry * 2 * .pi, pose: .back)
+            if occupant.friend == .chiikawa, let pajamas = ChiikawaLifeSprites.shared.pajamas {
+                pajamas.draw(in: Self.fitted(pajamas.size, in: pet))
+            } else {
+                FriendArtwork.draw(occupant.friend, in: pet, time: time, walking: true, facing: -1,
+                                   walkPhase: entry * 2 * .pi, pose: .back)
+            }
             NSGraphicsContext.restoreGraphicsState()
         }
         guard phase == .sleeping || phase == .entering else { return }
         let opacity = phase == .sleeping ? 1 : max(0, (entry - 0.45) / 0.55)
-        let bed = NSRect(x: rect.minX + rect.width * 0.225, y: rect.minY + rect.height * 0.105,
-                         width: rect.width * 0.465, height: rect.height * 0.40)
+        guard let sleeper = occupant.friend == .chiikawa ? ChiikawaLifeSprites.shared.sleeper : sleeper else { return }
+        let columns = max(1, Int(ceil(sqrt(Double(count)))))
+        let rows = max(1, Int(ceil(Double(count) / Double(columns))))
+        let area = NSRect(x: rect.minX + rect.width * 0.225, y: rect.minY + rect.height * 0.105,
+                          width: rect.width * (count == 1 ? 0.465 : 0.55), height: rect.height * 0.40)
+        let bed = NSRect(x: area.minX + CGFloat(index % columns) * area.width / CGFloat(columns),
+                         y: area.minY + CGFloat(index / columns) * area.height / CGFloat(rows),
+                         width: area.width / CGFloat(columns), height: area.height / CGFloat(rows))
         var sleeping = Self.fitted(sleeper.size, in: bed)
         sleeping.size.height *= Self.breathingScale(time: time)
         sleeper.draw(in: sleeping, from: .zero, operation: .sourceOver, fraction: opacity)
@@ -135,15 +181,21 @@ final class HomeArtwork {
 }
 
 final class HomeView: NSView {
-    var routine = HomeRoutine()
+    var style = HomeStyle.hachiware
+    var occupants: [HomeOccupant] = []
     var time = 0.0
     var now = Date()
     var onActivate: (() -> Void)?
     init() {
         super.init(frame: NSRect(origin: .zero, size: HomeGeometry.size))
         setAccessibilityElement(true); setAccessibilityRole(.button)
-        setAccessibilityLabel("하치와레 집 — 클릭하면 집에 가서 자요. 자는 동안 클릭하면 깨워요.")
-        toolTip = "하치와레 집 · 클릭해 쉬러 가기 · 자는 동안 클릭해 깨우기"
+        updateDescription()
+    }
+    func updateDescription() {
+        let names = occupants.filter { $0.routine.isInside }.map { $0.friend.name }.joined(separator: ", ")
+        let action = names.isEmpty ? "클릭하면 보이는 친구들이 함께 쉬러 가요" : "\(names) 자는 중 · 클릭하면 깨워요"
+        setAccessibilityLabel("공용 집 · \(style.title) — \(action)")
+        toolTip = "공용 집 · \(style.title) · \(action)"
     }
     required init?(coder: NSCoder) { fatalError("init(coder:) is unavailable") }
     override var acceptsFirstResponder: Bool { false }
@@ -152,8 +204,7 @@ final class HomeView: NSView {
     override func mouseDown(with event: NSEvent) {}
     override func mouseUp(with event: NSEvent) { onActivate?() }
     override func draw(_ dirtyRect: NSRect) {
-        HomeArtwork.shared.draw(in: bounds, phase: routine.phase,
-                                elapsed: now.timeIntervalSince(routine.phaseStarted), time: time)
+        HomeArtwork.shared.draw(in: bounds, style: style, occupants: occupants, now: now, time: time)
     }
 }
 
@@ -164,7 +215,7 @@ final class DesktopHome {
     init() {
         _ = HomeArtwork.shared
         panel = FriendPanel(contentRect: view.bounds, styleMask: [.borderless, .nonactivatingPanel], backing: .buffered, defer: false)
-        panel.contentView = view; panel.title = "하치와레 집"
+        panel.contentView = view; panel.title = "공용 집"
         panel.isOpaque = false; panel.backgroundColor = .clear; panel.hasShadow = false
         panel.isFloatingPanel = false; panel.level = DesktopLayer.character
         panel.collectionBehavior = DesktopLayer.collection; panel.animationBehavior = .none
@@ -179,12 +230,14 @@ final class DesktopHome {
         panel.setFrame(HomeGeometry.frame(in: screen.visibleFrame), display: false)
     }
     var entrance: NSPoint { HomeGeometry.entrance(in: panel.frame) }
-    func update(visible: Bool, mouse: NSPoint, routine: HomeRoutine, now: Date, time: Double) {
+    func update(visible: Bool, mouse: NSPoint, style: HomeStyle, occupants: [HomeOccupant], now: Date, time: Double) {
         guard visible else { panel.orderOut(nil); return }
         if !panel.isVisible { panel.orderFrontRegardless() }
         panel.ignoresMouseEvents = !(panel.occlusionState.contains(.visible) && HomeGeometry.hit(mouse, in: panel.frame))
-        let changed = view.routine.phase != routine.phase
-        view.routine = routine; view.now = now; view.time = time
-        if changed || routine.isInside { view.needsDisplay = true }
+        let changed = view.style != style || view.occupants.map(\.friend) != occupants.map(\.friend)
+            || view.occupants.map(\.routine.phase) != occupants.map(\.routine.phase)
+        view.style = style; view.occupants = occupants; view.now = now; view.time = time
+        if changed { view.updateDescription() }
+        if changed || occupants.contains(where: { $0.routine.isInside }) { view.needsDisplay = true }
     }
 }

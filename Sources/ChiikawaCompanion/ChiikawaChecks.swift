@@ -10,9 +10,9 @@ extension SelfTest {
         let state = AppState(defaults: defaults)
         check(state.visibleFriends == Set(Friend.developmentRoster) && state.walkingFriends == Set(Friend.developmentRoster),
               "existing installations start with both companions visible and walking")
-        state.automaticItems = false; state.automaticActivities = false; state.automaticRest = false; state.homeEnabled = false
+        state.automaticItems = false; state.automaticActivities = false; state.automaticRest = false;
         state.chiikawaAutomaticItems = false
-        state.chiikawaHomeEnabled = false; state.chiikawaAutomaticRest = false
+        state.chiikawaAutomaticRest = false
         state.chiikawaAutomaticActivities = false; state.chiikawaVoice = false
         let voice = RecordedVoicePlayer(startPlayback: { _ in true })
         let desktop = DesktopController(state: state, startTimer: false, recordedVoice: voice)
@@ -113,8 +113,8 @@ extension SelfTest {
         check(desktop.chiikawaWorld.equipped == nil && desktop.chiikawaWorld.ground.count == ChiikawaItem.allCases.count
               && desktop.chiikawaWorld.nearbyTarget(from: chii.panel.frame.origin, automatic: true, now: now) == nil,
               "putting down a Chiikawa item preserves ground coordinates and applies re-pickup cooldown")
-        state.homeEnabled = true; desktop.goHome(now: now)
-        check(!desktop.enterHomeIfReached(chii, now: now), "Chiikawa cannot enter Hachiware's cave or alter its sleep state")
+        desktop.goHome(now: now)
+        check(!desktop.enterHomeIfReached(chii, now: now), "the Hachiware entry handler cannot change the separate Chiikawa rest clock")
         hachi.panel.setFrameOrigin(ItemWorld.destination(for: desktop.home.entrance))
         check(desktop.enterHomeIfReached(hachi, now: now), "Hachiware still reaches and enters its own home")
         state.roaming = true; state.walkingFriends.insert(.chiikawa)
@@ -128,8 +128,8 @@ extension SelfTest {
               "hiding Chiikawa hides its bubble and both dedicated ground props")
         desktop.wakeFromHome(now: now); state.visibleFriends.insert(.chiikawa); state.visibleFriends.remove(.hachiware)
         chii.dismissBubble(); tick(2.2)
-        check(chii.panel.isVisible && !hachi.panel.isVisible && !desktop.home.panel.isVisible,
-              "hiding Hachiware leaves Chiikawa visible and hides only Hachiware's home")
+        check(chii.panel.isVisible && !hachi.panel.isVisible && desktop.home.panel.isVisible,
+              "hiding Hachiware leaves Chiikawa and the shared house visible")
         state.chiikawaItems.remove(.pinkSasumata); tick(2.3)
         check(desktop.chiikawaWorld.ground[.pinkSasumata] == nil && !desktop.receiveChiikawaItem(.pinkSasumata, at: body),
               "disabled Chiikawa items disappear and cannot be handed over")
@@ -140,7 +140,7 @@ extension SelfTest {
               "visibility, walking, Chiikawa inventory and automatic pickup preferences survive relaunch independently")
         defaults.set(["chiikawa", "usagi", "unknown"], forKey: "visibleFriends")
         check(AppState(defaults: defaults).visibleFriends == [.chiikawa], "saved roster preferences cannot expose unfinished or unknown characters")
-        state.homeEnabled = false; state.visibleFriends = Set(Friend.developmentRoster)
+        state.visibleFriends = Set(Friend.developmentRoster)
         state.chiikawaItems = Set(ChiikawaItem.allCases); state.chiikawaAutomaticItems = false
         let bounds = NSScreen.main!.visibleFrame
         chii.panel.setFrameOrigin(RoamingMotion.target(in: bounds, size: chii.panel.frame.size, xFraction: 0.1, yFraction: 0.35))

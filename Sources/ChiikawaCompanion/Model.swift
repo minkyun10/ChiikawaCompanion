@@ -63,14 +63,13 @@ final class AppState: ObservableObject {
     }
     @Published var chiikawaEquipped: ChiikawaItem?
     @Published var chiikawaItemStatus = "분홍 소품을 찾아요"
-    @Published var chiikawaHomeEnabled: Bool { didSet { defaults.set(chiikawaHomeEnabled, forKey: "chiikawaHomeEnabled") } }
     @Published var chiikawaAutomaticRest: Bool { didSet { defaults.set(chiikawaAutomaticRest, forKey: "chiikawaAutomaticRest") } }
     @Published var chiikawaStudyEnabled: Bool { didSet { defaults.set(chiikawaStudyEnabled, forKey: "chiikawaStudyEnabled") } }
     @Published var chiikawaAutomaticActivities: Bool { didSet { defaults.set(chiikawaAutomaticActivities, forKey: "chiikawaAutomaticActivities") } }
     @Published var chiikawaVoice: Bool {
         didSet { defaults.set(chiikawaVoice, forKey: "chiikawaVoice"); if !chiikawaVoice { onStopChiikawaVoice?() } }
     }
-    @Published var chiikawaHomeStatus = "집을 클릭하면 열쇠를 챙겨 귀가해요"
+    @Published var chiikawaHomeStatus = "공용 집에서 함께 쉴 수 있어요"
     @Published var chiikawaResting = false
     @Published var chiikawaLifeStatus = "공부하고, 인형을 안고, 잠옷으로 쉬어요"
     @Published var chiikawaLifeRunning = false
@@ -95,7 +94,7 @@ final class AppState: ObservableObject {
     @Published var expressive: Bool { didSet { defaults.set(expressive, forKey: "expressive") } }
     @Published var equippedItem: CompanionItem?
     @Published var itemStatus = "바탕화면에서 소품을 찾아요"
-    @Published var homeEnabled: Bool { didSet { defaults.set(homeEnabled, forKey: "homeEnabled") } }
+    @Published var homeStyle: HomeStyle { didSet { defaults.set(homeStyle.rawValue, forKey: "homeStyle") } }
     @Published var automaticRest: Bool { didSet { defaults.set(automaticRest, forKey: "automaticRest") } }
     @Published var homeStatus = "집을 클릭하면 쉬러 가요"
     @Published var resting = false
@@ -143,7 +142,6 @@ final class AppState: ObservableObject {
         }
         chiikawaItems = restoredChiikawaItems
         chiikawaAutomaticItems = defaults.object(forKey: "chiikawaAutomaticItems") as? Bool ?? true
-        chiikawaHomeEnabled = defaults.object(forKey: "chiikawaHomeEnabled") as? Bool ?? true
         chiikawaAutomaticRest = defaults.object(forKey: "chiikawaAutomaticRest") as? Bool ?? true
         chiikawaStudyEnabled = defaults.object(forKey: "chiikawaStudyEnabled") as? Bool ?? true
         chiikawaAutomaticActivities = defaults.object(forKey: "chiikawaAutomaticActivities") as? Bool ?? true
@@ -165,7 +163,9 @@ final class AppState: ObservableObject {
         defaults.removeObject(forKey: "recordedDialogue")
         let savedVolume = defaults.object(forKey: "characterVolume") as? Double ?? 0.65
         characterVolume = savedVolume.isFinite ? min(1, max(0, savedVolume)) : 0.65
-        homeEnabled = defaults.object(forKey: "homeEnabled") as? Bool ?? true
+        homeStyle = defaults.string(forKey: "homeStyle").flatMap(HomeStyle.init(rawValue:)) ?? .hachiware
+        defaults.removeObject(forKey: "homeEnabled")
+        defaults.removeObject(forKey: "chiikawaHomeEnabled")
         automaticRest = defaults.object(forKey: "automaticRest") as? Bool ?? true
         automaticItems = defaults.object(forKey: "automaticItems") as? Bool ?? true
         expressive = defaults.object(forKey: "expressive") as? Bool ?? true

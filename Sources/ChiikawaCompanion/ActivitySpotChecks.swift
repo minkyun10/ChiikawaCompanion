@@ -33,7 +33,7 @@ extension SelfTest {
               "hiding a prop removes its trigger and clears a pending visit")
 
         let state = AppState(defaults: defaults)
-        state.characterVoice = false; state.homeEnabled = false
+        state.characterVoice = false;
         state.automaticItems = false; state.automaticActivities = true; state.expressive = false; state.roaming = false
         state.enabledActivitySpots = Set(ActivitySpot.allCases)
         let desktop = DesktopController(state: state, startTimer: false), actor = desktop.actors[0]

@@ -48,7 +48,7 @@ extension SelfTest {
 
         let actor = desktop.actors[0]
         let initialHomeFrame = desktop.home.panel.frame
-        desktop.state.homeEnabled = true
+
         desktop.goHome(now: now)
         check(desktop.homeRoutine.phase == .returning && !desktop.enterHomeIfReached(actor, now: now),
               "controller home action walks toward the entrance instead of teleporting")
@@ -86,10 +86,10 @@ extension SelfTest {
         check(!desktop.homeRoutine.isInside && !desktop.state.resting,
               "clicking the sleeping house wakes the character without an external connection")
         actor.dismissBubble()
-        desktop.state.homeEnabled = false; desktop.state.automaticRest = false
+        desktop.state.homeStyle = .chiikawa; desktop.state.automaticRest = false
         let saved = AppState(defaults: desktop.state.defaults)
-        check(!saved.homeEnabled && !saved.automaticRest,
-              "home and rest choices persist independently of other prop preferences")
+        check(saved.homeStyle == .chiikawa && !saved.automaticRest,
+              "home design and rest choices persist independently of other prop preferences")
         actor.panel.orderOut(nil); desktop.home.panel.orderOut(nil)
     }
 

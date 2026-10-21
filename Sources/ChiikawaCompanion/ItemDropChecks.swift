@@ -6,7 +6,7 @@ extension SelfTest {
         state.enabledItems = Set(CompanionItem.allCases)
         state.enabledActivitySpots = Set(ActivitySpot.allCases)
         state.automaticItems = false; state.automaticActivities = false
-        state.roaming = false; state.expressive = true; state.homeEnabled = false
+        state.roaming = false; state.expressive = true;
         state.showFriends = true; state.characterVoice = false
         let desktop = DesktopController(state: state, startTimer: false)
         let actor = desktop.actors[0], now = Date(), away = NSPoint(x: -10000, y: -10000)

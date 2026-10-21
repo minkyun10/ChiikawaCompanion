@@ -3,10 +3,6 @@ import AppKit
 extension DesktopController {
     func configureChiikawaLife() {
         _ = ChiikawaLifeSprites.shared
-        chiikawaHome.view.onActivate = { [weak self] in
-            guard let self else { return }
-            if self.chiikawaHomeRoutine.isInside { self.wakeChiikawa() } else { self.goChiikawaHome() }
-        }
         chiikawaDesk.view.onSeek = { [weak self] in self?.seekChiikawaStudy() }
         chiikawaDesk.view.onMove = { [weak self] point in
             guard let self, let bounds = (NSScreen.screens.first { $0.frame.contains(point) } ?? self.chiikawaDesk.panel.screen ?? NSScreen.main)?.visibleFrame else { return }
@@ -96,7 +92,7 @@ extension DesktopController {
     func goChiikawaHome(now: Date = Date()) {
         guard !chiikawaHomeRoutine.isInside else { return }
         stopChiikawaLife(); stopChiikawaVoice()
-        state.chiikawaHomeEnabled = true; state.showFriends = true; state.roaming = true
+        state.showFriends = true; state.roaming = true
         state.visibleFriends.insert(.chiikawa); state.walkingFriends.insert(.chiikawa)
         chiikawaActor?.dismissBubble(); chiikawaActor?.motion.retarget()
         chiikawaHomeRoutine.request(now: now)
@@ -112,8 +108,8 @@ extension DesktopController {
         chiikawaSeekingHomeKey = false; chiikawaItemTarget = nil
         if let actor = chiikawaActor {
             if wasInside {
-                let bounds = chiikawaHome.panel.screen?.visibleFrame ?? NSScreen.main?.visibleFrame ?? chiikawaHome.panel.frame
-                actor.panel.setFrameOrigin(DesktopGeometry.clamp(ItemWorld.destination(for: chiikawaHome.entrance), size: actor.panel.frame.size, to: bounds))
+                let bounds = home.panel.screen?.visibleFrame ?? NSScreen.main?.visibleFrame ?? home.panel.frame
+                actor.panel.setFrameOrigin(DesktopGeometry.clamp(ItemWorld.destination(for: home.entrance), size: actor.panel.frame.size, to: bounds))
             }
             actor.motion.retarget()
             if state.isWalking(.chiikawa) && wasInside {
@@ -125,12 +121,12 @@ extension DesktopController {
 
     @discardableResult
     func enterChiikawaHomeIfReached(_ actor: FriendActor, now: Date) -> Bool {
-        guard actor.friend == .chiikawa, state.chiikawaHomeEnabled, !actor.view.isDragging,
+        guard actor.friend == .chiikawa, !actor.view.isDragging,
               now >= actor.bubbleUntil, chiikawaLifeRoutine.action(now: now) == nil,
               chiikawaStudyWorld.requested == nil, !chiikawaSeekingHomeKey,
-              chiikawaHomeRoutine.arrive(contact: ItemWorld.contactPoint(origin: actor.panel.frame.origin), entrance: chiikawaHome.entrance, now: now) else { return false }
-        let bounds = chiikawaHome.panel.screen?.visibleFrame ?? NSScreen.main?.visibleFrame ?? chiikawaHome.panel.frame
-        chiikawaWorld.drop(at: NSPoint(x: chiikawaHome.panel.frame.maxX-20,y: chiikawaHome.entrance.y), bounds: bounds, now: now)
+              chiikawaHomeRoutine.arrive(contact: ItemWorld.contactPoint(origin: actor.panel.frame.origin), entrance: home.entrance, now: now) else { return false }
+        let bounds = home.panel.screen?.visibleFrame ?? NSScreen.main?.visibleFrame ?? home.panel.frame
+        chiikawaWorld.drop(at: NSPoint(x: home.panel.frame.maxX-20,y: home.entrance.y), bounds: bounds, now: now)
         chiikawaWorld.requested = nil; chiikawaItemTarget = nil
         stopChiikawaLife(); stopChiikawaVoice(); actor.dismissBubble(); actor.motion.retarget(); actor.panel.orderOut(nil)
         publishChiikawaEquipment(); publishChiikawaHome()
@@ -139,7 +135,7 @@ extension DesktopController {
 
     func publishChiikawaHome() {
         let status = chiikawaSeekingHomeKey ? "집 열쇠를 챙기러 가는 중" : chiikawaHomeRoutine.phase == .outside
-            ? "집을 클릭하면 열쇠를 챙겨 귀가해요" : chiikawaHomeRoutine.status
+            ? "공용 집에서 함께 쉴 수 있어요" : chiikawaHomeRoutine.status
         if state.chiikawaHomeStatus != status { state.chiikawaHomeStatus = status }
         if state.chiikawaResting != chiikawaHomeRoutine.isInside { state.chiikawaResting = chiikawaHomeRoutine.isInside }
     }
@@ -147,9 +143,8 @@ extension DesktopController {
     func didMoveChiikawa(_ actor: FriendActor, now: Date = Date()) {
         chiikawaItemTarget = nil; actor.motion.retarget()
         if triggerChiikawaStudy(actor, now: now) { return }
-        guard state.chiikawaHomeEnabled,
-              hypot(ItemWorld.contactPoint(origin: actor.panel.frame.origin).x-chiikawaHome.entrance.x,
-                    ItemWorld.contactPoint(origin: actor.panel.frame.origin).y-chiikawaHome.entrance.y) <= 24 else { return }
+        guard hypot(ItemWorld.contactPoint(origin: actor.panel.frame.origin).x-home.entrance.x,
+                    ItemWorld.contactPoint(origin: actor.panel.frame.origin).y-home.entrance.y) <= 24 else { return }
         chiikawaHomeRoutine.request(now: now); chiikawaSeekingHomeKey = false; chiikawaWorld.requested = nil
         _ = enterChiikawaHomeIfReached(actor, now: now)
     }
@@ -184,9 +179,6 @@ extension DesktopController {
         chiikawaVoice.stop(); state.chiikawaVoiceStatus = "목소리 재생을 멈췄어요"
     }
     func updateChiikawaLifeObjects(visible: Bool, mouse: NSPoint, actor: FriendActor, now: Date, time: Double) {
-        let wasVisible = chiikawaHome.panel.isVisible
-        chiikawaHome.update(visible: visible && state.chiikawaHomeEnabled, mouse: mouse, routine: chiikawaHomeRoutine, now: now, time: time)
-        if !wasVisible && chiikawaHome.panel.isVisible && actor.panel.isVisible { actor.panel.order(.above, relativeTo: chiikawaHome.panel.windowNumber) }
         chiikawaDesk.update(position: chiikawaStudyWorld.positions[.desk],
             visible: visible && !(chiikawaStudyingAtDesk && chiikawaLifeRoutine.selected == .study), mouse: mouse,
             behind: actor.panel.isVisible ? actor.panel.windowNumber : nil)

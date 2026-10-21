@@ -42,7 +42,7 @@ extension SelfTest {
 
         let state = AppState(defaults: defaults)
         state.characterVoice = false; state.expressive = false
-        state.homeEnabled = false; state.automaticItems = true; state.roaming = true
+        state.automaticItems = true; state.roaming = true
         let desktop = DesktopController(state: state, startTimer: false)
         let actor = desktop.actors[0]
         let ground = desktop.itemWorld.ground, origin = actor.panel.frame.origin, phase = actor.gait.phase
