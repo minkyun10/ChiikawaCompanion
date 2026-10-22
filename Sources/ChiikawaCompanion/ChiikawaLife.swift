@@ -34,7 +34,7 @@ final class ChiikawaLifeSprites {
         house = Self.load("chiikawa-house-v26"); sleeper = Self.load("chiikawa-sleep-v26")
         pajamas = Self.load("chiikawa-pajamas-v26"); hug = Self.load("chiikawa-hug-v26")
         if let url = HachiwareSprites.assetURL(named: "chiikawa-study-v26"),
-           let data = try? Data(contentsOf: url), let atlas = NSBitmapImageRep(data: data)?.cgImage,
+           let data = try? Data(contentsOf: url), let atlas = NSBitmapImageRep(data: data)?.decodedArtwork,
            atlas.width == 1536, atlas.height == 512 {
             for index in 0..<12 {
                 guard let image = atlas.cropping(to: CGRect(x: index % 6 * 256, y: index / 6 * 256, width: 256, height: 256)) else { break }

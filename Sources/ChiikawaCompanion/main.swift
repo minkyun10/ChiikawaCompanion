@@ -14,7 +14,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         let mainMenu = NSMenu()
         let appItem = NSMenuItem()
         let appMenu = NSMenu()
-        appMenu.addItem(item("친구 설정…", action: #selector(showSettings), key: ","))
+        appMenu.addItem(item("친구 소환…", action: #selector(showSettings), key: ","))
         appMenu.addItem(.separator())
         appMenu.addItem(item("종료", action: #selector(quit), key: "q"))
         appItem.submenu = appMenu; mainMenu.addItem(appItem)
@@ -28,53 +28,10 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
             button.image = NSImage(systemSymbolName: "pawprint.fill", accessibilityDescription: "치이카와 데스크톱")
             button.toolTip = "치이카와 데스크톱"
         }
-        let menu = NSMenu()
-        let title = NSMenuItem(title: "치이카와 데스크톱", action: nil, keyEquivalent: "")
-        title.isEnabled = false; menu.addItem(title)
-        menu.addItem(item("친구 설정…", action: #selector(showSettings), key: ","))
-        menu.addItem(item("모두 부르기", action: #selector(resetPositions)))
-        for friend in Friend.developmentRoster {
-            let entry = item("\(friend.name) 부르기", action: #selector(callFriend(_:)))
-            entry.representedObject = friend.rawValue; menu.addItem(entry)
-        }
-        menu.addItem(item("모든 친구 표시 / 숨기기", action: #selector(toggleFriends)))
-        menu.addItem(item("걷기 켜기 / 끄기", action: #selector(toggleRoaming)))
-        let daily = NSMenuItem(title: "하치와레의 하루", action: nil, keyEquivalent: "")
-        let dailyMenu = NSMenu()
-        for action in HachiwareAction.daily {
-            let entry = item(action.title, action: #selector(playDailyAction(_:)))
-            entry.tag = action.rawValue; dailyMenu.addItem(entry)
-        }
-        dailyMenu.addItem(.separator())
-        dailyMenu.addItem(item("동작 멈추기", action: #selector(stopDailyAction)))
-        daily.submenu = dailyMenu; menu.addItem(daily)
-        let chiiDay = NSMenuItem(title: "치이카와의 하루",action: nil,keyEquivalent: "")
-        let chiiMenu = NSMenu()
-        for action in ChiikawaLifeAction.allCases {
-            let entry = item(action.title,action: #selector(playChiikawaLife(_:)))
-            entry.representedObject = action.rawValue; chiiMenu.addItem(entry)
-        }
-        chiiMenu.addItem(item("집에 가서 자기",action: #selector(chiikawaGoHome)))
-        chiiMenu.addItem(item("깨우기",action: #selector(chiikawaWake)))
-        chiiMenu.addItem(item("목소리 들어보기",action: #selector(chiikawaVoicePreview)))
-        chiiMenu.addItem(item("동작 멈추기",action: #selector(stopChiikawaLife)))
-        chiiDay.submenu = chiiMenu; menu.addItem(chiiDay)
-        for friend in Friend.developmentRoster where friend.isExpansion {
-            let entry = NSMenuItem(title: "\(friend.name)의 하루", action: nil, keyEquivalent: "")
-            let sub = NSMenu()
-            var commands = RosterAction.selectable.map { ($0 == .keepsake ? friend.keepsakeActionTitle : $0.title, "action:" + $0.rawValue) }
-                + [("집에 가서 자기", "home"), ("깨우기", "wake"), ("동작 멈추기", "stop")]
-            if !RosterRecordingCatalog.catalog(for: friend).clips.isEmpty {
-                commands += [("목소리 들어보기", "voice"), ("소리 멈추기", "mute")]
-            }
-            for (title, command) in commands {
-                let button = item(title, action: #selector(rosterCommand(_:)))
-                button.representedObject = [friend.rawValue, command]; sub.addItem(button)
-            }
-            entry.submenu = sub; menu.addItem(entry)
-        }
+        let menu=NSMenu()
+        menu.addItem(item("친구 소환…",action:#selector(showSettings),key:","))
         menu.addItem(.separator())
-        menu.addItem(item("종료", action: #selector(quit), key: "q"))
+        menu.addItem(item("종료",action:#selector(quit),key:"q"))
         statusItem.menu = menu
     }
     func item(_ title: String, action: Selector, key: String = "") -> NSMenuItem {
@@ -133,7 +90,14 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
 }
 
 let args = CommandLine.arguments
-if args.contains("--self-test-roster") {
+if let index=args.firstIndex(of:"--benchmark-desktop"),index+1<args.count {
+    func value(_ flag:String)->String? {args.firstIndex(of:flag).flatMap{$0+1<args.count ? args[$0+1]:nil}}
+    let count=value("--benchmark-count").flatMap(Int.init)
+    let seconds=min(120,max(5,value("--benchmark-seconds").flatMap(Double.init) ?? 10))
+    DesktopBenchmark.run(output:args[index+1],seconds:seconds,
+        counts:count.map{[min(Friend.developmentRoster.count,max(1,$0))]} ?? [1,2,4,6,8],
+        automaticItems:args.contains("--benchmark-active"))
+} else if args.contains("--self-test-roster") {
     var count=0
     SelfTest.runRosterChecks { passed, label in
         guard passed else { fputs("FAIL: \(label)\n",stderr);exit(1) }

@@ -387,7 +387,7 @@ final class RosterSprites {
               let root=Bundle.main.resourceURL?.appendingPathComponent("Roster/\(friend.rawValue)") else { return false }
         func frames(_ name:String,cell:NSSize,count:Int) -> [NSImage]? {
             guard let data=try? Data(contentsOf:root.appendingPathComponent(name+".png")),
-                  let bitmap=NSBitmapImageRep(data:data),let image=bitmap.cgImage,
+                  let bitmap=NSBitmapImageRep(data:data),let image=bitmap.decodedArtwork,
                   image.width==Int(cell.width)*6,image.height==Int(cell.height)*(count/6) else { return nil }
             var result:[NSImage]=[]
             for n in 0..<count {

@@ -1,0 +1,1184 @@
+[
+  {
+    "bytes" : 491608,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/kani-rig-back-v38.png",
+    "samePixels" : true,
+    "sha256" : "7e995b6e674def9ca540b91bcb803fb11debdff6b7cf9381fed511b579bcd146"
+  },
+  {
+    "bytes" : 497860,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/kurimanju-rig-back-diagonal-v38.png",
+    "samePixels" : true,
+    "sha256" : "44d111ff8d8ba85eb292b14b11ec84db9b5544598c78ea43a8719af9ee8161a4"
+  },
+  {
+    "bytes" : 336140,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/kani-rig-item-v38.png",
+    "samePixels" : true,
+    "sha256" : "7dca5bc950fe8c67cc067776993ddaa7047c8580e243a77a803004edd5ef1000"
+  },
+  {
+    "bytes" : 6291456,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/chiikawa-left-24.png",
+    "samePixels" : true,
+    "sha256" : "dc5c888fd848ebc999f8ae6e5827d4af1b24a4636d90e082777b4549e5cd0989"
+  },
+  {
+    "bytes" : 3145728,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/chiikawa-pajamas-motion-v30.png",
+    "samePixels" : true,
+    "sha256" : "8a6aacd34307c065aafb57b72481f7012af28e5c84f6c564ab73c92afbd87961"
+  },
+  {
+    "bytes" : 352044,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/usagi-rig-back-diagonal-v38.png",
+    "samePixels" : true,
+    "sha256" : "031f98137088fd69766acbc4b3f45ab159cd903b4493a6765bcb8dd06f3904bd"
+  },
+  {
+    "bytes" : 91640,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/kani-rig-arm-v38.png",
+    "samePixels" : true,
+    "sha256" : "78e7e9ed1a7787e107f43df1e59029094ecd5ef78583522261ba8c32a106b16e"
+  },
+  {
+    "bytes" : 575120,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/shisa-rig-back-v38.png",
+    "samePixels" : true,
+    "sha256" : "ab5e90449b8299cc2d8459531b54b7e2f31d35c65ede04e5c9149a876ba906fc"
+  },
+  {
+    "bytes" : 21484,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/usagi-face-blink-left-eye-v44.png",
+    "samePixels" : true,
+    "sha256" : "1c76b2e42502578f6278447d189fe50e832a7b7ba1ac569b23511bfefd525bd6"
+  },
+  {
+    "bytes" : 6287688,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/chiikawa-shared-home-v28.png",
+    "samePixels" : true,
+    "sha256" : "e1acfbf9167a4b3e3dc7bc4844aed15605b55efea5c895a0706c41aaafbabea7"
+  },
+  {
+    "bytes" : 307560,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/shisa-rig-item-v38.png",
+    "samePixels" : true,
+    "sha256" : "008a61ee3941a9fb8471c90927547f39053730e2b4862bbb07ff1a93fe769812"
+  },
+  {
+    "bytes" : 3145728,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/hachiware-attack-v19.png",
+    "samePixels" : true,
+    "sha256" : "89be044fe243ebd6eeba7f42e5995b1924900dd006d910aade85ff11546be110"
+  },
+  {
+    "bytes" : 6291456,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/chiikawa-down-24.png",
+    "samePixels" : true,
+    "sha256" : "d29d52931817182a7eed01cdd04365910e6a0992e49de105537e6f67a196ce58"
+  },
+  {
+    "bytes" : 564208,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/shisa-rig-front-v38.png",
+    "samePixels" : true,
+    "sha256" : "e07a0b6cd520d9abe478fafbc43981fc027443e28e5ffe6448286378d0845754"
+  },
+  {
+    "bytes" : 813540,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/momonga-expression-neutral-v38.png",
+    "samePixels" : true,
+    "sha256" : "21402c11fd55fb4f77198254326f39b0f6ac7fa271447341217b084195eb3ddf"
+  },
+  {
+    "bytes" : 6291456,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/chiikawa-right-24.png",
+    "samePixels" : true,
+    "sha256" : "2b98613a8cff3383597c045b95a8ade5b8d6480b65370dcad68ebba4d15b3a81"
+  },
+  {
+    "bytes" : 89440,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/kurimanju-rig-arm-v38.png",
+    "samePixels" : true,
+    "sha256" : "0d03baaaf1d1afab406afee8fc70564585c3b2414f5aa1a939abf6a4496d49ec"
+  },
+  {
+    "bytes" : 537120,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/momonga-rig-back-v38.png",
+    "samePixels" : true,
+    "sha256" : "56e60c06fa796eaeba1dbb505969729092aff836298838af06f0fb5877e84e51"
+  },
+  {
+    "bytes" : 6291456,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/chiikawa-down-left-24.png",
+    "samePixels" : true,
+    "sha256" : "a0ceb2024c6d6fa52f2a13231e64d5c763ae6f49c96dc23c2a1853ceec7baa73"
+  },
+  {
+    "bytes" : 6291456,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/chiikawa-down-right-24.png",
+    "samePixels" : true,
+    "sha256" : "6577abc59213fcc7e2f0bdb4df80e9fc4d81ad759a9ae2ace17f4ef7ddb28141"
+  },
+  {
+    "bytes" : 580944,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/rakko-rig-front-v38.png",
+    "samePixels" : true,
+    "sha256" : "4d21e7379a4dfdee10d214c6b07c11e8812cb6f1772f789d47ff02a4c61d611d"
+  },
+  {
+    "bytes" : 649600,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/kurimanju-expression-neutral-v38.png",
+    "samePixels" : true,
+    "sha256" : "a2141f4c64b01f87cfb2a277b153a2bab6e700480f53083e9805d9a274acf6b7"
+  },
+  {
+    "bytes" : 589512,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/chiikawa-gentle-v26.png",
+    "samePixels" : true,
+    "sha256" : "6baaa8bcc5e2236bc423726dea1648cb783552263a63df635e14578ddd705cbd"
+  },
+  {
+    "bytes" : 581392,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/chiikawa-determined-v26.png",
+    "samePixels" : true,
+    "sha256" : "9776966e1df7f598cfeced52cfafc93f0cc4dc0b54709709d5ecfa964c2e3afd"
+  },
+  {
+    "bytes" : 3145728,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/chiikawa-attack-v24.png",
+    "samePixels" : true,
+    "sha256" : "b94592dca0176af72f9b8dc744e455743bf019c253c2a8b456853351feed1c8f"
+  },
+  {
+    "bytes" : 22680,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/usagi-face-sleep-left-eye-v44.png",
+    "samePixels" : true,
+    "sha256" : "7f4e567f0288bdbc2db332700665666ffa3d2e13eaa483ddcf05afbfd9be4816"
+  },
+  {
+    "bytes" : 443016,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/kani-rig-side-v38.png",
+    "samePixels" : true,
+    "sha256" : "c8d243991c1f7a3f9d6ae04cd2adcb05e7e5db060082dbdb1367b097b8994e3b"
+  },
+  {
+    "bytes" : 65532,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/momonga-rig-foot-v38.png",
+    "samePixels" : true,
+    "sha256" : "cf990fc57ae22f617a9d4f11c9dbf62ef0ebbbd1e2d26e68148c9e8a200197fb"
+  },
+  {
+    "bytes" : 3145728,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/chiikawa-hug-motion-v30.png",
+    "samePixels" : true,
+    "sha256" : "9fb3eb173ba854b770fc0ed1c5947cc786a258bb9c4263fbb29cfc71c3d7bbbd"
+  },
+  {
+    "bytes" : 468996,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/kani-rig-front-diagonal-v38.png",
+    "samePixels" : true,
+    "sha256" : "d38000deec5ff289fbaa1138c87c79befc86928a899595ce0ddde293447e01fc"
+  },
+  {
+    "bytes" : 437736,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/kani-rig-back-diagonal-v38.png",
+    "samePixels" : true,
+    "sha256" : "2ce6ab81c39ed7399c006e665fede8ef61ee0e9e3134915e8bf3b8a4431ca3f3"
+  },
+  {
+    "bytes" : 6291456,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/chiikawa-up-24.png",
+    "samePixels" : true,
+    "sha256" : "a012e28f3f5798e1d3938cb8a1e65bea3c1e5f774bc28941a24459d97080f968"
+  },
+  {
+    "bytes" : 541680,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/shisa-rig-side-v38.png",
+    "samePixels" : true,
+    "sha256" : "a5d2440158a9d5866852f14b7723ba9577c78e7dfd473f301f79fcbd6f66f623"
+  },
+  {
+    "bytes" : 1500772,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/rakko-rig-side-right-v38.png",
+    "samePixels" : true,
+    "sha256" : "03c39ce952b19b1ef097fb4be96f383a59d9c3fe667a1b7e66391265c85b52a5"
+  },
+  {
+    "bytes" : 647976,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/kurimanju-expression-sleep-v38.png",
+    "samePixels" : true,
+    "sha256" : "053be3b8dace3ce66d7064736b1dcf666dd6b94fb75958b8ed7a990acaed52d2"
+  },
+  {
+    "bytes" : 6290064,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/hachiware-cardinal-walk-approved-v5.png",
+    "samePixels" : true,
+    "sha256" : "d7fc77c40e888a9ccc91e1f436c3560110272e6b37ddd0166e42b28cea28d935"
+  },
+  {
+    "bytes" : 395556,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/momonga-rig-back-diagonal-v38.png",
+    "samePixels" : true,
+    "sha256" : "51ff33b5af6d5d44e287f2818199ac1c86488ff348a819aa5aa797ecca246809"
+  },
+  {
+    "bytes" : 809856,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/momonga-expression-sleep-v38.png",
+    "samePixels" : true,
+    "sha256" : "39bd3753feb506ad092874b62c31fd0aea3369dce160c4dc7603c0af828a5af2"
+  },
+  {
+    "bytes" : 21484,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/usagi-face-blink-right-eye-v44.png",
+    "samePixels" : true,
+    "sha256" : "fe1ba124d17dff1ed1f6e8ee798f65d1dd0c469a3d5905a6067725c964907ff9"
+  },
+  {
+    "bytes" : 3145728,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/chiikawa-eat-motion-v30.png",
+    "samePixels" : true,
+    "sha256" : "7cd9f640d55444c838aa7b8873ca07c90189dc31984555c8acf646482c5478c6"
+  },
+  {
+    "bytes" : 3145728,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/hachiware-vomit-v16.png",
+    "samePixels" : true,
+    "sha256" : "d1d4f7f4290495163100080c2765e3d7d964f5a619281e064e2e1129e4259825"
+  },
+  {
+    "bytes" : 44800,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/shisa-rig-foot-v38.png",
+    "samePixels" : true,
+    "sha256" : "b88fa3af8d752bed071db6f7d97d327b352a8ee0aac8dee7e316f377b8081ad3"
+  },
+  {
+    "bytes" : 6294420,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/hachiware-cave-v11.png",
+    "samePixels" : true,
+    "sha256" : "3a76af763b8cdf74044b2b5234861c98ed028b588a24222bb775163322c27006"
+  },
+  {
+    "bytes" : 6291456,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/chiikawa-up-right-24.png",
+    "samePixels" : true,
+    "sha256" : "7d00177f1b2c10d026bbc3c3d3b64515b6a85becfa49c6a53004c15a19282f03"
+  },
+  {
+    "bytes" : 553500,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/kurimanju-rig-front-v38.png",
+    "samePixels" : true,
+    "sha256" : "a22dfaf3470d9bdda9636f98e5b61fc14d48b6bf7d82e53a806b06b7543a178d"
+  },
+  {
+    "bytes" : 21780,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/usagi-face-sleep-right-eye-v44.png",
+    "samePixels" : true,
+    "sha256" : "2a876b8800997233bca0fd4bfa290fd8143959320812aa54b4de65f07ca54d77"
+  },
+  {
+    "bytes" : 31248,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/kani-rig-foot-v38.png",
+    "samePixels" : true,
+    "sha256" : "d6e7e47a70de932d830e82c9b2a6faf6a5fb26f6e19fdef19c793cf08be604e3"
+  },
+  {
+    "bytes" : 484440,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/chiikawa-happy-v23.png",
+    "samePixels" : true,
+    "sha256" : "1670768b4a4926570ace2ce93bf7a5779f3913a62d6cc7d1d906eb7feeab87c4"
+  },
+  {
+    "bytes" : 399000,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/momonga-rig-side-v38.png",
+    "samePixels" : true,
+    "sha256" : "eaf6ef9e61e2db00e461b2c2be9b52ec6c8fd4109cf76aaf86d22f8260a678b0"
+  },
+  {
+    "bytes" : 3145728,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/hachiware-diagonal-matched-walk-v5.png",
+    "samePixels" : true,
+    "sha256" : "e1bb8f8e6cd7cea2363e2329c470548a03804d360443fc8b9dfa6f2f223091a6"
+  },
+  {
+    "bytes" : 458240,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/momonga-rig-front-diagonal-v38.png",
+    "samePixels" : true,
+    "sha256" : "9019ec19d12ab406317a1f839a9da85b68d2a9e7f02b3f6d315be49553f118af"
+  },
+  {
+    "bytes" : 43656,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/usagi-face-cheer-mouth-v44.png",
+    "samePixels" : true,
+    "sha256" : "4a7641646e5c05b4adafbff05ac4da3d006ee861ed2828b41d2470b8630c9531"
+  },
+  {
+    "bytes" : 6291456,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/hachiware-walk-bodies-v1.png",
+    "samePixels" : true,
+    "sha256" : "b2dbb01a4c06c24f0245306c608819b91c6e2dacae0c42d976d1662bb4c80890"
+  },
+  {
+    "bytes" : 6291456,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/hachiware-sprites-v1.png",
+    "samePixels" : true,
+    "sha256" : "2ecfdc4079cd55552da618f7bc409ff49b5025bb9ff04fbc0ecec40a3d7173ee"
+  },
+  {
+    "bytes" : 541508,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/rakko-rig-side-v38.png",
+    "samePixels" : true,
+    "sha256" : "a98da0858ce48e8d4d8886430d9369bbaeb29263e2c355c1eca41e948e10550c"
+  },
+  {
+    "bytes" : 188368,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/momonga-rig-tail-v38.png",
+    "samePixels" : true,
+    "sha256" : "2e3c474186d1da4fde98987a9a0ed78b1b1bcf2e568599cbd7871aa6ae770792"
+  },
+  {
+    "bytes" : 41516,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/usagi-rig-arm-v38.png",
+    "samePixels" : true,
+    "sha256" : "4fe6cbb52795a2b2be492c07b8610128bdd84dab17e0bef86af66b49e5a2ecb4"
+  },
+  {
+    "bytes" : 1460280,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/rakko-rig-back-diagonal-right-v38.png",
+    "samePixels" : true,
+    "sha256" : "203cecf9a019e768f68ca46d4ecb369c12527e41fd618b827a3a46b52d6ac754"
+  },
+  {
+    "bytes" : 6291456,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/hachiware-diagonal-walk-12-v2.png",
+    "samePixels" : true,
+    "sha256" : "2331fd82051488214af58755fa6339a798e9f5b79376fa402b0ec54de70f8094"
+  },
+  {
+    "bytes" : 566776,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/chiikawa-hug-v26.png",
+    "samePixels" : true,
+    "sha256" : "f163678ac9ade8974d27cd2fc9748c6aa364a0e1a8a0d1a1e645a4e782eb1f22"
+  },
+  {
+    "bytes" : 1572864,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/chiikawa-blink-motion-v30.png",
+    "samePixels" : true,
+    "sha256" : "20e0b20d17e68154dfe00a638706e8998d067a323c4d88ce5077a0b5c75a5e0b"
+  },
+  {
+    "bytes" : 631488,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/chiikawa-pajamas-v26.png",
+    "samePixels" : true,
+    "sha256" : "c46c22791bb14bbb74879891a7fa1ba2657d116b2d629359d1b8d2a309fa53d1"
+  },
+  {
+    "bytes" : 6290064,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/hachiware-cardinal-walk-12-v3.png",
+    "samePixels" : true,
+    "sha256" : "bc6cd012cc20bbaa7d13e1eca637f268caba3f4b932731fa2387744bf753a70b"
+  },
+  {
+    "bytes" : 558000,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/kurimanju-rig-back-v38.png",
+    "samePixels" : true,
+    "sha256" : "67365a991fbca651a05ff2d22783825a047c85371f599236bc6deda75e0f3669"
+  },
+  {
+    "bytes" : 1440960,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/rakko-rig-front-diagonal-right-v38.png",
+    "samePixels" : true,
+    "sha256" : "f76e0830d446df07e4c49fa7b97b02e21e3da969fc43079986fa762684947c2d"
+  },
+  {
+    "bytes" : 4194304,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/chiikawa-rest-motion-v30.png",
+    "samePixels" : true,
+    "sha256" : "25484ddf4285658ce9f4278143a2867cd18ad60372f3108eeb7b55c21a499b73"
+  },
+  {
+    "bytes" : 31108,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/rakko-rig-foot-v38.png",
+    "samePixels" : true,
+    "sha256" : "9f0e3c59a227e6b03490b1f41a840c4f9003e9b585c990e3974d587cce06e3e4"
+  },
+  {
+    "bytes" : 532576,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/momonga-rig-front-v38.png",
+    "samePixels" : true,
+    "sha256" : "4dd084132782ae54ff202b1cff519fd0ef80dabfbbe5a04cdf5adc29706f43cb"
+  },
+  {
+    "bytes" : 416000,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/usagi-rig-back-v38.png",
+    "samePixels" : true,
+    "sha256" : "3c0efb7810920947fe33d4491510af6501044302b1baf9890e64c13385452ff7"
+  },
+  {
+    "bytes" : 6294152,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/hachiware-actions-v7.png",
+    "samePixels" : true,
+    "sha256" : "b57c1ba980b0d623048a4698a5dc1b9c9ea40dd5878b1b45650e6a3a468518f6"
+  },
+  {
+    "bytes" : 47824,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/usagi-face-curious-mouth-v44.png",
+    "samePixels" : true,
+    "sha256" : "c6f5798541928d10ec2fd3f65499797255263f37e541329e296f178ddbc53aa1"
+  },
+  {
+    "bytes" : 81200,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/shisa-rig-arm-v38.png",
+    "samePixels" : true,
+    "sha256" : "e4e1a3b0e8ff923b4934dc46518a3b695bc859cb1e6ccb37dde029addabd3846"
+  },
+  {
+    "bytes" : 39672,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/usagi-face-shout-mouth-v44.png",
+    "samePixels" : true,
+    "sha256" : "79d18d61bdd7b38738f5d22d6c3af78a6bdd92f059c308417f3f4ca26221c8e5"
+  },
+  {
+    "bytes" : 485576,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/kani-rig-front-v38.png",
+    "samePixels" : true,
+    "sha256" : "b8683a35b3e74ba1fc9e840054fd807c6024520284230b980d86eaa5b9b3b451"
+  },
+  {
+    "bytes" : 6291456,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/chiikawa-up-left-24.png",
+    "samePixels" : true,
+    "sha256" : "f73194b5fc73c82cdcc367ffb04ad5a66fc81b041253a3f02b58d626c82c5bea"
+  },
+  {
+    "bytes" : 480340,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/chiikawa-crying-v23.png",
+    "samePixels" : true,
+    "sha256" : "16f5e6de60dfc1eb0eedb7f2e88a0ae6be0141e7c44a738dc7e7102faeed2f6f"
+  },
+  {
+    "bytes" : 578708,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/rakko-rig-back-diagonal-v38.png",
+    "samePixels" : true,
+    "sha256" : "1227682d43ffe93fa79a58ee70023575ff0229797caa7b8d8a3e3e54c2116844"
+  },
+  {
+    "bytes" : 3145728,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/chiikawa-study-v26.png",
+    "samePixels" : true,
+    "sha256" : "5fd1edb699007b7fee916cdd81c257e37ba560066651f193364695e5962ea13d"
+  },
+  {
+    "bytes" : 6291456,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/hachiware-side-walk-24-joined-v14.png",
+    "samePixels" : true,
+    "sha256" : "3aa5cc7ece479a2b602c2a00a7ac06afa619aea45d00cd4b3e153bf3f09014bc"
+  },
+  {
+    "bytes" : 529788,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/shisa-rig-back-diagonal-v38.png",
+    "samePixels" : true,
+    "sha256" : "9b7f0075e35bf7f713f140f063f00c391a3e3febfbd4e526996d0286a26dc07a"
+  },
+  {
+    "bytes" : 32780,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/usagi-face-sleep-mouth-v44.png",
+    "samePixels" : true,
+    "sha256" : "98ff01ca6ac147cfa902e837a90f867a8f4817598601135be53ae2f4026a39cf"
+  },
+  {
+    "bytes" : 654472,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/kurimanju-expression-laugh-v38.png",
+    "samePixels" : true,
+    "sha256" : "ac072dcdc1aeecd9583f013b751911bb8b188d587d38e0b16498953d74ed8f0b"
+  },
+  {
+    "bytes" : 6291456,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/hachiware-side-walk-24-joined-v15.png",
+    "samePixels" : true,
+    "sha256" : "29a792dfd9cde74269d7837816d33c1ba23b5e28cbaffe4d75dba7dc569bef91"
+  },
+  {
+    "bytes" : 25200,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/usagi-rig-foot-v38.png",
+    "samePixels" : true,
+    "sha256" : "818cd45d316ff6a64d119b2cbeb9dd4c604ad6e8e63275975aca0ab9a19e2935"
+  },
+  {
+    "bytes" : 517616,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/kurimanju-rig-side-v38.png",
+    "samePixels" : true,
+    "sha256" : "d1022b9e6197cf881d89d0e1957809ca19b9bf740d79d432bff53b411a96950b"
+  },
+  {
+    "bytes" : 3145728,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/hachiware-study-v16.png",
+    "samePixels" : true,
+    "sha256" : "fdbf1e42fc8173ed1b3be29d05b0b07220eaacb2f87ed9a31bbf99bab2c88f5d"
+  },
+  {
+    "bytes" : 6294152,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/hachiware-sleep-v11.png",
+    "samePixels" : true,
+    "sha256" : "f6412e2e794b4f49d08bda6df36449793482b5b6152cc3cb1e21240df24528ac"
+  },
+  {
+    "bytes" : 184912,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/rakko-rig-item-v38.png",
+    "samePixels" : true,
+    "sha256" : "a5c5214ce3c202adaaee9128ba0c5f12d4ae08f480937eb692dca342732d3a57"
+  },
+  {
+    "bytes" : 429940,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/usagi-rig-front-v38.png",
+    "samePixels" : true,
+    "sha256" : "9e080333095b7644db5aa88e296c47b81a420155a43ad8460031d8b52884f469"
+  },
+  {
+    "bytes" : 617120,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/rakko-rig-back-v38.png",
+    "samePixels" : true,
+    "sha256" : "fea1a9064d0570b343f34bb3c246b53916b5a14c9687ebc63a72305cdd54cb6f"
+  },
+  {
+    "bytes" : 73480,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/rakko-rig-arm-v38.png",
+    "samePixels" : true,
+    "sha256" : "598127375cd7c93decec8c25b1a3f07fcfe0687190f69aab2769a038ef87f763"
+  },
+  {
+    "bytes" : 593484,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/chiikawa-startled-v26.png",
+    "samePixels" : true,
+    "sha256" : "206ac09fc3b27ea1c7cd6883cbdf6cb43b529caf149b7a4ab282b5ffb1dfe800"
+  },
+  {
+    "bytes" : 66552,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/kurimanju-rig-foot-v38.png",
+    "samePixels" : true,
+    "sha256" : "89407ff7a4b8431fde750e84f09b1929b75f42f4c38f3f2cc6e98872c6281677"
+  },
+  {
+    "bytes" : 3145728,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/hachiware-eat-v16.png",
+    "samePixels" : true,
+    "sha256" : "09b946404d823e0a0f1d13f108a6451303a12f336bedd0b5a79d882c82888c79"
+  },
+  {
+    "bytes" : 536820,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/shisa-rig-front-diagonal-v38.png",
+    "samePixels" : true,
+    "sha256" : "2bd8a017cd220825c7dd47ba5c40c62f592c079762acd3bc1b982d0ca668af68"
+  },
+  {
+    "bytes" : 649600,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/kurimanju-expression-surprised-v38.png",
+    "samePixels" : true,
+    "sha256" : "ea8afcf3c89acfb168360135956543a8d82599151eefa5b645175f61aa50a25c"
+  },
+  {
+    "bytes" : 546120,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/kurimanju-rig-front-diagonal-v38.png",
+    "samePixels" : true,
+    "sha256" : "a9d515811e1bd2ec42e43cc15b99a0f73c779ab4c73ef9f5046a03f02592baa4"
+  },
+  {
+    "bytes" : 6291456,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/hachiware-side-walk-24-v9.png",
+    "samePixels" : true,
+    "sha256" : "35f441f5921f6d77b9c4aef332473767e14f53aef686243168dd59dcf72fdff3"
+  },
+  {
+    "bytes" : 808080,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/momonga-expression-surprised-v38.png",
+    "samePixels" : true,
+    "sha256" : "8dabdbe6c7c99261127bd354187652216149685ec2f6607b2996177a9986a651"
+  },
+  {
+    "bytes" : 910608,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/chiikawa-sleep-v26.png",
+    "samePixels" : true,
+    "sha256" : "3313509f9a50ee74629ff5ac9db51aca6323de68b04b532ea055dad5c15e8ade"
+  },
+  {
+    "bytes" : 84376,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/momonga-rig-arm-v38.png",
+    "samePixels" : true,
+    "sha256" : "91a08a8783180699fe1bf70d6a83d7ff20880398d914cde374b288cf98e30155"
+  },
+  {
+    "bytes" : 4797200,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/chiikawa-house-v26.png",
+    "samePixels" : true,
+    "sha256" : "c9a40ffecbfef46caec1b8d289e59cc0eac1ffe19ea54cf277a9d328b4df67a2"
+  },
+  {
+    "bytes" : 554916,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/rakko-rig-front-diagonal-v38.png",
+    "samePixels" : true,
+    "sha256" : "28a5630b97d724c1d6451dcccd1bfc863d5f5b2108002c92ae021b036d507061"
+  },
+  {
+    "bytes" : 817020,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/momonga-expression-laugh-v38.png",
+    "samePixels" : true,
+    "sha256" : "80998ae94ff58f44be807297bc12ada3a6703274d81de5fa9cf77d029c12b1b9"
+  },
+  {
+    "bytes" : 394224,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/usagi-rig-front-diagonal-v38.png",
+    "samePixels" : true,
+    "sha256" : "56adc7c6aab3e33681cad427b256ee44f286c80710c2cb70b3162ae73b905fb9"
+  },
+  {
+    "bytes" : 401436,
+    "file" : "Sources\/ChiikawaCompanion\/Resources\/usagi-rig-side-v38.png",
+    "samePixels" : true,
+    "sha256" : "9082e035482eea475f3c0c0bc2a8951af9122a7611259da8dae942f101dc5ec2"
+  },
+  {
+    "bytes" : 8847360,
+    "file" : "build\/roster\/usagi\/up-24.png",
+    "samePixels" : true,
+    "sha256" : "88ce6de99a11d88769f415063f0e7614fe5c910d423d6af47460ad9eaefc16fc"
+  },
+  {
+    "bytes" : 8847360,
+    "file" : "build\/roster\/usagi\/down-24.png",
+    "samePixels" : true,
+    "sha256" : "315df4ca976923b14645892bd35aff0da28e098152548616c56354f77ecbc941"
+  },
+  {
+    "bytes" : 4423680,
+    "file" : "build\/roster\/usagi\/laugh-12.png",
+    "samePixels" : true,
+    "sha256" : "94c7ec699878fac8d04ff305cb19325f88302727ab1dd54e00b1e9f3a4291c83"
+  },
+  {
+    "bytes" : 8847360,
+    "file" : "build\/roster\/usagi\/left-24.png",
+    "samePixels" : true,
+    "sha256" : "c5e0c1bc7b63c7db21811851d7576392f0d62b719647e92848c9de5baac1a7a0"
+  },
+  {
+    "bytes" : 2211840,
+    "file" : "build\/roster\/usagi\/sleep-12.png",
+    "samePixels" : true,
+    "sha256" : "3be631fd3266cdb81a2f5bbd8dc26f0ee40c454caf2ffc8d7690145a3c19812b"
+  },
+  {
+    "bytes" : 4423680,
+    "file" : "build\/roster\/usagi\/surprised-12.png",
+    "samePixels" : true,
+    "sha256" : "8fc1162ea2407158b990593276df4732a02d6596e076230dfe0d34a1d128688b"
+  },
+  {
+    "bytes" : 4423680,
+    "file" : "build\/roster\/usagi\/wave-12.png",
+    "samePixels" : true,
+    "sha256" : "3d716c00eff5b6fb92baf28b146074b56a54457e73cc6abbe756bd093bf0d22f"
+  },
+  {
+    "bytes" : 7603200,
+    "file" : "build\/roster\/usagi\/attack-12.png",
+    "samePixels" : true,
+    "sha256" : "e15dbfec30e48b09b8d2be8e2660effa2b8bc1882e8c82f784d962c26354ebad"
+  },
+  {
+    "bytes" : 8847360,
+    "file" : "build\/roster\/usagi\/up-left-24.png",
+    "samePixels" : true,
+    "sha256" : "a3d60588cf6289a02de246bee7c17cc0a6273ec0f89731a4bc109823fcbb9267"
+  },
+  {
+    "bytes" : 8847360,
+    "file" : "build\/roster\/usagi\/up-right-24.png",
+    "samePixels" : true,
+    "sha256" : "4ca16978e9d517246893ba816b883236b5d636ad32a99d433f4eed452557e4b8"
+  },
+  {
+    "bytes" : 4423680,
+    "file" : "build\/roster\/usagi\/wake-12.png",
+    "samePixels" : true,
+    "sha256" : "df6d3e99f143af7c327887dcd8c5d3303a7012830c719d57d64980d2885c052b"
+  },
+  {
+    "bytes" : 4423680,
+    "file" : "build\/roster\/usagi\/keepsake-12.png",
+    "samePixels" : true,
+    "sha256" : "a874298ede7f1782fac1a23c490a552701a5ba644b66dcd2912538a8afc13e47"
+  },
+  {
+    "bytes" : 8847360,
+    "file" : "build\/roster\/usagi\/down-left-24.png",
+    "samePixels" : true,
+    "sha256" : "fe467fff591fee58a4d952a679b275cd3df6661c55d32be176bf51212e053c58"
+  },
+  {
+    "bytes" : 8847360,
+    "file" : "build\/roster\/usagi\/right-24.png",
+    "samePixels" : true,
+    "sha256" : "24651361bb76cee9024444739d7dee44d523103476ee862c5a103e29202da8d8"
+  },
+  {
+    "bytes" : 4423680,
+    "file" : "build\/roster\/usagi\/pickup-12.png",
+    "samePixels" : true,
+    "sha256" : "3c95d47b90608300ee35163c500b7f9732bf272c44b3cadae4c4a500e47b691e"
+  },
+  {
+    "bytes" : 8847360,
+    "file" : "build\/roster\/usagi\/down-right-24.png",
+    "samePixels" : true,
+    "sha256" : "b2d5c9aa6bbbcf94dc6079fae105050d3d717708c93d47536e0492910084dacb"
+  },
+  {
+    "bytes" : 6291456,
+    "file" : "build\/roster\/kurimanju\/up-24.png",
+    "samePixels" : true,
+    "sha256" : "1d9f07d35c0e72f9f3f4b16e81329aa63a5d2e4776e5d484e1dc76505eb15bd5"
+  },
+  {
+    "bytes" : 6291456,
+    "file" : "build\/roster\/kurimanju\/down-24.png",
+    "samePixels" : true,
+    "sha256" : "d1145466616c6f9247091dae3fb45fca289985f456713a102320bbd62f060993"
+  },
+  {
+    "bytes" : 3145728,
+    "file" : "build\/roster\/kurimanju\/laugh-12.png",
+    "samePixels" : true,
+    "sha256" : "35930b29c6e22ab27eb75471e3c52ac174d3a15c839504afa0a861115d45913f"
+  },
+  {
+    "bytes" : 6291456,
+    "file" : "build\/roster\/kurimanju\/left-24.png",
+    "samePixels" : true,
+    "sha256" : "a3d20e46f7d33e91241c0b58117cc918cc9fb5863759cb25f18284784e8e00c7"
+  },
+  {
+    "bytes" : 2211840,
+    "file" : "build\/roster\/kurimanju\/sleep-12.png",
+    "samePixels" : true,
+    "sha256" : "5591d98aa11f0fc1e14943f309f454de68a733e6dcd710ded2f2fbf1776844d9"
+  },
+  {
+    "bytes" : 3145728,
+    "file" : "build\/roster\/kurimanju\/surprised-12.png",
+    "samePixels" : true,
+    "sha256" : "1e23128a35aadd8e9a1c0b69c1682bd379d61fcb60ea127d3175b82902a68293"
+  },
+  {
+    "bytes" : 3145728,
+    "file" : "build\/roster\/kurimanju\/wave-12.png",
+    "samePixels" : true,
+    "sha256" : "d1974f8ac47baa2eb908446b0f9cf2114f93e982b4ea74e058bfa3ea0814a7da"
+  },
+  {
+    "bytes" : 6291456,
+    "file" : "build\/roster\/kurimanju\/up-left-24.png",
+    "samePixels" : true,
+    "sha256" : "86b791f85252f1598a29323b1d176a252bc71aaaee71e0ec13af00062da377bd"
+  },
+  {
+    "bytes" : 6291456,
+    "file" : "build\/roster\/kurimanju\/up-right-24.png",
+    "samePixels" : true,
+    "sha256" : "5a04d6fc4c4ea42afd09bde618b1b14ae91dfdea0fd117c14404cb4eedc6f1e9"
+  },
+  {
+    "bytes" : 3145728,
+    "file" : "build\/roster\/kurimanju\/wake-12.png",
+    "samePixels" : true,
+    "sha256" : "a76dddf53b0ed45f22b39b85d36f86a89b5daf045526177d19a57ef1ae677c72"
+  },
+  {
+    "bytes" : 3145728,
+    "file" : "build\/roster\/kurimanju\/keepsake-12.png",
+    "samePixels" : true,
+    "sha256" : "7fb8475deffa3818aedc53e5ad9dbd7f5e04558edc516fe73ca5ed2625a14279"
+  },
+  {
+    "bytes" : 6291456,
+    "file" : "build\/roster\/kurimanju\/down-left-24.png",
+    "samePixels" : true,
+    "sha256" : "109e32de8e2ea59f3294c50cc8ac53e2afd5dcab522e6240787d3d55ffe58822"
+  },
+  {
+    "bytes" : 6291456,
+    "file" : "build\/roster\/kurimanju\/right-24.png",
+    "samePixels" : true,
+    "sha256" : "4f6a09be8dfe2813933885fe6be82c63eacd300a825971bb53ca775ae5b55e4a"
+  },
+  {
+    "bytes" : 3145728,
+    "file" : "build\/roster\/kurimanju\/pickup-12.png",
+    "samePixels" : true,
+    "sha256" : "33285e91345bb83f7f62fc2be1c68f7b49dd7b14671076a6e51c18e18bce1ee0"
+  },
+  {
+    "bytes" : 6291456,
+    "file" : "build\/roster\/kurimanju\/down-right-24.png",
+    "samePixels" : true,
+    "sha256" : "32f67bf1b7842e8b1220d91c07fe4d88cba64b32c1d9cbce8fe0186d06601cfc"
+  },
+  {
+    "bytes" : 6291456,
+    "file" : "build\/roster\/momonga\/up-24.png",
+    "samePixels" : true,
+    "sha256" : "322012da56074b41d618f7765a8537e48bafcf2a505ab16758b682de138cb550"
+  },
+  {
+    "bytes" : 6291456,
+    "file" : "build\/roster\/momonga\/down-24.png",
+    "samePixels" : true,
+    "sha256" : "d59b318bb7f0f4d82eb8c61c61b146874551fbc1175ff7fd785962576f681e3b"
+  },
+  {
+    "bytes" : 3145728,
+    "file" : "build\/roster\/momonga\/laugh-12.png",
+    "samePixels" : true,
+    "sha256" : "da701cea4eb05d14035a37a6aeca1c77187cc18762aa9bbf539fd80d7d05dccf"
+  },
+  {
+    "bytes" : 6291456,
+    "file" : "build\/roster\/momonga\/left-24.png",
+    "samePixels" : true,
+    "sha256" : "d2d9fa275e4ffd66f788a8c4781c819dc0f07a169f73941d8cf1dd5890cfb7c6"
+  },
+  {
+    "bytes" : 2211840,
+    "file" : "build\/roster\/momonga\/sleep-12.png",
+    "samePixels" : true,
+    "sha256" : "8993a0e318ad50b8e5a4910d937ca8d85793bce992a5a0c3bf72c807c7affd52"
+  },
+  {
+    "bytes" : 3145728,
+    "file" : "build\/roster\/momonga\/surprised-12.png",
+    "samePixels" : true,
+    "sha256" : "2c1aa987cff1023719f79eb384fc6d3905681ba19affe660962c6231d07e559f"
+  },
+  {
+    "bytes" : 3145728,
+    "file" : "build\/roster\/momonga\/wave-12.png",
+    "samePixels" : true,
+    "sha256" : "e335d118e0aa2d40be338d67c92cad6caf84268ae946956a0b3f77dc3f45a9d1"
+  },
+  {
+    "bytes" : 6291456,
+    "file" : "build\/roster\/momonga\/up-left-24.png",
+    "samePixels" : true,
+    "sha256" : "e7968a95cc3c27bc120a4ca0171f4f6b84abf4409713d2d76d2e854e26a5ade5"
+  },
+  {
+    "bytes" : 6291456,
+    "file" : "build\/roster\/momonga\/up-right-24.png",
+    "samePixels" : true,
+    "sha256" : "5079c6cc3036585314470c9544a825003da3842f6be7be587df0d9c64af343c4"
+  },
+  {
+    "bytes" : 3145728,
+    "file" : "build\/roster\/momonga\/wake-12.png",
+    "samePixels" : true,
+    "sha256" : "2d9b75f2b1d6073c8ddac30a54b3899ee8b55c451a6290617084fd9b281c9f91"
+  },
+  {
+    "bytes" : 3145728,
+    "file" : "build\/roster\/momonga\/keepsake-12.png",
+    "samePixels" : true,
+    "sha256" : "81af515c9ab04a8893b546b600fe17fccda8526565d24928c36d6e5e9476b227"
+  },
+  {
+    "bytes" : 6291456,
+    "file" : "build\/roster\/momonga\/down-left-24.png",
+    "samePixels" : true,
+    "sha256" : "6bb5c84b00dc60c420b8bea2dfbdd819d69fb555d96ec4418da74f540d79ecab"
+  },
+  {
+    "bytes" : 6291456,
+    "file" : "build\/roster\/momonga\/right-24.png",
+    "samePixels" : true,
+    "sha256" : "c827832c71403a8e9c35c3ee401286e820c0456f8079cb4a27418def74eb928a"
+  },
+  {
+    "bytes" : 3145728,
+    "file" : "build\/roster\/momonga\/pickup-12.png",
+    "samePixels" : true,
+    "sha256" : "7f80a72785f77f9a3b3dc4022bde3b4d697bfef1aa8bc9cebe1080dcfe959532"
+  },
+  {
+    "bytes" : 6291456,
+    "file" : "build\/roster\/momonga\/down-right-24.png",
+    "samePixels" : true,
+    "sha256" : "f0ad4568d32e7a01843c4a8aa433b0e18fb2755245c4e6cb854a12bfc739bf2d"
+  },
+  {
+    "bytes" : 6291456,
+    "file" : "build\/roster\/rakko\/up-24.png",
+    "samePixels" : true,
+    "sha256" : "ec23d361c7799639d1329ef15e27e03ee93789852cad96011d380a47ae95a605"
+  },
+  {
+    "bytes" : 6291456,
+    "file" : "build\/roster\/rakko\/down-24.png",
+    "samePixels" : true,
+    "sha256" : "7f853798e7af55b1fccb799cd6c54a7ea299cb681167d610c82e68ada41c5cce"
+  },
+  {
+    "bytes" : 3145728,
+    "file" : "build\/roster\/rakko\/laugh-12.png",
+    "samePixels" : true,
+    "sha256" : "8a3b43d34fb853afdf2bacb8475c56e6840b630c5483b2f652cc1e71cb339539"
+  },
+  {
+    "bytes" : 6291456,
+    "file" : "build\/roster\/rakko\/left-24.png",
+    "samePixels" : true,
+    "sha256" : "4d96e878ad7f7cc254aca0ac868f0c16cb913e8e9b563e4048663ae0a893d866"
+  },
+  {
+    "bytes" : 2211840,
+    "file" : "build\/roster\/rakko\/sleep-12.png",
+    "samePixels" : true,
+    "sha256" : "7e8a1cc686e7400962e1b65989aaedb6a2eec485432519c6b46e78c4489c6c4b"
+  },
+  {
+    "bytes" : 3145728,
+    "file" : "build\/roster\/rakko\/surprised-12.png",
+    "samePixels" : true,
+    "sha256" : "0a931ec64246701222961ec4c781edfc992ab34716adf31dd5bd396798104144"
+  },
+  {
+    "bytes" : 3145728,
+    "file" : "build\/roster\/rakko\/wave-12.png",
+    "samePixels" : true,
+    "sha256" : "07c0108cb583c63277304d26eb85486844378d321f40955ce105c01608dca725"
+  },
+  {
+    "bytes" : 6291456,
+    "file" : "build\/roster\/rakko\/up-left-24.png",
+    "samePixels" : true,
+    "sha256" : "c9263533a7f5a4ccdd350b09bfaa7b5489b95e341c8421da3b7a24a52f06e882"
+  },
+  {
+    "bytes" : 6291456,
+    "file" : "build\/roster\/rakko\/up-right-24.png",
+    "samePixels" : true,
+    "sha256" : "14f778690aceb46d18988992b7f958ff24f3a9da9430f216393ba37d72eb0937"
+  },
+  {
+    "bytes" : 3145728,
+    "file" : "build\/roster\/rakko\/wake-12.png",
+    "samePixels" : true,
+    "sha256" : "5cf481f072956936b396823dbe6cc9100ec8cb397b9d5ac177352b3da4f3d346"
+  },
+  {
+    "bytes" : 3145728,
+    "file" : "build\/roster\/rakko\/keepsake-12.png",
+    "samePixels" : true,
+    "sha256" : "b84fa348637571f8f2de880aac07f8a19423de0616aeb7e06e40a4e199882e15"
+  },
+  {
+    "bytes" : 6291456,
+    "file" : "build\/roster\/rakko\/down-left-24.png",
+    "samePixels" : true,
+    "sha256" : "58a9c46d3f3d1715175cad13728ed8fc93d3a408a424d65f81aea15a70f55fc9"
+  },
+  {
+    "bytes" : 6291456,
+    "file" : "build\/roster\/rakko\/right-24.png",
+    "samePixels" : true,
+    "sha256" : "e970baeef31a10ebbd21a8a110e52ebead0286ad9a79261ebf048c19210094f2"
+  },
+  {
+    "bytes" : 3145728,
+    "file" : "build\/roster\/rakko\/pickup-12.png",
+    "samePixels" : true,
+    "sha256" : "aefa882c3bf1f5470ff995aa7836ced1a61339826422aca60ecdb58fd948ef81"
+  },
+  {
+    "bytes" : 6291456,
+    "file" : "build\/roster\/rakko\/down-right-24.png",
+    "samePixels" : true,
+    "sha256" : "948fe1cb35b554dde222b8efc1b91efc005ed170cb88e1d164570f94ab19cb1a"
+  },
+  {
+    "bytes" : 6291456,
+    "file" : "build\/roster\/shisa\/up-24.png",
+    "samePixels" : true,
+    "sha256" : "b3fd25d1da715ee60032db3f8fc08f209fb53b077c0868bcd9e9c06fa3950d06"
+  },
+  {
+    "bytes" : 6291456,
+    "file" : "build\/roster\/shisa\/down-24.png",
+    "samePixels" : true,
+    "sha256" : "494986211a20aaa4e6f1da7b859b7a52f8cee3610fd933cd3b58d55278b1f6ed"
+  },
+  {
+    "bytes" : 3145728,
+    "file" : "build\/roster\/shisa\/laugh-12.png",
+    "samePixels" : true,
+    "sha256" : "068033fb22a4d81c99d3c4f73ba08cbbb091a27380bf318d3674d2f12325f40f"
+  },
+  {
+    "bytes" : 6291456,
+    "file" : "build\/roster\/shisa\/left-24.png",
+    "samePixels" : true,
+    "sha256" : "6369e9b343980b2a1c6faa553b9cf3ec5e21900949caf7fa4172522df526c371"
+  },
+  {
+    "bytes" : 2211840,
+    "file" : "build\/roster\/shisa\/sleep-12.png",
+    "samePixels" : true,
+    "sha256" : "10dc69d04280fdb216cb46bbc18e7258e78a43953837c0fb4f74dd65a9e58fbb"
+  },
+  {
+    "bytes" : 3145728,
+    "file" : "build\/roster\/shisa\/surprised-12.png",
+    "samePixels" : true,
+    "sha256" : "bcc59468a4dca93cfb566c9759cf0b6908ec78db55b15b8dd3ac63aab166fbb4"
+  },
+  {
+    "bytes" : 3145728,
+    "file" : "build\/roster\/shisa\/wave-12.png",
+    "samePixels" : true,
+    "sha256" : "d474419d108457a7bad64eb5cb60e9379db47332ae183c8ee89d505b5ef35596"
+  },
+  {
+    "bytes" : 6291456,
+    "file" : "build\/roster\/shisa\/up-left-24.png",
+    "samePixels" : true,
+    "sha256" : "3661adf42a9b44ff0d214b90915d43049effa7b4b4f0c5e5a20d666543d228b0"
+  },
+  {
+    "bytes" : 6291456,
+    "file" : "build\/roster\/shisa\/up-right-24.png",
+    "samePixels" : true,
+    "sha256" : "56a47994a94b0287cd1da92cde6b98ff51ae5703e38f4dd469ff3aa724e56c31"
+  },
+  {
+    "bytes" : 3145728,
+    "file" : "build\/roster\/shisa\/wake-12.png",
+    "samePixels" : true,
+    "sha256" : "3282a3bb92a168712579ebca90d6a56261acbf3d67541efd6c4d6d2238f787aa"
+  },
+  {
+    "bytes" : 3145728,
+    "file" : "build\/roster\/shisa\/keepsake-12.png",
+    "samePixels" : true,
+    "sha256" : "4ec910011081aced39937a2bc8e5d6814c6dc1d5ec7d3523b00d5dd66235d085"
+  },
+  {
+    "bytes" : 6291456,
+    "file" : "build\/roster\/shisa\/down-left-24.png",
+    "samePixels" : true,
+    "sha256" : "285c46588fdc5db999beb1866356416ca7cdb9f9790f994b7ebaeeb7a6f9f99a"
+  },
+  {
+    "bytes" : 6291456,
+    "file" : "build\/roster\/shisa\/right-24.png",
+    "samePixels" : true,
+    "sha256" : "6bf0661381b2830525117b07761438e29362e8127ed8d2be1537ac19b3fdac57"
+  },
+  {
+    "bytes" : 3145728,
+    "file" : "build\/roster\/shisa\/pickup-12.png",
+    "samePixels" : true,
+    "sha256" : "81c3ad867054455b8b591331879afab1ec16fe36ed7432c3a6180815a59086e5"
+  },
+  {
+    "bytes" : 6291456,
+    "file" : "build\/roster\/shisa\/down-right-24.png",
+    "samePixels" : true,
+    "sha256" : "a03c8d03286c2c3e3d68ffb4cbac075843c2cf5ee45f587bc716645f014754f1"
+  },
+  {
+    "bytes" : 6291456,
+    "file" : "build\/roster\/kani\/up-24.png",
+    "samePixels" : true,
+    "sha256" : "95109de87f7697b0b4b1668824df8756d6a8f4f7beba35e387fa7d8e5e4012f4"
+  },
+  {
+    "bytes" : 6291456,
+    "file" : "build\/roster\/kani\/down-24.png",
+    "samePixels" : true,
+    "sha256" : "82b8233de674da9a6079c05b702d08d12ccb33f5f58e2beef338024dd6550dd2"
+  },
+  {
+    "bytes" : 3145728,
+    "file" : "build\/roster\/kani\/laugh-12.png",
+    "samePixels" : true,
+    "sha256" : "f7f8b8ece8c03bcf496f912ee76579e74cc45a2319c8045980c3ae3fcdb4147d"
+  },
+  {
+    "bytes" : 6291456,
+    "file" : "build\/roster\/kani\/left-24.png",
+    "samePixels" : true,
+    "sha256" : "11d359fdfc3adba033350ff9d7be53cf404f3878dd567f84c52c1e211e151ebd"
+  },
+  {
+    "bytes" : 2211840,
+    "file" : "build\/roster\/kani\/sleep-12.png",
+    "samePixels" : true,
+    "sha256" : "e19920495f51c2c2a0543a250eb16db910d4302cc2a5f4e011a54482a1862170"
+  },
+  {
+    "bytes" : 3145728,
+    "file" : "build\/roster\/kani\/surprised-12.png",
+    "samePixels" : true,
+    "sha256" : "1658c204dbcb299887d39df693a64882cefecd86d64fa131962e8c50e63723f0"
+  },
+  {
+    "bytes" : 3145728,
+    "file" : "build\/roster\/kani\/wave-12.png",
+    "samePixels" : true,
+    "sha256" : "c6cfd1dcf7c18e9f6e59eabec21fa8f264aa8ee47996c1e260316fe4d979ed37"
+  },
+  {
+    "bytes" : 6291456,
+    "file" : "build\/roster\/kani\/up-left-24.png",
+    "samePixels" : true,
+    "sha256" : "d8db04282973e5411615f5f9711ee4525f1d4e8c5707fe1953ba977c7dc3ba2d"
+  },
+  {
+    "bytes" : 6291456,
+    "file" : "build\/roster\/kani\/up-right-24.png",
+    "samePixels" : true,
+    "sha256" : "1a87e2ed611afb1df7425aa1f0e2c9a170a886886733e94786affd49ac7c068f"
+  },
+  {
+    "bytes" : 3145728,
+    "file" : "build\/roster\/kani\/wake-12.png",
+    "samePixels" : true,
+    "sha256" : "2f02285a8ab8db5843d4e9eafd02dded6211470116c0d1ebabb3d34f2e1e2763"
+  },
+  {
+    "bytes" : 3145728,
+    "file" : "build\/roster\/kani\/keepsake-12.png",
+    "samePixels" : true,
+    "sha256" : "14518484ce67cdb2434a0bfc4964e72e74f6e101e6973cae12888892277002b0"
+  },
+  {
+    "bytes" : 6291456,
+    "file" : "build\/roster\/kani\/down-left-24.png",
+    "samePixels" : true,
+    "sha256" : "a80b630100f695f3d136c827342a145d427c12252fe58f67b6c46f21cf740c3a"
+  },
+  {
+    "bytes" : 6291456,
+    "file" : "build\/roster\/kani\/right-24.png",
+    "samePixels" : true,
+    "sha256" : "f8e3ac8f96521e5bb580400ed89fc4d7c412c3bbcf1bf64eed86ef111dae25e1"
+  },
+  {
+    "bytes" : 3145728,
+    "file" : "build\/roster\/kani\/pickup-12.png",
+    "samePixels" : true,
+    "sha256" : "6ab161c01233d4c3f3a182f42bcc60a9a7fdca4d9b03d534accc91ecf7ddce6f"
+  },
+  {
+    "bytes" : 6291456,
+    "file" : "build\/roster\/kani\/down-right-24.png",
+    "samePixels" : true,
+    "sha256" : "c1a437817bed9cbc523e0cc7b4763408ae4935f7025154ea164a9519630c3676"
+  }
+]

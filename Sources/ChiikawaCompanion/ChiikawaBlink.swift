@@ -50,6 +50,10 @@ final class ChiikawaBlinkArtwork {
         let phase = max(0,time).truncatingRemainder(dividingBy: 4.8)
         return phase >= 3.7 && phase < 3.97 ? phase-3.7 : nil
     }
+    func frameIndex(time: Double) -> Int {
+        guard let elapsed=Self.blinkElapsed(time:time) else {return -1}
+        return ChiikawaMotionSprites.index(.blink,elapsed:elapsed)
+    }
     func draw(in rect: NSRect, time: Double) {
         guard source.count == 2, target.count == 2, let elapsed = Self.blinkElapsed(time: time),
               let sequence = ChiikawaMotionSprites.shared.frames[.blink] else { return }

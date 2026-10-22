@@ -25,6 +25,7 @@ struct ActivitySpotWorld {
     var requested: ActivitySpot?
 
     mutating func configure(enabled newValue: Set<ActivitySpot>, bounds: NSRect) {
+        guard enabled != newValue else {return}
         for spot in enabled.subtracting(newValue) {
             positions[spot] = nil; latched.remove(spot); availableAfter[spot] = nil
             if requested == spot { requested = nil }

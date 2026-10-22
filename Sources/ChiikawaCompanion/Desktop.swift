@@ -3,6 +3,17 @@ import AppKit
 final class FriendPanel: NSPanel {
     override var canBecomeKey: Bool { false }
     override var canBecomeMain: Bool { false }
+    override func orderOut(_ sender: Any?) {
+        guard isVisible || isMiniaturized else {return}
+        super.orderOut(sender)
+    }
+    override var ignoresMouseEvents: Bool {
+        get {super.ignoresMouseEvents}
+        set {if super.ignoresMouseEvents != newValue {super.ignoresMouseEvents=newValue}}
+    }
+    override func setFrameOrigin(_ point: NSPoint) {
+        if frame.origin != point {super.setFrameOrigin(point)}
+    }
 }
 
 enum DesktopGeometry {
@@ -22,6 +33,29 @@ enum DesktopGeometry {
 }
 
 final class DesktopFriendView: NSView {
+    private struct WalkingPaint: Equatable {
+        let pose:HachiwarePose
+        let right:Bool
+        let frame:Int
+        let item:CompanionItem?
+        let chiikawaItem:ChiikawaItem?
+        let blink:Int
+    }
+    private var walkingPaint:WalkingPaint?
+    func invalidateCurrentDrawing() {
+        // Continuous idle bob, crossfade and action effects keep their original cadence.
+        guard walking, !happy, action == nil, chiikawaLife == nil, chiikawaReaction == nil,
+              friend == .hachiware || (friend == .chiikawa && time-chiikawaReactionChanged>=0.1) else {
+            walkingPaint=nil;needsDisplay=true;return
+        }
+        let count=friend == .chiikawa ? 24:pose.frameCount
+        let blink=friend == .chiikawa && pose == .front
+            ? ChiikawaBlinkArtwork.shared.frameIndex(time:time):(-1)
+        let next=WalkingPaint(pose:pose,right:facing>0,
+            frame:HachiwareSprites.frameIndex(phase:walkPhase,count:count),item:equipped,
+            chiikawaItem:chiikawaItem,blink:blink)
+        if next != walkingPaint {needsDisplay=true;walkingPaint=next}
+    }
     let friend: Friend
     var happy = false
     var walking = false
@@ -81,44 +115,20 @@ final class DesktopFriendView: NSView {
                            chiikawaReaction: chiikawaReaction, chiikawaItem: chiikawaItem, chiikawaLife: chiikawaLife,
                            previousChiikawaReaction: previousChiikawaReaction, reactionProgress: min(1,max(0,(time-chiikawaReactionChanged)/0.1)), rosterVisual: rosterVisual)
     }
+    var onToggleAllItems: (() -> Void)?
+    var onPreviewVoice: (() -> Void)?
+    var allItemsEnabled: (() -> Bool)?
+    var voiceAvailable: (() -> Bool)?
     override func rightMouseDown(with event: NSEvent) {
-        let menu = NSMenu()
-        if friend.isExpansion {
-            for action in RosterAction.selectable {
-                let entry = NSMenuItem(title: action == .keepsake ? friend.keepsakeActionTitle : action.title, action: #selector(chooseRosterAction(_:)), keyEquivalent: "")
-                entry.target = self; entry.representedObject = action.rawValue; menu.addItem(entry)
-            }
-            for (title, selector) in [("집으로 가서 자기", #selector(goHome)), ("동작 멈추기", #selector(stopDailyAction)),
-                ("이 친구 산책 켜기 / 끄기", #selector(toggleWalking)), ("소품 내려놓기", #selector(dropEquipment))] {
-                let entry = NSMenuItem(title: title, action: selector, keyEquivalent: ""); entry.target = self; menu.addItem(entry)
-            }
-            NSMenu.popUpContextMenu(menu, with: event, for: self); return
-        }
-        for action in friend == .hachiware ? HachiwareAction.daily : [] {
-            let entry = NSMenuItem(title: action.title, action: #selector(chooseDailyAction(_:)), keyEquivalent: "")
-            entry.target = self; entry.tag = action.rawValue; menu.addItem(entry)
-        }
-        if friend == .chiikawa {
-            for action in ChiikawaLifeAction.allCases {
-                let entry = NSMenuItem(title: action.title, action: #selector(chooseChiikawaLife(_:)), keyEquivalent: "")
-                entry.target = self; entry.representedObject = action.rawValue; menu.addItem(entry)
-            }
-            let home = NSMenuItem(title: "집으로 가서 자기", action: #selector(goHome), keyEquivalent: "")
-            home.target = self; menu.addItem(home)
-            let stop = NSMenuItem(title: "동작 멈추기", action: #selector(stopDailyAction), keyEquivalent: "")
-            stop.target = self; menu.addItem(stop); menu.addItem(.separator())
-            let walk = NSMenuItem(title: "이 친구 산책 켜기 / 끄기", action: #selector(toggleWalking), keyEquivalent: "")
-            walk.target = self; menu.addItem(walk)
-            let drop = NSMenuItem(title: "소품 내려놓기", action: #selector(dropEquipment), keyEquivalent: "")
-            drop.target = self; menu.addItem(drop)
-            NSMenu.popUpContextMenu(menu, with: event, for: self)
-            return
-        }
-        menu.addItem(.separator())
-        let stop = NSMenuItem(title: "동작 멈추기", action: #selector(stopDailyAction), keyEquivalent: "")
-        stop.target = self; menu.addItem(stop)
-        NSMenu.popUpContextMenu(menu, with: event, for: self)
+        let menu=NSMenu();menu.autoenablesItems=false
+        let items=NSMenuItem(title:"아이템",action:#selector(toggleAllItems),keyEquivalent:"")
+        items.target=self;items.state=allItemsEnabled?() == true ? .on:.off;menu.addItem(items)
+        let voice=NSMenuItem(title:"목소리 듣기",action:#selector(previewVoice),keyEquivalent:"")
+        voice.target=self;voice.isEnabled=voiceAvailable?() == true;menu.addItem(voice)
+        NSMenu.popUpContextMenu(menu,with:event,for:self)
     }
+    @objc private func toggleAllItems(){onToggleAllItems?()}
+    @objc private func previewVoice(){onPreviewVoice?()}
     @objc private func chooseRosterAction(_ sender: NSMenuItem) {
         guard let value = sender.representedObject as? String, let action = RosterAction(rawValue: value) else { return }
         onRosterAction?(action)
@@ -311,6 +321,13 @@ final class DesktopController {
         _ = WeaponAttackSprites.shared
         actors = Friend.developmentRoster.enumerated().map { FriendActor(friend: $0.element, index: $0.offset) }
         for actor in actors {
+            let friend=actor.friend
+            actor.view.allItemsEnabled = { [weak state] in state?.itemsEnabled(for:friend) ?? false }
+            actor.view.voiceAvailable = { [weak state] in state?.hasVoice(for:friend) ?? false }
+            actor.view.onToggleAllItems = { [weak state] in
+                guard let state else {return};state.setItemsEnabled(!state.itemsEnabled(for:friend),for:friend)
+            }
+            actor.view.onPreviewVoice = { [weak state] in state?.previewVoice(for:friend) }
             actor.view.onClick = { [weak self, weak actor] in
                 guard let self, let actor else { return }
                 self.handleCharacterClick(actor)
@@ -397,6 +414,7 @@ final class DesktopController {
             guard let self else { return }
             self.activateSharedHome()
         }
+        home.view.onSelectStyle = { [weak state] style in state?.homeStyle=style }
         recordedVoice.onStatus = { [weak state] status in state?.voiceStatus = status }
         state.onVoicePreview = { [weak self] in self?.previewCharacterVoice() }
         state.onStopCharacterVoice = { [weak self] in self?.stopCharacterVoice() }
@@ -856,7 +874,7 @@ final class DesktopController {
             if action == .attack { actor.view.actionTime = max(0, now.timeIntervalSince(actor.hoverStarted)) }
             actor.view.equipped = itemWorld.equipped
             actor.view.looking = min(1, max(-1, (mouse.x - actor.panel.frame.midX) / 160))
-            actor.view.needsDisplay = true
+            actor.view.invalidateCurrentDrawing()
             if now < actor.bubbleUntil { actor.positionBubble() }
             else if actor.bubble != nil { actor.dismissBubble() }
             for (item, desktopItem) in desktopItems {

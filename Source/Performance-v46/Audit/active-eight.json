@@ -1,0 +1,26 @@
+{
+  "backingScale" : 2,
+  "date" : "2026-10-23",
+  "method" : "60 Hz main-run-loop callback plus synchronous displayIfNeeded on actual AppKit windows; not compositor-present FPS",
+  "results" : [
+    {
+      "callbackHz" : 59.652168819790099,
+      "characters" : 8,
+      "cpuPercentOfOneCore" : 28.889633252193459,
+      "intervalMaxms" : 71.909291669726372,
+      "intervalP95ms" : 18.480166676454246,
+      "intervalP99ms" : 18.717583385296166,
+      "over25msPercent" : 0.47459519821328866,
+      "samples" : 3582,
+      "workMaxms" : 33.199000055901706,
+      "workP95ms" : 7.9207082744687796
+    }
+  ],
+  "scene" : "All eight characters with owned props and autonomous pickup\/activities enabled; rest\/audio disabled to keep cast visible; pointer away; no settings window",
+  "screenPoints" : [
+    1440,
+    797
+  ],
+  "secondsPerCount" : 60,
+  "warmupSeconds" : 2
+}

@@ -59,7 +59,7 @@ final class HachiwareSprites {
               poses.allSatisfy({ $0.frameCount == first.frameCount }) else { return }
         let rowsPerPose = first.frameCount / columns
         guard let url = Self.assetURL(named: name), let data = try? Data(contentsOf: url),
-              let bitmap = NSBitmapImageRep(data: data), let atlas = bitmap.cgImage,
+              let bitmap = NSBitmapImageRep(data: data), let atlas = bitmap.decodedArtwork,
               atlas.width == columns * 256, atlas.height == poses.count * rowsPerPose * 256 else { return }
         sourceSizes[name] = NSSize(width: atlas.width, height: atlas.height)
         for (row, pose) in poses.enumerated() {
@@ -97,7 +97,7 @@ final class HachiwareSprites {
     private func loadAtlas(named name: String, size: NSSize, edges: [Int],
                            groups: [(HachiwarePose, [Int])]) {
         guard let url = Self.assetURL(named: name), let data = try? Data(contentsOf: url),
-              let bitmap = NSBitmapImageRep(data: data), let atlas = bitmap.cgImage,
+              let bitmap = NSBitmapImageRep(data: data), let atlas = bitmap.decodedArtwork,
               atlas.width == Int(size.width), atlas.height == Int(size.height) else { return }
         sourceSizes[name] = size
         let width = atlas.width, height = atlas.height, cellWidth = width / Self.columns

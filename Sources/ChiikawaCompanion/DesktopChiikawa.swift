@@ -203,7 +203,7 @@ extension DesktopController {
             actor.view.previousChiikawaReaction = nil
             actor.view.chiikawaReactionChanged = -Double.infinity
         }
-        actor.view.chiikawaItem = chiikawaWorld.equipped; actor.view.needsDisplay = true
+        actor.view.chiikawaItem = chiikawaWorld.equipped; actor.view.invalidateCurrentDrawing()
         if now < actor.bubbleUntil { actor.positionBubble() } else if actor.bubble != nil { actor.dismissBubble() }
         publishChiikawaHome()
         updateChiikawaLifeObjects(visible: visible, mouse: mouse, actor: actor, now: now, time: time)

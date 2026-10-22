@@ -233,6 +233,7 @@ enum SelfTest {
         runChiikawaClickVoiceChecks { check($0, $1) }
         runChiikawaAttackIsolationChecks { check($0, $1) }
         runContinuousRoamingChecks { check($0, $1) }
+        runSimpleOptionChecks { check($0, $1) }
         runRosterChecks { check($0, $1) }
         runHomeTests(desktop: desktop, now: now) { check($0, $1) }
         var performance = CompanionPerformance()
@@ -276,8 +277,11 @@ enum SelfTest {
         let sideAtlas = NSBitmapImageRep(data: sideData)!.cgImage!
         check((0..<24).allSatisfy { index in
             guard let cell = sideAtlas.cropping(to: CGRect(x: index % 6 * 256, y: index / 6 * 256, width: 256, height: 256)) else { return false }
-            return NSImage(cgImage: cell, size: NSSize(width: 256, height: 256)).tiffRepresentation
-                == sprites.frame(pose: .side, index: index)?.tiffRepresentation
+            guard let actual=sprites.frame(pose:.side,index:index) else {return false}
+            let expected=NSImage(cgImage:cell,size:NSSize(width:256,height:256))
+            return [256,512].allSatisfy {edge in
+                SelfTest.visiblePixels(expected,edge:edge) == SelfTest.visiblePixels(actual,edge:edge)
+            }
         }, "all 24 joined side frames retain their registered cells and chronological order")
         let originalSide = NSBitmapImageRep(data: try! Data(contentsOf:
             HachiwareSprites.assetURL(named: "hachiware-side-walk-24-v9")!))!.cgImage!

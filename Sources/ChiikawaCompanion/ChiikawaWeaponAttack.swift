@@ -12,7 +12,7 @@ final class ChiikawaAttackSprites {
 
     private init() {
         guard let url = HachiwareSprites.assetURL(named: Self.assetName), let data = try? Data(contentsOf: url),
-              let atlas = NSBitmapImageRep(data: data)?.cgImage, atlas.width == 1536, atlas.height == 512 else { return }
+              let atlas = NSBitmapImageRep(data: data)?.decodedArtwork, atlas.width == 1536, atlas.height == 512 else { return }
         for index in 0..<Self.frameCount {
             guard let frame = atlas.cropping(to: CGRect(x: index % 6 * 256, y: index / 6 * 256, width: 256, height: 256)) else { return }
             frames.append(NSImage(cgImage: frame, size: NSSize(width: 256, height: 256)))

@@ -1,0 +1,74 @@
+{
+  "backingScale" : 2,
+  "date" : "2026-10-23",
+  "method" : "60 Hz main-run-loop callback plus synchronous displayIfNeeded on actual AppKit windows; not compositor-present FPS",
+  "results" : [
+    {
+      "callbackHz" : 60.009774553370541,
+      "characters" : 1,
+      "cpuPercentOfOneCore" : 18.394309138911339,
+      "intervalMaxms" : 23.524500080384314,
+      "intervalP95ms" : 18.383208313025534,
+      "intervalP99ms" : 19.3315832875669,
+      "over25msPercent" : 0,
+      "samples" : 601,
+      "workMaxms" : 10.172749985940754,
+      "workP95ms" : 7.1417500730603933
+    },
+    {
+      "callbackHz" : 59.871946629166246,
+      "characters" : 2,
+      "cpuPercentOfOneCore" : 27.670207477375076,
+      "intervalMaxms" : 27.263500029221177,
+      "intervalP95ms" : 17.915833275765181,
+      "intervalP99ms" : 23.335208301432431,
+      "over25msPercent" : 0.33333333333333331,
+      "samples" : 600,
+      "workMaxms" : 7.2033749893307686,
+      "workP95ms" : 2.7889583725482225
+    },
+    {
+      "callbackHz" : 56.495857163061252,
+      "characters" : 4,
+      "cpuPercentOfOneCore" : 51.150182614000229,
+      "intervalMaxms" : 45.4037917079404,
+      "intervalP95ms" : 24.601791636087,
+      "intervalP99ms" : 32.616833341307938,
+      "over25msPercent" : 4.4091710758377429,
+      "samples" : 567,
+      "workMaxms" : 7.9425416188314557,
+      "workP95ms" : 4.0076666045933962
+    },
+    {
+      "callbackHz" : 21.891846576039693,
+      "characters" : 6,
+      "cpuPercentOfOneCore" : 92.098711124942383,
+      "intervalMaxms" : 68.057750002481043,
+      "intervalP95ms" : 65.740208374336362,
+      "intervalP99ms" : 66.764750052243471,
+      "over25msPercent" : 78.280542986425345,
+      "samples" : 221,
+      "workMaxms" : 8.6372916121035814,
+      "workP95ms" : 7.2409999556839466
+    },
+    {
+      "callbackHz" : 21.83840383410632,
+      "characters" : 8,
+      "cpuPercentOfOneCore" : 83.856713388669505,
+      "intervalMaxms" : 86.024333373643458,
+      "intervalP95ms" : 82.375500001944602,
+      "intervalP99ms" : 85.344916675239801,
+      "over25msPercent" : 51.834862385321102,
+      "samples" : 218,
+      "workMaxms" : 8.7634166702628136,
+      "workP95ms" : 6.5027916571125388
+    }
+  ],
+  "scene" : "All owned ground props enabled; continuously walking; autonomous pickup\/rest\/activities and audio disabled; pointer away; no settings window",
+  "screenPoints" : [
+    1440,
+    797
+  ],
+  "secondsPerCount" : 10,
+  "warmupSeconds" : 2
+}

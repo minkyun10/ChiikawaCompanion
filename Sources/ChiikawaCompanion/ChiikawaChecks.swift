@@ -44,7 +44,9 @@ extension SelfTest {
             let exact = (0..<24).allSatisfy { index in
                 let expected = NSImage(cgImage: atlas.cropping(to: CGRect(x: index % 6 * 256, y: index / 6 * 256, width: 256, height: 256))!,
                                        size: NSSize(width: 256, height: 256))
-                return expected.tiffRepresentation == frames[index].tiffRepresentation
+                return [256,512].allSatisfy { edge in
+                    SelfTest.visiblePixels(expected,edge:edge) == SelfTest.visiblePixels(frames[index],edge:edge)
+                }
             }
             check(exact, "Chiikawa \(direction.rawValue) runtime frames exactly match atlas row-major order")
         }

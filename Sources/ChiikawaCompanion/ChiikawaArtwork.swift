@@ -36,7 +36,7 @@ final class ChiikawaSprites {
         for direction in ChiikawaDirection.allCases {
             guard let url = HachiwareSprites.assetURL(named: "chiikawa-\(direction.rawValue)-24"),
                   let data = try? Data(contentsOf: url), let bitmap = NSBitmapImageRep(data: data),
-                  let atlas = bitmap.cgImage, atlas.width == 1536, atlas.height == 1024 else { continue }
+                  let atlas = bitmap.decodedArtwork, atlas.width == 1536, atlas.height == 1024 else { continue }
             var cycle: [NSImage] = []
             for index in 0..<Self.frameCount {
                 guard let frame = atlas.cropping(to: CGRect(x: index % 6 * 256, y: index / 6 * 256, width: 256, height: 256)) else { break }

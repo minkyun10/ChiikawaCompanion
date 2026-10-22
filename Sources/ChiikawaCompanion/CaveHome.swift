@@ -223,6 +223,7 @@ final class HomeView: NSView {
     var time = 0.0
     var now = Date()
     var onActivate: (() -> Void)?
+    var onSelectStyle: ((HomeStyle) -> Void)?
     init() {
         super.init(frame: NSRect(origin: .zero, size: HomeGeometry.size))
         setAccessibilityElement(true); setAccessibilityRole(.button)
@@ -240,6 +241,19 @@ final class HomeView: NSView {
     override func accessibilityPerformPress() -> Bool { onActivate?(); return true }
     override func mouseDown(with event: NSEvent) {}
     override func mouseUp(with event: NSEvent) { onActivate?() }
+    override func rightMouseDown(with event:NSEvent) {
+        let menu=NSMenu()
+        for skin in HomeStyle.allCases {
+            let entry=NSMenuItem(title:skin.title,action:#selector(selectStyle(_:)),keyEquivalent:"")
+            entry.target=self;entry.representedObject=skin.rawValue;entry.state=skin==style ? .on:.off
+            menu.addItem(entry)
+        }
+        NSMenu.popUpContextMenu(menu,with:event,for:self)
+    }
+    @objc private func selectStyle(_ sender:NSMenuItem) {
+        guard let raw=sender.representedObject as? String,let skin=HomeStyle(rawValue:raw) else {return}
+        onSelectStyle?(skin)
+    }
     override func draw(_ dirtyRect: NSRect) {
         HomeArtwork.shared.draw(in: bounds, style: style, occupants: occupants, now: now, time: time)
     }

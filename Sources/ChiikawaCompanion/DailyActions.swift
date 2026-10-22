@@ -14,7 +14,7 @@ final class DailyActionSprites {
     private init() {
         for action in HachiwareAction.daily {
             guard let name = Self.assetNames[action], let url = HachiwareSprites.assetURL(named: name),
-                  let data = try? Data(contentsOf: url), let atlas = NSBitmapImageRep(data: data)?.cgImage,
+                  let data = try? Data(contentsOf: url), let atlas = NSBitmapImageRep(data: data)?.decodedArtwork,
                   atlas.width == 1536, atlas.height == 512 else { continue }
             var cells: [NSImage] = []
             for index in 0..<Self.frameCount {

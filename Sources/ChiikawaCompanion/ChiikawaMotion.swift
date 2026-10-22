@@ -15,7 +15,7 @@ final class ChiikawaMotionSprites {
     private init() {
         for motion in ChiikawaMotion.allCases {
             guard let url = HachiwareSprites.assetURL(named: "chiikawa-\(motion.rawValue)-motion-v30"),
-                  let data = try? Data(contentsOf: url), let atlas = NSBitmapImageRep(data: data)?.cgImage,
+                  let data = try? Data(contentsOf: url), let atlas = NSBitmapImageRep(data: data)?.decodedArtwork,
                   atlas.width == motion.columns*256, atlas.height == (motion.count+motion.columns-1)/motion.columns*256 else { continue }
             frames[motion] = (0..<motion.count).compactMap { index in
                 atlas.cropping(to: CGRect(x: index%motion.columns*256, y: index/motion.columns*256, width: 256, height: 256))

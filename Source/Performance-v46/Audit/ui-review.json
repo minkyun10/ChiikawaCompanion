@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-23",
+  "version": "0.23.0",
+  "build": 50,
+  "main": "8 character summon switches only; all eight enabled",
+  "detail": "item master switch and voice preview only; back navigation",
+  "verified": [
+    "Hachiware master items off/on",
+    "other seven summon states unchanged",
+    "recorded voice preview enabled for Hachiware",
+    "voice preview disabled for Kani with clear text",
+    "character list restored before closing settings"
+  ],
+  "selfTestPassed": 810,
+  "finalState": "App running, settings closed, 8 characters summoned",
+  "houseSelection": "moved to house context menu; shared-home checks passed"
+}

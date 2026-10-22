@@ -79,6 +79,7 @@ struct PropWorld<Item: DesktopProp> {
         return contactPoint(origin: origin)
     }
     mutating func configure(enabled newValue: Set<Item>, bounds: NSRect) {
+        guard enabled != newValue else {return}
         for item in enabled.subtracting(newValue) {
             ground[item] = nil; availableAfter[item] = nil
             if equipped == item { equipped = nil }

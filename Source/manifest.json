@@ -3,7 +3,7 @@
   "operation": "copy; originals preserved",
   "image_file_count": 3588,
   "unique_image_content_count": 1913,
-  "supporting_file_count": 723,
+  "supporting_file_count": 751,
   "image_bytes": 1088419369,
   "symmetric_walk_runtime_applied": true,
   "files": [
@@ -21296,6 +21296,202 @@
     },
     {
       "kind": "supporting",
+      "source": "Source/Performance-v46/Audit/active-eight.json",
+      "archive_path": "Performance-v46/Audit/active-eight.json",
+      "bytes": 875,
+      "sha256": "e60b4836284e5275d7f107b2f2aefb2f05f44c6ae2e5e09edab04dd8d9da71e6"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/Performance-v46/Audit/active-eight.log",
+      "archive_path": "Performance-v46/Audit/active-eight.log",
+      "bytes": 332,
+      "sha256": "b8054f2abbee7e35e7c0d645bcdf9c8bb5f25872a67c222af2a3dc091065067c"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/Performance-v46/Audit/after-round1.json",
+      "archive_path": "Performance-v46/Audit/after-round1.json",
+      "bytes": 2467,
+      "sha256": "618393eda67cd4e6697652ac67da01c77576053fca622239cbfbb4ef93266a62"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/Performance-v46/Audit/after-round1.log",
+      "archive_path": "Performance-v46/Audit/after-round1.log",
+      "bytes": 1627,
+      "sha256": "0c6b1e48d9c3ad983d6a0dcb6cdccf713ca36729e5fba43a26d0d9ca0c034c5f"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/Performance-v46/Audit/after.json",
+      "archive_path": "Performance-v46/Audit/after.json",
+      "bytes": 2405,
+      "sha256": "87ee9553fa33c83a8bd4abe41947a7a313d2aa5d29bc5e2003e4c84d9767a6a4"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/Performance-v46/Audit/after.log",
+      "archive_path": "Performance-v46/Audit/after.log",
+      "bytes": 1588,
+      "sha256": "c128cf4d5110f66cc4c5cf70fb4c25582cd3a5d5ef4ff42916a6968bbc28a741"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/Performance-v46/Audit/art-preservation.json",
+      "archive_path": "Performance-v46/Audit/art-preservation.json",
+      "bytes": 247,
+      "sha256": "14f7a28098c01fb735b2e936f63476862c94b492e68c40b71574d95329b14f69"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/Performance-v46/Audit/baseline-build.log",
+      "archive_path": "Performance-v46/Audit/baseline-build.log",
+      "bytes": 265,
+      "sha256": "da0ea293b619320531042513d223854ffddfcbbaf0132e511d1c42239e18787d"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/Performance-v46/Audit/before-sample.txt",
+      "archive_path": "Performance-v46/Audit/before-sample.txt",
+      "bytes": 338971,
+      "sha256": "8b7e4684333ccd825876df305379d61ff80ae95c77031d80da421a7d0d3feffb"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/Performance-v46/Audit/before.json",
+      "archive_path": "Performance-v46/Audit/before.json",
+      "bytes": 2469,
+      "sha256": "60ff4017c5ef5ffaa8eb6c120b3ae0562b8a51b9c728aa878cae903a4cc50be4"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/Performance-v46/Audit/before.log",
+      "archive_path": "Performance-v46/Audit/before.log",
+      "bytes": 1633,
+      "sha256": "8a7cf289e1287443fd70b3ad835d2ab624a3d3ec18d452a8a7007438b4b2ef64"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/Performance-v46/Audit/check-decode.swift",
+      "archive_path": "Performance-v46/Audit/check-decode.swift",
+      "bytes": 1354,
+      "sha256": "85bd399dc8ae3ed365b82e5413a0f6682a9ee811166b96e3f1ec8aff46fb9077"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/Performance-v46/Audit/check-rendered-identity.swift",
+      "archive_path": "Performance-v46/Audit/check-rendered-identity.swift",
+      "bytes": 2166,
+      "sha256": "53643d5451c6bd57c563077afb08b13047b075d495042bc60b9504c2cdad26f9"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/Performance-v46/Audit/decoded-pixel-identity.json",
+      "archive_path": "Performance-v46/Audit/decoded-pixel-identity.json",
+      "bytes": 40893,
+      "sha256": "53277c890ddb2bb6b049485f5bb087a44de4c6668f471469ec0642725acce402"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/Performance-v46/Audit/final-app-process.txt",
+      "archive_path": "Performance-v46/Audit/final-app-process.txt",
+      "bytes": 128,
+      "sha256": "4c5d3cc8c1cc30b4a61215be1b583948c1eac79cc1b9a60e15ddb2167e95547c"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/Performance-v46/Audit/final-build.log",
+      "archive_path": "Performance-v46/Audit/final-build.log",
+      "bytes": 265,
+      "sha256": "17d696ac73fb61ab52e07aa4f2154915637d5f7296708b48c956637f7c85a728"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/Performance-v46/Audit/final-ui-build.log",
+      "archive_path": "Performance-v46/Audit/final-ui-build.log",
+      "bytes": 265,
+      "sha256": "5ebb339155a814c0613553f5cf79a11f62ee27f7f48adaf98733971c5de5dabd"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/Performance-v46/Audit/optimized-build.log",
+      "archive_path": "Performance-v46/Audit/optimized-build.log",
+      "bytes": 265,
+      "sha256": "5cb224fba6fde98069da85d406bbeecbed310e3ee11e0dc9f62546c819307647"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/Performance-v46/Audit/pixel-identity.log",
+      "archive_path": "Performance-v46/Audit/pixel-identity.log",
+      "bytes": 49,
+      "sha256": "a2b22e6a70b39e4604c6b65c166dcab2be11ea56a3a1b850686a51cfa18ce8c4"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/Performance-v46/Audit/round1-live-sample.txt",
+      "archive_path": "Performance-v46/Audit/round1-live-sample.txt",
+      "bytes": 394407,
+      "sha256": "595f2a74acdb449fcacbc84a31b97ebf67b079ed63f67cdbc3fdb0158ec60eae"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/Performance-v46/Audit/self-test-before-render-comparison.log",
+      "archive_path": "Performance-v46/Audit/self-test-before-render-comparison.log",
+      "bytes": 15477,
+      "sha256": "1fc2128d1d17ef0d540d685d87279ed96aea0abe67fda5748a78fe18310c826f"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/Performance-v46/Audit/self-test.log",
+      "archive_path": "Performance-v46/Audit/self-test.log",
+      "bytes": 63485,
+      "sha256": "b495c02e0ffe1c1d6eead43f83995ccbb2e97baa09755e04d5f9be9d139d34d7"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/Performance-v46/Audit/ui-review.json",
+      "archive_path": "Performance-v46/Audit/ui-review.json",
+      "bytes": 640,
+      "sha256": "01e73bab9ba165c5ff0e4e7d3cac5579f46adb4ed56aef4cfd9bb3295f693520"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/Performance-v46/Audit/validation-build.log",
+      "archive_path": "Performance-v46/Audit/validation-build.log",
+      "bytes": 265,
+      "sha256": "5c73a9e52667a4a1c4f71aa0517c342afdf0be81017740fdf3887bd5a9f988f0"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/Performance-v46/Audit/verify-decoded-pixels.swift",
+      "archive_path": "Performance-v46/Audit/verify-decoded-pixels.swift",
+      "bytes": 2551,
+      "sha256": "06e49f808af652c980b8228be1f7ee42dfb23a7310c220a7be7c576970ae675a"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/Performance-v46/Before/README.txt",
+      "archive_path": "Performance-v46/Before/README.txt",
+      "bytes": 31782,
+      "sha256": "fb125f626437d5c32856267b8496c83bdeabc0e0d0865c9aff0d9d22b82471ae"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/Performance-v46/Before/Settings.swift",
+      "archive_path": "Performance-v46/Before/Settings.swift",
+      "bytes": 23896,
+      "sha256": "216f1e14bcf13a736e2fc25f2b5429b05f42ae5ba471a6388f0933e4e677e54a"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/Performance-v46/README.txt",
+      "archive_path": "Performance-v46/README.txt",
+      "bytes": 3714,
+      "sha256": "da361ef6530b172f8a7f58c0016e98ce1c905876c7dfab347609be99c0ab1f58"
+    },
+    {
+      "kind": "supporting",
       "source": "Source/PinkRice-v36/README.txt",
       "archive_path": "PinkRice-v36/README.txt",
       "bytes": 556,
@@ -30185,8 +30381,8 @@
       "sha256": "8a42caa40e469a5ee00fa2b860d14756cc1fd73bc8fcf73332c50b87a92c9c3b"
     }
   ],
-  "updated_at": "2026-10-22T11:54:40.669026+00:00",
-  "latest_applied": "Source/NewFriends-v45",
+  "updated_at": "2026-10-22T23:50:49.260717+00:00",
+  "latest_applied": "Source/Performance-v46",
   "applied_directions": [
     "down-left",
     "down-right"
