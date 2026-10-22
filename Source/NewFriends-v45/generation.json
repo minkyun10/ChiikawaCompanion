@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-22",
+  "tool": "built-in image_gen",
+  "references": "References/Official/sources.json",
+  "identity": "Generated/*-sheet.png and Parts/*/*-t-pose-v38.png",
+  "prompts": [
+    "Prompts/kani.txt",
+    "Prompts/rakko-fix.txt",
+    "Prompts/rakko-right.txt",
+    "Prompts/rakko.txt",
+    "Prompts/shisa.txt"
+  ],
+  "outputs": [
+    "Generated/kani-sheet.png",
+    "Generated/rakko-draft.png",
+    "Generated/rakko-right.png",
+    "Generated/rakko-sheet.png",
+    "Generated/shisa-sheet.png"
+  ],
+  "motion": "Native AppKit rig, matched 24-frame left/right gait and local face regions",
+  "previewTiming": "character-motion.gif: 0.1 s per displayed frame; 24-frame walk 2.4 s; 12-frame actions 2.4 s. Fixed grid preview, not desktop translation."
+}

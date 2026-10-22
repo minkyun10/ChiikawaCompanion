@@ -1,0 +1,6 @@
+{
+  "oversizedFileCount": 0,
+  "credentialPatternFindingCount": 0,
+  "scope": "new nonignored text files; no credential files read",
+  "limitation": "Pattern scan, not a full security audit."
+}

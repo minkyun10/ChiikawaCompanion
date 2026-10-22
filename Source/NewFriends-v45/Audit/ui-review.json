@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-22",
+  "version": "0.22.0",
+  "build": 49,
+  "launch": "CUA application launch successful after package-only optional resource lookup fix",
+  "visibleAndWalking": [
+    "hachiware",
+    "chiikawa",
+    "usagi",
+    "kurimanju",
+    "momonga",
+    "rakko",
+    "shisa",
+    "kani"
+  ],
+  "observedEquipped": {
+    "rakko": "딸기 파르페",
+    "shisa": "라멘",
+    "kani": "헌책"
+  },
+  "menuActionsExecutedAndConfirmed": [
+    "파르페 먹기",
+    "라멘 서빙하기",
+    "책 읽기"
+  ],
+  "finalState": "Settings closed; app left running",
+  "automaticChecksPassed": 770,
+  "visualReview": [
+    "3 T-poses",
+    "8 directions each",
+    "7 allowed actions each",
+    "Rakko right-facing scar",
+    "Shisa body-attached paws",
+    "local facial regions",
+    "combined preview"
+  ]
+}

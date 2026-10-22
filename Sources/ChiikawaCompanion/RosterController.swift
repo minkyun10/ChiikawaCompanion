@@ -69,6 +69,7 @@ final class RosterCompanion {
             guard let self else { return }; self.status.voice = message; self.publish()
         }
         configure()
+        if catalog.clips.isEmpty { status.voice = "클릭하면 반응 문구를 보여줘요"; publish() }
     }
     func repairScreenCoordinates() {
         for (item, point) in world.ground { world.move(item, to: point, bounds: propFrame) }
@@ -118,7 +119,7 @@ final class RosterCompanion {
         action = selected; actionStarted = now; actionUntil = now.addingTimeInterval(selected.duration)
         queuedAction = nil
         world.requested = nil; itemTarget = nil
-        status.action = selected.title; publish()
+        status.action = selected == .keepsake ? friend.keepsakeActionTitle : selected.title; publish()
     }
     func stopAction() {
         action = nil; queuedAction = nil; actionUntil = .distantPast

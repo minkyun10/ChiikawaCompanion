@@ -5,11 +5,13 @@ import AppKit
 final class RosterNativeRig {
     let friend: Friend
     let bodies: [HachiwarePose: NSImage]
+    let rightBodies: [HachiwarePose: NSImage]
     let arm: NSImage
     let foot: NSImage
     let tail: NSImage?
     let expressions: [RosterAction: NSImage]
     let usagiFace: UsagiFace?
+    let newFace: NewFriendFace?
     let paper: NSColor
     let ink = NSColor(hex: 0x3A3025)
     var height: CGFloat { friend == .usagi ? 270 : 194 }
@@ -24,8 +26,16 @@ final class RosterNativeRig {
             guard let image = load(name) else { return nil }; bodies[pose] = image
         }
         guard let arm = load("arm"), let foot = load("foot") else { return nil }
+        var rightBodies: [HachiwarePose: NSImage] = [:]
+        if friend == .rakko {
+            for (pose,name) in [(HachiwarePose.side,"side"),(.frontDiagonal,"front-diagonal"),(.backDiagonal,"back-diagonal")] {
+                guard let image=load(name+"-right") else { return nil }
+                rightBodies[pose]=image
+            }
+        }
+        self.rightBodies=rightBodies
         var expressions: [RosterAction: NSImage] = [:]
-        for action in [RosterAction.laugh,.attack,.surprised,.sleep] where friend != .usagi && RosterAction.available(for: friend).contains(action) {
+        for action in [RosterAction.laugh,.attack,.surprised,.sleep] where friend != .usagi && !friend.isNewSingleItemFriend && RosterAction.available(for: friend).contains(action) {
             if let image = HachiwareSprites.assetURL(named: "\(friend.rawValue)-expression-\(action.rawValue)-v38").flatMap(NSImage.init(contentsOf:)) { expressions[action] = image }
         }
         self.tail = friend == .momonga ? load("tail") : nil
@@ -33,6 +43,7 @@ final class RosterNativeRig {
         let usagiFace = friend == .usagi ? UsagiFace(body: bodies[.front]!) : nil
         if friend == .usagi && usagiFace == nil { return nil }
         self.usagiFace = usagiFace
+        self.newFace = NewFriendFace(friend: friend, body: bodies[.front]!)
         self.friend = friend; self.bodies = bodies; self.arm = arm; self.foot = foot
         if let data = bodies[.front]!.tiffRepresentation, let rep = NSBitmapImageRep(data: data),
            let color = rep.colorAt(x: Int(Double(rep.pixelsWide)*0.48), y: Int(Double(rep.pixelsHigh)*0.82)),
@@ -64,7 +75,11 @@ final class RosterNativeRig {
             return NSPoint(x: right ? rect.maxX-8 : rect.minX+8,y: y+70)
         }
         let row = min(rep.pixelsHigh-1,max(0,Int((1-72/height)*CGFloat(rep.pixelsHigh))))
-        let xs = (0..<rep.pixelsWide).filter { (rep.colorAt(x: $0,y: row)?.alphaComponent ?? 0)>0.5 }
+        let xs = (0..<rep.pixelsWide).filter {
+            guard let color=rep.colorAt(x:$0,y:row), color.alphaComponent>0.5 else { return false }
+            // Shisa's orange mane and tail are in the same raster, but are not arm roots.
+            return friend != .shisa || (color.redComponent>0.9 && color.greenComponent>0.75 && color.blueComponent>0.5)
+        }
         let edge = right ? xs.last ?? rep.pixelsWide-1 : xs.first ?? 0
         return NSPoint(x: rect.minX+CGFloat(edge)/CGFloat(rep.pixelsWide)*rect.width+(right ? -4 : 4),y: y+72)
     }
@@ -116,6 +131,11 @@ final class RosterNativeRig {
     }
     func drawBody(_ action: RosterAction, y: CGFloat, phase: Double) {
         drawTail(.front,y:y,phase:phase)
+        if let newFace {
+            let rect=bodyRect(.front,y:y)
+            bodies[.front]!.draw(in:rect);newFace.draw(action,phase:phase,in:rect)
+            return
+        }
 
         if let usagiFace {
             let rect = bodyRect(.front, y: y)
@@ -135,7 +155,7 @@ final class RosterNativeRig {
         let h00 = 2*u*u*u-3*u*u+1, h10 = u*u*u-2*u*u+u, h01 = -2*u*u*u+3*u*u, h11 = u*u*u-u*u
         return (stride*CGFloat(h00+2*h10-h01+2*h11),37+13*CGFloat(pow(sin(.pi*u),2)),CGFloat(32-60*ease) * .pi/180)
     }
-    func walk(_ pose: HachiwarePose, phase: Double) -> NSBitmapImageRep {
+    func walk(_ pose: HachiwarePose, phase: Double, rightFacing: Bool = false) -> NSBitmapImageRep {
         let y = 44-4.2*CGFloat(sin(4 * .pi*phase)), rect = bodyRect(pose,y: y)
         let projection: CGVector = pose == .side ? CGVector(dx: 1,dy: 0)
             : pose == .front ? CGVector(dx: 0,dy: 0.25) : pose == .back ? CGVector(dx: 0,dy: -0.25)
@@ -149,12 +169,21 @@ final class RosterNativeRig {
                 limb(hip,ankle,width:12);drawFoot(x:x,y:yy,angle:p.2*(pose == .side ? 1:0.22));joins.append(limbPath(hip,ankle))
             }
             if pose != .back && pose != .backDiagonal { drawTail(pose,y:y,phase:phase) }
-            bodies[pose]!.draw(in:rect)
+            if rightFacing, let image=rightBodies[pose] {
+                // Pre-flip only the asymmetric artwork; the completed gait is mirrored below.
+                let context=NSGraphicsContext.current!.cgContext
+                context.saveGState();context.translateBy(x:rect.minX+rect.maxX,y:0);context.scaleBy(x:-1,y:1)
+                image.draw(in:rect);context.restoreGState()
+            } else { bodies[pose]!.draw(in:rect) }
             if pose == .back || pose == .backDiagonal { drawTail(pose,y:y,phase:phase) }
+            let context=NSGraphicsContext.current!.cgContext
+            context.saveGState()
+            if friend == .rakko { context.clip(to:NSRect(x:0,y:0,width:canvas.width,height:y+2)) }
             for join in joins {join.lineWidth=7;paper.setStroke();join.stroke()}
+            context.restoreGState()
             let swing = CGFloat(cos(2 * .pi*phase))*0.10
             let near = root(pose,y: y,right: false), far = root(pose,y: y,right: true)
-            if pose != .backDiagonal { paw(root: far,rotation: -swing,right: true) }
+            if pose != .backDiagonal && !(friend.isNewSingleItemFriend && pose == .side) { paw(root: far,rotation: -swing,right: true) }
             paw(root: near,rotation: swing,right: false)
         }
     }
@@ -203,6 +232,10 @@ final class RosterNativeRig {
             drawBody(action,y:y,phase:phase)
             let left = root(.front,y: y,right: false), right = root(.front,y: y,right: true)
             let wave = CGFloat(sin(2 * .pi*phase))
+            if friend.isNewSingleItemFriend {
+                drawNewFriendGesture(action,left:left,right:right,wave:wave,phase:phase)
+                return
+            }
             if friend == .usagi {
                 drawUsagiGesture(action, left: left, right: right, wave: wave, phase: phase)
                 return
@@ -235,6 +268,44 @@ final class RosterNativeRig {
                 }
             case .sleep: break
             }
+        }
+    }
+
+    private func drawNewFriendGesture(_ action: RosterAction, left: NSPoint, right: NSPoint,
+                                      wave: CGFloat, phase: Double) {
+        guard action == .keepsake else {
+            let lift: CGFloat = action == .wave ? 1.5 : action == .laugh || action == .wake ? 0.9 : 0.2
+            paw(root:left,rotation:-lift+wave*0.18,right:false)
+            paw(root:right,rotation:action == .wave ? 0.05:lift-wave*0.18,right:true)
+            return
+        }
+        switch friend {
+        case .rakko:
+            let scoop=CGFloat(max(0,sin(2 * .pi*phase)))
+            let cup=NSRect(x:137,y:61,width:47,height:76)
+            RosterItemArtwork.draw(.keepsake,friend:friend,in:cup)
+            let mouthRect=newFace!.destination(newFace!.areas[0],in:bodyRect(.front,y:44))
+            let mouth=NSPoint(x:mouthRect.midX,y:mouthRect.midY)
+            let tip=NSPoint(x:143+(mouth.x-143)*scoop,y:113+(mouth.y-113)*scoop)
+            let handle=NSPoint(x:tip.x-13,y:tip.y-25)
+            stroke([handle,tip],width:3,color:NSColor(hex:0x8F8582))
+            NSColor(hex:0xFFF2D6).setFill();let spoon=NSBezierPath(ovalIn:NSRect(x:tip.x-5,y:tip.y-3,width:10,height:7));spoon.fill();ink.setStroke();spoon.lineWidth=1.7;spoon.stroke()
+            limb(left,handle,width:13);limb(right,NSPoint(x:167,y:97),width:13)
+        case .shisa:
+            // Present the bowl forward and give a small serving bow.
+            let lift=3*CGFloat(sin(.pi*phase))
+            RosterItemArtwork.draw(.keepsake,friend:friend,in:NSRect(x:79,y:65+lift,width:98,height:72))
+            limb(left,NSPoint(x:89,y:94+lift),width:13);limb(right,NSPoint(x:166,y:94+lift),width:13)
+        case .kani:
+            RosterItemArtwork.draw(.keepsake,friend:friend,in:NSRect(x:83,y:61,width:90,height:78))
+            limb(left,NSPoint(x:91,y:92),width:13);limb(right,NSPoint(x:166,y:92),width:13)
+            // A narrow cream leaf turns over the stationary book, with the same body.
+            if phase > 0.28 && phase < 0.78 {
+                let t=CGFloat((phase-0.28)/0.5),width=34*abs(cos(.pi*t))
+                let leaf=NSBezierPath();leaf.move(to:NSPoint(x:128,y:78));leaf.line(to:NSPoint(x:128+(t<0.5 ? width:-width),y:86));leaf.line(to:NSPoint(x:128+(t<0.5 ? width:-width),y:128));leaf.line(to:NSPoint(x:128,y:120));leaf.close()
+                NSColor(hex:0xFFF2D8).setFill();leaf.fill();NSColor(hex:0xAD8886).setStroke();leaf.lineWidth=1.2;leaf.stroke()
+            }
+        default: break
         }
     }
 
@@ -297,7 +368,11 @@ final class RosterSprites {
         if !usesBundledAtlases {
         for (pose,left,right) in [(HachiwarePose.front,ChiikawaDirection.down,nil),(.back,.up,nil),(.side,.left,.right),(.frontDiagonal,.downLeft,.downRight),(.backDiagonal,.upLeft,.upRight)] as [(HachiwarePose,ChiikawaDirection,ChiikawaDirection?)] {
             let frames=(0..<24).map {rig.walk(pose,phase:Double($0)/24)}
-            walks[left]=frames.map(image);if let right {walks[right]=frames.map(mirrored)}
+            walks[left]=frames.map(image)
+            if let right {
+                let rightFrames=rig.rightBodies[pose] == nil ? frames : (0..<24).map {rig.walk(pose,phase:Double($0)/24,rightFacing:true)}
+                walks[right]=rightFrames.map(mirrored)
+            }
         }
         for action in RosterAction.available(for: friend) {actions[action]=(0..<12).map {image(rig.action(action,phase:Double($0)/12))}}
         }
@@ -388,6 +463,10 @@ enum RosterArtwork {
 }
 
 enum RosterItemArtwork {
+    private static let generatedItems: [Friend: NSImage] = Dictionary(uniqueKeysWithValues:
+        Friend.expansionOrder.filter(\.isNewSingleItemFriend).compactMap { friend in
+            HachiwareSprites.assetURL(named:"\(friend.rawValue)-rig-item-v38").flatMap(NSImage.init(contentsOf:)).map { (friend,$0) }
+        })
     static func flower(in rect: NSRect) {
         let c=NSGraphicsContext.current!.cgContext;c.saveGState();c.translateBy(x:rect.midX,y:rect.midY);c.scaleBy(x:rect.width/64,y:rect.height/64)
         for i in 0..<5 {
@@ -431,6 +510,11 @@ enum RosterItemArtwork {
     }
     static func draw(_ kind:RosterItemKind,friend:Friend,in rect:NSRect) {
         guard RosterItemKind.available(for: friend).contains(kind) else { return }
+        if kind == .keepsake, let image=generatedItems[friend] {
+            let scale=min(rect.width/image.size.width,rect.height/image.size.height)
+            image.draw(in:NSRect(x:rect.midX-image.size.width*scale/2,y:rect.midY-image.size.height*scale/2,width:image.size.width*scale,height:image.size.height*scale))
+            return
+        }
         switch kind {
         case .weapon:
             let context=NSGraphicsContext.current!.cgContext;context.saveGState()

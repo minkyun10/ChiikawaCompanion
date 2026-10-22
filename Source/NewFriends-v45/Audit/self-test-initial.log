@@ -1,0 +1,49 @@
+FAIL: the reviewed development roster is active
+PASS: 하치와레 regression fixture has visible armed pixels outside the old hover rectangle
+PASS: 하치와레 visible body and carried weapon outside the old inset start attack without a walking frame
+PASS: 하치와레 stable hover silhouette covers the actual body and spear in all twelve attack drawings
+PASS: 하치와레 armed hover covers rendered walking outlines in all eight directions
+PASS: 하치와레 attack fixture includes a spear outside the actor window
+PASS: 하치와레 six seconds on the extended weapon keep one uninterrupted attack clock and position
+PASS: 하치와레 a foreground window immediately releases armed hover
+PASS: 하치와레 an empty future swing area cannot start another attack
+PASS: 하치와레 returning to the visible body restarts attack
+PASS: 하치와레 leaving the whole silhouette resumes walking in one 60Hz update
+PASS: 하치와레 transparent expanded corners do not retain hover
+PASS: 치이카와 regression fixture has visible armed pixels outside the old hover rectangle
+PASS: 치이카와 visible body and carried weapon outside the old inset start attack without a walking frame
+PASS: 치이카와 stable hover silhouette covers the actual body and spear in all twelve attack drawings
+PASS: 치이카와 armed hover covers rendered walking outlines in all eight directions
+PASS: 치이카와 attack fixture includes a spear outside the actor window
+PASS: 치이카와 six seconds on the extended weapon keep one uninterrupted attack clock and position
+PASS: 치이카와 a foreground window immediately releases armed hover
+PASS: 치이카와 an empty future swing area cannot start another attack
+PASS: 치이카와 returning to the visible body restarts attack
+PASS: 치이카와 leaving the whole silhouette resumes walking in one 60Hz update
+PASS: 치이카와 transparent expanded corners do not retain hover
+PASS: 우사기 armed entry fixture uses an actual visible outline pixel
+PASS: 우사기 visible body and carried weapon outside the old inset start attack without a walking frame
+PASS: 우사기 stable hover silhouette covers the actual body and spear in all twelve attack drawings
+PASS: 우사기 armed hover covers rendered walking outlines in all eight directions
+PASS: 우사기 attack fixture includes a spear outside the actor window
+PASS: 우사기 six seconds on the extended weapon keep one uninterrupted attack clock and position
+PASS: 우사기 a foreground window immediately releases armed hover
+PASS: 우사기 an empty future swing area cannot start another attack
+PASS: 우사기 returning to the visible body restarts attack
+PASS: 우사기 leaving the whole silhouette resumes walking in one 60Hz update
+PASS: 우사기 transparent expanded corners do not retain hover
+PASS: armed pointer regression never plays click-only voices
+PASS: pointer stacking rejects foreground apps and hidden-space actors while allowing the actor and desktop behind it
+PASS: native hover visibility remains true when the actor changes its mouse-event transparency
+Native hover probe: actor=47037 cover=47069 hit=Optional(47069) coverVisible=true ignores=false activeSpace=true rawHit=47069 listed=true actorFrame=(654.0, 395.0, 132.0, 150.0) coverFrame=(708.0, 458.0, 24.0, 24.0) point=(720.0, 470.0)
+PASS: native foreground fixture receives the actual mouse-down hit test
+PASS: native pointer visibility rejects a small foreground window even if the rest of the character is visible
+PASS: native hover visibility recovers after uncovering without waiting for occlusion notifications
+PASS: native hover stays reachable when the actor buffer is transparent and the separate attack window paints its body
+PASS: desktop positions clamp to negative-coordinate screen
+PASS: transparent margins are click-through
+PASS: character body receives pointer
+PASS: character is above desktop icons
+PASS: character stays below normal app windows
+PASS: speech bubble stays on desktop, below app windows
+PASS: desktop character does not join full-screen overlays

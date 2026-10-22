@@ -62,8 +62,11 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         for friend in Friend.developmentRoster where friend.isExpansion {
             let entry = NSMenuItem(title: "\(friend.name)의 하루", action: nil, keyEquivalent: "")
             let sub = NSMenu()
-            let commands = RosterAction.selectable.map { ($0.title, "action:" + $0.rawValue) }
-                + [("집에 가서 자기", "home"), ("깨우기", "wake"), ("목소리 들어보기", "voice"), ("소리 멈추기", "mute"), ("동작 멈추기", "stop")]
+            var commands = RosterAction.selectable.map { ($0 == .keepsake ? friend.keepsakeActionTitle : $0.title, "action:" + $0.rawValue) }
+                + [("집에 가서 자기", "home"), ("깨우기", "wake"), ("동작 멈추기", "stop")]
+            if !RosterRecordingCatalog.catalog(for: friend).clips.isEmpty {
+                commands += [("목소리 들어보기", "voice"), ("소리 멈추기", "mute")]
+            }
             for (title, command) in commands {
                 let button = item(title, action: #selector(rosterCommand(_:)))
                 button.representedObject = [friend.rawValue, command]; sub.addItem(button)

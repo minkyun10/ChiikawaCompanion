@@ -29,8 +29,11 @@ final class HachiwareSprites {
     var isReady: Bool { HachiwarePose.allCases.allSatisfy { frames[$0.rawValue].count == $0.frameCount } }
 
     static func assetURL(named name: String) -> URL? {
-        Bundle.main.url(forResource: name, withExtension: "png")
-            ?? Bundle.module.url(forResource: name, withExtension: "png", subdirectory: "Resources")
+        let bundled = Bundle.main.url(forResource: name, withExtension: "png")
+        // Finder launches do not inherit the terminal's development-folder access.
+        // A packaged optional asset must stay absent instead of probing the checkout.
+        if Bundle.main.bundleURL.pathExtension == "app" { return bundled }
+        return bundled ?? Bundle.module.url(forResource: name, withExtension: "png", subdirectory: "Resources")
     }
 
     private init() {

@@ -85,7 +85,7 @@ final class DesktopFriendView: NSView {
         let menu = NSMenu()
         if friend.isExpansion {
             for action in RosterAction.selectable {
-                let entry = NSMenuItem(title: action.title, action: #selector(chooseRosterAction(_:)), keyEquivalent: "")
+                let entry = NSMenuItem(title: action == .keepsake ? friend.keepsakeActionTitle : action.title, action: #selector(chooseRosterAction(_:)), keyEquivalent: "")
                 entry.target = self; entry.representedObject = action.rawValue; menu.addItem(entry)
             }
             for (title, selector) in [("집으로 가서 자기", #selector(goHome)), ("동작 멈추기", #selector(stopDailyAction)),
@@ -451,7 +451,7 @@ final class DesktopController {
         for (index, actor) in actors.enumerated() {
             let size = actor.panel.frame.size
             let origin = RoamingMotion.target(in: visible, size: size,
-                                              xFraction: 0.18 + CGFloat(index) * 0.16, yFraction: 0.28)
+                                              xFraction: 0.08 + CGFloat(index) * 0.84 / CGFloat(max(1, Friend.developmentRoster.count - 1)), yFraction: 0.28)
             actor.panel.setFrameOrigin(origin)
             actor.armedHoverContact = nil; actor.wasHovered = false
             actor.motion.retarget()

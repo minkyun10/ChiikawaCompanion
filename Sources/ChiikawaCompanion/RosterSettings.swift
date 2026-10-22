@@ -40,7 +40,7 @@ struct RosterSettingsCard: View {
             HStack(spacing: 8) {
                 Menu("직접 동작 고르기") {
                     ForEach(RosterAction.selectable, id: \.rawValue) { action in
-                        Button(action.title) { state.onRosterCommand?(friend, .action(action)) }
+                        Button(action == .keepsake ? friend.keepsakeActionTitle : action.title) { state.onRosterCommand?(friend, .action(action)) }
                     }
                 }
                 Button("동작 멈추기") { state.onRosterCommand?(friend, .stopAction) }.disabled(!status.actionRunning)
@@ -48,6 +48,7 @@ struct RosterSettingsCard: View {
                 Text(status.action).foregroundStyle(.secondary)
             }.font(.system(size: 11))
             Divider()
+            if !RosterRecordingCatalog.catalog(for: friend).clips.isEmpty {
             HStack {
                 Toggle("클릭 목소리", isOn: binding(\.voice))
                 Button("목소리 들어보기") { state.onRosterCommand?(friend, .voicePreview) }
@@ -55,6 +56,10 @@ struct RosterSettingsCard: View {
             }.font(.system(size: 11))
             Text("클릭하면 \(friend.voiceActor) 성우 녹음 4개와 문구 10개 중 하나가 나와요.")
                 .font(.system(size: 10)).foregroundStyle(.secondary)
+            } else {
+                Text("클릭하면 창작 반응 문구 10개 중 하나를 보여줘요. 확인된 한국어 캐릭터 녹음은 아직 없어요.")
+                    .font(.system(size: 10)).foregroundStyle(.secondary)
+            }
             Text(status.voice).font(.system(size: 10)).foregroundStyle(.secondary)
             Text("소리는 클릭하거나 들어보기 버튼을 눌렀을 때만 나와요. 음량은 아래 목소리 설정을 함께 사용해요.")
                 .font(.system(size: 10)).foregroundStyle(.secondary)

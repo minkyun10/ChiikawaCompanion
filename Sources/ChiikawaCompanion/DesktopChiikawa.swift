@@ -20,7 +20,7 @@ extension DesktopController {
         actor.dismissBubble(); actor.motion.retarget()
         let index = Friend.developmentRoster.firstIndex(of: friend) ?? 0
         actor.panel.setFrameOrigin(RoamingMotion.target(in: screen.visibleFrame, size: actor.panel.frame.size,
-            xFraction: 0.18 + CGFloat(index) * 0.16, yFraction: 0.28))
+            xFraction: 0.08 + CGFloat(index) * 0.84 / CGFloat(max(1, Friend.developmentRoster.count - 1)), yFraction: 0.28))
     }
 
     func configureChiikawaItems() {

@@ -1,0 +1,50 @@
+[
+  {
+    "name" : "side-right",
+    "sha256" : "01d6bb9318efe3a3b93d2e93d048cb8a4c9bfdd20b5506e5d228dd7739038b30",
+    "sourceCell" : [
+      0,
+      0,
+      693,
+      756
+    ],
+    "trim" : [
+      89,
+      53,
+      589,
+      637
+    ]
+  },
+  {
+    "name" : "front-diagonal-right",
+    "sha256" : "3853b656ebecc9be81381733a30caced0c0dd079c9a9aeaa4d618702f73d0830",
+    "sourceCell" : [
+      693,
+      0,
+      693,
+      756
+    ],
+    "trim" : [
+      53,
+      54,
+      570,
+      632
+    ]
+  },
+  {
+    "name" : "back-diagonal-right",
+    "sha256" : "66d3675297009eb03c29df3eda74e93d38d3213d82a616814f81f7e98153f2eb",
+    "sourceCell" : [
+      1386,
+      0,
+      693,
+      756
+    ],
+    "trim" : [
+      35,
+      49,
+      566,
+      645
+    ]
+  }
+]

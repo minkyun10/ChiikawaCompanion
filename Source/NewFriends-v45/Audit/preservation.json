@@ -1,0 +1,58 @@
+{
+  "base": "2c7c7e6",
+  "existingResourcesIdentical": 104,
+  "existingExpansionAtlasesIdentical": 46,
+  "newAtlases": {
+    "rakko": [
+      "down-24.png",
+      "down-left-24.png",
+      "down-right-24.png",
+      "keepsake-12.png",
+      "laugh-12.png",
+      "left-24.png",
+      "pickup-12.png",
+      "right-24.png",
+      "sleep-12.png",
+      "surprised-12.png",
+      "up-24.png",
+      "up-left-24.png",
+      "up-right-24.png",
+      "wake-12.png",
+      "wave-12.png"
+    ],
+    "shisa": [
+      "down-24.png",
+      "down-left-24.png",
+      "down-right-24.png",
+      "keepsake-12.png",
+      "laugh-12.png",
+      "left-24.png",
+      "pickup-12.png",
+      "right-24.png",
+      "sleep-12.png",
+      "surprised-12.png",
+      "up-24.png",
+      "up-left-24.png",
+      "up-right-24.png",
+      "wake-12.png",
+      "wave-12.png"
+    ],
+    "kani": [
+      "down-24.png",
+      "down-left-24.png",
+      "down-right-24.png",
+      "keepsake-12.png",
+      "laugh-12.png",
+      "left-24.png",
+      "pickup-12.png",
+      "right-24.png",
+      "sleep-12.png",
+      "surprised-12.png",
+      "up-24.png",
+      "up-left-24.png",
+      "up-right-24.png",
+      "wake-12.png",
+      "wave-12.png"
+    ]
+  }
+}

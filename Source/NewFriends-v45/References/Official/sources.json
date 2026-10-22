@@ -1,0 +1,45 @@
+[
+  {
+    "file": "characters.png",
+    "url": "https://www.anime-chiikawa.jp/images/characters/img_charapage.png",
+    "page": "https://www.anime-chiikawa.jp/chara.html",
+    "sha256": "856b8b0e181c4a1c2a826816ed0b19eaad271fb580e76c5b21273885ec0ff07e",
+    "verified": "2026-10-22"
+  },
+  {
+    "file": "rakko-dessert.jpg",
+    "url": "https://chiikawamarket.jp/cdn/shop/files/4571609373049_1_f166946e-6f82-4b88-8589-4120af73d3d8.jpg?v=1752647934",
+    "page": "https://chiikawamarket.jp/products/4571609373049",
+    "sha256": "b91b517aa55c212e177ee7bcf36f1ff6d72f0c63519857e71b36317bd62f6d89",
+    "verified": "2026-10-22"
+  },
+  {
+    "file": "kani-book.jpg",
+    "url": "https://chiikawamarket.jp/cdn/shop/files/4571609394563_1.jpg?v=1773384191",
+    "page": "https://chiikawamarket.jp/products/4571609394563",
+    "sha256": "49c1091220e24bcaaad453b2341711139ab2a564bcd9051bb1ff4164f9a5ae98",
+    "verified": "2026-10-22"
+  },
+  {
+    "file": "4571609371236.html",
+    "url": "https://chiikawamarket.jp/products/4571609371236",
+    "page": "https://chiikawamarket.jp/products/4571609371236",
+    "sha256": "d9911dacb6e83c6e6ad45f68a3bb6f7f03484e38fcca06d3d323c71c5bff637f",
+    "verified": "2026-10-22"
+  },
+  {
+    "file": "shisa-ramen.jpg",
+    "url": "https://chiikawamarket.jp/cdn/shop/files/4571609371236_1.jpg?v=1760527035",
+    "page": "https://chiikawamarket.jp/products/4571609371236",
+    "sha256": "93ab34772e38f696c245224df01e6ae4cfcbff07e371c1deabd055b0d661b302",
+    "verified": "2026-10-22"
+  },
+  {
+    "file": "main.js",
+    "url": "https://www.anime-chiikawa.jp/js/main.js",
+    "page": "https://www.anime-chiikawa.jp/chara.html",
+    "verified": "2026-10-22",
+    "sha256": "bb1c184a5925948c4d54b0eaf9237339f856313cfd4d44777a3f6dd06ced1695",
+    "notes": "Official character text: Shisa is a ramen-shop assistant; Furuhonya sells used books and wears the crab headband received from Momonga."
+  }
+]

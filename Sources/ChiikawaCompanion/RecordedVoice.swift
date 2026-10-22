@@ -38,8 +38,9 @@ struct RecordingCatalog: Decodable {
     }
     static func resourceURL(file: String) -> URL? {
         guard safeFile(file) else { return nil }
-        return Bundle.main.resourceURL?.appendingPathComponent("Voice").appendingPathComponent(file).existingFile
-            ?? Bundle.module.url(forResource: file, withExtension: nil, subdirectory: "Resources/Voice")
+        let bundled = Bundle.main.resourceURL?.appendingPathComponent("Voice").appendingPathComponent(file).existingFile
+        if Bundle.main.bundleURL.pathExtension == "app" { return bundled }
+        return bundled ?? Bundle.module.url(forResource: file, withExtension: nil, subdirectory: "Resources/Voice")
     }
     func choose(excluding previous: String? = nil) -> RecordedLine? {
         let candidates = clips.filter { $0.id != previous }

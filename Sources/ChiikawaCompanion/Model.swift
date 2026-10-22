@@ -2,8 +2,8 @@ import AppKit
 import Combine
 
 enum Friend: String, CaseIterable, Codable, Identifiable {
-    case chiikawa, hachiware, usagi, momonga, kurimanju
-    static let developmentRoster: [Friend] = [.hachiware, .chiikawa, .usagi, .kurimanju, .momonga]
+    case chiikawa, hachiware, usagi, momonga, kurimanju, rakko, shisa, kani
+    static let developmentRoster: [Friend] = [.hachiware, .chiikawa, .usagi, .kurimanju, .momonga, .rakko, .shisa, .kani]
     static let hachiwareClickQuotes = [
         "어떻게든 돼라!",
         "추억은… 계속… 있는 거니까.",
@@ -24,6 +24,9 @@ enum Friend: String, CaseIterable, Codable, Identifiable {
         case .usagi: return "우사기"
         case .momonga: return "모몽가"
         case .kurimanju: return "쿠리만쥬"
+        case .rakko: return "랏코"
+        case .shisa: return "시사"
+        case .kani: return "카니"
         }
     }
     var greeting: String {
@@ -33,6 +36,9 @@ enum Friend: String, CaseIterable, Codable, Identifiable {
         case .usagi: return "우라! 야하!"
         case .momonga: return "나 좀 봐줘!"
         case .kurimanju: return "잠깐 쉬어 가자."
+        case .rakko: return "달콤한 휴식이군."
+        case .shisa: return "어서 오세요!"
+        case .kani: return "같이 읽을래?"
         }
     }
     var color: NSColor {
@@ -42,6 +48,9 @@ enum Friend: String, CaseIterable, Codable, Identifiable {
         case .usagi: return NSColor(hex: 0xE8C871)
         case .momonga: return NSColor(hex: 0xA7B8D9)
         case .kurimanju: return NSColor(hex: 0xBDA38B)
+        case .rakko: return NSColor(hex: 0xD9BB7C)
+        case .shisa: return NSColor(hex: 0xE6A064)
+        case .kani: return NSColor(hex: 0xE8A7B6)
         }
     }
 }

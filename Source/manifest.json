@@ -1,10 +1,10 @@
 {
   "created_at": "2026-10-16T12:08:58.617148+00:00",
   "operation": "copy; originals preserved",
-  "image_file_count": 3303,
-  "unique_image_content_count": 1817,
-  "supporting_file_count": 688,
-  "image_bytes": 970204100,
+  "image_file_count": 3588,
+  "unique_image_content_count": 1913,
+  "supporting_file_count": 723,
+  "image_bytes": 1088419369,
   "symmetric_walk_runtime_applied": true,
   "files": [
     {
@@ -13407,6 +13407,13 @@
     },
     {
       "kind": "image",
+      "source": "Source/GeneratedOriginals/exec-37c901a9-2bfc-4815-baff-d38150629b41.png",
+      "archive_path": "GeneratedOriginals/exec-37c901a9-2bfc-4815-baff-d38150629b41.png",
+      "bytes": 1020377,
+      "sha256": "39410c15d720824776541042086846deaa8936fc905778d26635b6f53ed0013d"
+    },
+    {
+      "kind": "image",
       "source": "Source/GeneratedOriginals/exec-38a4ad71-c701-4ba7-a9a1-bb2c2d251781.png",
       "archive_path": "GeneratedOriginals/exec-38a4ad71-c701-4ba7-a9a1-bb2c2d251781.png",
       "bytes": 1247640,
@@ -13428,6 +13435,13 @@
     },
     {
       "kind": "image",
+      "source": "Source/GeneratedOriginals/exec-44e1ed2b-2b1e-4ff4-84fa-c062e68f0abd.png",
+      "archive_path": "GeneratedOriginals/exec-44e1ed2b-2b1e-4ff4-84fa-c062e68f0abd.png",
+      "bytes": 1100430,
+      "sha256": "485b253bae7e2bddd2941acc5c5363fe18646e19f78b2ca1b61e122321a0a2cf"
+    },
+    {
+      "kind": "image",
       "source": "Source/GeneratedOriginals/exec-46c66600-880a-4b48-ac28-d6b40a617dae.png",
       "archive_path": "GeneratedOriginals/exec-46c66600-880a-4b48-ac28-d6b40a617dae.png",
       "bytes": 1273671,
@@ -13446,6 +13460,27 @@
       "archive_path": "GeneratedOriginals/exec-52d0eb28-52de-4c05-aabb-efa305834fda.png",
       "bytes": 1563760,
       "sha256": "70c69248eee0b85f9a3823e6f28447c0de02353a95b54d064d16fc9902672384"
+    },
+    {
+      "kind": "image",
+      "source": "Source/GeneratedOriginals/exec-57f5cb6a-dcd4-47cd-abc2-4241dfec0d13.png",
+      "archive_path": "GeneratedOriginals/exec-57f5cb6a-dcd4-47cd-abc2-4241dfec0d13.png",
+      "bytes": 1176035,
+      "sha256": "2edcb91331b0ce505c1370c740f49be2a263c5662921259f97651faad1a8f488"
+    },
+    {
+      "kind": "image",
+      "source": "Source/GeneratedOriginals/exec-5f89939b-31e2-4597-9fbf-5fc301408189.png",
+      "archive_path": "GeneratedOriginals/exec-5f89939b-31e2-4597-9fbf-5fc301408189.png",
+      "bytes": 1106955,
+      "sha256": "9ceb51603df5893e21cc38fa2c1900fb95eeca75bafc3b032c5e5d75e4945fc0"
+    },
+    {
+      "kind": "image",
+      "source": "Source/GeneratedOriginals/exec-6c4560e0-09fa-4c32-8aa2-c4c390b01e29.png",
+      "archive_path": "GeneratedOriginals/exec-6c4560e0-09fa-4c32-8aa2-c4c390b01e29.png",
+      "bytes": 1190732,
+      "sha256": "69e2678634ee567f20893a0f4ad24931479ac90bae454341bfd1d4f0357a89d3"
     },
     {
       "kind": "image",
@@ -20330,6 +20365,937 @@
     },
     {
       "kind": "supporting",
+      "source": "Source/NewFriends-v45/Audit/build-before-voice-check-update.log",
+      "archive_path": "NewFriends-v45/Audit/build-before-voice-check-update.log",
+      "bytes": 522,
+      "sha256": "9679d6dfb9f67b8325188ac815409cdd6f8f6c2bec95ac6680008050435cafde"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/NewFriends-v45/Audit/build-initial.log",
+      "archive_path": "NewFriends-v45/Audit/build-initial.log",
+      "bytes": 546,
+      "sha256": "1f9775a667be58a80abac310ff753f81490ac113e1662880f70fb58d9d324ad5"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/NewFriends-v45/Audit/build.log",
+      "archive_path": "NewFriends-v45/Audit/build.log",
+      "bytes": 546,
+      "sha256": "25d0021c51704a087db45f0a31fb6f9fc398a58ce4aa008fd5f75b529bb738d6"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/NewFriends-v45/Audit/compile.log",
+      "archive_path": "NewFriends-v45/Audit/compile.log",
+      "bytes": 265,
+      "sha256": "247a653d85cc597c7661c87ceb3edf6136f28a555673270f4894787d737e4eef"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/NewFriends-v45/Audit/launch-fix-build.log",
+      "archive_path": "NewFriends-v45/Audit/launch-fix-build.log",
+      "bytes": 265,
+      "sha256": "f6f88b87ff1d4c378d9bca04b3e08c84df79d8bf7a08cb5ddc3ff799d4509777"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/NewFriends-v45/Audit/launch-sample.txt",
+      "archive_path": "NewFriends-v45/Audit/launch-sample.txt",
+      "bytes": 108500,
+      "sha256": "a3684354291d90c967e9a04056e803a219ec0707fabf6e3e793a180a07e4983b"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/NewFriends-v45/Audit/prepublish.json",
+      "archive_path": "NewFriends-v45/Audit/prepublish.json",
+      "bytes": 194,
+      "sha256": "a3ab9cb5a3b57f746c7d84b9148d0b33e8dea32b3a554a92a5c54d9b4738a964"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/NewFriends-v45/Audit/preservation.json",
+      "archive_path": "NewFriends-v45/Audit/preservation.json",
+      "bytes": 1223,
+      "sha256": "65a78b261fd3c6973c5a8a6dff48e83b54c25d6473a1d43f51b4cee83ce9e503"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/NewFriends-v45/Audit/review.log",
+      "archive_path": "NewFriends-v45/Audit/review.log",
+      "bytes": 63,
+      "sha256": "ffab3cc8d76f3071b15028cbe4b074dc6af809d30ce0b1c31baa9a2593d105e9"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/NewFriends-v45/Audit/self-test-before-launch-fix.log",
+      "archive_path": "NewFriends-v45/Audit/self-test-before-launch-fix.log",
+      "bytes": 60852,
+      "sha256": "0fd1866f7ec4398814aba26aa510bb15ce40b5c0aa54de3f8f901d074de30788"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/NewFriends-v45/Audit/self-test-before-voice-check-update.log",
+      "archive_path": "NewFriends-v45/Audit/self-test-before-voice-check-update.log",
+      "bytes": 56627,
+      "sha256": "5f08cb76af8cebac95b954b53b3db3a7b0a32caea1a822c12d00954b23cc229c"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/NewFriends-v45/Audit/self-test-initial.log",
+      "archive_path": "NewFriends-v45/Audit/self-test-initial.log",
+      "bytes": 4072,
+      "sha256": "8af3740bef0923b12134106b25b9b9c5c8300d3dddfcad4aba1e7711db1d8a98"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/NewFriends-v45/Audit/self-test.log",
+      "archive_path": "NewFriends-v45/Audit/self-test.log",
+      "bytes": 61020,
+      "sha256": "a822bc7dafe3a6a6429ff342093fb00a2d0edced5b0a03e1b050ba2acddfbc94"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/NewFriends-v45/Audit/ui-review.json",
+      "archive_path": "NewFriends-v45/Audit/ui-review.json",
+      "bytes": 821,
+      "sha256": "e88611c901daf4bc760fdc6f50ff68bb66f9209d61aa24f58ab89b4d3c81cdec"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/NewFriends-v45/Audit/verify-preservation.py",
+      "archive_path": "NewFriends-v45/Audit/verify-preservation.py",
+      "bytes": 1535,
+      "sha256": "a4997fa658a4b506b6ecd5d04cc3224a2f3d7afce79dc3997aced268b26c4ef3"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/NewFriends-v45/ExtractRig.swift",
+      "archive_path": "NewFriends-v45/ExtractRig.swift",
+      "bytes": 2843,
+      "sha256": "4e890fa1f68044bd4fe3f40688a7f981b447af57237144aab9d23a55090aa194"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/NewFriends-v45/ExtractRightRig.swift",
+      "archive_path": "NewFriends-v45/ExtractRightRig.swift",
+      "bytes": 2722,
+      "sha256": "7d207571598bd0641c3fe1c43f42fafb30a711fb6fc4abb6d09287c5073c422b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Final/character-motion.gif",
+      "archive_path": "NewFriends-v45/Final/character-motion.gif",
+      "bytes": 1208224,
+      "sha256": "ed472cfdab2f6881e60c119bb82a93a05e7c9a41a57b087b725c20bc85e37358"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Final/character-preview.png",
+      "archive_path": "NewFriends-v45/Final/character-preview.png",
+      "bytes": 497452,
+      "sha256": "6f8134314f7de5b9d4f8056e5616bf101f19edba338f1a43eccae91037bb7b94"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Final/kani/actions-preview.png",
+      "archive_path": "NewFriends-v45/Final/kani/actions-preview.png",
+      "bytes": 233379,
+      "sha256": "bf593e807bebc23b6a59f86b4f6400b68531b6e0014f88ada34721ad036aee53"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Final/kani/down-24.png",
+      "archive_path": "NewFriends-v45/Final/kani/down-24.png",
+      "bytes": 894590,
+      "sha256": "aa0a79427c5bcaa6755212b45704ba97b346ca713f26fc33cfd921d5ab21d239"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Final/kani/down-left-24.png",
+      "archive_path": "NewFriends-v45/Final/kani/down-left-24.png",
+      "bytes": 805608,
+      "sha256": "cc77d9d2d13c7c52513fae3e3d895c7a29468bb3d09e899cf8196f3327dd907d"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Final/kani/down-right-24.png",
+      "archive_path": "NewFriends-v45/Final/kani/down-right-24.png",
+      "bytes": 807770,
+      "sha256": "f4ac484079a904e88415bb7ecd1f6079c99b06de62c571514a09463def756a59"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Final/kani/eight-directions.gif",
+      "archive_path": "NewFriends-v45/Final/kani/eight-directions.gif",
+      "bytes": 1424450,
+      "sha256": "6990ad2f5b58b4addb0bbda50902b94ab3b83d66e3dac5cdd06532bb940c5975"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Final/kani/eight-directions.png",
+      "archive_path": "NewFriends-v45/Final/kani/eight-directions.png",
+      "bytes": 268182,
+      "sha256": "1e283b001d3130845430d1812cc60a0c73d0b877af91e18c3e84f78ab1f6d21b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Final/kani/keepsake-12.png",
+      "archive_path": "NewFriends-v45/Final/kani/keepsake-12.png",
+      "bytes": 168358,
+      "sha256": "0008c01f096ffbaa086efc960214d4ceed29d4b14256283cc3022b39352a5601"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Final/kani/laugh-12.png",
+      "archive_path": "NewFriends-v45/Final/kani/laugh-12.png",
+      "bytes": 157461,
+      "sha256": "a98fe6b5611fbcd28f8ef949ad32c4d1a227bfc405f7922d25ac678f5c889182"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Final/kani/left-24.png",
+      "archive_path": "NewFriends-v45/Final/kani/left-24.png",
+      "bytes": 639082,
+      "sha256": "f877a59bffbc4e9140726960b3a4c7d7af636d35399a324519078d61177dab8f"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Final/kani/pickup-12.png",
+      "archive_path": "NewFriends-v45/Final/kani/pickup-12.png",
+      "bytes": 537953,
+      "sha256": "93e7ef03a216eddbcf322e7e2c4e030e80915bc2854131be40563840b78936de"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Final/kani/right-24.png",
+      "archive_path": "NewFriends-v45/Final/kani/right-24.png",
+      "bytes": 649951,
+      "sha256": "07e92c45dd8ee02683b404b19c1f42b463fda43b6889ba70a51a91fccabf94e8"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Final/kani/sleep-12.png",
+      "archive_path": "NewFriends-v45/Final/kani/sleep-12.png",
+      "bytes": 67602,
+      "sha256": "f589de57d8e7a751b35a77278ef2da3123904d6cc3e676949ca568a6f431f5de"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Final/kani/surprised-12.png",
+      "archive_path": "NewFriends-v45/Final/kani/surprised-12.png",
+      "bytes": 156372,
+      "sha256": "a4951b5c1687739464441e233641ab4c295dc182d0331b1e49a78c396c96bf4a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Final/kani/up-24.png",
+      "archive_path": "NewFriends-v45/Final/kani/up-24.png",
+      "bytes": 750074,
+      "sha256": "f688016dd17c0e842474c6627fa803ffe103302324975a7ef8310473851f5a9e"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Final/kani/up-left-24.png",
+      "archive_path": "NewFriends-v45/Final/kani/up-left-24.png",
+      "bytes": 695830,
+      "sha256": "171d3a79f5a7cc372b379794a2f60a1b7d1ce1d543bad55bd6f9ed23981b309c"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Final/kani/up-right-24.png",
+      "archive_path": "NewFriends-v45/Final/kani/up-right-24.png",
+      "bytes": 683718,
+      "sha256": "9c371af4add331bde1dfe169fe4537028cc331c40e7932602b3679c6f75d4a80"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Final/kani/wake-12.png",
+      "archive_path": "NewFriends-v45/Final/kani/wake-12.png",
+      "bytes": 409045,
+      "sha256": "f9f22c81a60cb689ab8a88e95f327bf27b6f9dd3c794eb88357918455f8bcc2c"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Final/kani/wave-12.png",
+      "archive_path": "NewFriends-v45/Final/kani/wave-12.png",
+      "bytes": 154225,
+      "sha256": "0ca79128ecb29668bc24fce49cd9a0f08a881b7603f28cd52b822a9e61de4839"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Final/kani-t-pose.png",
+      "archive_path": "NewFriends-v45/Final/kani-t-pose.png",
+      "bytes": 165214,
+      "sha256": "4d8d7ce3e67bc655de94c66f0deed3a3dee078574391a59c8d5c23214d8dc208"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Final/rakko/actions-preview.png",
+      "archive_path": "NewFriends-v45/Final/rakko/actions-preview.png",
+      "bytes": 253297,
+      "sha256": "3c460ddae106f94cbfe926ad779a99775717688bb6c53cdbb2cba8718f027bda"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Final/rakko/down-24.png",
+      "archive_path": "NewFriends-v45/Final/rakko/down-24.png",
+      "bytes": 893102,
+      "sha256": "2598799b06366444294943739d086c2bb037bc5534d769cc203a55fe91cf83d5"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Final/rakko/down-left-24.png",
+      "archive_path": "NewFriends-v45/Final/rakko/down-left-24.png",
+      "bytes": 893537,
+      "sha256": "34f3f16623ed354ca1c8dda7e87cf5304fae3d916f387cdc7088800bdb13c394"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Final/rakko/down-right-24.png",
+      "archive_path": "NewFriends-v45/Final/rakko/down-right-24.png",
+      "bytes": 821466,
+      "sha256": "312d594491bdede5939e56859b04a3951a0ca8d309968e05c05c3455e400f05c"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Final/rakko/eight-directions.gif",
+      "archive_path": "NewFriends-v45/Final/rakko/eight-directions.gif",
+      "bytes": 1506041,
+      "sha256": "542f186e9217e56e45d2fa791e5ea1ae15f99bced7b577bce6ee5fde2b7a5b47"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Final/rakko/eight-directions.png",
+      "archive_path": "NewFriends-v45/Final/rakko/eight-directions.png",
+      "bytes": 308489,
+      "sha256": "8c8e8700992fe9fbbb679dac62cb137cd6587382a236fd51cb7ffe5f86299f04"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Final/rakko/keepsake-12.png",
+      "archive_path": "NewFriends-v45/Final/rakko/keepsake-12.png",
+      "bytes": 175974,
+      "sha256": "6d6022b8d640733daa500de820c6f52c39cbd0643e01b191d85bbc673b2c9b4c"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Final/rakko/laugh-12.png",
+      "archive_path": "NewFriends-v45/Final/rakko/laugh-12.png",
+      "bytes": 169146,
+      "sha256": "21c90a366f53b8112eadb308ae8800d849bbda4c250f3db88cf72097e3d61072"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Final/rakko/left-24.png",
+      "archive_path": "NewFriends-v45/Final/rakko/left-24.png",
+      "bytes": 747960,
+      "sha256": "914982cf4dd8afeb3c5d162e2dd2cd06be4452ff89348f7c9e979c1a217b3b4c"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Final/rakko/pickup-12.png",
+      "archive_path": "NewFriends-v45/Final/rakko/pickup-12.png",
+      "bytes": 474378,
+      "sha256": "55a1fcff65d325939ad6ca8113816cffa1a803679ae222d1395d4693fc0407b8"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Final/rakko/right-24.png",
+      "archive_path": "NewFriends-v45/Final/rakko/right-24.png",
+      "bytes": 732987,
+      "sha256": "9d6715514e5afab01dbe73346069b0a6d67b447b4c5736b7d82af5d4b190c5de"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Final/rakko/sleep-12.png",
+      "archive_path": "NewFriends-v45/Final/rakko/sleep-12.png",
+      "bytes": 71528,
+      "sha256": "82168d8d058bfad0f1fff84d23873bb18b200776b4a1744a9388e68a51aa19f6"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Final/rakko/surprised-12.png",
+      "archive_path": "NewFriends-v45/Final/rakko/surprised-12.png",
+      "bytes": 167792,
+      "sha256": "ebd4309b6d6c12ffe9bfae62b33b9fd465358af40ae3e4392a66485e7029a814"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Final/rakko/up-24.png",
+      "archive_path": "NewFriends-v45/Final/rakko/up-24.png",
+      "bytes": 790351,
+      "sha256": "fc7f11d28e94994cce9edea1b0b1976de5e0808f9343dc70fd955cc7d82816dc"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Final/rakko/up-left-24.png",
+      "archive_path": "NewFriends-v45/Final/rakko/up-left-24.png",
+      "bytes": 751416,
+      "sha256": "57303bdc5a7fb02c3437a4df9b6d1048d7182d9e55427d8e4497d5d95ae02c88"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Final/rakko/up-right-24.png",
+      "archive_path": "NewFriends-v45/Final/rakko/up-right-24.png",
+      "bytes": 727317,
+      "sha256": "a00b2e828dc39dd9ccc221f8693bf633779bb5a5179c8fb8297891264ce4d6e0"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Final/rakko/wake-12.png",
+      "archive_path": "NewFriends-v45/Final/rakko/wake-12.png",
+      "bytes": 368109,
+      "sha256": "f27882af8ad97c0f749d2af79d7d9cb1c3ec488f18dc0ec81f02c63f60bc1a01"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Final/rakko/wave-12.png",
+      "archive_path": "NewFriends-v45/Final/rakko/wave-12.png",
+      "bytes": 165126,
+      "sha256": "976cdcdc74ff0baa0832a89dbc14729399ff2ce8f195e7ebf7293928a8e02255"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Final/rakko-t-pose.png",
+      "archive_path": "NewFriends-v45/Final/rakko-t-pose.png",
+      "bytes": 214692,
+      "sha256": "31013054531087820e60cee271720be4dfa403955ab553f64c143f01354a6943"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Final/shisa/actions-preview.png",
+      "archive_path": "NewFriends-v45/Final/shisa/actions-preview.png",
+      "bytes": 277007,
+      "sha256": "e6d562d1914ce2b341b1e56da7786816ecda71e98ce4d9cdfe9b67c0496fa6df"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Final/shisa/down-24.png",
+      "archive_path": "NewFriends-v45/Final/shisa/down-24.png",
+      "bytes": 956488,
+      "sha256": "c0ef615f3affb9a4e520fb2f63f09af52d69e7cb6bcf8ba44827cb5e6188d293"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Final/shisa/down-left-24.png",
+      "archive_path": "NewFriends-v45/Final/shisa/down-left-24.png",
+      "bytes": 952592,
+      "sha256": "f1a39fc3cc454544d57ec6b504404cacf3e5f4049ec922a1eaaa01595da57eb5"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Final/shisa/down-right-24.png",
+      "archive_path": "NewFriends-v45/Final/shisa/down-right-24.png",
+      "bytes": 942142,
+      "sha256": "1cd40b8244088f5ad840955e6da364a026d65a5b5380fe392f953d5340319c22"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Final/shisa/eight-directions.gif",
+      "archive_path": "NewFriends-v45/Final/shisa/eight-directions.gif",
+      "bytes": 1575473,
+      "sha256": "4c3c63da2013b4f5b6da54503c86427be3e30aaa48e3b5373917c29972802112"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Final/shisa/eight-directions.png",
+      "archive_path": "NewFriends-v45/Final/shisa/eight-directions.png",
+      "bytes": 330497,
+      "sha256": "25d8e19f40aa14762c3853b024c5c49da375b405f1af5d09fb2e589393b7de99"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Final/shisa/keepsake-12.png",
+      "archive_path": "NewFriends-v45/Final/shisa/keepsake-12.png",
+      "bytes": 330189,
+      "sha256": "f7cb8b3bc0eb14afc5461e9bda77360966ebfb4cad8538a6220d3b7f3de64e9b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Final/shisa/laugh-12.png",
+      "archive_path": "NewFriends-v45/Final/shisa/laugh-12.png",
+      "bytes": 181976,
+      "sha256": "ddd4d70feb538937f4c2f6fe8b08d030ed741cc68278953b3cf7980b29f17fe4"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Final/shisa/left-24.png",
+      "archive_path": "NewFriends-v45/Final/shisa/left-24.png",
+      "bytes": 817230,
+      "sha256": "a13f518cdc3021850e39de8d6af208f99a3b9ea7825c540a07bbe864367457ff"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Final/shisa/pickup-12.png",
+      "archive_path": "NewFriends-v45/Final/shisa/pickup-12.png",
+      "bytes": 527841,
+      "sha256": "ff403f4a1d945a0e4f9922c9bcec37185ff05560770b28a0d8182533b9d9fa93"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Final/shisa/right-24.png",
+      "archive_path": "NewFriends-v45/Final/shisa/right-24.png",
+      "bytes": 821692,
+      "sha256": "f70352940097a41a6d1d3d7ea94421fb220bcf7bdf65ae78fb65fa36429b8e07"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Final/shisa/sleep-12.png",
+      "archive_path": "NewFriends-v45/Final/shisa/sleep-12.png",
+      "bytes": 77427,
+      "sha256": "8fa3f06fe80c5ae1a776a770931469d1113292d78104ae78615b3d3978264e4b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Final/shisa/surprised-12.png",
+      "archive_path": "NewFriends-v45/Final/shisa/surprised-12.png",
+      "bytes": 182269,
+      "sha256": "2bd3ebaba2160b4b9b9c42914b29c6fe458e204d7cf28f18a2cb5e03f84bfc51"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Final/shisa/up-24.png",
+      "archive_path": "NewFriends-v45/Final/shisa/up-24.png",
+      "bytes": 888040,
+      "sha256": "863c4241177761c857e19fd16bb59ef85c518ec667b503e9c14ff9e4d61062b1"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Final/shisa/up-left-24.png",
+      "archive_path": "NewFriends-v45/Final/shisa/up-left-24.png",
+      "bytes": 835348,
+      "sha256": "3bb74d06b35ab7c19e5006010cb2b05e716c91f6b3491d12c365f31929ecbd7b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Final/shisa/up-right-24.png",
+      "archive_path": "NewFriends-v45/Final/shisa/up-right-24.png",
+      "bytes": 827857,
+      "sha256": "41c0410d1aa9dac1591d8f478d91b125ea82e26e33f7bd312e117a39471c340c"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Final/shisa/wake-12.png",
+      "archive_path": "NewFriends-v45/Final/shisa/wake-12.png",
+      "bytes": 408319,
+      "sha256": "bf347acfb63ec05f982c77cd2ba9c82c90108eeda1ac02636ecb05998d142e15"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Final/shisa/wave-12.png",
+      "archive_path": "NewFriends-v45/Final/shisa/wave-12.png",
+      "bytes": 180564,
+      "sha256": "28a6f94c95ad3a5ac7c0fd159a1dffb5653830796e1169aa024e8b135f8edac3"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Final/shisa-t-pose.png",
+      "archive_path": "NewFriends-v45/Final/shisa-t-pose.png",
+      "bytes": 184542,
+      "sha256": "5bd08cc8cddedf751237ffda0378e359136b3d6e09ad9e28483dceed4fbf3593"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Generated/kani-sheet.png",
+      "archive_path": "NewFriends-v45/Generated/kani-sheet.png",
+      "bytes": 1020377,
+      "sha256": "39410c15d720824776541042086846deaa8936fc905778d26635b6f53ed0013d"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Generated/rakko-draft.png",
+      "archive_path": "NewFriends-v45/Generated/rakko-draft.png",
+      "bytes": 1190732,
+      "sha256": "69e2678634ee567f20893a0f4ad24931479ac90bae454341bfd1d4f0357a89d3"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Generated/rakko-right.png",
+      "archive_path": "NewFriends-v45/Generated/rakko-right.png",
+      "bytes": 1100430,
+      "sha256": "485b253bae7e2bddd2941acc5c5363fe18646e19f78b2ca1b61e122321a0a2cf"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Generated/rakko-sheet.png",
+      "archive_path": "NewFriends-v45/Generated/rakko-sheet.png",
+      "bytes": 1176035,
+      "sha256": "2edcb91331b0ce505c1370c740f49be2a263c5662921259f97651faad1a8f488"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Generated/shisa-sheet.png",
+      "archive_path": "NewFriends-v45/Generated/shisa-sheet.png",
+      "bytes": 1106955,
+      "sha256": "9ceb51603df5893e21cc38fa2c1900fb95eeca75bafc3b032c5e5d75e4945fc0"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Parts/kani/kani-rig-arm-v38.png",
+      "archive_path": "NewFriends-v45/Parts/kani/kani-rig-arm-v38.png",
+      "bytes": 29167,
+      "sha256": "538e2ac2fb8271ed52dd7ccafc9862952242be5b86933c7cbf860fbeabd25129"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Parts/kani/kani-rig-back-diagonal-v38.png",
+      "archive_path": "NewFriends-v45/Parts/kani/kani-rig-back-diagonal-v38.png",
+      "bytes": 128801,
+      "sha256": "7cbd04633991b0c4576a711d45fd205ec20d3e3a3b9d45ab1fc7179f688451f4"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Parts/kani/kani-rig-back-v38.png",
+      "archive_path": "NewFriends-v45/Parts/kani/kani-rig-back-v38.png",
+      "bytes": 143281,
+      "sha256": "890bff853eef254c93b2f8b9bf571cd6c25b8d3844c3f19b5823baf5c909408b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Parts/kani/kani-rig-foot-v38.png",
+      "archive_path": "NewFriends-v45/Parts/kani/kani-rig-foot-v38.png",
+      "bytes": 12849,
+      "sha256": "e966827c949c250ab14edc1164fc4d733e24669f51ede4b830aea75d69ad23e9"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Parts/kani/kani-rig-front-diagonal-v38.png",
+      "archive_path": "NewFriends-v45/Parts/kani/kani-rig-front-diagonal-v38.png",
+      "bytes": 150626,
+      "sha256": "da116a00379ece22443cbb0c6c67171418455723ec54ef2fec40c606eabe6bc3"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Parts/kani/kani-rig-front-v38.png",
+      "archive_path": "NewFriends-v45/Parts/kani/kani-rig-front-v38.png",
+      "bytes": 158118,
+      "sha256": "a7a9d0abd1ff323200810d91f98a3426e601391723d2579f3ba317342c5f633f"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Parts/kani/kani-rig-item-v38.png",
+      "archive_path": "NewFriends-v45/Parts/kani/kani-rig-item-v38.png",
+      "bytes": 125269,
+      "sha256": "0bab1e7622e3ccd2cb1ad687acb9d1221f334dc78276a008beaa5123a9ceda50"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Parts/kani/kani-rig-side-v38.png",
+      "archive_path": "NewFriends-v45/Parts/kani/kani-rig-side-v38.png",
+      "bytes": 125671,
+      "sha256": "7af3351ea78d11de97c0fe9f9494ea0664c984b7fde575d051efafc43406c589"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Parts/kani/kani-rig-t-pose-v38.png",
+      "archive_path": "NewFriends-v45/Parts/kani/kani-rig-t-pose-v38.png",
+      "bytes": 165214,
+      "sha256": "4d8d7ce3e67bc655de94c66f0deed3a3dee078574391a59c8d5c23214d8dc208"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/NewFriends-v45/Parts/kani/rig-registration.json",
+      "archive_path": "NewFriends-v45/Parts/kani/rig-registration.json",
+      "bytes": 2226,
+      "sha256": "a923f9bad62f5c7b8c4b65f0bfd88f2137c0579cf31389ab0935587b9a5c5da8"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Parts/rakko/rakko-rig-arm-v38.png",
+      "archive_path": "NewFriends-v45/Parts/rakko/rakko-rig-arm-v38.png",
+      "bytes": 27557,
+      "sha256": "a990904e67f13b9a08b383e6b5017a3d014557b5f3ba387b5773e0df2e393a5f"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Parts/rakko/rakko-rig-back-diagonal-v38.png",
+      "archive_path": "NewFriends-v45/Parts/rakko/rakko-rig-back-diagonal-v38.png",
+      "bytes": 170573,
+      "sha256": "9f6941cee203ee84a4e3864565dc6dee391205af076a3eb676aad342e5dc1d40"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Parts/rakko/rakko-rig-back-v38.png",
+      "archive_path": "NewFriends-v45/Parts/rakko/rakko-rig-back-v38.png",
+      "bytes": 180480,
+      "sha256": "3044c0c9c8a9c513ea2711804cdd78b325fa7213ef5563ea764e46e78a0f39b7"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Parts/rakko/rakko-rig-foot-v38.png",
+      "archive_path": "NewFriends-v45/Parts/rakko/rakko-rig-foot-v38.png",
+      "bytes": 12767,
+      "sha256": "16cb505ba293fc1eac04623f876f70fcec3fe14733f0738dcfdc25da0034b052"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Parts/rakko/rakko-rig-front-diagonal-v38.png",
+      "archive_path": "NewFriends-v45/Parts/rakko/rakko-rig-front-diagonal-v38.png",
+      "bytes": 199890,
+      "sha256": "b2ea994048f34c10a36e447c06a4dfc89705cae762e3f94df16deb7d2b4896ce"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Parts/rakko/rakko-rig-front-v38.png",
+      "archive_path": "NewFriends-v45/Parts/rakko/rakko-rig-front-v38.png",
+      "bytes": 205666,
+      "sha256": "c0b076f650d1ed810cc4f31cd7f229ae40a96aa3d404c46a46451de736825289"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Parts/rakko/rakko-rig-item-v38.png",
+      "archive_path": "NewFriends-v45/Parts/rakko/rakko-rig-item-v38.png",
+      "bytes": 75761,
+      "sha256": "3441753465e20f30597f3b600df21b64d4e24a95b0bb59c3222e3e48efd45076"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Parts/rakko/rakko-rig-side-v38.png",
+      "archive_path": "NewFriends-v45/Parts/rakko/rakko-rig-side-v38.png",
+      "bytes": 169441,
+      "sha256": "68f13c42614f0c8d141bb7278137fd9b2513f5c259d9f0875363d82caa00ab90"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Parts/rakko/rakko-rig-t-pose-v38.png",
+      "archive_path": "NewFriends-v45/Parts/rakko/rakko-rig-t-pose-v38.png",
+      "bytes": 214692,
+      "sha256": "31013054531087820e60cee271720be4dfa403955ab553f64c143f01354a6943"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/NewFriends-v45/Parts/rakko/rig-registration.json",
+      "archive_path": "NewFriends-v45/Parts/rakko/rig-registration.json",
+      "bytes": 2226,
+      "sha256": "200acbb65ac190c0d278da5aefc3cc071111ff25609dc4599c18a5df85b9060b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Parts/rakko-right/rakko-rig-back-diagonal-right-v38.png",
+      "archive_path": "NewFriends-v45/Parts/rakko-right/rakko-rig-back-diagonal-right-v38.png",
+      "bytes": 396004,
+      "sha256": "66d3675297009eb03c29df3eda74e93d38d3213d82a616814f81f7e98153f2eb"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Parts/rakko-right/rakko-rig-front-diagonal-right-v38.png",
+      "archive_path": "NewFriends-v45/Parts/rakko-right/rakko-rig-front-diagonal-right-v38.png",
+      "bytes": 408795,
+      "sha256": "3853b656ebecc9be81381733a30caced0c0dd079c9a9aeaa4d618702f73d0830"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Parts/rakko-right/rakko-rig-side-right-v38.png",
+      "archive_path": "NewFriends-v45/Parts/rakko-right/rakko-rig-side-right-v38.png",
+      "bytes": 402308,
+      "sha256": "01d6bb9318efe3a3b93d2e93d048cb8a4c9bfdd20b5506e5d228dd7739038b30"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/NewFriends-v45/Parts/rakko-right/rig-registration.json",
+      "archive_path": "NewFriends-v45/Parts/rakko-right/rig-registration.json",
+      "bytes": 770,
+      "sha256": "7f0f09c3de429af13d87b1f6976eb7e38b44ad269c00ba4cea1d4157f610ec02"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/NewFriends-v45/Parts/shisa/rig-registration.json",
+      "archive_path": "NewFriends-v45/Parts/shisa/rig-registration.json",
+      "bytes": 2228,
+      "sha256": "14b293550fb83b548334df9006ee182dfc2b5182defc89fbb0200e97e290763f"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Parts/shisa/shisa-rig-arm-v38.png",
+      "archive_path": "NewFriends-v45/Parts/shisa/shisa-rig-arm-v38.png",
+      "bytes": 26958,
+      "sha256": "26b8667b1319ac1e17868e49ecb23ba08948653b921fa5677810a2848fc733a5"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Parts/shisa/shisa-rig-back-diagonal-v38.png",
+      "archive_path": "NewFriends-v45/Parts/shisa/shisa-rig-back-diagonal-v38.png",
+      "bytes": 153684,
+      "sha256": "fc51c82acd3d34e3fc8dd035e64b346515a2335be539e3067d9ec049374b4215"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Parts/shisa/shisa-rig-back-v38.png",
+      "archive_path": "NewFriends-v45/Parts/shisa/shisa-rig-back-v38.png",
+      "bytes": 170245,
+      "sha256": "9f5b4f4ab381795cedd44708e94e14499f01320364986b17a41dedcef1a84dd8"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Parts/shisa/shisa-rig-foot-v38.png",
+      "archive_path": "NewFriends-v45/Parts/shisa/shisa-rig-foot-v38.png",
+      "bytes": 17523,
+      "sha256": "4627b210f25ee929dd653f341999aa29652606fea5d4d01a46caafc584ba1d57"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Parts/shisa/shisa-rig-front-diagonal-v38.png",
+      "archive_path": "NewFriends-v45/Parts/shisa/shisa-rig-front-diagonal-v38.png",
+      "bytes": 178177,
+      "sha256": "70cffc730fe25e971fc87f5b33a25009179dc4d4a2946f7d94785962a3bd1d4a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Parts/shisa/shisa-rig-front-v38.png",
+      "archive_path": "NewFriends-v45/Parts/shisa/shisa-rig-front-v38.png",
+      "bytes": 185545,
+      "sha256": "c0c7898ebcd97999a9aa263eb8289ea54a77ea4aac8c8ee64f9743d7d0b12972"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Parts/shisa/shisa-rig-item-v38.png",
+      "archive_path": "NewFriends-v45/Parts/shisa/shisa-rig-item-v38.png",
+      "bytes": 117998,
+      "sha256": "b1b18f2df99f51f6bfa67cb9938a11be57ba50fd0241ed8e82a48459501d0abd"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Parts/shisa/shisa-rig-side-v38.png",
+      "archive_path": "NewFriends-v45/Parts/shisa/shisa-rig-side-v38.png",
+      "bytes": 161485,
+      "sha256": "9e78f50502c849fc528b6c6bafbddb0acec3da709bd2736d7d02b0beaeb4e9ab"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/Parts/shisa/shisa-rig-t-pose-v38.png",
+      "archive_path": "NewFriends-v45/Parts/shisa/shisa-rig-t-pose-v38.png",
+      "bytes": 184542,
+      "sha256": "5bd08cc8cddedf751237ffda0378e359136b3d6e09ad9e28483dceed4fbf3593"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/NewFriends-v45/Prompts/kani.txt",
+      "archive_path": "NewFriends-v45/Prompts/kani.txt",
+      "bytes": 1882,
+      "sha256": "bca07094d90d2c87c5bb9e7fbc415eddc9480491be61d95a81f5202e366c982a"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/NewFriends-v45/Prompts/rakko-fix.txt",
+      "archive_path": "NewFriends-v45/Prompts/rakko-fix.txt",
+      "bytes": 1034,
+      "sha256": "ba562fa32b69c00e71e92443611745865460fa91308aa4c7d92149fad111fc2e"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/NewFriends-v45/Prompts/rakko-right.txt",
+      "archive_path": "NewFriends-v45/Prompts/rakko-right.txt",
+      "bytes": 1491,
+      "sha256": "5da8758a5e29032b38da95f0e35984b05be218432d871b2b178cfae6b41e4425"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/NewFriends-v45/Prompts/rakko.txt",
+      "archive_path": "NewFriends-v45/Prompts/rakko.txt",
+      "bytes": 1986,
+      "sha256": "b8094a1cf9c424d3fdca9e01638693ee12ede23a88aa382d9570dda4ccbab856"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/NewFriends-v45/Prompts/shisa.txt",
+      "archive_path": "NewFriends-v45/Prompts/shisa.txt",
+      "bytes": 1845,
+      "sha256": "b544a782c8742831304778db86fbadb519a21cacff31d9e39b6dc0202ab08d5a"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/NewFriends-v45/README.txt",
+      "archive_path": "NewFriends-v45/README.txt",
+      "bytes": 2745,
+      "sha256": "2542823939f258d3af00c54c7dd1d5e999ed2afe3890186cac385685c3b6c13d"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/NewFriends-v45/References/Official/4571609371236.html",
+      "archive_path": "NewFriends-v45/References/Official/4571609371236.html",
+      "bytes": 727276,
+      "sha256": "d9911dacb6e83c6e6ad45f68a3bb6f7f03484e38fcca06d3d323c71c5bff637f"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/NewFriends-v45/References/Official/4571609373049.html",
+      "archive_path": "NewFriends-v45/References/Official/4571609373049.html",
+      "bytes": 695961,
+      "sha256": "09854b5b8fb700014cc8ee79d3af9a3adccfad2ff801d9f10004c6ac3c537e83"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/NewFriends-v45/References/Official/4571609394563.html",
+      "archive_path": "NewFriends-v45/References/Official/4571609394563.html",
+      "bytes": 685572,
+      "sha256": "cc97638d7c9672fbdd12d93edf8c1bb3e00adcfefbbf34180ed94f46190666ef"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/References/Official/characters.png",
+      "archive_path": "NewFriends-v45/References/Official/characters.png",
+      "bytes": 209921,
+      "sha256": "856b8b0e181c4a1c2a826816ed0b19eaad271fb580e76c5b21273885ec0ff07e"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/References/Official/kani-book.jpg",
+      "archive_path": "NewFriends-v45/References/Official/kani-book.jpg",
+      "bytes": 180778,
+      "sha256": "49c1091220e24bcaaad453b2341711139ab2a564bcd9051bb1ff4164f9a5ae98"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/NewFriends-v45/References/Official/main.js",
+      "archive_path": "NewFriends-v45/References/Official/main.js",
+      "bytes": 3656020,
+      "sha256": "bb1c184a5925948c4d54b0eaf9237339f856313cfd4d44777a3f6dd06ced1695"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/References/Official/rakko-dessert.jpg",
+      "archive_path": "NewFriends-v45/References/Official/rakko-dessert.jpg",
+      "bytes": 130490,
+      "sha256": "b91b517aa55c212e177ee7bcf36f1ff6d72f0c63519857e71b36317bd62f6d89"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/NewFriends-v45/References/Official/shisa-collection.html",
+      "archive_path": "NewFriends-v45/References/Official/shisa-collection.html",
+      "bytes": 765689,
+      "sha256": "63dc174f5441010f78bf62ab470f0c4760bdce7ec94f7d81eeacadfadd5e154d"
+    },
+    {
+      "kind": "image",
+      "source": "Source/NewFriends-v45/References/Official/shisa-ramen.jpg",
+      "archive_path": "NewFriends-v45/References/Official/shisa-ramen.jpg",
+      "bytes": 136625,
+      "sha256": "93ab34772e38f696c245224df01e6ae4cfcbff07e371c1deabd055b0d661b302"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/NewFriends-v45/References/Official/sources.json",
+      "archive_path": "NewFriends-v45/References/Official/sources.json",
+      "bytes": 1922,
+      "sha256": "0ac2037119178c9c1bbd44bbe67cd796f044e0f2682d9270afa1516e9d6de3fb"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/NewFriends-v45/RenderReview.swift",
+      "archive_path": "NewFriends-v45/RenderReview.swift",
+      "bytes": 3588,
+      "sha256": "d1604ebabe707d2d82e814f4f341e9ff72f95966c082751c841d19ff40c14677"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/NewFriends-v45/generation.json",
+      "archive_path": "NewFriends-v45/generation.json",
+      "bytes": 766,
+      "sha256": "1082b9e121f246f120aa71f0160d4a8c35794d211580acae4b1b416c616044ab"
+    },
+    {
+      "kind": "supporting",
       "source": "Source/PinkRice-v36/README.txt",
       "archive_path": "PinkRice-v36/README.txt",
       "bytes": 556,
@@ -20659,6 +21625,62 @@
     },
     {
       "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/kani-rig-arm-v38.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/kani-rig-arm-v38.png",
+      "bytes": 29167,
+      "sha256": "538e2ac2fb8271ed52dd7ccafc9862952242be5b86933c7cbf860fbeabd25129"
+    },
+    {
+      "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/kani-rig-back-diagonal-v38.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/kani-rig-back-diagonal-v38.png",
+      "bytes": 128801,
+      "sha256": "7cbd04633991b0c4576a711d45fd205ec20d3e3a3b9d45ab1fc7179f688451f4"
+    },
+    {
+      "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/kani-rig-back-v38.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/kani-rig-back-v38.png",
+      "bytes": 143281,
+      "sha256": "890bff853eef254c93b2f8b9bf571cd6c25b8d3844c3f19b5823baf5c909408b"
+    },
+    {
+      "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/kani-rig-foot-v38.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/kani-rig-foot-v38.png",
+      "bytes": 12849,
+      "sha256": "e966827c949c250ab14edc1164fc4d733e24669f51ede4b830aea75d69ad23e9"
+    },
+    {
+      "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/kani-rig-front-diagonal-v38.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/kani-rig-front-diagonal-v38.png",
+      "bytes": 150626,
+      "sha256": "da116a00379ece22443cbb0c6c67171418455723ec54ef2fec40c606eabe6bc3"
+    },
+    {
+      "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/kani-rig-front-v38.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/kani-rig-front-v38.png",
+      "bytes": 158118,
+      "sha256": "a7a9d0abd1ff323200810d91f98a3426e601391723d2579f3ba317342c5f633f"
+    },
+    {
+      "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/kani-rig-item-v38.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/kani-rig-item-v38.png",
+      "bytes": 125269,
+      "sha256": "0bab1e7622e3ccd2cb1ad687acb9d1221f334dc78276a008beaa5123a9ceda50"
+    },
+    {
+      "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/kani-rig-side-v38.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/kani-rig-side-v38.png",
+      "bytes": 125671,
+      "sha256": "7af3351ea78d11de97c0fe9f9494ea0664c984b7fde575d051efafc43406c589"
+    },
+    {
+      "kind": "image",
       "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/kurimanju-expression-attack-v38.png",
       "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/kurimanju-expression-attack-v38.png",
       "bytes": 214821,
@@ -20845,6 +21867,139 @@
       "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/momonga-rig-tail-v38.png",
       "bytes": 82674,
       "sha256": "3b833573b9ed71655b22eb8d4b1542f9f7595590b6cd6cdeab266389785e5bde"
+    },
+    {
+      "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/rakko-rig-arm-v38.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/rakko-rig-arm-v38.png",
+      "bytes": 27557,
+      "sha256": "a990904e67f13b9a08b383e6b5017a3d014557b5f3ba387b5773e0df2e393a5f"
+    },
+    {
+      "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/rakko-rig-back-diagonal-right-v38.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/rakko-rig-back-diagonal-right-v38.png",
+      "bytes": 396004,
+      "sha256": "66d3675297009eb03c29df3eda74e93d38d3213d82a616814f81f7e98153f2eb"
+    },
+    {
+      "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/rakko-rig-back-diagonal-v38.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/rakko-rig-back-diagonal-v38.png",
+      "bytes": 170573,
+      "sha256": "9f6941cee203ee84a4e3864565dc6dee391205af076a3eb676aad342e5dc1d40"
+    },
+    {
+      "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/rakko-rig-back-v38.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/rakko-rig-back-v38.png",
+      "bytes": 180480,
+      "sha256": "3044c0c9c8a9c513ea2711804cdd78b325fa7213ef5563ea764e46e78a0f39b7"
+    },
+    {
+      "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/rakko-rig-foot-v38.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/rakko-rig-foot-v38.png",
+      "bytes": 12767,
+      "sha256": "16cb505ba293fc1eac04623f876f70fcec3fe14733f0738dcfdc25da0034b052"
+    },
+    {
+      "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/rakko-rig-front-diagonal-right-v38.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/rakko-rig-front-diagonal-right-v38.png",
+      "bytes": 408795,
+      "sha256": "3853b656ebecc9be81381733a30caced0c0dd079c9a9aeaa4d618702f73d0830"
+    },
+    {
+      "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/rakko-rig-front-diagonal-v38.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/rakko-rig-front-diagonal-v38.png",
+      "bytes": 199890,
+      "sha256": "b2ea994048f34c10a36e447c06a4dfc89705cae762e3f94df16deb7d2b4896ce"
+    },
+    {
+      "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/rakko-rig-front-v38.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/rakko-rig-front-v38.png",
+      "bytes": 205666,
+      "sha256": "c0b076f650d1ed810cc4f31cd7f229ae40a96aa3d404c46a46451de736825289"
+    },
+    {
+      "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/rakko-rig-item-v38.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/rakko-rig-item-v38.png",
+      "bytes": 75761,
+      "sha256": "3441753465e20f30597f3b600df21b64d4e24a95b0bb59c3222e3e48efd45076"
+    },
+    {
+      "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/rakko-rig-side-right-v38.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/rakko-rig-side-right-v38.png",
+      "bytes": 402308,
+      "sha256": "01d6bb9318efe3a3b93d2e93d048cb8a4c9bfdd20b5506e5d228dd7739038b30"
+    },
+    {
+      "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/rakko-rig-side-v38.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/rakko-rig-side-v38.png",
+      "bytes": 169441,
+      "sha256": "68f13c42614f0c8d141bb7278137fd9b2513f5c259d9f0875363d82caa00ab90"
+    },
+    {
+      "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/shisa-rig-arm-v38.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/shisa-rig-arm-v38.png",
+      "bytes": 26958,
+      "sha256": "26b8667b1319ac1e17868e49ecb23ba08948653b921fa5677810a2848fc733a5"
+    },
+    {
+      "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/shisa-rig-back-diagonal-v38.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/shisa-rig-back-diagonal-v38.png",
+      "bytes": 153684,
+      "sha256": "fc51c82acd3d34e3fc8dd035e64b346515a2335be539e3067d9ec049374b4215"
+    },
+    {
+      "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/shisa-rig-back-v38.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/shisa-rig-back-v38.png",
+      "bytes": 170245,
+      "sha256": "9f5b4f4ab381795cedd44708e94e14499f01320364986b17a41dedcef1a84dd8"
+    },
+    {
+      "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/shisa-rig-foot-v38.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/shisa-rig-foot-v38.png",
+      "bytes": 17523,
+      "sha256": "4627b210f25ee929dd653f341999aa29652606fea5d4d01a46caafc584ba1d57"
+    },
+    {
+      "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/shisa-rig-front-diagonal-v38.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/shisa-rig-front-diagonal-v38.png",
+      "bytes": 178177,
+      "sha256": "70cffc730fe25e971fc87f5b33a25009179dc4d4a2946f7d94785962a3bd1d4a"
+    },
+    {
+      "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/shisa-rig-front-v38.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/shisa-rig-front-v38.png",
+      "bytes": 185545,
+      "sha256": "c0c7898ebcd97999a9aa263eb8289ea54a77ea4aac8c8ee64f9743d7d0b12972"
+    },
+    {
+      "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/shisa-rig-item-v38.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/shisa-rig-item-v38.png",
+      "bytes": 117998,
+      "sha256": "b1b18f2df99f51f6bfa67cb9938a11be57ba50fd0241ed8e82a48459501d0abd"
+    },
+    {
+      "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/shisa-rig-side-v38.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/shisa-rig-side-v38.png",
+      "bytes": 161485,
+      "sha256": "9e78f50502c849fc528b6c6bafbddb0acec3da709bd2736d7d02b0beaeb4e9ab"
     },
     {
       "kind": "image",
@@ -21408,6 +22563,62 @@
     },
     {
       "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/kani-rig-arm-v38.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/kani-rig-arm-v38.png",
+      "bytes": 29167,
+      "sha256": "538e2ac2fb8271ed52dd7ccafc9862952242be5b86933c7cbf860fbeabd25129"
+    },
+    {
+      "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/kani-rig-back-diagonal-v38.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/kani-rig-back-diagonal-v38.png",
+      "bytes": 128801,
+      "sha256": "7cbd04633991b0c4576a711d45fd205ec20d3e3a3b9d45ab1fc7179f688451f4"
+    },
+    {
+      "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/kani-rig-back-v38.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/kani-rig-back-v38.png",
+      "bytes": 143281,
+      "sha256": "890bff853eef254c93b2f8b9bf571cd6c25b8d3844c3f19b5823baf5c909408b"
+    },
+    {
+      "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/kani-rig-foot-v38.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/kani-rig-foot-v38.png",
+      "bytes": 12849,
+      "sha256": "e966827c949c250ab14edc1164fc4d733e24669f51ede4b830aea75d69ad23e9"
+    },
+    {
+      "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/kani-rig-front-diagonal-v38.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/kani-rig-front-diagonal-v38.png",
+      "bytes": 150626,
+      "sha256": "da116a00379ece22443cbb0c6c67171418455723ec54ef2fec40c606eabe6bc3"
+    },
+    {
+      "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/kani-rig-front-v38.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/kani-rig-front-v38.png",
+      "bytes": 158118,
+      "sha256": "a7a9d0abd1ff323200810d91f98a3426e601391723d2579f3ba317342c5f633f"
+    },
+    {
+      "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/kani-rig-item-v38.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/kani-rig-item-v38.png",
+      "bytes": 125269,
+      "sha256": "0bab1e7622e3ccd2cb1ad687acb9d1221f334dc78276a008beaa5123a9ceda50"
+    },
+    {
+      "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/kani-rig-side-v38.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/kani-rig-side-v38.png",
+      "bytes": 125671,
+      "sha256": "7af3351ea78d11de97c0fe9f9494ea0664c984b7fde575d051efafc43406c589"
+    },
+    {
+      "kind": "image",
       "source": "Sources/ChiikawaCompanion/Resources/kurimanju-expression-attack-v38.png",
       "archive_path": "Project/Sources/ChiikawaCompanion/Resources/kurimanju-expression-attack-v38.png",
       "bytes": 214821,
@@ -21594,6 +22805,139 @@
       "archive_path": "Project/Sources/ChiikawaCompanion/Resources/momonga-rig-tail-v38.png",
       "bytes": 82674,
       "sha256": "3b833573b9ed71655b22eb8d4b1542f9f7595590b6cd6cdeab266389785e5bde"
+    },
+    {
+      "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/rakko-rig-arm-v38.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/rakko-rig-arm-v38.png",
+      "bytes": 27557,
+      "sha256": "a990904e67f13b9a08b383e6b5017a3d014557b5f3ba387b5773e0df2e393a5f"
+    },
+    {
+      "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/rakko-rig-back-diagonal-right-v38.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/rakko-rig-back-diagonal-right-v38.png",
+      "bytes": 396004,
+      "sha256": "66d3675297009eb03c29df3eda74e93d38d3213d82a616814f81f7e98153f2eb"
+    },
+    {
+      "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/rakko-rig-back-diagonal-v38.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/rakko-rig-back-diagonal-v38.png",
+      "bytes": 170573,
+      "sha256": "9f6941cee203ee84a4e3864565dc6dee391205af076a3eb676aad342e5dc1d40"
+    },
+    {
+      "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/rakko-rig-back-v38.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/rakko-rig-back-v38.png",
+      "bytes": 180480,
+      "sha256": "3044c0c9c8a9c513ea2711804cdd78b325fa7213ef5563ea764e46e78a0f39b7"
+    },
+    {
+      "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/rakko-rig-foot-v38.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/rakko-rig-foot-v38.png",
+      "bytes": 12767,
+      "sha256": "16cb505ba293fc1eac04623f876f70fcec3fe14733f0738dcfdc25da0034b052"
+    },
+    {
+      "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/rakko-rig-front-diagonal-right-v38.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/rakko-rig-front-diagonal-right-v38.png",
+      "bytes": 408795,
+      "sha256": "3853b656ebecc9be81381733a30caced0c0dd079c9a9aeaa4d618702f73d0830"
+    },
+    {
+      "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/rakko-rig-front-diagonal-v38.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/rakko-rig-front-diagonal-v38.png",
+      "bytes": 199890,
+      "sha256": "b2ea994048f34c10a36e447c06a4dfc89705cae762e3f94df16deb7d2b4896ce"
+    },
+    {
+      "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/rakko-rig-front-v38.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/rakko-rig-front-v38.png",
+      "bytes": 205666,
+      "sha256": "c0b076f650d1ed810cc4f31cd7f229ae40a96aa3d404c46a46451de736825289"
+    },
+    {
+      "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/rakko-rig-item-v38.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/rakko-rig-item-v38.png",
+      "bytes": 75761,
+      "sha256": "3441753465e20f30597f3b600df21b64d4e24a95b0bb59c3222e3e48efd45076"
+    },
+    {
+      "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/rakko-rig-side-right-v38.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/rakko-rig-side-right-v38.png",
+      "bytes": 402308,
+      "sha256": "01d6bb9318efe3a3b93d2e93d048cb8a4c9bfdd20b5506e5d228dd7739038b30"
+    },
+    {
+      "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/rakko-rig-side-v38.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/rakko-rig-side-v38.png",
+      "bytes": 169441,
+      "sha256": "68f13c42614f0c8d141bb7278137fd9b2513f5c259d9f0875363d82caa00ab90"
+    },
+    {
+      "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/shisa-rig-arm-v38.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/shisa-rig-arm-v38.png",
+      "bytes": 26958,
+      "sha256": "26b8667b1319ac1e17868e49ecb23ba08948653b921fa5677810a2848fc733a5"
+    },
+    {
+      "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/shisa-rig-back-diagonal-v38.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/shisa-rig-back-diagonal-v38.png",
+      "bytes": 153684,
+      "sha256": "fc51c82acd3d34e3fc8dd035e64b346515a2335be539e3067d9ec049374b4215"
+    },
+    {
+      "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/shisa-rig-back-v38.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/shisa-rig-back-v38.png",
+      "bytes": 170245,
+      "sha256": "9f5b4f4ab381795cedd44708e94e14499f01320364986b17a41dedcef1a84dd8"
+    },
+    {
+      "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/shisa-rig-foot-v38.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/shisa-rig-foot-v38.png",
+      "bytes": 17523,
+      "sha256": "4627b210f25ee929dd653f341999aa29652606fea5d4d01a46caafc584ba1d57"
+    },
+    {
+      "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/shisa-rig-front-diagonal-v38.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/shisa-rig-front-diagonal-v38.png",
+      "bytes": 178177,
+      "sha256": "70cffc730fe25e971fc87f5b33a25009179dc4d4a2946f7d94785962a3bd1d4a"
+    },
+    {
+      "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/shisa-rig-front-v38.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/shisa-rig-front-v38.png",
+      "bytes": 185545,
+      "sha256": "c0c7898ebcd97999a9aa263eb8289ea54a77ea4aac8c8ee64f9743d7d0b12972"
+    },
+    {
+      "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/shisa-rig-item-v38.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/shisa-rig-item-v38.png",
+      "bytes": 117998,
+      "sha256": "b1b18f2df99f51f6bfa67cb9938a11be57ba50fd0241ed8e82a48459501d0abd"
+    },
+    {
+      "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/shisa-rig-side-v38.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/shisa-rig-side-v38.png",
+      "bytes": 161485,
+      "sha256": "9e78f50502c849fc528b6c6bafbddb0acec3da709bd2736d7d02b0beaeb4e9ab"
     },
     {
       "kind": "image",
@@ -21818,6 +23162,111 @@
       "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/AppIcon.icns",
       "bytes": 556776,
       "sha256": "9488e53f8fb8cf741b709c83782a9d9bb8eb39ea207e070fcf0ff8c7e9087b89"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/Roster/kani/down-24.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Roster/kani/down-24.png",
+      "bytes": 894590,
+      "sha256": "aa0a79427c5bcaa6755212b45704ba97b346ca713f26fc33cfd921d5ab21d239"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/Roster/kani/down-left-24.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Roster/kani/down-left-24.png",
+      "bytes": 805608,
+      "sha256": "cc77d9d2d13c7c52513fae3e3d895c7a29468bb3d09e899cf8196f3327dd907d"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/Roster/kani/down-right-24.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Roster/kani/down-right-24.png",
+      "bytes": 807770,
+      "sha256": "f4ac484079a904e88415bb7ecd1f6079c99b06de62c571514a09463def756a59"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/Roster/kani/keepsake-12.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Roster/kani/keepsake-12.png",
+      "bytes": 168358,
+      "sha256": "0008c01f096ffbaa086efc960214d4ceed29d4b14256283cc3022b39352a5601"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/Roster/kani/laugh-12.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Roster/kani/laugh-12.png",
+      "bytes": 157461,
+      "sha256": "a98fe6b5611fbcd28f8ef949ad32c4d1a227bfc405f7922d25ac678f5c889182"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/Roster/kani/left-24.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Roster/kani/left-24.png",
+      "bytes": 639082,
+      "sha256": "f877a59bffbc4e9140726960b3a4c7d7af636d35399a324519078d61177dab8f"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/Roster/kani/pickup-12.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Roster/kani/pickup-12.png",
+      "bytes": 537953,
+      "sha256": "93e7ef03a216eddbcf322e7e2c4e030e80915bc2854131be40563840b78936de"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/Roster/kani/right-24.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Roster/kani/right-24.png",
+      "bytes": 649951,
+      "sha256": "07e92c45dd8ee02683b404b19c1f42b463fda43b6889ba70a51a91fccabf94e8"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/Roster/kani/sleep-12.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Roster/kani/sleep-12.png",
+      "bytes": 67602,
+      "sha256": "f589de57d8e7a751b35a77278ef2da3123904d6cc3e676949ca568a6f431f5de"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/Roster/kani/surprised-12.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Roster/kani/surprised-12.png",
+      "bytes": 156372,
+      "sha256": "a4951b5c1687739464441e233641ab4c295dc182d0331b1e49a78c396c96bf4a"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/Roster/kani/up-24.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Roster/kani/up-24.png",
+      "bytes": 750074,
+      "sha256": "f688016dd17c0e842474c6627fa803ffe103302324975a7ef8310473851f5a9e"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/Roster/kani/up-left-24.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Roster/kani/up-left-24.png",
+      "bytes": 695830,
+      "sha256": "171d3a79f5a7cc372b379794a2f60a1b7d1ce1d543bad55bd6f9ed23981b309c"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/Roster/kani/up-right-24.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Roster/kani/up-right-24.png",
+      "bytes": 683718,
+      "sha256": "9c371af4add331bde1dfe169fe4537028cc331c40e7932602b3679c6f75d4a80"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/Roster/kani/wake-12.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Roster/kani/wake-12.png",
+      "bytes": 409045,
+      "sha256": "f9f22c81a60cb689ab8a88e95f327bf27b6f9dd3c794eb88357918455f8bcc2c"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/Roster/kani/wave-12.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Roster/kani/wave-12.png",
+      "bytes": 154225,
+      "sha256": "0ca79128ecb29668bc24fce49cd9a0f08a881b7603f28cd52b822a9e61de4839"
     },
     {
       "kind": "image",
@@ -22112,6 +23561,216 @@
       "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Roster/momonga/wave-12.png",
       "bytes": 170995,
       "sha256": "7f4a918e2fa7bae6ed875f74d1f2fd85a3f258962753cc449911330cf536e7af"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/Roster/rakko/down-24.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Roster/rakko/down-24.png",
+      "bytes": 893102,
+      "sha256": "2598799b06366444294943739d086c2bb037bc5534d769cc203a55fe91cf83d5"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/Roster/rakko/down-left-24.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Roster/rakko/down-left-24.png",
+      "bytes": 893537,
+      "sha256": "34f3f16623ed354ca1c8dda7e87cf5304fae3d916f387cdc7088800bdb13c394"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/Roster/rakko/down-right-24.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Roster/rakko/down-right-24.png",
+      "bytes": 821466,
+      "sha256": "312d594491bdede5939e56859b04a3951a0ca8d309968e05c05c3455e400f05c"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/Roster/rakko/keepsake-12.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Roster/rakko/keepsake-12.png",
+      "bytes": 175974,
+      "sha256": "6d6022b8d640733daa500de820c6f52c39cbd0643e01b191d85bbc673b2c9b4c"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/Roster/rakko/laugh-12.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Roster/rakko/laugh-12.png",
+      "bytes": 169146,
+      "sha256": "21c90a366f53b8112eadb308ae8800d849bbda4c250f3db88cf72097e3d61072"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/Roster/rakko/left-24.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Roster/rakko/left-24.png",
+      "bytes": 747960,
+      "sha256": "914982cf4dd8afeb3c5d162e2dd2cd06be4452ff89348f7c9e979c1a217b3b4c"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/Roster/rakko/pickup-12.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Roster/rakko/pickup-12.png",
+      "bytes": 474378,
+      "sha256": "55a1fcff65d325939ad6ca8113816cffa1a803679ae222d1395d4693fc0407b8"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/Roster/rakko/right-24.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Roster/rakko/right-24.png",
+      "bytes": 732987,
+      "sha256": "9d6715514e5afab01dbe73346069b0a6d67b447b4c5736b7d82af5d4b190c5de"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/Roster/rakko/sleep-12.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Roster/rakko/sleep-12.png",
+      "bytes": 71528,
+      "sha256": "82168d8d058bfad0f1fff84d23873bb18b200776b4a1744a9388e68a51aa19f6"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/Roster/rakko/surprised-12.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Roster/rakko/surprised-12.png",
+      "bytes": 167792,
+      "sha256": "ebd4309b6d6c12ffe9bfae62b33b9fd465358af40ae3e4392a66485e7029a814"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/Roster/rakko/up-24.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Roster/rakko/up-24.png",
+      "bytes": 790351,
+      "sha256": "fc7f11d28e94994cce9edea1b0b1976de5e0808f9343dc70fd955cc7d82816dc"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/Roster/rakko/up-left-24.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Roster/rakko/up-left-24.png",
+      "bytes": 751416,
+      "sha256": "57303bdc5a7fb02c3437a4df9b6d1048d7182d9e55427d8e4497d5d95ae02c88"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/Roster/rakko/up-right-24.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Roster/rakko/up-right-24.png",
+      "bytes": 727317,
+      "sha256": "a00b2e828dc39dd9ccc221f8693bf633779bb5a5179c8fb8297891264ce4d6e0"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/Roster/rakko/wake-12.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Roster/rakko/wake-12.png",
+      "bytes": 368109,
+      "sha256": "f27882af8ad97c0f749d2af79d7d9cb1c3ec488f18dc0ec81f02c63f60bc1a01"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/Roster/rakko/wave-12.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Roster/rakko/wave-12.png",
+      "bytes": 165126,
+      "sha256": "976cdcdc74ff0baa0832a89dbc14729399ff2ce8f195e7ebf7293928a8e02255"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/Roster/shisa/down-24.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Roster/shisa/down-24.png",
+      "bytes": 956488,
+      "sha256": "c0ef615f3affb9a4e520fb2f63f09af52d69e7cb6bcf8ba44827cb5e6188d293"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/Roster/shisa/down-left-24.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Roster/shisa/down-left-24.png",
+      "bytes": 952592,
+      "sha256": "f1a39fc3cc454544d57ec6b504404cacf3e5f4049ec922a1eaaa01595da57eb5"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/Roster/shisa/down-right-24.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Roster/shisa/down-right-24.png",
+      "bytes": 942142,
+      "sha256": "1cd40b8244088f5ad840955e6da364a026d65a5b5380fe392f953d5340319c22"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/Roster/shisa/keepsake-12.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Roster/shisa/keepsake-12.png",
+      "bytes": 330189,
+      "sha256": "f7cb8b3bc0eb14afc5461e9bda77360966ebfb4cad8538a6220d3b7f3de64e9b"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/Roster/shisa/laugh-12.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Roster/shisa/laugh-12.png",
+      "bytes": 181976,
+      "sha256": "ddd4d70feb538937f4c2f6fe8b08d030ed741cc68278953b3cf7980b29f17fe4"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/Roster/shisa/left-24.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Roster/shisa/left-24.png",
+      "bytes": 817230,
+      "sha256": "a13f518cdc3021850e39de8d6af208f99a3b9ea7825c540a07bbe864367457ff"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/Roster/shisa/pickup-12.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Roster/shisa/pickup-12.png",
+      "bytes": 527841,
+      "sha256": "ff403f4a1d945a0e4f9922c9bcec37185ff05560770b28a0d8182533b9d9fa93"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/Roster/shisa/right-24.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Roster/shisa/right-24.png",
+      "bytes": 821692,
+      "sha256": "f70352940097a41a6d1d3d7ea94421fb220bcf7bdf65ae78fb65fa36429b8e07"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/Roster/shisa/sleep-12.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Roster/shisa/sleep-12.png",
+      "bytes": 77427,
+      "sha256": "8fa3f06fe80c5ae1a776a770931469d1113292d78104ae78615b3d3978264e4b"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/Roster/shisa/surprised-12.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Roster/shisa/surprised-12.png",
+      "bytes": 182269,
+      "sha256": "2bd3ebaba2160b4b9b9c42914b29c6fe458e204d7cf28f18a2cb5e03f84bfc51"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/Roster/shisa/up-24.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Roster/shisa/up-24.png",
+      "bytes": 888040,
+      "sha256": "863c4241177761c857e19fd16bb59ef85c518ec667b503e9c14ff9e4d61062b1"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/Roster/shisa/up-left-24.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Roster/shisa/up-left-24.png",
+      "bytes": 835348,
+      "sha256": "3bb74d06b35ab7c19e5006010cb2b05e716c91f6b3491d12c365f31929ecbd7b"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/Roster/shisa/up-right-24.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Roster/shisa/up-right-24.png",
+      "bytes": 827857,
+      "sha256": "41c0410d1aa9dac1591d8f478d91b125ea82e26e33f7bd312e117a39471c340c"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/Roster/shisa/wake-12.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Roster/shisa/wake-12.png",
+      "bytes": 408319,
+      "sha256": "bf347acfb63ec05f982c77cd2ba9c82c90108eeda1ac02636ecb05998d142e15"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/Roster/shisa/wave-12.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Roster/shisa/wave-12.png",
+      "bytes": 180564,
+      "sha256": "28a6f94c95ad3a5ac7c0fd159a1dffb5653830796e1169aa024e8b135f8edac3"
     },
     {
       "kind": "image",
@@ -22549,6 +24208,62 @@
     },
     {
       "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/kani-rig-arm-v38.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/kani-rig-arm-v38.png",
+      "bytes": 29167,
+      "sha256": "538e2ac2fb8271ed52dd7ccafc9862952242be5b86933c7cbf860fbeabd25129"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/kani-rig-back-diagonal-v38.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/kani-rig-back-diagonal-v38.png",
+      "bytes": 128801,
+      "sha256": "7cbd04633991b0c4576a711d45fd205ec20d3e3a3b9d45ab1fc7179f688451f4"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/kani-rig-back-v38.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/kani-rig-back-v38.png",
+      "bytes": 143281,
+      "sha256": "890bff853eef254c93b2f8b9bf571cd6c25b8d3844c3f19b5823baf5c909408b"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/kani-rig-foot-v38.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/kani-rig-foot-v38.png",
+      "bytes": 12849,
+      "sha256": "e966827c949c250ab14edc1164fc4d733e24669f51ede4b830aea75d69ad23e9"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/kani-rig-front-diagonal-v38.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/kani-rig-front-diagonal-v38.png",
+      "bytes": 150626,
+      "sha256": "da116a00379ece22443cbb0c6c67171418455723ec54ef2fec40c606eabe6bc3"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/kani-rig-front-v38.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/kani-rig-front-v38.png",
+      "bytes": 158118,
+      "sha256": "a7a9d0abd1ff323200810d91f98a3426e601391723d2579f3ba317342c5f633f"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/kani-rig-item-v38.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/kani-rig-item-v38.png",
+      "bytes": 125269,
+      "sha256": "0bab1e7622e3ccd2cb1ad687acb9d1221f334dc78276a008beaa5123a9ceda50"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/kani-rig-side-v38.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/kani-rig-side-v38.png",
+      "bytes": 125671,
+      "sha256": "7af3351ea78d11de97c0fe9f9494ea0664c984b7fde575d051efafc43406c589"
+    },
+    {
+      "kind": "image",
       "source": "build/ChiikawaCompanion.app/Contents/Resources/kurimanju-expression-attack-v38.png",
       "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/kurimanju-expression-attack-v38.png",
       "bytes": 214821,
@@ -22735,6 +24450,139 @@
       "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/momonga-rig-tail-v38.png",
       "bytes": 82674,
       "sha256": "3b833573b9ed71655b22eb8d4b1542f9f7595590b6cd6cdeab266389785e5bde"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/rakko-rig-arm-v38.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/rakko-rig-arm-v38.png",
+      "bytes": 27557,
+      "sha256": "a990904e67f13b9a08b383e6b5017a3d014557b5f3ba387b5773e0df2e393a5f"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/rakko-rig-back-diagonal-right-v38.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/rakko-rig-back-diagonal-right-v38.png",
+      "bytes": 396004,
+      "sha256": "66d3675297009eb03c29df3eda74e93d38d3213d82a616814f81f7e98153f2eb"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/rakko-rig-back-diagonal-v38.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/rakko-rig-back-diagonal-v38.png",
+      "bytes": 170573,
+      "sha256": "9f6941cee203ee84a4e3864565dc6dee391205af076a3eb676aad342e5dc1d40"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/rakko-rig-back-v38.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/rakko-rig-back-v38.png",
+      "bytes": 180480,
+      "sha256": "3044c0c9c8a9c513ea2711804cdd78b325fa7213ef5563ea764e46e78a0f39b7"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/rakko-rig-foot-v38.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/rakko-rig-foot-v38.png",
+      "bytes": 12767,
+      "sha256": "16cb505ba293fc1eac04623f876f70fcec3fe14733f0738dcfdc25da0034b052"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/rakko-rig-front-diagonal-right-v38.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/rakko-rig-front-diagonal-right-v38.png",
+      "bytes": 408795,
+      "sha256": "3853b656ebecc9be81381733a30caced0c0dd079c9a9aeaa4d618702f73d0830"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/rakko-rig-front-diagonal-v38.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/rakko-rig-front-diagonal-v38.png",
+      "bytes": 199890,
+      "sha256": "b2ea994048f34c10a36e447c06a4dfc89705cae762e3f94df16deb7d2b4896ce"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/rakko-rig-front-v38.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/rakko-rig-front-v38.png",
+      "bytes": 205666,
+      "sha256": "c0b076f650d1ed810cc4f31cd7f229ae40a96aa3d404c46a46451de736825289"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/rakko-rig-item-v38.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/rakko-rig-item-v38.png",
+      "bytes": 75761,
+      "sha256": "3441753465e20f30597f3b600df21b64d4e24a95b0bb59c3222e3e48efd45076"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/rakko-rig-side-right-v38.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/rakko-rig-side-right-v38.png",
+      "bytes": 402308,
+      "sha256": "01d6bb9318efe3a3b93d2e93d048cb8a4c9bfdd20b5506e5d228dd7739038b30"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/rakko-rig-side-v38.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/rakko-rig-side-v38.png",
+      "bytes": 169441,
+      "sha256": "68f13c42614f0c8d141bb7278137fd9b2513f5c259d9f0875363d82caa00ab90"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/shisa-rig-arm-v38.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/shisa-rig-arm-v38.png",
+      "bytes": 26958,
+      "sha256": "26b8667b1319ac1e17868e49ecb23ba08948653b921fa5677810a2848fc733a5"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/shisa-rig-back-diagonal-v38.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/shisa-rig-back-diagonal-v38.png",
+      "bytes": 153684,
+      "sha256": "fc51c82acd3d34e3fc8dd035e64b346515a2335be539e3067d9ec049374b4215"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/shisa-rig-back-v38.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/shisa-rig-back-v38.png",
+      "bytes": 170245,
+      "sha256": "9f5b4f4ab381795cedd44708e94e14499f01320364986b17a41dedcef1a84dd8"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/shisa-rig-foot-v38.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/shisa-rig-foot-v38.png",
+      "bytes": 17523,
+      "sha256": "4627b210f25ee929dd653f341999aa29652606fea5d4d01a46caafc584ba1d57"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/shisa-rig-front-diagonal-v38.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/shisa-rig-front-diagonal-v38.png",
+      "bytes": 178177,
+      "sha256": "70cffc730fe25e971fc87f5b33a25009179dc4d4a2946f7d94785962a3bd1d4a"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/shisa-rig-front-v38.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/shisa-rig-front-v38.png",
+      "bytes": 185545,
+      "sha256": "c0c7898ebcd97999a9aa263eb8289ea54a77ea4aac8c8ee64f9743d7d0b12972"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/shisa-rig-item-v38.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/shisa-rig-item-v38.png",
+      "bytes": 117998,
+      "sha256": "b1b18f2df99f51f6bfa67cb9938a11be57ba50fd0241ed8e82a48459501d0abd"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/shisa-rig-side-v38.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/shisa-rig-side-v38.png",
+      "bytes": 161485,
+      "sha256": "9e78f50502c849fc528b6c6bafbddb0acec3da709bd2736d7d02b0beaeb4e9ab"
     },
     {
       "kind": "image",
@@ -23202,8 +25050,8 @@
       "kind": "image",
       "source": "build/artwork/shared-home-designs-v29.png",
       "archive_path": "Project/build/artwork/shared-home-designs-v29.png",
-      "bytes": 900350,
-      "sha256": "193a75e2eb2c3cee44eb649a07cf6b549801646a8d76d5863741ab522846bb49"
+      "bytes": 904466,
+      "sha256": "0e59fede58030d65d7cfe9417e830cad71ff023d378557869496af1cd8dff12f"
     },
     {
       "kind": "image",
@@ -23216,8 +25064,8 @@
       "kind": "image",
       "source": "build/artwork/shared-home-sleep-v29.gif",
       "archive_path": "Project/build/artwork/shared-home-sleep-v29.gif",
-      "bytes": 389819,
-      "sha256": "02d85209de16710eeca549d1825ab44e1588e2bbe4f68de44110a90d94b321fc"
+      "bytes": 363767,
+      "sha256": "2f38b7fd22f6a423ebb7a3904285f01e79c4bb2058a1058a08f60468fdbffbeb"
     },
     {
       "kind": "image",
@@ -23253,6 +25101,132 @@
       "archive_path": "Project/build/desktop-hachiware.png",
       "bytes": 15238,
       "sha256": "d9b355813376bb4e2a5c3f6ccef07316696cfd0c446830458c6d344c3219a2ce"
+    },
+    {
+      "kind": "image",
+      "source": "build/roster/kani/actions-preview.png",
+      "archive_path": "Project/build/roster/kani/actions-preview.png",
+      "bytes": 233379,
+      "sha256": "bf593e807bebc23b6a59f86b4f6400b68531b6e0014f88ada34721ad036aee53"
+    },
+    {
+      "kind": "image",
+      "source": "build/roster/kani/down-24.png",
+      "archive_path": "Project/build/roster/kani/down-24.png",
+      "bytes": 894590,
+      "sha256": "aa0a79427c5bcaa6755212b45704ba97b346ca713f26fc33cfd921d5ab21d239"
+    },
+    {
+      "kind": "image",
+      "source": "build/roster/kani/down-left-24.png",
+      "archive_path": "Project/build/roster/kani/down-left-24.png",
+      "bytes": 805608,
+      "sha256": "cc77d9d2d13c7c52513fae3e3d895c7a29468bb3d09e899cf8196f3327dd907d"
+    },
+    {
+      "kind": "image",
+      "source": "build/roster/kani/down-right-24.png",
+      "archive_path": "Project/build/roster/kani/down-right-24.png",
+      "bytes": 807770,
+      "sha256": "f4ac484079a904e88415bb7ecd1f6079c99b06de62c571514a09463def756a59"
+    },
+    {
+      "kind": "image",
+      "source": "build/roster/kani/eight-directions.gif",
+      "archive_path": "Project/build/roster/kani/eight-directions.gif",
+      "bytes": 1424450,
+      "sha256": "6990ad2f5b58b4addb0bbda50902b94ab3b83d66e3dac5cdd06532bb940c5975"
+    },
+    {
+      "kind": "image",
+      "source": "build/roster/kani/eight-directions.png",
+      "archive_path": "Project/build/roster/kani/eight-directions.png",
+      "bytes": 268182,
+      "sha256": "1e283b001d3130845430d1812cc60a0c73d0b877af91e18c3e84f78ab1f6d21b"
+    },
+    {
+      "kind": "image",
+      "source": "build/roster/kani/keepsake-12.png",
+      "archive_path": "Project/build/roster/kani/keepsake-12.png",
+      "bytes": 168358,
+      "sha256": "0008c01f096ffbaa086efc960214d4ceed29d4b14256283cc3022b39352a5601"
+    },
+    {
+      "kind": "image",
+      "source": "build/roster/kani/laugh-12.png",
+      "archive_path": "Project/build/roster/kani/laugh-12.png",
+      "bytes": 157461,
+      "sha256": "a98fe6b5611fbcd28f8ef949ad32c4d1a227bfc405f7922d25ac678f5c889182"
+    },
+    {
+      "kind": "image",
+      "source": "build/roster/kani/left-24.png",
+      "archive_path": "Project/build/roster/kani/left-24.png",
+      "bytes": 639082,
+      "sha256": "f877a59bffbc4e9140726960b3a4c7d7af636d35399a324519078d61177dab8f"
+    },
+    {
+      "kind": "image",
+      "source": "build/roster/kani/pickup-12.png",
+      "archive_path": "Project/build/roster/kani/pickup-12.png",
+      "bytes": 537953,
+      "sha256": "93e7ef03a216eddbcf322e7e2c4e030e80915bc2854131be40563840b78936de"
+    },
+    {
+      "kind": "image",
+      "source": "build/roster/kani/right-24.png",
+      "archive_path": "Project/build/roster/kani/right-24.png",
+      "bytes": 649951,
+      "sha256": "07e92c45dd8ee02683b404b19c1f42b463fda43b6889ba70a51a91fccabf94e8"
+    },
+    {
+      "kind": "image",
+      "source": "build/roster/kani/sleep-12.png",
+      "archive_path": "Project/build/roster/kani/sleep-12.png",
+      "bytes": 67602,
+      "sha256": "f589de57d8e7a751b35a77278ef2da3123904d6cc3e676949ca568a6f431f5de"
+    },
+    {
+      "kind": "image",
+      "source": "build/roster/kani/surprised-12.png",
+      "archive_path": "Project/build/roster/kani/surprised-12.png",
+      "bytes": 156372,
+      "sha256": "a4951b5c1687739464441e233641ab4c295dc182d0331b1e49a78c396c96bf4a"
+    },
+    {
+      "kind": "image",
+      "source": "build/roster/kani/up-24.png",
+      "archive_path": "Project/build/roster/kani/up-24.png",
+      "bytes": 750074,
+      "sha256": "f688016dd17c0e842474c6627fa803ffe103302324975a7ef8310473851f5a9e"
+    },
+    {
+      "kind": "image",
+      "source": "build/roster/kani/up-left-24.png",
+      "archive_path": "Project/build/roster/kani/up-left-24.png",
+      "bytes": 695830,
+      "sha256": "171d3a79f5a7cc372b379794a2f60a1b7d1ce1d543bad55bd6f9ed23981b309c"
+    },
+    {
+      "kind": "image",
+      "source": "build/roster/kani/up-right-24.png",
+      "archive_path": "Project/build/roster/kani/up-right-24.png",
+      "bytes": 683718,
+      "sha256": "9c371af4add331bde1dfe169fe4537028cc331c40e7932602b3679c6f75d4a80"
+    },
+    {
+      "kind": "image",
+      "source": "build/roster/kani/wake-12.png",
+      "archive_path": "Project/build/roster/kani/wake-12.png",
+      "bytes": 409045,
+      "sha256": "f9f22c81a60cb689ab8a88e95f327bf27b6f9dd3c794eb88357918455f8bcc2c"
+    },
+    {
+      "kind": "image",
+      "source": "build/roster/kani/wave-12.png",
+      "archive_path": "Project/build/roster/kani/wave-12.png",
+      "bytes": 154225,
+      "sha256": "0ca79128ecb29668bc24fce49cd9a0f08a881b7603f28cd52b822a9e61de4839"
     },
     {
       "kind": "image",
@@ -23589,6 +25563,258 @@
       "archive_path": "Project/build/roster/momonga/wave-12.png",
       "bytes": 170995,
       "sha256": "7f4a918e2fa7bae6ed875f74d1f2fd85a3f258962753cc449911330cf536e7af"
+    },
+    {
+      "kind": "image",
+      "source": "build/roster/rakko/actions-preview.png",
+      "archive_path": "Project/build/roster/rakko/actions-preview.png",
+      "bytes": 253297,
+      "sha256": "3c460ddae106f94cbfe926ad779a99775717688bb6c53cdbb2cba8718f027bda"
+    },
+    {
+      "kind": "image",
+      "source": "build/roster/rakko/down-24.png",
+      "archive_path": "Project/build/roster/rakko/down-24.png",
+      "bytes": 893102,
+      "sha256": "2598799b06366444294943739d086c2bb037bc5534d769cc203a55fe91cf83d5"
+    },
+    {
+      "kind": "image",
+      "source": "build/roster/rakko/down-left-24.png",
+      "archive_path": "Project/build/roster/rakko/down-left-24.png",
+      "bytes": 893537,
+      "sha256": "34f3f16623ed354ca1c8dda7e87cf5304fae3d916f387cdc7088800bdb13c394"
+    },
+    {
+      "kind": "image",
+      "source": "build/roster/rakko/down-right-24.png",
+      "archive_path": "Project/build/roster/rakko/down-right-24.png",
+      "bytes": 821466,
+      "sha256": "312d594491bdede5939e56859b04a3951a0ca8d309968e05c05c3455e400f05c"
+    },
+    {
+      "kind": "image",
+      "source": "build/roster/rakko/eight-directions.gif",
+      "archive_path": "Project/build/roster/rakko/eight-directions.gif",
+      "bytes": 1506041,
+      "sha256": "542f186e9217e56e45d2fa791e5ea1ae15f99bced7b577bce6ee5fde2b7a5b47"
+    },
+    {
+      "kind": "image",
+      "source": "build/roster/rakko/eight-directions.png",
+      "archive_path": "Project/build/roster/rakko/eight-directions.png",
+      "bytes": 308489,
+      "sha256": "8c8e8700992fe9fbbb679dac62cb137cd6587382a236fd51cb7ffe5f86299f04"
+    },
+    {
+      "kind": "image",
+      "source": "build/roster/rakko/keepsake-12.png",
+      "archive_path": "Project/build/roster/rakko/keepsake-12.png",
+      "bytes": 175974,
+      "sha256": "6d6022b8d640733daa500de820c6f52c39cbd0643e01b191d85bbc673b2c9b4c"
+    },
+    {
+      "kind": "image",
+      "source": "build/roster/rakko/laugh-12.png",
+      "archive_path": "Project/build/roster/rakko/laugh-12.png",
+      "bytes": 169146,
+      "sha256": "21c90a366f53b8112eadb308ae8800d849bbda4c250f3db88cf72097e3d61072"
+    },
+    {
+      "kind": "image",
+      "source": "build/roster/rakko/left-24.png",
+      "archive_path": "Project/build/roster/rakko/left-24.png",
+      "bytes": 747960,
+      "sha256": "914982cf4dd8afeb3c5d162e2dd2cd06be4452ff89348f7c9e979c1a217b3b4c"
+    },
+    {
+      "kind": "image",
+      "source": "build/roster/rakko/pickup-12.png",
+      "archive_path": "Project/build/roster/rakko/pickup-12.png",
+      "bytes": 474378,
+      "sha256": "55a1fcff65d325939ad6ca8113816cffa1a803679ae222d1395d4693fc0407b8"
+    },
+    {
+      "kind": "image",
+      "source": "build/roster/rakko/right-24.png",
+      "archive_path": "Project/build/roster/rakko/right-24.png",
+      "bytes": 732987,
+      "sha256": "9d6715514e5afab01dbe73346069b0a6d67b447b4c5736b7d82af5d4b190c5de"
+    },
+    {
+      "kind": "image",
+      "source": "build/roster/rakko/sleep-12.png",
+      "archive_path": "Project/build/roster/rakko/sleep-12.png",
+      "bytes": 71528,
+      "sha256": "82168d8d058bfad0f1fff84d23873bb18b200776b4a1744a9388e68a51aa19f6"
+    },
+    {
+      "kind": "image",
+      "source": "build/roster/rakko/surprised-12.png",
+      "archive_path": "Project/build/roster/rakko/surprised-12.png",
+      "bytes": 167792,
+      "sha256": "ebd4309b6d6c12ffe9bfae62b33b9fd465358af40ae3e4392a66485e7029a814"
+    },
+    {
+      "kind": "image",
+      "source": "build/roster/rakko/up-24.png",
+      "archive_path": "Project/build/roster/rakko/up-24.png",
+      "bytes": 790351,
+      "sha256": "fc7f11d28e94994cce9edea1b0b1976de5e0808f9343dc70fd955cc7d82816dc"
+    },
+    {
+      "kind": "image",
+      "source": "build/roster/rakko/up-left-24.png",
+      "archive_path": "Project/build/roster/rakko/up-left-24.png",
+      "bytes": 751416,
+      "sha256": "57303bdc5a7fb02c3437a4df9b6d1048d7182d9e55427d8e4497d5d95ae02c88"
+    },
+    {
+      "kind": "image",
+      "source": "build/roster/rakko/up-right-24.png",
+      "archive_path": "Project/build/roster/rakko/up-right-24.png",
+      "bytes": 727317,
+      "sha256": "a00b2e828dc39dd9ccc221f8693bf633779bb5a5179c8fb8297891264ce4d6e0"
+    },
+    {
+      "kind": "image",
+      "source": "build/roster/rakko/wake-12.png",
+      "archive_path": "Project/build/roster/rakko/wake-12.png",
+      "bytes": 368109,
+      "sha256": "f27882af8ad97c0f749d2af79d7d9cb1c3ec488f18dc0ec81f02c63f60bc1a01"
+    },
+    {
+      "kind": "image",
+      "source": "build/roster/rakko/wave-12.png",
+      "archive_path": "Project/build/roster/rakko/wave-12.png",
+      "bytes": 165126,
+      "sha256": "976cdcdc74ff0baa0832a89dbc14729399ff2ce8f195e7ebf7293928a8e02255"
+    },
+    {
+      "kind": "image",
+      "source": "build/roster/shisa/actions-preview.png",
+      "archive_path": "Project/build/roster/shisa/actions-preview.png",
+      "bytes": 277007,
+      "sha256": "e6d562d1914ce2b341b1e56da7786816ecda71e98ce4d9cdfe9b67c0496fa6df"
+    },
+    {
+      "kind": "image",
+      "source": "build/roster/shisa/down-24.png",
+      "archive_path": "Project/build/roster/shisa/down-24.png",
+      "bytes": 956488,
+      "sha256": "c0ef615f3affb9a4e520fb2f63f09af52d69e7cb6bcf8ba44827cb5e6188d293"
+    },
+    {
+      "kind": "image",
+      "source": "build/roster/shisa/down-left-24.png",
+      "archive_path": "Project/build/roster/shisa/down-left-24.png",
+      "bytes": 952592,
+      "sha256": "f1a39fc3cc454544d57ec6b504404cacf3e5f4049ec922a1eaaa01595da57eb5"
+    },
+    {
+      "kind": "image",
+      "source": "build/roster/shisa/down-right-24.png",
+      "archive_path": "Project/build/roster/shisa/down-right-24.png",
+      "bytes": 942142,
+      "sha256": "1cd40b8244088f5ad840955e6da364a026d65a5b5380fe392f953d5340319c22"
+    },
+    {
+      "kind": "image",
+      "source": "build/roster/shisa/eight-directions.gif",
+      "archive_path": "Project/build/roster/shisa/eight-directions.gif",
+      "bytes": 1575473,
+      "sha256": "4c3c63da2013b4f5b6da54503c86427be3e30aaa48e3b5373917c29972802112"
+    },
+    {
+      "kind": "image",
+      "source": "build/roster/shisa/eight-directions.png",
+      "archive_path": "Project/build/roster/shisa/eight-directions.png",
+      "bytes": 330497,
+      "sha256": "25d8e19f40aa14762c3853b024c5c49da375b405f1af5d09fb2e589393b7de99"
+    },
+    {
+      "kind": "image",
+      "source": "build/roster/shisa/keepsake-12.png",
+      "archive_path": "Project/build/roster/shisa/keepsake-12.png",
+      "bytes": 330189,
+      "sha256": "f7cb8b3bc0eb14afc5461e9bda77360966ebfb4cad8538a6220d3b7f3de64e9b"
+    },
+    {
+      "kind": "image",
+      "source": "build/roster/shisa/laugh-12.png",
+      "archive_path": "Project/build/roster/shisa/laugh-12.png",
+      "bytes": 181976,
+      "sha256": "ddd4d70feb538937f4c2f6fe8b08d030ed741cc68278953b3cf7980b29f17fe4"
+    },
+    {
+      "kind": "image",
+      "source": "build/roster/shisa/left-24.png",
+      "archive_path": "Project/build/roster/shisa/left-24.png",
+      "bytes": 817230,
+      "sha256": "a13f518cdc3021850e39de8d6af208f99a3b9ea7825c540a07bbe864367457ff"
+    },
+    {
+      "kind": "image",
+      "source": "build/roster/shisa/pickup-12.png",
+      "archive_path": "Project/build/roster/shisa/pickup-12.png",
+      "bytes": 527841,
+      "sha256": "ff403f4a1d945a0e4f9922c9bcec37185ff05560770b28a0d8182533b9d9fa93"
+    },
+    {
+      "kind": "image",
+      "source": "build/roster/shisa/right-24.png",
+      "archive_path": "Project/build/roster/shisa/right-24.png",
+      "bytes": 821692,
+      "sha256": "f70352940097a41a6d1d3d7ea94421fb220bcf7bdf65ae78fb65fa36429b8e07"
+    },
+    {
+      "kind": "image",
+      "source": "build/roster/shisa/sleep-12.png",
+      "archive_path": "Project/build/roster/shisa/sleep-12.png",
+      "bytes": 77427,
+      "sha256": "8fa3f06fe80c5ae1a776a770931469d1113292d78104ae78615b3d3978264e4b"
+    },
+    {
+      "kind": "image",
+      "source": "build/roster/shisa/surprised-12.png",
+      "archive_path": "Project/build/roster/shisa/surprised-12.png",
+      "bytes": 182269,
+      "sha256": "2bd3ebaba2160b4b9b9c42914b29c6fe458e204d7cf28f18a2cb5e03f84bfc51"
+    },
+    {
+      "kind": "image",
+      "source": "build/roster/shisa/up-24.png",
+      "archive_path": "Project/build/roster/shisa/up-24.png",
+      "bytes": 888040,
+      "sha256": "863c4241177761c857e19fd16bb59ef85c518ec667b503e9c14ff9e4d61062b1"
+    },
+    {
+      "kind": "image",
+      "source": "build/roster/shisa/up-left-24.png",
+      "archive_path": "Project/build/roster/shisa/up-left-24.png",
+      "bytes": 835348,
+      "sha256": "3bb74d06b35ab7c19e5006010cb2b05e716c91f6b3491d12c365f31929ecbd7b"
+    },
+    {
+      "kind": "image",
+      "source": "build/roster/shisa/up-right-24.png",
+      "archive_path": "Project/build/roster/shisa/up-right-24.png",
+      "bytes": 827857,
+      "sha256": "41c0410d1aa9dac1591d8f478d91b125ea82e26e33f7bd312e117a39471c340c"
+    },
+    {
+      "kind": "image",
+      "source": "build/roster/shisa/wake-12.png",
+      "archive_path": "Project/build/roster/shisa/wake-12.png",
+      "bytes": 408319,
+      "sha256": "bf347acfb63ec05f982c77cd2ba9c82c90108eeda1ac02636ecb05998d142e15"
+    },
+    {
+      "kind": "image",
+      "source": "build/roster/shisa/wave-12.png",
+      "archive_path": "Project/build/roster/shisa/wave-12.png",
+      "bytes": 180564,
+      "sha256": "28a6f94c95ad3a5ac7c0fd159a1dffb5653830796e1169aa024e8b135f8edac3"
     },
     {
       "kind": "image",
@@ -26623,6 +28849,13 @@
     },
     {
       "kind": "image",
+      "source": "Source/Versions/02d85209de16710e/build/artwork/shared-home-sleep-v29.gif",
+      "archive_path": "Versions/02d85209de16710e/build/artwork/shared-home-sleep-v29.gif",
+      "bytes": 389819,
+      "sha256": "02d85209de16710eeca549d1825ab44e1588e2bbe4f68de44110a90d94b321fc"
+    },
+    {
+      "kind": "image",
       "source": "Source/Versions/093914a47e35f0a4/build/artwork/friends.png",
       "archive_path": "Versions/093914a47e35f0a4/build/artwork/friends.png",
       "bytes": 174820,
@@ -26634,6 +28867,13 @@
       "archive_path": "Versions/1214038f24f85005/build/artwork/hachiware-sprite-preview.png",
       "bytes": 266536,
       "sha256": "1214038f24f85005362d348cd527e5ac7dad3b0440d7e3ad8e965ea3afeaeabf"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/193a75e2eb2c3cee/build/artwork/shared-home-designs-v29.png",
+      "archive_path": "Versions/193a75e2eb2c3cee/build/artwork/shared-home-designs-v29.png",
+      "bytes": 900350,
+      "sha256": "193a75e2eb2c3cee44eb649a07cf6b549801646a8d76d5863741ab522846bb49"
     },
     {
       "kind": "image",
@@ -27945,8 +30185,8 @@
       "sha256": "8a42caa40e469a5ee00fa2b860d14756cc1fd73bc8fcf73332c50b87a92c9c3b"
     }
   ],
-  "updated_at": "2026-10-22T11:18:04.381054+00:00",
-  "latest_applied": "UsagiIdentity-v44",
+  "updated_at": "2026-10-22T11:54:40.669026+00:00",
+  "latest_applied": "Source/NewFriends-v45",
   "applied_directions": [
     "down-left",
     "down-right"

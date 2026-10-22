@@ -16,8 +16,8 @@ cat > "$app_dir/Contents/Info.plist" <<'PLIST'
   <key>CFBundleName</key><string>ChiikawaCompanion</string>
   <key>CFBundleDisplayName</key><string>치이카와 데스크톱</string>
   <key>CFBundleExecutable</key><string>ChiikawaCompanion</string>
-  <key>CFBundleVersion</key><string>48</string>
-  <key>CFBundleShortVersionString</key><string>0.21.0</string>
+  <key>CFBundleVersion</key><string>49</string>
+  <key>CFBundleShortVersionString</key><string>0.22.0</string>
   <key>CFBundlePackageType</key><string>APPL</string>
   <key>CFBundleIconFile</key><string>AppIcon</string>
   <key>LSMinimumSystemVersion</key><string>13.0</string>
@@ -29,7 +29,7 @@ PLIST
 # Render native animation once during packaging; the running app only decodes atlases.
 # These generated files predate the character-specific item and activity rules.
 # Remove both the export and bundle copies when rebuilding an existing checkout.
-for friend in usagi kurimanju momonga; do
+for friend in usagi kurimanju momonga rakko shisa kani; do
   for retired_action in guitar vomit study eat camera; do
     rm -f "$project_dir/build/roster/$friend/$retired_action-12.png" \
       "$app_dir/Contents/Resources/Roster/$friend/$retired_action-12.png"
@@ -46,7 +46,7 @@ for expression in laugh attack surprised sleep neutral; do
 done
 "$binary_dir/ChiikawaCompanion" --render-roster "$project_dir/build/roster"
 mkdir -p "$app_dir/Contents/Resources/Roster"
-for friend in usagi kurimanju momonga; do
+for friend in usagi kurimanju momonga rakko shisa kani; do
   mkdir -p "$app_dir/Contents/Resources/Roster/$friend"
   cp "$project_dir/build/roster/$friend/"*-24.png "$project_dir/build/roster/$friend/"*-12.png "$app_dir/Contents/Resources/Roster/$friend/"
 done

@@ -5,6 +5,7 @@ extension SelfTest {
     static func runRosterChecks(check: (Bool, String) -> Void) {
         _ = NSApplication.shared
         runUsagiIdentityChecks(check: check)
+        runNewFriendChecks(check: check)
         let migrationSuite = "ExclusiveItemsMigration-\(UUID().uuidString)"
         let migrationDefaults = UserDefaults(suiteName: migrationSuite)!
         defer { migrationDefaults.removePersistentDomain(forName: migrationSuite) }
@@ -223,6 +224,7 @@ extension SelfTest {
             let beforeAudio=voiceStarts
             for _ in 0..<30 {tick(mouse:actor.panel.frame.center,reachable:true)}
             check(voiceStarts==beforeAudio,prefix+"autonomous movement and armed hover never start audio")
+            if !friend.isNewSingleItemFriend {
             check(companion.catalog.isValid && companion.catalog.clips.count == 4,
                   prefix+"four authentic credited actor-demo excerpts load from bundled resources")
             check(companion.catalog.clips.allSatisfy { clip in
@@ -236,6 +238,14 @@ extension SelfTest {
             state.updateOptions(friend){$0.voice=false}
             check(companion.voice.player==nil,prefix+"muting a character immediately stops its current voice")
             state.updateOptions(friend){$0.voice=true}
+            } else {
+                let starts=voiceStarts
+                companion.previewVoice();companion.clicked(now:date())
+                check(companion.catalog.clips.isEmpty && companion.voice.player == nil && voiceStarts == starts,
+                      prefix+"unverified voices remain unavailable and clicks use local captions only")
+                check(RosterItemKind.available(for:friend) == [.keepsake] && !friend.canUseWeapon,
+                      prefix+"exactly one characteristic item and no weapon are registered")
+            }
             var previous:String?, noRepeat=true, captions=true
             for _ in 0..<100 {
                 companion.clicked(now:date())
@@ -303,10 +313,13 @@ extension SelfTest {
         desktop.activateSharedHome(now:date());tick(1.1)
         check(desktop.homeOccupants.isEmpty && desktop.actors.allSatisfy{$0.panel.isVisible},
               "one occupied-house click wakes all active friends without creating extra homes")
+        let voiced = expansion.filter { !desktop.expansions[$0]!.catalog.clips.isEmpty }
         for friend in expansion {desktop.expansions[friend]!.previewVoice()}
-        if let first=expansion.first {
+        check(expansion.filter { !voiced.contains($0) }.allSatisfy { desktop.expansions[$0]!.voice.player == nil },
+              "friends without verified recordings stay silent during a group preview")
+        if let first=voiced.first {
             desktop.expansions[first]!.command(.stopVoice)
-            check(desktop.expansions[first]!.voice.player==nil && expansion.dropFirst().allSatisfy{desktop.expansions[$0]!.voice.player != nil},
+            check(desktop.expansions[first]!.voice.player==nil && voiced.dropFirst().allSatisfy{desktop.expansions[$0]!.voice.player != nil},
                   "stopping one new friend's audio leaves every other local voice player independent")
         }
         desktop.expansions.values.forEach{$0.voice.stop()}

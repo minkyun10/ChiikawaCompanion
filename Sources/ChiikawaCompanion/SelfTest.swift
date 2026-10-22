@@ -29,7 +29,7 @@ enum SelfTest {
         check(DesktopLayer.bubble.rawValue > DesktopLayer.character.rawValue && DesktopLayer.bubble.rawValue < normal,
               "speech bubble stays on desktop, below app windows")
         check(!DesktopLayer.collection.contains(.fullScreenAuxiliary), "desktop character does not join full-screen overlays")
-        check(Friend.developmentRoster == [.hachiware, .chiikawa, .usagi, .kurimanju, .momonga], "the reviewed development roster is active")
+        check(Friend.developmentRoster == [.hachiware, .chiikawa, .usagi, .kurimanju, .momonga, .rakko, .shisa, .kani], "the reviewed development roster is active")
 
         let size = NSSize(width: 132, height: 150)
         let target = RoamingMotion.target(in: screen, size: size, xFraction: 0.9, yFraction: 0.85)

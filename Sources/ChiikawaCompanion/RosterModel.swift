@@ -1,7 +1,16 @@
 import AppKit
 
 extension Friend {
-    static let expansionOrder: [Friend] = [.usagi, .kurimanju, .momonga]
+    static let expansionOrder: [Friend] = [.usagi, .kurimanju, .momonga, .rakko, .shisa, .kani]
+    var isNewSingleItemFriend: Bool { self == .rakko || self == .shisa || self == .kani }
+    var keepsakeActionTitle: String {
+        switch self {
+        case .rakko: return "파르페 먹기"
+        case .shisa: return "라멘 서빙하기"
+        case .kani: return "책 읽기"
+        default: return "소품과 놀기"
+        }
+    }
     var isExpansion: Bool { Self.expansionOrder.contains(self) }
     var canUseWeapon: Bool { self == .hachiware || self == .chiikawa || self == .usagi }
     var canvasSize: NSSize { self == .usagi ? NSSize(width: 256, height: 360) : NSSize(width: 256, height: 256) }
@@ -14,6 +23,10 @@ extension Friend {
         case .usagi: return ["야하!", "우라!", "하아?", "푸루루루!", "야하하!", "우랴!", "하!", "야하~", "우라라!", "풋!"]
         case .kurimanju: return ["크아~", "후우…", "한입 더.", "잠깐 쉬자.", "천천히…", "좋군.", "음~", "같이 먹자.", "잘 먹었다.", "오늘도 수고했어."]
         case .momonga: return ["나 좀 봐!", "귀엽다고 해!", "칭찬해 줘!", "기다렸어?", "더 보고 있어!", "나도 줘!", "한 번 더!", "잘 봤지?", "쓰다듬어 줘!", "여기 있어!"]
+        // Original companion reactions, not quotations from the show.
+        case .rakko: return ["달콤한 휴식이군.", "한입 먹어 볼까.", "잠시 쉬어 가자.", "오늘도 잘했군.", "천천히 따라오렴.", "좋은 하루군.", "디저트 시간이다.", "조금 더 걸어 볼까.", "편히 쉬어.", "다음에도 함께하자."]
+        case .shisa: return ["어서 오세요!", "뜨거우니 조심하세요.", "맛있게 드세요!", "오늘도 힘낼게요!", "한 그릇 나왔어요!", "감사합니다!", "열심히 준비했어요.", "잠깐 쉬어 갈까요?", "반가워요!", "또 와 주세요!"]
+        case .kani: return ["같이 읽을래?", "이 책은 어때?", "좋은 이야기가 있어.", "잠깐 펼쳐 볼까.", "천천히 읽어 봐.", "오늘도 반가워.", "다음 이야기가 궁금해.", "여기 앉아서 읽자.", "이 책을 아껴 줘.", "다음에 또 만나."]
         default: return []
         }
     }
@@ -30,7 +43,16 @@ enum RosterItemKind: String, CaseIterable, Codable, Identifiable {
     func name(for friend: Friend) -> String {
         switch self {
         case .weapon: return "노란 토벌봉"
-        case .keepsake: return friend == .usagi ? "푸딩" : friend == .kurimanju ? "간식과 컵" : "벚꽃"
+        case .keepsake:
+            switch friend {
+            case .usagi: return "푸딩"
+            case .kurimanju: return "간식과 컵"
+            case .momonga: return "벚꽃"
+            case .rakko: return "딸기 파르페"
+            case .shisa: return "라멘"
+            case .kani: return "헌책"
+            default: return "소품"
+            }
         }
     }
 }
