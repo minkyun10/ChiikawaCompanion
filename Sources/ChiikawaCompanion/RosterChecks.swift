@@ -4,6 +4,7 @@ import AVFoundation
 extension SelfTest {
     static func runRosterChecks(check: (Bool, String) -> Void) {
         _ = NSApplication.shared
+        runUsagiIdentityChecks(check: check)
         let migrationSuite = "ExclusiveItemsMigration-\(UUID().uuidString)"
         let migrationDefaults = UserDefaults(suiteName: migrationSuite)!
         defer { migrationDefaults.removePersistentDomain(forName: migrationSuite) }

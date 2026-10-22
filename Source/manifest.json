@@ -1,10 +1,10 @@
 {
   "created_at": "2026-10-16T12:08:58.617148+00:00",
   "operation": "copy; originals preserved",
-  "image_file_count": 3151,
-  "unique_image_content_count": 1758,
-  "supporting_file_count": 666,
-  "image_bytes": 922874109,
+  "image_file_count": 3303,
+  "unique_image_content_count": 1817,
+  "supporting_file_count": 688,
+  "image_bytes": 970204100,
   "symmetric_walk_runtime_applied": true,
   "files": [
     {
@@ -13393,6 +13393,13 @@
     },
     {
       "kind": "image",
+      "source": "Source/GeneratedOriginals/exec-347db190-a5e3-4e5e-82f4-0b1c35df8d28.png",
+      "archive_path": "GeneratedOriginals/exec-347db190-a5e3-4e5e-82f4-0b1c35df8d28.png",
+      "bytes": 1048620,
+      "sha256": "81851ca00e23b224a0bcb26eec07285c58d81adec83baf73b33135b4d78f898a"
+    },
+    {
+      "kind": "image",
       "source": "Source/GeneratedOriginals/exec-36eedd84-83b1-4306-8085-f5596cad6e34.png",
       "archive_path": "GeneratedOriginals/exec-36eedd84-83b1-4306-8085-f5596cad6e34.png",
       "bytes": 1431253,
@@ -13621,6 +13628,13 @@
       "archive_path": "GeneratedOriginals/exec-cb3f9d2a-16bf-45ee-a72f-9f5704e87ebf.png",
       "bytes": 1290237,
       "sha256": "a8d2d88fda86ce32314d2b664cd1efa856975483ec02ada07a83fbba0de7db75"
+    },
+    {
+      "kind": "image",
+      "source": "Source/GeneratedOriginals/exec-cf11baa1-de96-46d1-a3ab-ac17c85646ac.png",
+      "archive_path": "GeneratedOriginals/exec-cf11baa1-de96-46d1-a3ab-ac17c85646ac.png",
+      "bytes": 1081126,
+      "sha256": "dcdc6b64c6fe5fd0d44395acf54993006d766446c30a4b4b69de06ecd4bcb274"
     },
     {
       "kind": "image",
@@ -20876,6 +20890,62 @@
     },
     {
       "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/usagi-face-blink-left-eye-v44.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/usagi-face-blink-left-eye-v44.png",
+      "bytes": 6906,
+      "sha256": "e12a0c2ec51b10b0df547dd3050808a98aae52c282de8021e9d05e147d2461ba"
+    },
+    {
+      "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/usagi-face-blink-right-eye-v44.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/usagi-face-blink-right-eye-v44.png",
+      "bytes": 6997,
+      "sha256": "850eee4b49b85144e9777eac62e594ebeb0b3b1d15929c6f64066ba2abfe4044"
+    },
+    {
+      "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/usagi-face-cheer-mouth-v44.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/usagi-face-cheer-mouth-v44.png",
+      "bytes": 16888,
+      "sha256": "18ba94b7e35d35310e4daee80fb61953d12931e5a1ddbf4223f41b4f4da89d64"
+    },
+    {
+      "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/usagi-face-curious-mouth-v44.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/usagi-face-curious-mouth-v44.png",
+      "bytes": 15569,
+      "sha256": "5b98c95c2456837eeaa96a4ae86932b26f2df60db998121ef7033e6ab1feda03"
+    },
+    {
+      "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/usagi-face-shout-mouth-v44.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/usagi-face-shout-mouth-v44.png",
+      "bytes": 15174,
+      "sha256": "582b30dec1613ef58a03fac44a09b2a7f082e9fc7d65fb91fbaec830308af3f1"
+    },
+    {
+      "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/usagi-face-sleep-left-eye-v44.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/usagi-face-sleep-left-eye-v44.png",
+      "bytes": 7364,
+      "sha256": "4eab90c3e3b572be6130eee2bcdae6132948881ab2d09694e61884e4c3ccd0cc"
+    },
+    {
+      "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/usagi-face-sleep-mouth-v44.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/usagi-face-sleep-mouth-v44.png",
+      "bytes": 11356,
+      "sha256": "2e1945c6dab58af9664a9935dd066366ccca1ab0000e69298d8a0c627e6c7c71"
+    },
+    {
+      "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/usagi-face-sleep-right-eye-v44.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/usagi-face-sleep-right-eye-v44.png",
+      "bytes": 7187,
+      "sha256": "63aebf2123717928e97df0b1e286ff823cb4b0e3e305fa91f928a8f06e68311b"
+    },
+    {
+      "kind": "image",
       "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/usagi-rig-arm-v38.png",
       "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/usagi-rig-arm-v38.png",
       "bytes": 18265,
@@ -21569,6 +21639,62 @@
     },
     {
       "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/usagi-face-blink-left-eye-v44.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/usagi-face-blink-left-eye-v44.png",
+      "bytes": 6906,
+      "sha256": "e12a0c2ec51b10b0df547dd3050808a98aae52c282de8021e9d05e147d2461ba"
+    },
+    {
+      "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/usagi-face-blink-right-eye-v44.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/usagi-face-blink-right-eye-v44.png",
+      "bytes": 6997,
+      "sha256": "850eee4b49b85144e9777eac62e594ebeb0b3b1d15929c6f64066ba2abfe4044"
+    },
+    {
+      "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/usagi-face-cheer-mouth-v44.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/usagi-face-cheer-mouth-v44.png",
+      "bytes": 16888,
+      "sha256": "18ba94b7e35d35310e4daee80fb61953d12931e5a1ddbf4223f41b4f4da89d64"
+    },
+    {
+      "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/usagi-face-curious-mouth-v44.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/usagi-face-curious-mouth-v44.png",
+      "bytes": 15569,
+      "sha256": "5b98c95c2456837eeaa96a4ae86932b26f2df60db998121ef7033e6ab1feda03"
+    },
+    {
+      "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/usagi-face-shout-mouth-v44.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/usagi-face-shout-mouth-v44.png",
+      "bytes": 15174,
+      "sha256": "582b30dec1613ef58a03fac44a09b2a7f082e9fc7d65fb91fbaec830308af3f1"
+    },
+    {
+      "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/usagi-face-sleep-left-eye-v44.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/usagi-face-sleep-left-eye-v44.png",
+      "bytes": 7364,
+      "sha256": "4eab90c3e3b572be6130eee2bcdae6132948881ab2d09694e61884e4c3ccd0cc"
+    },
+    {
+      "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/usagi-face-sleep-mouth-v44.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/usagi-face-sleep-mouth-v44.png",
+      "bytes": 11356,
+      "sha256": "2e1945c6dab58af9664a9935dd066366ccca1ab0000e69298d8a0c627e6c7c71"
+    },
+    {
+      "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/usagi-face-sleep-right-eye-v44.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/usagi-face-sleep-right-eye-v44.png",
+      "bytes": 7187,
+      "sha256": "63aebf2123717928e97df0b1e286ff823cb4b0e3e305fa91f928a8f06e68311b"
+    },
+    {
+      "kind": "image",
       "source": "Sources/ChiikawaCompanion/Resources/usagi-rig-arm-v38.png",
       "archive_path": "Project/Sources/ChiikawaCompanion/Resources/usagi-rig-arm-v38.png",
       "bytes": 18265,
@@ -21991,8 +22117,8 @@
       "kind": "image",
       "source": "build/ChiikawaCompanion.app/Contents/Resources/Roster/usagi/attack-12.png",
       "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Roster/usagi/attack-12.png",
-      "bytes": 278481,
-      "sha256": "73f1148143432c7cd50cc7d845440264d879fd30b0c4a904d47858576f8576e7"
+      "bytes": 250611,
+      "sha256": "141689dd57c0b81e1d882110702fa26075ff2a231f8b8adfcdc4088401dc6ee5"
     },
     {
       "kind": "image",
@@ -22040,15 +22166,15 @@
       "kind": "image",
       "source": "build/ChiikawaCompanion.app/Contents/Resources/Roster/usagi/keepsake-12.png",
       "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Roster/usagi/keepsake-12.png",
-      "bytes": 199581,
-      "sha256": "45ecac624d4f985ba7cc47687c1303fa4dac7ab45baf470fde65e4621e3f48b4"
+      "bytes": 194911,
+      "sha256": "95c9dd9c13f8b6d63219bc71de2cc22078c6f9231f2a296533ca32998f241bdf"
     },
     {
       "kind": "image",
       "source": "build/ChiikawaCompanion.app/Contents/Resources/Roster/usagi/laugh-12.png",
       "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Roster/usagi/laugh-12.png",
-      "bytes": 195551,
-      "sha256": "1ecc13bdbe93e61f435f88d61d68e135de5cdb84255ef01db034fa6d95fbbb00"
+      "bytes": 190421,
+      "sha256": "a31c0446533608b0a1426b10efc6a3a9dc2be0bab652564bb271d66bbfdc454f"
     },
     {
       "kind": "image",
@@ -22061,8 +22187,8 @@
       "kind": "image",
       "source": "build/ChiikawaCompanion.app/Contents/Resources/Roster/usagi/pickup-12.png",
       "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Roster/usagi/pickup-12.png",
-      "bytes": 656896,
-      "sha256": "a51f2415b4d86a9ddaf209b67b49baf70f4fa6df280ec96316f6b92698d5dc7d"
+      "bytes": 639007,
+      "sha256": "9f2c615b8246b14a6a5f85db052ab86b2dcd88808387e1bad0f2474af4d5179d"
     },
     {
       "kind": "image",
@@ -22075,8 +22201,8 @@
       "kind": "image",
       "source": "build/ChiikawaCompanion.app/Contents/Resources/Roster/usagi/sleep-12.png",
       "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Roster/usagi/sleep-12.png",
-      "bytes": 71951,
-      "sha256": "7c18fa306872455272b5f8922f4e4313ebcec3f1d2f8c4ca510764741fc27d59"
+      "bytes": 70787,
+      "sha256": "331e7e7e27afa7c31770566e32e175689a24c5020b035d3cc993518421656b13"
     },
     {
       "kind": "image",
@@ -22089,8 +22215,8 @@
       "kind": "image",
       "source": "build/ChiikawaCompanion.app/Contents/Resources/Roster/usagi/surprised-12.png",
       "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Roster/usagi/surprised-12.png",
-      "bytes": 191239,
-      "sha256": "dd30d28d44c5d665ee2c362145ee9c60aa7b192bd216aa31f12e1e7cd3e90160"
+      "bytes": 188305,
+      "sha256": "bc0c520670354f984355c37d9bb90935a6c0422436b26f76fad3fa33a2641492"
     },
     {
       "kind": "image",
@@ -22124,15 +22250,15 @@
       "kind": "image",
       "source": "build/ChiikawaCompanion.app/Contents/Resources/Roster/usagi/wake-12.png",
       "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Roster/usagi/wake-12.png",
-      "bytes": 484970,
-      "sha256": "da87a8f8441da8fc7470a4ddf342af85169e29a56e0e8b643cb9b341a99b13cd"
+      "bytes": 491644,
+      "sha256": "5e8aa9b83899d956d5f19befbbb2366e211c076c550028a227f488ebd7f1ce95"
     },
     {
       "kind": "image",
       "source": "build/ChiikawaCompanion.app/Contents/Resources/Roster/usagi/wave-12.png",
       "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Roster/usagi/wave-12.png",
-      "bytes": 189029,
-      "sha256": "ad6f0bd1fc76d5f938f7c4d932de5237953b05bbc87170fda79745aeb2f57b2f"
+      "bytes": 186720,
+      "sha256": "52020da15d2ccf93ab2c104bd042c8477a1508c94117a6bd6bbca6a0e27040ed"
     },
     {
       "kind": "image",
@@ -22654,6 +22780,62 @@
     },
     {
       "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/usagi-face-blink-left-eye-v44.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/usagi-face-blink-left-eye-v44.png",
+      "bytes": 6906,
+      "sha256": "e12a0c2ec51b10b0df547dd3050808a98aae52c282de8021e9d05e147d2461ba"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/usagi-face-blink-right-eye-v44.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/usagi-face-blink-right-eye-v44.png",
+      "bytes": 6997,
+      "sha256": "850eee4b49b85144e9777eac62e594ebeb0b3b1d15929c6f64066ba2abfe4044"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/usagi-face-cheer-mouth-v44.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/usagi-face-cheer-mouth-v44.png",
+      "bytes": 16888,
+      "sha256": "18ba94b7e35d35310e4daee80fb61953d12931e5a1ddbf4223f41b4f4da89d64"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/usagi-face-curious-mouth-v44.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/usagi-face-curious-mouth-v44.png",
+      "bytes": 15569,
+      "sha256": "5b98c95c2456837eeaa96a4ae86932b26f2df60db998121ef7033e6ab1feda03"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/usagi-face-shout-mouth-v44.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/usagi-face-shout-mouth-v44.png",
+      "bytes": 15174,
+      "sha256": "582b30dec1613ef58a03fac44a09b2a7f082e9fc7d65fb91fbaec830308af3f1"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/usagi-face-sleep-left-eye-v44.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/usagi-face-sleep-left-eye-v44.png",
+      "bytes": 7364,
+      "sha256": "4eab90c3e3b572be6130eee2bcdae6132948881ab2d09694e61884e4c3ccd0cc"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/usagi-face-sleep-mouth-v44.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/usagi-face-sleep-mouth-v44.png",
+      "bytes": 11356,
+      "sha256": "2e1945c6dab58af9664a9935dd066366ccca1ab0000e69298d8a0c627e6c7c71"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/usagi-face-sleep-right-eye-v44.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/usagi-face-sleep-right-eye-v44.png",
+      "bytes": 7187,
+      "sha256": "63aebf2123717928e97df0b1e286ff823cb4b0e3e305fa91f928a8f06e68311b"
+    },
+    {
+      "kind": "image",
       "source": "build/ChiikawaCompanion.app/Contents/Resources/usagi-rig-arm-v38.png",
       "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/usagi-rig-arm-v38.png",
       "bytes": 18265,
@@ -22831,8 +23013,8 @@
       "kind": "image",
       "source": "build/artwork/friends.png",
       "archive_path": "Project/build/artwork/friends.png",
-      "bytes": 262741,
-      "sha256": "3484a4f0532b9e6ddbe0f7e87137f2e9722948bf2688cf8115699817eed6c7eb"
+      "bytes": 262739,
+      "sha256": "82bd1e2a5b12a14e7f6de1550a998f7cc8241b800383f3179d55a17b10a7c6b3"
     },
     {
       "kind": "image",
@@ -23020,8 +23202,8 @@
       "kind": "image",
       "source": "build/artwork/shared-home-designs-v29.png",
       "archive_path": "Project/build/artwork/shared-home-designs-v29.png",
-      "bytes": 900606,
-      "sha256": "64c3790cd04528f4e6f12788b0c3f367484cb5212d902b6e8efe24051bc3959a"
+      "bytes": 900350,
+      "sha256": "193a75e2eb2c3cee44eb649a07cf6b549801646a8d76d5863741ab522846bb49"
     },
     {
       "kind": "image",
@@ -23034,8 +23216,8 @@
       "kind": "image",
       "source": "build/artwork/shared-home-sleep-v29.gif",
       "archive_path": "Project/build/artwork/shared-home-sleep-v29.gif",
-      "bytes": 388944,
-      "sha256": "8807334c1850588a62a03ae78a45f734ed67b38dba941beeff1662ef4b3d4793"
+      "bytes": 389819,
+      "sha256": "02d85209de16710eeca549d1825ab44e1588e2bbe4f68de44110a90d94b321fc"
     },
     {
       "kind": "image",
@@ -23412,15 +23594,15 @@
       "kind": "image",
       "source": "build/roster/usagi/actions-preview.png",
       "archive_path": "Project/build/roster/usagi/actions-preview.png",
-      "bytes": 370661,
-      "sha256": "7498e7243c457a9d10c1752a1088f4c4ff0b929de438b17c8881164cf652e260"
+      "bytes": 295623,
+      "sha256": "91f6cc101b821c3932e35902c12eae1276ffcf8d47b557974dc1e9cd37439616"
     },
     {
       "kind": "image",
       "source": "build/roster/usagi/attack-12.png",
       "archive_path": "Project/build/roster/usagi/attack-12.png",
-      "bytes": 278481,
-      "sha256": "73f1148143432c7cd50cc7d845440264d879fd30b0c4a904d47858576f8576e7"
+      "bytes": 250611,
+      "sha256": "141689dd57c0b81e1d882110702fa26075ff2a231f8b8adfcdc4088401dc6ee5"
     },
     {
       "kind": "image",
@@ -23480,17 +23662,31 @@
     },
     {
       "kind": "image",
+      "source": "build/roster/usagi/identity-motion.gif",
+      "archive_path": "Project/build/roster/usagi/identity-motion.gif",
+      "bytes": 321980,
+      "sha256": "d38d6a147ce8d605fba76adfd00aa0815f2ee8572207552d2878af0b577760b7"
+    },
+    {
+      "kind": "image",
+      "source": "build/roster/usagi/identity-preview.png",
+      "archive_path": "Project/build/roster/usagi/identity-preview.png",
+      "bytes": 275824,
+      "sha256": "75161b169eba4178a670e787df816970167533b73e7d6dae3aa2398e3e4a4198"
+    },
+    {
+      "kind": "image",
       "source": "build/roster/usagi/keepsake-12.png",
       "archive_path": "Project/build/roster/usagi/keepsake-12.png",
-      "bytes": 199581,
-      "sha256": "45ecac624d4f985ba7cc47687c1303fa4dac7ab45baf470fde65e4621e3f48b4"
+      "bytes": 194911,
+      "sha256": "95c9dd9c13f8b6d63219bc71de2cc22078c6f9231f2a296533ca32998f241bdf"
     },
     {
       "kind": "image",
       "source": "build/roster/usagi/laugh-12.png",
       "archive_path": "Project/build/roster/usagi/laugh-12.png",
-      "bytes": 195551,
-      "sha256": "1ecc13bdbe93e61f435f88d61d68e135de5cdb84255ef01db034fa6d95fbbb00"
+      "bytes": 190421,
+      "sha256": "a31c0446533608b0a1426b10efc6a3a9dc2be0bab652564bb271d66bbfdc454f"
     },
     {
       "kind": "image",
@@ -23503,8 +23699,8 @@
       "kind": "image",
       "source": "build/roster/usagi/pickup-12.png",
       "archive_path": "Project/build/roster/usagi/pickup-12.png",
-      "bytes": 656896,
-      "sha256": "a51f2415b4d86a9ddaf209b67b49baf70f4fa6df280ec96316f6b92698d5dc7d"
+      "bytes": 639007,
+      "sha256": "9f2c615b8246b14a6a5f85db052ab86b2dcd88808387e1bad0f2474af4d5179d"
     },
     {
       "kind": "image",
@@ -23517,8 +23713,8 @@
       "kind": "image",
       "source": "build/roster/usagi/sleep-12.png",
       "archive_path": "Project/build/roster/usagi/sleep-12.png",
-      "bytes": 71951,
-      "sha256": "7c18fa306872455272b5f8922f4e4313ebcec3f1d2f8c4ca510764741fc27d59"
+      "bytes": 70787,
+      "sha256": "331e7e7e27afa7c31770566e32e175689a24c5020b035d3cc993518421656b13"
     },
     {
       "kind": "image",
@@ -23531,8 +23727,8 @@
       "kind": "image",
       "source": "build/roster/usagi/surprised-12.png",
       "archive_path": "Project/build/roster/usagi/surprised-12.png",
-      "bytes": 191239,
-      "sha256": "dd30d28d44c5d665ee2c362145ee9c60aa7b192bd216aa31f12e1e7cd3e90160"
+      "bytes": 188305,
+      "sha256": "bc0c520670354f984355c37d9bb90935a6c0422436b26f76fad3fa33a2641492"
     },
     {
       "kind": "image",
@@ -23566,15 +23762,15 @@
       "kind": "image",
       "source": "build/roster/usagi/wake-12.png",
       "archive_path": "Project/build/roster/usagi/wake-12.png",
-      "bytes": 484970,
-      "sha256": "da87a8f8441da8fc7470a4ddf342af85169e29a56e0e8b643cb9b341a99b13cd"
+      "bytes": 491644,
+      "sha256": "5e8aa9b83899d956d5f19befbbb2366e211c076c550028a227f488ebd7f1ce95"
     },
     {
       "kind": "image",
       "source": "build/roster/usagi/wave-12.png",
       "archive_path": "Project/build/roster/usagi/wave-12.png",
-      "bytes": 189029,
-      "sha256": "ad6f0bd1fc76d5f938f7c4d932de5237953b05bbc87170fda79745aeb2f57b2f"
+      "bytes": 186720,
+      "sha256": "52020da15d2ccf93ab2c104bd042c8477a1508c94117a6bd6bbca6a0e27040ed"
     },
     {
       "kind": "image",
@@ -23587,8 +23783,8 @@
       "kind": "supporting",
       "source": "Source/README.txt",
       "archive_path": "README.txt",
-      "bytes": 11467,
-      "sha256": "7e472379d9a4d59b75434988816c1033cfba7e6a4231ae83cc306f925e100954"
+      "bytes": 11754,
+      "sha256": "efc65b17f6972726cbd7cc5c690334e2e8a9c1e056ec54ee9450753629242988"
     },
     {
       "kind": "supporting",
@@ -25544,6 +25740,888 @@
       "sha256": "a0a503e5d0a281f7c6e288edd4697e319c515a1518732834425e7ea54bc0db32"
     },
     {
+      "kind": "supporting",
+      "source": "Source/UsagiIdentity-v44/Audit/build.log",
+      "archive_path": "UsagiIdentity-v44/Audit/build.log",
+      "bytes": 522,
+      "sha256": "01c7bdffdf95eed605d4120b2301b73c15bd2378f9dcece75b3382177804d5c5"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/UsagiIdentity-v44/Audit/initial-build.log",
+      "archive_path": "UsagiIdentity-v44/Audit/initial-build.log",
+      "bytes": 289,
+      "sha256": "19ed36447df6a7347e418b815f47a2bf83303d5f001a68c59945411c4181b553"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/UsagiIdentity-v44/Audit/preservation.json",
+      "archive_path": "UsagiIdentity-v44/Audit/preservation.json",
+      "bytes": 1855,
+      "sha256": "eb9cc9f50b374b883bee4f720df6be025e5c4d9b31c9ca584bf794e6d7ffba0f"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/UsagiIdentity-v44/Audit/render-v1.log",
+      "archive_path": "UsagiIdentity-v44/Audit/render-v1.log",
+      "bytes": 50,
+      "sha256": "d9d25ff0be15238c3c3f3b40aa3e4c6ab299c6d9df0ddb782775243e7bcb3697"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/UsagiIdentity-v44/Audit/self-test-initial.log",
+      "archive_path": "UsagiIdentity-v44/Audit/self-test-initial.log",
+      "bytes": 30866,
+      "sha256": "07069c5e4ca7ebb13a6a8d11d0533b48b121fd1956781f4e0ecda5225f3f6553"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/UsagiIdentity-v44/Audit/self-test.log",
+      "archive_path": "UsagiIdentity-v44/Audit/self-test.log",
+      "bytes": 48181,
+      "sha256": "9428712577fd8b510774f8e95b51d51d3536207f994e58314e0d89ee906880cb"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/UsagiIdentity-v44/Audit/ui-review.json",
+      "archive_path": "UsagiIdentity-v44/Audit/ui-review.json",
+      "bytes": 554,
+      "sha256": "d122f2ac0a7c027ee460d08a88fb83fb5920eb06329aed71e4f21cf1962f02f2"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/UsagiIdentity-v44/Audit/verify-preservation.py",
+      "archive_path": "UsagiIdentity-v44/Audit/verify-preservation.py",
+      "bytes": 2802,
+      "sha256": "61b7613d1f5ba2ab4fec6e01d127f300ccbed9cc56a3e36569b248bf8d49416a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Before/actions-preview.png",
+      "archive_path": "UsagiIdentity-v44/Before/actions-preview.png",
+      "bytes": 370661,
+      "sha256": "7498e7243c457a9d10c1752a1088f4c4ff0b929de438b17c8881164cf652e260"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Before/usagi-expression-attack-v38.png",
+      "archive_path": "UsagiIdentity-v44/Before/usagi-expression-attack-v38.png",
+      "bytes": 188711,
+      "sha256": "13c3c4026fb8c0f3b1dd624d024b4786e48f462616bee4aba9c11b121beb02ad"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Before/usagi-expression-laugh-v38.png",
+      "archive_path": "UsagiIdentity-v44/Before/usagi-expression-laugh-v38.png",
+      "bytes": 187969,
+      "sha256": "2387f575e056da734afead5c5cb43b6f4afa9241cc7e1fd8b7607016dc82a75a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Before/usagi-expression-neutral-v38.png",
+      "archive_path": "UsagiIdentity-v44/Before/usagi-expression-neutral-v38.png",
+      "bytes": 190138,
+      "sha256": "66fc59a6b1e97314fdc431799d7849b421e112f72772cafdc03776d83ff0d667"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Before/usagi-expression-sleep-v38.png",
+      "archive_path": "UsagiIdentity-v44/Before/usagi-expression-sleep-v38.png",
+      "bytes": 187947,
+      "sha256": "0e3ec230b37a5044a758b3930c09357c7294034bbf827d691af33d71469f0fdb"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Before/usagi-expression-surprised-v38.png",
+      "archive_path": "UsagiIdentity-v44/Before/usagi-expression-surprised-v38.png",
+      "bytes": 189163,
+      "sha256": "43f93ee392a0561be9ec1bc8e03f237fd0e28972a6b6a06692a0a15a105e3896"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/UsagiIdentity-v44/ExtractFaceParts.swift",
+      "archive_path": "UsagiIdentity-v44/ExtractFaceParts.swift",
+      "bytes": 3335,
+      "sha256": "c47dc0b03c12fa3dc1bfa08176e1fa470bb8169b943dfafd83b3b0642f8a8652"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Final/identity-motion.gif",
+      "archive_path": "UsagiIdentity-v44/Final/identity-motion.gif",
+      "bytes": 321980,
+      "sha256": "d38d6a147ce8d605fba76adfd00aa0815f2ee8572207552d2878af0b577760b7"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Final/identity-preview.png",
+      "archive_path": "UsagiIdentity-v44/Final/identity-preview.png",
+      "bytes": 275824,
+      "sha256": "75161b169eba4178a670e787df816970167533b73e7d6dae3aa2398e3e4a4198"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Generated/facial-parts-clean.png",
+      "archive_path": "UsagiIdentity-v44/Generated/facial-parts-clean.png",
+      "bytes": 1081126,
+      "sha256": "dcdc6b64c6fe5fd0d44395acf54993006d766446c30a4b4b69de06ecd4bcb274"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Generated/facial-parts-draft.png",
+      "archive_path": "UsagiIdentity-v44/Generated/facial-parts-draft.png",
+      "bytes": 1048620,
+      "sha256": "81851ca00e23b224a0bcb26eec07285c58d81adec83baf73b33135b4d78f898a"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/UsagiIdentity-v44/Parts/registration.json",
+      "archive_path": "UsagiIdentity-v44/Parts/registration.json",
+      "bytes": 5250,
+      "sha256": "171bac41a0e3be15dc5602ed1d6a290ec576962696f8bbecc6e435091f380de8"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Parts/usagi-face-blink-left-eye-v44.png",
+      "archive_path": "UsagiIdentity-v44/Parts/usagi-face-blink-left-eye-v44.png",
+      "bytes": 6906,
+      "sha256": "e12a0c2ec51b10b0df547dd3050808a98aae52c282de8021e9d05e147d2461ba"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Parts/usagi-face-blink-mouth-v44.png",
+      "archive_path": "UsagiIdentity-v44/Parts/usagi-face-blink-mouth-v44.png",
+      "bytes": 22845,
+      "sha256": "02ac6d0550a5fc0aae27b87094e4dcca2490a3bb5a8aa7548c29df600b528383"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Parts/usagi-face-blink-right-eye-v44.png",
+      "archive_path": "UsagiIdentity-v44/Parts/usagi-face-blink-right-eye-v44.png",
+      "bytes": 6997,
+      "sha256": "850eee4b49b85144e9777eac62e594ebeb0b3b1d15929c6f64066ba2abfe4044"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Parts/usagi-face-cheer-left-eye-v44.png",
+      "archive_path": "UsagiIdentity-v44/Parts/usagi-face-cheer-left-eye-v44.png",
+      "bytes": 19051,
+      "sha256": "c47ef93ff23c06aac60b5f62e3330c35102650b0380e7846d41257d834303c5c"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Parts/usagi-face-cheer-mouth-v44.png",
+      "archive_path": "UsagiIdentity-v44/Parts/usagi-face-cheer-mouth-v44.png",
+      "bytes": 16888,
+      "sha256": "18ba94b7e35d35310e4daee80fb61953d12931e5a1ddbf4223f41b4f4da89d64"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Parts/usagi-face-cheer-right-eye-v44.png",
+      "archive_path": "UsagiIdentity-v44/Parts/usagi-face-cheer-right-eye-v44.png",
+      "bytes": 19195,
+      "sha256": "27fdb74e863ababc506f900ede34925dadc70281dcc241affe5127824725a714"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Parts/usagi-face-curious-left-eye-v44.png",
+      "archive_path": "UsagiIdentity-v44/Parts/usagi-face-curious-left-eye-v44.png",
+      "bytes": 19742,
+      "sha256": "82223585dd25175eb16bd69a91b2c9b014315f2dd3bb369502dd2022c3d52627"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Parts/usagi-face-curious-mouth-v44.png",
+      "archive_path": "UsagiIdentity-v44/Parts/usagi-face-curious-mouth-v44.png",
+      "bytes": 15569,
+      "sha256": "5b98c95c2456837eeaa96a4ae86932b26f2df60db998121ef7033e6ab1feda03"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Parts/usagi-face-curious-right-eye-v44.png",
+      "archive_path": "UsagiIdentity-v44/Parts/usagi-face-curious-right-eye-v44.png",
+      "bytes": 19410,
+      "sha256": "e5bceb85a748a5a48c8f7da787abaee7a09dd93011b77573156e93f1d54f726f"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Parts/usagi-face-neutral-left-eye-v44.png",
+      "archive_path": "UsagiIdentity-v44/Parts/usagi-face-neutral-left-eye-v44.png",
+      "bytes": 19175,
+      "sha256": "5e3d6bf6e91062781a9950b727f1fe25cd31ac1fba032957f04701d2ede9fd51"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Parts/usagi-face-neutral-mouth-v44.png",
+      "archive_path": "UsagiIdentity-v44/Parts/usagi-face-neutral-mouth-v44.png",
+      "bytes": 22416,
+      "sha256": "b40b83f0dbb272ba47b6efd2173b3a52de943c1bd7a082a9cdb26f8071a872b7"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Parts/usagi-face-neutral-right-eye-v44.png",
+      "archive_path": "UsagiIdentity-v44/Parts/usagi-face-neutral-right-eye-v44.png",
+      "bytes": 18775,
+      "sha256": "73c5cd05b577524c09eaa27d1fdfdd71306c713729dda1e18160523440f9dc70"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Parts/usagi-face-shout-left-eye-v44.png",
+      "archive_path": "UsagiIdentity-v44/Parts/usagi-face-shout-left-eye-v44.png",
+      "bytes": 18933,
+      "sha256": "0bbe97dd009a736e281b705932c337edbfccd655718373e7ec24871d52023c53"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Parts/usagi-face-shout-mouth-v44.png",
+      "archive_path": "UsagiIdentity-v44/Parts/usagi-face-shout-mouth-v44.png",
+      "bytes": 15174,
+      "sha256": "582b30dec1613ef58a03fac44a09b2a7f082e9fc7d65fb91fbaec830308af3f1"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Parts/usagi-face-shout-right-eye-v44.png",
+      "archive_path": "UsagiIdentity-v44/Parts/usagi-face-shout-right-eye-v44.png",
+      "bytes": 19174,
+      "sha256": "8f5ec2b9ba0a3345c0d9f6e568937d944f15f82c538ae4fe8236bb2421e9ec47"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Parts/usagi-face-sleep-left-eye-v44.png",
+      "archive_path": "UsagiIdentity-v44/Parts/usagi-face-sleep-left-eye-v44.png",
+      "bytes": 7364,
+      "sha256": "4eab90c3e3b572be6130eee2bcdae6132948881ab2d09694e61884e4c3ccd0cc"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Parts/usagi-face-sleep-mouth-v44.png",
+      "archive_path": "UsagiIdentity-v44/Parts/usagi-face-sleep-mouth-v44.png",
+      "bytes": 11356,
+      "sha256": "2e1945c6dab58af9664a9935dd066366ccca1ab0000e69298d8a0c627e6c7c71"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Parts/usagi-face-sleep-right-eye-v44.png",
+      "archive_path": "UsagiIdentity-v44/Parts/usagi-face-sleep-right-eye-v44.png",
+      "bytes": 7187,
+      "sha256": "63aebf2123717928e97df0b1e286ff823cb4b0e3e305fa91f928a8f06e68311b"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/UsagiIdentity-v44/Prompts/facial-parts.txt",
+      "archive_path": "UsagiIdentity-v44/Prompts/facial-parts.txt",
+      "bytes": 2810,
+      "sha256": "68fbe4f1797e69f1e76a08e821097853ff080351d7d5005814d6ba658a6d98b8"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/UsagiIdentity-v44/Prompts/remove-glow.txt",
+      "archive_path": "UsagiIdentity-v44/Prompts/remove-glow.txt",
+      "bytes": 586,
+      "sha256": "740a7e9eaad964500e91b696bde4201b4d8ccbb1cee8a87753ebfabcbd9c5d34"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/UsagiIdentity-v44/README.txt",
+      "archive_path": "UsagiIdentity-v44/README.txt",
+      "bytes": 4102,
+      "sha256": "6aabef124450b1381af8f00a8bf0825b39c4f9ff933875ed14a4cb708e02f42f"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/UsagiIdentity-v44/References/Official/4571609409229.html",
+      "archive_path": "UsagiIdentity-v44/References/Official/4571609409229.html",
+      "bytes": 679873,
+      "sha256": "d6897089b726b30e8e19a89684a7712713c61049673d55ee18a1e5acebecc806"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/UsagiIdentity-v44/References/Official/4903320168053.html",
+      "archive_path": "UsagiIdentity-v44/References/Official/4903320168053.html",
+      "bytes": 680983,
+      "sha256": "7ddeed393efd7e4abe7a75e3cceac503627db3e5d77198476b6fdda4ea97add9"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/References/Official/bt_chara_03.png",
+      "archive_path": "UsagiIdentity-v44/References/Official/bt_chara_03.png",
+      "bytes": 5914,
+      "sha256": "20d8c4f409d71cf8edc1a2826276183773f6c48d2cf30e23f01661f369973865"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/References/Official/bt_chara_03_on.png",
+      "archive_path": "UsagiIdentity-v44/References/Official/bt_chara_03_on.png",
+      "bytes": 1737,
+      "sha256": "ef614141c30fa75db6bdf8ca6a824ba7133e5786f849647155741b2b5edfe92c"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/UsagiIdentity-v44/References/Official/chara.html",
+      "archive_path": "UsagiIdentity-v44/References/Official/chara.html",
+      "bytes": 3418,
+      "sha256": "02dd9b3f4edf69f9f8234aace662356da8523ac865393810462a0d4d30b06563"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/References/Official/episode-001.jpg",
+      "archive_path": "UsagiIdentity-v44/References/Official/episode-001.jpg",
+      "bytes": 74993,
+      "sha256": "0aba8a1daed995b90864bd6b23157ba876391df4e9bc096e658c55eba6d34fbe"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/References/Official/episode-020.jpg",
+      "archive_path": "UsagiIdentity-v44/References/Official/episode-020.jpg",
+      "bytes": 57283,
+      "sha256": "885c53759851853cbd868694ca9b261cfbc11ea678a090fd9a4569698a340e66"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/References/Official/episode-027.jpg",
+      "archive_path": "UsagiIdentity-v44/References/Official/episode-027.jpg",
+      "bytes": 75066,
+      "sha256": "736bd3eb6b9dd2101f1fe28566ee450c37367147dfeacd511d7eb962ad6a0c1f"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/References/Official/episode-034.jpg",
+      "archive_path": "UsagiIdentity-v44/References/Official/episode-034.jpg",
+      "bytes": 50895,
+      "sha256": "8288b02640f13ab65fb0778fe2711e33e0707b49db37c8d1c9c932b446ed1150"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/References/Official/episode-040.jpg",
+      "archive_path": "UsagiIdentity-v44/References/Official/episode-040.jpg",
+      "bytes": 32058,
+      "sha256": "f9a121a175791b059aca6ad74cac5c47f3b8192a9faff30f4c1ff1cfa608ff07"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/References/Official/episode-044.jpg",
+      "archive_path": "UsagiIdentity-v44/References/Official/episode-044.jpg",
+      "bytes": 62333,
+      "sha256": "a3be3c37786bdd4000ee3ba043db2fefcf77a2c5a55fc32bd43f3afc02c79f72"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/References/Official/episode-047.jpg",
+      "archive_path": "UsagiIdentity-v44/References/Official/episode-047.jpg",
+      "bytes": 134072,
+      "sha256": "73ad8d8dbee4a5ad5b40994b86b5e10dfc05be78bf775f89ed3ab284911356c2"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/References/Official/episode-055.jpg",
+      "archive_path": "UsagiIdentity-v44/References/Official/episode-055.jpg",
+      "bytes": 65887,
+      "sha256": "c2fcbf9620c83113f943d3002ed670f0f749cb10da440c6267ea65caf00c8381"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/References/Official/episode-090.jpg",
+      "archive_path": "UsagiIdentity-v44/References/Official/episode-090.jpg",
+      "bytes": 45265,
+      "sha256": "12cbeacf8038f7a21df03b7311c703202b11f6f4480ea88225a0a35fa48419dc"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/References/Official/episode-091.jpg",
+      "archive_path": "UsagiIdentity-v44/References/Official/episode-091.jpg",
+      "bytes": 64938,
+      "sha256": "9b1aedd966ac9148b9e4d01cd2d4fe62a01338c13e7f8b21de4da4c33e55c8ab"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/References/Official/episode-109.jpg",
+      "archive_path": "UsagiIdentity-v44/References/Official/episode-109.jpg",
+      "bytes": 114562,
+      "sha256": "7ca51e751d8415230df97270507a33eb7cf5b8402c2c409059462c8ae4b5f9f8"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/References/Official/episode-110.jpg",
+      "archive_path": "UsagiIdentity-v44/References/Official/episode-110.jpg",
+      "bytes": 110350,
+      "sha256": "f482609ee5e3d5f09c1888eebc80f52410637675d5143ed07f12d79c298d5499"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/UsagiIdentity-v44/References/Official/episodeHistories.json",
+      "archive_path": "UsagiIdentity-v44/References/Official/episodeHistories.json",
+      "bytes": 38624,
+      "sha256": "b85579ede789ca46864e144c0ae2c71625483a8b8148bb3e5f326d57f069e32b"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/UsagiIdentity-v44/References/Official/episodes.json",
+      "archive_path": "UsagiIdentity-v44/References/Official/episodes.json",
+      "bytes": 2151,
+      "sha256": "73a61c9d7189d693fa7709bacd5fa0e44a43bd7de42e57bd50d177b5e28863a8"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/References/Official/img_chara_03.png",
+      "archive_path": "UsagiIdentity-v44/References/Official/img_chara_03.png",
+      "bytes": 16685,
+      "sha256": "46b55d5d3f83476d0d3d433f1e9953753f11f62d38781f90dfba1f6b3238fdf5"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/References/Official/img_charapage.png",
+      "archive_path": "UsagiIdentity-v44/References/Official/img_charapage.png",
+      "bytes": 209921,
+      "sha256": "856b8b0e181c4a1c2a826816ed0b19eaad271fb580e76c5b21273885ec0ff07e"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/UsagiIdentity-v44/References/Official/main.js",
+      "archive_path": "UsagiIdentity-v44/References/Official/main.js",
+      "bytes": 3656020,
+      "sha256": "bb1c184a5925948c4d54b0eaf9237339f856313cfd4d44777a3f6dd06ced1695"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/References/Official/market-4571609409229-1.jpg",
+      "archive_path": "UsagiIdentity-v44/References/Official/market-4571609409229-1.jpg",
+      "bytes": 168034,
+      "sha256": "93ed1d241b1af9b68247edfab8f4ad904b13a9ca22a8f8d508610a6b44c38e38"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/References/Official/market-4571609409229-2.jpg",
+      "archive_path": "UsagiIdentity-v44/References/Official/market-4571609409229-2.jpg",
+      "bytes": 168034,
+      "sha256": "93ed1d241b1af9b68247edfab8f4ad904b13a9ca22a8f8d508610a6b44c38e38"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/References/Official/market-4903320168053-1.jpg",
+      "archive_path": "UsagiIdentity-v44/References/Official/market-4903320168053-1.jpg",
+      "bytes": 119291,
+      "sha256": "4ec88c1399fdc791495d9406d12f708b242c34df933bf5730b18bd84be7f3fe9"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/References/Official/market-4903320168053-2.jpg",
+      "archive_path": "UsagiIdentity-v44/References/Official/market-4903320168053-2.jpg",
+      "bytes": 98131,
+      "sha256": "f1ebe8653f7e32d8ee5193970c2bdf4bdae2da82472a273a0130d4320947aa74"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/UsagiIdentity-v44/References/Official/official-directory-verification.json",
+      "archive_path": "UsagiIdentity-v44/References/Official/official-directory-verification.json",
+      "bytes": 271,
+      "sha256": "8dafafa423a75333acb5cda414230b162c77d2e0c814994de87c40e75e76cf15"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/UsagiIdentity-v44/References/Official/sources.json",
+      "archive_path": "UsagiIdentity-v44/References/Official/sources.json",
+      "bytes": 8006,
+      "sha256": "a5d324bd00fb3a3837c6ea0e0274e6eb4d0748659e4958bfd6f34228514689ac"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/References/Official/usagi.png",
+      "archive_path": "UsagiIdentity-v44/References/Official/usagi.png",
+      "bytes": 31253,
+      "sha256": "9eb8c221fc5c233cffa81e61120a51424d5f82c4996679b7c37b497da3810905"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Review-v1/kurimanju/actions-preview.png",
+      "archive_path": "UsagiIdentity-v44/Review-v1/kurimanju/actions-preview.png",
+      "bytes": 306045,
+      "sha256": "31a832917c313be3b06fdae2faf538eefff14015289e6844fd7fe9addf557e7e"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Review-v1/kurimanju/down-24.png",
+      "archive_path": "UsagiIdentity-v44/Review-v1/kurimanju/down-24.png",
+      "bytes": 826909,
+      "sha256": "b4144a18d7cf551d1e1b308f52893842f252bb4921d94cb7b3c7d76071aa9c50"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Review-v1/kurimanju/down-left-24.png",
+      "archive_path": "UsagiIdentity-v44/Review-v1/kurimanju/down-left-24.png",
+      "bytes": 863694,
+      "sha256": "1f496825010a497fd4926ac028efc5341d88001d8c7701fe5063ba0d26f7b249"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Review-v1/kurimanju/down-right-24.png",
+      "archive_path": "UsagiIdentity-v44/Review-v1/kurimanju/down-right-24.png",
+      "bytes": 871744,
+      "sha256": "faa45ecbb34c67bc9fc73987c79a236e148336bb1cb056c644b484213cbbc2ec"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Review-v1/kurimanju/eight-directions.gif",
+      "archive_path": "UsagiIdentity-v44/Review-v1/kurimanju/eight-directions.gif",
+      "bytes": 1285576,
+      "sha256": "73525951f264f75d4d12b6341dd16b7088ab235287f1897177994279a775f61d"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Review-v1/kurimanju/eight-directions.png",
+      "archive_path": "UsagiIdentity-v44/Review-v1/kurimanju/eight-directions.png",
+      "bytes": 289817,
+      "sha256": "3006083d357f12ed7b7e1b9fe7bcb9e09a04b169835ef45d3109ccb7c5774e03"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Review-v1/kurimanju/keepsake-12.png",
+      "archive_path": "UsagiIdentity-v44/Review-v1/kurimanju/keepsake-12.png",
+      "bytes": 194196,
+      "sha256": "2027c137a4577a6da65081dbe5184c17e3b994df0a477a20804f3985bbb9adca"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Review-v1/kurimanju/laugh-12.png",
+      "archive_path": "UsagiIdentity-v44/Review-v1/kurimanju/laugh-12.png",
+      "bytes": 159220,
+      "sha256": "618af114624bc19accca4caada4b2c6409a5c885625ec701ccb25cc6179987a5"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Review-v1/kurimanju/left-24.png",
+      "archive_path": "UsagiIdentity-v44/Review-v1/kurimanju/left-24.png",
+      "bytes": 766586,
+      "sha256": "8e63b9fdf2f65706e0bd2dda9a420e90b8cb704a90c23933f5fb618f69bba6b5"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Review-v1/kurimanju/pickup-12.png",
+      "archive_path": "UsagiIdentity-v44/Review-v1/kurimanju/pickup-12.png",
+      "bytes": 477146,
+      "sha256": "d57fbb2a602cb5293c018077fa1bfe4880889f20340c251b02ed33d393e366c1"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Review-v1/kurimanju/right-24.png",
+      "archive_path": "UsagiIdentity-v44/Review-v1/kurimanju/right-24.png",
+      "bytes": 766061,
+      "sha256": "1584838bc570860d7b7a20c434b184ba2f0065dfbcd670d2fb54135f42c769ff"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Review-v1/kurimanju/sleep-12.png",
+      "archive_path": "UsagiIdentity-v44/Review-v1/kurimanju/sleep-12.png",
+      "bytes": 68717,
+      "sha256": "1b5e5b614803900bde450216c59c0ff75f82736cb01a2979c2cb8becc8626ce8"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Review-v1/kurimanju/surprised-12.png",
+      "archive_path": "UsagiIdentity-v44/Review-v1/kurimanju/surprised-12.png",
+      "bytes": 159703,
+      "sha256": "359c9741a76516ca55261f168cc6fae6e80202f81889e7d84ce72f3db31c46c8"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Review-v1/kurimanju/up-24.png",
+      "archive_path": "UsagiIdentity-v44/Review-v1/kurimanju/up-24.png",
+      "bytes": 764215,
+      "sha256": "c856ccd598a7375540bdb81ff8740800e28c96ffa082365df0ab49b0a0231a51"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Review-v1/kurimanju/up-left-24.png",
+      "archive_path": "UsagiIdentity-v44/Review-v1/kurimanju/up-left-24.png",
+      "bytes": 827986,
+      "sha256": "9f95b26c765b098ec73f03bb8350703fc5ed5fd64eb6e2c0c8e9c61200bafcbb"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Review-v1/kurimanju/up-right-24.png",
+      "archive_path": "UsagiIdentity-v44/Review-v1/kurimanju/up-right-24.png",
+      "bytes": 821992,
+      "sha256": "0eca26546dc476cb1af963fbdcc29a2e72f9af85fdb49d8f62187fd9709fd53f"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Review-v1/kurimanju/wake-12.png",
+      "archive_path": "UsagiIdentity-v44/Review-v1/kurimanju/wake-12.png",
+      "bytes": 338197,
+      "sha256": "9334ad572748b769adfa97ed1507465bebdf8cb5884db035c6a851b27135b5ba"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Review-v1/kurimanju/wave-12.png",
+      "archive_path": "UsagiIdentity-v44/Review-v1/kurimanju/wave-12.png",
+      "bytes": 161326,
+      "sha256": "945a877f782187fe86abf5bce32518f05ad64a3c2bd07aced65df1235f6a7dd5"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Review-v1/momonga/actions-preview.png",
+      "archive_path": "UsagiIdentity-v44/Review-v1/momonga/actions-preview.png",
+      "bytes": 321084,
+      "sha256": "3b217d7e96fc5883226ebe88926d607cdfef860996cd7ec73fd723decbc241f7"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Review-v1/momonga/down-24.png",
+      "archive_path": "UsagiIdentity-v44/Review-v1/momonga/down-24.png",
+      "bytes": 844568,
+      "sha256": "3ebfbadaf0914903e04a72270053a93f26bcf789121965800b432bbb34356bbd"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Review-v1/momonga/down-left-24.png",
+      "archive_path": "UsagiIdentity-v44/Review-v1/momonga/down-left-24.png",
+      "bytes": 848198,
+      "sha256": "bc78927e8bea7b05a6e171572a0c85d028fd94511e28b968fdec30f6f92575b5"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Review-v1/momonga/down-right-24.png",
+      "archive_path": "UsagiIdentity-v44/Review-v1/momonga/down-right-24.png",
+      "bytes": 867402,
+      "sha256": "449fcf5bc4ef16602c37193c952657ee64d725bebd73862d8025548b6c05fc3c"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Review-v1/momonga/eight-directions.gif",
+      "archive_path": "UsagiIdentity-v44/Review-v1/momonga/eight-directions.gif",
+      "bytes": 1579376,
+      "sha256": "17f273e339e53a47608c0392d2d8427f302f188b37e1c5bd61264b12e76defe4"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Review-v1/momonga/eight-directions.png",
+      "archive_path": "UsagiIdentity-v44/Review-v1/momonga/eight-directions.png",
+      "bytes": 306305,
+      "sha256": "a6a649792cfb823a1b0a1404f9c46c907ed68b65dd979698bcbe737272091552"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Review-v1/momonga/keepsake-12.png",
+      "archive_path": "UsagiIdentity-v44/Review-v1/momonga/keepsake-12.png",
+      "bytes": 187486,
+      "sha256": "d2493276bba0e84ca3416f362fedf683b604a08fa473c06df6ed9f2389d86936"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Review-v1/momonga/laugh-12.png",
+      "archive_path": "UsagiIdentity-v44/Review-v1/momonga/laugh-12.png",
+      "bytes": 166076,
+      "sha256": "c8c84cf68151ced15e3d2969dc5ea070c865d86ecdfa6d457d3c7ff62ac07979"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Review-v1/momonga/left-24.png",
+      "archive_path": "UsagiIdentity-v44/Review-v1/momonga/left-24.png",
+      "bytes": 748991,
+      "sha256": "97dc1281f888e9bb99355b5ef3ac481a3eb88be05a664885fb0afae563319d9f"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Review-v1/momonga/pickup-12.png",
+      "archive_path": "UsagiIdentity-v44/Review-v1/momonga/pickup-12.png",
+      "bytes": 496638,
+      "sha256": "1cbc956a2928624559eff67fca508ad93b7579a7ed0eee5dd012501b9caafd19"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Review-v1/momonga/right-24.png",
+      "archive_path": "UsagiIdentity-v44/Review-v1/momonga/right-24.png",
+      "bytes": 761597,
+      "sha256": "62a3426e4a6526d988f4d3d3e705d1574352ccae0fdf89ad467246357ac546e3"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Review-v1/momonga/sleep-12.png",
+      "archive_path": "UsagiIdentity-v44/Review-v1/momonga/sleep-12.png",
+      "bytes": 71820,
+      "sha256": "f5ea79266e82744c16f963ecca49a2349355e6bd1fe1e86380beb077df13713b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Review-v1/momonga/surprised-12.png",
+      "archive_path": "UsagiIdentity-v44/Review-v1/momonga/surprised-12.png",
+      "bytes": 170176,
+      "sha256": "d9a392b90208f9fe200c2d9c3fb2c0192fc90739899102d5b2deec9fbd9861cc"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Review-v1/momonga/up-24.png",
+      "archive_path": "UsagiIdentity-v44/Review-v1/momonga/up-24.png",
+      "bytes": 827246,
+      "sha256": "11fdb2aac4e965dee3f31cc03bbcf13a453939eb2179952debacf8ee8c93a88a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Review-v1/momonga/up-left-24.png",
+      "archive_path": "UsagiIdentity-v44/Review-v1/momonga/up-left-24.png",
+      "bytes": 800397,
+      "sha256": "4e15d79b186765a7fd393635099dc86e714d412a29a0fa6fd8495ddde2200e6d"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Review-v1/momonga/up-right-24.png",
+      "archive_path": "UsagiIdentity-v44/Review-v1/momonga/up-right-24.png",
+      "bytes": 806784,
+      "sha256": "170b5312d30093fc07eff4522682eebd66ea86a5cc1b91c52ad061cc3b987317"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Review-v1/momonga/wake-12.png",
+      "archive_path": "UsagiIdentity-v44/Review-v1/momonga/wake-12.png",
+      "bytes": 337094,
+      "sha256": "292be8bbe1168b506822a589adf320d2f44c589c211c48e24975a4b7e1668dc1"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Review-v1/momonga/wave-12.png",
+      "archive_path": "UsagiIdentity-v44/Review-v1/momonga/wave-12.png",
+      "bytes": 170995,
+      "sha256": "7f4a918e2fa7bae6ed875f74d1f2fd85a3f258962753cc449911330cf536e7af"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Review-v1/usagi/actions-preview.png",
+      "archive_path": "UsagiIdentity-v44/Review-v1/usagi/actions-preview.png",
+      "bytes": 295352,
+      "sha256": "3e9787ebeecf15d049f0dd5bb65741800045173f8d63e56432e1f4d15ca5a061"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Review-v1/usagi/attack-12.png",
+      "archive_path": "UsagiIdentity-v44/Review-v1/usagi/attack-12.png",
+      "bytes": 250251,
+      "sha256": "64fc815841faeda394d6e24da8d145c33203df770f7cda663ef08ab45fff040a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Review-v1/usagi/down-24.png",
+      "archive_path": "UsagiIdentity-v44/Review-v1/usagi/down-24.png",
+      "bytes": 1066447,
+      "sha256": "8424bd09b546c509b049db81ff19dfc65ed3b70bd05ab2ea4b3f5db01f2527ad"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Review-v1/usagi/down-left-24.png",
+      "archive_path": "UsagiIdentity-v44/Review-v1/usagi/down-left-24.png",
+      "bytes": 1051147,
+      "sha256": "aa7a05d65e639631655c871c71753dd6c0aba877117a4f23bb36ffe7cc00151a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Review-v1/usagi/down-right-24.png",
+      "archive_path": "UsagiIdentity-v44/Review-v1/usagi/down-right-24.png",
+      "bytes": 1049131,
+      "sha256": "97fbbcd88613011674f4128b1170facebf12b23d204a59dd7bc06a82fd9f0cc5"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Review-v1/usagi/eight-directions.gif",
+      "archive_path": "UsagiIdentity-v44/Review-v1/usagi/eight-directions.gif",
+      "bytes": 1504309,
+      "sha256": "58e13ac20a8385f32fc4d7c56decc2fcb857988c05b0eb775e5c9b9713db8fc2"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Review-v1/usagi/eight-directions.png",
+      "archive_path": "UsagiIdentity-v44/Review-v1/usagi/eight-directions.png",
+      "bytes": 315767,
+      "sha256": "d7f5896bcf54e54825810bc5a9daeb40bfb3a407e03510baceea8fa6115915bd"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Review-v1/usagi/keepsake-12.png",
+      "archive_path": "UsagiIdentity-v44/Review-v1/usagi/keepsake-12.png",
+      "bytes": 195622,
+      "sha256": "d9a4c5e9fdc8b8e2737533d6004eaaf1ce18d63716d484673fa69f12100b746e"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Review-v1/usagi/laugh-12.png",
+      "archive_path": "UsagiIdentity-v44/Review-v1/usagi/laugh-12.png",
+      "bytes": 189355,
+      "sha256": "f7d8ae831412c399fa90405fad5d06d7ab79d8a8637372e1f53bfe0ed61238be"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Review-v1/usagi/left-24.png",
+      "archive_path": "UsagiIdentity-v44/Review-v1/usagi/left-24.png",
+      "bytes": 832601,
+      "sha256": "73e71f7b193cf5ac5700d13b269facad4877b10bd563000427c02e2e292685ce"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Review-v1/usagi/pickup-12.png",
+      "archive_path": "UsagiIdentity-v44/Review-v1/usagi/pickup-12.png",
+      "bytes": 639007,
+      "sha256": "9f2c615b8246b14a6a5f85db052ab86b2dcd88808387e1bad0f2474af4d5179d"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Review-v1/usagi/right-24.png",
+      "archive_path": "UsagiIdentity-v44/Review-v1/usagi/right-24.png",
+      "bytes": 823082,
+      "sha256": "62989c1a4dfa6c813da6ee85273dc77002a9d6dbcb10ef2fa91dff7747a6b306"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Review-v1/usagi/sleep-12.png",
+      "archive_path": "UsagiIdentity-v44/Review-v1/usagi/sleep-12.png",
+      "bytes": 70787,
+      "sha256": "331e7e7e27afa7c31770566e32e175689a24c5020b035d3cc993518421656b13"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Review-v1/usagi/surprised-12.png",
+      "archive_path": "UsagiIdentity-v44/Review-v1/usagi/surprised-12.png",
+      "bytes": 188305,
+      "sha256": "bc0c520670354f984355c37d9bb90935a6c0422436b26f76fad3fa33a2641492"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Review-v1/usagi/up-24.png",
+      "archive_path": "UsagiIdentity-v44/Review-v1/usagi/up-24.png",
+      "bytes": 865310,
+      "sha256": "0d1d08460a60321c22810c56edb925e9e55caff9a3ccaf90d9a544ad0e3c457b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Review-v1/usagi/up-left-24.png",
+      "archive_path": "UsagiIdentity-v44/Review-v1/usagi/up-left-24.png",
+      "bytes": 882619,
+      "sha256": "78d39ef48abc9ca0bb5780ff2384d027e11782b7cb7493f62637ace2a0f14851"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Review-v1/usagi/up-right-24.png",
+      "archive_path": "UsagiIdentity-v44/Review-v1/usagi/up-right-24.png",
+      "bytes": 877273,
+      "sha256": "3a5bc3885bff1b9d9b76a05c6965d5a2def24e9b82eca198de806d9f1e8f8380"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Review-v1/usagi/wake-12.png",
+      "archive_path": "UsagiIdentity-v44/Review-v1/usagi/wake-12.png",
+      "bytes": 487329,
+      "sha256": "b7071288ace672797d7477fb9517f0d34d08d306f48dfce1cc4ff5255628bec1"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiIdentity-v44/Review-v1/usagi/wave-12.png",
+      "archive_path": "UsagiIdentity-v44/Review-v1/usagi/wave-12.png",
+      "bytes": 186720,
+      "sha256": "52020da15d2ccf93ab2c104bd042c8477a1508c94117a6bd6bbca6a0e27040ed"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/UsagiIdentity-v44/generation.json",
+      "archive_path": "UsagiIdentity-v44/generation.json",
+      "bytes": 436,
+      "sha256": "85ce5b46b6258db36b6c3efbf3cfa7e2663c0877fab5300d3a0f3095c1ac358c"
+    },
+    {
       "kind": "image",
       "source": "Source/Versions/093914a47e35f0a4/build/artwork/friends.png",
       "archive_path": "Versions/093914a47e35f0a4/build/artwork/friends.png",
@@ -25556,6 +26634,20 @@
       "archive_path": "Versions/1214038f24f85005/build/artwork/hachiware-sprite-preview.png",
       "bytes": 266536,
       "sha256": "1214038f24f85005362d348cd527e5ac7dad3b0440d7e3ad8e965ea3afeaeabf"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/1ecc13bdbe93e61f/build/ChiikawaCompanion.app/Contents/Resources/Roster/usagi/laugh-12.png",
+      "archive_path": "Versions/1ecc13bdbe93e61f/build/ChiikawaCompanion.app/Contents/Resources/Roster/usagi/laugh-12.png",
+      "bytes": 195551,
+      "sha256": "1ecc13bdbe93e61f435f88d61d68e135de5cdb84255ef01db034fa6d95fbbb00"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/1ecc13bdbe93e61f/build/roster/usagi/laugh-12.png",
+      "archive_path": "Versions/1ecc13bdbe93e61f/build/roster/usagi/laugh-12.png",
+      "bytes": 195551,
+      "sha256": "1ecc13bdbe93e61f435f88d61d68e135de5cdb84255ef01db034fa6d95fbbb00"
     },
     {
       "kind": "image",
@@ -25577,6 +26669,13 @@
       "archive_path": "Versions/2a7c8741715cb6de/build/artwork/hachiware-12-frame-walk.gif",
       "bytes": 429441,
       "sha256": "2a7c8741715cb6de25fc07bfb29e897711f9443bae30bae155f1ad7ad6b0184d"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/3484a4f0532b9e6d/build/artwork/friends.png",
+      "archive_path": "Versions/3484a4f0532b9e6d/build/artwork/friends.png",
+      "bytes": 262741,
+      "sha256": "3484a4f0532b9e6ddbe0f7e87137f2e9722948bf2688cf8115699817eed6c7eb"
     },
     {
       "kind": "image",
@@ -25657,6 +26756,20 @@
     },
     {
       "kind": "image",
+      "source": "Source/Versions/45ecac624d4f985b/build/ChiikawaCompanion.app/Contents/Resources/Roster/usagi/keepsake-12.png",
+      "archive_path": "Versions/45ecac624d4f985b/build/ChiikawaCompanion.app/Contents/Resources/Roster/usagi/keepsake-12.png",
+      "bytes": 199581,
+      "sha256": "45ecac624d4f985ba7cc47687c1303fa4dac7ab45baf470fde65e4621e3f48b4"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/45ecac624d4f985b/build/roster/usagi/keepsake-12.png",
+      "archive_path": "Versions/45ecac624d4f985b/build/roster/usagi/keepsake-12.png",
+      "bytes": 199581,
+      "sha256": "45ecac624d4f985ba7cc47687c1303fa4dac7ab45baf470fde65e4621e3f48b4"
+    },
+    {
+      "kind": "image",
       "source": "Source/Versions/4e71dfce17122d68/build/artwork/hachiware-side-cycle.png",
       "archive_path": "Versions/4e71dfce17122d68/build/artwork/hachiware-side-cycle.png",
       "bytes": 797456,
@@ -25706,6 +26819,13 @@
     },
     {
       "kind": "image",
+      "source": "Source/Versions/64c3790cd04528f4/build/artwork/shared-home-designs-v29.png",
+      "archive_path": "Versions/64c3790cd04528f4/build/artwork/shared-home-designs-v29.png",
+      "bytes": 900606,
+      "sha256": "64c3790cd04528f4e6f12788b0c3f367484cb5212d902b6e8efe24051bc3959a"
+    },
+    {
+      "kind": "image",
       "source": "Source/Versions/677aa22f4b77d1df/build/roster/kurimanju/actions-preview.png",
       "archive_path": "Versions/677aa22f4b77d1df/build/roster/kurimanju/actions-preview.png",
       "bytes": 468575,
@@ -25731,6 +26851,27 @@
       "archive_path": "Versions/72682c6d36577958/build/roster/momonga/vomit-12.png",
       "bytes": 197360,
       "sha256": "72682c6d365779588b9cfbdf2115de20f9294ef6be0c45f74eeb07fe61a8ed9c"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/73f1148143432c7c/build/ChiikawaCompanion.app/Contents/Resources/Roster/usagi/attack-12.png",
+      "archive_path": "Versions/73f1148143432c7c/build/ChiikawaCompanion.app/Contents/Resources/Roster/usagi/attack-12.png",
+      "bytes": 278481,
+      "sha256": "73f1148143432c7cd50cc7d845440264d879fd30b0c4a904d47858576f8576e7"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/73f1148143432c7c/build/roster/usagi/attack-12.png",
+      "archive_path": "Versions/73f1148143432c7c/build/roster/usagi/attack-12.png",
+      "bytes": 278481,
+      "sha256": "73f1148143432c7cd50cc7d845440264d879fd30b0c4a904d47858576f8576e7"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/7498e7243c457a9d/build/roster/usagi/actions-preview.png",
+      "archive_path": "Versions/7498e7243c457a9d/build/roster/usagi/actions-preview.png",
+      "bytes": 370661,
+      "sha256": "7498e7243c457a9d10c1752a1088f4c4ff0b929de438b17c8881164cf652e260"
     },
     {
       "kind": "image",
@@ -25769,6 +26910,27 @@
     },
     {
       "kind": "image",
+      "source": "Source/Versions/7c18fa3068724552/build/ChiikawaCompanion.app/Contents/Resources/Roster/usagi/sleep-12.png",
+      "archive_path": "Versions/7c18fa3068724552/build/ChiikawaCompanion.app/Contents/Resources/Roster/usagi/sleep-12.png",
+      "bytes": 71951,
+      "sha256": "7c18fa306872455272b5f8922f4e4313ebcec3f1d2f8c4ca510764741fc27d59"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/7c18fa3068724552/build/roster/usagi/sleep-12.png",
+      "archive_path": "Versions/7c18fa3068724552/build/roster/usagi/sleep-12.png",
+      "bytes": 71951,
+      "sha256": "7c18fa306872455272b5f8922f4e4313ebcec3f1d2f8c4ca510764741fc27d59"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/8807334c1850588a/build/artwork/shared-home-sleep-v29.gif",
+      "archive_path": "Versions/8807334c1850588a/build/artwork/shared-home-sleep-v29.gif",
+      "bytes": 388944,
+      "sha256": "8807334c1850588a62a03ae78a45f734ed67b38dba941beeff1662ef4b3d4793"
+    },
+    {
+      "kind": "image",
       "source": "Source/Versions/89e5b1c3dcc4c8a6/build/artwork/hachiware-sprite-preview.png",
       "archive_path": "Versions/89e5b1c3dcc4c8a6/build/artwork/hachiware-sprite-preview.png",
       "bytes": 275669,
@@ -25797,10 +26959,38 @@
     },
     {
       "kind": "image",
+      "source": "Source/Versions/a51f2415b4d86a9d/build/ChiikawaCompanion.app/Contents/Resources/Roster/usagi/pickup-12.png",
+      "archive_path": "Versions/a51f2415b4d86a9d/build/ChiikawaCompanion.app/Contents/Resources/Roster/usagi/pickup-12.png",
+      "bytes": 656896,
+      "sha256": "a51f2415b4d86a9ddaf209b67b49baf70f4fa6df280ec96316f6b92698d5dc7d"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/a51f2415b4d86a9d/build/roster/usagi/pickup-12.png",
+      "archive_path": "Versions/a51f2415b4d86a9d/build/roster/usagi/pickup-12.png",
+      "bytes": 656896,
+      "sha256": "a51f2415b4d86a9ddaf209b67b49baf70f4fa6df280ec96316f6b92698d5dc7d"
+    },
+    {
+      "kind": "image",
       "source": "Source/Versions/ab40babb2b8de90c/build/artwork/hachiware-side-cycle.png",
       "archive_path": "Versions/ab40babb2b8de90c/build/artwork/hachiware-side-cycle.png",
       "bytes": 816408,
       "sha256": "ab40babb2b8de90c687efc960e24ddc7db2fcc1a6a34bfe4389050f78b85aef5"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/ad6f0bd1fc76d5f9/build/ChiikawaCompanion.app/Contents/Resources/Roster/usagi/wave-12.png",
+      "archive_path": "Versions/ad6f0bd1fc76d5f9/build/ChiikawaCompanion.app/Contents/Resources/Roster/usagi/wave-12.png",
+      "bytes": 189029,
+      "sha256": "ad6f0bd1fc76d5f938f7c4d932de5237953b05bbc87170fda79745aeb2f57b2f"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/ad6f0bd1fc76d5f9/build/roster/usagi/wave-12.png",
+      "archive_path": "Versions/ad6f0bd1fc76d5f9/build/roster/usagi/wave-12.png",
+      "bytes": 189029,
+      "sha256": "ad6f0bd1fc76d5f938f7c4d932de5237953b05bbc87170fda79745aeb2f57b2f"
     },
     {
       "kind": "image",
@@ -25888,10 +27078,38 @@
     },
     {
       "kind": "image",
+      "source": "Source/Versions/da87a8f8441da8fc/build/ChiikawaCompanion.app/Contents/Resources/Roster/usagi/wake-12.png",
+      "archive_path": "Versions/da87a8f8441da8fc/build/ChiikawaCompanion.app/Contents/Resources/Roster/usagi/wake-12.png",
+      "bytes": 484970,
+      "sha256": "da87a8f8441da8fc7470a4ddf342af85169e29a56e0e8b643cb9b341a99b13cd"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/da87a8f8441da8fc/build/roster/usagi/wake-12.png",
+      "archive_path": "Versions/da87a8f8441da8fc/build/roster/usagi/wake-12.png",
+      "bytes": 484970,
+      "sha256": "da87a8f8441da8fc7470a4ddf342af85169e29a56e0e8b643cb9b341a99b13cd"
+    },
+    {
+      "kind": "image",
       "source": "Source/Versions/db7dafea36a93a2d/build/artwork/shared-home-designs-v29.png",
       "archive_path": "Versions/db7dafea36a93a2d/build/artwork/shared-home-designs-v29.png",
       "bytes": 905522,
       "sha256": "db7dafea36a93a2dd90d3f6b662aa2291f9960bd1a54084212240c70346bd7aa"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/dd30d28d44c5d665/build/ChiikawaCompanion.app/Contents/Resources/Roster/usagi/surprised-12.png",
+      "archive_path": "Versions/dd30d28d44c5d665/build/ChiikawaCompanion.app/Contents/Resources/Roster/usagi/surprised-12.png",
+      "bytes": 191239,
+      "sha256": "dd30d28d44c5d665ee2c362145ee9c60aa7b192bd216aa31f12e1e7cd3e90160"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/dd30d28d44c5d665/build/roster/usagi/surprised-12.png",
+      "archive_path": "Versions/dd30d28d44c5d665/build/roster/usagi/surprised-12.png",
+      "bytes": 191239,
+      "sha256": "dd30d28d44c5d665ee2c362145ee9c60aa7b192bd216aa31f12e1e7cd3e90160"
     },
     {
       "kind": "image",
@@ -26727,8 +27945,8 @@
       "sha256": "8a42caa40e469a5ee00fa2b860d14756cc1fd73bc8fcf73332c50b87a92c9c3b"
     }
   ],
-  "updated_at": "2026-10-22T10:47:05.951011+00:00",
-  "latest_applied": "CharacterItemRules-v43",
+  "updated_at": "2026-10-22T11:18:04.381054+00:00",
+  "latest_applied": "UsagiIdentity-v44",
   "applied_directions": [
     "down-left",
     "down-right"

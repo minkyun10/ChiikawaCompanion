@@ -1,0 +1,15 @@
+Use case: precise-object-edit.
+Asset type: transparent facial-expression parts atlas for the approved Usagi desktop character, NOT a full-character redesign.
+Input 1 is the APPROVED T-pose identity sheet; input 2 is the existing isolated FRONT body whose tiny eyes and muzzle proportions must be preserved. Input 3 is official anime character art; input 4 is the official anime episode 55 pose; input 5 is official 2D Usagi sticker art sold on chiikawamarket.jp. Use only those official art references for expressions. Input 2's silhouette must not be redrawn in this output.
+
+Produce a 3-column by 2-row evenly spaced sprite sheet containing SIX floating FACIAL FEATURE GROUPS on actual transparency. No body, no ears, no head, no cheeks, no eyebrows, no props, no floor, no labels, no grid, no shadows, no glow, no background fill. ONLY the two eyes and small muzzle/mouth are visible in each cell, like a transparent facial decal. All six groups have the same eye centers and eye separation, and the same muzzle center. Dark warm brown smooth hand-drawn ink, same weight as the approved character; small pink tongue only inside open mouths. The face groups should be large and clear with wide empty margins.
+
+Cell order:
+row 1 left: NEUTRAL: two tiny round brown eyes with one oval white catchlight and tiny lower curved white glint, and the tiny double-curved catlike omega muzzle with a small pink tongue below, matching the approved T pose.
+row 1 middle: CHEER / YAHA: SAME open round eyes, omega upper muzzle, joyful long narrow U-shaped open mouth below, dark brown inside and small pink tongue, as the official Usagi stickers. Keep tiny mouth scale. Do not draw closed smiling crescent eyes.
+row 1 right: BATTLE / URA: SAME open round eyes, omega upper muzzle and slightly wider, longer open U-shaped shout with a slim pink tongue. This is Usagi's gleeful loud yell, not an angry frown. No straight angry brows, no fierce eye change, no nose wrinkles, no extra teeth.
+row 2 left: CURIOUS / HAA: SAME small round eyes and a tiny omega muzzle ending with a small asymmetric curved pout, like the official main character image. No huge round O mouth.
+row 2 middle: SLEEP: two tiny thin relaxed closed downward eyelid arcs in the exact same eye center positions, small relaxed omega mouth below. No eyelashes, no snoring bubbles.
+row 2 right: BLINK: thin short closed eyes in the same centers and neutral tiny omega tongue mouth.
+
+Every cell is ONLY two eyes and ONE joined mouth/muzzle. No eyebrow arches (existing body supplies those), no blush (existing body supplies those). They must not contain a yellow face blob or any silhouette. Preserve the character's minimal facial scale; do not turn into another cute rabbit or human facial expression. Actual alpha transparency around every eye and mouth.

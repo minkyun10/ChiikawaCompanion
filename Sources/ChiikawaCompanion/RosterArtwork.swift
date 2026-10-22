@@ -9,6 +9,7 @@ final class RosterNativeRig {
     let foot: NSImage
     let tail: NSImage?
     let expressions: [RosterAction: NSImage]
+    let usagiFace: UsagiFace?
     let paper: NSColor
     let ink = NSColor(hex: 0x3A3025)
     var height: CGFloat { friend == .usagi ? 270 : 194 }
@@ -24,11 +25,14 @@ final class RosterNativeRig {
         }
         guard let arm = load("arm"), let foot = load("foot") else { return nil }
         var expressions: [RosterAction: NSImage] = [:]
-        for action in [RosterAction.laugh,.attack,.surprised,.sleep] where RosterAction.available(for: friend).contains(action) {
+        for action in [RosterAction.laugh,.attack,.surprised,.sleep] where friend != .usagi && RosterAction.available(for: friend).contains(action) {
             if let image = HachiwareSprites.assetURL(named: "\(friend.rawValue)-expression-\(action.rawValue)-v38").flatMap(NSImage.init(contentsOf:)) { expressions[action] = image }
         }
         self.tail = friend == .momonga ? load("tail") : nil
         self.expressions = expressions
+        let usagiFace = friend == .usagi ? UsagiFace(body: bodies[.front]!) : nil
+        if friend == .usagi && usagiFace == nil { return nil }
+        self.usagiFace = usagiFace
         self.friend = friend; self.bodies = bodies; self.arm = arm; self.foot = foot
         if let data = bodies[.front]!.tiffRepresentation, let rep = NSBitmapImageRep(data: data),
            let color = rep.colorAt(x: Int(Double(rep.pixelsWide)*0.48), y: Int(Double(rep.pixelsHigh)*0.82)),
@@ -113,6 +117,13 @@ final class RosterNativeRig {
     func drawBody(_ action: RosterAction, y: CGFloat, phase: Double) {
         drawTail(.front,y:y,phase:phase)
 
+        if let usagiFace {
+            let rect = bodyRect(.front, y: y)
+            bodies[.front]!.draw(in: rect)
+            usagiFace.draw(action, phase: phase, in: rect)
+            return
+        }
+
         let expression = action == .wake ? RosterAction.laugh : action
         if let image=expressions[expression] { image.draw(in:bodyRect(.front,y:y)) }
         else { bodies[.front]!.draw(in:bodyRect(.front,y:y)); face(action,y:y,phase:phase) }
@@ -192,6 +203,10 @@ final class RosterNativeRig {
             drawBody(action,y:y,phase:phase)
             let left = root(.front,y: y,right: false), right = root(.front,y: y,right: true)
             let wave = CGFloat(sin(2 * .pi*phase))
+            if friend == .usagi {
+                drawUsagiGesture(action, left: left, right: right, wave: wave, phase: phase)
+                return
+            }
             switch action {
             case .wave, .wake:
                 limb(left,NSPoint(x: left.x-7,y: left.y+30+wave*8)); limb(right,NSPoint(x: right.x+6,y: right.y+(action == .wake ? 30 : -13)))
@@ -220,6 +235,39 @@ final class RosterNativeRig {
                 }
             case .sleep: break
             }
+        }
+    }
+
+    /// Official Usagi art keeps its short rounded paws even in energetic poses.
+    /// The approved head and body remain one fixed drawing throughout the motion.
+    private func drawUsagiGesture(_ action: RosterAction, left: NSPoint, right: NSPoint,
+                                  wave: CGFloat, phase: Double) {
+        switch action {
+        case .wave:
+            paw(root: left, rotation: -1.65 + wave * 0.28, right: false)
+            paw(root: right, rotation: 0.05, right: true)
+        case .laugh, .surprised, .wake:
+            let lift: CGFloat = action == .surprised ? 0.35 : 1.1
+            paw(root: left, rotation: -lift + wave * 0.15, right: false)
+            paw(root: right, rotation: lift - wave * 0.15, right: true)
+        case .pickup:
+            paw(root: left, rotation: 0.4 * CGFloat(sin(.pi * phase)), right: false)
+            paw(root: right, rotation: -0.4 * CGFloat(sin(.pi * phase)), right: true)
+        case .attack:
+            let thrust = wave * 9, level = left.y - 9
+            let context = NSGraphicsContext.current!.cgContext
+            context.saveGState(); context.translateBy(x: 120+thrust, y: level)
+            context.rotate(by: -0.035 + wave * 0.06)
+            RosterItemArtwork.weapon(friend: .usagi, in: NSRect(x: -200, y: -16, width: 330, height: 32))
+            context.restoreGState()
+            limb(left, NSPoint(x: left.x+9+thrust, y: level), width: 13)
+            limb(right, NSPoint(x: right.x-9+thrust, y: level+4), width: 13)
+        case .keepsake:
+            let lift = 2 * wave
+            RosterItemArtwork.draw(.keepsake, friend: .usagi, in: NSRect(x: 78, y: left.y-41+lift, width: 100, height: 77))
+            limb(left, NSPoint(x: 98, y: left.y-7+lift), width: 13)
+            limb(right, NSPoint(x: 162, y: right.y-7+lift), width: 13)
+        case .sleep: break
         }
     }
 }

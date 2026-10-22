@@ -1,0 +1,208 @@
+[
+  {
+    "path": "img_chara_03.png",
+    "url": "https://www.anime-chiikawa.jp/images/img_chara_03.png",
+    "page": "https://www.anime-chiikawa.jp/chara.html",
+    "sha256": "46b55d5d3f83476d0d3d433f1e9953753f11f62d38781f90dfba1f6b3238fdf5",
+    "bytes": 16685,
+    "verified": "2026-10-22"
+  },
+  {
+    "path": "usagi.png",
+    "url": "https://www.anime-chiikawa.jp/images/loading/usagi.png",
+    "page": "https://www.anime-chiikawa.jp/chara.html",
+    "sha256": "9eb8c221fc5c233cffa81e61120a51424d5f82c4996679b7c37b497da3810905",
+    "bytes": 31253,
+    "verified": "2026-10-22"
+  },
+  {
+    "path": "bt_chara_03.png",
+    "url": "https://www.anime-chiikawa.jp/images/characters/bt_chara_03.png",
+    "page": "https://www.anime-chiikawa.jp/chara.html",
+    "sha256": "20d8c4f409d71cf8edc1a2826276183773f6c48d2cf30e23f01661f369973865",
+    "bytes": 5914,
+    "verified": "2026-10-22"
+  },
+  {
+    "path": "bt_chara_03_on.png",
+    "url": "https://www.anime-chiikawa.jp/images/characters/bt_chara_03_on.png",
+    "page": "https://www.anime-chiikawa.jp/chara.html",
+    "sha256": "ef614141c30fa75db6bdf8ca6a824ba7133e5786f849647155741b2b5edfe92c",
+    "bytes": 1737,
+    "verified": "2026-10-22"
+  },
+  {
+    "path": "img_charapage.png",
+    "url": "https://www.anime-chiikawa.jp/images/characters/img_charapage.png",
+    "page": "https://www.anime-chiikawa.jp/chara.html",
+    "sha256": "856b8b0e181c4a1c2a826816ed0b19eaad271fb580e76c5b21273885ec0ff07e",
+    "bytes": 209921,
+    "verified": "2026-10-22"
+  },
+  {
+    "path": "episode-001.jpg",
+    "url": "https://www.anime-chiikawa.jp/images/episodes/001.jpg",
+    "page": "https://www.anime-chiikawa.jp/episode.html",
+    "sha256": "0aba8a1daed995b90864bd6b23157ba876391df4e9bc096e658c55eba6d34fbe",
+    "bytes": 74993,
+    "verified": "2026-10-22"
+  },
+  {
+    "path": "episode-020.jpg",
+    "url": "https://www.anime-chiikawa.jp/images/episodes/020.jpg",
+    "page": "https://www.anime-chiikawa.jp/episode.html",
+    "sha256": "885c53759851853cbd868694ca9b261cfbc11ea678a090fd9a4569698a340e66",
+    "bytes": 57283,
+    "verified": "2026-10-22"
+  },
+  {
+    "path": "episode-027.jpg",
+    "url": "https://www.anime-chiikawa.jp/images/episodes/027.jpg",
+    "page": "https://www.anime-chiikawa.jp/episode.html",
+    "sha256": "736bd3eb6b9dd2101f1fe28566ee450c37367147dfeacd511d7eb962ad6a0c1f",
+    "bytes": 75066,
+    "verified": "2026-10-22"
+  },
+  {
+    "path": "episode-034.jpg",
+    "url": "https://www.anime-chiikawa.jp/images/episodes/034.jpg",
+    "page": "https://www.anime-chiikawa.jp/episode.html",
+    "sha256": "8288b02640f13ab65fb0778fe2711e33e0707b49db37c8d1c9c932b446ed1150",
+    "bytes": 50895,
+    "verified": "2026-10-22"
+  },
+  {
+    "path": "episode-040.jpg",
+    "url": "https://www.anime-chiikawa.jp/images/episodes/040.jpg",
+    "page": "https://www.anime-chiikawa.jp/episode.html",
+    "sha256": "f9a121a175791b059aca6ad74cac5c47f3b8192a9faff30f4c1ff1cfa608ff07",
+    "bytes": 32058,
+    "verified": "2026-10-22"
+  },
+  {
+    "path": "episode-044.jpg",
+    "url": "https://www.anime-chiikawa.jp/images/episodes/044.jpg",
+    "page": "https://www.anime-chiikawa.jp/episode.html",
+    "sha256": "a3be3c37786bdd4000ee3ba043db2fefcf77a2c5a55fc32bd43f3afc02c79f72",
+    "bytes": 62333,
+    "verified": "2026-10-22"
+  },
+  {
+    "path": "episode-047.jpg",
+    "url": "https://www.anime-chiikawa.jp/images/episodes/047.jpg",
+    "page": "https://www.anime-chiikawa.jp/episode.html",
+    "sha256": "73ad8d8dbee4a5ad5b40994b86b5e10dfc05be78bf775f89ed3ab284911356c2",
+    "bytes": 134072,
+    "verified": "2026-10-22"
+  },
+  {
+    "path": "episode-055.jpg",
+    "url": "https://www.anime-chiikawa.jp/images/episodes/055.jpg",
+    "page": "https://www.anime-chiikawa.jp/episode.html",
+    "sha256": "c2fcbf9620c83113f943d3002ed670f0f749cb10da440c6267ea65caf00c8381",
+    "bytes": 65887,
+    "verified": "2026-10-22"
+  },
+  {
+    "path": "episode-090.jpg",
+    "url": "https://www.anime-chiikawa.jp/images/episodes/090.jpg",
+    "page": "https://www.anime-chiikawa.jp/episode.html",
+    "sha256": "12cbeacf8038f7a21df03b7311c703202b11f6f4480ea88225a0a35fa48419dc",
+    "bytes": 45265,
+    "verified": "2026-10-22"
+  },
+  {
+    "path": "episode-091.jpg",
+    "url": "https://www.anime-chiikawa.jp/images/episodes/091.jpg",
+    "page": "https://www.anime-chiikawa.jp/episode.html",
+    "sha256": "9b1aedd966ac9148b9e4d01cd2d4fe62a01338c13e7f8b21de4da4c33e55c8ab",
+    "bytes": 64938,
+    "verified": "2026-10-22"
+  },
+  {
+    "path": "episode-109.jpg",
+    "url": "https://www.anime-chiikawa.jp/images/episodes/109.jpg",
+    "page": "https://www.anime-chiikawa.jp/episode.html",
+    "sha256": "7ca51e751d8415230df97270507a33eb7cf5b8402c2c409059462c8ae4b5f9f8",
+    "bytes": 114562,
+    "verified": "2026-10-22"
+  },
+  {
+    "path": "episode-110.jpg",
+    "url": "https://www.anime-chiikawa.jp/images/episodes/110.jpg",
+    "page": "https://www.anime-chiikawa.jp/episode.html",
+    "sha256": "f482609ee5e3d5f09c1888eebc80f52410637675d5143ed07f12d79c298d5499",
+    "bytes": 110350,
+    "verified": "2026-10-22"
+  },
+  {
+    "path": "market-4903320168053-1.jpg",
+    "url": "https://chiikawamarket.jp/cdn/shop/files/4903320168053_1_7b936d33-b83a-496b-a8e2-8fb565f39a4f.jpg?v=1776229508&width=1946",
+    "page": "https://chiikawamarket.jp/products/4903320168053",
+    "sha256": "4ec88c1399fdc791495d9406d12f708b242c34df933bf5730b18bd84be7f3fe9",
+    "verified": "2026-10-22"
+  },
+  {
+    "path": "market-4903320168053-2.jpg",
+    "url": "https://chiikawamarket.jp/cdn/shop/files/4903320168053_2_e0b84fcb-6610-42ec-9021-20ac9e4ac550.jpg?v=1776229651&width=1946",
+    "page": "https://chiikawamarket.jp/products/4903320168053",
+    "sha256": "f1ebe8653f7e32d8ee5193970c2bdf4bdae2da82472a273a0130d4320947aa74",
+    "verified": "2026-10-22"
+  },
+  {
+    "path": "market-4571609409229-1.jpg",
+    "url": "https://chiikawamarket.jp/cdn/shop/files/4571609409229_1.jpg?v=1788136248&width=1946",
+    "page": "https://chiikawamarket.jp/products/4571609409229",
+    "sha256": "93ed1d241b1af9b68247edfab8f4ad904b13a9ca22a8f8d508610a6b44c38e38",
+    "verified": "2026-10-22"
+  },
+  {
+    "path": "market-4571609409229-2.jpg",
+    "url": "https://chiikawamarket.jp/cdn/shop/files/4571609409229_1_b4081c0f-456e-403c-8e37-3b812b127190.jpg?v=1788136255&width=1946",
+    "page": "https://chiikawamarket.jp/products/4571609409229",
+    "sha256": "93ed1d241b1af9b68247edfab8f4ad904b13a9ca22a8f8d508610a6b44c38e38",
+    "verified": "2026-10-22"
+  },
+  {
+    "path": "chara.html",
+    "url": "https://www.anime-chiikawa.jp/chara.html",
+    "kind": "official-source-document",
+    "sha256": "02dd9b3f4edf69f9f8234aace662356da8523ac865393810462a0d4d30b06563",
+    "verified": "2026-10-22"
+  },
+  {
+    "path": "main.js",
+    "url": "https://www.anime-chiikawa.jp/js/main.js",
+    "kind": "official-source-document",
+    "sha256": "bb1c184a5925948c4d54b0eaf9237339f856313cfd4d44777a3f6dd06ced1695",
+    "verified": "2026-10-22"
+  },
+  {
+    "path": "episodeHistories.json",
+    "url": "https://www.anime-chiikawa.jp/json/episodeHistories.json",
+    "kind": "official-source-document",
+    "sha256": "b85579ede789ca46864e144c0ae2c71625483a8b8148bb3e5f326d57f069e32b",
+    "verified": "2026-10-22"
+  },
+  {
+    "path": "episodes.json",
+    "url": "https://a2.fujitv.co.jp/ca2/sloth/v1/polling?o=119",
+    "kind": "official-source-document",
+    "sha256": "73a61c9d7189d693fa7709bacd5fa0e44a43bd7de42e57bd50d177b5e28863a8",
+    "verified": "2026-10-22"
+  },
+  {
+    "path": "4903320168053.html",
+    "url": "https://chiikawamarket.jp/products/4903320168053",
+    "kind": "official-source-document",
+    "sha256": "7ddeed393efd7e4abe7a75e3cceac503627db3e5d77198476b6fdda4ea97add9",
+    "verified": "2026-10-22"
+  },
+  {
+    "path": "4571609409229.html",
+    "url": "https://chiikawamarket.jp/products/4571609409229",
+    "kind": "official-source-document",
+    "sha256": "d6897089b726b30e8e19a89684a7712713c61049673d55ee18a1e5acebecc806",
+    "verified": "2026-10-22"
+  }
+]

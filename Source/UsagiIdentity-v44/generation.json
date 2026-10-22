@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-22",
+  "tool": "built-in image_gen",
+  "draft": {
+    "image": "Generated/facial-parts-draft.png",
+    "prompt": "Prompts/facial-parts.txt"
+  },
+  "selected": {
+    "image": "Generated/facial-parts-clean.png",
+    "prompt": "Prompts/remove-glow.txt"
+  },
+  "application": "Native runtime composites only the generated mouth and eyelids onto the unchanged approved body; open eyes, brows and cheeks are original."
+}

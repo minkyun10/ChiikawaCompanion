@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-22",
+  "version": "0.21.0",
+  "build": 48,
+  "native_ui": "App launched; settings tree included all five active friends, Usagi display/walk on; settings closed and desktop activity window remained.",
+  "visual_review": "Native identity-preview.png checked for matched ears, brows, open-eye cheer, omega muzzle, short connected hands and held pudding.",
+  "automated_checks": 608,
+  "live_manual_attack_hover": "not separately exercised; bundled self-test includes real native hover regression fixtures",
+  "audio_previewed": false
+}

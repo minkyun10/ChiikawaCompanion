@@ -1,0 +1,308 @@
+[
+  {
+    "cell" : [
+      0,
+      0,
+      512,
+      512
+    ],
+    "crop" : [
+      216,
+      313,
+      151,
+      105
+    ],
+    "file" : "usagi-face-neutral-mouth-v44.png",
+    "runtime" : false,
+    "sha256" : "b40b83f0dbb272ba47b6efd2173b3a52de943c1bd7a082a9cdb26f8071a872b7"
+  },
+  {
+    "cell" : [
+      0,
+      0,
+      512,
+      512
+    ],
+    "crop" : [
+      98,
+      211,
+      116,
+      114
+    ],
+    "file" : "usagi-face-neutral-left-eye-v44.png",
+    "runtime" : false,
+    "sha256" : "5e3d6bf6e91062781a9950b727f1fe25cd31ac1fba032957f04701d2ede9fd51"
+  },
+  {
+    "cell" : [
+      0,
+      0,
+      512,
+      512
+    ],
+    "crop" : [
+      369,
+      211,
+      115,
+      114
+    ],
+    "file" : "usagi-face-neutral-right-eye-v44.png",
+    "runtime" : false,
+    "sha256" : "73c5cd05b577524c09eaa27d1fdfdd71306c713729dda1e18160523440f9dc70"
+  },
+  {
+    "cell" : [
+      512,
+      0,
+      512,
+      512
+    ],
+    "crop" : [
+      204,
+      339,
+      102,
+      107
+    ],
+    "file" : "usagi-face-cheer-mouth-v44.png",
+    "runtime" : true,
+    "sha256" : "18ba94b7e35d35310e4daee80fb61953d12931e5a1ddbf4223f41b4f4da89d64"
+  },
+  {
+    "cell" : [
+      512,
+      0,
+      512,
+      512
+    ],
+    "crop" : [
+      82,
+      211,
+      115,
+      114
+    ],
+    "file" : "usagi-face-cheer-left-eye-v44.png",
+    "runtime" : false,
+    "sha256" : "c47ef93ff23c06aac60b5f62e3330c35102650b0380e7846d41257d834303c5c"
+  },
+  {
+    "cell" : [
+      512,
+      0,
+      512,
+      512
+    ],
+    "crop" : [
+      312,
+      211,
+      115,
+      114
+    ],
+    "file" : "usagi-face-cheer-right-eye-v44.png",
+    "runtime" : false,
+    "sha256" : "27fdb74e863ababc506f900ede34925dadc70281dcc241affe5127824725a714"
+  },
+  {
+    "cell" : [
+      1024,
+      0,
+      512,
+      512
+    ],
+    "crop" : [
+      190,
+      345,
+      87,
+      114
+    ],
+    "file" : "usagi-face-shout-mouth-v44.png",
+    "runtime" : true,
+    "sha256" : "582b30dec1613ef58a03fac44a09b2a7f082e9fc7d65fb91fbaec830308af3f1"
+  },
+  {
+    "cell" : [
+      1024,
+      0,
+      512,
+      512
+    ],
+    "crop" : [
+      51,
+      211,
+      115,
+      114
+    ],
+    "file" : "usagi-face-shout-left-eye-v44.png",
+    "runtime" : false,
+    "sha256" : "0bbe97dd009a736e281b705932c337edbfccd655718373e7ec24871d52023c53"
+  },
+  {
+    "cell" : [
+      1024,
+      0,
+      512,
+      512
+    ],
+    "crop" : [
+      301,
+      211,
+      116,
+      114
+    ],
+    "file" : "usagi-face-shout-right-eye-v44.png",
+    "runtime" : false,
+    "sha256" : "8f5ec2b9ba0a3345c0d9f6e568937d944f15f82c538ae4fe8236bb2421e9ec47"
+  },
+  {
+    "cell" : [
+      0,
+      512,
+      512,
+      512
+    ],
+    "crop" : [
+      234,
+      243,
+      122,
+      98
+    ],
+    "file" : "usagi-face-curious-mouth-v44.png",
+    "runtime" : true,
+    "sha256" : "5b98c95c2456837eeaa96a4ae86932b26f2df60db998121ef7033e6ab1feda03"
+  },
+  {
+    "cell" : [
+      0,
+      512,
+      512,
+      512
+    ],
+    "crop" : [
+      111,
+      145,
+      117,
+      117
+    ],
+    "file" : "usagi-face-curious-left-eye-v44.png",
+    "runtime" : false,
+    "sha256" : "82223585dd25175eb16bd69a91b2c9b014315f2dd3bb369502dd2022c3d52627"
+  },
+  {
+    "cell" : [
+      0,
+      512,
+      512,
+      512
+    ],
+    "crop" : [
+      366,
+      145,
+      117,
+      116
+    ],
+    "file" : "usagi-face-curious-right-eye-v44.png",
+    "runtime" : false,
+    "sha256" : "e5bceb85a748a5a48c8f7da787abaee7a09dd93011b77573156e93f1d54f726f"
+  },
+  {
+    "cell" : [
+      512,
+      512,
+      512,
+      512
+    ],
+    "crop" : [
+      182,
+      215,
+      149,
+      55
+    ],
+    "file" : "usagi-face-sleep-mouth-v44.png",
+    "runtime" : true,
+    "sha256" : "2e1945c6dab58af9664a9935dd066366ccca1ab0000e69298d8a0c627e6c7c71"
+  },
+  {
+    "cell" : [
+      512,
+      512,
+      512,
+      512
+    ],
+    "crop" : [
+      66,
+      171,
+      126,
+      45
+    ],
+    "file" : "usagi-face-sleep-left-eye-v44.png",
+    "runtime" : true,
+    "sha256" : "4eab90c3e3b572be6130eee2bcdae6132948881ab2d09694e61884e4c3ccd0cc"
+  },
+  {
+    "cell" : [
+      512,
+      512,
+      512,
+      512
+    ],
+    "crop" : [
+      317,
+      171,
+      121,
+      45
+    ],
+    "file" : "usagi-face-sleep-right-eye-v44.png",
+    "runtime" : true,
+    "sha256" : "63aebf2123717928e97df0b1e286ff823cb4b0e3e305fa91f928a8f06e68311b"
+  },
+  {
+    "cell" : [
+      1024,
+      512,
+      512,
+      512
+    ],
+    "crop" : [
+      162,
+      222,
+      151,
+      110
+    ],
+    "file" : "usagi-face-blink-mouth-v44.png",
+    "runtime" : false,
+    "sha256" : "02ac6d0550a5fc0aae27b87094e4dcca2490a3bb5a8aa7548c29df600b528383"
+  },
+  {
+    "cell" : [
+      1024,
+      512,
+      512,
+      512
+    ],
+    "crop" : [
+      37,
+      171,
+      131,
+      41
+    ],
+    "file" : "usagi-face-blink-left-eye-v44.png",
+    "runtime" : true,
+    "sha256" : "e12a0c2ec51b10b0df547dd3050808a98aae52c282de8021e9d05e147d2461ba"
+  },
+  {
+    "cell" : [
+      1024,
+      512,
+      512,
+      512
+    ],
+    "crop" : [
+      309,
+      171,
+      131,
+      41
+    ],
+    "file" : "usagi-face-blink-right-eye-v44.png",
+    "runtime" : true,
+    "sha256" : "850eee4b49b85144e9777eac62e594ebeb0b3b1d15929c6f64066ba2abfe4044"
+  }
+]

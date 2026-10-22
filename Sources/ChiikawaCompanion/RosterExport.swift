@@ -58,7 +58,34 @@ extension SelfTest {
                     (action.title as NSString).draw(at:NSPoint(x:rect.minX+50,y:rect.minY-17),withAttributes:[.font:NSFont.systemFont(ofSize:14),.foregroundColor:NSColor.darkGray])
                 }
             }
+            if friend == .usagi { renderUsagiIdentityReview(art, to: dir) }
         }
         print("Native roster sheets and cycle previews exported.")
+    }
+
+    private static func renderUsagiIdentityReview(_ art: RosterSprites, to dir: URL) {
+        let actions = RosterAction.available(for: .usagi)
+        let titles = ["인사", "환호 · 야하", "궁금 · 하아?", "줍기", "무기 · 우라", "잠자기", "기상", "푸딩"]
+        func frame(_ n: Int) -> NSBitmapImageRep {
+            RosterNativeRig.bitmap(NSSize(width: 1024, height: 730)) {
+                NSColor(hex: 0xF7F4EB).setFill(); NSRect(x: 0,y: 0,width: 1024,height: 730).fill()
+                ("USAGI · 고정된 몸 + 표정 부품" as NSString).draw(at: NSPoint(x: 35,y: 685),
+                    withAttributes: [.font:NSFont.systemFont(ofSize:23,weight:.semibold),.foregroundColor:NSColor.darkGray])
+                for (i, action) in actions.enumerated() {
+                    let rect = NSRect(x: CGFloat(i%4)*256+12, y: CGFloat(1-i/4)*325+35, width: 232, height: 285)
+                    art.draw(action: action, in: rect, elapsed: (Double(n)+0.1)/12*action.cycle)
+                    (titles[i] as NSString).draw(at: NSPoint(x: rect.minX+47,y: rect.minY-20),
+                        withAttributes: [.font:NSFont.systemFont(ofSize:16),.foregroundColor:NSColor.darkGray])
+                }
+            }
+        }
+        try! frame(3).representation(using: .png, properties: [:])!.write(to: dir.appendingPathComponent("identity-preview.png"))
+        let url = dir.appendingPathComponent("identity-motion.gif")
+        let gif = CGImageDestinationCreateWithURL(url as CFURL, UTType.gif.identifier as CFString, 12, nil)!
+        CGImageDestinationSetProperties(gif, [kCGImagePropertyGIFDictionary:[kCGImagePropertyGIFLoopCount:0]] as CFDictionary)
+        for n in 0..<12 {
+            CGImageDestinationAddImage(gif, frame(n).cgImage!, [kCGImagePropertyGIFDictionary:[kCGImagePropertyGIFDelayTime:0.1]] as CFDictionary)
+        }
+        precondition(CGImageDestinationFinalize(gif))
     }
 }
