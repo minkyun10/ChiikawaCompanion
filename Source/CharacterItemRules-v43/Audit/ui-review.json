@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-22",
+  "app_version": "0.20.4",
+  "build": 47,
+  "functional_checks_passed": 592,
+  "method": "Running signed app settings inspected through macOS accessibility UI",
+  "camera_owner": "hachiware",
+  "weapon_owners_verified_in_functional_tests": ["hachiware", "chiikawa", "usagi"],
+  "usagi": {"visible_items": ["노란 토벌봉", "푸딩"], "action_menu": ["소품과 놀기"]},
+  "kurimanju": {"visible_items": ["간식과 컵"], "observed_equipped": "간식과 컵"},
+  "momonga": {"visible_items": ["벚꽃"], "observed_equipped": "벚꽃"},
+  "hachiware": {"camera_toggle": "on", "guitar_toggle": "on", "sasumata_toggle": "on"},
+  "final_ui_state": "Settings closed; updated desktop companions left running"
+}

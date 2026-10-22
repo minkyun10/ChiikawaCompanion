@@ -24,7 +24,7 @@ final class RosterNativeRig {
         }
         guard let arm = load("arm"), let foot = load("foot") else { return nil }
         var expressions: [RosterAction: NSImage] = [:]
-        for action in [RosterAction.laugh,.attack,.surprised,.sleep] {
+        for action in [RosterAction.laugh,.attack,.surprised,.sleep] where RosterAction.available(for: friend).contains(action) {
             if let image = HachiwareSprites.assetURL(named: "\(friend.rawValue)-expression-\(action.rawValue)-v38").flatMap(NSImage.init(contentsOf:)) { expressions[action] = image }
         }
         self.tail = friend == .momonga ? load("tail") : nil
@@ -177,6 +177,7 @@ final class RosterNativeRig {
     func action(_ action: RosterAction, phase: Double) -> NSBitmapImageRep {
         let size = action == .attack ? NSSize(width: 440,height: canvas.height) : action == .sleep ? NSSize(width: 256,height: 180) : canvas
         return Self.bitmap(size) {
+            guard RosterAction.available(for: friend).contains(action) else { return }
             let context = NSGraphicsContext.current!.cgContext
             if action == .attack { context.translateBy(x: 120,y: 0) }
             if action == .sleep {
@@ -199,10 +200,6 @@ final class RosterNativeRig {
             case .pickup:
                 let rise=CGFloat(phase*phase*(3-2*phase))*40
                 limb(left,NSPoint(x:95,y:48+rise));limb(right,NSPoint(x:157,y:47+rise))
-            case .camera:
-                RosterItemArtwork.draw(.camera,friend: friend,in: NSRect(x: 82,y: 61+4*wave,width: 92,height: 80))
-                limb(left,NSPoint(x: 95,y: 90+4*wave));limb(right,NSPoint(x: 162,y: 90+4*wave))
-                if phase > 0.42 && phase < 0.58 { NSColor.white.withAlphaComponent(0.9).setFill();NSBezierPath(ovalIn: NSRect(x: 124,y: 91,width: 11,height: 11)).fill() }
             case .attack:
                 let thrust = CGFloat(sin(2 * .pi*phase))*25
                 context.saveGState(); context.translateBy(x: 120+thrust,y: 74);context.rotate(by: -0.10+wave*0.13)
@@ -238,7 +235,7 @@ final class RosterSprites {
     var actions: [RosterAction:[NSImage]] = [:]
     var registration: AttackRegistration?
     private(set) var usesBundledAtlases = false
-    var isReady: Bool { ChiikawaDirection.allCases.allSatisfy { walks[$0]?.count == 24 } && RosterAction.allCases.allSatisfy {actions[$0]?.count == 12} && registration != nil }
+    var isReady: Bool { ChiikawaDirection.allCases.allSatisfy { walks[$0]?.count == 24 } && RosterAction.available(for: friend).allSatisfy {actions[$0]?.count == 12} && (!friend.canUseWeapon || registration != nil) }
     private init(friend: Friend) {
         self.friend=friend;rig=RosterNativeRig(friend:friend)
         guard let rig else {return}
@@ -254,8 +251,9 @@ final class RosterSprites {
             let frames=(0..<24).map {rig.walk(pose,phase:Double($0)/24)}
             walks[left]=frames.map(image);if let right {walks[right]=frames.map(mirrored)}
         }
-        for action in RosterAction.allCases {actions[action]=(0..<12).map {image(rig.action(action,phase:Double($0)/12))}}
+        for action in RosterAction.available(for: friend) {actions[action]=(0..<12).map {image(rig.action(action,phase:Double($0)/12))}}
         }
+        guard friend.canUseWeapon else { return }
         let rect=rig.bodyRect(.front,y:44)
         let reference=AttackBodyMetrics(head:rect,feet:34,alpha:CGRect(origin:.zero,size:friend.canvasSize),size:friend.canvasSize)
         let attack=AttackBodyMetrics(head:rect.offsetBy(dx:120,dy:0),feet:34,alpha:CGRect(x:0,y:0,width:440,height:friend.canvasSize.height),size:NSSize(width:440,height:friend.canvasSize.height))
@@ -280,7 +278,7 @@ final class RosterSprites {
             guard let images=frames(direction.rawValue+"-24",cell:friend.canvasSize,count:24) else {return false}
             loadedWalks[direction]=images
         }
-        for action in RosterAction.allCases {
+        for action in RosterAction.available(for: friend) {
             let cell=action == .attack ? NSSize(width:440,height:friend.canvasSize.height) : action == .sleep ? NSSize(width:256,height:180) : friend.canvasSize
             guard let images=frames(action.rawValue+"-12",cell:cell,count:12) else {return false}
             loadedActions[action]=images
@@ -300,13 +298,13 @@ final class RosterSprites {
 enum RosterArtwork {
     static func drawEquipment(_ kind:RosterItemKind,friend:Friend,destination:NSRect,scale:CGFloat,
                               facing:CGFloat,pose:HachiwarePose,phase:Double,pickup:Double? = nil) {
+        guard RosterItemKind.available(for: friend).contains(kind) else { return }
         let context=NSGraphicsContext.current!.cgContext
         context.saveGState();context.translateBy(x:destination.minX,y:destination.minY);context.scaleBy(x:scale,y:scale)
         if pose.canMirror && facing>0 {context.translateBy(x:256,y:0);context.scaleBy(x:-1,y:1)}
         let bob:CGFloat=4.2*CGFloat(sin(phase*2))
         var item:NSRect
         switch kind {
-        case .camera:item=NSRect(x:82,y:61-bob,width:92,height:80)
         case .weapon:item=NSRect(x:162,y:39-bob,width:65,height:148)
         case .keepsake:item=friend == .momonga ? NSRect(x:165,y:188-bob,width:47,height:47) : NSRect(x:94,y:62-bob,width:68,height:68)
         }
@@ -321,7 +319,7 @@ enum RosterArtwork {
         NSGraphicsContext.current?.imageInterpolation = .high
         let canvas=friend.canvasSize,scale=min(rect.width/canvas.width,rect.height/canvas.height)
         let destination=NSRect(x:rect.midX-canvas.width*scale/2,y:rect.midY-canvas.height*scale/2,width:canvas.width*scale,height:canvas.height*scale)
-        if let action=visual.action {
+        if let action=visual.action, RosterAction.available(for: friend).contains(action) {
             sprites.draw(action:action,in:rect,elapsed:visual.elapsed)
             if action == .pickup,let kind=visual.equipped {
                 drawEquipment(kind,friend:friend,destination:destination,scale:scale,facing:-1,pose:.front,phase:0,
@@ -372,6 +370,7 @@ enum RosterItemArtwork {
         for i in 0..<3 {let line=NSBezierPath();line.move(to:NSPoint(x:18+CGFloat(i)*7,y:28-CGFloat(i)*3));line.line(to:NSPoint(x:23+CGFloat(i)*7,y:19-CGFloat(i)*3));line.lineWidth=1.5;line.stroke()};c.restoreGState()
     }
     static func weapon(friend:Friend,in rect:NSRect) {
+        guard friend == .usagi else { return }
         let context=NSGraphicsContext.current!.cgContext;context.saveGState()
         context.translateBy(x:rect.minX,y:rect.minY);context.scaleBy(x:rect.width/330,y:rect.height/32)
         let ink=NSColor(hex:0x68483A),color=friend == .usagi ? NSColor(hex:0xE6BE5D):friend.color
@@ -383,8 +382,8 @@ enum RosterItemArtwork {
         context.restoreGState()
     }
     static func draw(_ kind:RosterItemKind,friend:Friend,in rect:NSRect) {
+        guard RosterItemKind.available(for: friend).contains(kind) else { return }
         switch kind {
-        case .camera:ItemArtwork.draw(.camera,in:rect)
         case .weapon:
             let context=NSGraphicsContext.current!.cgContext;context.saveGState()
             context.translateBy(x:rect.midX,y:rect.midY);context.rotate(by:.pi/2)

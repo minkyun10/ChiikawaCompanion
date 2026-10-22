@@ -112,7 +112,7 @@ final class AttackOverlay {
         panel.ignoresMouseEvents = true
     }
     func update(actor: FriendActor) {
-        let active = actor.panel.isVisible && actor.view.action == .attack && !actor.view.isDragging
+        let active = actor.friend.canUseWeapon && actor.panel.isVisible && actor.view.action == .attack && !actor.view.isDragging
         let registration = actor.friend.isExpansion ? RosterSprites.shared(actor.friend).registration : actor.friend == .chiikawa ? ChiikawaAttackSprites.shared.registration : WeaponAttackSprites.shared.registration
         guard active, let registration else {
             if !actor.panel.isVisible || actor.view.isDragging {

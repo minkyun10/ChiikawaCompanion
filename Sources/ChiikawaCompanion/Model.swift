@@ -135,7 +135,10 @@ final class AppState: ObservableObject {
 
     init(defaults: UserDefaults = .standard) {
         self.defaults = defaults
-        let restoredRosterOptions = defaults.data(forKey: "rosterOptionsV38").flatMap { try? JSONDecoder().decode([Friend: RosterOptions].self, from: $0) } ?? [:]
+        let decodedRosterOptions = defaults.data(forKey: "rosterOptionsV38").flatMap { try? JSONDecoder().decode([Friend: RosterOptions].self, from: $0) } ?? [:]
+        let restoredRosterOptions = decodedRosterOptions.reduce(into: [Friend: RosterOptions]()) {
+            $0[$1.key] = $1.value.normalized(for: $1.key)
+        }
         rosterOptions = restoredRosterOptions
         if let data = try? JSONEncoder().encode(restoredRosterOptions) {
             defaults.set(data, forKey: "rosterOptionsV38")

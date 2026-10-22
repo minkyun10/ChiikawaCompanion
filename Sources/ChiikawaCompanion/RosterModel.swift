@@ -3,6 +3,7 @@ import AppKit
 extension Friend {
     static let expansionOrder: [Friend] = [.usagi, .kurimanju, .momonga]
     var isExpansion: Bool { Self.expansionOrder.contains(self) }
+    var canUseWeapon: Bool { self == .hachiware || self == .chiikawa || self == .usagi }
     var canvasSize: NSSize { self == .usagi ? NSSize(width: 256, height: 360) : NSSize(width: 256, height: 256) }
     var actorSize: NSSize { self == .usagi ? NSSize(width: 132, height: 210) : NSSize(width: 132, height: 150) }
     var voiceActor: String {
@@ -16,17 +17,19 @@ extension Friend {
         default: return []
         }
     }
-    var weaponName: String { self == .usagi ? "노란 토벌봉" : "공용 훈련봉" }
 }
 
 enum RosterItemKind: String, CaseIterable, Codable, Identifiable {
-    case camera, weapon, keepsake
+    case weapon, keepsake
+    static func available(for friend: Friend) -> [Self] {
+        guard friend.isExpansion else { return [] }
+        return friend == .usagi ? [.weapon, .keepsake] : [.keepsake]
+    }
     var id: String { rawValue }
-    var symbol: String { switch self { case .camera: return "camera"; case .weapon: return "sparkles"; case .keepsake: return "star" } }
+    var symbol: String { self == .weapon ? "sparkles" : "star" }
     func name(for friend: Friend) -> String {
         switch self {
-        case .camera: return "카메라"
-        case .weapon: return friend.weaponName
+        case .weapon: return "노란 토벌봉"
         case .keepsake: return friend == .usagi ? "푸딩" : friend == .kurimanju ? "간식과 컵" : "벚꽃"
         }
     }
@@ -41,15 +44,14 @@ struct RosterProp: DesktopProp, Identifiable {
     init?(rawValue: String) {
         let parts = rawValue.split(separator: ":")
         guard parts.count == 2, let owner = Friend(rawValue: String(parts[0])), owner.isExpansion,
-              let kind = RosterItemKind(rawValue: String(parts[1])) else { return nil }
+              let kind = RosterItemKind(rawValue: String(parts[1])), RosterItemKind.available(for: owner).contains(kind) else { return nil }
         self.init(owner: owner, kind: kind)
     }
-    static var allCases: [Self] { Friend.expansionOrder.flatMap { friend in RosterItemKind.allCases.map { Self(owner: friend, kind: $0) } } }
+    static var allCases: [Self] { Friend.expansionOrder.flatMap { friend in RosterItemKind.available(for: friend).map { Self(owner: friend, kind: $0) } } }
     var name: String { "\(owner.name) \(kind.name(for: owner))" }
     var spawnFraction: (CGFloat, CGFloat) {
         let index = CGFloat(Friend.expansionOrder.firstIndex(of: owner) ?? 0)
-        switch kind { case .camera: return (0.17 + index * 0.10, 0.55)
-        case .weapon: return (0.57 + index * 0.07, 0.74); case .keepsake: return (0.38 + index * 0.10, 0.18) }
+        switch kind { case .weapon: return (0.57 + index * 0.07, 0.74); case .keepsake: return (0.38 + index * 0.10, 0.18) }
     }
     func draw(in rect: NSRect) { RosterItemArtwork.draw(kind, friend: owner, in: rect) }
 }
@@ -60,6 +62,12 @@ struct RosterOptions: Codable, Equatable {
     var automaticRest = true
     var voice = true
 
+    func normalized(for friend: Friend) -> Self {
+        var result = self
+        result.items.formIntersection(RosterItemKind.available(for: friend))
+        return result
+    }
+
     private enum CodingKeys: String, CodingKey {
         case items, automaticItems, automaticRest, voice
     }
@@ -67,7 +75,7 @@ struct RosterOptions: Codable, Equatable {
     init(from decoder: Decoder) throws {
         self.init()
         let values = try decoder.container(keyedBy: CodingKeys.self)
-        // Decode names first so an old guitar does not discard the owner's other settings.
+        // Decode names first so retired items do not discard the owner's other settings.
         if let names = try values.decodeIfPresent(Set<String>.self, forKey: .items) {
             items = Set(names.compactMap(RosterItemKind.init(rawValue:)))
         }
@@ -93,15 +101,19 @@ enum RosterCommand {
 }
 
 enum RosterAction: String, CaseIterable {
-    case wave, laugh, surprised, pickup, camera, attack, sleep, wake, keepsake
+    case wave, laugh, surprised, pickup, attack, sleep, wake, keepsake
+    static func available(for friend: Friend) -> [Self] {
+        guard friend.isExpansion else { return [] }
+        return allCases.filter { $0 != .attack || friend.canUseWeapon }
+    }
     var title: String {
         switch self {
         case .wave: return "인사하기"; case .laugh: return "웃기"; case .surprised: return "놀라기"; case .pickup: return "줍기"
-        case .camera: return "사진 찍기"; case .attack: return "무기 휘두르기"
+        case .attack: return "무기 휘두르기"
         case .sleep: return "잠자기"; case .wake: return "일어나기"; case .keepsake: return "소품과 놀기"
         }
     }
-    static let selectable: [Self] = [.camera, .keepsake]
+    static let selectable: [Self] = [.keepsake]
     var duration: TimeInterval { self == .wake ? 0.96 : 2.4 }
     var cycle: TimeInterval { self == .attack ? 1.2 : self == .wake ? 0.96 : self == .pickup ? 0.65 : 2.4 }
 }
@@ -114,10 +126,10 @@ struct RosterVisual {
 }
 
 extension AppState {
-    func options(for friend: Friend) -> RosterOptions { rosterOptions[friend] ?? RosterOptions() }
+    func options(for friend: Friend) -> RosterOptions { (rosterOptions[friend] ?? RosterOptions()).normalized(for: friend) }
     func status(for friend: Friend) -> RosterStatus { rosterStatuses[friend] ?? RosterStatus() }
     func updateOptions(_ friend: Friend, _ change: (inout RosterOptions) -> Void) {
-        var next = options(for: friend); change(&next); rosterOptions[friend] = next
+        var next = options(for: friend); change(&next); next = next.normalized(for: friend); rosterOptions[friend] = next
         if !next.voice { onRosterCommand?(friend, .stopVoice) }
     }
     func publish(_ friend: Friend, _ next: RosterStatus) {

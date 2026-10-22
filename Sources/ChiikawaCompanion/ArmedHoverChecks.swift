@@ -43,7 +43,7 @@ extension SelfTest {
             desktop.desktopActivitySpots.values.forEach { $0.panel.orderOut(nil) }
         }
         desktop.tick(now: now, pointer: away, pointerCanReachCharacter: true)
-        for (offset, actor) in desktop.actors.enumerated() {
+        for (offset, actor) in desktop.actors.filter({ $0.friend.canUseWeapon }).enumerated() {
             let start = now.addingTimeInterval(Double(offset) * 20)
             let center = NSPoint(x: actor.panel.frame.midX, y: actor.panel.frame.midY)
             if let companion=desktop.expansions[actor.friend] {

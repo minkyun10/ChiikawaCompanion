@@ -22,7 +22,7 @@ extension SelfTest {
                     }
                 }
             }
-            for action in RosterAction.allCases {
+            for action in RosterAction.available(for: friend) {
                 let frames = art.actions[action]!, size = frames[0].size
                 png(width: Int(size.width)*6, height: Int(size.height)*2,
                     to: dir.appendingPathComponent("\(action.rawValue)-12.png")) {
@@ -52,7 +52,7 @@ extension SelfTest {
             precondition(CGImageDestinationFinalize(gif))
             png(width: 1024,height: Int(cell.height)*4,to: dir.appendingPathComponent("actions-preview.png")) {
                 NSColor(hex:0xF7F4EB).setFill();NSRect(x:0,y:0,width:1024,height:cell.height*4).fill()
-                for (n, action) in RosterAction.allCases.enumerated() {
+                for (n, action) in RosterAction.available(for: friend).enumerated() {
                     let rect=NSRect(x:CGFloat(n%4)*256+10,y:CGFloat(3-n/4)*cell.height+25,width:236,height:cell.height-35)
                     art.draw(action:action,in:rect,elapsed:action.cycle*0.25)
                     (action.title as NSString).draw(at:NSPoint(x:rect.minX+50,y:rect.minY-17),withAttributes:[.font:NSFont.systemFont(ofSize:14),.foregroundColor:NSColor.darkGray])

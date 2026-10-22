@@ -1,10 +1,10 @@
 {
   "created_at": "2026-10-16T12:08:58.617148+00:00",
   "operation": "copy; originals preserved",
-  "image_file_count": 3148,
-  "unique_image_content_count": 1755,
-  "supporting_file_count": 660,
-  "image_bytes": 921876319,
+  "image_file_count": 3151,
+  "unique_image_content_count": 1758,
+  "supporting_file_count": 666,
+  "image_bytes": 922874109,
   "symmetric_walk_runtime_applied": true,
   "files": [
     {
@@ -1028,6 +1028,48 @@
       "archive_path": "CaveHome-v11/walk-preservation.json",
       "bytes": 1277,
       "sha256": "56e3fe7f17c928467c8f80d916d3dc4feeeab3ece68bdbb4f8603e403842562a"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/CharacterItemRules-v43/Audit/build.log",
+      "archive_path": "CharacterItemRules-v43/Audit/build.log",
+      "bytes": 546,
+      "sha256": "5b8647b510c0f770ff0252309cba05c9588f53be42fdec9ec8ac34afd6c5b7a5"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/CharacterItemRules-v43/Audit/preservation.json",
+      "archive_path": "CharacterItemRules-v43/Audit/preservation.json",
+      "bytes": 10790,
+      "sha256": "100f86444a9fdd53c17f3da8e1094fe4de9ff27a7b6df5fe874e0b859ffb6344"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/CharacterItemRules-v43/Audit/self-test.log",
+      "archive_path": "CharacterItemRules-v43/Audit/self-test.log",
+      "bytes": 46804,
+      "sha256": "d5e18c3d9beacf179e410d3131e4eb6238d6d835ed81598c0edf64c82cb345cd"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/CharacterItemRules-v43/Audit/ui-review.json",
+      "archive_path": "CharacterItemRules-v43/Audit/ui-review.json",
+      "bytes": 736,
+      "sha256": "bdcb2354139f269ed4c58242b2c542ad213e8fbb321a2d231c26a0f7d33b4e4c"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/CharacterItemRules-v43/Audit/verify-preservation.py",
+      "archive_path": "CharacterItemRules-v43/Audit/verify-preservation.py",
+      "bytes": 3797,
+      "sha256": "f65e8268f02d5d1af34eb60fcd300f922ad4e148c5b08d15fd0b2bc5601387c9"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/CharacterItemRules-v43/README.txt",
+      "archive_path": "CharacterItemRules-v43/README.txt",
+      "bytes": 2285,
+      "sha256": "de1ae15129c7879d1f71452981738a7fd1c766f65ddaa414a81ab4007394fb13"
     },
     {
       "kind": "supporting",
@@ -23034,8 +23076,8 @@
       "kind": "image",
       "source": "build/roster/kurimanju/actions-preview.png",
       "archive_path": "Project/build/roster/kurimanju/actions-preview.png",
-      "bytes": 403147,
-      "sha256": "5591a9f2ac233071ff723c4ab2db41ca449f02bf208b6f172afaaab3b1907dc8"
+      "bytes": 306045,
+      "sha256": "31a832917c313be3b06fdae2faf538eefff14015289e6844fd7fe9addf557e7e"
     },
     {
       "kind": "image",
@@ -23202,8 +23244,8 @@
       "kind": "image",
       "source": "build/roster/momonga/actions-preview.png",
       "archive_path": "Project/build/roster/momonga/actions-preview.png",
-      "bytes": 425321,
-      "sha256": "d7d7738d2933e96d5f4be7d9630b531f1647285fed1c88593b36f0efb3858660"
+      "bytes": 321084,
+      "sha256": "3b217d7e96fc5883226ebe88926d607cdfef860996cd7ec73fd723decbc241f7"
     },
     {
       "kind": "image",
@@ -23370,8 +23412,8 @@
       "kind": "image",
       "source": "build/roster/usagi/actions-preview.png",
       "archive_path": "Project/build/roster/usagi/actions-preview.png",
-      "bytes": 421511,
-      "sha256": "4206f2626dfef28278a88257d1b8f7975b21d017159bce3115fce5486f62efc8"
+      "bytes": 370661,
+      "sha256": "7498e7243c457a9d10c1752a1088f4c4ff0b929de438b17c8881164cf652e260"
     },
     {
       "kind": "image",
@@ -23545,8 +23587,8 @@
       "kind": "supporting",
       "source": "Source/README.txt",
       "archive_path": "README.txt",
-      "bytes": 11109,
-      "sha256": "9354f47f849be4b6a1ba162358614bf741fe5d9856dbf1861ce9d3ab3067804d"
+      "bytes": 11467,
+      "sha256": "7e472379d9a4d59b75434988816c1033cfba7e6a4231ae83cc306f925e100954"
     },
     {
       "kind": "supporting",
@@ -25594,6 +25636,13 @@
     },
     {
       "kind": "image",
+      "source": "Source/Versions/4206f2626dfef282/build/roster/usagi/actions-preview.png",
+      "archive_path": "Versions/4206f2626dfef282/build/roster/usagi/actions-preview.png",
+      "bytes": 421511,
+      "sha256": "4206f2626dfef28278a88257d1b8f7975b21d017159bce3115fce5486f62efc8"
+    },
+    {
+      "kind": "image",
       "source": "Source/Versions/443c94613e4de0dc/build/artwork/hachiware-items-v7.gif",
       "archive_path": "Versions/443c94613e4de0dc/build/artwork/hachiware-items-v7.gif",
       "bytes": 738065,
@@ -25633,6 +25682,13 @@
       "archive_path": "Versions/53a74564e3be5356/build/artwork/chiikawa-runtime-equipment-v23.png",
       "bytes": 1094011,
       "sha256": "53a74564e3be5356af8141ae7304eebfbef113d21bf5aa636a312e598fc59fc5"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/5591a9f2ac233071/build/roster/kurimanju/actions-preview.png",
+      "archive_path": "Versions/5591a9f2ac233071/build/roster/kurimanju/actions-preview.png",
+      "bytes": 403147,
+      "sha256": "5591a9f2ac233071ff723c4ab2db41ca449f02bf208b6f172afaaab3b1907dc8"
     },
     {
       "kind": "image",
@@ -25822,6 +25878,13 @@
       "archive_path": "Versions/d4731c5d6b80e3bd/build/artwork/friends.png",
       "bytes": 129798,
       "sha256": "d4731c5d6b80e3bd731a1b718e57145b1f738e29614b4489cd4b873c180f53d9"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/d7d7738d2933e96d/build/roster/momonga/actions-preview.png",
+      "archive_path": "Versions/d7d7738d2933e96d/build/roster/momonga/actions-preview.png",
+      "bytes": 425321,
+      "sha256": "d7d7738d2933e96d5f4be7d9630b531f1647285fed1c88593b36f0efb3858660"
     },
     {
       "kind": "image",
@@ -26664,8 +26727,8 @@
       "sha256": "8a42caa40e469a5ee00fa2b860d14756cc1fd73bc8fcf73332c50b87a92c9c3b"
     }
   ],
-  "updated_at": "2026-10-22T10:37:01.964390+00:00",
-  "latest_applied": "CoreActivitiesOnly-v42",
+  "updated_at": "2026-10-22T10:47:05.951011+00:00",
+  "latest_applied": "CharacterItemRules-v43",
   "applied_directions": [
     "down-left",
     "down-right"

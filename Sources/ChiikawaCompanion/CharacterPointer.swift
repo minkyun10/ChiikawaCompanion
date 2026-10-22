@@ -87,7 +87,7 @@ final class ArmedPointerArtwork {
                     walkPhase: (Double(index) + 0.25) / Double(count) * 2 * .pi, pose: pose,
                     equipped: friend == .hachiware ? .sasumata : nil,
                     chiikawaItem: friend == .chiikawa ? .pinkSasumata : nil,
-                    rosterVisual: friend.isExpansion ? RosterVisual(equipped: .weapon) : nil)
+                    rosterVisual: friend == .usagi ? RosterVisual(equipped: .weapon) : nil)
             }
         }
         walkingMasks[key] = mask; return mask
@@ -113,7 +113,7 @@ extension FriendActor {
                             y: (point.y - body.minY) * friend.actorSize.height / body.height)
         let entry: CharacterPointerMask?
         let hit: Bool
-        if armed {
+        if armed && friend.canUseWeapon {
             let artwork = ArmedPointerArtwork.shared
             if let contact = armedHoverContact {
                 entry = contact

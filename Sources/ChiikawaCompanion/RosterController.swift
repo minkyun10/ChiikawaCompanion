@@ -50,7 +50,7 @@ final class RosterCompanion {
          voice: RecordedVoicePlayer = RecordedVoicePlayer(idleStatus: "클릭할 때만 녹음을 재생해요")) {
         self.desktop = desktop; self.actor = actor; self.voice = voice
         desktop.homeRoutines[actor.friend] = HomeRoutine(now: desktop.started)
-        for kind in RosterItemKind.allCases {
+        for kind in RosterItemKind.available(for: actor.friend) {
             let item = RosterProp(owner: actor.friend, kind: kind), object = DesktopPropWindow(item: RosterProp(owner: actor.friend, kind: kind))
             object.view.onSeek = { [weak self] in self?.seek(kind) }
             object.view.onMove = { [weak self] point in
@@ -106,12 +106,13 @@ final class RosterCompanion {
     }
     func seek(_ kind: RosterItemKind, now: Date = Date()) {
         let item = RosterProp(owner: friend, kind: kind)
-        guard world.ground[item] != nil else { return }
+        guard options.items.contains(kind), world.ground[item] != nil else { return }
         wake(now: now); stopAction(); voice.stop(); makeVisibleAndWalking()
         actor.dismissBubble(); world.requested = item; itemTarget = nil
         actor.motion.retarget(); status.item = "\(item.name) 주우러 가요"; publish()
     }
     func play(_ selected: RosterAction, now: Date = Date()) {
+        guard RosterAction.available(for: friend).contains(selected) else { return }
         voice.stop(); state.showFriends = true; state.visibleFriends.insert(friend)
         wake(now: now); actor.dismissBubble(); actor.motion.stop()
         action = selected; actionStarted = now; actionUntil = now.addingTimeInterval(selected.duration)
@@ -140,7 +141,7 @@ final class RosterCompanion {
     func pickedUp(_ item: RosterProp, now: Date) {
         stopAction(); itemTarget = nil; actor.motion.retarget()
         action = .pickup; actionStarted = now; actionUntil = now.addingTimeInterval(0.65)
-        queuedAction = item.kind == .camera ? .camera : item.kind == .keepsake ? .keepsake : nil
+        queuedAction = item.kind == .keepsake ? .keepsake : nil
         nextPerformance = now.addingTimeInterval(18)
         status.item = "\(item.kind.name(for: friend)) 들고 있어요"; publish()
     }
@@ -215,7 +216,7 @@ final class RosterCompanion {
             actor.panel.orderOut(nil); actor.motion.stop(); updateObjects(visible: true,mouse: mouse); publish(); return
         }
         if !actor.panel.isVisible { actor.panel.orderFrontRegardless() }
-        let hovered = actor.pointerIsHovering(at: mouse,armed: state.expressive && world.equipped?.kind == .weapon,canReach: pointerCanReachCharacter)
+        let hovered = actor.pointerIsHovering(at: mouse,armed: state.expressive && friend.canUseWeapon && world.equipped?.kind == .weapon,canReach: pointerCanReachCharacter)
         actor.panel.ignoresMouseEvents = !hovered && !actor.view.isDragging
         if hovered && !actor.wasHovered { actor.hoverStarted = now }
         actor.wasHovered = hovered
@@ -224,7 +225,7 @@ final class RosterCompanion {
             if let queued = queuedAction { action = queued; queuedAction = nil; actionStarted = now; actionUntil = now.addingTimeInterval(queued.duration) }
             else { stopAction() }
         }
-        let attacking = activity == .hovering && state.expressive && world.equipped?.kind == .weapon
+        let attacking = activity == .hovering && state.expressive && friend.canUseWeapon && world.equipped?.kind == .weapon
         if attacking && action != nil { stopAction() }
         if activity == .dragging || activity == .speaking { if action != nil { stopAction() } }
         if activity == .walking, action == nil, world.requested == nil,
@@ -259,7 +260,7 @@ final class RosterCompanion {
                let nearby = world.nearbyTarget(from: actor.panel.frame.origin,automatic: options.automaticItems,now: now,excluding: dragged),
                world.pickUp(nearby,from: actor.panel.frame.origin,bounds: propFrame,now: now) { pickedUp(nearby,now: now) }
             if !following, action == nil, state.expressive, now >= nextPerformance, let equipped = world.equipped {
-                let selected: RosterAction? = equipped.kind == .camera ? .camera : equipped.kind == .keepsake ? .keepsake : nil
+                let selected: RosterAction? = equipped.kind == .keepsake ? .keepsake : nil
                 if let selected { action = selected; actionStarted = now; actionUntil = now.addingTimeInterval(selected.duration); actor.motion.stop() }
                 nextPerformance = now.addingTimeInterval(20)
             }

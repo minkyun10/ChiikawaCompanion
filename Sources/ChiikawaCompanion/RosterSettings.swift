@@ -18,7 +18,7 @@ struct RosterSettingsCard: View {
             Text("바닥의 소품을 클릭하면 걸어와요. 몸 위로 드래그해 바로 건넬 수도 있어요.")
                 .font(.system(size: 11)).foregroundStyle(.secondary)
             LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 10) {
-                ForEach(RosterItemKind.allCases) { kind in
+                ForEach(RosterItemKind.available(for: friend)) { kind in
                     HStack {
                         Image(systemName: kind.symbol).foregroundStyle(Color(nsColor: friend.color))
                         Toggle(kind.name(for: friend), isOn: Binding(get: { options.items.contains(kind) }, set: { value in

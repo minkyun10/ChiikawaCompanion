@@ -8,23 +8,30 @@ extension SelfTest {
         let migrationDefaults = UserDefaults(suiteName: migrationSuite)!
         defer { migrationDefaults.removePersistentDomain(forName: migrationSuite) }
         let legacyOptions: [Any] = Friend.expansionOrder.flatMap { friend -> [Any] in
-            [friend.rawValue, ["items": ["guitar", "weapon"], "spots": ["desk", "furball", "rice"],
+            [friend.rawValue, ["items": ["guitar", "camera", "weapon"], "spots": ["desk", "furball", "rice"],
                 "automaticItems": false, "automaticActivities": false, "automaticRest": false, "voice": false] as [String: Any]]
         }
         migrationDefaults.set(try! JSONSerialization.data(withJSONObject: legacyOptions), forKey: "rosterOptionsV38")
         let migrated = AppState(defaults: migrationDefaults)
         for friend in Friend.expansionOrder {
             let options = migrated.options(for: friend)
-            check(options.items == [.weapon] && !options.automaticItems && !options.automaticRest && !options.voice,
+            let expected: Set<RosterItemKind> = friend == .usagi ? [.weapon] : []
+            check(options.items == expected && !options.automaticItems && !options.automaticRest && !options.voice,
                   "\(friend.name): old item and activity settings migrate without resetting retained preferences")
+            migrated.updateOptions(friend) { $0.items.insert(.weapon) }
+            check(migrated.options(for: friend).items == expected,
+                  "\(friend.name): settings enforce the weapon owner and keep disabled keepsakes off")
         }
         let persisted = String(data: migrationDefaults.data(forKey: "rosterOptionsV38")!, encoding: .utf8)!
-        check(["guitar", "spots", "automaticActivities", "desk", "furball", "rice"].allSatisfy { !persisted.contains($0) }
+        check(["guitar", "camera", "spots", "automaticActivities", "desk", "furball", "rice"].allSatisfy { !persisted.contains($0) }
               && AppState(defaults: migrationDefaults).rosterOptions == migrated.rosterOptions,
               "removed guitar, desk, rice and automatic activity settings stay absent after reopening")
-        check(RosterItemKind(rawValue: "guitar") == nil && RosterAction(rawValue: "guitar") == nil
-              && ["vomit", "study", "eat"].allSatisfy { RosterAction(rawValue: $0) == nil },
-              "expansion commands cannot represent guitar playing, vomiting, studying or eating")
+        check(["guitar", "camera"].allSatisfy { RosterItemKind(rawValue: $0) == nil }
+              && ["guitar", "camera", "vomit", "study", "eat"].allSatisfy { RosterAction(rawValue: $0) == nil },
+              "expansion commands cannot represent cameras, guitars or retired daily actions")
+        check(Set(Friend.developmentRoster.filter(\.canUseWeapon)) == [.hachiware, .chiikawa, .usagi]
+              && RosterProp.allCases.filter { $0.kind == .weapon }.map(\.owner) == [.usagi],
+              "only Hachiware, Chiikawa and Usagi have weapons in their respective catalogs")
         let suite = "RosterChecks-\(UUID().uuidString)", defaults = UserDefaults(suiteName: suite)!
         defer { defaults.removePersistentDomain(forName: suite) }
         defaults.set(["chiikawa"], forKey: "visibleFriends")
@@ -55,6 +62,9 @@ extension SelfTest {
         }
         func date() -> Date { now.addingTimeInterval(clock) }
         tick()
+        check(desktop.desktopItems[.camera] != nil && desktop.itemWorld.ground[.camera] != nil
+              && !ChiikawaItem.allCases.map(\.rawValue).contains("camera"),
+              "the only camera ground object belongs to Hachiware")
         check(desktop.desktopItems[.guitar] != nil && desktop.itemWorld.ground[.guitar] != nil
               && desktop.desktopActivitySpots[.furball] != nil && desktop.activityWorld.positions[.furball] != nil,
               "Hachiware keeps the guitar and furball ground objects and interactions")
@@ -73,15 +83,19 @@ extension SelfTest {
             if Bundle.main.bundleURL.pathExtension == "app" {
                 check(art.usesBundledAtlases,prefix+"packaged app loads prebuilt native atlases without runtime generation")
                 let root = Bundle.main.resourceURL!.appendingPathComponent("Roster/\(friend.rawValue)")
-                check(["guitar-12.png", "vomit-12.png", "study-12.png", "eat-12.png"].allSatisfy {
+                let retired = ["guitar-12.png", "vomit-12.png", "study-12.png", "eat-12.png", "camera-12.png"]
+                    + (friend.canUseWeapon ? [] : ["attack-12.png"])
+                check(retired.allSatisfy {
                     !FileManager.default.fileExists(atPath: root.appendingPathComponent($0).path)
                 }, prefix+"packaging excludes all retired item and activity animation atlases")
                 check(!FileManager.default.fileExists(atPath: Bundle.main.resourceURL!
                     .appendingPathComponent("\(friend.rawValue)-expression-study-v38.png").path),
                       prefix+"packaging excludes the retired study expression resource")
             }
-            check(companion.objects.count == 3 && companion.world.ground.count == 3,
-                  prefix+"only camera, weapon and keepsake ground objects are created")
+            let kinds = RosterItemKind.available(for: friend)
+            check(Set(companion.objects.keys.map(\.kind)) == Set(kinds)
+                  && Set(companion.world.ground.keys.map(\.kind)) == Set(kinds),
+                  prefix+"ground windows and inventory contain exactly this character's allowed items")
             let otherActivities = Array(desktop.activityWorld.positions.values) + Array(desktop.chiikawaStudyWorld.positions.values)
             var ignoresOtherActivities = true
             for point in otherActivities {
@@ -90,9 +104,10 @@ extension SelfTest {
                     && actor.view.rosterVisual?.action == nil && actor.motion.isWalking
             }
             check(ignoresOtherActivities, prefix+"walking past either original friend's activity props does not trigger studying or eating")
-            check(RosterProp(rawValue: friend.rawValue + ":guitar") == nil,
-                  prefix+"a stale guitar drag payload is rejected")
-            check(art.isReady && art.walks.count==8 && art.actions.count==RosterAction.allCases.count,prefix+"eight walking directions and every action load")
+            check(["guitar", "camera"].allSatisfy { RosterProp(rawValue: friend.rawValue + ":" + $0) == nil }
+                  && (RosterProp(rawValue: friend.rawValue + ":weapon") != nil) == friend.canUseWeapon,
+                  prefix+"stale camera, guitar and disallowed weapon drag payloads are rejected")
+            check(art.isReady && art.walks.count==8 && art.actions.count==RosterAction.available(for: friend).count,prefix+"eight walking directions and every allowed action load")
             for direction in ChiikawaDirection.allCases {
                 let frames=art.walks[direction] ?? []
                 check(frames.count==24 && Set(frames.compactMap(\.tiffRepresentation)).count==24,
@@ -124,12 +139,17 @@ extension SelfTest {
                 }}
                 return result
             }
-            let standing=upperSilhouette(nil)
-            check(!standing.isNull && (0..<12).allSatisfy { n in
-                let attack=upperSilhouette(n)
-                return !attack.isNull && abs(attack.width-standing.width)<=2 && abs(attack.midX-standing.midX)<=2
-                    && abs(attack.maxY-standing.maxY)<=2
-            },prefix+"all attack frames preserve the real walking head width, center and ear crown within two desktop pixels")
+            if friend.canUseWeapon {
+                let standing=upperSilhouette(nil)
+                check(!standing.isNull && (0..<12).allSatisfy { n in
+                    let attack=upperSilhouette(n)
+                    return !attack.isNull && abs(attack.width-standing.width)<=2 && abs(attack.midX-standing.midX)<=2
+                        && abs(attack.maxY-standing.maxY)<=2
+                },prefix+"all attack frames preserve the real walking head width, center and ear crown within two desktop pixels")
+            } else {
+                check(art.actions[.attack] == nil && art.registration == nil,
+                      prefix+"unarmed characters have neither attack frames nor weapon viewport registration")
+            }
             check(actor.panel.frame.size==friend.actorSize && actor.panel.level==DesktopLayer.character && !actor.panel.canBecomeKey,
                   prefix+"native panel has the correct nonactivating desktop geometry")
             let start=RoamingMotion.target(in:bounds,size:actor.panel.frame.size,xFraction:0.36,yFraction:0.68)
@@ -146,20 +166,26 @@ extension SelfTest {
             check(companion.world.ground==ground && actor.motion.destination==nil,
                   prefix+"actual drag callbacks reset only the route and preserve prop positions")
             let center=actor.panel.frame.center
-            check(!companion.receive(.camera,at:desktop.hachiwareActor!.panel.frame.center,now:date()),
+            check(!companion.receive(.keepsake,at:desktop.hachiwareActor!.panel.frame.center,now:date()),
                   prefix+"a prop dropped on a different owner is rejected")
-            check(companion.receive(.camera,at:center,now:date()) && companion.world.equipped?.kind == .camera,
+            check(companion.receive(.keepsake,at:center,now:date()) && companion.world.equipped?.kind == .keepsake,
                   prefix+"direct drag drop equips immediately with automatic pickup disabled")
-            check(companion.receive(.keepsake,at:center,now:date()) && companion.world.equipped?.kind == .keepsake
-                  && companion.world.ground[RosterProp(owner:friend,kind:.camera)] != nil,
-                  prefix+"swapping drops exactly the old owned item")
+            if friend.canUseWeapon {
+                check(companion.receive(.weapon,at:center,now:date()) && companion.world.equipped?.kind == .weapon
+                      && companion.world.ground[RosterProp(owner:friend,kind:.keepsake)] != nil,
+                      prefix+"swapping to the allowed weapon drops exactly the old owned item")
+            } else {
+                check(!companion.receive(.weapon,at:center,now:date()) && companion.world.equipped?.kind == .keepsake,
+                      prefix+"a forbidden weapon handover preserves the currently held keepsake")
+            }
             companion.drop(now:date())
-            check(companion.world.equipped==nil && companion.world.ground.count==RosterItemKind.allCases.count,
+            check(companion.world.equipped==nil && companion.world.ground.count==kinds.count,
                   prefix+"manual drop restores one instance of each enabled item")
-            companion.seek(.camera,now:date()); tick()
-            check(companion.world.requested?.kind == .camera && actor.motion.isWalking,prefix+"ground item seek follows a walking route")
+            companion.seek(.keepsake,now:date()); tick()
+            check(companion.world.requested?.kind == .keepsake && actor.motion.isWalking,prefix+"ground item seek follows a walking route")
             companion.world.requested=nil; companion.itemTarget=nil; companion.stopAction()
             actor.panel.setFrameOrigin(start);companion.wake(now:date());companion.stopAction()
+            if friend.canUseWeapon {
             check(companion.receive(.weapon,at:actor.panel.frame.center,now:date()),prefix+"weapon handover succeeds")
             companion.stopAction();tick(0.1,mouse:actor.panel.frame.center,reachable:true)
             check(actor.view.action == .attack && actor.view.rosterVisual?.action == .attack && !actor.view.walking,
@@ -176,9 +202,22 @@ extension SelfTest {
             tick()
             check(actor.view.action == nil && actor.view.rosterVisual?.action == nil && actor.view.walking,
                   prefix+"leaving hover returns to walking in one display update")
-            companion.play(.camera,now:date());tick(mouse:actor.panel.frame.center,reachable:true)
+            companion.play(.keepsake,now:date());tick(mouse:actor.panel.frame.center,reachable:true)
             check(companion.action == nil && actor.view.rosterVisual?.action == .attack && actor.view.action == .attack,
                   prefix+"armed hover interrupts a prop action and displays only the attack")
+            } else {
+                companion.play(.keepsake, now:date())
+                let began = companion.actionStarted
+                companion.command(.action(.attack))
+                check(companion.action == .keepsake && companion.actionStarted == began,
+                      prefix+"a forbidden direct attack leaves the current allowed action untouched")
+                companion.stopAction(); tick(mouse:actor.panel.frame.center,reachable:true)
+                check(actor.view.action != .attack && actor.view.rosterVisual?.action != .attack
+                      && !actor.attackOverlay.panel.isVisible,
+                      prefix+"ordinary hover never displays an attack or weapon overlay")
+                tick()
+                check(actor.view.walking, prefix+"leaving ordinary hover resumes walking immediately")
+            }
             companion.stopAction();actor.dismissBubble()
             let beforeAudio=voiceStarts
             for _ in 0..<30 {tick(mouse:actor.panel.frame.center,reachable:true)}
@@ -218,14 +257,14 @@ extension SelfTest {
             companion.wake(now:date(),animated:true);tick(1.1)
             check(actor.panel.isVisible && !companion.home.isInside && companion.wakingAt==nil,
                   prefix+"waking finishes and restores the character outside the shared doorway")
-            companion.play(.camera,now:date());state.visibleFriends.remove(friend);tick()
+            companion.play(.keepsake,now:date());state.visibleFriends.remove(friend);tick()
             check(!actor.panel.isVisible && companion.action==nil && companion.voice.player==nil && !actor.attackOverlay.panel.isVisible,
                   prefix+"hiding cancels only its own action, audio and overlay")
             state.visibleFriends.insert(friend);tick()
-            state.updateOptions(friend){$0.voice=false;$0.automaticRest=false;$0.items.remove(.camera)};tick()
+            state.updateOptions(friend){$0.voice=false;$0.automaticRest=false;$0.items.remove(.keepsake)};tick()
             let saved=AppState(defaults:defaults).options(for:friend)
-            check(!saved.voice && !saved.automaticRest && !saved.items.contains(.camera)
-                  && companion.world.ground[RosterProp(owner:friend,kind:.camera)]==nil,
+            check(!saved.voice && !saved.automaticRest && !saved.items.contains(.keepsake)
+                  && companion.world.ground[RosterProp(owner:friend,kind:.keepsake)]==nil,
                   prefix+"independent item, rest and voice options persist and disabled props disappear")
             check(inventory.keys.allSatisfy {$0.owner==friend},prefix+"every inventory key retains its explicit owner")
         }
