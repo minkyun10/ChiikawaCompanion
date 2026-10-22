@@ -17,9 +17,6 @@ final class RosterCompanion {
     var state: AppState { desktop.state }
     var world = PropWorld<RosterProp>()
     var objects: [RosterProp: DesktopPropWindow<RosterProp>] = [:]
-    var activities = ActivitySpotWorld()
-    var spots: [ActivitySpot: DesktopActivitySpot] = [:]
-    var activeSpot: ActivitySpot?
     var action: RosterAction?
     var actionStarted = Date.distantPast
     var actionUntil = Date.distantPast
@@ -64,18 +61,6 @@ final class RosterCompanion {
             object.view.onMoveEnd = { [weak self] point in _ = self?.receive(kind, at: point) }
             objects[item] = object
         }
-        for spot in RosterOptions.activitySpots {
-            let object = DesktopActivitySpot(spot: spot, owner: actor.friend)
-            object.view.onSeek = { [weak self] in self?.visit(spot) }
-            object.view.onMove = { [weak self] point in
-                guard let self else { return }
-                if self.activeSpot == spot { self.stopAction() }
-                self.activities.move(spot, to: point, bounds: self.propFrame)
-                if self.activities.requested == spot { self.actor.motion.retarget() }
-            }
-            object.view.onMoveEnd = { [weak self] in _ = self?.triggerActivity(now: Date()) }
-            spots[spot] = object
-        }
         actor.view.onRosterAction = { [weak self] action in self?.play(action) }
         actor.view.onStopDailyAction = { [weak self] in self?.stopAction() }
         actor.view.onDropEquipment = { [weak self] in self?.drop() }
@@ -87,23 +72,13 @@ final class RosterCompanion {
     }
     func repairScreenCoordinates() {
         for (item, point) in world.ground { world.move(item, to: point, bounds: propFrame) }
-        for (spot, point) in activities.positions { activities.move(spot, to: point, bounds: propFrame) }
         actor.motion.retarget()
     }
     func close() {
-        voice.stop(); objects.values.forEach { $0.panel.close() }; spots.values.forEach { $0.panel.close() }
+        voice.stop(); objects.values.forEach { $0.panel.close() }
     }
     func configure() {
         world.configure(enabled: Set(options.items.map { RosterProp(owner: friend, kind: $0) }), bounds: propFrame)
-        let added = options.spots.subtracting(activities.enabled)
-        activities.configure(enabled: options.spots, bounds: propFrame)
-        let offset = CGFloat(Friend.expansionOrder.firstIndex(of: friend) ?? 0)
-        for spot in added {
-            let fraction: (CGFloat,CGFloat) = spot == .desk ? (0.12 + offset * 0.19,0.78) : (0.67 + offset * 0.08,0.23 + offset * 0.13)
-            let origin = RoamingMotion.target(in: usableFrame, size: actor.panel.frame.size, xFraction: fraction.0, yFraction: fraction.1)
-            activities.move(spot, to: ItemWorld.contactPoint(origin: origin), bounds: propFrame)
-        }
-        if let activeSpot, !options.spots.contains(activeSpot) { stopAction() }
     }
     func publish() {
         status.equipped = world.equipped?.kind
@@ -117,7 +92,6 @@ final class RosterCompanion {
         case .seek(let kind): seek(kind)
         case .drop: drop()
         case .scatter: world.scatter(in: propFrame); world.requested = nil; itemTarget = nil; actor.motion.retarget()
-        case .visit(let spot): visit(spot)
         case .action(let action): play(action)
         case .stopAction: stopAction()
         case .home: goHome()
@@ -134,45 +108,20 @@ final class RosterCompanion {
         let item = RosterProp(owner: friend, kind: kind)
         guard world.ground[item] != nil else { return }
         wake(now: now); stopAction(); voice.stop(); makeVisibleAndWalking()
-        actor.dismissBubble(); activities.requested = nil; world.requested = item; itemTarget = nil
+        actor.dismissBubble(); world.requested = item; itemTarget = nil
         actor.motion.retarget(); status.item = "\(item.name) 주우러 가요"; publish()
     }
-    func visit(_ spot: ActivitySpot, now: Date = Date()) {
-        guard activities.positions[spot] != nil else { return }
-        wake(now: now); stopAction(); voice.stop(); makeVisibleAndWalking()
-        actor.dismissBubble(); world.requested = nil; itemTarget = nil
-        activities.requested = spot; actor.motion.retarget()
-        status.action = "\(spot.name)까지 걸어가요"; publish()
-    }
-    func play(_ selected: RosterAction, at spot: ActivitySpot? = nil, now: Date = Date()) {
-        if let spot { guard options.spots.contains(spot), RosterAction(spot: spot) == selected else { return } }
+    func play(_ selected: RosterAction, now: Date = Date()) {
         voice.stop(); state.showFriends = true; state.visibleFriends.insert(friend)
         wake(now: now); actor.dismissBubble(); actor.motion.stop()
         action = selected; actionStarted = now; actionUntil = now.addingTimeInterval(selected.duration)
-        queuedAction = nil; activeSpot = spot; activities.requested = nil
+        queuedAction = nil
         world.requested = nil; itemTarget = nil
-        if let spot { activities.consume(spot, now: now) }
         status.action = selected.title; publish()
     }
     func stopAction() {
-        action = nil; queuedAction = nil; activeSpot = nil; actionUntil = .distantPast
+        action = nil; queuedAction = nil; actionUntil = .distantPast
         actor.motion.retarget(); status.action = "다시 산책해요"; publish()
-    }
-    @discardableResult
-    func triggerActivity(now: Date) -> Bool {
-        guard !actor.view.isDragging, now >= actor.bubbleUntil, action == nil,
-              home.phase == .outside, world.requested == nil else { return false }
-        activities.observe(contact: ItemWorld.contactPoint(origin: actor.panel.frame.origin))
-        let dragged = Set(spots.filter { $0.value.view.isDragging }.map(\.key))
-        guard let spot = activities.encounter(contact: ItemWorld.contactPoint(origin: actor.panel.frame.origin),
-            automatic: options.automaticActivities, now: now, excluding: dragged) else { return false }
-        if !activities.hasArrived(at: spot, contact: ItemWorld.contactPoint(origin: actor.panel.frame.origin)) {
-            guard state.isWalking(friend) else { return false }
-            if activities.requested != spot { activities.requested = spot; actor.motion.retarget() }
-            return false
-        }
-        guard let selected = RosterAction(spot: spot) else { return false }
-        play(selected, at: spot, now: now); return true
     }
     func drop(now: Date = Date()) {
         stopAction()
@@ -189,7 +138,7 @@ final class RosterCompanion {
         pickedUp(item, now: now); return true
     }
     func pickedUp(_ item: RosterProp, now: Date) {
-        stopAction(); activities.requested = nil; itemTarget = nil; actor.motion.retarget()
+        stopAction(); itemTarget = nil; actor.motion.retarget()
         action = .pickup; actionStarted = now; actionUntil = now.addingTimeInterval(0.65)
         queuedAction = item.kind == .camera ? .camera : item.kind == .keepsake ? .keepsake : nil
         nextPerformance = now.addingTimeInterval(18)
@@ -197,7 +146,7 @@ final class RosterCompanion {
     }
     func goHome(now: Date = Date()) {
         stopAction(); voice.stop(); actor.dismissBubble(); makeVisibleAndWalking()
-        activities.requested = nil; world.requested = nil; itemTarget = nil
+        world.requested = nil; itemTarget = nil
         wakingAt = nil; home.request(now: now); actor.motion.retarget(); publish()
     }
     func wake(now: Date = Date(), animated: Bool = false) {
@@ -213,7 +162,7 @@ final class RosterCompanion {
     }
     @discardableResult
     func enterHome(now: Date) -> Bool {
-        guard action == nil, !actor.view.isDragging, now >= actor.bubbleUntil, activities.requested == nil,
+        guard action == nil, !actor.view.isDragging, now >= actor.bubbleUntil,
               home.arrive(contact: ItemWorld.contactPoint(origin: actor.panel.frame.origin), entrance: desktop.home.entrance, now: now) else { return false }
         world.drop(at: NSPoint(x: desktop.home.panel.frame.maxX + 24,y: desktop.home.entrance.y), bounds: propFrame, now: now)
         world.requested = nil; itemTarget = nil; actor.motion.stop(); actor.panel.orderOut(nil)
@@ -222,11 +171,10 @@ final class RosterCompanion {
     func beganDragging() {
         voice.stop(); stopAction(); actor.dismissBubble()
         if home.phase != .outside { wake() }
-        activities.requested = nil; world.requested = nil; itemTarget = nil
+        world.requested = nil; itemTarget = nil
     }
     func endedDragging(now: Date = Date()) {
         actor.motion.retarget(); itemTarget = nil
-        if triggerActivity(now: now) { return }
         if hypot(ItemWorld.contactPoint(origin: actor.panel.frame.origin).x - desktop.home.entrance.x,
                  ItemWorld.contactPoint(origin: actor.panel.frame.origin).y - desktop.home.entrance.y) <= 24 {
             home.request(now: now); _ = enterHome(now: now)
@@ -248,10 +196,6 @@ final class RosterCompanion {
     }
     func updateObjects(visible: Bool, mouse: NSPoint) {
         for (item, object) in objects { object.update(position: world.ground[item], visible: visible, mouse: mouse) }
-        for (spot, object) in spots {
-            object.update(position: activities.positions[spot], visible: visible && activeSpot != spot,
-                mouse: mouse, behind: actor.panel.isVisible ? actor.panel.windowNumber : nil)
-        }
     }
     func tick(now: Date, dt: TimeInterval, time: Double, mouse: NSPoint, pointerCanReachCharacter: Bool?) {
         configure(); voice.setVolume(state.characterVolume)
@@ -280,22 +224,19 @@ final class RosterCompanion {
             if let queued = queuedAction { action = queued; queuedAction = nil; actionStarted = now; actionUntil = now.addingTimeInterval(queued.duration) }
             else { stopAction() }
         }
-        let daily = action == .study || action == .eat
-        let attacking = activity == .hovering && state.expressive && world.equipped?.kind == .weapon && !daily
+        let attacking = activity == .hovering && state.expressive && world.equipped?.kind == .weapon
         if attacking && action != nil { stopAction() }
         if activity == .dragging || activity == .speaking { if action != nil { stopAction() } }
-        if activity == .walking || activity == .idle { _ = triggerActivity(now: now) }
-        if activity == .walking, action == nil, activities.requested == nil, world.requested == nil,
+        if activity == .walking, action == nil, world.requested == nil,
            home.shouldReturn(now: now,automatic: options.automaticRest,roaming: state.isWalking(friend)) { goHome(now: now) }
         if activity == .walking && action == nil {
             let start = actor.panel.frame
             let dragged = Set(objects.filter { $0.value.view.isDragging }.map(\.key))
-            let following = home.phase == .returning || activities.requested != nil
+            let following = home.phase == .returning
             let target = following ? nil : world.nearbyTarget(from: start.origin,automatic: options.automaticItems,now: now,excluding: dragged)
                 ?? world.target(from: start.origin,automatic: options.automaticItems,now: now,excluding: dragged)
             if itemTarget != target { itemTarget = target; actor.motion.retarget() }
             if home.phase == .returning { actor.motion.destination = ItemWorld.destination(for: desktop.home.entrance) }
-            else if let spot = activities.requested, let point = activities.positions[spot] { actor.motion.destination = ItemWorld.destination(for: point) }
             else if let target, let point = world.ground[target] {
                 actor.motion.destination = ItemWorld.destination(for: point)
                 if world.pickUp(target,from: start.origin,bounds: propFrame,now: now) { pickedUp(target,now: now) }
@@ -310,11 +251,10 @@ final class RosterCompanion {
             }
             if action == nil {
                 actor.panel.setFrameOrigin(actor.motion.advance(from: start.origin,dt: dt,bounds: usableFrame,size: start.size,
-                    stoppingDistance: activities.requested == nil ? 5 : ActivitySpotWorld.stoppingDistance))
+                    stoppingDistance: 5))
                 actor.gait.recordMovement(from: start.origin,to: actor.panel.frame.origin)
             } else { actor.motion.stop() }
             _ = enterHome(now: now)
-            if !home.isInside { _ = triggerActivity(now: now) }
             if !following, action == nil, !home.isInside,
                let nearby = world.nearbyTarget(from: actor.panel.frame.origin,automatic: options.automaticItems,now: now,excluding: dragged),
                world.pickUp(nearby,from: actor.panel.frame.origin,bounds: propFrame,now: now) { pickedUp(nearby,now: now) }
@@ -325,7 +265,7 @@ final class RosterCompanion {
             }
         } else { actor.motion.stop() }
         let shown: RosterAction? = attacking ? .attack : activity == .speaking ? .surprised
-            : daily ? action : activity == .hovering && state.expressive ? now.timeIntervalSince(actor.hoverStarted) < 0.3 ? .wave : .laugh : action
+            : activity == .hovering && state.expressive ? now.timeIntervalSince(actor.hoverStarted) < 0.3 ? .wave : .laugh : action
         if shown == .attack && actor.view.action != .attack { actor.hoverStarted = now }
         actor.view.time = time + actor.phase; actor.view.walking = actor.motion.isWalking
         actor.view.walkPhase = actor.gait.phase; actor.view.facing = actor.motion.facing

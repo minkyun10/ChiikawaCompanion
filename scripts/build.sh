@@ -16,8 +16,8 @@ cat > "$app_dir/Contents/Info.plist" <<'PLIST'
   <key>CFBundleName</key><string>ChiikawaCompanion</string>
   <key>CFBundleDisplayName</key><string>치이카와 데스크톱</string>
   <key>CFBundleExecutable</key><string>ChiikawaCompanion</string>
-  <key>CFBundleVersion</key><string>45</string>
-  <key>CFBundleShortVersionString</key><string>0.20.2</string>
+  <key>CFBundleVersion</key><string>46</string>
+  <key>CFBundleShortVersionString</key><string>0.20.3</string>
   <key>CFBundlePackageType</key><string>APPL</string>
   <key>CFBundleIconFile</key><string>AppIcon</string>
   <key>LSMinimumSystemVersion</key><string>13.0</string>
@@ -27,13 +27,14 @@ cat > "$app_dir/Contents/Info.plist" <<'PLIST'
 PLIST
 "$binary_dir/ChiikawaCompanion" --render-artwork "$project_dir/build/artwork"
 # Render native animation once during packaging; the running app only decodes atlases.
-# These generated files existed before the items became Hachiware-exclusive.
+# These generated files predate the character-specific item and activity rules.
 # Remove both the export and bundle copies when rebuilding an existing checkout.
 for friend in usagi kurimanju momonga; do
-  for retired_action in guitar vomit; do
+  for retired_action in guitar vomit study eat; do
     rm -f "$project_dir/build/roster/$friend/$retired_action-12.png" \
       "$app_dir/Contents/Resources/Roster/$friend/$retired_action-12.png"
   done
+  rm -f "$app_dir/Contents/Resources/$friend-expression-study-v38.png"
 done
 "$binary_dir/ChiikawaCompanion" --render-roster "$project_dir/build/roster"
 mkdir -p "$app_dir/Contents/Resources/Roster"

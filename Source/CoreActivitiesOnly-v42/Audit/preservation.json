@@ -1,0 +1,328 @@
+{
+  "date": "2026-10-22",
+  "app_version": "0.20.3",
+  "build": 46,
+  "baseline_commit": "38161aa28b9ea40bf32d0cce31ad2e90aba7d8e0",
+  "retained_atlases_identical": 51,
+  "source_resources_identical": 103,
+  "retired_artwork_archived": [
+    {
+      "path": "Source/Momonga-v40/Final/PackagedNative/usagi/guitar-12.png",
+      "sha256": "438c3a3c0d5b4de706df9b89fe08fc5ca9153f1eea42f5d63355525a58866806"
+    },
+    {
+      "path": "Source/Momonga-v40/Final/PackagedNative/usagi/vomit-12.png",
+      "sha256": "d9fe75089d3f8e208981492d272c4cb585b81acafa9ed9fdbc4e9baf28874351"
+    },
+    {
+      "path": "Source/Momonga-v40/Final/PackagedNative/usagi/study-12.png",
+      "sha256": "831f57a2ea2f957148efae26a114dddd8e9482bd7654dd14165a4f726720f4c4"
+    },
+    {
+      "path": "Source/Momonga-v40/Final/PackagedNative/usagi/eat-12.png",
+      "sha256": "b6357cc2e538a3cb023a563f6e39ae5e32b5778280bd9f358d536ad062b761ca"
+    },
+    {
+      "path": "Source/Momonga-v40/Final/PackagedNative/kurimanju/guitar-12.png",
+      "sha256": "b519c7cffee3d40bb33adfcf95c774e57abb345c53b121d63e2495d29ebd4111"
+    },
+    {
+      "path": "Source/Momonga-v40/Final/PackagedNative/kurimanju/vomit-12.png",
+      "sha256": "75d435071d047a5390ff6eec0d35e4e5f0097aa6520c7d94db7add7cfc6faf71"
+    },
+    {
+      "path": "Source/Momonga-v40/Final/PackagedNative/kurimanju/study-12.png",
+      "sha256": "7fc5ad72179ca7405e089e4d02e3eb891137b12d7849d7a2225dfdb80265b34f"
+    },
+    {
+      "path": "Source/Momonga-v40/Final/PackagedNative/kurimanju/eat-12.png",
+      "sha256": "67019a13775ef927fa55b4e169fcaf916cb6767abf7211a0c054e0d04af7c3d4"
+    },
+    {
+      "path": "Source/Momonga-v40/Final/PackagedNative/momonga/guitar-12.png",
+      "sha256": "cc70d3e9fd2577f1325751162d9de15624688c2b058be112eaaded978fc6445d"
+    },
+    {
+      "path": "Source/Momonga-v40/Final/PackagedNative/momonga/vomit-12.png",
+      "sha256": "d6017240d45b95d890cbbf1e4001040a2fd59267778efe8bce6234adf3b71a2e"
+    },
+    {
+      "path": "Source/Momonga-v40/Final/PackagedNative/momonga/study-12.png",
+      "sha256": "d764b04730d8bccc92374675d7f76bd3203644d14a73beb1a7c4fe7b161f495a"
+    },
+    {
+      "path": "Source/Momonga-v40/Final/PackagedNative/momonga/eat-12.png",
+      "sha256": "7b604c1ef66040430b1e8c9657c750edac2905896de1779956ad1912f3abe70c"
+    },
+    {
+      "path": "Source/Project/Sources/ChiikawaCompanion/Resources/kurimanju-expression-study-v38.png",
+      "sha256": "e85bf7de124c8d69d533b1616f04b71c473e4996226f1d29b24f0c10f7ef1fb0"
+    },
+    {
+      "path": "Source/Project/Sources/ChiikawaCompanion/Resources/momonga-expression-study-v38.png",
+      "sha256": "16736d99d6b4ecb63e422c4929eecaf582d16dfdd857af390799960f56b378d7"
+    },
+    {
+      "path": "Source/Project/Sources/ChiikawaCompanion/Resources/usagi-expression-study-v38.png",
+      "sha256": "d83aac91d835dcabb5e6367c0cd73e07f29054d9cc96475554ac40b168f3ce03"
+    }
+  ],
+  "retired_atlases_in_runtime": 0,
+  "atlas_checks": [
+    {
+      "friend": "usagi",
+      "atlas": "attack-12.png",
+      "sha256": "73f1148143432c7cd50cc7d845440264d879fd30b0c4a904d47858576f8576e7"
+    },
+    {
+      "friend": "usagi",
+      "atlas": "camera-12.png",
+      "sha256": "e08080b915b9604859e31307f93fb56f59957929001094852e05cce0a623e6ba"
+    },
+    {
+      "friend": "usagi",
+      "atlas": "down-24.png",
+      "sha256": "8424bd09b546c509b049db81ff19dfc65ed3b70bd05ab2ea4b3f5db01f2527ad"
+    },
+    {
+      "friend": "usagi",
+      "atlas": "down-left-24.png",
+      "sha256": "aa7a05d65e639631655c871c71753dd6c0aba877117a4f23bb36ffe7cc00151a"
+    },
+    {
+      "friend": "usagi",
+      "atlas": "down-right-24.png",
+      "sha256": "97fbbcd88613011674f4128b1170facebf12b23d204a59dd7bc06a82fd9f0cc5"
+    },
+    {
+      "friend": "usagi",
+      "atlas": "keepsake-12.png",
+      "sha256": "45ecac624d4f985ba7cc47687c1303fa4dac7ab45baf470fde65e4621e3f48b4"
+    },
+    {
+      "friend": "usagi",
+      "atlas": "laugh-12.png",
+      "sha256": "1ecc13bdbe93e61f435f88d61d68e135de5cdb84255ef01db034fa6d95fbbb00"
+    },
+    {
+      "friend": "usagi",
+      "atlas": "left-24.png",
+      "sha256": "73e71f7b193cf5ac5700d13b269facad4877b10bd563000427c02e2e292685ce"
+    },
+    {
+      "friend": "usagi",
+      "atlas": "pickup-12.png",
+      "sha256": "a51f2415b4d86a9ddaf209b67b49baf70f4fa6df280ec96316f6b92698d5dc7d"
+    },
+    {
+      "friend": "usagi",
+      "atlas": "right-24.png",
+      "sha256": "62989c1a4dfa6c813da6ee85273dc77002a9d6dbcb10ef2fa91dff7747a6b306"
+    },
+    {
+      "friend": "usagi",
+      "atlas": "sleep-12.png",
+      "sha256": "7c18fa306872455272b5f8922f4e4313ebcec3f1d2f8c4ca510764741fc27d59"
+    },
+    {
+      "friend": "usagi",
+      "atlas": "surprised-12.png",
+      "sha256": "dd30d28d44c5d665ee2c362145ee9c60aa7b192bd216aa31f12e1e7cd3e90160"
+    },
+    {
+      "friend": "usagi",
+      "atlas": "up-24.png",
+      "sha256": "0d1d08460a60321c22810c56edb925e9e55caff9a3ccaf90d9a544ad0e3c457b"
+    },
+    {
+      "friend": "usagi",
+      "atlas": "up-left-24.png",
+      "sha256": "78d39ef48abc9ca0bb5780ff2384d027e11782b7cb7493f62637ace2a0f14851"
+    },
+    {
+      "friend": "usagi",
+      "atlas": "up-right-24.png",
+      "sha256": "3a5bc3885bff1b9d9b76a05c6965d5a2def24e9b82eca198de806d9f1e8f8380"
+    },
+    {
+      "friend": "usagi",
+      "atlas": "wake-12.png",
+      "sha256": "da87a8f8441da8fc7470a4ddf342af85169e29a56e0e8b643cb9b341a99b13cd"
+    },
+    {
+      "friend": "usagi",
+      "atlas": "wave-12.png",
+      "sha256": "ad6f0bd1fc76d5f938f7c4d932de5237953b05bbc87170fda79745aeb2f57b2f"
+    },
+    {
+      "friend": "kurimanju",
+      "atlas": "attack-12.png",
+      "sha256": "c8ee63f2418c21466c9c7388b51ef58b81672dfcc41d694c8b41c75c2af5bff5"
+    },
+    {
+      "friend": "kurimanju",
+      "atlas": "camera-12.png",
+      "sha256": "511a1bb2eebf8a6d7699080e8007b513fe3b05368fc804981407196af9320e75"
+    },
+    {
+      "friend": "kurimanju",
+      "atlas": "down-24.png",
+      "sha256": "b4144a18d7cf551d1e1b308f52893842f252bb4921d94cb7b3c7d76071aa9c50"
+    },
+    {
+      "friend": "kurimanju",
+      "atlas": "down-left-24.png",
+      "sha256": "1f496825010a497fd4926ac028efc5341d88001d8c7701fe5063ba0d26f7b249"
+    },
+    {
+      "friend": "kurimanju",
+      "atlas": "down-right-24.png",
+      "sha256": "faa45ecbb34c67bc9fc73987c79a236e148336bb1cb056c644b484213cbbc2ec"
+    },
+    {
+      "friend": "kurimanju",
+      "atlas": "keepsake-12.png",
+      "sha256": "2027c137a4577a6da65081dbe5184c17e3b994df0a477a20804f3985bbb9adca"
+    },
+    {
+      "friend": "kurimanju",
+      "atlas": "laugh-12.png",
+      "sha256": "618af114624bc19accca4caada4b2c6409a5c885625ec701ccb25cc6179987a5"
+    },
+    {
+      "friend": "kurimanju",
+      "atlas": "left-24.png",
+      "sha256": "8e63b9fdf2f65706e0bd2dda9a420e90b8cb704a90c23933f5fb618f69bba6b5"
+    },
+    {
+      "friend": "kurimanju",
+      "atlas": "pickup-12.png",
+      "sha256": "d57fbb2a602cb5293c018077fa1bfe4880889f20340c251b02ed33d393e366c1"
+    },
+    {
+      "friend": "kurimanju",
+      "atlas": "right-24.png",
+      "sha256": "1584838bc570860d7b7a20c434b184ba2f0065dfbcd670d2fb54135f42c769ff"
+    },
+    {
+      "friend": "kurimanju",
+      "atlas": "sleep-12.png",
+      "sha256": "1b5e5b614803900bde450216c59c0ff75f82736cb01a2979c2cb8becc8626ce8"
+    },
+    {
+      "friend": "kurimanju",
+      "atlas": "surprised-12.png",
+      "sha256": "359c9741a76516ca55261f168cc6fae6e80202f81889e7d84ce72f3db31c46c8"
+    },
+    {
+      "friend": "kurimanju",
+      "atlas": "up-24.png",
+      "sha256": "c856ccd598a7375540bdb81ff8740800e28c96ffa082365df0ab49b0a0231a51"
+    },
+    {
+      "friend": "kurimanju",
+      "atlas": "up-left-24.png",
+      "sha256": "9f95b26c765b098ec73f03bb8350703fc5ed5fd64eb6e2c0c8e9c61200bafcbb"
+    },
+    {
+      "friend": "kurimanju",
+      "atlas": "up-right-24.png",
+      "sha256": "0eca26546dc476cb1af963fbdcc29a2e72f9af85fdb49d8f62187fd9709fd53f"
+    },
+    {
+      "friend": "kurimanju",
+      "atlas": "wake-12.png",
+      "sha256": "9334ad572748b769adfa97ed1507465bebdf8cb5884db035c6a851b27135b5ba"
+    },
+    {
+      "friend": "kurimanju",
+      "atlas": "wave-12.png",
+      "sha256": "945a877f782187fe86abf5bce32518f05ad64a3c2bd07aced65df1235f6a7dd5"
+    },
+    {
+      "friend": "momonga",
+      "atlas": "attack-12.png",
+      "sha256": "a50138e6a04f82d489462423e9fe54679aee5e31056e41500dfa830986e3c2aa"
+    },
+    {
+      "friend": "momonga",
+      "atlas": "camera-12.png",
+      "sha256": "ab46bb47ccadf711421a222bf517890e14713ff81df17d2908ff249cc3aeb630"
+    },
+    {
+      "friend": "momonga",
+      "atlas": "down-24.png",
+      "sha256": "3ebfbadaf0914903e04a72270053a93f26bcf789121965800b432bbb34356bbd"
+    },
+    {
+      "friend": "momonga",
+      "atlas": "down-left-24.png",
+      "sha256": "bc78927e8bea7b05a6e171572a0c85d028fd94511e28b968fdec30f6f92575b5"
+    },
+    {
+      "friend": "momonga",
+      "atlas": "down-right-24.png",
+      "sha256": "449fcf5bc4ef16602c37193c952657ee64d725bebd73862d8025548b6c05fc3c"
+    },
+    {
+      "friend": "momonga",
+      "atlas": "keepsake-12.png",
+      "sha256": "d2493276bba0e84ca3416f362fedf683b604a08fa473c06df6ed9f2389d86936"
+    },
+    {
+      "friend": "momonga",
+      "atlas": "laugh-12.png",
+      "sha256": "c8c84cf68151ced15e3d2969dc5ea070c865d86ecdfa6d457d3c7ff62ac07979"
+    },
+    {
+      "friend": "momonga",
+      "atlas": "left-24.png",
+      "sha256": "97dc1281f888e9bb99355b5ef3ac481a3eb88be05a664885fb0afae563319d9f"
+    },
+    {
+      "friend": "momonga",
+      "atlas": "pickup-12.png",
+      "sha256": "1cbc956a2928624559eff67fca508ad93b7579a7ed0eee5dd012501b9caafd19"
+    },
+    {
+      "friend": "momonga",
+      "atlas": "right-24.png",
+      "sha256": "62a3426e4a6526d988f4d3d3e705d1574352ccae0fdf89ad467246357ac546e3"
+    },
+    {
+      "friend": "momonga",
+      "atlas": "sleep-12.png",
+      "sha256": "f5ea79266e82744c16f963ecca49a2349355e6bd1fe1e86380beb077df13713b"
+    },
+    {
+      "friend": "momonga",
+      "atlas": "surprised-12.png",
+      "sha256": "d9a392b90208f9fe200c2d9c3fb2c0192fc90739899102d5b2deec9fbd9861cc"
+    },
+    {
+      "friend": "momonga",
+      "atlas": "up-24.png",
+      "sha256": "11fdb2aac4e965dee3f31cc03bbcf13a453939eb2179952debacf8ee8c93a88a"
+    },
+    {
+      "friend": "momonga",
+      "atlas": "up-left-24.png",
+      "sha256": "4e15d79b186765a7fd393635099dc86e714d412a29a0fa6fd8495ddde2200e6d"
+    },
+    {
+      "friend": "momonga",
+      "atlas": "up-right-24.png",
+      "sha256": "170b5312d30093fc07eff4522682eebd66ea86a5cc1b91c52ad061cc3b987317"
+    },
+    {
+      "friend": "momonga",
+      "atlas": "wake-12.png",
+      "sha256": "292be8bbe1168b506822a589adf320d2f44c589c211c48e24975a4b7e1668dc1"
+    },
+    {
+      "friend": "momonga",
+      "atlas": "wave-12.png",
+      "sha256": "7f4a918e2fa7bae6ed875f74d1f2fd85a3f258962753cc449911330cf536e7af"
+    }
+  ]
+}

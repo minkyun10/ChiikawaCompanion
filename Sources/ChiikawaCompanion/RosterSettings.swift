@@ -37,18 +37,6 @@ struct RosterSettingsCard: View {
                 Button("내려놓기") { state.onRosterCommand?(friend, .drop) }.disabled(status.equipped == nil)
             }.font(.system(size: 11))
             Divider()
-            HStack {
-                ForEach(RosterOptions.activitySpots) { spot in
-                    VStack(alignment: .leading, spacing: 7) {
-                        Toggle(spot.name, isOn: Binding(get: { options.spots.contains(spot) }, set: { value in
-                            state.updateOptions(friend) { if value { $0.spots.insert(spot) } else { $0.spots.remove(spot) } }
-                        }))
-                        Button(spot.visitTitle) { state.onRosterCommand?(friend, .visit(spot)) }.disabled(!options.spots.contains(spot))
-                    }
-                    Spacer()
-                }
-            }.font(.system(size: 11))
-            Toggle("가까이 가면 행동하기", isOn: binding(\.automaticActivities)).font(.system(size: 11))
             HStack(spacing: 8) {
                 Menu("직접 동작 고르기") {
                     ForEach(RosterAction.selectable, id: \.rawValue) { action in

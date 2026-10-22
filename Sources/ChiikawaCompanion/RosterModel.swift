@@ -55,21 +55,13 @@ struct RosterProp: DesktopProp, Identifiable {
 }
 
 struct RosterOptions: Codable, Equatable {
-    static let activitySpots: [ActivitySpot] = [.desk, .rice]
     var items = Set(RosterItemKind.allCases)
-    var spots = Set(activitySpots)
     var automaticItems = true
-    var automaticActivities = true
     var automaticRest = true
     var voice = true
 
-    var normalized: Self {
-        var result = self
-        result.spots.formIntersection(Self.activitySpots)
-        return result
-    }
     private enum CodingKeys: String, CodingKey {
-        case items, spots, automaticItems, automaticActivities, automaticRest, voice
+        case items, automaticItems, automaticRest, voice
     }
     init() {}
     init(from decoder: Decoder) throws {
@@ -79,11 +71,7 @@ struct RosterOptions: Codable, Equatable {
         if let names = try values.decodeIfPresent(Set<String>.self, forKey: .items) {
             items = Set(names.compactMap(RosterItemKind.init(rawValue:)))
         }
-        if let names = try values.decodeIfPresent(Set<String>.self, forKey: .spots) {
-            spots = Set(names.compactMap(ActivitySpot.init(rawValue:))).intersection(Self.activitySpots)
-        }
         automaticItems = try values.decodeIfPresent(Bool.self, forKey: .automaticItems) ?? automaticItems
-        automaticActivities = try values.decodeIfPresent(Bool.self, forKey: .automaticActivities) ?? automaticActivities
         automaticRest = try values.decodeIfPresent(Bool.self, forKey: .automaticRest) ?? automaticRest
         voice = try values.decodeIfPresent(Bool.self, forKey: .voice) ?? voice
     }
@@ -92,7 +80,7 @@ struct RosterOptions: Codable, Equatable {
 struct RosterStatus: Equatable {
     var equipped: RosterItemKind?
     var item = "바탕화면 소품을 찾아요"
-    var action = "공부하고 밥 먹고 쉬어요"
+    var action = "산책하고 소품과 놀아요"
     var actionRunning = false
     var home = "공용 집에서 함께 쉴 수 있어요"
     var resting = false
@@ -100,26 +88,22 @@ struct RosterStatus: Equatable {
 }
 
 enum RosterCommand {
-    case seek(RosterItemKind), drop, scatter, visit(ActivitySpot), action(RosterAction), stopAction
+    case seek(RosterItemKind), drop, scatter, action(RosterAction), stopAction
     case home, wake, voicePreview, stopVoice
 }
 
 enum RosterAction: String, CaseIterable {
-    case wave, laugh, surprised, pickup, camera, attack, study, eat, sleep, wake, keepsake
+    case wave, laugh, surprised, pickup, camera, attack, sleep, wake, keepsake
     var title: String {
         switch self {
         case .wave: return "인사하기"; case .laugh: return "웃기"; case .surprised: return "놀라기"; case .pickup: return "줍기"
         case .camera: return "사진 찍기"; case .attack: return "무기 휘두르기"
-        case .study: return "공부하기"; case .eat: return "밥 먹기"
         case .sleep: return "잠자기"; case .wake: return "일어나기"; case .keepsake: return "소품과 놀기"
         }
     }
-    static let selectable: [Self] = [.study, .eat, .camera, .keepsake]
-    var duration: TimeInterval { switch self { case .study: return 9; case .eat: return 6; case .wake: return 0.96; default: return 2.4 } }
-    var cycle: TimeInterval { self == .attack ? 1.2 : self == .wake ? 0.96 : self == .pickup ? 0.65 : self == .study ? 1.8 : self == .eat ? 2 : 2.4 }
-    init?(spot: ActivitySpot) {
-        switch spot { case .desk: self = .study; case .rice: self = .eat; case .furball: return nil }
-    }
+    static let selectable: [Self] = [.camera, .keepsake]
+    var duration: TimeInterval { self == .wake ? 0.96 : 2.4 }
+    var cycle: TimeInterval { self == .attack ? 1.2 : self == .wake ? 0.96 : self == .pickup ? 0.65 : 2.4 }
 }
 
 struct RosterVisual {
@@ -130,10 +114,10 @@ struct RosterVisual {
 }
 
 extension AppState {
-    func options(for friend: Friend) -> RosterOptions { (rosterOptions[friend] ?? RosterOptions()).normalized }
+    func options(for friend: Friend) -> RosterOptions { rosterOptions[friend] ?? RosterOptions() }
     func status(for friend: Friend) -> RosterStatus { rosterStatuses[friend] ?? RosterStatus() }
     func updateOptions(_ friend: Friend, _ change: (inout RosterOptions) -> Void) {
-        var next = options(for: friend); change(&next); next = next.normalized; rosterOptions[friend] = next
+        var next = options(for: friend); change(&next); rosterOptions[friend] = next
         if !next.voice { onRosterCommand?(friend, .stopVoice) }
     }
     func publish(_ friend: Friend, _ next: RosterStatus) {

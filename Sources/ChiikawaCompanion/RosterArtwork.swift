@@ -24,7 +24,7 @@ final class RosterNativeRig {
         }
         guard let arm = load("arm"), let foot = load("foot") else { return nil }
         var expressions: [RosterAction: NSImage] = [:]
-        for action in [RosterAction.laugh,.attack,.study,.surprised,.sleep] {
+        for action in [RosterAction.laugh,.attack,.surprised,.sleep] {
             if let image = HachiwareSprites.assetURL(named: "\(friend.rawValue)-expression-\(action.rawValue)-v38").flatMap(NSImage.init(contentsOf:)) { expressions[action] = image }
         }
         self.tail = friend == .momonga ? load("tail") : nil
@@ -166,7 +166,7 @@ final class RosterNativeRig {
             stroke([NSPoint(x: 123,y: eyesY+12),NSPoint(x: 126,y: eyesY+7)],width: 2,color: ink)
             stroke([NSPoint(x: 132,y: eyesY+12),NSPoint(x: 130,y: eyesY+7)],width: 2,color: ink)
         }
-        if action == .study || action == .attack || action == .surprised {
+        if action == .attack || action == .surprised {
             paper.setFill(); NSBezierPath(ovalIn: NSRect(x: 113,y: mouthY-17,width: 30,height: 33)).fill()
             ink.setFill(); NSBezierPath(ovalIn: NSRect(x: 119,y: mouthY-10,width: 18,height: action == .surprised ? 20 : 22)).fill()
             if action != .surprised {
@@ -208,16 +208,8 @@ final class RosterNativeRig {
                 context.saveGState(); context.translateBy(x: 120+thrust,y: 74);context.rotate(by: -0.10+wave*0.13)
                 RosterItemArtwork.weapon(friend: friend,in: NSRect(x: -200,y: -8,width: 330,height: 32));context.restoreGState()
                 limb(left,NSPoint(x: 82+thrust,y: 77));limb(right,NSPoint(x: 165+thrust,y: 84))
-            case .study:
-                ActivitySpotArtwork.draw(.desk,in: NSRect(x: 30,y: 3,width: 196,height: 155),owner: friend)
-                limb(left,NSPoint(x: 101+wave*5,y: 89+wave*2));limb(right,NSPoint(x: 172,y: 84))
-                stroke([NSPoint(x: 101+wave*5,y: 90+wave*2),NSPoint(x: 113+wave*5,y: 118+wave*2)],width: 4,color: NSColor(hex: 0xBA7F53))
-            case .eat, .keepsake:
-                if action == .eat {
-                    ActivitySpotArtwork.draw(.rice,in: NSRect(x: 66,y: 25,width: 124,height: 119),owner: friend)
-                    limb(left,NSPoint(x: 100,y: 92));limb(right,NSPoint(x: 157-wave*12,y: 111+wave*13))
-                    stroke([NSPoint(x: 157-wave*12,y: 111+wave*13),NSPoint(x: 132,y: 125+wave*8)],width: 2.6,color: NSColor(hex: 0xAD7954))
-                } else if friend == .momonga {
+            case .keepsake:
+                if friend == .momonga {
                     RosterItemArtwork.flower(in: NSRect(x: 157,y: 129+wave*5,width: 55,height: 55))
                     limb(left,NSPoint(x: 103,y: 109));limb(right,NSPoint(x: 175,y: 138+wave*5))
                 } else if friend == .kurimanju {

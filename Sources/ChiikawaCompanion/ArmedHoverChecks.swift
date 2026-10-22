@@ -10,7 +10,7 @@ extension SelfTest {
         state.automaticActivities = false; state.chiikawaAutomaticActivities = false
         state.automaticRest = false; state.chiikawaAutomaticRest = false
         for friend in Friend.developmentRoster where friend.isExpansion {
-            state.updateOptions(friend) { $0.automaticItems=false; $0.automaticActivities=false; $0.automaticRest=false }
+            state.updateOptions(friend) { $0.automaticItems=false; $0.automaticRest=false }
         }
         var voiceStarts = 0
         let desktop = DesktopController(state: state, startTimer: false,

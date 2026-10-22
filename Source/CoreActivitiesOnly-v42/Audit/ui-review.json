@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-22",
+  "app_version": "0.20.3",
+  "build": 46,
+  "functional_checks_passed": 617,
+  "method": "Running signed app settings inspected through macOS accessibility UI",
+  "chiikawa": {"study_toggle": "on", "food_toggle": "on", "actions_present": ["제초 시험 공부", "밥 먹기"]},
+  "hachiware": {"desk_toggle": "on", "rice_toggle": "on", "guitar_toggle": "on", "furball_toggle": "on"},
+  "usagi": {"activity_controls": [], "items": ["카메라", "노란 토벌봉", "푸딩"], "action_menu": ["사진 찍기", "소품과 놀기"]},
+  "kurimanju": {"activity_controls": [], "items": ["카메라", "공용 훈련봉", "간식과 컵"]},
+  "momonga": {"activity_controls": [], "items": ["카메라", "공용 훈련봉", "벚꽃"]},
+  "final_ui_state": "Settings closed; updated desktop companions left running"
+}

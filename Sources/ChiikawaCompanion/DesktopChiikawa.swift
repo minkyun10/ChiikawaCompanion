@@ -6,7 +6,7 @@ extension DesktopController {
               let screen = NSScreen.main ?? NSScreen.screens.first else { return }
         if let companion = expansions[friend] {
             companion.stopAction(); companion.voice.stop(); companion.wake()
-            companion.world.requested = nil; companion.activities.requested = nil; companion.itemTarget = nil
+            companion.world.requested = nil; companion.itemTarget = nil
         } else if friend == .hachiware {
             stopDailyAction(); stopCharacterVoice()
             if homeRoutine.phase != .outside { wakeFromHome() }

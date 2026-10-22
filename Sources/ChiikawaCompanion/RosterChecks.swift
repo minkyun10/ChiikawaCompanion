@@ -8,26 +8,23 @@ extension SelfTest {
         let migrationDefaults = UserDefaults(suiteName: migrationSuite)!
         defer { migrationDefaults.removePersistentDomain(forName: migrationSuite) }
         let legacyOptions: [Any] = Friend.expansionOrder.flatMap { friend -> [Any] in
-            [friend.rawValue, ["items": ["guitar", "weapon"], "spots": ["furball", "rice"],
+            [friend.rawValue, ["items": ["guitar", "weapon"], "spots": ["desk", "furball", "rice"],
                 "automaticItems": false, "automaticActivities": false, "automaticRest": false, "voice": false] as [String: Any]]
         }
         migrationDefaults.set(try! JSONSerialization.data(withJSONObject: legacyOptions), forKey: "rosterOptionsV38")
         let migrated = AppState(defaults: migrationDefaults)
         for friend in Friend.expansionOrder {
             let options = migrated.options(for: friend)
-            check(options.items == [.weapon] && options.spots == [.rice]
-                  && !options.automaticItems && !options.automaticActivities && !options.automaticRest && !options.voice,
-                  "\(friend.name): old guitar and furball settings migrate without resetting disabled items or preferences")
-            migrated.updateOptions(friend) { $0.spots.insert(.furball) }
-            check(migrated.options(for: friend).spots == [.rice], "\(friend.name): settings cannot reenable Hachiware's furball")
+            check(options.items == [.weapon] && !options.automaticItems && !options.automaticRest && !options.voice,
+                  "\(friend.name): old item and activity settings migrate without resetting retained preferences")
         }
         let persisted = String(data: migrationDefaults.data(forKey: "rosterOptionsV38")!, encoding: .utf8)!
-        check(!persisted.contains("guitar") && !persisted.contains("furball")
+        check(["guitar", "spots", "automaticActivities", "desk", "furball", "rice"].allSatisfy { !persisted.contains($0) }
               && AppState(defaults: migrationDefaults).rosterOptions == migrated.rosterOptions,
-              "obsolete non-Hachiware settings are removed from storage and stay removed after reopening")
+              "removed guitar, desk, rice and automatic activity settings stay absent after reopening")
         check(RosterItemKind(rawValue: "guitar") == nil && RosterAction(rawValue: "guitar") == nil
-              && RosterAction(rawValue: "vomit") == nil && RosterAction(spot: .furball) == nil,
-              "non-Hachiware item and action commands cannot represent guitar playing or furball vomiting")
+              && ["vomit", "study", "eat"].allSatisfy { RosterAction(rawValue: $0) == nil },
+              "expansion commands cannot represent guitar playing, vomiting, studying or eating")
         let suite = "RosterChecks-\(UUID().uuidString)", defaults = UserDefaults(suiteName: suite)!
         defer { defaults.removePersistentDomain(forName: suite) }
         defaults.set(["chiikawa"], forKey: "visibleFriends")
@@ -45,7 +42,7 @@ extension SelfTest {
         state.automaticActivities = false; state.chiikawaAutomaticActivities = false
         state.automaticRest = false; state.chiikawaAutomaticRest = false
         state.characterVoice = false; state.chiikawaVoice = false; state.roaming = true; state.expressive = true
-        for friend in expansion { state.updateOptions(friend) { $0.automaticItems = false; $0.automaticActivities = false; $0.automaticRest = false } }
+        for friend in expansion { state.updateOptions(friend) { $0.automaticItems = false; $0.automaticRest = false } }
         var voiceStarts = 0
         let desktop = DesktopController(state: state, startTimer: false,
             expansionVoice: { _ in RecordedVoicePlayer(startPlayback: { _ in voiceStarts += 1; return true }) })
@@ -65,6 +62,9 @@ extension SelfTest {
               && !ChiikawaLifeAction.allCases.map(\.rawValue).contains("vomit")
               && desktop.chiikawaStudyWorld.positions[.furball] == nil,
               "Chiikawa has neither Hachiware-exclusive item nor a vomiting action")
+        check(Set([ActivitySpot.desk, .rice]).isSubset(of: desktop.activityWorld.enabled)
+              && desktop.chiikawaStudyWorld.enabled == [.desk, .rice],
+              "Hachiware and Chiikawa retain their independent desk and rice worlds")
         guard let bounds=NSScreen.main?.visibleFrame else {check(false,"a desktop exists for roster acceptance");return}
         let fixedHome=desktop.home.panel.frame, homeID=desktop.home.panel.windowNumber
         for friend in expansion {
@@ -73,17 +73,23 @@ extension SelfTest {
             if Bundle.main.bundleURL.pathExtension == "app" {
                 check(art.usesBundledAtlases,prefix+"packaged app loads prebuilt native atlases without runtime generation")
                 let root = Bundle.main.resourceURL!.appendingPathComponent("Roster/\(friend.rawValue)")
-                check(["guitar-12.png", "vomit-12.png"].allSatisfy {
+                check(["guitar-12.png", "vomit-12.png", "study-12.png", "eat-12.png"].allSatisfy {
                     !FileManager.default.fileExists(atPath: root.appendingPathComponent($0).path)
-                }, prefix+"packaging removes obsolete guitar and vomiting animation atlases")
+                }, prefix+"packaging excludes all retired item and activity animation atlases")
+                check(!FileManager.default.fileExists(atPath: Bundle.main.resourceURL!
+                    .appendingPathComponent("\(friend.rawValue)-expression-study-v38.png").path),
+                      prefix+"packaging excludes the retired study expression resource")
             }
-            check(companion.objects.count == 3 && companion.world.ground.count == 3
-                  && Set(companion.spots.keys) == [.desk, .rice] && companion.activities.enabled == [.desk, .rice],
-                  prefix+"only camera, weapon, keepsake, desk and rice are created on the desktop")
-            companion.command(.visit(.furball))
-            companion.play(.study, at: .furball, now: date())
-            check(companion.activities.requested == nil && companion.action == nil,
-                  prefix+"a stale furball visit or action request cannot start a route or animation")
+            check(companion.objects.count == 3 && companion.world.ground.count == 3,
+                  prefix+"only camera, weapon and keepsake ground objects are created")
+            let otherActivities = Array(desktop.activityWorld.positions.values) + Array(desktop.chiikawaStudyWorld.positions.values)
+            var ignoresOtherActivities = true
+            for point in otherActivities {
+                actor.panel.setFrameOrigin(ItemWorld.destination(for: point)); companion.stopAction(); tick()
+                ignoresOtherActivities = ignoresOtherActivities && companion.action == nil
+                    && actor.view.rosterVisual?.action == nil && actor.motion.isWalking
+            }
+            check(ignoresOtherActivities, prefix+"walking past either original friend's activity props does not trigger studying or eating")
             check(RosterProp(rawValue: friend.rawValue + ":guitar") == nil,
                   prefix+"a stale guitar drag payload is rejected")
             check(art.isReady && art.walks.count==8 && art.actions.count==RosterAction.allCases.count,prefix+"eight walking directions and every action load")
@@ -129,15 +135,15 @@ extension SelfTest {
             let start=RoamingMotion.target(in:bounds,size:actor.panel.frame.size,xFraction:0.36,yFraction:0.68)
             actor.panel.setFrameOrigin(start); actor.motion.retarget()
             actor.motion.destination=RoamingMotion.target(in:bounds,size:actor.panel.frame.size,xFraction:0.8,yFraction:0.7)
-            let ground=companion.world.ground, spots=companion.activities.positions, oldHachi=desktop.itemWorld.ground,oldChii=desktop.chiikawaWorld.ground
+            let ground=companion.world.ground, oldHachi=desktop.itemWorld.ground,oldChii=desktop.chiikawaWorld.ground
             var maxJump:CGFloat=0
             for _ in 0..<240 {let old=actor.panel.frame.origin;tick();let p=actor.panel.frame.origin;maxJump=max(maxJump,hypot(p.x-old.x,p.y-old.y))}
             check(maxJump<2 && hypot(actor.panel.frame.minX-start.x,actor.panel.frame.minY-start.y)>60,
                   prefix+"native walking moves continuously with no resets or teleporting")
-            check(companion.world.ground==ground && companion.activities.positions==spots && desktop.itemWorld.ground==oldHachi && desktop.chiikawaWorld.ground==oldChii,
+            check(companion.world.ground==ground && desktop.itemWorld.ground==oldHachi && desktop.chiikawaWorld.ground==oldChii,
                   prefix+"walking leaves every character's ground items and activity coordinates independent")
             actor.view.onDragStart?(); actor.panel.setFrameOrigin(start); actor.view.onDragEnd?()
-            check(companion.world.ground==ground && companion.activities.positions==spots && actor.motion.destination==nil,
+            check(companion.world.ground==ground && actor.motion.destination==nil,
                   prefix+"actual drag callbacks reset only the route and preserve prop positions")
             let center=actor.panel.frame.center
             check(!companion.receive(.camera,at:desktop.hachiwareActor!.panel.frame.center,now:date()),
@@ -153,29 +159,6 @@ extension SelfTest {
             companion.seek(.camera,now:date()); tick()
             check(companion.world.requested?.kind == .camera && actor.motion.isWalking,prefix+"ground item seek follows a walking route")
             companion.world.requested=nil; companion.itemTarget=nil; companion.stopAction()
-            for spot in RosterOptions.activitySpots {
-                companion.activities=ActivitySpotWorld();companion.configure()
-                state.updateOptions(friend) {$0.automaticActivities=true}
-                let anchor=ItemWorld.contactPoint(origin:start)
-                companion.activities.move(spot,to:anchor,bounds:companion.propFrame)
-                actor.panel.setFrameOrigin(NSPoint(x:start.x-28,y:start.y));actor.motion.retarget()
-                companion.wake(now:date());companion.stopAction()
-                var arrived=false, maximum:CGFloat=0
-                for _ in 0..<240 {
-                    let old=actor.panel.frame.origin;tick();let p=actor.panel.frame.origin
-                    maximum=max(maximum,hypot(p.x-old.x,p.y-old.y))
-                    if companion.action != nil {arrived=true;break}
-                }
-                let contact=ItemWorld.contactPoint(origin:actor.panel.frame.origin)
-                check(arrived && companion.action==RosterAction(spot:spot) && maximum<2
-                      && hypot(contact.x-anchor.x,contact.y-anchor.y)<=ActivitySpotWorld.arrivalRadius+0.1,
-                      prefix+"\(spot.rawValue) walks the final approach before starting its matching action")
-                let positions=companion.activities.positions
-                tick(0.1,mouse:actor.panel.frame.center,reachable:true)
-                check(companion.action==RosterAction(spot:spot) && companion.activities.positions==positions,
-                      prefix+"hover preserves the selected life action and independent spot")
-                companion.stopAction();state.updateOptions(friend){$0.automaticActivities=false}
-            }
             actor.panel.setFrameOrigin(start);companion.wake(now:date());companion.stopAction()
             check(companion.receive(.weapon,at:actor.panel.frame.center,now:date()),prefix+"weapon handover succeeds")
             companion.stopAction();tick(0.1,mouse:actor.panel.frame.center,reachable:true)
@@ -193,9 +176,9 @@ extension SelfTest {
             tick()
             check(actor.view.action == nil && actor.view.rosterVisual?.action == nil && actor.view.walking,
                   prefix+"leaving hover returns to walking in one display update")
-            companion.play(.study,now:date());tick(mouse:actor.panel.frame.center,reachable:true)
-            check(actor.view.rosterVisual?.action == .study && actor.view.action != .attack,
-                  prefix+"an explicit study command keeps priority over armed hover")
+            companion.play(.camera,now:date());tick(mouse:actor.panel.frame.center,reachable:true)
+            check(companion.action == nil && actor.view.rosterVisual?.action == .attack && actor.view.action == .attack,
+                  prefix+"armed hover interrupts a prop action and displays only the attack")
             companion.stopAction();actor.dismissBubble()
             let beforeAudio=voiceStarts
             for _ in 0..<30 {tick(mouse:actor.panel.frame.center,reachable:true)}
@@ -235,7 +218,7 @@ extension SelfTest {
             companion.wake(now:date(),animated:true);tick(1.1)
             check(actor.panel.isVisible && !companion.home.isInside && companion.wakingAt==nil,
                   prefix+"waking finishes and restores the character outside the shared doorway")
-            companion.play(.eat,now:date());state.visibleFriends.remove(friend);tick()
+            companion.play(.camera,now:date());state.visibleFriends.remove(friend);tick()
             check(!actor.panel.isVisible && companion.action==nil && companion.voice.player==nil && !actor.attackOverlay.panel.isVisible,
                   prefix+"hiding cancels only its own action, audio and overlay")
             state.visibleFriends.insert(friend);tick()
@@ -252,7 +235,7 @@ extension SelfTest {
             actor.dismissBubble();desktop.wakeFriend(actor.friend,now:date())
             if let companion=desktop.expansions[actor.friend] {
                 companion.wake(now:date());companion.stopAction()
-                state.updateOptions(actor.friend){$0.automaticItems=false;$0.automaticActivities=false;$0.automaticRest=false}
+                state.updateOptions(actor.friend){$0.automaticItems=false;$0.automaticRest=false}
             }
             actor.panel.setFrameOrigin(RoamingMotion.target(in:bounds,size:actor.panel.frame.size,xFraction:0.2,yFraction:0.7))
             actor.motion.retarget()

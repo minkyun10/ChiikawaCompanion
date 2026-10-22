@@ -1,10 +1,10 @@
 {
   "created_at": "2026-10-16T12:08:58.617148+00:00",
   "operation": "copy; originals preserved",
-  "image_file_count": 3145,
-  "unique_image_content_count": 1752,
-  "supporting_file_count": 654,
-  "image_bytes": 920626340,
+  "image_file_count": 3148,
+  "unique_image_content_count": 1755,
+  "supporting_file_count": 660,
+  "image_bytes": 921876319,
   "symmetric_walk_runtime_applied": true,
   "files": [
     {
@@ -9498,6 +9498,48 @@
       "archive_path": "ContinuousRoaming-v34/validation.json",
       "bytes": 1726,
       "sha256": "873a2e36c53b99d6abf0fbe11be87ad888326d6b17f895981c8f9706aba72521"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/CoreActivitiesOnly-v42/Audit/build.log",
+      "archive_path": "CoreActivitiesOnly-v42/Audit/build.log",
+      "bytes": 522,
+      "sha256": "52621f4fa5622898fb0468a4ab372ab5ce4d79284ed4d69620195aa43eabf6dc"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/CoreActivitiesOnly-v42/Audit/preservation.json",
+      "archive_path": "CoreActivitiesOnly-v42/Audit/preservation.json",
+      "bytes": 10883,
+      "sha256": "7bbacc2784f875a8130d468c443dbbe77b9a13b3ebdcf8e61a106c3d7d0a79a3"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/CoreActivitiesOnly-v42/Audit/self-test.log",
+      "archive_path": "CoreActivitiesOnly-v42/Audit/self-test.log",
+      "bytes": 48572,
+      "sha256": "93138f5a4a03cc32f165f6cbeb74a144148cad47ac97753bc425623f307e5b21"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/CoreActivitiesOnly-v42/Audit/ui-review.json",
+      "archive_path": "CoreActivitiesOnly-v42/Audit/ui-review.json",
+      "bytes": 835,
+      "sha256": "26f1b8c1b87bf1ab9684aa61d94bf5a45a653c8361d9eda4f016cc1fb60c18ae"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/CoreActivitiesOnly-v42/Audit/verify-preservation.py",
+      "archive_path": "CoreActivitiesOnly-v42/Audit/verify-preservation.py",
+      "bytes": 3679,
+      "sha256": "dad598ff0504d68527953708f0b4cba1d276f1d09fd6c3b5dc17d3c93b1360f8"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/CoreActivitiesOnly-v42/README.txt",
+      "archive_path": "CoreActivitiesOnly-v42/README.txt",
+      "bytes": 2150,
+      "sha256": "91f26d0b780c9c9e439f89fc94a7b6d3a34ff829e594e6bea2e3aa2a4685b3e3"
     },
     {
       "kind": "image",
@@ -22992,8 +23034,8 @@
       "kind": "image",
       "source": "build/roster/kurimanju/actions-preview.png",
       "archive_path": "Project/build/roster/kurimanju/actions-preview.png",
-      "bytes": 468575,
-      "sha256": "677aa22f4b77d1df2423ee7bb496e740e74fcc416c68a219f2a8dfe582ba0e2a"
+      "bytes": 403147,
+      "sha256": "5591a9f2ac233071ff723c4ab2db41ca449f02bf208b6f172afaaab3b1907dc8"
     },
     {
       "kind": "image",
@@ -23160,8 +23202,8 @@
       "kind": "image",
       "source": "build/roster/momonga/actions-preview.png",
       "archive_path": "Project/build/roster/momonga/actions-preview.png",
-      "bytes": 489602,
-      "sha256": "a080e2d08604b97fe0f4b2c1088502bf17fe2cfebcbed0b4edbaafbffeaaf3b3"
+      "bytes": 425321,
+      "sha256": "d7d7738d2933e96d5f4be7d9630b531f1647285fed1c88593b36f0efb3858660"
     },
     {
       "kind": "image",
@@ -23328,8 +23370,8 @@
       "kind": "image",
       "source": "build/roster/usagi/actions-preview.png",
       "archive_path": "Project/build/roster/usagi/actions-preview.png",
-      "bytes": 485499,
-      "sha256": "f1d17fa5e889ea93022d47da5b98fa26382e59905d07019266226c81ae02259e"
+      "bytes": 421511,
+      "sha256": "4206f2626dfef28278a88257d1b8f7975b21d017159bce3115fce5486f62efc8"
     },
     {
       "kind": "image",
@@ -23503,8 +23545,8 @@
       "kind": "supporting",
       "source": "Source/README.txt",
       "archive_path": "README.txt",
-      "bytes": 10763,
-      "sha256": "a9d4f7929371049b9bbfa0612bb8454f059c403a3f1d57cefdf63a1e1babe3e0"
+      "bytes": 11109,
+      "sha256": "9354f47f849be4b6a1ba162358614bf741fe5d9856dbf1861ce9d3ab3067804d"
     },
     {
       "kind": "supporting",
@@ -25608,6 +25650,13 @@
     },
     {
       "kind": "image",
+      "source": "Source/Versions/677aa22f4b77d1df/build/roster/kurimanju/actions-preview.png",
+      "archive_path": "Versions/677aa22f4b77d1df/build/roster/kurimanju/actions-preview.png",
+      "bytes": 468575,
+      "sha256": "677aa22f4b77d1df2423ee7bb496e740e74fcc416c68a219f2a8dfe582ba0e2a"
+    },
+    {
+      "kind": "image",
       "source": "Source/Versions/6c47831b9500f53d/build/artwork/chiikawa-hover-attack-v24.gif",
       "archive_path": "Versions/6c47831b9500f53d/build/artwork/chiikawa-hover-attack-v24.gif",
       "bytes": 317301,
@@ -25682,6 +25731,13 @@
       "archive_path": "Versions/9d8d647db89bd8f2/build/artwork/hachiware-home-sleep-v11.gif",
       "bytes": 595803,
       "sha256": "9d8d647db89bd8f2d0e25cca5aa4565fd02dfac634f562410c0aea88e8b86def"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/a080e2d08604b97f/build/roster/momonga/actions-preview.png",
+      "archive_path": "Versions/a080e2d08604b97f/build/roster/momonga/actions-preview.png",
+      "bytes": 489602,
+      "sha256": "a080e2d08604b97fe0f4b2c1088502bf17fe2cfebcbed0b4edbaafbffeaaf3b3"
     },
     {
       "kind": "image",
@@ -25787,6 +25843,13 @@
       "archive_path": "Versions/e38bc78ea5ced5b4/build/artwork/chiikawa-runtime-equipment-v23.png",
       "bytes": 546838,
       "sha256": "e38bc78ea5ced5b4f85b7d102d14fc781ab02b3cc177dc4d7456992169d41ba2"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/f1d17fa5e889ea93/build/roster/usagi/actions-preview.png",
+      "archive_path": "Versions/f1d17fa5e889ea93/build/roster/usagi/actions-preview.png",
+      "bytes": 485499,
+      "sha256": "f1d17fa5e889ea93022d47da5b98fa26382e59905d07019266226c81ae02259e"
     },
     {
       "kind": "image",
@@ -26601,8 +26664,8 @@
       "sha256": "8a42caa40e469a5ee00fa2b860d14756cc1fd73bc8fcf73332c50b87a92c9c3b"
     }
   ],
-  "updated_at": "2026-10-22T10:29:00.913457+00:00",
-  "latest_applied": "HachiwareExclusiveItems-v41",
+  "updated_at": "2026-10-22T10:37:01.964390+00:00",
+  "latest_applied": "CoreActivitiesOnly-v42",
   "applied_directions": [
     "down-left",
     "down-right"
