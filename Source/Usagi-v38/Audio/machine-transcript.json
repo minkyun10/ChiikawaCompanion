@@ -1,0 +1,5 @@
+{
+  "purpose": "Local-only ASR timing aid; full machine output retained under Audio/Originals. Runtime clip source links and selected timing are in catalog.json and provenance.json.",
+  "localOriginal": "Originals/machine-transcript.json",
+  "authoritativeTranscript": false
+}

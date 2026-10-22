@@ -1,0 +1,15 @@
+{
+  "verified": "2026-10-22",
+  "provider": "HoneyrainSound, public actor sample page",
+  "page": "https://honeyrainsound.tistory.com/6",
+  "source_url": "https://www.dropbox.com/scl/fi/cbjg31uhssooksnrhjdwq/_7..mp3?rlkey=dqi1gjnrcbhnz6cmvqnj6bgc6&dl=1",
+  "source_sha256": "cbf5ea83a12c8510ec1844a4540e5ad4fe156a45c08436a66542433d5e3c5522",
+  "actor": "권다예",
+  "source_label": "권다예_7. [캐릭터 남아] 광기, 시끄러운, 마이웨이, 사차원 — 공개 성우 샘플",
+  "role_source": "https://www.wikitree.co.kr/articles/1146571",
+  "role_boundary": "The interview identifies Kwon Da-ye as Usagi. The audio provider labels a character demo rather than a named episode; this is credited as her public demo, not an authenticated episode extract.",
+  "machine_transcript_is_authoritative": false,
+  "synthesized": false,
+  "voice_cloned": false,
+  "runtime": "Bundled local excerpts; playback only from click or explicit preview."
+}

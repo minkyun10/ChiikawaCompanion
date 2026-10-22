@@ -1,0 +1,146 @@
+[
+  {
+    "name" : "front",
+    "sha256" : "617375b1ab73a723885b9bc2fa288e6577f6f289bdeff34925fb3f29c2b4ea8e",
+    "sourceCell" : [
+      0,
+      0,
+      512,
+      440
+    ],
+    "trim" : [
+      215,
+      16,
+      259,
+      415
+    ]
+  },
+  {
+    "name" : "side",
+    "sha256" : "9ac2c4f4892cf04c2200ed268bbb1696a6907a299b1cd76a24c1dae8f3718adc",
+    "sourceCell" : [
+      512,
+      0,
+      512,
+      440
+    ],
+    "trim" : [
+      129,
+      16,
+      243,
+      413
+    ]
+  },
+  {
+    "name" : "back",
+    "sha256" : "b5aee1dbc8f82d40713dd139cdd2072bca9849819e32bf9b1e303c207263970b",
+    "sourceCell" : [
+      1024,
+      0,
+      512,
+      440
+    ],
+    "trim" : [
+      44,
+      15,
+      250,
+      416
+    ]
+  },
+  {
+    "name" : "front-diagonal",
+    "sha256" : "57ad763913316d28cecaaa1ee25f2365ca7eb56ca28ca43c85d4557a206430de",
+    "sourceCell" : [
+      0,
+      440,
+      512,
+      394
+    ],
+    "trim" : [
+      203,
+      9,
+      258,
+      382
+    ]
+  },
+  {
+    "name" : "back-diagonal",
+    "sha256" : "b536c086e3c47f170171e36621faa55668413cee0f745ff350286c3273f399b0",
+    "sourceCell" : [
+      512,
+      440,
+      512,
+      394
+    ],
+    "trim" : [
+      145,
+      9,
+      231,
+      381
+    ]
+  },
+  {
+    "name" : "t-pose",
+    "sha256" : "439c13b444f82041aefb399f745609df74b77d76600a18f2ed3196f81c7490bf",
+    "sourceCell" : [
+      1024,
+      440,
+      512,
+      394
+    ],
+    "trim" : [
+      23,
+      9,
+      285,
+      379
+    ]
+  },
+  {
+    "name" : "arm",
+    "sha256" : "982e8862806a14f691482dfaabf9fbf887b961b890fd019227fbaec3cbc68b85",
+    "sourceCell" : [
+      0,
+      834,
+      512,
+      190
+    ],
+    "trim" : [
+      289,
+      62,
+      107,
+      97
+    ]
+  },
+  {
+    "name" : "foot",
+    "sha256" : "8261d753713dd8b473fd4727e4efa28771fdcc9e4a00935de41ec2d80490bd08",
+    "sourceCell" : [
+      512,
+      834,
+      512,
+      190
+    ],
+    "trim" : [
+      205,
+      75,
+      90,
+      70
+    ]
+  },
+  {
+    "name" : "top",
+    "sha256" : "6ebc4662e8d25230f7bc8f94349ec09de1ac0a2102e3c056411eae102318c172",
+    "sourceCell" : [
+      1024,
+      834,
+      512,
+      190
+    ],
+    "trim" : [
+      44,
+      0,
+      248,
+      190
+    ]
+  }
+]

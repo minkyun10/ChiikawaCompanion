@@ -1,0 +1,48 @@
+{
+  "speaker": "원종준",
+  "sourceTitle": "애니박스 공식 먼작귀 35화·180화 — 쿠리만쥬의 짧은 반응",
+  "sourceProfile": "https://www.youtube.com/@AniBox",
+  "clips": [
+    {
+      "id": "kurimanju-refresh",
+      "text": "하아~",
+      "file": "kurimanju-refresh-v38.m4a",
+      "duration": 1.35,
+      "sourceURL": "https://www.youtube.com/watch?v=5dTRQblIt-Q",
+      "sourceStart": 11.0,
+      "sourceEnd": 12.35,
+      "sha256": "ab4317ee9a1382e63e9b7dd6ecda766e341b0a66fda7fb459777e20a126db365"
+    },
+    {
+      "id": "kurimanju-satisfied",
+      "text": "크하~",
+      "file": "kurimanju-satisfied-v38.m4a",
+      "duration": 1.85,
+      "sourceURL": "https://www.youtube.com/watch?v=5dTRQblIt-Q",
+      "sourceStart": 25.1,
+      "sourceEnd": 26.95,
+      "sha256": "d15caa3d8034dca9fa2674f4f7834b3a02a051b707a0b00fc1ba4e645003edd6"
+    },
+    {
+      "id": "kurimanju-relax",
+      "text": "…♪",
+      "file": "kurimanju-relax-v38.m4a",
+      "duration": 1.75,
+      "sourceURL": "https://www.youtube.com/watch?v=5dTRQblIt-Q",
+      "sourceStart": 57.05,
+      "sourceEnd": 58.8,
+      "sha256": "01589fb30fa24fad1ef5093caa042b66fdb17aca8551ec0c1a99d570f4564211"
+    },
+    {
+      "id": "kurimanju-oyster",
+      "text": "…!",
+      "file": "kurimanju-oyster-v38.m4a",
+      "duration": 1.6,
+      "sourceURL": "https://www.youtube.com/watch?v=0RZqg7KMlfo",
+      "sourceStart": 12.35,
+      "sourceEnd": 13.95,
+      "sha256": "9aaddf203b53ef49742f7acd38349339b519ed322aa56c329f97c4b85128b353"
+    }
+  ],
+  "captionPolicy": "Brief reaction captions, not a claimed word-for-word transcript of nonverbal exhalations."
+}

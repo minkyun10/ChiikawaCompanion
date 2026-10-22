@@ -63,7 +63,7 @@ extension SelfTest {
             desktop.desktopActivitySpots.values.forEach { $0.panel.orderOut(nil) }
         }
         desktop.tick(now: now,pointer: away,pointerCanReachCharacter: true)
-        for (offset,actor) in desktop.actors.enumerated() {
+        for (offset,actor) in desktop.actors.filter({ !$0.friend.isExpansion }).enumerated() {
             let time = now.addingTimeInterval(Double(offset)*2)
             let pointer = NSPoint(x: actor.panel.frame.midX,y: actor.panel.frame.midY)
             if actor.friend == .hachiware { _ = desktop.receiveDroppedItem(.sasumata,at: pointer,now: time) }

@@ -1,0 +1,16 @@
+{
+  "verified": "2026-10-22",
+  "method": "Native app accessibility state and actual settings menu interaction through cua_repl",
+  "observations": [
+    "Hachiware, Chiikawa and Usagi each have separate visible, walking and recall controls.",
+    "Scrolling the actual settings window reveals Usagi camera, guitar, yellow staff and pudding controls with correctly named owner-specific seek buttons.",
+    "Usagi desk, furball and food controls and independent automatic-activity and click-voice switches are present.",
+    "The actual Usagi action menu lists study, eating, furball spit-up, camera, guitar and keepsake actions.",
+    "Selecting study changed Usagi's displayed status to studying and enabled its stop button, while the other characters retained their own item and action statuses.",
+    "The settings window was closed after inspection, leaving the native desktop companions running. No voice preview was played through the user's speakers and no preference toggles were changed."
+  ],
+  "found_and_fixed": [
+    "Two old labels still described two friends. They were changed to a roster-independent label before the final package review."
+  ],
+  "limits": "Attack hover geometry, extended weapon coverage and foreground window interception are covered by the packaged native regressions; no unsupported mouse-hover API was used in this UI pass."
+}

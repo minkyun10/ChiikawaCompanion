@@ -1,0 +1,14 @@
+{
+  "verified": "2026-10-22",
+  "appVersion": "0.19.0",
+  "appBuild": 41,
+  "method": "CUA native accessibility interaction with the actual packaged app",
+  "observations": [
+    "Four visible/walking/recall rows including Kurimanju",
+    "Own camera, guitar, common training pole and cup/snack switches and seek buttons",
+    "Own activity switches, action menu and click voice controls",
+    "Selected Kurimanju manual study in its menu; its status changed to 공부하기",
+    "Closed settings and returned to desktop without changing preferences"
+  ],
+  "audioPreviewPlayed": false
+}

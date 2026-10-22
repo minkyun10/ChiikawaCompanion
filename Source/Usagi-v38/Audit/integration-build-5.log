@@ -1,0 +1,148 @@
+[0/1] Planning build
+Building for production...
+[0/4] Write sources
+[1/4] Write swift-version--1AB21518FC5DEDBE.txt
+[3/5] Compiling ChiikawaCompanion ActivitySpotChecks.swift
+/Users/minkyun_park/Documents/ChiikawaCompanion/Sources/ChiikawaCompanion/RosterChecks.swift:71:42: error: 'center' is inaccessible due to 'fileprivate' protection level
+ 69 |             check(companion.world.ground==ground && companion.activities.positions==spots && actor.motion.destination==nil,
+ 70 |                   prefix+"actual drag callbacks reset only the route and preserve prop positions")
+ 71 |             let center=actor.panel.frame.center
+    |                                          `- error: 'center' is inaccessible due to 'fileprivate' protection level
+ 72 |             check(!companion.receive(.camera,at:desktop.hachiwareActor!.panel.frame.center,now:date()),
+ 73 |                   prefix+"a prop dropped on a different owner is rejected")
+
+/Users/minkyun_park/Documents/ChiikawaCompanion/Sources/ChiikawaCompanion/ArmedHoverChecks.swift:197:9: note: 'center' declared here
+195 | 
+196 | private extension NSRect {
+197 |     var center: NSPoint { NSPoint(x: midX, y: midY) }
+    |         `- note: 'center' declared here
+198 | }
+199 | 
+
+/Users/minkyun_park/Documents/ChiikawaCompanion/Sources/ChiikawaCompanion/RosterChecks.swift:72:85: error: 'center' is inaccessible due to 'fileprivate' protection level
+ 70 |                   prefix+"actual drag callbacks reset only the route and preserve prop positions")
+ 71 |             let center=actor.panel.frame.center
+ 72 |             check(!companion.receive(.camera,at:desktop.hachiwareActor!.panel.frame.center,now:date()),
+    |                                                                                     `- error: 'center' is inaccessible due to 'fileprivate' protection level
+ 73 |                   prefix+"a prop dropped on a different owner is rejected")
+ 74 |             check(companion.receive(.camera,at:center,now:date()) && companion.world.equipped?.kind == .camera,
+
+/Users/minkyun_park/Documents/ChiikawaCompanion/Sources/ChiikawaCompanion/ArmedHoverChecks.swift:197:9: note: 'center' declared here
+195 | 
+196 | private extension NSRect {
+197 |     var center: NSPoint { NSPoint(x: midX, y: midY) }
+    |         `- note: 'center' declared here
+198 | }
+199 | 
+
+/Users/minkyun_park/Documents/ChiikawaCompanion/Sources/ChiikawaCompanion/RosterChecks.swift:103:50: error: 'center' is inaccessible due to 'fileprivate' protection level
+101 |                       prefix+"\(spot.rawValue) walks the final approach before starting its matching action")
+102 |                 let positions=companion.activities.positions
+103 |                 tick(0.1,mouse:actor.panel.frame.center,reachable:true)
+    |                                                  `- error: 'center' is inaccessible due to 'fileprivate' protection level
+104 |                 check(companion.action==RosterAction(spot:spot) && companion.activities.positions==positions,
+105 |                       prefix+"hover preserves the selected life action and independent spot")
+
+/Users/minkyun_park/Documents/ChiikawaCompanion/Sources/ChiikawaCompanion/ArmedHoverChecks.swift:197:9: note: 'center' declared here
+195 | 
+196 | private extension NSRect {
+197 |     var center: NSPoint { NSPoint(x: midX, y: midY) }
+    |         `- note: 'center' declared here
+198 | }
+199 | 
+
+/Users/minkyun_park/Documents/ChiikawaCompanion/Sources/ChiikawaCompanion/RosterChecks.swift:109:66: error: 'center' is inaccessible due to 'fileprivate' protection level
+107 |             }
+108 |             actor.panel.setFrameOrigin(start);companion.wake(now:date());companion.stopAction()
+109 |             check(companion.receive(.weapon,at:actor.panel.frame.center,now:date()),prefix+"weapon handover succeeds")
+    |                                                                  `- error: 'center' is inaccessible due to 'fileprivate' protection level
+110 |             companion.stopAction();tick(0.1,mouse:actor.panel.frame.center,reachable:true)
+111 |             check(actor.view.action == .attack && actor.view.rosterVisual?.action == .attack && !actor.view.walking,
+
+/Users/minkyun_park/Documents/ChiikawaCompanion/Sources/ChiikawaCompanion/ArmedHoverChecks.swift:197:9: note: 'center' declared here
+195 | 
+196 | private extension NSRect {
+197 |     var center: NSPoint { NSPoint(x: midX, y: midY) }
+    |         `- note: 'center' declared here
+198 | }
+199 | 
+
+/Users/minkyun_park/Documents/ChiikawaCompanion/Sources/ChiikawaCompanion/RosterChecks.swift:110:69: error: 'center' is inaccessible due to 'fileprivate' protection level
+108 |             actor.panel.setFrameOrigin(start);companion.wake(now:date());companion.stopAction()
+109 |             check(companion.receive(.weapon,at:actor.panel.frame.center,now:date()),prefix+"weapon handover succeeds")
+110 |             companion.stopAction();tick(0.1,mouse:actor.panel.frame.center,reachable:true)
+    |                                                                     `- error: 'center' is inaccessible due to 'fileprivate' protection level
+111 |             check(actor.view.action == .attack && actor.view.rosterVisual?.action == .attack && !actor.view.walking,
+112 |                   prefix+"weapon hover selects attack exclusively")
+
+/Users/minkyun_park/Documents/ChiikawaCompanion/Sources/ChiikawaCompanion/ArmedHoverChecks.swift:197:9: note: 'center' declared here
+195 | 
+196 | private extension NSRect {
+197 |     var center: NSPoint { NSPoint(x: midX, y: midY) }
+    |         `- note: 'center' declared here
+198 | }
+199 | 
+
+/Users/minkyun_park/Documents/ChiikawaCompanion/Sources/ChiikawaCompanion/RosterChecks.swift:115:60: error: 'center' is inaccessible due to 'fileprivate' protection level
+113 |             let attackStart=actor.hoverStarted, pausedGait=actor.gait.phase, attackOrigin=actor.panel.frame.origin
+114 |             var stable=true
+115 |             for _ in 0..<180 {tick(mouse:actor.panel.frame.center,reachable:true);stable = stable && actor.view.action == .attack && actor.hoverStarted==attackStart && actor.panel.frame.origin==attackOrigin && actor.gait.phase==pausedGait}
+    |                                                            `- error: 'center' is inaccessible due to 'fileprivate' protection level
+116 |             check(stable,prefix+"three-second hover retains one attack clock, fixed scale and stationary gait")
+117 |             let mask=ArmedPointerArtwork.shared.attack(friend)
+
+/Users/minkyun_park/Documents/ChiikawaCompanion/Sources/ChiikawaCompanion/ArmedHoverChecks.swift:197:9: note: 'center' declared here
+195 | 
+196 | private extension NSRect {
+197 |     var center: NSPoint { NSPoint(x: midX, y: midY) }
+    |         `- note: 'center' declared here
+198 | }
+199 | 
+
+/Users/minkyun_park/Documents/ChiikawaCompanion/Sources/ChiikawaCompanion/RosterChecks.swift:120:42: error: 'center' is inaccessible due to 'fileprivate' protection level
+118 |             check(mask.rect.contains(NSRect(origin:.zero,size:friend.actorSize)) && mask.rect.width>friend.actorSize.width,
+119 |                   prefix+"stable attack mask includes the complete expanded weapon viewport")
+120 |             tick(mouse:actor.panel.frame.center,reachable:false)
+    |                                          `- error: 'center' is inaccessible due to 'fileprivate' protection level
+121 |             check(actor.view.action != .attack && actor.armedHoverContact==nil,prefix+"foreground occlusion releases armed hover")
+122 |             tick()
+
+/Users/minkyun_park/Documents/ChiikawaCompanion/Sources/ChiikawaCompanion/ArmedHoverChecks.swift:197:9: note: 'center' declared here
+195 | 
+196 | private extension NSRect {
+197 |     var center: NSPoint { NSPoint(x: midX, y: midY) }
+    |         `- note: 'center' declared here
+198 | }
+199 | 
+
+/Users/minkyun_park/Documents/ChiikawaCompanion/Sources/ChiikawaCompanion/RosterChecks.swift:125:76: error: 'center' is inaccessible due to 'fileprivate' protection level
+123 |             check(actor.view.action == nil && actor.view.rosterVisual?.action == nil && actor.view.walking,
+124 |                   prefix+"leaving hover returns to walking in one display update")
+125 |             companion.play(.study,now:date());tick(mouse:actor.panel.frame.center,reachable:true)
+    |                                                                            `- error: 'center' is inaccessible due to 'fileprivate' protection level
+126 |             check(actor.view.rosterVisual?.action == .study && actor.view.action != .attack,
+127 |                   prefix+"an explicit study command keeps priority over armed hover")
+
+/Users/minkyun_park/Documents/ChiikawaCompanion/Sources/ChiikawaCompanion/ArmedHoverChecks.swift:197:9: note: 'center' declared here
+195 | 
+196 | private extension NSRect {
+197 |     var center: NSPoint { NSPoint(x: midX, y: midY) }
+    |         `- note: 'center' declared here
+198 | }
+199 | 
+
+/Users/minkyun_park/Documents/ChiikawaCompanion/Sources/ChiikawaCompanion/RosterChecks.swift:130:59: error: 'center' is inaccessible due to 'fileprivate' protection level
+128 |             companion.stopAction();actor.dismissBubble()
+129 |             let beforeAudio=voiceStarts
+130 |             for _ in 0..<30 {tick(mouse:actor.panel.frame.center,reachable:true)}
+    |                                                           `- error: 'center' is inaccessible due to 'fileprivate' protection level
+131 |             check(voiceStarts==beforeAudio,prefix+"autonomous movement and armed hover never start audio")
+132 |             var previous:String?, noRepeat=true, captions=true
+
+/Users/minkyun_park/Documents/ChiikawaCompanion/Sources/ChiikawaCompanion/ArmedHoverChecks.swift:197:9: note: 'center' declared here
+195 | 
+196 | private extension NSRect {
+197 |     var center: NSPoint { NSPoint(x: midX, y: midY) }
+    |         `- note: 'center' declared here
+198 | }
+199 | 

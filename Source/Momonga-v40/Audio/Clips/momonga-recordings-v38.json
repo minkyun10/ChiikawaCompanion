@@ -1,0 +1,48 @@
+{
+  "speaker": "미소",
+  "sourceTitle": "애니박스 공식 먼작귀 25화·157화 — 모몽가(하늘다람쥐)",
+  "sourceProfile": "https://www.youtube.com/channel/UCBTSkFNWmoOkBeZwANcbiIA",
+  "captionPolicy": "Brief app reaction captions based on local ASR timing; not a certified verbatim transcript.",
+  "clips": [
+    {
+      "id": "momonga-cute",
+      "text": "귀엽겠지?",
+      "file": "momonga-cute-v38.m4a",
+      "duration": 4.4,
+      "sourceURL": "https://www.youtube.com/watch?v=d5_Z8cvOHo8",
+      "sourceStart": 3.0,
+      "sourceEnd": 7.35,
+      "sha256": "edf4aab718a754e84a21c8ca2122214fa1cb4c3f7a94b46c601f260f8396f26b"
+    },
+    {
+      "id": "momonga-look",
+      "text": "날 봐!",
+      "file": "momonga-look-v38.m4a",
+      "duration": 1.4,
+      "sourceURL": "https://www.youtube.com/watch?v=d5_Z8cvOHo8",
+      "sourceStart": 8.35,
+      "sourceEnd": 9.75,
+      "sha256": "8342f4b7c0a6baf9cc0dbcb4141729086d34724f0f956ce8454a92605264ac2d"
+    },
+    {
+      "id": "momonga-praise",
+      "text": "날 보고 칭찬해라!",
+      "file": "momonga-praise-v38.m4a",
+      "duration": 1.75,
+      "sourceURL": "https://www.youtube.com/watch?v=d5_Z8cvOHo8",
+      "sourceStart": 24.05,
+      "sourceEnd": 25.8,
+      "sha256": "37bdeb8d76905fc6cc530683c699b7c6fa3213e65f84bbf9c2356a91f889666e"
+    },
+    {
+      "id": "momonga-wait",
+      "text": "오래 기다렸지?",
+      "file": "momonga-wait-v38.m4a",
+      "duration": 2.47,
+      "sourceURL": "https://www.youtube.com/watch?v=x-OxpDicqKo",
+      "sourceStart": 53.58,
+      "sourceEnd": 56.05,
+      "sha256": "f9e9470b00182a59d33fe956ac6cf0d2dd524e334bdc6babdb5aeae2e0ee8e21"
+    }
+  ]
+}

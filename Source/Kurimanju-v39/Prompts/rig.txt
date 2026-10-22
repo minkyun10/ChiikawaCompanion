@@ -1,0 +1,7 @@
+Use case: identity-preserve
+Turn the attached Kurimanju model sheet into animation rig parts without redesigning the character. Lock its small facial features, rounded compact head/body, chestnut-brown crown cap, tiny sideways ear nubs, light cream body, pink hatch cheeks and thin brown linework. No long rabbit ears or invented tail. The cap wraps over the crown consistently in every direction; back views have no facial features or blush.
+Square technical sheet, exactly 3 columns × 3 evenly spaced equal-height rows with generous completely transparent gutters. Every piece fully visible, no labels or movement marks.
+Row 1: front BODY ONLY; left-side BODY ONLY; true back BODY ONLY.
+Row 2: front-left 3/4 BODY ONLY; true rear-left 3/4 BODY ONLY; complete front T-pose with its short arms and tiny feet.
+Row 3: one detached short cream arm; one single detached rounded cream foot (one foot, not a joined pair); overhead top view.
+In the first five BODY ONLY pieces remove ALL arms, hands, legs and feet and close those limb roots with a smooth body contour, so separate short limbs can be animated later. Keep the ear nubs, which are part of the head. All five bodies share the exact model-sheet proportions and scale. Smooth flat fills, no texture or dimensional shading. Genuine alpha transparency outside every outline, no halo, background glow, shadows, matte or checkerboard. No cups, bottles, snacks, other props, clothing, extra characters or text.

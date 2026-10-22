@@ -1,0 +1,19 @@
+{
+  "purpose": "Timing-only ASR evidence; text removed from public archive, local original retained in Audio/Originals.",
+  "timing": {
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 2.0,
+        "temperature": 0.0,
+        "avg_logprob": -0.8429774443308512,
+        "compression_ratio": 0.5,
+        "no_speech_prob": 0.2804327607154846
+      }
+    ],
+    "language": "ko",
+    "scope": "Relevant episode portion only; unrelated ending theme excluded."
+  }
+}

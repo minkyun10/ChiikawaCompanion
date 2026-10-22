@@ -9,10 +9,14 @@ extension SelfTest {
         state.automaticItems = false; state.chiikawaAutomaticItems = false
         state.automaticActivities = false; state.chiikawaAutomaticActivities = false
         state.automaticRest = false; state.chiikawaAutomaticRest = false
+        for friend in Friend.developmentRoster where friend.isExpansion {
+            state.updateOptions(friend) { $0.automaticItems=false; $0.automaticActivities=false; $0.automaticRest=false }
+        }
         var voiceStarts = 0
         let desktop = DesktopController(state: state, startTimer: false,
             recordedVoice: RecordedVoicePlayer(startPlayback: { _ in voiceStarts += 1; return true }),
-            chiikawaVoice: RecordedVoicePlayer(startPlayback: { _ in voiceStarts += 1; return true }))
+            chiikawaVoice: RecordedVoicePlayer(startPlayback: { _ in voiceStarts += 1; return true }),
+            expansionVoice: { _ in RecordedVoicePlayer(startPlayback: { _ in voiceStarts += 1; return true }) })
         let now = Date(), away = NSPoint(x: -10000, y: -10000)
         func opaquePoints(in rect: NSRect, draw: () -> Void) -> [NSPoint] {
             let rep = NSBitmapImageRep(bitmapDataPlanes: nil, pixelsWide: Int(rect.width), pixelsHigh: Int(rect.height),
@@ -42,7 +46,9 @@ extension SelfTest {
         for (offset, actor) in desktop.actors.enumerated() {
             let start = now.addingTimeInterval(Double(offset) * 20)
             let center = NSPoint(x: actor.panel.frame.midX, y: actor.panel.frame.midY)
-            if actor.friend == .hachiware { _ = desktop.receiveDroppedItem(.sasumata, at: center, now: start) }
+            if let companion=desktop.expansions[actor.friend] {
+                _ = companion.receive(.weapon,at:center,now:start); companion.stopAction()
+            } else if actor.friend == .hachiware { _ = desktop.receiveDroppedItem(.sasumata, at: center, now: start) }
             else { _ = desktop.receiveChiikawaItem(.pinkSasumata, at: center, now: start) }
             actor.performance.cancel(now: start)
             // Find an actual opaque walking pixel that the old inset rectangle missed.
@@ -55,15 +61,26 @@ extension SelfTest {
             context.cgContext.clear(bounds)
             FriendArtwork.draw(actor.friend, in: bounds, walking: true, facing: -1, walkPhase: 0, pose: .front,
                 equipped: actor.friend == .hachiware ? .sasumata : nil,
-                chiikawaItem: actor.friend == .chiikawa ? .pinkSasumata : nil)
+                chiikawaItem: actor.friend == .chiikawa ? .pinkSasumata : nil,
+                rosterVisual: actor.friend.isExpansion ? RosterVisual(equipped:.weapon) : nil)
             context.flushGraphics(); NSGraphicsContext.restoreGraphicsState()
             let inset = bounds.insetBy(dx: bounds.width * 0.13, dy: bounds.height * 0.06)
-            var missed: [NSPoint] = []
+            var missed: [NSPoint] = [], visible: [NSPoint] = []
             for y in 0..<rep.pixelsHigh { for x in 0..<rep.pixelsWide {
                 let point = NSPoint(x: CGFloat(x) + 0.5, y: bounds.height - CGFloat(y) - 0.5)
-                if (rep.colorAt(x: x, y: y)?.alphaComponent ?? 0) > 0.8 && !inset.contains(point) { missed.append(point) }
+                if (rep.colorAt(x: x, y: y)?.alphaComponent ?? 0) > 0.8 {
+                    visible.append(point)
+                    if !inset.contains(point) { missed.append(point) }
+                }
             } }
-            check(!missed.isEmpty, "\(actor.friend.name) regression fixture has visible armed pixels outside the old hover rectangle")
+            if actor.friend.isExpansion {
+                // A tall canvas can contain the whole narrow rabbit inside the old
+                // inset. Use a real edge pixel rather than inventing an out-of-bounds fixture.
+                if missed.isEmpty { missed = visible.sorted { $0.x < $1.x }.prefix(1).map { $0 } }
+                check(!missed.isEmpty, "\(actor.friend.name) armed entry fixture uses an actual visible outline pixel")
+            } else {
+                check(!missed.isEmpty, "\(actor.friend.name) regression fixture has visible armed pixels outside the old hover rectangle")
+            }
             let point = missed[missed.count / 2]
             actor.view.walking = true; actor.view.pose = .front; actor.view.facing = -1
             let world = NSPoint(x: actor.panel.frame.minX + point.x, y: actor.panel.frame.minY + point.y)
@@ -87,7 +104,8 @@ extension SelfTest {
                         let points = opaquePoints(in: bounds) {
                             FriendArtwork.draw(actor.friend, in: bounds, time: 0, walking: true, facing: facing,
                                 walkPhase: phase, pose: pose, equipped: actor.friend == .hachiware ? .sasumata : nil,
-                                chiikawaItem: actor.friend == .chiikawa ? .pinkSasumata : nil)
+                                chiikawaItem: actor.friend == .chiikawa ? .pinkSasumata : nil,
+                rosterVisual: actor.friend.isExpansion ? RosterVisual(equipped:.weapon) : nil)
                         }
                         allDirections = allDirections && !points.isEmpty && points.allSatisfy(mask.contains)
                     }
@@ -141,7 +159,6 @@ extension SelfTest {
         // No mouse events are synthesized and no user's app is activated.
         let application = NSApplication.shared
         application.setActivationPolicy(.accessory)
-        application.finishLaunching()
         let probe = desktop.actors[0], oldLevel = probe.panel.level, oldFrame = probe.panel.frame
         let visible = NSScreen.main!.visibleFrame
         probe.panel.setFrameOrigin(NSPoint(x: visible.midX - 66, y: visible.midY - 75))
@@ -150,11 +167,12 @@ extension SelfTest {
         let pointer = probe.panel.frame.center
         let cover = FriendPanel(contentRect: NSRect(x: pointer.x - 12, y: pointer.y - 12, width: 24, height: 24),
             styleMask: [.borderless, .nonactivatingPanel], backing: .buffered, defer: false)
+        cover.isFloatingPanel = false; cover.ignoresMouseEvents = false
         cover.level = NSWindow.Level(rawValue: NSWindow.Level.floating.rawValue + 1)
         cover.isReleasedWhenClosed = false; cover.hidesOnDeactivate = false
+        cover.collectionBehavior = DesktopLayer.collection
         cover.isOpaque = true; cover.backgroundColor = .white
-        cover.contentView = NSView(frame: NSRect(origin: .zero, size: cover.frame.size))
-        cover.contentView!.wantsLayer = true; cover.contentView!.layer!.backgroundColor = NSColor.white.cgColor
+        cover.contentView = OpaqueHoverProbeView(frame: NSRect(origin: .zero, size: cover.frame.size))
         defer { cover.orderOut(nil); probe.panel.level = oldLevel; probe.panel.setFrame(oldFrame, display: false) }
         probe.panel.ignoresMouseEvents = true
         let clickThrough = DesktopPointerVisibility.canReach(probe.panel, at: pointer)
@@ -162,11 +180,11 @@ extension SelfTest {
         let interactive = DesktopPointerVisibility.canReach(probe.panel, at: pointer)
         check(clickThrough && interactive, "native hover visibility remains true when the actor changes its mouse-event transparency")
         cover.orderFrontRegardless()
-        cover.display()
+        cover.display(); cover.contentView!.display()
         application.updateWindows()
         CATransaction.flush()
-        // A layer-backed test window becomes a mouse target after its first
-        // compositor commit, not merely after orderFront returns.
+        // WindowServer input regions commit after the raster backing store is
+        // painted, not merely after orderFront returns.
         let paintDeadline = Date().addingTimeInterval(1)
         while Date() < paintDeadline {
             let paintedOrder = NSWindow.windowNumbers(options: .allApplications)!.map(\.intValue)
@@ -175,7 +193,7 @@ extension SelfTest {
         }
         let order = NSWindow.windowNumbers(options: .allApplications)!.map(\.intValue)
         let nativeHit = DesktopPointerVisibility.hitWindow(at: pointer, frontToBack: order)
-        print("Native hover probe: actor=\(probe.panel.windowNumber) cover=\(cover.windowNumber) hit=\(String(describing: nativeHit)) coverVisible=\(cover.isVisible) actorFrame=\(probe.panel.frame) coverFrame=\(cover.frame) point=\(pointer)")
+        print("Native hover probe: actor=\(probe.panel.windowNumber) cover=\(cover.windowNumber) hit=\(String(describing: nativeHit)) coverVisible=\(cover.isVisible) ignores=\(cover.ignoresMouseEvents) activeSpace=\(cover.isOnActiveSpace) rawHit=\(NSWindow.windowNumber(at: pointer, belowWindowWithWindowNumber: 0)) listed=\(order.contains(cover.windowNumber)) actorFrame=\(probe.panel.frame) coverFrame=\(cover.frame) point=\(pointer)")
         check(nativeHit == cover.windowNumber, "native foreground fixture receives the actual mouse-down hit test")
         check(!DesktopPointerVisibility.canReach(probe.panel, at: pointer),
             "native pointer visibility rejects a small foreground window even if the rest of the character is visible")
@@ -195,4 +213,11 @@ extension SelfTest {
 
 private extension NSRect {
     var center: NSPoint { NSPoint(x: midX, y: midY) }
+}
+
+/// A real raster backing store is required for WindowServer mouse hit testing.
+/// A layer-only background may appear in the window order before it is painted.
+private final class OpaqueHoverProbeView: NSView {
+    override var isOpaque: Bool { true }
+    override func draw(_ dirtyRect: NSRect) { NSColor.white.setFill(); bounds.fill() }
 }

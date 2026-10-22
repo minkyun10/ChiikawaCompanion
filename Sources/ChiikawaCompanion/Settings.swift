@@ -22,14 +22,14 @@ struct SettingsView: View {
                 Label("DESKTOP COMPANION", systemImage: "pawprint.fill")
                     .font(.system(size: 10, weight: .bold, design: .rounded)).tracking(2)
                 Spacer()
-                Text("두 친구와 함께").font(.system(size: 10, weight: .medium))
+                Text("친구들과 함께").font(.system(size: 10, weight: .medium))
                     .padding(.horizontal, 11).padding(.vertical, 6)
                     .background(blue.opacity(0.15), in: Capsule())
             }.foregroundStyle(mutedInk)
 
             HStack(alignment: .bottom) {
                 VStack(alignment: .leading, spacing: 8) {
-                    Text("두 친구와\n바탕화면 산책.")
+                    Text("친구들과\n바탕화면 산책.")
                         .font(.system(size: 30, weight: .bold, design: .rounded)).lineSpacing(2)
                         .fixedSize(horizontal: false, vertical: true)
                     Text("설정 창을 닫으면, 바탕화면에서 만나요.")
@@ -46,6 +46,9 @@ struct SettingsView: View {
             chiikawaItemCard
             chiikawaLifeCard
             chiikawaVoiceCard
+            ForEach(Friend.developmentRoster.filter(\.isExpansion)) { friend in
+                RosterSettingsCard(state: state, friend: friend)
+            }
             VStack(alignment: .leading, spacing: 14) {
                 HStack {
                     VStack(alignment: .leading, spacing: 5) {
@@ -200,7 +203,13 @@ struct SettingsView: View {
             ForEach(Friend.developmentRoster) { friend in
                 HStack {
                     Text(friend.name).font(.system(size: 11, weight: .semibold)).frame(width: 65, alignment: .leading)
-                    if friend == .hachiware {
+                    if friend.isExpansion {
+                        Toggle("가끔 쉬기", isOn: Binding(get: { state.options(for: friend).automaticRest }, set: { value in
+                            state.updateOptions(friend) { $0.automaticRest = value }
+                        })).toggleStyle(.switch).controlSize(.small)
+                        Button("집에 가서 자기") { state.onRosterCommand?(friend, .home) }.disabled(state.status(for: friend).resting)
+                        Button("깨우기") { state.onRosterCommand?(friend, .wake) }.disabled(!state.status(for: friend).resting)
+                    } else if friend == .hachiware {
                         Toggle("가끔 쉬기", isOn: $state.automaticRest).toggleStyle(.switch).controlSize(.small)
                         Spacer()
                         Button("집에 가서 자기") { state.onGoHome?() }.disabled(state.resting)
@@ -212,7 +221,7 @@ struct SettingsView: View {
                         Button("깨우기") { state.onChiikawaWake?() }.disabled(!state.chiikawaResting)
                     }
                 }.font(.system(size: 11))
-                Text(friend == .hachiware ? state.homeStatus : state.chiikawaHomeStatus)
+                Text(friend.isExpansion ? state.status(for: friend).home : friend == .hachiware ? state.homeStatus : state.chiikawaHomeStatus)
                     .font(.system(size: 10)).foregroundStyle(mutedInk)
             }
             Text("어떤 디자인이든 모든 친구가 들어가 함께 자요. 빈 집을 클릭하면 보이는 친구들이 쉬러 가요.\n입구에 데려다 놓아도 잠들고, 자는 집을 클릭하면 깨워요. 20초 쉬면 스스로 일어나요.")
@@ -260,7 +269,7 @@ struct SettingsView: View {
                 .font(.system(size: 11)).foregroundStyle(mutedInk)
             HStack {
                 Image(systemName: "speaker.wave.2.fill").foregroundStyle(blue)
-                Slider(value: $state.characterVolume,in: 0...1).accessibilityLabel("두 친구 목소리 음량")
+                Slider(value: $state.characterVolume,in: 0...1).accessibilityLabel("친구들 목소리 음량")
                 Button("치이카와 목소리 들어보기") { state.onChiikawaVoicePreview?() }
                 Button("멈추기") { state.onStopChiikawaVoice?() }
             }.font(.system(size: 11))

@@ -1,0 +1,37 @@
+{
+  "verified": "2026-10-22",
+  "actor": "미소",
+  "actorPrimaryProfile": "https://studiomonkey.co.kr/actor_profile?name=%EB%AF%B8%EC%86%8C",
+  "actorRoleEvidence": "Primary actor profile lists 먼작귀 - 하늘다람쥐. No unrelated actor demo used.",
+  "sources": [
+    {
+      "url": "https://www.youtube.com/watch?v=d5_Z8cvOHo8",
+      "file": "episode-157.mkv",
+      "episode": "157",
+      "title": "[전편공개]먼작귀(먼가 작고 귀여운 녀석) 157화_날 봐, 츳츳츳",
+      "channel": "AniBox",
+      "channelURL": "https://www.youtube.com/channel/UCBTSkFNWmoOkBeZwANcbiIA",
+      "sha256": "eceba9910ff0c7dc2df1e5b531b27ea6c51ce52ee6c89c0f34414adf1fa19cd0"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=x-OxpDicqKo",
+      "file": "episode-25.mkv",
+      "episode": "25",
+      "title": "[전편공개]먼작귀(먼가 작고 귀여운 녀석) 25화_새벽시장, 드디어 해냈다!",
+      "channel": "AniBox",
+      "channelURL": "https://www.youtube.com/channel/UCBTSkFNWmoOkBeZwANcbiIA",
+      "sha256": "aa91fb59fc1db48236f1cebecf1579d4b8b72979cf674de73d4554aa67fce889"
+    }
+  ],
+  "selectionEvidence": [
+    "ReviewFrames/episode-157-contact.png",
+    "ReviewFrames/mouth-157-7-11.png",
+    "ReviewFrames/mouth-157-23-27.png",
+    "ReviewFrames/mouth-25-52-57.png"
+  ],
+  "verificationMethod": "Official uploader metadata, scene identity and visible mouth timing, with local ASR as a timing aid. No listening-based phonetic certification claimed.",
+  "synthesized": false,
+  "voiceCloned": false,
+  "runtime": "Four bundled local clips played only on click or explicit preview; background soundtrack in original mix may remain.",
+  "originals": "Full videos and complete ASR remain local-only in Audio/Originals; only short selected clips and curated provenance are versioned."
+}

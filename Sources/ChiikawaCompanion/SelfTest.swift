@@ -9,6 +9,11 @@ enum SelfTest {
             guard value() else { fputs("FAIL: \(name)\n", stderr); exit(1) }
             passed += 1; print("PASS: \(name)")
         }
+        // Start the AppKit lifecycle before any window fixture is constructed.
+        // Late finishLaunching can reorder/discard test surfaces after they paint.
+        let application=NSApplication.shared
+        application.setActivationPolicy(.accessory); application.finishLaunching()
+        runArmedHoverChecks { check($0, $1) }
         let now = Date()
         let screen = NSRect(x: -1920, y: 30, width: 1920, height: 1050)
         let clamped = DesktopGeometry.clamp(NSPoint(x: 30, y: -40), size: NSSize(width: 132, height: 150), to: screen)
@@ -24,7 +29,7 @@ enum SelfTest {
         check(DesktopLayer.bubble.rawValue > DesktopLayer.character.rawValue && DesktopLayer.bubble.rawValue < normal,
               "speech bubble stays on desktop, below app windows")
         check(!DesktopLayer.collection.contains(.fullScreenAuxiliary), "desktop character does not join full-screen overlays")
-        check(Friend.developmentRoster == [.hachiware, .chiikawa], "Hachiware and Chiikawa are the active companions")
+        check(Friend.developmentRoster == [.hachiware, .chiikawa, .usagi, .kurimanju, .momonga], "the reviewed development roster is active")
 
         let size = NSSize(width: 132, height: 150)
         let target = RoamingMotion.target(in: screen, size: size, xFraction: 0.9, yFraction: 0.85)
@@ -227,8 +232,8 @@ enum SelfTest {
         runChiikawaMotionChecks { check($0, $1) }
         runChiikawaClickVoiceChecks { check($0, $1) }
         runChiikawaAttackIsolationChecks { check($0, $1) }
-        runArmedHoverChecks { check($0, $1) }
         runContinuousRoamingChecks { check($0, $1) }
+        runRosterChecks { check($0, $1) }
         runHomeTests(desktop: desktop, now: now) { check($0, $1) }
         var performance = CompanionPerformance()
         performance.begin(.camera, now: now, pickingUp: true)

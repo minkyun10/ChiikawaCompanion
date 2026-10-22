@@ -1,0 +1,14 @@
+[youtube] Extracting URL: https://www.youtube.com/watch?v=x-OxpDicqKo
+[youtube] x-OxpDicqKo: Downloading webpage
+WARNING: [youtube] No supported JavaScript runtime could be found. Only deno is enabled by default; to use another runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing one
+[youtube] x-OxpDicqKo: Downloading visionos player API JSON
+[youtube] x-OxpDicqKo: Downloading m3u8 information
+[info] x-OxpDicqKo: Downloading 1 format(s): 396+251
+[info] Writing video metadata as JSON to: Source/Momonga-v40/Audio/Originals/episode-25.info.json
+[download] Destination: Source/Momonga-v40/Audio/Originals/episode-25.f396.mp4
+[download]   0.1% of  947.82KiB at  Unknown B/s ETA Unknown[download]   0.3% of  947.82KiB at  Unknown B/s ETA Unknown[download]   0.7% of  947.82KiB at  Unknown B/s ETA Unknown[download]   1.6% of  947.82KiB at  Unknown B/s ETA Unknown[download]   3.3% of  947.82KiB at   26.14MiB/s ETA 00:00  [download]   6.6% of  947.82KiB at    6.57MiB/s ETA 00:00[download]  13.4% of  947.82KiB at   10.11MiB/s ETA 00:00[download]  26.9% of  947.82KiB at   13.49MiB/s ETA 00:00[download]  53.9% of  947.82KiB at   20.91MiB/s ETA 00:00[download] 100.0% of  947.82KiB at   25.88MiB/s ETA 00:00[download] 100% of  947.82KiB in 00:00:00 at 12.69MiB/s  
+[download] Destination: Source/Momonga-v40/Audio/Originals/episode-25.f251.webm
+[download]   0.1% of    1.22MiB at  Unknown B/s ETA Unknown[download]   0.2% of    1.22MiB at    1.88MiB/s ETA 00:00  [download]   0.6% of    1.22MiB at    3.46MiB/s ETA 00:00[download]   1.2% of    1.22MiB at    6.24MiB/s ETA 00:00[download]   2.5% of    1.22MiB at    4.36MiB/s ETA 00:00[download]   5.1% of    1.22MiB at    5.94MiB/s ETA 00:00[download]  10.2% of    1.22MiB at    7.64MiB/s ETA 00:00[download]  20.5% of    1.22MiB at   10.62MiB/s ETA 00:00[download]  41.1% of    1.22MiB at   14.69MiB/s ETA 00:00[download]  82.2% of    1.22MiB at   23.30MiB/s ETA 00:00[download] 100.0% of    1.22MiB at   25.80MiB/s ETA 00:00[download] 100% of    1.22MiB in 00:00:00 at 3.55MiB/s   
+[Merger] Merging formats into "Source/Momonga-v40/Audio/Originals/episode-25.mkv"
+Deleting original file Source/Momonga-v40/Audio/Originals/episode-25.f251.webm (pass -k to keep)
+Deleting original file Source/Momonga-v40/Audio/Originals/episode-25.f396.mp4 (pass -k to keep)

@@ -1,0 +1,37 @@
+diff --git a/Sources/ChiikawaCompanion/Model.swift b/Sources/ChiikawaCompanion/Model.swift
+index c89e6b9..789e890 100644
+--- a/Sources/ChiikawaCompanion/Model.swift
++++ b/Sources/ChiikawaCompanion/Model.swift
+@@ -47,6 +47,11 @@ enum Friend: String, CaseIterable, Codable, Identifiable {
+ }
+ 
+ final class AppState: ObservableObject {
++    @Published var rosterOptions: [Friend: RosterOptions] {
++        didSet { if let data = try? JSONEncoder().encode(rosterOptions) { defaults.set(data, forKey: "rosterOptionsV38") } }
++    }
++    @Published var rosterStatuses: [Friend: RosterStatus] = [:]
++    var onRosterCommand: ((Friend, RosterCommand) -> Void)?
+     @Published var roaming: Bool { didSet { defaults.set(roaming, forKey: "roaming") } }
+     @Published var showFriends = true
+     @Published var visibleFriends: Set<Friend> {
+@@ -130,6 +135,7 @@ final class AppState: ObservableObject {
+ 
+     init(defaults: UserDefaults = .standard) {
+         self.defaults = defaults
++        rosterOptions = defaults.data(forKey: "rosterOptionsV38").flatMap { try? JSONDecoder().decode([Friend: RosterOptions].self, from: $0) } ?? [:]
+         let roster = Set(Friend.developmentRoster)
+         visibleFriends = Set((defaults.stringArray(forKey: "visibleFriends") ?? Friend.developmentRoster.map(\.rawValue))
+             .compactMap(Friend.init(rawValue:))).intersection(roster)
+diff --git a/Sources/ChiikawaCompanion/RecordedVoice.swift b/Sources/ChiikawaCompanion/RecordedVoice.swift
+index 01a03fb..5058451 100644
+--- a/Sources/ChiikawaCompanion/RecordedVoice.swift
++++ b/Sources/ChiikawaCompanion/RecordedVoice.swift
+@@ -18,7 +18,7 @@ struct RecordingCatalog: Decodable {
+     static let fileName = "hachiware-recordings-v13.json"
+     static let shared = load(fileName, speaker: "손정민")
+     static let chiikawa = load("chiikawa-recordings-v26.json", speaker: "이주은")
+-    private static func load(_ fileName: String, speaker: String) -> RecordingCatalog {
++    static func load(_ fileName: String, speaker: String) -> RecordingCatalog {
+         guard let url = resourceURL(file: fileName), let data = try? Data(contentsOf: url),
+               let result = try? JSONDecoder().decode(RecordingCatalog.self, from: data),
+               result.isValid else {

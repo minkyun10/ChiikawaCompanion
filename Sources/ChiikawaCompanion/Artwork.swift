@@ -11,7 +11,13 @@ enum FriendArtwork {
                      action: HachiwareAction? = nil, equipped: CompanionItem? = nil, actionTime: Double? = nil,
                      chiikawaReaction: ChiikawaReaction? = nil, chiikawaItem: ChiikawaItem? = nil,
                      chiikawaLife: ChiikawaLifeAction? = nil,
-                     previousChiikawaReaction: ChiikawaReaction? = nil, reactionProgress: Double = 1) {
+                     previousChiikawaReaction: ChiikawaReaction? = nil, reactionProgress: Double = 1, rosterVisual: RosterVisual? = nil) {
+        if friend.isExpansion {
+            let visual = rosterVisual ?? RosterVisual(action: action == .attack ? .attack : happy ? .wave : nil, elapsed: actionTime ?? time)
+            RosterArtwork.draw(friend, in: rect, time: time, walking: walking, facing: facing,
+                phase: walkPhase ?? time / RoamingMotion.previewCycleDuration * 2 * .pi, pose: pose, visual: visual)
+            return
+        }
         if friend == .chiikawa {
             // This pose contains both paws and the pink weapon. Do not add the walking overlay.
             if action == .attack, ChiikawaAttackSprites.shared.draw(in: rect, time: actionTime ?? time) { return }

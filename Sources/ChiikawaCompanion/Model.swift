@@ -3,7 +3,7 @@ import Combine
 
 enum Friend: String, CaseIterable, Codable, Identifiable {
     case chiikawa, hachiware, usagi, momonga, kurimanju
-    static let developmentRoster: [Friend] = [.hachiware, .chiikawa]
+    static let developmentRoster: [Friend] = [.hachiware, .chiikawa, .usagi, .kurimanju, .momonga]
     static let hachiwareClickQuotes = [
         "어떻게든 돼라!",
         "추억은… 계속… 있는 거니까.",
@@ -47,6 +47,11 @@ enum Friend: String, CaseIterable, Codable, Identifiable {
 }
 
 final class AppState: ObservableObject {
+    @Published var rosterOptions: [Friend: RosterOptions] {
+        didSet { if let data = try? JSONEncoder().encode(rosterOptions) { defaults.set(data, forKey: "rosterOptionsV38") } }
+    }
+    @Published var rosterStatuses: [Friend: RosterStatus] = [:]
+    var onRosterCommand: ((Friend, RosterCommand) -> Void)?
     @Published var roaming: Bool { didSet { defaults.set(roaming, forKey: "roaming") } }
     @Published var showFriends = true
     @Published var visibleFriends: Set<Friend> {
@@ -130,7 +135,11 @@ final class AppState: ObservableObject {
 
     init(defaults: UserDefaults = .standard) {
         self.defaults = defaults
+        rosterOptions = defaults.data(forKey: "rosterOptionsV38").flatMap { try? JSONDecoder().decode([Friend: RosterOptions].self, from: $0) } ?? [:]
         let roster = Set(Friend.developmentRoster)
+        let introduced = Set(defaults.stringArray(forKey: "introducedCompanionsV38") ?? ["hachiware", "chiikawa"])
+        let newlyIntroduced = roster.filter { !introduced.contains($0.rawValue) }
+
         visibleFriends = Set((defaults.stringArray(forKey: "visibleFriends") ?? Friend.developmentRoster.map(\.rawValue))
             .compactMap(Friend.init(rawValue:))).intersection(roster)
         walkingFriends = Set((defaults.stringArray(forKey: "walkingFriends") ?? Friend.developmentRoster.map(\.rawValue))
@@ -173,6 +182,12 @@ final class AppState: ObservableObject {
         automaticItems = defaults.object(forKey: "automaticItems") as? Bool ?? true
         expressive = defaults.object(forKey: "expressive") as? Bool ?? true
         roaming = defaults.object(forKey: "roaming") as? Bool ?? true
+        visibleFriends.formUnion(newlyIntroduced)
+        walkingFriends.formUnion(newlyIntroduced)
+        defaults.set(roster.map(\.rawValue).sorted(), forKey: "introducedCompanionsV38")
+        defaults.set(visibleFriends.map(\.rawValue).sorted(), forKey: "visibleFriends")
+        defaults.set(walkingFriends.map(\.rawValue).sorted(), forKey: "walkingFriends")
+
     }
 }
 

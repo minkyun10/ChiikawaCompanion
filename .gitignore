@@ -9,3 +9,11 @@
 .env.*
 *.xcuserstate
 xcuserdata/
+
+# Local reference originals; runtime excerpts and provenance are versioned.
+/Source/**/Audio/Originals/
+/Source/**/Audio/ReviewFrames/*.mp3
+/Source/Usagi-v38/Audio/kwon-daye-character-sample.mp3
+/Source/**/References/Official/*.html
+/Source/**/References/Official/*.js
+/Source/**/References/Official/*.css

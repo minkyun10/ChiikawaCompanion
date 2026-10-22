@@ -1,0 +1,115 @@
+import AppKit
+
+extension Friend {
+    static let expansionOrder: [Friend] = [.usagi, .kurimanju, .momonga]
+    var isExpansion: Bool { Self.expansionOrder.contains(self) }
+    var canvasSize: NSSize { self == .usagi ? NSSize(width: 256, height: 360) : NSSize(width: 256, height: 256) }
+    var actorSize: NSSize { self == .usagi ? NSSize(width: 132, height: 210) : NSSize(width: 132, height: 150) }
+    var voiceActor: String {
+        switch self { case .usagi: return "권다예"; case .kurimanju: return "원종준"; case .momonga: return "미소"; default: return "" }
+    }
+    var reactionTexts: [String] {
+        switch self {
+        case .usagi: return ["야하!", "우라!", "하아?", "푸루루루!", "야하하!", "우랴!", "하!", "야하~", "우라라!", "풋!"]
+        case .kurimanju: return ["크아~", "후우…", "한입 더.", "잠깐 쉬자.", "천천히…", "좋군.", "음~", "같이 먹자.", "잘 먹었다.", "오늘도 수고했어."]
+        case .momonga: return ["나 좀 봐!", "귀엽다고 해!", "칭찬해 줘!", "기다렸어?", "더 보고 있어!", "나도 줘!", "한 번 더!", "잘 봤지?", "쓰다듬어 줘!", "여기 있어!"]
+        default: return []
+        }
+    }
+    var weaponName: String { self == .usagi ? "노란 토벌봉" : "공용 훈련 사스마타" }
+}
+
+enum RosterItemKind: String, CaseIterable, Codable, Identifiable {
+    case camera, guitar, weapon, keepsake
+    var id: String { rawValue }
+    var symbol: String { switch self { case .camera: return "camera"; case .guitar: return "guitars"; case .weapon: return "sparkles"; case .keepsake: return "star" } }
+    func name(for friend: Friend) -> String {
+        switch self {
+        case .camera: return "카메라"
+        case .guitar: return "기타"
+        case .weapon: return friend.weaponName
+        case .keepsake: return friend == .usagi ? "푸딩" : friend == .kurimanju ? "간식과 컵" : "나뭇잎"
+        }
+    }
+}
+
+struct RosterProp: DesktopProp, Identifiable {
+    let owner: Friend
+    let kind: RosterItemKind
+    var rawValue: String { owner.rawValue + ":" + kind.rawValue }
+    var id: String { rawValue }
+    init(owner: Friend, kind: RosterItemKind) { self.owner = owner; self.kind = kind }
+    init?(rawValue: String) {
+        let parts = rawValue.split(separator: ":")
+        guard parts.count == 2, let owner = Friend(rawValue: String(parts[0])), owner.isExpansion,
+              let kind = RosterItemKind(rawValue: String(parts[1])) else { return nil }
+        self.init(owner: owner, kind: kind)
+    }
+    static var allCases: [Self] { Friend.expansionOrder.flatMap { friend in RosterItemKind.allCases.map { Self(owner: friend, kind: $0) } } }
+    var name: String { "\(owner.name) \(kind.name(for: owner))" }
+    var spawnFraction: (CGFloat, CGFloat) {
+        let index = CGFloat(Friend.expansionOrder.firstIndex(of: owner) ?? 0)
+        switch kind { case .camera: return (0.17 + index * 0.10, 0.55); case .guitar: return (0.48 + index * 0.09, 0.42)
+        case .weapon: return (0.57 + index * 0.07, 0.74); case .keepsake: return (0.38 + index * 0.10, 0.18) }
+    }
+    func draw(in rect: NSRect) { RosterItemArtwork.draw(kind, friend: owner, in: rect) }
+}
+
+struct RosterOptions: Codable, Equatable {
+    var items = Set(RosterItemKind.allCases)
+    var spots = Set(ActivitySpot.allCases)
+    var automaticItems = true
+    var automaticActivities = true
+    var automaticRest = true
+    var voice = true
+}
+
+struct RosterStatus: Equatable {
+    var equipped: RosterItemKind?
+    var item = "바탕화면 소품을 찾아요"
+    var action = "공부하고 밥 먹고 쉬어요"
+    var actionRunning = false
+    var home = "공용 집에서 함께 쉴 수 있어요"
+    var resting = false
+    var voice = "클릭할 때만 녹음을 재생해요"
+}
+
+enum RosterCommand {
+    case seek(RosterItemKind), drop, scatter, visit(ActivitySpot), action(RosterAction), stopAction
+    case home, wake, voicePreview, stopVoice
+}
+
+enum RosterAction: String, CaseIterable {
+    case wave, laugh, surprised, pickup, camera, guitar, attack, study, eat, vomit, sleep, wake, keepsake
+    var title: String {
+        switch self {
+        case .wave: return "인사하기"; case .laugh: return "웃기"; case .surprised: return "놀라기"; case .pickup: return "줍기"
+        case .camera: return "사진 찍기"; case .guitar: return "기타 연주"; case .attack: return "무기 휘두르기"
+        case .study: return "공부하기"; case .eat: return "밥 먹기"; case .vomit: return "털뭉치 뱉기"
+        case .sleep: return "잠자기"; case .wake: return "일어나기"; case .keepsake: return "소품과 놀기"
+        }
+    }
+    static let selectable: [Self] = [.study, .eat, .vomit, .camera, .guitar, .keepsake]
+    var duration: TimeInterval { switch self { case .study: return 9; case .eat: return 6; case .vomit: return 2.4; case .wake: return 0.96; default: return 2.4 } }
+    var cycle: TimeInterval { self == .attack ? 1.2 : self == .study ? 1.8 : self == .eat ? 2 : 2.4 }
+    init(spot: ActivitySpot) { self = spot == .desk ? .study : spot == .rice ? .eat : .vomit }
+}
+
+struct RosterVisual {
+    var action: RosterAction?
+    var elapsed: TimeInterval = 0
+    var equipped: RosterItemKind?
+    var happy = false
+}
+
+extension AppState {
+    func options(for friend: Friend) -> RosterOptions { rosterOptions[friend] ?? RosterOptions() }
+    func status(for friend: Friend) -> RosterStatus { rosterStatuses[friend] ?? RosterStatus() }
+    func updateOptions(_ friend: Friend, _ change: (inout RosterOptions) -> Void) {
+        var next = options(for: friend); change(&next); rosterOptions[friend] = next
+        if !next.voice { onRosterCommand?(friend, .stopVoice) }
+    }
+    func publish(_ friend: Friend, _ next: RosterStatus) {
+        if status(for: friend) != next { rosterStatuses[friend] = next }
+    }
+}

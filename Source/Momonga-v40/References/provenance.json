@@ -1,0 +1,24 @@
+{
+  "verified": "2026-10-22",
+  "primary": [
+    {
+      "url": "https://www.anime-chiikawa.jp/images/bg_top_momonga_01.png",
+      "file": "Official/momonga-anime.png",
+      "use": "White flying squirrel, round ears, cyan nose, large eyes, pink cheeks and light-blue fluffy tail"
+    },
+    {
+      "url": "https://studiomonkey.co.kr/actor_profile?name=%EB%AF%B8%EC%86%8C",
+      "use": "Actor-owned profile lists 먼작귀 - 하늘다람쥐"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=d5_Z8cvOHo8",
+      "use": "Official Korean 157화, flower accessory and front/side/back views, short voice reactions"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=x-OxpDicqKo",
+      "use": "Official Korean 25화, character introduction and short voice reaction"
+    }
+  ],
+  "designBoundary": "Camera, guitar and common training pole are fan app interactions, not claims of canonical Momonga possessions. Flower is based on the official episode-157 head flower. All ten plain-text click entries are fan app captions, not a claim of ten canonical quotations.",
+  "identityReview": "Six-view model reviewed against primary art by agent under autonomous implementation request."
+}

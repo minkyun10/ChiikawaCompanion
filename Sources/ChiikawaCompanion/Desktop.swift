@@ -33,6 +33,8 @@ final class DesktopFriendView: NSView {
     var action: HachiwareAction?
     var actionTime: Double?
     var equipped: CompanionItem?
+    var rosterVisual: RosterVisual?
+    var onRosterAction: ((RosterAction) -> Void)?
     var chiikawaItem: ChiikawaItem?
     var previousChiikawaReaction: ChiikawaReaction?
     var chiikawaReactionChanged = -Double.infinity
@@ -59,7 +61,7 @@ final class DesktopFriendView: NSView {
 
     init(friend: Friend) {
         self.friend = friend
-        super.init(frame: NSRect(x: 0, y: 0, width: 132, height: 150))
+        super.init(frame: NSRect(origin: .zero, size: friend.actorSize))
         setAccessibilityElement(true)
         setAccessibilityRole(.button)
         setAccessibilityLabel("\(friend.name) — 클릭해 인사하기, 드래그로 이동, 우클릭해 동작 고르기.")
@@ -77,10 +79,21 @@ final class DesktopFriendView: NSView {
                            looking: looking, facing: facing, walkPhase: walkPhase, pose: pose,
                            action: action, equipped: equipped, actionTime: actionTime,
                            chiikawaReaction: chiikawaReaction, chiikawaItem: chiikawaItem, chiikawaLife: chiikawaLife,
-                           previousChiikawaReaction: previousChiikawaReaction, reactionProgress: min(1,max(0,(time-chiikawaReactionChanged)/0.1)))
+                           previousChiikawaReaction: previousChiikawaReaction, reactionProgress: min(1,max(0,(time-chiikawaReactionChanged)/0.1)), rosterVisual: rosterVisual)
     }
     override func rightMouseDown(with event: NSEvent) {
         let menu = NSMenu()
+        if friend.isExpansion {
+            for action in RosterAction.selectable {
+                let entry = NSMenuItem(title: action.title, action: #selector(chooseRosterAction(_:)), keyEquivalent: "")
+                entry.target = self; entry.representedObject = action.rawValue; menu.addItem(entry)
+            }
+            for (title, selector) in [("집으로 가서 자기", #selector(goHome)), ("동작 멈추기", #selector(stopDailyAction)),
+                ("이 친구 산책 켜기 / 끄기", #selector(toggleWalking)), ("소품 내려놓기", #selector(dropEquipment))] {
+                let entry = NSMenuItem(title: title, action: selector, keyEquivalent: ""); entry.target = self; menu.addItem(entry)
+            }
+            NSMenu.popUpContextMenu(menu, with: event, for: self); return
+        }
         for action in friend == .hachiware ? HachiwareAction.daily : [] {
             let entry = NSMenuItem(title: action.title, action: #selector(chooseDailyAction(_:)), keyEquivalent: "")
             entry.target = self; entry.tag = action.rawValue; menu.addItem(entry)
@@ -105,6 +118,10 @@ final class DesktopFriendView: NSView {
         let stop = NSMenuItem(title: "동작 멈추기", action: #selector(stopDailyAction), keyEquivalent: "")
         stop.target = self; menu.addItem(stop)
         NSMenu.popUpContextMenu(menu, with: event, for: self)
+    }
+    @objc private func chooseRosterAction(_ sender: NSMenuItem) {
+        guard let value = sender.representedObject as? String, let action = RosterAction(rawValue: value) else { return }
+        onRosterAction?(action)
     }
     @objc private func chooseDailyAction(_ sender: NSMenuItem) {
         guard let action = HachiwareAction(rawValue: sender.tag), action.isDaily else { return }
@@ -236,6 +253,7 @@ final class FriendActor {
 }
 
 final class DesktopController {
+    var expansions: [Friend: RosterCompanion] = [:]
     let state: AppState
     var actors: [FriendActor] = []
     var hachiwareActor: FriendActor? { actors.first { $0.friend == .hachiware } }
@@ -278,7 +296,8 @@ final class DesktopController {
     }
 
     init(state: AppState, startTimer: Bool = true, recordedVoice: RecordedVoicePlayer = RecordedVoicePlayer(),
-         chiikawaVoice: RecordedVoicePlayer = RecordedVoicePlayer(idleStatus: "클릭하면 치이카와의 짧은 반응을 들려줘요")) {
+         chiikawaVoice: RecordedVoicePlayer = RecordedVoicePlayer(idleStatus: "클릭하면 치이카와의 짧은 반응을 들려줘요"),
+         expansionVoice: (Friend) -> RecordedVoicePlayer = { _ in RecordedVoicePlayer(idleStatus: "클릭할 때만 녹음을 재생해요") }) {
         self.state = state
         self.recordedVoice = recordedVoice
         self.chiikawaVoice = chiikawaVoice
@@ -390,6 +409,14 @@ final class DesktopController {
         state.onStopDailyAction = { [weak self] in self?.stopDailyAction() }
         state.onSeekActivitySpot = { [weak self] spot in self?.seekActivitySpot(spot) }
         state.onCallFriend = { [weak self] friend in self?.callFriend(friend) }
+        for actor in actors where actor.friend.isExpansion {
+            _ = RosterSprites.shared(actor.friend)
+            let companion = RosterCompanion(desktop: self, actor: actor, voice: expansionVoice(actor.friend))
+            expansions[actor.friend] = companion
+            actor.view.onDragStart = { [weak companion] in companion?.beganDragging() }
+            actor.view.onDragEnd = { [weak companion] in companion?.endedDragging() }
+        }
+        state.onRosterCommand = { [weak self] friend, command in self?.expansions[friend]?.command(command) }
         resetPositions()
         if let visible = NSScreen.main?.visibleFrame {
             itemWorld.configure(enabled: state.enabledItems, bounds: visible)
@@ -404,6 +431,7 @@ final class DesktopController {
     }
     deinit {
         timer?.invalidate()
+        expansions.values.forEach { $0.close() }
         actors.forEach { $0.dismissBubble(); $0.panel.close(); $0.attackOverlay.panel.close() }
         desktopItems.values.forEach { $0.panel.close() }
         chiikawaDesktopItems.values.forEach { $0.panel.close() }
@@ -413,6 +441,7 @@ final class DesktopController {
         if let screenObserver { NotificationCenter.default.removeObserver(screenObserver) }
     }
     func resetPositions() {
+        expansions.values.forEach { $0.stopAction(); $0.wake() }
         stopDailyAction()
         stopChiikawaLife()
         if chiikawaHomeRoutine.phase != .outside || chiikawaWakingAt != nil { wakeChiikawa() }
@@ -441,6 +470,7 @@ final class DesktopController {
             }
         }
         home.anchorToScreen()
+        expansions.values.forEach { $0.repairScreenCoordinates() }
         for (spot,point) in chiikawaStudyWorld.positions {
             guard let screen = NSScreen.screens.first(where: { $0.frame.contains(point) }) ?? NSScreen.main else { continue }
             chiikawaStudyWorld.move(spot,to: point,bounds: screen.visibleFrame)
@@ -548,6 +578,7 @@ final class DesktopController {
         return true
     }
     func handleCharacterClick(_ actor: FriendActor) {
+        if let companion = expansions[actor.friend] { companion.clicked(); return }
         if actor.friend == .hachiware, let selected = ClickDialogue.choose(excluding: lastClickDialogueID) {
             presentClickDialogue(selected, for: actor)
         } else if actor.friend == .chiikawa {
@@ -702,6 +733,10 @@ final class DesktopController {
         homeRoutine.advance(now: now)
         if homeRoutine.shouldWake(now: now) { wakeFromHome(now: now) }
         for actor in actors {
+            if let companion = expansions[actor.friend] {
+                companion.tick(now: now, dt: dt, time: time, mouse: mouse, pointerCanReachCharacter: pointerCanReachCharacter)
+                continue
+            }
             if actor.friend == .chiikawa {
                 tickChiikawa(actor, now: now, dt: dt, time: time, mouse: mouse, pointerCanReachCharacter: pointerCanReachCharacter)
                 continue

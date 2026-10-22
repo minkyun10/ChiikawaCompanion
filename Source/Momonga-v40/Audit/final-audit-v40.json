@@ -1,0 +1,652 @@
+{
+  "verified": "2026-10-22",
+  "character": "momonga",
+  "status": "passed",
+  "app_version": "0.20.1",
+  "app_build": "44",
+  "app_binary_sha256": "2dfc5781a3c3ed93e221f9bcbdc2881ff5eb1f47ea9c4f130fb93e5cd5f0916c",
+  "functional_regression": {
+    "checks": 612,
+    "log": "packaged-self-test-v40-release.log",
+    "sha256": "6162f10c812b6f8dc53f3f1352add7f7f93142c8b2f2bca56e5c5ce78a0fabf1"
+  },
+  "native_artifact_checks": {
+    "checks": 212,
+    "log": "native-momonga-final.log",
+    "sha256": "021db6173882da7c9363aaff1c9f6daf37995d5d2a445a6872dff7c35d1dbd9f"
+  },
+  "baseline_resources_preserved": 51,
+  "new_packaged_resources": [
+    {
+      "path": "momonga-expression-neutral-v38.png",
+      "sha256": "ffd03faf1ae4fa05b4401d0bfe69efcf9ee7f7eedd6d46588dd869fe7d3148cd"
+    },
+    {
+      "path": "momonga-rig-back-v38.png",
+      "sha256": "496ab70227d62340cfda23109946269fc9baa002a1f77af14ae63490eb7d5845"
+    },
+    {
+      "path": "momonga-expression-attack-v38.png",
+      "sha256": "c1ced857e41a716e22f49e3924ccf0fae4e86cad6db4e4177e09271ff737d5ae"
+    },
+    {
+      "path": "momonga-expression-study-v38.png",
+      "sha256": "16736d99d6b4ecb63e422c4929eecaf582d16dfdd857af390799960f56b378d7"
+    },
+    {
+      "path": "momonga-rig-foot-v38.png",
+      "sha256": "f2e95f853932da8849dc30faec3f14bb56d7aa3255850bdb236833799a027e33"
+    },
+    {
+      "path": "momonga-rig-back-diagonal-v38.png",
+      "sha256": "10050df2037ae3ce187b620a0d736226b0fac282d9937c1623896b05c8e216ea"
+    },
+    {
+      "path": "momonga-expression-sleep-v38.png",
+      "sha256": "e83a646f3d6f807486dbc767dd5909443d54306e348ee4e52d30f4aa7303892e"
+    },
+    {
+      "path": "momonga-rig-side-v38.png",
+      "sha256": "2a037c6c154ef11fd2c0294e3529f915f4cdfbbcadfc0d0009f2d4cd89081887"
+    },
+    {
+      "path": "momonga-rig-front-diagonal-v38.png",
+      "sha256": "32ee6e80658f6a52ee8326e6ec1345fe10539b2071b4e9f11c0f430529908549"
+    },
+    {
+      "path": "momonga-rig-tail-v38.png",
+      "sha256": "3b833573b9ed71655b22eb8d4b1542f9f7595590b6cd6cdeab266389785e5bde"
+    },
+    {
+      "path": "momonga-rig-front-v38.png",
+      "sha256": "36c250fda19c39b6870eaffdd811549d637c04e306e091e61c4b3f9395d31c67"
+    },
+    {
+      "path": "momonga-expression-surprised-v38.png",
+      "sha256": "830b41aa9e16de5b81ba37a05fb411c8e838e95f611b5b0b35938737107a974e"
+    },
+    {
+      "path": "momonga-rig-arm-v38.png",
+      "sha256": "def819496b32fd605cce2c354ac9b50808cbb1b973e2b6de2a2e7bee3a9329ab"
+    },
+    {
+      "path": "momonga-expression-laugh-v38.png",
+      "sha256": "a547305237c24acd160b637b74ab8e308bef0c6466ff2c576839ebed9f99a683"
+    },
+    {
+      "path": "Voice/momonga-look-v38.m4a",
+      "sha256": "8342f4b7c0a6baf9cc0dbcb4141729086d34724f0f956ce8454a92605264ac2d"
+    },
+    {
+      "path": "Voice/momonga-praise-v38.m4a",
+      "sha256": "37bdeb8d76905fc6cc530683c699b7c6fa3213e65f84bbf9c2356a91f889666e"
+    },
+    {
+      "path": "Voice/momonga-wait-v38.m4a",
+      "sha256": "f9e9470b00182a59d33fe956ac6cf0d2dd524e334bdc6babdb5aeae2e0ee8e21"
+    },
+    {
+      "path": "Voice/momonga-recordings-v38.json",
+      "sha256": "25cfe162f147c8821aca214708779095bb344a3cfab53e089524eaa2b632fda1"
+    },
+    {
+      "path": "Voice/momonga-cute-v38.m4a",
+      "sha256": "edf4aab718a754e84a21c8ca2122214fa1cb4c3f7a94b46c601f260f8396f26b"
+    }
+  ],
+  "native_ui": "native-ui-v40.json",
+  "visual_review": [
+    "../Final/PackagedNative/momonga/eight-directions.png",
+    "../Final/PackagedNative/momonga/left-24.png",
+    "../Final/PackagedNative/momonga/actions-preview.png"
+  ],
+  "criteria": [
+    {
+      "id": "official-reference-provenance",
+      "acceptance": "Keep user references and primary-source provenance with generated assets; do not present fan additions as canonical.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v40-release.log",
+        "native-momonga-final.log",
+        "native-ui-v40.json",
+        "../Final/PackagedNative/momonga",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "tpose-front-side-back-top-diagonals",
+      "acceptance": "Review a consistent six-view primary-reference model before motion; agent review under the autonomous implementation request, not a separate user approval.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v40-release.log",
+        "native-momonga-final.log",
+        "native-ui-v40.json",
+        "../Final/PackagedNative/momonga",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "8-directions-24frame-walk",
+      "acceptance": "Render all eight directions in chronological 24-frame left/right cycles for the new characters.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v40-release.log",
+        "native-momonga-final.log",
+        "native-ui-v40.json",
+        "../Final/PackagedNative/momonga",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "matched-left-right-foot-cycle",
+      "acceptance": "Use one matched step trajectory with a half-cycle offset for the opposite foot.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v40-release.log",
+        "native-momonga-final.log",
+        "native-ui-v40.json",
+        "../Final/PackagedNative/momonga",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "attached-arm-leg-contours",
+      "acceptance": "Keep short arms and feet visually connected to the body without changing their reviewed motion.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v40-release.log",
+        "native-momonga-final.log",
+        "native-ui-v40.json",
+        "../Final/PackagedNative/momonga",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "body-size-and-foot-registration",
+      "acceptance": "Retain walking body scale, crown position and foot ground level when actions and attacks begin.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v40-release.log",
+        "native-momonga-final.log",
+        "native-ui-v40.json",
+        "../Final/PackagedNative/momonga",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "distance-driven-gait",
+      "acceptance": "Advance walking phase by actual displayed path length, preserving phase during pauses and drags.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v40-release.log",
+        "native-momonga-final.log",
+        "native-ui-v40.json",
+        "../Final/PackagedNative/momonga",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "continuous-roaming-without-teleport",
+      "acceptance": "Continue full-desktop walking without snapping to nearby activities or restarting after display observations.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v40-release.log",
+        "native-momonga-final.log",
+        "native-ui-v40.json",
+        "../Final/PackagedNative/momonga",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "hover-reaction-and-next-tick-release",
+      "acceptance": "React only while hovered and release to the user's walking state within the next sub-100ms update.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v40-release.log",
+        "native-momonga-final.log",
+        "native-ui-v40.json",
+        "../Final/PackagedNative/momonga",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "native-foreground-occlusion",
+      "acceptance": "Show above desktop icons but below app windows, and reject hover through foreground windows.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v40-release.log",
+        "native-momonga-final.log",
+        "native-ui-v40.json",
+        "../Final/PackagedNative/momonga",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "armed-exclusive-attack-and-stable-hit-area",
+      "acceptance": "Armed hover uses only attack animation with one uninterrupted clock; all visible weapon/body pixels remain interactive.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v40-release.log",
+        "native-momonga-final.log",
+        "native-ui-v40.json",
+        "../Final/PackagedNative/momonga",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "click-dialogue-random-no-repeat",
+      "acceptance": "Choose uniformly from the character's click entries without immediate repeats and show the matching text.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v40-release.log",
+        "native-momonga-final.log",
+        "native-ui-v40.json",
+        "../Final/PackagedNative/momonga",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "click-only-voice-local-playback",
+      "acceptance": "Play authentic available clips only on click or explicit preview; no sound during autonomous motion or hover.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v40-release.log",
+        "native-momonga-final.log",
+        "native-ui-v40.json",
+        "../Final/PackagedNative/momonga",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "voice-mute-volume-preview-stop",
+      "acceptance": "Provide mute, volume, preview and stop; replace rapid clicks without overlap and handle missing clips honestly.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v40-release.log",
+        "native-momonga-final.log",
+        "native-ui-v40.json",
+        "../Final/PackagedNative/momonga",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "character-drag-clamp-and-route-reset",
+      "acceptance": "Clamp dragging to a usable desktop and resume from the real released position with the old route cleared.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v40-release.log",
+        "native-momonga-final.log",
+        "native-ui-v40.json",
+        "../Final/PackagedNative/momonga",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "independent-visible-walking-recall",
+      "acceptance": "Allow independent visibility, walking and recall for each character without changing other characters.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v40-release.log",
+        "native-momonga-final.log",
+        "native-ui-v40.json",
+        "../Final/PackagedNative/momonga",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "settings-persistence-migration",
+      "acceptance": "Persist each character's controls, migrate old preferences and introduce new characters without resetting saved choices.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v40-release.log",
+        "native-momonga-final.log",
+        "native-ui-v40.json",
+        "../Final/PackagedNative/momonga",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "independent-ground-prop-coordinates",
+      "acceptance": "Store ground item positions independently of character movement, recall and actions.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v40-release.log",
+        "native-momonga-final.log",
+        "native-ui-v40.json",
+        "../Final/PackagedNative/momonga",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "prop-click-to-seek",
+      "acceptance": "Click a ground item to request a real walking journey even when automatic pickup is disabled.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v40-release.log",
+        "native-momonga-final.log",
+        "native-ui-v40.json",
+        "../Final/PackagedNative/momonga",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "proximity-pickup-and-cooldowns",
+      "acceptance": "Pick up touched/nearby items reliably, exclude dragged items and apply drop/swap cooldowns.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v40-release.log",
+        "native-momonga-final.log",
+        "native-ui-v40.json",
+        "../Final/PackagedNative/momonga",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "direct-drag-drop-equip-owner-check",
+      "acceptance": "Dropping an enabled owned item on its visible character equips immediately without waiting for auto pickup.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v40-release.log",
+        "native-momonga-final.log",
+        "native-ui-v40.json",
+        "../Final/PackagedNative/momonga",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "equipment-swap-drop-hide",
+      "acceptance": "Swap or drop equipment without duplication, and remove disabled equipment from ground and hands.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v40-release.log",
+        "native-momonga-final.log",
+        "native-ui-v40.json",
+        "../Final/PackagedNative/momonga",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "camera-action",
+      "acceptance": "Carry and use a camera with an independent temporary performance that yields back to walking.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v40-release.log",
+        "native-momonga-final.log",
+        "native-ui-v40.json",
+        "../Final/PackagedNative/momonga",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "guitar-action",
+      "acceptance": "Carry and play a guitar with an independent temporary performance that yields back to walking.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v40-release.log",
+        "native-momonga-final.log",
+        "native-ui-v40.json",
+        "../Final/PackagedNative/momonga",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "weapon-action",
+      "acceptance": "Carry the chosen character weapon and provide reviewed expressive attack frames on hover.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v40-release.log",
+        "native-momonga-final.log",
+        "native-ui-v40.json",
+        "../Final/PackagedNative/momonga",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "desk-study-with-tongue",
+      "acceptance": "Walk to a desk and study, preserving the requested tongue detail throughout the loop.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v40-release.log",
+        "native-momonga-final.log",
+        "native-ui-v40.json",
+        "../Final/PackagedNative/momonga",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "food-eat",
+      "acceptance": "Walk to a food bowl and eat, with the corresponding ground bowl hidden only during its own action.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v40-release.log",
+        "native-momonga-final.log",
+        "native-ui-v40.json",
+        "../Final/PackagedNative/momonga",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "furball-spit-up",
+      "acceptance": "Provide the Hachiware-style non-graphic furball action and finish it once, except where the user explicitly excludes it.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v40-release.log",
+        "native-momonga-final.log",
+        "native-ui-v40.json",
+        "../Final/PackagedNative/momonga",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "independent-activity-prop-drag",
+      "acceptance": "Move desk, furball and bowl as independent screen objects without moving the character or unrelated props.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v40-release.log",
+        "native-momonga-final.log",
+        "native-ui-v40.json",
+        "../Final/PackagedNative/momonga",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "activity-approach-arrival-exit-latch",
+      "acceptance": "Approach within 34pt, walk to 2pt arrival, and require exit/cooldown before another automatic trigger.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v40-release.log",
+        "native-momonga-final.log",
+        "native-ui-v40.json",
+        "../Final/PackagedNative/momonga",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "manual-actions-and-stop",
+      "acceptance": "Offer direct action controls and immediate stop; clicks, dragging and hiding cancel the correct action.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v40-release.log",
+        "native-momonga-final.log",
+        "native-ui-v40.json",
+        "../Final/PackagedNative/momonga",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "context-menu-and-settings-and-status-menu",
+      "acceptance": "Expose per-character controls in settings, character context menus and the status menu.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v40-release.log",
+        "native-momonga-final.log",
+        "native-ui-v40.json",
+        "../Final/PackagedNative/momonga",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "shared-single-fixed-house",
+      "acceptance": "Keep exactly one house at the existing Hachiware position with default Hachiware style, regardless of roster size.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v40-release.log",
+        "native-momonga-final.log",
+        "native-ui-v40.json",
+        "../Final/PackagedNative/momonga",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "walk-home-and-drop-equipment",
+      "acceptance": "Walk to the common entrance, drop carried equipment and enter without moving ground props.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v40-release.log",
+        "native-momonga-final.log",
+        "native-ui-v40.json",
+        "../Final/PackagedNative/momonga",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "sleep-entry-breathing-wake",
+      "acceptance": "Show entry, breathing sleep and return to walking; keep independent per-character rest clocks.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v40-release.log",
+        "native-momonga-final.log",
+        "native-ui-v40.json",
+        "../Final/PackagedNative/momonga",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "automatic-rest-toggle",
+      "acceptance": "Allow independent automatic rest controls with the baseline 90s return and 20s sleep defaults.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v40-release.log",
+        "native-momonga-final.log",
+        "native-ui-v40.json",
+        "../Final/PackagedNative/momonga",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "house-skin-independent-membership",
+      "acceptance": "Changing the house skin must not change its position, identity, sleeping occupants or rest clocks.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v40-release.log",
+        "native-momonga-final.log",
+        "native-ui-v40.json",
+        "../Final/PackagedNative/momonga",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "hide-cancels-own-actions-and-audio",
+      "acceptance": "Hiding one character cancels its actions, overlays, bubbles and audio while leaving other characters intact.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v40-release.log",
+        "native-momonga-final.log",
+        "native-ui-v40.json",
+        "../Final/PackagedNative/momonga",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "cross-character-state-isolation",
+      "acceptance": "Keep items, activity latches, voice players, selected actions and home routines independent for all five characters.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v40-release.log",
+        "native-momonga-final.log",
+        "native-ui-v40.json",
+        "../Final/PackagedNative/momonga",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "no-runtime-history-or-secret-collection",
+      "acceptance": "Runtime stores only preferences and bounded in-memory state; no notification monitoring, message history, generated cache or remote playback.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v40-release.log",
+        "native-momonga-final.log",
+        "native-ui-v40.json",
+        "../Final/PackagedNative/momonga",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "native-launch-and-resource-verification",
+      "acceptance": "Compile and sign the actual app, decode its own packaged assets, and run native window/input regressions.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v40-release.log",
+        "native-momonga-final.log",
+        "native-ui-v40.json",
+        "../Final/PackagedNative/momonga",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "middle-and-final-audit-with-fix-loop",
+      "acceptance": "For each character, review intermediate art/behavior, repair feasible omissions, then rerun the full acceptance and cross-character audit.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v40-release.log",
+        "native-momonga-final.log",
+        "native-ui-v40.json",
+        "../Final/PackagedNative/momonga",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    }
+  ],
+  "voice_boundary": "Official AniBox Korean episode excerpts. Captions are app reaction labels aided by ASR, not certified phonetic transcripts; no cloned or synthesized actor voice."
+}

@@ -1,0 +1,8 @@
+{
+  "verified": "2026-10-22",
+  "scope": "Changed/new Git candidates only; credential stores and ignored raw reference originals not read",
+  "textFilesScanned": 199,
+  "findings": [],
+  "filesAtOrAboveGitHub100MiB": [],
+  "publicShareURLNote": "Actor-demo Dropbox rlkey is a public share-link parameter, not a user API/SSH credential."
+}

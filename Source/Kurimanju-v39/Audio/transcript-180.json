@@ -1,0 +1,79 @@
+{
+  "purpose": "Timing-only ASR evidence; text removed from public archive, local original retained in Audio/Originals.",
+  "timing": {
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 2.0,
+        "temperature": 0.0,
+        "avg_logprob": -0.5453958009418688,
+        "compression_ratio": 0.7843137254901961,
+        "no_speech_prob": 0.019862599670886993
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 16.0,
+        "end": 18.0,
+        "temperature": 0.0,
+        "avg_logprob": -0.5453958009418688,
+        "compression_ratio": 0.7843137254901961,
+        "no_speech_prob": 0.019862599670886993
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 21.0,
+        "end": 23.0,
+        "temperature": 0.0,
+        "avg_logprob": -0.5453958009418688,
+        "compression_ratio": 0.7843137254901961,
+        "no_speech_prob": 0.019862599670886993
+      },
+      {
+        "id": 3,
+        "seek": 3000,
+        "start": 31.0,
+        "end": 33.0,
+        "temperature": 0.0,
+        "avg_logprob": -0.34701101779937743,
+        "compression_ratio": 0.9719626168224299,
+        "no_speech_prob": 0.00018800162069965154
+      },
+      {
+        "id": 4,
+        "seek": 3000,
+        "start": 43.0,
+        "end": 45.0,
+        "temperature": 0.0,
+        "avg_logprob": -0.34701101779937743,
+        "compression_ratio": 0.9719626168224299,
+        "no_speech_prob": 0.00018800162069965154
+      },
+      {
+        "id": 5,
+        "seek": 3000,
+        "start": 47.0,
+        "end": 50.0,
+        "temperature": 0.0,
+        "avg_logprob": -0.34701101779937743,
+        "compression_ratio": 0.9719626168224299,
+        "no_speech_prob": 0.00018800162069965154
+      },
+      {
+        "id": 6,
+        "seek": 3000,
+        "start": 54.0,
+        "end": 56.0,
+        "temperature": 0.0,
+        "avg_logprob": -0.34701101779937743,
+        "compression_ratio": 0.9719626168224299,
+        "no_speech_prob": 0.00018800162069965154
+      }
+    ],
+    "language": "ko",
+    "scope": "Relevant episode portion only; unrelated ending theme excluded."
+  }
+}

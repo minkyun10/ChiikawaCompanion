@@ -59,6 +59,17 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         chiiMenu.addItem(item("목소리 들어보기",action: #selector(chiikawaVoicePreview)))
         chiiMenu.addItem(item("동작 멈추기",action: #selector(stopChiikawaLife)))
         chiiDay.submenu = chiiMenu; menu.addItem(chiiDay)
+        for friend in Friend.developmentRoster where friend.isExpansion {
+            let entry = NSMenuItem(title: "\(friend.name)의 하루", action: nil, keyEquivalent: "")
+            let sub = NSMenu()
+            let commands = RosterAction.selectable.map { ($0.title, "action:" + $0.rawValue) }
+                + [("집에 가서 자기", "home"), ("깨우기", "wake"), ("목소리 들어보기", "voice"), ("소리 멈추기", "mute"), ("동작 멈추기", "stop")]
+            for (title, command) in commands {
+                let button = item(title, action: #selector(rosterCommand(_:)))
+                button.representedObject = [friend.rawValue, command]; sub.addItem(button)
+            }
+            entry.submenu = sub; menu.addItem(entry)
+        }
         menu.addItem(.separator())
         menu.addItem(item("종료", action: #selector(quit), key: "q"))
         statusItem.menu = menu
@@ -104,14 +115,32 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
     @objc func chiikawaWake() { desktop.wakeChiikawa(animated: true) }
     @objc func chiikawaVoicePreview() { desktop.sayChiikawa(preview: true) }
     @objc func stopChiikawaLife() { desktop.stopChiikawaLife() }
+    @objc func rosterCommand(_ sender: NSMenuItem) {
+        guard let parts = sender.representedObject as? [String], parts.count == 2, let friend = Friend(rawValue: parts[0]) else { return }
+        let value = parts[1]
+        let command: RosterCommand
+        if value.hasPrefix("action:"), let action = RosterAction(rawValue: String(value.dropFirst(7))) { command = .action(action) }
+        else { switch value { case "home": command = .home; case "wake": command = .wake; case "voice": command = .voicePreview
+            case "mute": command = .stopVoice; default: command = .stopAction } }
+        state.onRosterCommand?(friend, command)
+    }
     @objc func quit() { NSApp.terminate(nil) }
-    func applicationWillTerminate(_ notification: Notification) { desktop?.stopCharacterVoice(); desktop?.stopChiikawaVoice() }
+    func applicationWillTerminate(_ notification: Notification) { desktop?.stopCharacterVoice(); desktop?.stopChiikawaVoice(); desktop?.expansions.values.forEach { $0.voice.stop() } }
     func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool { false }
 }
 
 let args = CommandLine.arguments
-if args.contains("--self-test") {
+if args.contains("--self-test-roster") {
+    var count=0
+    SelfTest.runRosterChecks { passed, label in
+        guard passed else { fputs("FAIL: \(label)\n",stderr);exit(1) }
+        count += 1;print("PASS: \(label)")
+    }
+    print("\(count) roster checks passed.")
+} else if args.contains("--self-test") {
     SelfTest.run()
+} else if let index = args.firstIndex(of: "--render-roster"), index + 1 < args.count {
+    SelfTest.renderRoster(to: args[index + 1])
 } else if let index = args.firstIndex(of: "--render-artwork"), index + 1 < args.count {
     SelfTest.renderArtwork(to: args[index + 1])
 } else {

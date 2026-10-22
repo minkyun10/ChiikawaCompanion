@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-22",
+  "status": "approved",
+  "reference": "References/usagi-user-reference.jpeg",
+  "reference_sha256": "b1b28ce3a8a23b5ff5042990b393f58c976cfd9feac836dedd08ae86d9650e12",
+  "generation_tool": "built-in image_gen",
+  "prompt": "Prompts/tpose-sheet.txt",
+  "approval_required_before": [
+    "walking-frame-production",
+    "action-frame-production",
+    "app-artwork-integration",
+    "next-character-production"
+  ],
+  "review_points": [
+    "thin reference linework",
+    "small eye and mouth scale",
+    "cream body and pale pink ears",
+    "consistent long-ear proportions across six views",
+    "front and back T-pose short arms",
+    "rear views without a face",
+    "no accessories or unrelated characters"
+  ],
+  "supersedes": [
+    "../Generated/usagi-rig-original-v1.png",
+    "../Generated/usagi-rig-rear-fixed-v2.png",
+    "../Generated/usagi-actions-superseded-v1.png"
+  ],
+  "current_sheet": "Generated/usagi-tpose-sheet-for-approval.png",
+  "current_sheet_sha256": "97d59397f2d587494abec0522a8e59f5c98b474a1ef15315315a757c4a337c31",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "refinement_prompt": "Prompts/tpose-proportions-fix.txt",
+  "review_notes": [
+    "First draft retained; ears lengthened and eye scale refined in the approval version.",
+    "Top view corrected to remove the visible front face.",
+    "Final visual identity approval remains with the user."
+  ],
+  "production_state": "stable pre-Usagi source retained; incomplete drafts archived separately in ../ImplementationDrafts",
+  "approved_date": "2026-10-22",
+  "approval_text": "합격. 계속 진행해줘"
+}

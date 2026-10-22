@@ -1,0 +1,26 @@
+{
+  "verified": "2026-10-22",
+  "sources": [
+    {
+      "url": "https://www.anime-chiikawa.jp/images/bg_top_usagi_01.png",
+      "page": "https://www.anime-chiikawa.jp/",
+      "path": "References/Official/bg_top_usagi_01.png",
+      "sha256": "77caf1e2d7fb599242e809884327704e305184db79d052e521f46c7c15e61454",
+      "role": "Official 2D Usagi shape/pose reference"
+    },
+    {
+      "url": "https://www.anime-chiikawa.jp/images/bg_top_usagi_dash.png",
+      "page": "https://www.anime-chiikawa.jp/",
+      "path": "References/Official/bg_top_usagi_dash.png",
+      "sha256": "754a63c6f4569a0bb827380e745905bcde91a68317aace6af5d651eb4ca956c5",
+      "role": "Official 2D Usagi shape/pose reference"
+    },
+    {
+      "url": "https://www.anime-chiikawa.jp/images/bg_foot_usagi.png",
+      "page": "https://www.anime-chiikawa.jp/",
+      "path": "References/Official/bg_foot_usagi.png",
+      "sha256": "333061ed0f098473c4a518ff9edfb86d812671d1aaad3e49a9aa85eb1c8a54cc",
+      "role": "Official 2D Usagi shape/pose reference"
+    }
+  ]
+}

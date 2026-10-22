@@ -1,0 +1,25 @@
+{
+  "verified": "2026-10-22",
+  "primary": [
+    {
+      "url": "https://www.anime-chiikawa.jp/images/bg_top_kuri_01.png",
+      "file": "Official/kurimanju-anime.png",
+      "use": "Crown cap, tiny side ears, cream body, small face, snack identity"
+    },
+    {
+      "url": "https://www.goodsmile.com/ja/product/1145554/ねんどろいど+くりまんじゅう",
+      "file": "Official/kurimanju-goodsmile.jpg",
+      "use": "Licensed product references for snack/cup and expression variations"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=5dTRQblIt-Q",
+      "use": "Official AniBox Korean episode; visible body/voice timing"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=0RZqg7KMlfo",
+      "use": "Official AniBox Korean episode; back view/short reaction"
+    }
+  ],
+  "design_boundary": "Camera, guitar and common training pole are fan app interactions shared with Hachiware, not claims of canonical Kurimanju possessions. The cup/snack set is a simplified prop, with no alcohol consumption simulation.",
+  "identity_review": "Six-view primary-reference model reviewed by agent under autonomous character implementation request; no claim of separate user approval."
+}

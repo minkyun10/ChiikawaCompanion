@@ -1,0 +1,104 @@
+[0/1] Planning build
+Building for production...
+[0/4] Write sources
+[1/4] Write swift-version--1AB21518FC5DEDBE.txt
+[3/5] Compiling ChiikawaCompanion ActivitySpotChecks.swift
+/Users/minkyun_park/Documents/ChiikawaCompanion/Sources/ChiikawaCompanion/Model.swift:154:9: error: 'self' used in property access 'visibleFriends' before all stored properties are initialized
+152 |             defaults.set(true, forKey: "chiikawaLifeV26Installed")
+153 |         }
+154 |         visibleFriends.formUnion(newlyIntroduced)
+    |         |- error: 'self' used in property access 'visibleFriends' before all stored properties are initialized
+    |         |- note: 'self.roaming' not initialized
+    |         |- note: 'self.chiikawaItems' not initialized
+    |         |- note: 'self.chiikawaAutomaticItems' not initialized
+    |         |- note: 'self.chiikawaAutomaticRest' not initialized
+    |         |- note: 'self.chiikawaFoodEnabled' not initialized
+    |         |- note: 'self.chiikawaStudyEnabled' not initialized
+    |         |- note: 'self.chiikawaAutomaticActivities' not initialized
+    |         |- note: 'self.chiikawaVoice' not initialized
+    |         |- note: 'self.enabledItems' not initialized
+    |         |- note: 'self.automaticItems' not initialized
+    |         |- note: 'self.expressive' not initialized
+    |         |- note: 'self.homeStyle' not initialized
+    |         |- note: 'self.automaticRest' not initialized
+    |         |- note: 'self.characterVoice' not initialized
+    |         |- note: 'self.characterVolume' not initialized
+    |         |- note: 'self.enabledActivitySpots' not initialized
+    |         `- note: 'self.automaticActivities' not initialized
+155 |         walkingFriends.formUnion(newlyIntroduced)
+156 |         defaults.set(roster.map(\.rawValue).sorted(), forKey: "introducedCompanionsV38")
+
+/Users/minkyun_park/Documents/ChiikawaCompanion/Sources/ChiikawaCompanion/Model.swift:155:9: error: 'self' used in property access 'walkingFriends' before all stored properties are initialized
+153 |         }
+154 |         visibleFriends.formUnion(newlyIntroduced)
+155 |         walkingFriends.formUnion(newlyIntroduced)
+    |         |- error: 'self' used in property access 'walkingFriends' before all stored properties are initialized
+    |         |- note: 'self.roaming' not initialized
+    |         |- note: 'self.chiikawaItems' not initialized
+    |         |- note: 'self.chiikawaAutomaticItems' not initialized
+    |         |- note: 'self.chiikawaAutomaticRest' not initialized
+    |         |- note: 'self.chiikawaFoodEnabled' not initialized
+    |         |- note: 'self.chiikawaStudyEnabled' not initialized
+    |         |- note: 'self.chiikawaAutomaticActivities' not initialized
+    |         |- note: 'self.chiikawaVoice' not initialized
+    |         |- note: 'self.enabledItems' not initialized
+    |         |- note: 'self.automaticItems' not initialized
+    |         |- note: 'self.expressive' not initialized
+    |         |- note: 'self.homeStyle' not initialized
+    |         |- note: 'self.automaticRest' not initialized
+    |         |- note: 'self.characterVoice' not initialized
+    |         |- note: 'self.characterVolume' not initialized
+    |         |- note: 'self.enabledActivitySpots' not initialized
+    |         `- note: 'self.automaticActivities' not initialized
+156 |         defaults.set(roster.map(\.rawValue).sorted(), forKey: "introducedCompanionsV38")
+157 |         defaults.set(visibleFriends.map(\.rawValue).sorted(), forKey: "visibleFriends")
+
+/Users/minkyun_park/Documents/ChiikawaCompanion/Sources/ChiikawaCompanion/Model.swift:157:22: error: 'self' used in property access 'visibleFriends' before all stored properties are initialized
+155 |         walkingFriends.formUnion(newlyIntroduced)
+156 |         defaults.set(roster.map(\.rawValue).sorted(), forKey: "introducedCompanionsV38")
+157 |         defaults.set(visibleFriends.map(\.rawValue).sorted(), forKey: "visibleFriends")
+    |                      |- error: 'self' used in property access 'visibleFriends' before all stored properties are initialized
+    |                      |- note: 'self.roaming' not initialized
+    |                      |- note: 'self.chiikawaItems' not initialized
+    |                      |- note: 'self.chiikawaAutomaticItems' not initialized
+    |                      |- note: 'self.chiikawaAutomaticRest' not initialized
+    |                      |- note: 'self.chiikawaFoodEnabled' not initialized
+    |                      |- note: 'self.chiikawaStudyEnabled' not initialized
+    |                      |- note: 'self.chiikawaAutomaticActivities' not initialized
+    |                      |- note: 'self.chiikawaVoice' not initialized
+    |                      |- note: 'self.enabledItems' not initialized
+    |                      |- note: 'self.automaticItems' not initialized
+    |                      |- note: 'self.expressive' not initialized
+    |                      |- note: 'self.homeStyle' not initialized
+    |                      |- note: 'self.automaticRest' not initialized
+    |                      |- note: 'self.characterVoice' not initialized
+    |                      |- note: 'self.characterVolume' not initialized
+    |                      |- note: 'self.enabledActivitySpots' not initialized
+    |                      `- note: 'self.automaticActivities' not initialized
+158 |         defaults.set(walkingFriends.map(\.rawValue).sorted(), forKey: "walkingFriends")
+159 |         chiikawaItems = restoredChiikawaItems
+
+/Users/minkyun_park/Documents/ChiikawaCompanion/Sources/ChiikawaCompanion/Model.swift:158:22: error: 'self' used in property access 'walkingFriends' before all stored properties are initialized
+156 |         defaults.set(roster.map(\.rawValue).sorted(), forKey: "introducedCompanionsV38")
+157 |         defaults.set(visibleFriends.map(\.rawValue).sorted(), forKey: "visibleFriends")
+158 |         defaults.set(walkingFriends.map(\.rawValue).sorted(), forKey: "walkingFriends")
+    |                      |- error: 'self' used in property access 'walkingFriends' before all stored properties are initialized
+    |                      |- note: 'self.roaming' not initialized
+    |                      |- note: 'self.chiikawaItems' not initialized
+    |                      |- note: 'self.chiikawaAutomaticItems' not initialized
+    |                      |- note: 'self.chiikawaAutomaticRest' not initialized
+    |                      |- note: 'self.chiikawaFoodEnabled' not initialized
+    |                      |- note: 'self.chiikawaStudyEnabled' not initialized
+    |                      |- note: 'self.chiikawaAutomaticActivities' not initialized
+    |                      |- note: 'self.chiikawaVoice' not initialized
+    |                      |- note: 'self.enabledItems' not initialized
+    |                      |- note: 'self.automaticItems' not initialized
+    |                      |- note: 'self.expressive' not initialized
+    |                      |- note: 'self.homeStyle' not initialized
+    |                      |- note: 'self.automaticRest' not initialized
+    |                      |- note: 'self.characterVoice' not initialized
+    |                      |- note: 'self.characterVolume' not initialized
+    |                      |- note: 'self.enabledActivitySpots' not initialized
+    |                      `- note: 'self.automaticActivities' not initialized
+159 |         chiikawaItems = restoredChiikawaItems
+160 |         chiikawaAutomaticItems = defaults.object(forKey: "chiikawaAutomaticItems") as? Bool ?? true

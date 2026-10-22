@@ -53,6 +53,9 @@ struct AttackBodyMetrics {
 struct AttackRegistration {
     let reference: AttackBodyMetrics
     let frames: [AttackBodyMetrics]
+    init(referenceMetrics: AttackBodyMetrics, frames: [AttackBodyMetrics]) {
+        reference = referenceMetrics; self.frames = frames
+    }
     init?(images: [NSImage], reference: NSImage?) {
         guard let reference, let body = AttackBodyMetrics.measure(reference) else { return nil }
         let frames = images.compactMap(AttackBodyMetrics.measure)
@@ -61,8 +64,9 @@ struct AttackRegistration {
     }
     func destination(frame: Int, in body: NSRect) -> NSRect {
         let source = frames[frame]
-        let side = min(body.width,body.height), unit = side/256
-        let square = NSRect(x: body.midX-side/2,y: body.midY-side/2,width: side,height: side)
+        let unit = min(body.width/reference.size.width, body.height/reference.size.height)
+        let square = NSRect(x: body.midX-reference.size.width*unit/2,y: body.midY-reference.size.height*unit/2,
+                            width: reference.size.width*unit,height: reference.size.height*unit)
         let scale = reference.head.width/source.head.width
         return NSRect(x: square.minX+(reference.head.midX-source.head.midX*scale)*unit,
             y: square.minY+(reference.feet-source.feet*scale)*unit,
@@ -85,7 +89,8 @@ final class AttackOverlayView: NSView {
     required init?(coder: NSCoder) { fatalError("init(coder:) is unavailable") }
     override func draw(_ dirtyRect: NSRect) {
         NSGraphicsContext.current?.cgContext.clear(bounds)
-        if friend == .chiikawa { _ = ChiikawaAttackSprites.shared.draw(in: body,time: time) }
+        if friend.isExpansion { RosterSprites.shared(friend).draw(action: .attack, in: body, elapsed: time) }
+        else if friend == .chiikawa { _ = ChiikawaAttackSprites.shared.draw(in: body,time: time) }
         else { _ = WeaponAttackSprites.shared.draw(in: body,time: time) }
     }
 }
@@ -96,6 +101,7 @@ final class AttackOverlayView: NSView {
 final class AttackOverlay {
     let panel: FriendPanel
     let view: AttackOverlayView
+    private var lastFrame: Int?
     init(friend: Friend) {
         view = AttackOverlayView(friend: friend)
         panel = FriendPanel(contentRect: .zero,styleMask: [.borderless,.nonactivatingPanel],backing: .buffered,defer: false)
@@ -107,21 +113,25 @@ final class AttackOverlay {
     }
     func update(actor: FriendActor) {
         let active = actor.panel.isVisible && actor.view.action == .attack && !actor.view.isDragging
-        let registration = actor.friend == .chiikawa ? ChiikawaAttackSprites.shared.registration : WeaponAttackSprites.shared.registration
+        let registration = actor.friend.isExpansion ? RosterSprites.shared(actor.friend).registration : actor.friend == .chiikawa ? ChiikawaAttackSprites.shared.registration : WeaponAttackSprites.shared.registration
         guard active, let registration else {
             if !actor.panel.isVisible || actor.view.isDragging {
                 actor.armedHoverContact = nil; actor.wasHovered = false
             }
             if actor.view.attackUsesOverlay { actor.view.attackUsesOverlay = false; actor.view.needsDisplay = true }
-            if panel.isVisible { panel.orderOut(nil) }; return
+            if panel.isVisible { panel.orderOut(nil) }; lastFrame=nil; return
         }
         let body = actor.panel.frame
         let extent = registration.extent(in: body)
         if panel.frame != extent { panel.setFrame(extent,display: false) }
-        view.body = NSRect(x: body.minX-extent.minX,y: body.minY-extent.minY,width: body.width,height: body.height)
-        view.time = actor.view.actionTime ?? actor.view.time
+        let localBody=NSRect(x: body.minX-extent.minX,y: body.minY-extent.minY,width: body.width,height: body.height)
+        let geometryChanged=view.body != localBody
+        view.body=localBody;view.time=actor.view.actionTime ?? actor.view.time
+        let frame=actor.friend == .chiikawa ? ChiikawaAttackSprites.frameIndex(time:view.time) : WeaponAttackSprites.frameIndex(time:view.time)
+        let repaint=geometryChanged || lastFrame != frame || !panel.isVisible
+        lastFrame=frame
         if !actor.view.attackUsesOverlay { actor.view.attackUsesOverlay = true; actor.view.needsDisplay = true }
         if !panel.isVisible { panel.order(.above,relativeTo: actor.panel.windowNumber) }
-        view.needsDisplay = true
+        if repaint { view.needsDisplay = true }
     }
 }

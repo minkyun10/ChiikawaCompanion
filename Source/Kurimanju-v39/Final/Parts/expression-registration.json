@@ -1,0 +1,98 @@
+[
+  {
+    "name" : "laugh",
+    "sha256" : "26d02e7ababdd2b13cdd0ec68bb1b1e85207f913413f7ac2eb17c373e30715a7",
+    "sourceCell" : [
+      0,
+      0,
+      512,
+      512
+    ],
+    "trim" : [
+      95,
+      71,
+      406,
+      403
+    ]
+  },
+  {
+    "name" : "attack",
+    "sha256" : "8d3dbd1cc49aeb54d5873a7c5c32b39d8e137b53d4b568a0f1b652f0c72ad815",
+    "sourceCell" : [
+      512,
+      0,
+      512,
+      512
+    ],
+    "trim" : [
+      53,
+      71,
+      406,
+      403
+    ]
+  },
+  {
+    "name" : "study",
+    "sha256" : "e85bf7de124c8d69d533b1616f04b71c473e4996226f1d29b24f0c10f7ef1fb0",
+    "sourceCell" : [
+      1024,
+      0,
+      512,
+      512
+    ],
+    "trim" : [
+      11,
+      71,
+      406,
+      403
+    ]
+  },
+  {
+    "name" : "surprised",
+    "sha256" : "5d0cbf0ab4bd950c7212044baab1b57bdfb5d2d5dc107af8a6370f16ec075a26",
+    "sourceCell" : [
+      0,
+      512,
+      512,
+      512
+    ],
+    "trim" : [
+      95,
+      32,
+      406,
+      400
+    ]
+  },
+  {
+    "name" : "sleep",
+    "sha256" : "3283949e91aa40cb138fd73725cf573dae5e391ca4bdef19e74951b890b5c1a1",
+    "sourceCell" : [
+      512,
+      512,
+      512,
+      512
+    ],
+    "trim" : [
+      53,
+      33,
+      406,
+      399
+    ]
+  },
+  {
+    "name" : "neutral",
+    "sha256" : "60ad83cf4fde23c50a12a8643e3b8fe5031c854f1e82acd3653720d2a9845fd0",
+    "sourceCell" : [
+      1024,
+      512,
+      512,
+      512
+    ],
+    "trim" : [
+      11,
+      32,
+      406,
+      400
+    ]
+  }
+]

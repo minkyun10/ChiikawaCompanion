@@ -123,7 +123,10 @@ enum ActivitySpotArtwork {
             let bowl = NSBezierPath(); bowl.move(to: NSPoint(x: 24,y: 49)); bowl.line(to: NSPoint(x: 81,y: 49))
             bowl.curve(to: NSPoint(x: 52,y: 24), controlPoint1: NSPoint(x: 77,y: 29), controlPoint2: NSPoint(x: 66,y: 24))
             bowl.curve(to: NSPoint(x: 24,y: 49), controlPoint1: NSPoint(x: 36,y: 24), controlPoint2: NSPoint(x: 28,y: 29))
-            NSColor(hex: owner == .chiikawa ? 0xE8B7C7 : 0xA3C9A2).setFill()
+            let bowlColor: UInt32
+            switch owner { case .chiikawa: bowlColor=0xE8B7C7;case .usagi: bowlColor=0xE8CD83
+            case .kurimanju: bowlColor=0xCBB395;case .momonga: bowlColor=0xC7C5E6;case .hachiware: bowlColor=0xA3C9A2 }
+            NSColor(hex: bowlColor).setFill()
             bowl.fill(); ink.setStroke(); bowl.lineWidth = 2.5; bowl.stroke()
             line([NSPoint(x: 43,y: 23),NSPoint(x: 61,y: 23)], width: 3)
             ItemArtwork.path([NSPoint(x: 40,y: 61),NSPoint(x: 83,y: 78)], width: 3, color: NSColor(hex: 0xAD7954))

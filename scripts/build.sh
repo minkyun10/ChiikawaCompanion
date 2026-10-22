@@ -16,8 +16,8 @@ cat > "$app_dir/Contents/Info.plist" <<'PLIST'
   <key>CFBundleName</key><string>ChiikawaCompanion</string>
   <key>CFBundleDisplayName</key><string>치이카와 데스크톱</string>
   <key>CFBundleExecutable</key><string>ChiikawaCompanion</string>
-  <key>CFBundleVersion</key><string>39</string>
-  <key>CFBundleShortVersionString</key><string>0.17.7</string>
+  <key>CFBundleVersion</key><string>44</string>
+  <key>CFBundleShortVersionString</key><string>0.20.1</string>
   <key>CFBundlePackageType</key><string>APPL</string>
   <key>CFBundleIconFile</key><string>AppIcon</string>
   <key>LSMinimumSystemVersion</key><string>13.0</string>
@@ -26,6 +26,13 @@ cat > "$app_dir/Contents/Info.plist" <<'PLIST'
 </dict></plist>
 PLIST
 "$binary_dir/ChiikawaCompanion" --render-artwork "$project_dir/build/artwork"
+# Render native animation once during packaging; the running app only decodes atlases.
+"$binary_dir/ChiikawaCompanion" --render-roster "$project_dir/build/roster"
+mkdir -p "$app_dir/Contents/Resources/Roster"
+for friend in usagi kurimanju momonga; do
+  mkdir -p "$app_dir/Contents/Resources/Roster/$friend"
+  cp "$project_dir/build/roster/$friend/"*-24.png "$project_dir/build/roster/$friend/"*-12.png "$app_dir/Contents/Resources/Roster/$friend/"
+done
 icon_dir="$project_dir/build/AppIcon.iconset"
 mkdir -p "$icon_dir"
 for size in 16 32 128 256 512; do

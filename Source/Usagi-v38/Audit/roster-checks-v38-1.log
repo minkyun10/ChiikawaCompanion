@@ -1,0 +1,45 @@
+PASS: new companions migrate once without unhiding old friends or resetting old walking choices
+PASS: hiding a newly introduced companion survives subsequent launches
+PASS: 우사기: eight walking directions and every action load
+PASS: 우사기: down contains 24 distinct chronological drawings
+PASS: 우사기: up contains 24 distinct chronological drawings
+PASS: 우사기: left contains 24 distinct chronological drawings
+PASS: 우사기: right contains 24 distinct chronological drawings
+PASS: 우사기: down-left contains 24 distinct chronological drawings
+PASS: 우사기: down-right contains 24 distinct chronological drawings
+PASS: 우사기: up-left contains 24 distinct chronological drawings
+PASS: 우사기: up-right contains 24 distinct chronological drawings
+PASS: 우사기: walking canvases retain transparent margins and the full ear/body viewport
+PASS: 우사기: native panel has the correct nonactivating desktop geometry
+PASS: 우사기: native walking moves continuously with no resets or teleporting
+PASS: 우사기: walking leaves every character's ground items and activity coordinates independent
+PASS: 우사기: actual drag callbacks reset only the route and preserve prop positions
+PASS: 우사기: a prop dropped on a different owner is rejected
+PASS: 우사기: direct drag drop equips immediately with automatic pickup disabled
+PASS: 우사기: swapping drops exactly the old owned item
+PASS: 우사기: manual drop restores one instance of each enabled item
+PASS: 우사기: ground item seek follows a walking route
+PASS: 우사기: desk walks the final approach before starting its matching action
+PASS: 우사기: hover preserves the selected life action and independent spot
+PASS: 우사기: furball walks the final approach before starting its matching action
+PASS: 우사기: hover preserves the selected life action and independent spot
+PASS: 우사기: rice walks the final approach before starting its matching action
+PASS: 우사기: hover preserves the selected life action and independent spot
+PASS: 우사기: weapon handover succeeds
+PASS: 우사기: weapon hover selects attack exclusively
+PASS: 우사기: three-second hover retains one attack clock, fixed scale and stationary gait
+PASS: 우사기: stable attack mask includes the complete expanded weapon viewport
+PASS: 우사기: foreground occlusion releases armed hover
+PASS: 우사기: leaving hover returns to walking in one display update
+PASS: 우사기: an explicit study command keeps priority over armed hover
+PASS: 우사기: autonomous movement and armed hover never start audio
+PASS: 우사기: clicks choose matching local captions without immediate repeats
+PASS: 우사기: home command begins an actual walk to the common entrance
+PASS: 우사기: entering the house drops equipment and sleeps using its own routine
+PASS: 우사기: house skin changes retain the single fixed window and sleeping clock
+PASS: 우사기: waking finishes and restores the character outside the shared doorway
+PASS: 우사기: hiding cancels only its own action, audio and overlay
+PASS: 우사기: independent item, rest and voice options persist and disabled props disappear
+PASS: 우사기: every inventory key retains its explicit owner
+PASS: every active companion owns exactly one independent controller and native actor
+44 roster checks passed.

@@ -18,7 +18,7 @@ struct RecordingCatalog: Decodable {
     static let fileName = "hachiware-recordings-v13.json"
     static let shared = load(fileName, speaker: "손정민")
     static let chiikawa = load("chiikawa-recordings-v26.json", speaker: "이주은")
-    private static func load(_ fileName: String, speaker: String) -> RecordingCatalog {
+    static func load(_ fileName: String, speaker: String) -> RecordingCatalog {
         guard let url = resourceURL(file: fileName), let data = try? Data(contentsOf: url),
               let result = try? JSONDecoder().decode(RecordingCatalog.self, from: data),
               result.isValid else {

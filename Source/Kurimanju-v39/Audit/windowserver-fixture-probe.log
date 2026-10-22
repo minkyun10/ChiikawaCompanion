@@ -1,0 +1,13 @@
+cover 35874 NSWindowLevel(rawValue: 4) false true hit 35874
+["kCGWindowSharingState": 1, "kCGWindowNumber": 35874, "kCGWindowBounds": {
+    Height = 24;
+    Width = 24;
+    X = 708;
+    Y = 414;
+}, "kCGWindowStoreType": 1, "kCGWindowName": , "kCGWindowAlpha": 1, "kCGWindowMemoryUsage": 2368, "kCGWindowOwnerPID": 74799, "kCGWindowIsOnscreen": 1, "kCGWindowOwnerName": swift-frontend, "kCGWindowLayer": 4]
+["kCGWindowIsOnscreen": 1, "kCGWindowAlpha": 1, "kCGWindowOwnerPID": 74799, "kCGWindowNumber": 35873, "kCGWindowMemoryUsage": 2368, "kCGWindowSharingState": 1, "kCGWindowOwnerName": swift-frontend, "kCGWindowName": , "kCGWindowStoreType": 1, "kCGWindowBounds": {
+    Height = 150;
+    Width = 132;
+    X = 654;
+    Y = 351;
+}, "kCGWindowLayer": 3]

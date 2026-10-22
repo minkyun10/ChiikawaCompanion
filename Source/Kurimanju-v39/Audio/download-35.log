@@ -1,0 +1,13 @@
+[youtube] Extracting URL: https://www.youtube.com/watch?v=5dTRQblIt-Q
+[youtube] 5dTRQblIt-Q: Downloading webpage
+WARNING: [youtube] No supported JavaScript runtime could be found. Only deno is enabled by default; to use another runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing one
+[youtube] 5dTRQblIt-Q: Downloading visionos player API JSON
+[youtube] 5dTRQblIt-Q: Downloading m3u8 information
+[info] 5dTRQblIt-Q: Downloading 1 format(s): 396+251
+[download] Destination: Source/Kurimanju-v39/Audio/Originals/episode-35.f396.mp4
+[download]   0.1% of  920.81KiB at  Unknown B/s ETA Unknown[download]   0.3% of  920.81KiB at  Unknown B/s ETA Unknown[download]   0.8% of  920.81KiB at  Unknown B/s ETA Unknown[download]   1.6% of  920.81KiB at   13.35MiB/s ETA 00:00  [download]   3.4% of  920.81KiB at    1.90MiB/s ETA 00:00[download]   6.8% of  920.81KiB at    1.99MiB/s ETA 00:00[download]  13.8% of  920.81KiB at    2.40MiB/s ETA 00:00[download]  27.7% of  920.81KiB at    2.69MiB/s ETA 00:00[download]  55.5% of  920.81KiB at    4.14MiB/s ETA 00:00[download] 100.0% of  920.81KiB at    5.57MiB/s ETA 00:00[download] 100% of  920.81KiB in 00:00:00 at 4.46MiB/s   
+[download] Destination: Source/Kurimanju-v39/Audio/Originals/episode-35.f251.webm
+[download]   0.1% of    1.19MiB at  Unknown B/s ETA Unknown[download]   0.2% of    1.19MiB at  Unknown B/s ETA Unknown[download]   0.6% of    1.19MiB at    5.94MiB/s ETA 00:00  [download]   1.2% of    1.19MiB at   10.35MiB/s ETA 00:00[download]   2.5% of    1.19MiB at   18.24MiB/s ETA 00:00[download]   5.2% of    1.19MiB at    9.80MiB/s ETA 00:00[download]  10.4% of    1.19MiB at    9.71MiB/s ETA 00:00[download]  20.9% of    1.19MiB at   14.44MiB/s ETA 00:00[download]  41.9% of    1.19MiB at   19.20MiB/s ETA 00:00[download]  83.9% of    1.19MiB at   28.12MiB/s ETA 00:00[download] 100.0% of    1.19MiB at   31.16MiB/s ETA 00:00[download] 100% of    1.19MiB in 00:00:00 at 11.73MiB/s  
+[Merger] Merging formats into "Source/Kurimanju-v39/Audio/Originals/episode-35.mkv"
+Deleting original file Source/Kurimanju-v39/Audio/Originals/episode-35.f251.webm (pass -k to keep)
+Deleting original file Source/Kurimanju-v39/Audio/Originals/episode-35.f396.mp4 (pass -k to keep)

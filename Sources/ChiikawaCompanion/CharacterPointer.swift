@@ -76,26 +76,29 @@ final class ArmedPointerArtwork {
     private var attackMasks: [Friend: CharacterPointerMask] = [:]
 
     func walking(_ friend: Friend, pose: HachiwarePose, facing: CGFloat) -> CharacterPointerMask {
+        let body = NSRect(origin: .zero, size: friend.actorSize)
         let key = "\(friend.rawValue)-\(pose.rawValue)-\(facing < 0)"
         if let mask = walkingMasks[key] { return mask }
         // The normal actor clips equipped artwork to its original panel.
-        let mask = CharacterPointerMask(rect: Self.body) {
-            let count = friend == .chiikawa ? 24 : pose.frameCount
+        let mask = CharacterPointerMask(rect: body) {
+            let count = friend == .chiikawa || friend.isExpansion ? 24 : pose.frameCount
             for index in 0..<count {
-                FriendArtwork.draw(friend, in: Self.body, time: 0, walking: true, facing: facing,
+                FriendArtwork.draw(friend, in: body, time: 0, walking: true, facing: facing,
                     walkPhase: (Double(index) + 0.25) / Double(count) * 2 * .pi, pose: pose,
                     equipped: friend == .hachiware ? .sasumata : nil,
-                    chiikawaItem: friend == .chiikawa ? .pinkSasumata : nil)
+                    chiikawaItem: friend == .chiikawa ? .pinkSasumata : nil,
+                    rosterVisual: friend.isExpansion ? RosterVisual(equipped: .weapon) : nil)
             }
         }
         walkingMasks[key] = mask; return mask
     }
     func attack(_ friend: Friend) -> CharacterPointerMask {
         if let mask = attackMasks[friend] { return mask }
-        let registration = friend == .chiikawa ? ChiikawaAttackSprites.shared.registration : WeaponAttackSprites.shared.registration
-        let mask = CharacterPointerMask(rect: registration?.extent(in: Self.body) ?? Self.body) {
+        let body = NSRect(origin: .zero, size: friend.actorSize)
+        let registration = friend.isExpansion ? RosterSprites.shared(friend).registration : friend == .chiikawa ? ChiikawaAttackSprites.shared.registration : WeaponAttackSprites.shared.registration
+        let mask = CharacterPointerMask(rect: registration?.extent(in: body) ?? body) {
             for index in 0..<WeaponAttackSprites.frameCount {
-                FriendArtwork.draw(friend, in: Self.body, action: .attack, actionTime: (Double(index) + 0.25) * 0.1)
+                FriendArtwork.draw(friend, in: body, action: .attack, actionTime: (Double(index) + 0.25) * 0.1)
             }
         }
         attackMasks[friend] = mask; return mask
@@ -106,8 +109,8 @@ extension FriendActor {
     func pointerIsHovering(at point: NSPoint, armed: Bool, canReach: Bool?) -> Bool {
         guard !view.isDragging else { armedHoverContact = nil; return false }
         let body = panel.frame
-        let local = NSPoint(x: (point.x - body.minX) * 132 / body.width,
-                            y: (point.y - body.minY) * 150 / body.height)
+        let local = NSPoint(x: (point.x - body.minX) * friend.actorSize.width / body.width,
+                            y: (point.y - body.minY) * friend.actorSize.height / body.height)
         let entry: CharacterPointerMask?
         let hit: Bool
         if armed {

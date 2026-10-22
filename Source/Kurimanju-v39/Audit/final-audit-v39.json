@@ -1,0 +1,647 @@
+{
+  "verified": "2026-10-22",
+  "character": "kurimanju",
+  "status": "passed",
+  "app_version": "0.19.0",
+  "app_build": 41,
+  "app_binary_sha256": "e8bbb6cedd73dab827ab5239879bacc1f221c1cc5a8b1367525f8f8ba636e43e",
+  "functional_regression": {
+    "checks": 552,
+    "log": "packaged-self-test-v39-fixture.log",
+    "sha256": "2cc2487ec832b900dbf17f5f653f4879afbc0004d9e3ea22ea3baee6868c6e04"
+  },
+  "native_artifact_checks": {
+    "checks": 212,
+    "log": "native-asset-checks-reviewed.log",
+    "sha256": "021db6173882da7c9363aaff1c9f6daf37995d5d2a445a6872dff7c35d1dbd9f"
+  },
+  "baseline_resources_preserved": 51,
+  "new_packaged_resources": [
+    {
+      "path": "kurimanju-rig-back-diagonal-v38.png",
+      "sha256": "3b4750a80eb9df30b56eace65922ee676fc5d1216a1cd8e0da0320a5ba9e3e55"
+    },
+    {
+      "path": "kurimanju-rig-arm-v38.png",
+      "sha256": "0be08867319a8192e8f8d2ac2ab05bf60d52748d0399fd093aa48057a0d885ba"
+    },
+    {
+      "path": "kurimanju-expression-neutral-v38.png",
+      "sha256": "60ad83cf4fde23c50a12a8643e3b8fe5031c854f1e82acd3653720d2a9845fd0"
+    },
+    {
+      "path": "kurimanju-expression-attack-v38.png",
+      "sha256": "8d3dbd1cc49aeb54d5873a7c5c32b39d8e137b53d4b568a0f1b652f0c72ad815"
+    },
+    {
+      "path": "kurimanju-expression-sleep-v38.png",
+      "sha256": "3283949e91aa40cb138fd73725cf573dae5e391ca4bdef19e74951b890b5c1a1"
+    },
+    {
+      "path": "kurimanju-expression-study-v38.png",
+      "sha256": "e85bf7de124c8d69d533b1616f04b71c473e4996226f1d29b24f0c10f7ef1fb0"
+    },
+    {
+      "path": "kurimanju-rig-front-v38.png",
+      "sha256": "8908afdd84efb428137d015e2075c69b28a8ef177ab2e9598d5aac0958815557"
+    },
+    {
+      "path": "kurimanju-rig-back-v38.png",
+      "sha256": "385e40be6322893d4d4ea3e17a6eef9c842cab0f10afcbe71198015fb42c420a"
+    },
+    {
+      "path": "kurimanju-expression-laugh-v38.png",
+      "sha256": "26d02e7ababdd2b13cdd0ec68bb1b1e85207f913413f7ac2eb17c373e30715a7"
+    },
+    {
+      "path": "kurimanju-rig-side-v38.png",
+      "sha256": "b3628b86264a9091ac4bc971258d2c2f99ed952ceb618c1772a7bff6834a3c9e"
+    },
+    {
+      "path": "kurimanju-rig-foot-v38.png",
+      "sha256": "011394d99242f7a19e0feca6aa8137bb8e46724d9832fc261a01f3ccd113df97"
+    },
+    {
+      "path": "kurimanju-expression-surprised-v38.png",
+      "sha256": "5d0cbf0ab4bd950c7212044baab1b57bdfb5d2d5dc107af8a6370f16ec075a26"
+    },
+    {
+      "path": "kurimanju-rig-front-diagonal-v38.png",
+      "sha256": "4060de4e618fb762cb87d98c6b8f061187055923393312b7b4ad67ad99d42fdb"
+    },
+    {
+      "path": "Voice/kurimanju-relax-v38.m4a",
+      "sha256": "01589fb30fa24fad1ef5093caa042b66fdb17aca8551ec0c1a99d570f4564211"
+    },
+    {
+      "path": "Voice/kurimanju-refresh-v38.m4a",
+      "sha256": "ab4317ee9a1382e63e9b7dd6ecda766e341b0a66fda7fb459777e20a126db365"
+    },
+    {
+      "path": "Voice/kurimanju-satisfied-v38.m4a",
+      "sha256": "d15caa3d8034dca9fa2674f4f7834b3a02a051b707a0b00fc1ba4e645003edd6"
+    },
+    {
+      "path": "Voice/kurimanju-recordings-v38.json",
+      "sha256": "24f9ab18a73da82d2e70fbc80ee54d9572b0803b95ab5f79ed4185cb525860cb"
+    },
+    {
+      "path": "Voice/kurimanju-oyster-v38.m4a",
+      "sha256": "9aaddf203b53ef49742f7acd38349339b519ed322aa56c329f97c4b85128b353"
+    }
+  ],
+  "native_ui": "native-ui-v39.json",
+  "visual_review": [
+    "../Final/Native-Reviewed/kurimanju/eight-directions.png",
+    "../Final/Native-Reviewed/kurimanju/actions-preview.png"
+  ],
+  "criteria": [
+    {
+      "id": "official-reference-provenance",
+      "acceptance": "Keep user references and primary-source provenance with generated assets; do not present fan additions as canonical.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v39-fixture.log",
+        "native-asset-checks-reviewed.log",
+        "native-ui-v39.json",
+        "../Final/Native-Reviewed/kurimanju",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "tpose-front-side-back-top-diagonals",
+      "acceptance": "Review a consistent six-view primary-reference identity before motion; agent review under the autonomous request, not a separate user approval.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v39-fixture.log",
+        "native-asset-checks-reviewed.log",
+        "native-ui-v39.json",
+        "../Final/Native-Reviewed/kurimanju",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "8-directions-24frame-walk",
+      "acceptance": "Render all eight directions in chronological 24-frame left/right cycles for the new characters.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v39-fixture.log",
+        "native-asset-checks-reviewed.log",
+        "native-ui-v39.json",
+        "../Final/Native-Reviewed/kurimanju",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "matched-left-right-foot-cycle",
+      "acceptance": "Use one matched step trajectory with a half-cycle offset for the opposite foot.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v39-fixture.log",
+        "native-asset-checks-reviewed.log",
+        "native-ui-v39.json",
+        "../Final/Native-Reviewed/kurimanju",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "attached-arm-leg-contours",
+      "acceptance": "Keep short arms and feet visually connected to the body without changing their reviewed motion.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v39-fixture.log",
+        "native-asset-checks-reviewed.log",
+        "native-ui-v39.json",
+        "../Final/Native-Reviewed/kurimanju",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "body-size-and-foot-registration",
+      "acceptance": "Retain walking body scale, crown position and foot ground level when actions and attacks begin.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v39-fixture.log",
+        "native-asset-checks-reviewed.log",
+        "native-ui-v39.json",
+        "../Final/Native-Reviewed/kurimanju",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "distance-driven-gait",
+      "acceptance": "Advance walking phase by actual displayed path length, preserving phase during pauses and drags.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v39-fixture.log",
+        "native-asset-checks-reviewed.log",
+        "native-ui-v39.json",
+        "../Final/Native-Reviewed/kurimanju",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "continuous-roaming-without-teleport",
+      "acceptance": "Continue full-desktop walking without snapping to nearby activities or restarting after display observations.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v39-fixture.log",
+        "native-asset-checks-reviewed.log",
+        "native-ui-v39.json",
+        "../Final/Native-Reviewed/kurimanju",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "hover-reaction-and-next-tick-release",
+      "acceptance": "React only while hovered and release to the user's walking state within the next sub-100ms update.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v39-fixture.log",
+        "native-asset-checks-reviewed.log",
+        "native-ui-v39.json",
+        "../Final/Native-Reviewed/kurimanju",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "native-foreground-occlusion",
+      "acceptance": "Show above desktop icons but below app windows, and reject hover through foreground windows.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v39-fixture.log",
+        "native-asset-checks-reviewed.log",
+        "native-ui-v39.json",
+        "../Final/Native-Reviewed/kurimanju",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "armed-exclusive-attack-and-stable-hit-area",
+      "acceptance": "Armed hover uses only attack animation with one uninterrupted clock; all visible weapon/body pixels remain interactive.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v39-fixture.log",
+        "native-asset-checks-reviewed.log",
+        "native-ui-v39.json",
+        "../Final/Native-Reviewed/kurimanju",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "click-dialogue-random-no-repeat",
+      "acceptance": "Choose uniformly from the character's click entries without immediate repeats and show the matching text.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v39-fixture.log",
+        "native-asset-checks-reviewed.log",
+        "native-ui-v39.json",
+        "../Final/Native-Reviewed/kurimanju",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "click-only-voice-local-playback",
+      "acceptance": "Play authentic available clips only on click or explicit preview; no sound during autonomous motion or hover.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v39-fixture.log",
+        "native-asset-checks-reviewed.log",
+        "native-ui-v39.json",
+        "../Final/Native-Reviewed/kurimanju",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "voice-mute-volume-preview-stop",
+      "acceptance": "Provide mute, volume, preview and stop; replace rapid clicks without overlap and handle missing clips honestly.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v39-fixture.log",
+        "native-asset-checks-reviewed.log",
+        "native-ui-v39.json",
+        "../Final/Native-Reviewed/kurimanju",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "character-drag-clamp-and-route-reset",
+      "acceptance": "Clamp dragging to a usable desktop and resume from the real released position with the old route cleared.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v39-fixture.log",
+        "native-asset-checks-reviewed.log",
+        "native-ui-v39.json",
+        "../Final/Native-Reviewed/kurimanju",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "independent-visible-walking-recall",
+      "acceptance": "Allow independent visibility, walking and recall for each character without changing other characters.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v39-fixture.log",
+        "native-asset-checks-reviewed.log",
+        "native-ui-v39.json",
+        "../Final/Native-Reviewed/kurimanju",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "settings-persistence-migration",
+      "acceptance": "Persist each character's controls, migrate old preferences and introduce new characters without resetting saved choices.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v39-fixture.log",
+        "native-asset-checks-reviewed.log",
+        "native-ui-v39.json",
+        "../Final/Native-Reviewed/kurimanju",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "independent-ground-prop-coordinates",
+      "acceptance": "Store ground item positions independently of character movement, recall and actions.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v39-fixture.log",
+        "native-asset-checks-reviewed.log",
+        "native-ui-v39.json",
+        "../Final/Native-Reviewed/kurimanju",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "prop-click-to-seek",
+      "acceptance": "Click a ground item to request a real walking journey even when automatic pickup is disabled.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v39-fixture.log",
+        "native-asset-checks-reviewed.log",
+        "native-ui-v39.json",
+        "../Final/Native-Reviewed/kurimanju",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "proximity-pickup-and-cooldowns",
+      "acceptance": "Pick up touched/nearby items reliably, exclude dragged items and apply drop/swap cooldowns.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v39-fixture.log",
+        "native-asset-checks-reviewed.log",
+        "native-ui-v39.json",
+        "../Final/Native-Reviewed/kurimanju",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "direct-drag-drop-equip-owner-check",
+      "acceptance": "Dropping an enabled owned item on its visible character equips immediately without waiting for auto pickup.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v39-fixture.log",
+        "native-asset-checks-reviewed.log",
+        "native-ui-v39.json",
+        "../Final/Native-Reviewed/kurimanju",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "equipment-swap-drop-hide",
+      "acceptance": "Swap or drop equipment without duplication, and remove disabled equipment from ground and hands.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v39-fixture.log",
+        "native-asset-checks-reviewed.log",
+        "native-ui-v39.json",
+        "../Final/Native-Reviewed/kurimanju",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "camera-action",
+      "acceptance": "Carry and use a camera with an independent temporary performance that yields back to walking.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v39-fixture.log",
+        "native-asset-checks-reviewed.log",
+        "native-ui-v39.json",
+        "../Final/Native-Reviewed/kurimanju",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "guitar-action",
+      "acceptance": "Carry and play a guitar with an independent temporary performance that yields back to walking.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v39-fixture.log",
+        "native-asset-checks-reviewed.log",
+        "native-ui-v39.json",
+        "../Final/Native-Reviewed/kurimanju",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "weapon-action",
+      "acceptance": "Carry the chosen character weapon and provide reviewed expressive attack frames on hover.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v39-fixture.log",
+        "native-asset-checks-reviewed.log",
+        "native-ui-v39.json",
+        "../Final/Native-Reviewed/kurimanju",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "desk-study-with-tongue",
+      "acceptance": "Walk to a desk and study, preserving the requested tongue detail throughout the loop.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v39-fixture.log",
+        "native-asset-checks-reviewed.log",
+        "native-ui-v39.json",
+        "../Final/Native-Reviewed/kurimanju",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "food-eat",
+      "acceptance": "Walk to a food bowl and eat, with the corresponding ground bowl hidden only during its own action.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v39-fixture.log",
+        "native-asset-checks-reviewed.log",
+        "native-ui-v39.json",
+        "../Final/Native-Reviewed/kurimanju",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "furball-spit-up",
+      "acceptance": "Provide the Hachiware-style non-graphic furball action and finish it once, except where the user explicitly excludes it.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v39-fixture.log",
+        "native-asset-checks-reviewed.log",
+        "native-ui-v39.json",
+        "../Final/Native-Reviewed/kurimanju",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "independent-activity-prop-drag",
+      "acceptance": "Move desk, furball and bowl as independent screen objects without moving the character or unrelated props.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v39-fixture.log",
+        "native-asset-checks-reviewed.log",
+        "native-ui-v39.json",
+        "../Final/Native-Reviewed/kurimanju",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "activity-approach-arrival-exit-latch",
+      "acceptance": "Approach within 34pt, walk to 2pt arrival, and require exit/cooldown before another automatic trigger.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v39-fixture.log",
+        "native-asset-checks-reviewed.log",
+        "native-ui-v39.json",
+        "../Final/Native-Reviewed/kurimanju",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "manual-actions-and-stop",
+      "acceptance": "Offer direct action controls and immediate stop; clicks, dragging and hiding cancel the correct action.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v39-fixture.log",
+        "native-asset-checks-reviewed.log",
+        "native-ui-v39.json",
+        "../Final/Native-Reviewed/kurimanju",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "context-menu-and-settings-and-status-menu",
+      "acceptance": "Expose per-character controls in settings, character context menus and the status menu.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v39-fixture.log",
+        "native-asset-checks-reviewed.log",
+        "native-ui-v39.json",
+        "../Final/Native-Reviewed/kurimanju",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "shared-single-fixed-house",
+      "acceptance": "Keep exactly one house at the existing Hachiware position with default Hachiware style, regardless of roster size.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v39-fixture.log",
+        "native-asset-checks-reviewed.log",
+        "native-ui-v39.json",
+        "../Final/Native-Reviewed/kurimanju",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "walk-home-and-drop-equipment",
+      "acceptance": "Walk to the common entrance, drop carried equipment and enter without moving ground props.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v39-fixture.log",
+        "native-asset-checks-reviewed.log",
+        "native-ui-v39.json",
+        "../Final/Native-Reviewed/kurimanju",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "sleep-entry-breathing-wake",
+      "acceptance": "Show entry, breathing sleep and return to walking; keep independent per-character rest clocks.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v39-fixture.log",
+        "native-asset-checks-reviewed.log",
+        "native-ui-v39.json",
+        "../Final/Native-Reviewed/kurimanju",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "automatic-rest-toggle",
+      "acceptance": "Allow independent automatic rest controls with the baseline 90s return and 20s sleep defaults.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v39-fixture.log",
+        "native-asset-checks-reviewed.log",
+        "native-ui-v39.json",
+        "../Final/Native-Reviewed/kurimanju",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "house-skin-independent-membership",
+      "acceptance": "Changing the house skin must not change its position, identity, sleeping occupants or rest clocks.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v39-fixture.log",
+        "native-asset-checks-reviewed.log",
+        "native-ui-v39.json",
+        "../Final/Native-Reviewed/kurimanju",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "hide-cancels-own-actions-and-audio",
+      "acceptance": "Hiding one character cancels its actions, overlays, bubbles and audio while leaving other characters intact.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v39-fixture.log",
+        "native-asset-checks-reviewed.log",
+        "native-ui-v39.json",
+        "../Final/Native-Reviewed/kurimanju",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "cross-character-state-isolation",
+      "acceptance": "Keep items, activity latches, voice players, selected actions and home routines independent for all five characters.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v39-fixture.log",
+        "native-asset-checks-reviewed.log",
+        "native-ui-v39.json",
+        "../Final/Native-Reviewed/kurimanju",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "no-runtime-history-or-secret-collection",
+      "acceptance": "Runtime stores only preferences and bounded in-memory state; no notification monitoring, message history, generated cache or remote playback.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v39-fixture.log",
+        "native-asset-checks-reviewed.log",
+        "native-ui-v39.json",
+        "../Final/Native-Reviewed/kurimanju",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "native-launch-and-resource-verification",
+      "acceptance": "Compile and sign the actual app, decode its own packaged assets, and run native window/input regressions.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v39-fixture.log",
+        "native-asset-checks-reviewed.log",
+        "native-ui-v39.json",
+        "../Final/Native-Reviewed/kurimanju",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    },
+    {
+      "id": "middle-and-final-audit-with-fix-loop",
+      "acceptance": "For each character, review intermediate art/behavior, repair feasible omissions, then rerun the full acceptance and cross-character audit.",
+      "result": "pass",
+      "evidence": [
+        "packaged-self-test-v39-fixture.log",
+        "native-asset-checks-reviewed.log",
+        "native-ui-v39.json",
+        "../Final/Native-Reviewed/kurimanju",
+        "../../../Sources/ChiikawaCompanion/RosterController.swift",
+        "../../../Sources/ChiikawaCompanion/RosterArtwork.swift"
+      ]
+    }
+  ],
+  "voice_boundary": "Official AniBox short exhalations, selected by scene/mouth timing and signal evidence; no voice clone or claimed exact phonetic transcription."
+}

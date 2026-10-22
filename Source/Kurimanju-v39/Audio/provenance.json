@@ -1,0 +1,38 @@
+{
+  "verified": "2026-10-22",
+  "sources": [
+    {
+      "url": "https://www.youtube.com/watch?v=5dTRQblIt-Q",
+      "file": "episode-35.mkv",
+      "episode": "35",
+      "sha256": "787b7937e5b09edd043ee0dffd53c5f06a27d58f2bcaca314bfe3897f05ed043"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=0RZqg7KMlfo",
+      "file": "episode-180.mkv",
+      "episode": "180",
+      "sha256": "af2204cdee66027e3987f1b224bbef1123e6e86daa7fd7d4d2d3e23ff43acd49"
+    }
+  ],
+  "selection_evidence": [
+    "ReviewFrames/mouth-35-9-15.png",
+    "ReviewFrames/mouth-35-22-28.png",
+    "ReviewFrames/mouth-35-54-60.png",
+    "ReviewFrames/mouth-180-7-13.png",
+    "ReviewFrames/waveform-timing.png"
+  ],
+  "verification_method": "Official uploader/title metadata, visible Kurimanju mouth/exhalation timing and non-silent source signal. Automated speech transcription is not reliable for nonverbal sounds; no claim of a listening-based phonetic transcript.",
+  "synthesized": false,
+  "voice_cloned": false,
+  "ending_theme_included_in_runtime_clips": false,
+  "runtime": "Four short bundled local reactions; click or explicit preview only.",
+  "original_archives": "Full public source videos remain local reference inputs in Source; Git stores short runtime excerpts, source links and timing evidence.",
+  "actorCredit": {
+    "actor": "원종준",
+    "secondaryRoleSources": [
+      "https://chiikawa.fandom.com/ko/wiki/%EB%B0%A4%EB%A7%8C%EC%A5%AC",
+      "https://namu.moe/w/%EC%9B%90%EC%A2%85%EC%A4%80"
+    ],
+    "boundary": "Public role listings corroborate the actor credit; the primary StudioMonkey profile does not itself list this role. Runtime audio is from official AniBox episode footage, not an unrelated actor demo."
+  }
+}

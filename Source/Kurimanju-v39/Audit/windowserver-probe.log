@@ -1,0 +1,10 @@
+panel 35869 (700.0, 400.0, 100.0, 100.0) false true
+hit (750.0, 450.0) 35869
+hit (750.0, 400.0) 18357
+hit (750.0, 500.0) 35869
+["kCGWindowLayer": 0, "kCGWindowAlpha": 1, "kCGWindowOwnerPID": 74740, "kCGWindowSharingState": 1, "kCGWindowStoreType": 1, "kCGWindowOwnerName": swift-frontend, "kCGWindowMemoryUsage": 2368, "kCGWindowName": , "kCGWindowIsOnscreen": 1, "kCGWindowNumber": 35869, "kCGWindowBounds": {
+    Height = 100;
+    Width = 100;
+    X = 700;
+    Y = 400;
+}]

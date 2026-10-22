@@ -1,0 +1,223 @@
+{
+  "verified": "2026-10-22",
+  "baselineCommit": "a4544bd701e721656af1b57265fab73bddc532df",
+  "baseline": "hachiware",
+  "characterOrder": [
+    "usagi",
+    "kurimanju",
+    "momonga"
+  ],
+  "features": [
+    {
+      "id": "official-reference-provenance",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "tpose-front-side-back-top-diagonals",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "8-directions-24frame-walk",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "matched-left-right-foot-cycle",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "attached-arm-leg-contours",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "body-size-and-foot-registration",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "distance-driven-gait",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "continuous-roaming-without-teleport",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "hover-reaction-and-next-tick-release",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "native-foreground-occlusion",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "armed-exclusive-attack-and-stable-hit-area",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "click-dialogue-random-no-repeat",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "click-only-voice-local-playback",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "voice-mute-volume-preview-stop",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "character-drag-clamp-and-route-reset",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "independent-visible-walking-recall",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "settings-persistence-migration",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "independent-ground-prop-coordinates",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "prop-click-to-seek",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "proximity-pickup-and-cooldowns",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "direct-drag-drop-equip-owner-check",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "equipment-swap-drop-hide",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "camera-action",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "guitar-action",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "weapon-action",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "desk-study-with-tongue",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "food-eat",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "furball-spit-up",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "independent-activity-prop-drag",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "activity-approach-arrival-exit-latch",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "manual-actions-and-stop",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "context-menu-and-settings-and-status-menu",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "shared-single-fixed-house",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "walk-home-and-drop-equipment",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "sleep-entry-breathing-wake",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "automatic-rest-toggle",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "house-skin-independent-membership",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "hide-cancels-own-actions-and-audio",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "cross-character-state-isolation",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "no-runtime-history-or-secret-collection",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "native-launch-and-resource-verification",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "middle-and-final-audit-with-fix-loop",
+      "status": "pending",
+      "evidence": []
+    }
+  ],
+  "passRule": "Every implementable feature passes both per-character checks and cross-character regression; external reference/recording dependencies stay explicitly reported."
+}

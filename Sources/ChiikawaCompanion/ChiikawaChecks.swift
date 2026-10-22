@@ -9,7 +9,7 @@ extension SelfTest {
         defer { defaults.removePersistentDomain(forName: suite) }
         let state = AppState(defaults: defaults)
         check(state.visibleFriends == Set(Friend.developmentRoster) && state.walkingFriends == Set(Friend.developmentRoster),
-              "existing installations start with both companions visible and walking")
+              "existing installations introduce implemented companions as visible and walking")
         state.automaticItems = false; state.automaticActivities = false; state.automaticRest = false;
         state.chiikawaAutomaticItems = false
         state.chiikawaAutomaticRest = false
@@ -29,9 +29,9 @@ extension SelfTest {
             desktop.tick(now: date, pointer: pointer ?? away, pointerCanReachCharacter: pointer != nil)
         }
         tick(0)
-        check(desktop.actors.count == 2 && hachi.panel.isVisible && chii.panel.isVisible
+        check(desktop.actors.count == Friend.developmentRoster.count && hachi.panel.isVisible && chii.panel.isVisible
               && chii.panel.level == DesktopLayer.character && !chii.panel.canBecomeKey,
-              "two independent nonactivating character panels share the desktop-only layer")
+              "independent nonactivating character panels share the desktop-only layer")
         let sprites = ChiikawaSprites.shared
         check(sprites.isReady && sprites.frames.values.reduce(0) { $0 + $1.count } == 192,
               "Chiikawa loads eight independent 24-frame cycles plus both alpha reaction poses")
@@ -135,11 +135,11 @@ extension SelfTest {
               "disabled Chiikawa items disappear and cannot be handed over")
         state.walkingFriends = [.hachiware]; state.chiikawaAutomaticItems = true
         let restored = AppState(defaults: defaults)
-        check(restored.visibleFriends == [.chiikawa] && restored.walkingFriends == [.hachiware]
+        check(restored.visibleFriends == state.visibleFriends && restored.walkingFriends == [.hachiware]
               && restored.chiikawaItems == [.pochette,.houseKey,.stuffedToy] && restored.chiikawaAutomaticItems,
               "visibility, walking, Chiikawa inventory and automatic pickup preferences survive relaunch independently")
         defaults.set(["chiikawa", "usagi", "unknown"], forKey: "visibleFriends")
-        check(AppState(defaults: defaults).visibleFriends == [.chiikawa], "saved roster preferences cannot expose unfinished or unknown characters")
+        check(AppState(defaults: defaults).visibleFriends == Set([Friend.chiikawa, .usagi]).intersection(Set(Friend.developmentRoster)), "saved roster preferences expose only implemented known characters")
         state.visibleFriends = Set(Friend.developmentRoster)
         state.chiikawaItems = Set(ChiikawaItem.allCases); state.chiikawaAutomaticItems = false
         let bounds = NSScreen.main!.visibleFrame

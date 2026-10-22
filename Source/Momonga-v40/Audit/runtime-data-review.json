@@ -1,0 +1,22 @@
+{
+  "verified": "2026-10-22",
+  "appObserved": "0.20.1 build 43, five actors, settings closed",
+  "samples": [
+    {
+      "uptimeSeconds": 97,
+      "rssKiB": 309552,
+      "cpuPercentOneCore": 40.6
+    },
+    {
+      "uptimeSeconds": 342,
+      "rssKiB": 163264,
+      "cpuPercentOneCore": 45.7
+    }
+  ],
+  "boundary": "Two short process samples with automatic walking/activities; not a controlled energy benchmark or long-duration leak/soak guarantee.",
+  "persistentData": "UserDefaults settings and introduced-character migration ledger only; no movement, quote, notification or voice history.",
+  "memory": "Three expansion sprite sets, each 8x24 walk plus 13x12 action frames; pointer masks keyed by fixed friend/pose/facing combinations; one playback object per friend.",
+  "runtimeDiskCache": "None created. Bundled native atlases are static read-only resources generated at build time.",
+  "networkAtRuntime": "No remote voice playback, API calls or notification monitoring added.",
+  "cleanup": "Controller teardown closes owned windows, stops playback, invalidates timer and removes screen observer."
+}

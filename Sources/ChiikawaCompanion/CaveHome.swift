@@ -149,6 +149,28 @@ final class HomeArtwork {
         let bed = NSRect(x: area.minX + CGFloat(index % columns) * area.width / CGFloat(columns),
                          y: area.minY + CGFloat(index / columns) * area.height / CGFloat(rows),
                          width: area.width / CGFloat(columns), height: area.height / CGFloat(rows))
+        if occupant.friend.isExpansion {
+            let awake = occupant.wakingStarted.map { max(0, now.timeIntervalSince($0)) }
+            let cycle = awake ?? time
+            let breath = awake == nil ? Self.breathingScale(time: time) : 1
+            let target = bed.insetBy(dx: 2, dy: 1)
+            let breathing = NSRect(x: target.midX-target.width*breath/2, y: target.minY, width: target.width*breath, height: target.height*breath)
+            let entry=min(1,max(0,elapsed/HomeRoutine.entryDuration))
+            if phase == .entering && awake == nil {
+                let length=rect.width*CGFloat(0.32-entry*0.07)
+                let pet=NSRect(x:rect.midX-length/2,y:rect.minY+rect.height*CGFloat(0.01+entry*0.16),
+                               width:length,height:length*occupant.friend.canvasSize.height/occupant.friend.canvasSize.width)
+                NSGraphicsContext.saveGraphicsState()
+                NSGraphicsContext.current?.cgContext.setAlpha(CGFloat(1-max(0,entry-0.4)/0.6))
+                FriendArtwork.draw(occupant.friend,in:pet,time:time,walking:true,facing:-1,walkPhase:entry*2 * .pi,pose:.back)
+                NSGraphicsContext.restoreGraphicsState()
+            }
+            let opacity=awake != nil || phase == .sleeping ? 1:max(0,(entry-0.45)/0.55)
+            NSGraphicsContext.saveGraphicsState();NSGraphicsContext.current?.cgContext.setAlpha(CGFloat(opacity))
+            RosterSprites.shared(occupant.friend).draw(action: awake == nil ? .sleep : .wake, in: breathing, elapsed: cycle)
+            NSGraphicsContext.restoreGraphicsState()
+            return
+        }
         if occupant.friend == .chiikawa, ChiikawaMotionSprites.shared.frames[.rest]?.count == 16 {
             let index: Int
             if let started = occupant.wakingStarted {

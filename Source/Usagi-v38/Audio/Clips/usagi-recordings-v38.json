@@ -1,0 +1,45 @@
+{
+  "speaker": "권다예",
+  "sourceTitle": "권다예_7. [캐릭터 남아] 광기, 시끄러운, 마이웨이, 사차원 — 공개 성우 샘플",
+  "sourceProfile": "https://honeyrainsound.tistory.com/6",
+  "sourceURL": "https://www.dropbox.com/scl/fi/cbjg31uhssooksnrhjdwq/_7..mp3?rlkey=dqi1gjnrcbhnz6cmvqnj6bgc6&dl=1",
+  "captionPolicy": "Symbols describe app reactions; they are not literal transcripts. The provider identifies the actor and performance style, not an anime episode.",
+  "clips": [
+    {
+      "id": "usagi-trill",
+      "text": "…♪",
+      "file": "usagi-trill-v38.m4a",
+      "duration": 0.98,
+      "sourceStart": 0.02,
+      "sourceEnd": 1.0,
+      "sha256": "3a1a8a5b27f995cf0b038f1026ccd19f3dd4dacb2d41c7ac3a20f92ca24c160c"
+    },
+    {
+      "id": "usagi-shout",
+      "text": "…!!",
+      "file": "usagi-shout-v38.m4a",
+      "duration": 1.78,
+      "sourceStart": 1.02,
+      "sourceEnd": 2.8,
+      "sha256": "96c7ab8d8721f291f4808a7a22c9bf38cf4c8e469d6ec95039fdcf22f518804c"
+    },
+    {
+      "id": "usagi-curious",
+      "text": "…?",
+      "file": "usagi-curious-v38.m4a",
+      "duration": 1.4,
+      "sourceStart": 9.25,
+      "sourceEnd": 10.65,
+      "sha256": "39d91519890f72b94fa06d67d16bc38b4993259628e4b9595bc8718da30b6d4c"
+    },
+    {
+      "id": "usagi-cheer",
+      "text": "…!",
+      "file": "usagi-cheer-v38.m4a",
+      "duration": 1.5,
+      "sourceStart": 14.65,
+      "sourceEnd": 16.15,
+      "sha256": "e4c57c47730aa6115ab127dd629e1324fd2b39c22d8a65a794649368f0a33534"
+    }
+  ]
+}

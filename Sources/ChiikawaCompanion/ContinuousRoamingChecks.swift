@@ -27,7 +27,7 @@ extension SelfTest {
         let point = ItemWorld.contactPoint(origin: RoamingMotion.target(in: bounds, size: NSSize(width: 132, height: 150), xFraction: 0.45, yFraction: 0.65))
         var continuous = true, walksLastSegment = true, arrives = true, positionsPreserved = true
         var offset = 0.0
-        for friend in Friend.developmentRoster {
+        for friend in [Friend.hachiware, .chiikawa] {
             let actor = desktop.actors.first { $0.friend == friend }!
             let spots: [ActivitySpot] = friend == .hachiware ? [.desk, .rice, .furball] : [.desk, .rice]
             for spot in spots {

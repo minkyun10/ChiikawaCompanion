@@ -42,7 +42,7 @@ extension SelfTest {
         state.homeStyle = .chiikawa; tick(0.02)
         check(desktop.home.panel.windowNumber == houseID && desktop.home.panel.frame == fixed && desktop.home.entrance == door,
               "switching house designs reuses the same window, size, position and entrance")
-        state.visibleFriends = Set(Friend.developmentRoster)
+        state.visibleFriends = [.hachiware, .chiikawa]
         let hachiGround = desktop.itemWorld.ground, chiiGround = desktop.chiikawaWorld.ground
         desktop.activateSharedHome(now: now.addingTimeInterval(0.03))
         check(desktop.homeRoutine.phase == .returning && desktop.chiikawaHomeRoutine.phase == .returning,
@@ -50,7 +50,7 @@ extension SelfTest {
         // A deliberate drop at the doorway bypasses the optional key detour.
         hachi.panel.setFrameOrigin(ItemWorld.destination(for: door))
         chii.panel.setFrameOrigin(ItemWorld.destination(for: door))
-        chii.view.onDragEnd?()
+        desktop.didMoveChiikawa(chii, now: now.addingTimeInterval(0.04))
         _ = desktop.enterHomeIfReached(hachi, now: now.addingTimeInterval(0.04))
         tick(1.1)
         check(desktop.homeRoutine.phase == .sleeping && desktop.chiikawaHomeRoutine.phase == .sleeping

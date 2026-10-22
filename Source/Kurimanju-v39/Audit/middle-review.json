@@ -1,0 +1,38 @@
+{
+  "verified": "2026-10-22",
+  "character": "kurimanju",
+  "reviewed": [
+    "../Generated/kurimanju-tpose-six-views-v39.png",
+    "../Generated/kurimanju-rig-v39.png",
+    "../Generated/kurimanju-expressions-v39.png"
+  ],
+  "findings": [
+    {
+      "issue": "Generic keepsake initially looked like Usagi pudding",
+      "resolution": "Separate cup, handle and snack plate used for ground, carried and sipping action",
+      "state": "resolved"
+    },
+    {
+      "issue": "Non-Usagi weapon label said sasumata while artwork is a straight pole",
+      "resolution": "Label corrected to common training pole; fan prop distinction recorded",
+      "state": "resolved"
+    },
+    {
+      "issue": "Extra satisfied draft included baked limbs and larger eyes",
+      "resolution": "Preserved in Generated but excluded from runtime; registered six expressions retained",
+      "state": "resolved"
+    },
+    {
+      "issue": "Cream limb joins appeared brighter than body raster",
+      "resolution": "Sample numeric bitmap channels directly in native sprite RGB target; avoid double display-color conversion",
+      "state": "resolved"
+    },
+    {
+      "issue": "Full native foreground-window check could not hit fixture",
+      "resolution": "Mac unlocked; native fixture made explicitly mouse-interactive and non-floating before setting its test level. Full packaged regression subsequently passed all 552 checks.",
+      "state": "resolved"
+    }
+  ],
+  "next_gate": "Packaged regression, exported 192-frame geometry and study tongue checks, visual review",
+  "finalReview": "passed packaged 552 checks and independent 212 exported-asset checks; native settings inspection underway"
+}

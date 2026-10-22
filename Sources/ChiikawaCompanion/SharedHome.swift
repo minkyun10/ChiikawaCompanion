@@ -4,7 +4,7 @@ extension DesktopController {
     var homeOccupants: [HomeOccupant] {
         actors.compactMap { actor in
             guard state.isVisible(actor.friend), let routine = homeRoutines[actor.friend] else { return nil }
-            let waking = actor.friend == .chiikawa ? chiikawaWakingAt : nil
+            let waking = actor.friend == .chiikawa ? chiikawaWakingAt : expansions[actor.friend]?.wakingAt
             guard routine.isInside || waking != nil else { return nil }
             return HomeOccupant(friend: actor.friend, routine: routine, wakingStarted: waking)
         }
@@ -21,6 +21,7 @@ extension DesktopController {
     }
 
     func sendHome(_ friend: Friend, now: Date = Date()) {
+        if let companion = expansions[friend] { companion.goHome(now: now); return }
         switch friend {
         case .hachiware: goHome(now: now)
         case .chiikawa: goChiikawaHome(now: now)
@@ -29,6 +30,7 @@ extension DesktopController {
     }
 
     func wakeFriend(_ friend: Friend, now: Date = Date()) {
+        if let companion = expansions[friend] { companion.wake(now: now, animated: true); return }
         switch friend {
         case .hachiware: wakeFromHome(now: now)
         case .chiikawa: wakeChiikawa(now: now, animated: true)

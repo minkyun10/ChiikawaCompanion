@@ -1,0 +1,26 @@
+{
+  "verified": "2026-10-22",
+  "appVersion": "0.20.1",
+  "appBuild": "44",
+  "method": "CUA native accessibility interaction with the actual packaged app",
+  "observedBuilds": [
+    43,
+    44
+  ],
+  "interactionDetailsBuild": 43,
+  "launchRecheckBuild": 44,
+  "observations": [
+    "All five visible/walking/recall rows present and enabled",
+    "Momonga camera, guitar, common training pole and blossom controls present",
+    "Automatic pickup visibly changed Momonga equipped status, including blossom",
+    "Selected Momonga manual study; its own status changed to 공부하기",
+    "Each new friend shows four recorded click entries plus ten plain-text entries",
+    "One shared-house design selector defaults to Hachiware; independent rest rows for all five",
+    "Settings closed; actual app left running on desktop"
+  ],
+  "firstAXElapsedMs": 8637,
+  "firstAXTimingBuild": 43,
+  "timingBoundary": "CUA launch plus first accessibility observation, including automation overhead; not an isolated startup benchmark.",
+  "audioPreviewPlayed": false,
+  "preferencesChanged": false
+}

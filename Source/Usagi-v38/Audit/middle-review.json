@@ -1,0 +1,45 @@
+{
+  "verified": "2026-10-22",
+  "character": "usagi",
+  "approved_identity": "../Approval-v2/Generated/usagi-tpose-sheet-for-approval.png",
+  "findings": [
+    {
+      "issue": "Initial generated character differed from user reference",
+      "resolution": "Superseded by user-approved six-view identity and regenerated rig",
+      "state": "resolved"
+    },
+    {
+      "issue": "Rear-diagonal rig initially had a face",
+      "resolution": "True faceless rear parts used in the approved rig",
+      "state": "resolved"
+    },
+    {
+      "issue": "Initial runtime legs looked detached and too long",
+      "resolution": "Short open-root feet and continuous paper inner paths; trajectory retained",
+      "state": "resolved"
+    },
+    {
+      "issue": "Procedural expression overlay could leave duplicate mouth/brow details",
+      "resolution": "Dedicated aligned expression-body sprites with fixed registration",
+      "state": "resolved"
+    },
+    {
+      "issue": "Blanket covered the sleeping face",
+      "resolution": "Blanket moved to leave face and ears visible",
+      "state": "resolved"
+    },
+    {
+      "issue": "Muted click voice incorrectly interrupted explicit preview on the next tick",
+      "resolution": "Mute callback stops current audio; explicit preview remains independent, matching Hachiware",
+      "state": "resolved"
+    }
+  ],
+  "runtime_evidence": [
+    "roster-checks-v38-1.log"
+  ],
+  "visual_evidence": [
+    "../Approved-v3/NativePreviews-v4/usagi/eight-directions.png",
+    "../Approved-v3/NativePreviews-v4/usagi/actions-preview.png"
+  ],
+  "final_review": "pending; packaged full regression and latest geometry checks still required"
+}

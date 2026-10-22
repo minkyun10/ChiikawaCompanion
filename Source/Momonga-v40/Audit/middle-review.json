@@ -1,0 +1,55 @@
+{
+  "verified": "2026-10-22",
+  "character": "momonga",
+  "reviewed": [
+    "../Generated/momonga-tpose-six-views-v40.png",
+    "../Generated/momonga-expressions-v40.png",
+    "../Final/Native/momonga/eight-directions.png",
+    "../Final/Native/momonga/actions-preview.png"
+  ],
+  "findings": [
+    {
+      "issue": "First body-only rig contained interior arm lines",
+      "resolution": "Regenerated with those marks removed; original draft preserved",
+      "state": "resolved"
+    },
+    {
+      "issue": "Large fluffy tail would change body scale if baked into side sprites",
+      "resolution": "Separate registered tail; front/side behind body, back directions over lower back; body metrics remain stable",
+      "state": "resolved"
+    },
+    {
+      "issue": "Detached tail source has an open pink attachment root",
+      "resolution": "Native source rectangle excludes attachment-only root while retaining tail face; no pink root in runtime previews",
+      "state": "resolved"
+    },
+    {
+      "issue": "Generic keepsake lacked primary Momonga reference",
+      "resolution": "Blossom based on official episode 157; ground pickup, head accessory and flower pose connected",
+      "state": "resolved"
+    },
+    {
+      "issue": "Existing shared-home test mixed real callback Date with a synthetic timeline; extra roster startup work exposed a timing failure",
+      "resolution": "Use the same drag-end implementation with its injected test timestamp; keep all two-occupant assertions intact",
+      "state": "resolved"
+    },
+    {
+      "issue": "Full-suite native foreground fixture was created before the AppKit launch lifecycle and could miss its committed mouse region",
+      "resolution": "Initialize AppKit before constructing any fixture and run native pointer cases in a fresh window context; paint a real opaque raster view. All original native hit assertions retained.",
+      "state": "resolved",
+      "evidence": "packaged-self-test-v40-bootstrap.log: all 612 checks, including actual native foreground hit, passed."
+    },
+    {
+      "issue": "Final frame comparison found the Momonga furball stream attached above its mouth",
+      "resolution": "Measured central mouth pixels in the registered neutral body (source rows 202–220 of 374); use a Momonga-specific 0.43 body-height mouth anchor. Foot and arm movement unchanged.",
+      "state": "resolved"
+    }
+  ],
+  "nextGate": "Packaged full regression, 212 native image checks, native settings and final all-five review",
+  "finalGateResult": {
+    "status": "passed",
+    "functionalChecks": 612,
+    "nativeImageChecks": 212,
+    "evidence": "final-audit-v40.json"
+  }
+}

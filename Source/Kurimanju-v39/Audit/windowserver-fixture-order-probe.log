@@ -1,0 +1,14 @@
+order has cover true
+cover 35879 NSWindowLevel(rawValue: 4) false true hit 35879
+["kCGWindowMemoryUsage": 2368, "kCGWindowOwnerPID": 74827, "kCGWindowSharingState": 1, "kCGWindowIsOnscreen": 1, "kCGWindowBounds": {
+    Height = 24;
+    Width = 24;
+    X = 708;
+    Y = 414;
+}, "kCGWindowStoreType": 1, "kCGWindowNumber": 35879, "kCGWindowOwnerName": swift-frontend, "kCGWindowLayer": 4, "kCGWindowName": , "kCGWindowAlpha": 1]
+["kCGWindowAlpha": 1, "kCGWindowIsOnscreen": 1, "kCGWindowName": , "kCGWindowBounds": {
+    Height = 150;
+    Width = 132;
+    X = 654;
+    Y = 351;
+}, "kCGWindowStoreType": 1, "kCGWindowNumber": 35878, "kCGWindowOwnerName": swift-frontend, "kCGWindowMemoryUsage": 2368, "kCGWindowLayer": 3, "kCGWindowSharingState": 1, "kCGWindowOwnerPID": 74827]
