@@ -135,7 +135,11 @@ final class AppState: ObservableObject {
 
     init(defaults: UserDefaults = .standard) {
         self.defaults = defaults
-        rosterOptions = defaults.data(forKey: "rosterOptionsV38").flatMap { try? JSONDecoder().decode([Friend: RosterOptions].self, from: $0) } ?? [:]
+        let restoredRosterOptions = defaults.data(forKey: "rosterOptionsV38").flatMap { try? JSONDecoder().decode([Friend: RosterOptions].self, from: $0) } ?? [:]
+        rosterOptions = restoredRosterOptions
+        if let data = try? JSONEncoder().encode(restoredRosterOptions) {
+            defaults.set(data, forKey: "rosterOptionsV38")
+        }
         let roster = Set(Friend.developmentRoster)
         let introduced = Set(defaults.stringArray(forKey: "introducedCompanionsV38") ?? ["hachiware", "chiikawa"])
         let newlyIntroduced = roster.filter { !introduced.contains($0.rawValue) }

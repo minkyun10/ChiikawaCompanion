@@ -38,7 +38,7 @@ struct RosterSettingsCard: View {
             }.font(.system(size: 11))
             Divider()
             HStack {
-                ForEach(ActivitySpot.allCases) { spot in
+                ForEach(RosterOptions.activitySpots) { spot in
                     VStack(alignment: .leading, spacing: 7) {
                         Toggle(spot.name, isOn: Binding(get: { options.spots.contains(spot) }, set: { value in
                             state.updateOptions(friend) { if value { $0.spots.insert(spot) } else { $0.spots.remove(spot) } }

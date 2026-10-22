@@ -4,6 +4,30 @@ import AVFoundation
 extension SelfTest {
     static func runRosterChecks(check: (Bool, String) -> Void) {
         _ = NSApplication.shared
+        let migrationSuite = "ExclusiveItemsMigration-\(UUID().uuidString)"
+        let migrationDefaults = UserDefaults(suiteName: migrationSuite)!
+        defer { migrationDefaults.removePersistentDomain(forName: migrationSuite) }
+        let legacyOptions: [Any] = Friend.expansionOrder.flatMap { friend -> [Any] in
+            [friend.rawValue, ["items": ["guitar", "weapon"], "spots": ["furball", "rice"],
+                "automaticItems": false, "automaticActivities": false, "automaticRest": false, "voice": false] as [String: Any]]
+        }
+        migrationDefaults.set(try! JSONSerialization.data(withJSONObject: legacyOptions), forKey: "rosterOptionsV38")
+        let migrated = AppState(defaults: migrationDefaults)
+        for friend in Friend.expansionOrder {
+            let options = migrated.options(for: friend)
+            check(options.items == [.weapon] && options.spots == [.rice]
+                  && !options.automaticItems && !options.automaticActivities && !options.automaticRest && !options.voice,
+                  "\(friend.name): old guitar and furball settings migrate without resetting disabled items or preferences")
+            migrated.updateOptions(friend) { $0.spots.insert(.furball) }
+            check(migrated.options(for: friend).spots == [.rice], "\(friend.name): settings cannot reenable Hachiware's furball")
+        }
+        let persisted = String(data: migrationDefaults.data(forKey: "rosterOptionsV38")!, encoding: .utf8)!
+        check(!persisted.contains("guitar") && !persisted.contains("furball")
+              && AppState(defaults: migrationDefaults).rosterOptions == migrated.rosterOptions,
+              "obsolete non-Hachiware settings are removed from storage and stay removed after reopening")
+        check(RosterItemKind(rawValue: "guitar") == nil && RosterAction(rawValue: "guitar") == nil
+              && RosterAction(rawValue: "vomit") == nil && RosterAction(spot: .furball) == nil,
+              "non-Hachiware item and action commands cannot represent guitar playing or furball vomiting")
         let suite = "RosterChecks-\(UUID().uuidString)", defaults = UserDefaults(suiteName: suite)!
         defer { defaults.removePersistentDomain(forName: suite) }
         defaults.set(["chiikawa"], forKey: "visibleFriends")
@@ -34,6 +58,13 @@ extension SelfTest {
         }
         func date() -> Date { now.addingTimeInterval(clock) }
         tick()
+        check(desktop.desktopItems[.guitar] != nil && desktop.itemWorld.ground[.guitar] != nil
+              && desktop.desktopActivitySpots[.furball] != nil && desktop.activityWorld.positions[.furball] != nil,
+              "Hachiware keeps the guitar and furball ground objects and interactions")
+        check(!ChiikawaItem.allCases.map(\.rawValue).contains("guitar")
+              && !ChiikawaLifeAction.allCases.map(\.rawValue).contains("vomit")
+              && desktop.chiikawaStudyWorld.positions[.furball] == nil,
+              "Chiikawa has neither Hachiware-exclusive item nor a vomiting action")
         guard let bounds=NSScreen.main?.visibleFrame else {check(false,"a desktop exists for roster acceptance");return}
         let fixedHome=desktop.home.panel.frame, homeID=desktop.home.panel.windowNumber
         for friend in expansion {
@@ -41,7 +72,20 @@ extension SelfTest {
             let prefix="\(name): "
             if Bundle.main.bundleURL.pathExtension == "app" {
                 check(art.usesBundledAtlases,prefix+"packaged app loads prebuilt native atlases without runtime generation")
+                let root = Bundle.main.resourceURL!.appendingPathComponent("Roster/\(friend.rawValue)")
+                check(["guitar-12.png", "vomit-12.png"].allSatisfy {
+                    !FileManager.default.fileExists(atPath: root.appendingPathComponent($0).path)
+                }, prefix+"packaging removes obsolete guitar and vomiting animation atlases")
             }
+            check(companion.objects.count == 3 && companion.world.ground.count == 3
+                  && Set(companion.spots.keys) == [.desk, .rice] && companion.activities.enabled == [.desk, .rice],
+                  prefix+"only camera, weapon, keepsake, desk and rice are created on the desktop")
+            companion.command(.visit(.furball))
+            companion.play(.study, at: .furball, now: date())
+            check(companion.activities.requested == nil && companion.action == nil,
+                  prefix+"a stale furball visit or action request cannot start a route or animation")
+            check(RosterProp(rawValue: friend.rawValue + ":guitar") == nil,
+                  prefix+"a stale guitar drag payload is rejected")
             check(art.isReady && art.walks.count==8 && art.actions.count==RosterAction.allCases.count,prefix+"eight walking directions and every action load")
             for direction in ChiikawaDirection.allCases {
                 let frames=art.walks[direction] ?? []
@@ -100,7 +144,7 @@ extension SelfTest {
                   prefix+"a prop dropped on a different owner is rejected")
             check(companion.receive(.camera,at:center,now:date()) && companion.world.equipped?.kind == .camera,
                   prefix+"direct drag drop equips immediately with automatic pickup disabled")
-            check(companion.receive(.guitar,at:center,now:date()) && companion.world.equipped?.kind == .guitar
+            check(companion.receive(.keepsake,at:center,now:date()) && companion.world.equipped?.kind == .keepsake
                   && companion.world.ground[RosterProp(owner:friend,kind:.camera)] != nil,
                   prefix+"swapping drops exactly the old owned item")
             companion.drop(now:date())
@@ -109,7 +153,7 @@ extension SelfTest {
             companion.seek(.camera,now:date()); tick()
             check(companion.world.requested?.kind == .camera && actor.motion.isWalking,prefix+"ground item seek follows a walking route")
             companion.world.requested=nil; companion.itemTarget=nil; companion.stopAction()
-            for spot in ActivitySpot.allCases {
+            for spot in RosterOptions.activitySpots {
                 companion.activities=ActivitySpotWorld();companion.configure()
                 state.updateOptions(friend) {$0.automaticActivities=true}
                 let anchor=ItemWorld.contactPoint(origin:start)

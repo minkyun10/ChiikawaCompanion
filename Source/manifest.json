@@ -1,10 +1,10 @@
 {
   "created_at": "2026-10-16T12:08:58.617148+00:00",
   "operation": "copy; originals preserved",
-  "image_file_count": 3142,
-  "unique_image_content_count": 1749,
-  "supporting_file_count": 648,
-  "image_bytes": 919182664,
+  "image_file_count": 3145,
+  "unique_image_content_count": 1752,
+  "supporting_file_count": 654,
+  "image_bytes": 920626340,
   "symmetric_walk_runtime_applied": true,
   "files": [
     {
@@ -13631,6 +13631,48 @@
     },
     {
       "kind": "supporting",
+      "source": "Source/HachiwareExclusiveItems-v41/Audit/build.log",
+      "archive_path": "HachiwareExclusiveItems-v41/Audit/build.log",
+      "bytes": 522,
+      "sha256": "075c0c419be6a07211aea8c2715f4f959e313f954fa0d415d022a86279d2bdd1"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/HachiwareExclusiveItems-v41/Audit/preservation.json",
+      "archive_path": "HachiwareExclusiveItems-v41/Audit/preservation.json",
+      "bytes": 10172,
+      "sha256": "ce498747010bf70e01870fb93378814e8387cdabd08496f6328ef4e7feb07e30"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/HachiwareExclusiveItems-v41/Audit/self-test.log",
+      "archive_path": "HachiwareExclusiveItems-v41/Audit/self-test.log",
+      "bytes": 49449,
+      "sha256": "b8ed514934d62904c162997461441bed4d1da838e3048aff7833b4070fa24032"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/HachiwareExclusiveItems-v41/Audit/ui-review.json",
+      "archive_path": "HachiwareExclusiveItems-v41/Audit/ui-review.json",
+      "bytes": 969,
+      "sha256": "9393211207bbd17b8f6d6b80aae874bde5a99ada8fc74260e83917e1d753129e"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/HachiwareExclusiveItems-v41/Audit/verify-preservation.py",
+      "archive_path": "HachiwareExclusiveItems-v41/Audit/verify-preservation.py",
+      "bytes": 2829,
+      "sha256": "f8d4778cfc4e17042c47b7bb8862caa4a9a16208b934bb8d6fb8d803d7d12540"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/HachiwareExclusiveItems-v41/README.txt",
+      "archive_path": "HachiwareExclusiveItems-v41/README.txt",
+      "bytes": 1976,
+      "sha256": "5a2bda224401bd2e9214002496609a883ffb85e6b0a80155f4d9bbd1d51543ac"
+    },
+    {
+      "kind": "supporting",
       "source": "Source/ItemCoordinates-v8/README.txt",
       "archive_path": "ItemCoordinates-v8/README.txt",
       "bytes": 1267,
@@ -22950,8 +22992,8 @@
       "kind": "image",
       "source": "build/roster/kurimanju/actions-preview.png",
       "archive_path": "Project/build/roster/kurimanju/actions-preview.png",
-      "bytes": 532922,
-      "sha256": "39bf81a1820de5b86fd14c9d235552f29f0713ecd6c693ba2883254bde71095b"
+      "bytes": 468575,
+      "sha256": "677aa22f4b77d1df2423ee7bb496e740e74fcc416c68a219f2a8dfe582ba0e2a"
     },
     {
       "kind": "image",
@@ -23118,8 +23160,8 @@
       "kind": "image",
       "source": "build/roster/momonga/actions-preview.png",
       "archive_path": "Project/build/roster/momonga/actions-preview.png",
-      "bytes": 558481,
-      "sha256": "3771f3a4af5c5ae29be453ea3ae152e46f04362b990fa34002a876bc269e39b2"
+      "bytes": 489602,
+      "sha256": "a080e2d08604b97fe0f4b2c1088502bf17fe2cfebcbed0b4edbaafbffeaaf3b3"
     },
     {
       "kind": "image",
@@ -23286,8 +23328,8 @@
       "kind": "image",
       "source": "build/roster/usagi/actions-preview.png",
       "archive_path": "Project/build/roster/usagi/actions-preview.png",
-      "bytes": 549105,
-      "sha256": "4ee26a3821ab40ae5a94ae71c925069a714aed433275d36f4b3daa79a637458d"
+      "bytes": 485499,
+      "sha256": "f1d17fa5e889ea93022d47da5b98fa26382e59905d07019266226c81ae02259e"
     },
     {
       "kind": "image",
@@ -23461,8 +23503,8 @@
       "kind": "supporting",
       "source": "Source/README.txt",
       "archive_path": "README.txt",
-      "bytes": 10335,
-      "sha256": "45d538209060ec0ec86651c516e6670c12086f8cb3999f019563f5e686fd972b"
+      "bytes": 10763,
+      "sha256": "a9d4f7929371049b9bbfa0612bb8454f059c403a3f1d57cefdf63a1e1babe3e0"
     },
     {
       "kind": "supporting",
@@ -25454,10 +25496,24 @@
     },
     {
       "kind": "image",
+      "source": "Source/Versions/3771f3a4af5c5ae2/build/roster/momonga/actions-preview.png",
+      "archive_path": "Versions/3771f3a4af5c5ae2/build/roster/momonga/actions-preview.png",
+      "bytes": 558481,
+      "sha256": "3771f3a4af5c5ae29be453ea3ae152e46f04362b990fa34002a876bc269e39b2"
+    },
+    {
+      "kind": "image",
       "source": "Source/Versions/377fd845c59c4139/build/artwork/hachiware-sprite-preview.png",
       "archive_path": "Versions/377fd845c59c4139/build/artwork/hachiware-sprite-preview.png",
       "bytes": 267516,
       "sha256": "377fd845c59c4139079dc1520a20276497781cf4425c0202b38137a8a4e67198"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/39bf81a1820de5b8/build/roster/kurimanju/actions-preview.png",
+      "archive_path": "Versions/39bf81a1820de5b8/build/roster/kurimanju/actions-preview.png",
+      "bytes": 532922,
+      "sha256": "39bf81a1820de5b86fd14c9d235552f29f0713ecd6c693ba2883254bde71095b"
     },
     {
       "kind": "image",
@@ -25514,6 +25570,13 @@
       "archive_path": "Versions/4e71dfce17122d68/build/artwork/hachiware-side-cycle.png",
       "bytes": 797456,
       "sha256": "4e71dfce17122d68e20809728914a3d630bf75599c9f800b94f45cf8b2b7c117"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/4ee26a3821ab40ae/build/roster/usagi/actions-preview.png",
+      "archive_path": "Versions/4ee26a3821ab40ae/build/roster/usagi/actions-preview.png",
+      "bytes": 549105,
+      "sha256": "4ee26a3821ab40ae5a94ae71c925069a714aed433275d36f4b3daa79a637458d"
     },
     {
       "kind": "image",
@@ -26538,8 +26601,8 @@
       "sha256": "8a42caa40e469a5ee00fa2b860d14756cc1fd73bc8fcf73332c50b87a92c9c3b"
     }
   ],
-  "updated_at": "2026-10-22T10:15:49.337165+00:00",
-  "latest_applied": "Momonga-v40",
+  "updated_at": "2026-10-22T10:29:00.913457+00:00",
+  "latest_applied": "HachiwareExclusiveItems-v41",
   "applied_directions": [
     "down-left",
     "down-right"

@@ -1,4 +1,7 @@
-최신 적용 자료: Usagi-v38 → Kurimanju-v39 → Momonga-v40.
+최신 적용 자료: HachiwareExclusiveItems-v41 — 기타·털뭉치는 하치와레만 사용합니다.
+다른 네 친구의 화면 소품·설정·메뉴·자동 행동에서 제외하며, 우사기·쿠리만쥬·모몽가의 이전 저장 설정도 정리합니다.
+이전 버전의 기타·토하기 sheet와 생성 원본은 제작 이력으로 모두 보존하며 현재 실행 앱에서는 사용하지 않습니다.
+이전 제작 자료: Usagi-v38 → Kurimanju-v39 → Momonga-v40.
 각 폴더에 공식 reference, six-view model, 생성 원본·미채택 시안, prompt, 파츠, native 8방향 24-frame sheet와 동작 sheet, 음성 구간·출처 및 중간·최종 검수 기록을 보관합니다.
 새 캐릭터의 실제 실행 그림은 빌드 시 native renderer로 만든 정적 atlas이며, 앱 실행 중 디스크에 cache를 누적하지 않습니다.
 Source 안의 전체 참고 원본 영상·원본 HTML/JS/CSS는 로컬 보존 자료로 Git에서 제외합니다. Git에는 생성 이미지 전체와 짧은 실행 clip·출처·검수 자료를 저장합니다.

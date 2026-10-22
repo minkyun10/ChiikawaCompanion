@@ -64,7 +64,7 @@ final class RosterCompanion {
             object.view.onMoveEnd = { [weak self] point in _ = self?.receive(kind, at: point) }
             objects[item] = object
         }
-        for spot in ActivitySpot.allCases {
+        for spot in RosterOptions.activitySpots {
             let object = DesktopActivitySpot(spot: spot, owner: actor.friend)
             object.view.onSeek = { [weak self] in self?.visit(spot) }
             object.view.onMove = { [weak self] point in
@@ -99,7 +99,7 @@ final class RosterCompanion {
         activities.configure(enabled: options.spots, bounds: propFrame)
         let offset = CGFloat(Friend.expansionOrder.firstIndex(of: friend) ?? 0)
         for spot in added {
-            let fraction: (CGFloat,CGFloat) = spot == .desk ? (0.12 + offset * 0.19,0.78) : spot == .rice ? (0.67 + offset * 0.08,0.23 + offset * 0.13) : (0.35 + offset * 0.12,0.39)
+            let fraction: (CGFloat,CGFloat) = spot == .desk ? (0.12 + offset * 0.19,0.78) : (0.67 + offset * 0.08,0.23 + offset * 0.13)
             let origin = RoamingMotion.target(in: usableFrame, size: actor.panel.frame.size, xFraction: fraction.0, yFraction: fraction.1)
             activities.move(spot, to: ItemWorld.contactPoint(origin: origin), bounds: propFrame)
         }
@@ -145,6 +145,7 @@ final class RosterCompanion {
         status.action = "\(spot.name)까지 걸어가요"; publish()
     }
     func play(_ selected: RosterAction, at spot: ActivitySpot? = nil, now: Date = Date()) {
+        if let spot { guard options.spots.contains(spot), RosterAction(spot: spot) == selected else { return } }
         voice.stop(); state.showFriends = true; state.visibleFriends.insert(friend)
         wake(now: now); actor.dismissBubble(); actor.motion.stop()
         action = selected; actionStarted = now; actionUntil = now.addingTimeInterval(selected.duration)
@@ -170,7 +171,8 @@ final class RosterCompanion {
             if activities.requested != spot { activities.requested = spot; actor.motion.retarget() }
             return false
         }
-        play(RosterAction(spot: spot), at: spot, now: now); return true
+        guard let selected = RosterAction(spot: spot) else { return false }
+        play(selected, at: spot, now: now); return true
     }
     func drop(now: Date = Date()) {
         stopAction()
@@ -189,7 +191,7 @@ final class RosterCompanion {
     func pickedUp(_ item: RosterProp, now: Date) {
         stopAction(); activities.requested = nil; itemTarget = nil; actor.motion.retarget()
         action = .pickup; actionStarted = now; actionUntil = now.addingTimeInterval(0.65)
-        queuedAction = item.kind == .camera ? .camera : item.kind == .guitar ? .guitar : item.kind == .keepsake ? .keepsake : nil
+        queuedAction = item.kind == .camera ? .camera : item.kind == .keepsake ? .keepsake : nil
         nextPerformance = now.addingTimeInterval(18)
         status.item = "\(item.kind.name(for: friend)) 들고 있어요"; publish()
     }
@@ -247,7 +249,7 @@ final class RosterCompanion {
     func updateObjects(visible: Bool, mouse: NSPoint) {
         for (item, object) in objects { object.update(position: world.ground[item], visible: visible, mouse: mouse) }
         for (spot, object) in spots {
-            object.update(position: activities.positions[spot], visible: visible && (activeSpot != spot || spot == .furball),
+            object.update(position: activities.positions[spot], visible: visible && activeSpot != spot,
                 mouse: mouse, behind: actor.panel.isVisible ? actor.panel.windowNumber : nil)
         }
     }
@@ -278,7 +280,7 @@ final class RosterCompanion {
             if let queued = queuedAction { action = queued; queuedAction = nil; actionStarted = now; actionUntil = now.addingTimeInterval(queued.duration) }
             else { stopAction() }
         }
-        let daily = action == .study || action == .eat || action == .vomit
+        let daily = action == .study || action == .eat
         let attacking = activity == .hovering && state.expressive && world.equipped?.kind == .weapon && !daily
         if attacking && action != nil { stopAction() }
         if activity == .dragging || activity == .speaking { if action != nil { stopAction() } }
@@ -317,7 +319,7 @@ final class RosterCompanion {
                let nearby = world.nearbyTarget(from: actor.panel.frame.origin,automatic: options.automaticItems,now: now,excluding: dragged),
                world.pickUp(nearby,from: actor.panel.frame.origin,bounds: propFrame,now: now) { pickedUp(nearby,now: now) }
             if !following, action == nil, state.expressive, now >= nextPerformance, let equipped = world.equipped {
-                let selected: RosterAction? = equipped.kind == .camera ? .camera : equipped.kind == .guitar ? .guitar : equipped.kind == .keepsake ? .keepsake : nil
+                let selected: RosterAction? = equipped.kind == .camera ? .camera : equipped.kind == .keepsake ? .keepsake : nil
                 if let selected { action = selected; actionStarted = now; actionUntil = now.addingTimeInterval(selected.duration); actor.motion.stop() }
                 nextPerformance = now.addingTimeInterval(20)
             }

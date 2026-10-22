@@ -203,10 +203,6 @@ final class RosterNativeRig {
                 RosterItemArtwork.draw(.camera,friend: friend,in: NSRect(x: 82,y: 61+4*wave,width: 92,height: 80))
                 limb(left,NSPoint(x: 95,y: 90+4*wave));limb(right,NSPoint(x: 162,y: 90+4*wave))
                 if phase > 0.42 && phase < 0.58 { NSColor.white.withAlphaComponent(0.9).setFill();NSBezierPath(ovalIn: NSRect(x: 124,y: 91,width: 11,height: 11)).fill() }
-            case .guitar:
-                RosterItemArtwork.draw(.guitar,friend: friend,in: NSRect(x: 54,y: 38,width: 157,height: 122))
-                limb(left,NSPoint(x: 108+wave*7,y: 85-wave*6));limb(right,NSPoint(x: 184,y: 114))
-                ("♪" as NSString).draw(at: NSPoint(x: 197,y: 139+abs(wave)*8),withAttributes:[.font:NSFont.systemFont(ofSize: 24),.foregroundColor:friend.color])
             case .attack:
                 let thrust = CGFloat(sin(2 * .pi*phase))*25
                 context.saveGState(); context.translateBy(x: 120+thrust,y: 74);context.rotate(by: -0.10+wave*0.13)
@@ -233,13 +229,6 @@ final class RosterNativeRig {
                     RosterItemArtwork.draw(.keepsake,friend: friend,in: NSRect(x: 94,y: 62+wave*5,width: 68,height: 68))
                     limb(left,NSPoint(x: 106,y: 92));limb(right,NSPoint(x: 151,y: 92+wave*5))
                 }
-            case .vomit:
-                paw(root: left,rotation: 0,right: false);paw(root: right,rotation: 0,right: true)
-                let mouthY=y+height*mouthFraction
-                let length=max(0,CGFloat(sin(.pi*phase)))*(mouthY-22)
-                let path=NSBezierPath();path.move(to:NSPoint(x:128,y:mouthY));path.curve(to:NSPoint(x:124+wave*4,y:mouthY-length),controlPoint1:NSPoint(x:130,y:mouthY-length*0.4),controlPoint2:NSPoint(x:120,y:mouthY-length*0.7))
-                path.lineWidth=14;path.lineCapStyle = .round;ink.setStroke();path.stroke();path.lineWidth=10;NSColor(hex:0xEAD4B4).setStroke();path.stroke()
-                ActivitySpotArtwork.draw(.furball,in:NSRect(x:95,y:max(5,mouthY-length-35),width:60,height:60),owner:friend)
             case .sleep: break
             }
         }
@@ -326,7 +315,6 @@ enum RosterArtwork {
         var item:NSRect
         switch kind {
         case .camera:item=NSRect(x:82,y:61-bob,width:92,height:80)
-        case .guitar:item=NSRect(x:54,y:38-bob,width:157,height:122)
         case .weapon:item=NSRect(x:162,y:39-bob,width:65,height:148)
         case .keepsake:item=friend == .momonga ? NSRect(x:165,y:188-bob,width:47,height:47) : NSRect(x:94,y:62-bob,width:68,height:68)
         }
@@ -405,7 +393,6 @@ enum RosterItemArtwork {
     static func draw(_ kind:RosterItemKind,friend:Friend,in rect:NSRect) {
         switch kind {
         case .camera:ItemArtwork.draw(.camera,in:rect)
-        case .guitar:ItemArtwork.draw(.guitar,in:rect)
         case .weapon:
             let context=NSGraphicsContext.current!.cgContext;context.saveGState()
             context.translateBy(x:rect.midX,y:rect.midY);context.rotate(by:.pi/2)
