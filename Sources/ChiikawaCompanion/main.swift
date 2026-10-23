@@ -96,7 +96,15 @@ if let index=args.firstIndex(of:"--benchmark-desktop"),index+1<args.count {
     let seconds=min(120,max(5,value("--benchmark-seconds").flatMap(Double.init) ?? 10))
     DesktopBenchmark.run(output:args[index+1],seconds:seconds,
         counts:count.map{[min(Friend.developmentRoster.count,max(1,$0))]} ?? [1,2,4,6,8],
-        automaticItems:args.contains("--benchmark-active"))
+        automaticItems:args.contains("--benchmark-active"),monster:args.contains("--benchmark-monster"))
+} else if args.contains("--self-test-monster") {
+    let app = NSApplication.shared; app.setActivationPolicy(.accessory); app.finishLaunching()
+    var count = 0
+    SelfTest.runMonsterChecks { passed, label in
+        guard passed else { fputs("FAIL: \(label)\n",stderr); exit(1) }
+        count += 1; print("PASS: \(label)")
+    }
+    print("\(count) monster checks passed.")
 } else if args.contains("--self-test-roster") {
     var count=0
     SelfTest.runRosterChecks { passed, label in
@@ -106,6 +114,8 @@ if let index=args.firstIndex(of:"--benchmark-desktop"),index+1<args.count {
     print("\(count) roster checks passed.")
 } else if args.contains("--self-test") {
     SelfTest.run()
+} else if let index = args.firstIndex(of: "--render-monster"), index + 1 < args.count {
+    SelfTest.renderMonster(to: args[index + 1])
 } else if let index = args.firstIndex(of: "--render-sleep"), index + 1 < args.count {
     SelfTest.renderSleepReview(to: args[index + 1])
 } else if let index = args.firstIndex(of: "--render-roster"), index + 1 < args.count {

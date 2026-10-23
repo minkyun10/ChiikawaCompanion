@@ -82,6 +82,7 @@ final class AttackOverlayView: NSView {
     let friend: Friend
     var body = NSRect.zero
     var time: TimeInterval = 0
+    var hachiwareMonster = false
     init(friend: Friend) {
         self.friend = friend; super.init(frame: .zero)
         setAccessibilityElement(false)
@@ -89,7 +90,8 @@ final class AttackOverlayView: NSView {
     required init?(coder: NSCoder) { fatalError("init(coder:) is unavailable") }
     override func draw(_ dirtyRect: NSRect) {
         NSGraphicsContext.current?.cgContext.clear(bounds)
-        if friend.isExpansion { RosterSprites.shared(friend).draw(action: .attack, in: body, elapsed: time) }
+        if hachiwareMonster { HachiwareMonsterSprites.shared.draw(in:body,time:time,action:.attack,actionTime:time) }
+        else if friend.isExpansion { RosterSprites.shared(friend).draw(action: .attack, in: body, elapsed: time) }
         else if friend == .chiikawa { _ = ChiikawaAttackSprites.shared.draw(in: body,time: time) }
         else { _ = WeaponAttackSprites.shared.draw(in: body,time: time) }
     }
@@ -102,6 +104,7 @@ final class AttackOverlay {
     let panel: FriendPanel
     let view: AttackOverlayView
     private var lastFrame: Int?
+    private var lastMonster = false
     init(friend: Friend) {
         view = AttackOverlayView(friend: friend)
         panel = FriendPanel(contentRect: .zero,styleMask: [.borderless,.nonactivatingPanel],backing: .buffered,defer: false)
@@ -112,8 +115,8 @@ final class AttackOverlay {
         panel.ignoresMouseEvents = true
     }
     func update(actor: FriendActor) {
-        let active = actor.friend.canUseWeapon && actor.panel.isVisible && actor.view.action == .attack && !actor.view.isDragging
-        let registration = actor.friend.isExpansion ? RosterSprites.shared(actor.friend).registration : actor.friend == .chiikawa ? ChiikawaAttackSprites.shared.registration : WeaponAttackSprites.shared.registration
+        let active = actor.friend.canUseWeapon && actor.panel.isVisible && actor.view.action == .attack && !actor.view.isDragging && actor.view.transformationProgress >= 1
+        let registration = actor.view.hachiwareMonster ? HachiwareMonsterSprites.shared.registration : actor.friend.isExpansion ? RosterSprites.shared(actor.friend).registration : actor.friend == .chiikawa ? ChiikawaAttackSprites.shared.registration : WeaponAttackSprites.shared.registration
         guard active, let registration else {
             if !actor.panel.isVisible || actor.view.isDragging {
                 actor.armedHoverContact = nil; actor.wasHovered = false
@@ -127,8 +130,10 @@ final class AttackOverlay {
         let localBody=NSRect(x: body.minX-extent.minX,y: body.minY-extent.minY,width: body.width,height: body.height)
         let geometryChanged=view.body != localBody
         view.body=localBody;view.time=actor.view.actionTime ?? actor.view.time
+        view.hachiwareMonster = actor.view.hachiwareMonster
         let frame=actor.friend == .chiikawa ? ChiikawaAttackSprites.frameIndex(time:view.time) : WeaponAttackSprites.frameIndex(time:view.time)
-        let repaint=geometryChanged || lastFrame != frame || !panel.isVisible
+        let repaint=geometryChanged || lastFrame != frame || lastMonster != view.hachiwareMonster || !panel.isVisible
+        lastMonster = view.hachiwareMonster
         lastFrame=frame
         if !actor.view.attackUsesOverlay { actor.view.attackUsesOverlay = true; actor.view.needsDisplay = true }
         if !panel.isVisible { panel.order(.above,relativeTo: actor.panel.windowNumber) }

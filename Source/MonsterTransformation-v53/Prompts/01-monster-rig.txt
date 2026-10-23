@@ -1,0 +1,15 @@
+Use case: identity-preserve.
+Asset type: transparent 2D cutout rig atlas for animating the APPROVED monster Hachiware in the attached T-pose.
+Input 1: DEFINITIVE approved front T-pose, exact identity/proportions/colors/line style. Input 2: approved front/back/side turnaround, orientation reference. Preserve this exact character. No redesign.
+Create ONE clean evenly spaced 4-column by 2-row atlas, eight separate isolated components. No labels, text, grid lines or background. Each component stays well inside its own equal cell with transparent gutters; no parts cross cells. Wide landscape canvas.
+ROW 1 from left to right:
+1. FRONT HEAD+TORSO only: exact approved front ears, swirl eyes, little delighted mouth with pink tongue, white broad fluffy head and rounded furry torso. Remove both arms, both legs/feet and tail completely; leave rounded white torso down to the hips.
+2. LEFT SIDE HEAD+TORSO only: strict 90 degree left-facing view of the same armless legless tailless head+torso; one visible swirl eye, overlapping ears, same sturdy belly and overall head/torso height.
+3. BACK HEAD+TORSO only: strict rear view, same height/width, blue top-of-head cap and white rear body; no face or inner-ear face marks. No arms/feet/tail.
+4. FRONT-LEFT DIAGONAL HEAD+TORSO only: 45 degree left-facing front three-quarter view, both eyes with one foreshortened, same anatomy and height; no arms/feet/tail.
+ROW 2 left to right:
+5. BACK-LEFT DIAGONAL HEAD+TORSO only: 45 degree rear three-quarter view; NO visible eyes/mouth; same chunky ears/head/body, no arms/feet/tail.
+6. ONE DETACHED ARM: a white furry arm/forearm and broad paw, pointing straight downward, open flat white shoulder root at the top for seamless attachment, FOUR long pale mint claws at the paw including the thumb. Match the approved paw size; no circular paw pads.
+7. ONE DETACHED LEG+FOOT: a short sturdy white furry leg and broad foot, pointing straight downward, open flat white root at top for seamless attachment, THREE pale mint toe claws at the bottom. This exact part will be mirrored and phase shifted to make identical alternating feet.
+8. ONE DETACHED BLUE TAIL: the exact large broad fluffy pointed blue tail from the approved character, root at lower left and thick tail curving upward to right; no white body attached.
+All five head+torso parts must be consistent rotations of ONE shape at identical scale, with the same large blue ears, broad white cheeks, large scribbly/swirl pupils, tiny cheek lines, chest tufts, stout round torso, near-black outline, dusty blue ears/cap, flat white fur. Keep 2D clean edges and the approved drawing finish. Never skinny, muscular, realistic, 3D, plush, or a generic furry wolf. No added pink cheeks, colored nose, extra characters, extra components or duplicated appendages. Absolutely no arms or feet baked into the five head+torso drawings: these are separate animation rig components. Background genuinely transparent.

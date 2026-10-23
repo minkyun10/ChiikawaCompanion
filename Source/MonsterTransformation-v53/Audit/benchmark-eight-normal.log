@@ -1,0 +1,1 @@
+Bench 8: ["intervalMaxms": 18.733208416961133, "intervalP99ms": 18.639166723005474, "callbackHz": 59.99363127245033, "intervalP95ms": 18.42325006145984, "characters": 8, "workMaxms": 5.269458284601569, "cpuPercentOfOneCore": 29.571597506615955, "over25msPercent": 0.0, "workP95ms": 4.667083383537829, "samples": 603]

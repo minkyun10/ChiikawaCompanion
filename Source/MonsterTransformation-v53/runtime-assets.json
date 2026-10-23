@@ -1,0 +1,188 @@
+{
+  "walkFrames": 192,
+  "actionFrames": 132,
+  "sleepFrames": 12,
+  "totalFrames": 336,
+  "atlases": [
+    {
+      "path": "Final/Atlases/action-0-12.png",
+      "dimensions": [
+        1536,
+        512
+      ],
+      "bytes": 235268,
+      "sha256": "bb942331eebbb2fec15906949e35230d65842d68029394b19b73d49a3e0de12a"
+    },
+    {
+      "path": "Final/Atlases/action-1-12.png",
+      "dimensions": [
+        1536,
+        512
+      ],
+      "bytes": 237622,
+      "sha256": "ceff525718fd265e52e5af37c68005b8fa24bf4b177fbd6be72052b5ba2b6416"
+    },
+    {
+      "path": "Final/Atlases/action-10-12.png",
+      "dimensions": [
+        2640,
+        512
+      ],
+      "bytes": 297151,
+      "sha256": "aabbceef45e904e4be05d2e81984ea7fce4511468e42932115fdce545397958c"
+    },
+    {
+      "path": "Final/Atlases/action-2-12.png",
+      "dimensions": [
+        1536,
+        512
+      ],
+      "bytes": 206299,
+      "sha256": "b1f15ae1b8203e2ca333fe90ac5a2e0613d0b673159db47f860617d6b7379129"
+    },
+    {
+      "path": "Final/Atlases/action-3-12.png",
+      "dimensions": [
+        1536,
+        512
+      ],
+      "bytes": 278950,
+      "sha256": "aa65d5c13bfc0c44db7960aea9f1a09b852bccb722abdc63e68a0eaae281980a"
+    },
+    {
+      "path": "Final/Atlases/action-4-12.png",
+      "dimensions": [
+        1536,
+        512
+      ],
+      "bytes": 198706,
+      "sha256": "ce63f97f45914acdf21352dca87490432f6a230558a3bf1d5d0d21bec38ed0a7"
+    },
+    {
+      "path": "Final/Atlases/action-5-12.png",
+      "dimensions": [
+        1536,
+        512
+      ],
+      "bytes": 201456,
+      "sha256": "bf1a7338cfbc17f5e1adcdccee8c756ba28dde3e60f9c5c42973b2160cef9eac"
+    },
+    {
+      "path": "Final/Atlases/action-6-12.png",
+      "dimensions": [
+        1536,
+        512
+      ],
+      "bytes": 210209,
+      "sha256": "acaf749f962c891d28918cd4a5dfd652518e72e1320ff19e6ce5cccdac404d90"
+    },
+    {
+      "path": "Final/Atlases/action-7-12.png",
+      "dimensions": [
+        1536,
+        512
+      ],
+      "bytes": 192712,
+      "sha256": "202cbd699db5ae5862e2542679a601fe9447d521869c096e78b16a61e6916d43"
+    },
+    {
+      "path": "Final/Atlases/action-8-12.png",
+      "dimensions": [
+        1536,
+        512
+      ],
+      "bytes": 220616,
+      "sha256": "96dfdb191f2192c6ab2a7dee7e8f178bd842be20ddab594ecbb8c0d9101eeb35"
+    },
+    {
+      "path": "Final/Atlases/action-9-12.png",
+      "dimensions": [
+        1536,
+        512
+      ],
+      "bytes": 225697,
+      "sha256": "dad4069ebb896a14ee3f4fec5e54f05f5e628e7d12b6676e6a900b832dc6caa4"
+    },
+    {
+      "path": "Final/Atlases/sleep-12.png",
+      "dimensions": [
+        1536,
+        360
+      ],
+      "bytes": 480108,
+      "sha256": "94ef0dce9bcd11c5ea6d2a5a0f4427c7263cf029adfb18698b4d488aab3933ce"
+    },
+    {
+      "path": "Final/Atlases/walk-down-24.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "bytes": 1020066,
+      "sha256": "4f017c71c4425e9cdc8237dbf01961ddf14195e53185b013e49ed66369493bdc"
+    },
+    {
+      "path": "Final/Atlases/walk-down-left-24.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "bytes": 1009406,
+      "sha256": "bb41032570ef77079a18516f0a9d6e16fa258958a0e3a7e350152ee7e68c9fb8"
+    },
+    {
+      "path": "Final/Atlases/walk-down-right-24.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "bytes": 1012841,
+      "sha256": "9d886301ae5c1f225377d6f02c2a6faf7cca69a64eee4dd629d41683939b480b"
+    },
+    {
+      "path": "Final/Atlases/walk-left-24.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "bytes": 873696,
+      "sha256": "038bc78e70761db287d78d5f5773a9ef3a1eaca9c85b66f4eaa143ba9fb77dd2"
+    },
+    {
+      "path": "Final/Atlases/walk-right-24.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "bytes": 873068,
+      "sha256": "8fff1b40d4f5f9eabf8c5a5fbde1604d1f5a235de393709db175d5eb59dbcbc7"
+    },
+    {
+      "path": "Final/Atlases/walk-up-24.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "bytes": 884585,
+      "sha256": "738289d6ae95501318740a59860da5473b56aed3aa1602b64052db9b0e746a25"
+    },
+    {
+      "path": "Final/Atlases/walk-up-left-24.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "bytes": 937265,
+      "sha256": "1c2133f662bd859fe7a8679eafea38e7a119893f7c5a6fd9fff7ad8140340394"
+    },
+    {
+      "path": "Final/Atlases/walk-up-right-24.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "bytes": 938604,
+      "sha256": "d100a1f2d73ac2c563836869c516b1035310021cae35c34698f3ecb61651c75e"
+    }
+  ]
+}

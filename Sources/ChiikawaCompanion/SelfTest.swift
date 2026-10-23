@@ -14,6 +14,7 @@ enum SelfTest {
         let application=NSApplication.shared
         application.setActivationPolicy(.accessory); application.finishLaunching()
         runArmedHoverChecks { check($0, $1) }
+        runMonsterChecks { check($0, $1) }
         let now = Date()
         let screen = NSRect(x: -1920, y: 30, width: 1920, height: 1050)
         let clamped = DesktopGeometry.clamp(NSPoint(x: 30, y: -40), size: NSSize(width: 132, height: 150), to: screen)

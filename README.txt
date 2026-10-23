@@ -1,6 +1,6 @@
 치이카와 데스크톱 — 개인용 Mac 앱
-현재 버전: 0.23.0 / build 50 (2026-10-23)
-최종 검수: app bundle 검사 810개 통과, 실제 설정 UI 확인.
+현재 버전: 0.25.0 / build 52 (2026-10-23)
+자동 검수: app bundle 검사 891개 통과. v53의 실제 바탕화면 육안 검수는 Mac 잠금 해제 후 확인합니다.
 
 사용법
   메뉴 막대의 발바닥 → 친구 소환… → 캐릭터별 소환 스위치.
@@ -12,6 +12,11 @@
   소품을 클릭하면 걸어오고, 몸 위로 드래그하면 즉시 건넵니다. 소품 좌표는 캐릭터와 독립적입니다.
   집을 클릭하면 친구들이 걸어와 쉬고, 자는 중에 클릭하면 함께 깨어납니다.
   집 그림을 우클릭하면 하치와레 집/치이카와 집을 선택합니다. 화면에는 공용 집 1개만 표시합니다.
+  하치와레를 10초 안에 5번 클릭하면 꿈속의 '강해진 하치와레'로 변신합니다.
+  다시 10초 안에 5번 클릭하면 원래 모습으로 돌아옵니다. 5번째 클릭은 다음 묶음에 중복되지 않습니다.
+  하치와레를 드래그하거나 다른 캐릭터를 클릭하면 진행 중인 클릭 횟수는 초기화됩니다.
+  변신 중에도 산책·소품·호버·공부·식사·토하기·공용 집 수면은 하치와레와 같은 방식으로 동작합니다.
+  앱을 다시 시작하면 일반 하치와레로 시작합니다. 변신 때문에 소환 목록이나 옵션은 늘어나지 않습니다.
 
 캐릭터와 소품
   하치와레: 카메라, 기타, 파란 사스마타, 책상, 털뭉치, 밥그릇.
@@ -47,6 +52,10 @@
   PNG 반복 압축 해제를 제거하고 원본 픽셀을 재사용합니다. 원화·색·alpha·프레임 수·이동 속도는 유지합니다.
   같은 화면/창 상태에는 불필요한 요청을 보내지 않으며, idle/표정 전환/blink의 연속 동작은 유지합니다.
   원시 측정 및 동일성 검수: Source/Performance-v46/Audit.
+  v53 8명 산책 비교(일반/괴물 모습 각각 10초): 평균 59.994 / 60.000 Hz,
+  두 구간 모두 25ms 초과 갱신 0건. 장시간이나 compositor-present FPS를 입증하는 값은 아닙니다.
+  변신용 시트도 빌드 때 미리 생성하며 실행 중에는 압축 해제한 프레임만 선택합니다.
+  v53 측정과 기존 실행 이미지 204개 hash 보존 검사: Source/MonsterTransformation-v53/Audit.
 
 목소리
   클릭하거나 목소리 듣기를 누른 경우에만 소리가 납니다. 자동 걷기·공격·생활 동작에서는 재생하지 않습니다.
@@ -60,17 +69,24 @@
 데이터와 메모리
   앱 설정은 local.chiikawa.companion UserDefaults에 저장됩니다.
   소환·이동·말풍선·소품·수면은 캐릭터별 상태로 관리합니다. 실행 중 메시지나 화면을 수집하지 않습니다.
-  8명 실행 시 RSS 샘플은 약 531 MiB입니다. 반복 decoding 대신 메모리에 원본 픽셀을 유지하는 trade-off입니다.
+  v46의 일반 8명 RSS 샘플은 약 531 MiB였습니다. v53의 격리 benchmark에서 관찰한 peak RSS는
+  일반/괴물 장면 각각 약 1,209 / 1,194 MiB입니다. 실행 환경·초기 loading·측정 수명이 달라
+  이 두 측정을 동일 조건의 증가분으로 해석하지 않습니다. 반복 decoding 대신 고정 원본 픽셀을 유지합니다.
+  v53의 실제 GUI 앱 일반 모습 RSS 관찰값은 약 509 MiB였습니다(화면 잠금 상태의 단일 표본).
   PNG를 한 번 압축 해제한 메모리 캐시는 고정된 캐릭터/시트 수에 따라 유지되며 시간에 비례해 늘어나지 않습니다.
+  변신 판정은 단조 증가 시각과 최대 4개의 대기 클릭 시각만 보관하며 디스크에 저장하지 않습니다.
   캐시와 실행 상태는 앱 종료 시 해제됩니다. 실행 중 Source에 로그나 이미지를 누적하지 않습니다.
   Source의 자료와 측정 로그는 개발 중 만든 고정 파일입니다.
 
 빌드 및 검수
   bash scripts/build.sh
   build/ChiikawaCompanion.app/Contents/MacOS/ChiikawaCompanion --self-test
+  build/ChiikawaCompanion.app/Contents/MacOS/ChiikawaCompanion --self-test-monster
+  build/ChiikawaCompanion.app/Contents/MacOS/ChiikawaCompanion --render-monster /tmp/monster-review
   build/ChiikawaCompanion.app/Contents/MacOS/ChiikawaCompanion --render-sleep /tmp/sleep-review
   build/ChiikawaCompanion.app/Contents/MacOS/ChiikawaCompanion --benchmark-desktop /tmp/desktop-benchmark.json
   추가 옵션: --benchmark-count 8 --benchmark-seconds 60 --benchmark-active
+  괴물 모습 비교 옵션: --benchmark-monster
   benchmark는 격리된 임시 설정을 사용하며 사용자의 소환/소품 설정을 변경하지 않습니다.
   앱 경로: build/ChiikawaCompanion.app. 코드 서명은 로컬 ad-hoc 방식입니다.
 
@@ -83,4 +99,7 @@
   랏코/시사/카니: Source/NewFriends-v45 (공식 출처·T-pose·전체 원화·모션 미리보기).
   현재 성능 최적화/간소화 및 이전 README: Source/Performance-v46.
   6명 전용 수면 원화·prompt·집 안 배치 검수: Source/CharacterSleep-v47.
+  괴물 하치와레 공식 레퍼런스: Source/HachiwareDreamMonster-v50.
+  확정 외형·T-pose: Source/HachiwareDreamMonsterDesign-v51, Source/HachiwareDreamMonsterTPose-v52.
+  변신 구현·생성 원본·부품·전체 atlas·중간 시안·GIF·검수: Source/MonsterTransformation-v53.
   원본 웹 문서·전체 참고 영상은 로컬 Source에 남기고 Git에서는 제외합니다.

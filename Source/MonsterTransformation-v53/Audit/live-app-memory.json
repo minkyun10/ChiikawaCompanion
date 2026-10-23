@@ -1,0 +1,9 @@
+{
+  "verified": "2026-10-23",
+  "pid": 10817,
+  "rssKiB": 521376,
+  "rssMiB": 509.15625,
+  "form": "normal",
+  "macLockedAtObservation": true,
+  "measurement": "single live GUI process RSS observation, distinct from peak values in isolated benchmark processes"
+}

@@ -73,35 +73,37 @@ final class ArmedPointerArtwork {
     static let shared = ArmedPointerArtwork()
     static let body = NSRect(x: 0, y: 0, width: 132, height: 150)
     private var walkingMasks: [String: CharacterPointerMask] = [:]
-    private var attackMasks: [Friend: CharacterPointerMask] = [:]
+    private var attackMasks: [String: CharacterPointerMask] = [:]
 
-    func walking(_ friend: Friend, pose: HachiwarePose, facing: CGFloat) -> CharacterPointerMask {
+    func walking(_ friend: Friend, pose: HachiwarePose, facing: CGFloat, monster: Bool = false, armed: Bool = true) -> CharacterPointerMask {
         let body = NSRect(origin: .zero, size: friend.actorSize)
-        let key = "\(friend.rawValue)-\(pose.rawValue)-\(facing < 0)"
+        let key = "\(friend.rawValue)-\(pose.rawValue)-\(facing < 0)-\(monster)-\(armed)"
         if let mask = walkingMasks[key] { return mask }
         // The normal actor clips equipped artwork to its original panel.
         let mask = CharacterPointerMask(rect: body) {
-            let count = friend == .chiikawa || friend.isExpansion ? 24 : pose.frameCount
+            let count = friend == .chiikawa || friend.isExpansion || monster ? 24 : pose.frameCount
             for index in 0..<count {
                 FriendArtwork.draw(friend, in: body, time: 0, walking: true, facing: facing,
                     walkPhase: (Double(index) + 0.25) / Double(count) * 2 * .pi, pose: pose,
-                    equipped: friend == .hachiware ? .sasumata : nil,
+                    equipped: friend == .hachiware && armed ? .sasumata : nil,
                     chiikawaItem: friend == .chiikawa ? .pinkSasumata : nil,
-                    rosterVisual: friend == .usagi ? RosterVisual(equipped: .weapon) : nil)
+                    rosterVisual: friend == .usagi ? RosterVisual(equipped: .weapon) : nil,
+                    hachiwareMonster:monster)
             }
         }
         walkingMasks[key] = mask; return mask
     }
-    func attack(_ friend: Friend) -> CharacterPointerMask {
-        if let mask = attackMasks[friend] { return mask }
+    func attack(_ friend: Friend, monster: Bool = false) -> CharacterPointerMask {
+        let key = "\(friend.rawValue)-\(monster)"
+        if let mask = attackMasks[key] { return mask }
         let body = NSRect(origin: .zero, size: friend.actorSize)
-        let registration = friend.isExpansion ? RosterSprites.shared(friend).registration : friend == .chiikawa ? ChiikawaAttackSprites.shared.registration : WeaponAttackSprites.shared.registration
+        let registration = monster ? HachiwareMonsterSprites.shared.registration : friend.isExpansion ? RosterSprites.shared(friend).registration : friend == .chiikawa ? ChiikawaAttackSprites.shared.registration : WeaponAttackSprites.shared.registration
         let mask = CharacterPointerMask(rect: registration?.extent(in: body) ?? body) {
             for index in 0..<WeaponAttackSprites.frameCount {
-                FriendArtwork.draw(friend, in: body, action: .attack, actionTime: (Double(index) + 0.25) * 0.1)
+                FriendArtwork.draw(friend, in: body, action: .attack, actionTime: (Double(index) + 0.25) * 0.1,hachiwareMonster:monster)
             }
         }
-        attackMasks[friend] = mask; return mask
+        attackMasks[key] = mask; return mask
     }
 }
 
@@ -119,11 +121,15 @@ extension FriendActor {
                 entry = contact
                 // Keep the entry silhouette and whole attack cycle stable until
                 // the pointer leaves. Moving limbs cannot restart the attack.
-                hit = contact.contains(local) || artwork.attack(friend).contains(local)
+                hit = contact.contains(local) || artwork.attack(friend,monster:view.hachiwareMonster).contains(local)
             } else {
-                let mask = artwork.walking(friend, pose: view.walking ? view.pose : .front, facing: view.facing)
+                let mask = artwork.walking(friend, pose: view.walking ? view.pose : .front, facing: view.facing,monster:view.hachiwareMonster)
                 entry = mask; hit = mask.contains(local)
             }
+        } else if view.hachiwareMonster {
+            entry = nil
+            hit = ArmedPointerArtwork.shared.walking(friend,pose:view.walking ? view.pose:.front,
+                facing:view.facing,monster:true,armed:false).contains(local)
         } else {
             entry = nil; hit = DesktopGeometry.hit(point, in: body)
         }

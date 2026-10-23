@@ -40,20 +40,21 @@ final class DesktopFriendView: NSView {
         let item:CompanionItem?
         let chiikawaItem:ChiikawaItem?
         let blink:Int
+        let monster:Bool
     }
     private var walkingPaint:WalkingPaint?
     func invalidateCurrentDrawing() {
         // Continuous idle bob, crossfade and action effects keep their original cadence.
-        guard walking, !happy, action == nil, chiikawaLife == nil, chiikawaReaction == nil,
+        guard transformationProgress >= 1, walking, !happy, action == nil, chiikawaLife == nil, chiikawaReaction == nil,
               friend == .hachiware || (friend == .chiikawa && time-chiikawaReactionChanged>=0.1) else {
             walkingPaint=nil;needsDisplay=true;return
         }
-        let count=friend == .chiikawa ? 24:pose.frameCount
+        let count=friend == .chiikawa || hachiwareMonster ? 24:pose.frameCount
         let blink=friend == .chiikawa && pose == .front
             ? ChiikawaBlinkArtwork.shared.frameIndex(time:time):(-1)
         let next=WalkingPaint(pose:pose,right:facing>0,
             frame:HachiwareSprites.frameIndex(phase:walkPhase,count:count),item:equipped,
-            chiikawaItem:chiikawaItem,blink:blink)
+            chiikawaItem:chiikawaItem,blink:blink,monster:hachiwareMonster)
         if next != walkingPaint {needsDisplay=true;walkingPaint=next}
     }
     let friend: Friend
@@ -79,6 +80,9 @@ final class DesktopFriendView: NSView {
     }
     var chiikawaLife: ChiikawaLifeAction?
     var attackUsesOverlay = false
+    var hachiwareMonster = false
+    var transformationProgress = 1.0
+    var monsterOpacity = 0.0
     var isDragging = false
     var onClick: (() -> Void)?
     var onToggleWalking: (() -> Void)?
@@ -109,11 +113,27 @@ final class DesktopFriendView: NSView {
         // overlay paints the body. Remove the previous pose from its backing.
         NSGraphicsContext.current?.cgContext.clear(bounds)
         if action == .attack && attackUsesOverlay { return }
+        func drawFigure(monster: Bool) {
         FriendArtwork.draw(friend, in: bounds, time: time, happy: happy, walking: walking,
                            looking: looking, facing: facing, walkPhase: walkPhase, pose: pose,
                            action: action, equipped: equipped, actionTime: actionTime,
                            chiikawaReaction: chiikawaReaction, chiikawaItem: chiikawaItem, chiikawaLife: chiikawaLife,
-                           previousChiikawaReaction: previousChiikawaReaction, reactionProgress: min(1,max(0,(time-chiikawaReactionChanged)/0.1)), rosterVisual: rosterVisual)
+                           previousChiikawaReaction: previousChiikawaReaction, reactionProgress: min(1,max(0,(time-chiikawaReactionChanged)/0.1)), rosterVisual: rosterVisual,
+                           hachiwareMonster:monster)
+        }
+        if friend == .hachiware && transformationProgress < 1, let cg = NSGraphicsContext.current?.cgContext {
+            let progress = CGFloat(transformationProgress)
+            cg.saveGState(); cg.setAlpha(CGFloat(1-monsterOpacity)); drawFigure(monster:false); cg.restoreGState()
+            cg.saveGState(); cg.setAlpha(CGFloat(monsterOpacity)); drawFigure(monster:true); cg.restoreGState()
+            for index in 0..<5 {
+                let angle = CGFloat(index)*2 * .pi/5+progress*1.5
+                let radius = bounds.width*(0.25+0.15*progress)
+                cg.saveGState(); cg.setAlpha(sin(progress * .pi))
+                FriendArtwork.spark(bounds.midX+cos(angle)*radius,bounds.midY+sin(angle)*radius,
+                                    size:bounds.width*0.035)
+                cg.restoreGState()
+            }
+        } else { drawFigure(monster:hachiwareMonster) }
     }
     var onToggleAllItems: (() -> Void)?
     var onPreviewVoice: (() -> Void)?
@@ -263,6 +283,7 @@ final class FriendActor {
 }
 
 final class DesktopController {
+    var hachiwareTransformation = HachiwareTransformation()
     var expansions: [Friend: RosterCompanion] = [:]
     let state: AppState
     var actors: [FriendActor] = []
@@ -318,6 +339,7 @@ final class DesktopController {
         _ = ChiikawaBlinkArtwork.shared
         _ = HachiwareSprites.shared
         _ = HachiwareActions.shared
+        _ = HachiwareMonsterSprites.shared
         _ = WeaponAttackSprites.shared
         actors = Friend.developmentRoster.enumerated().map { FriendActor(friend: $0.element, index: $0.offset) }
         for actor in actors {
@@ -362,6 +384,7 @@ final class DesktopController {
                 actor.view.onStopDailyAction = { [weak self] in self?.stopDailyAction() }
             }
             actor.view.onDragEnd = { [weak self, weak actor] in
+                self?.hachiwareTransformation.interruptSequence()
                 actor?.motion.retarget()
                 if let actor, actor.friend == .chiikawa { self?.didMoveChiikawa(actor); return }
                 // Ground props own screen coordinates. Moving the character only
@@ -595,7 +618,22 @@ final class DesktopController {
         publishEquipment()
         return true
     }
-    func handleCharacterClick(_ actor: FriendActor) {
+    func handleCharacterClick(_ actor: FriendActor, monotonicTime: TimeInterval = ProcessInfo.processInfo.systemUptime) {
+        if actor.friend != .hachiware { hachiwareTransformation.interruptSequence() }
+        if actor.friend == .hachiware, HachiwareMonsterSprites.shared.isReady,
+           hachiwareTransformation.click(at:monotonicTime) {
+            stopDailyAction(); stopCharacterVoice()
+            actor.performance.cancel(now:Date()); actor.armedHoverContact = nil
+            actor.view.action = nil; actor.view.actionTime = nil
+            actor.view.attackUsesOverlay = false; actor.attackOverlay.panel.orderOut(nil)
+            actor.view.hachiwareMonster = hachiwareTransformation.isMonster
+            actor.view.transformationProgress = 0
+            actor.view.monsterOpacity = hachiwareTransformation.monsterOpacity(at:monotonicTime)
+            actor.view.needsDisplay = true
+            actor.say(hachiwareTransformation.isMonster ? "강해진 하치와레!" : "다시 하치와레!",now:Date(),
+                      duration:HachiwareTransformation.transitionDuration)
+            return
+        }
         if let companion = expansions[actor.friend] { companion.clicked(); return }
         if actor.friend == .hachiware, let selected = ClickDialogue.choose(excluding: lastClickDialogueID) {
             presentClickDialogue(selected, for: actor)
@@ -761,6 +799,7 @@ final class DesktopController {
             }
             let enabled = state.isVisible(actor.friend)
             guard enabled else {
+                hachiwareTransformation.interruptSequence()
                 stopDailyAction()
                 actor.panel.orderOut(nil); actor.dismissBubble(); stopCharacterVoice()
                 actor.performance.cancel(now: now)
@@ -858,6 +897,8 @@ final class DesktopController {
                 }
             } else { actor.motion.stop() }
             actor.view.time = time + actor.phase
+            actor.view.transformationProgress = hachiwareTransformation.progress(at:ProcessInfo.processInfo.systemUptime)
+            actor.view.monsterOpacity = hachiwareTransformation.monsterOpacity(at:ProcessInfo.processInfo.systemUptime)
             actor.view.walking = actor.motion.isWalking
             actor.view.facing = actor.motion.facing
             actor.view.walkPhase = actor.gait.phase

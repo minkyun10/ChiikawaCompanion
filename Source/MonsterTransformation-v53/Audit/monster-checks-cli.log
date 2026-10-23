@@ -1,0 +1,36 @@
+PASS: monster transform requires five distinct completed clicks
+PASS: the fifth click at the inclusive ten-second boundary transforms and consumes the window
+PASS: a sixth click does not immediately transform back
+PASS: another complete five-click window restores normal Hachiware
+PASS: transformation uses one bounded 650ms crossfade
+PASS: expired oldest clicks cannot trigger a late transformation
+PASS: five still-valid clicks in the rolling window transform
+PASS: clock reversal starts a new click sequence
+PASS: invalid timestamps never accumulate
+PASS: rapid repeat transformation reverses from the visible blend without an artwork pop
+PASS: monster has all eight 24-frame walks, eleven 12-frame actions and sleeping frames
+PASS: down contains twenty-four chronological, nonduplicate monster walk drawings
+PASS: up contains twenty-four chronological, nonduplicate monster walk drawings
+PASS: left contains twenty-four chronological, nonduplicate monster walk drawings
+PASS: right contains twenty-four chronological, nonduplicate monster walk drawings
+PASS: down-left contains twenty-four chronological, nonduplicate monster walk drawings
+PASS: down-right contains twenty-four chronological, nonduplicate monster walk drawings
+PASS: up-left contains twenty-four chronological, nonduplicate monster walk drawings
+PASS: up-right contains twenty-four chronological, nonduplicate monster walk drawings
+PASS: both monster feet follow the same stance/swing path with an exact half-cycle offset
+PASS: monster sleep includes anchored breathing instead of a static normal-character fallback
+PASS: monster attack retains the walking body scale in every frame
+PASS: the monster spear uses a separate wide viewport
+PASS: every monster action frame contains its own artwork, including camera/guitar/weapon/study/eat/vomit
+PASS: monster body stays a pointer target in walking and attack poses
+PASS: monster fixture starts with Hachiware's existing equipped weapon
+PASS: five actual view mouse-down/up pairs transform despite the shared drag-start callback
+PASS: transformation preserves desktop origin, actor size, current route and distance-based gait
+PASS: transformation keeps equipment and independent ground-item coordinates
+PASS: other companions never inherit the monster form
+PASS: armed hover overlay selects the monster attack instead of the original Hachiware atlas
+PASS: clicking another character breaks the consecutive Hachiware sequence
+PASS: dragging Hachiware breaks the five-click sequence
+PASS: the single shared house retains the monster identity during entering and sleep
+PASS: the live controller restores normal artwork after a second full five-click sequence
+35 monster checks passed.

@@ -11,7 +11,14 @@ enum FriendArtwork {
                      action: HachiwareAction? = nil, equipped: CompanionItem? = nil, actionTime: Double? = nil,
                      chiikawaReaction: ChiikawaReaction? = nil, chiikawaItem: ChiikawaItem? = nil,
                      chiikawaLife: ChiikawaLifeAction? = nil,
-                     previousChiikawaReaction: ChiikawaReaction? = nil, reactionProgress: Double = 1, rosterVisual: RosterVisual? = nil) {
+                     previousChiikawaReaction: ChiikawaReaction? = nil, reactionProgress: Double = 1, rosterVisual: RosterVisual? = nil,
+                     hachiwareMonster: Bool = false) {
+        if friend == .hachiware && hachiwareMonster {
+            HachiwareMonsterSprites.shared.draw(in:rect,time:time,happy:happy,walking:walking,facing:facing,
+                phase:walkPhase ?? time/RoamingMotion.previewCycleDuration*2 * .pi,pose:pose,
+                action:action,equipped:equipped,actionTime:actionTime)
+            return
+        }
         if friend.isExpansion {
             let visual = rosterVisual ?? RosterVisual(action: action == .attack ? .attack : happy ? .wave : nil, elapsed: actionTime ?? time)
             RosterArtwork.draw(friend, in: rect, time: time, walking: walking, facing: facing,

@@ -1,0 +1,158 @@
+{
+  "variant": "normal",
+  "samples": [
+    {
+      "seconds": 0.0,
+      "rssKiB": 864
+    },
+    {
+      "seconds": 0.52,
+      "rssKiB": 48176
+    },
+    {
+      "seconds": 1.03,
+      "rssKiB": 72240
+    },
+    {
+      "seconds": 1.54,
+      "rssKiB": 198960
+    },
+    {
+      "seconds": 2.06,
+      "rssKiB": 249984
+    },
+    {
+      "seconds": 2.57,
+      "rssKiB": 300848
+    },
+    {
+      "seconds": 3.08,
+      "rssKiB": 383216
+    },
+    {
+      "seconds": 3.6,
+      "rssKiB": 499232
+    },
+    {
+      "seconds": 4.1,
+      "rssKiB": 515280
+    },
+    {
+      "seconds": 4.61,
+      "rssKiB": 728880
+    },
+    {
+      "seconds": 5.12,
+      "rssKiB": 779008
+    },
+    {
+      "seconds": 5.64,
+      "rssKiB": 829600
+    },
+    {
+      "seconds": 6.14,
+      "rssKiB": 1077568
+    },
+    {
+      "seconds": 6.66,
+      "rssKiB": 1238368
+    },
+    {
+      "seconds": 7.17,
+      "rssKiB": 1068016
+    },
+    {
+      "seconds": 7.68,
+      "rssKiB": 1006208
+    },
+    {
+      "seconds": 8.19,
+      "rssKiB": 1017312
+    },
+    {
+      "seconds": 8.7,
+      "rssKiB": 1017344
+    },
+    {
+      "seconds": 9.21,
+      "rssKiB": 997840
+    },
+    {
+      "seconds": 9.71,
+      "rssKiB": 998032
+    },
+    {
+      "seconds": 10.22,
+      "rssKiB": 990096
+    },
+    {
+      "seconds": 10.73,
+      "rssKiB": 990096
+    },
+    {
+      "seconds": 11.25,
+      "rssKiB": 990352
+    },
+    {
+      "seconds": 11.76,
+      "rssKiB": 974592
+    },
+    {
+      "seconds": 12.27,
+      "rssKiB": 956016
+    },
+    {
+      "seconds": 12.78,
+      "rssKiB": 955904
+    },
+    {
+      "seconds": 13.29,
+      "rssKiB": 955904
+    },
+    {
+      "seconds": 13.81,
+      "rssKiB": 955904
+    },
+    {
+      "seconds": 14.32,
+      "rssKiB": 863264
+    },
+    {
+      "seconds": 14.83,
+      "rssKiB": 696784
+    },
+    {
+      "seconds": 15.35,
+      "rssKiB": 679184
+    },
+    {
+      "seconds": 15.86,
+      "rssKiB": 678992
+    },
+    {
+      "seconds": 16.37,
+      "rssKiB": 679040
+    },
+    {
+      "seconds": 16.88,
+      "rssKiB": 679008
+    },
+    {
+      "seconds": 17.39,
+      "rssKiB": 679024
+    },
+    {
+      "seconds": 17.9,
+      "rssKiB": 678896
+    },
+    {
+      "seconds": 18.42,
+      "rssKiB": 679056
+    },
+    {
+      "seconds": 18.93,
+      "rssKiB": 679040
+    }
+  ],
+  "peakObservedMiB": 1209.34375
+}

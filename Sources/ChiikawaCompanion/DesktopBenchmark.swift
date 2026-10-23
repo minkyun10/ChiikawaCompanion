@@ -4,7 +4,7 @@ import Darwin
 
 /// Real-time AppKit windows and drawing; isolated preferences never change the user's setup.
 enum DesktopBenchmark {
-    static func run(output: String, seconds: Double, counts:[Int]=[1,2,4,6,8], automaticItems:Bool=false) {
+    static func run(output: String, seconds: Double, counts:[Int]=[1,2,4,6,8], automaticItems:Bool=false, monster:Bool=false) {
         let app=NSApplication.shared;app.setActivationPolicy(.accessory);app.finishLaunching()
         let suite="DesktopBenchmark-\(UUID().uuidString)", defaults=UserDefaults(suiteName:suite)!
         defer { defaults.removePersistentDomain(forName:suite) }
@@ -15,6 +15,7 @@ enum DesktopBenchmark {
         state.characterVoice=false;state.chiikawaVoice=false
         for friend in Friend.expansionOrder {state.updateOptions(friend){$0.automaticItems=automaticItems;$0.automaticRest=false;$0.voice=false}}
         let desktop=DesktopController(state:state,startTimer:false)
+        if monster, let actor = desktop.hachiwareActor { for _ in 0..<5 { desktop.handleCharacterClick(actor) } }
         let bounds=NSScreen.main!.visibleFrame
         var results:[[String:Any]]=[]
         func cpu()->Double {
@@ -60,6 +61,7 @@ enum DesktopBenchmark {
             print("Bench \(count): \(record)");fflush(stdout)
         }
         let report:[String:Any]=["date":"2026-10-23","secondsPerCount":seconds,"warmupSeconds":2,
+            "hachiwareMonster":monster,
             "screenPoints":[bounds.width,bounds.height],"backingScale":NSScreen.main!.backingScaleFactor,
             "method":"60 Hz main-run-loop callback plus synchronous displayIfNeeded on actual AppKit windows; not compositor-present FPS",
             "scene":automaticItems ? "All eight characters with owned props and autonomous pickup/activities enabled; rest/audio disabled to keep cast visible; pointer away; no settings window" : "All owned ground props enabled; continuously walking; autonomous pickup/rest/activities and audio disabled; pointer away; no settings window",

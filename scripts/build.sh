@@ -16,8 +16,8 @@ cat > "$app_dir/Contents/Info.plist" <<'PLIST'
   <key>CFBundleName</key><string>ChiikawaCompanion</string>
   <key>CFBundleDisplayName</key><string>치이카와 데스크톱</string>
   <key>CFBundleExecutable</key><string>ChiikawaCompanion</string>
-  <key>CFBundleVersion</key><string>51</string>
-  <key>CFBundleShortVersionString</key><string>0.24.0</string>
+  <key>CFBundleVersion</key><string>52</string>
+  <key>CFBundleShortVersionString</key><string>0.25.0</string>
   <key>CFBundlePackageType</key><string>APPL</string>
   <key>CFBundleIconFile</key><string>AppIcon</string>
   <key>LSMinimumSystemVersion</key><string>13.0</string>
@@ -26,6 +26,9 @@ cat > "$app_dir/Contents/Info.plist" <<'PLIST'
 </dict></plist>
 PLIST
 "$binary_dir/ChiikawaCompanion" --render-artwork "$project_dir/build/artwork"
+"$binary_dir/ChiikawaCompanion" --render-monster "$project_dir/build/monster"
+mkdir -p "$app_dir/Contents/Resources/Monster"
+cp "$project_dir/build/monster/"*-24.png "$project_dir/build/monster/"*-12.png "$app_dir/Contents/Resources/Monster/"
 # Render native animation once during packaging; the running app only decodes atlases.
 # These generated files predate the character-specific item and activity rules.
 # Remove both the export and bundle copies when rebuilding an existing checkout.

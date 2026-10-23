@@ -1,0 +1,20 @@
+{
+  "verified": "2026-10-23",
+  "version": "0.25.0",
+  "build": 52,
+  "packagedChecks": 891,
+  "targetedCLIChecks": 35,
+  "runtimeApplied": true,
+  "launchedUpdatedApp": true,
+  "allFinalAtlasesDecode": true,
+  "existingActiveResourcesUnchanged": 204,
+  "manualDesktopReview": "pending_mac_unlock",
+  "automaticTestsIncludeRealViewMouseDownUp": true,
+  "clickBehavior": "Five Hachiware clicks within a rolling inclusive 10-second window toggle the form. Dragging Hachiware or clicking another character interrupts the pending sequence.",
+  "returnBehavior": "Same five-click trigger toggles back; restarting starts normal.",
+  "tool": "built-in image_gen for rig and sleeping originals; established native cutout renderer for animation/atlas packing",
+  "prompts": [
+    "Prompts/01-monster-rig.txt",
+    "Prompts/02-monster-sleep.txt"
+  ]
+}

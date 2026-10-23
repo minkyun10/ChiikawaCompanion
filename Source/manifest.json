@@ -1,10 +1,10 @@
 {
   "created_at": "2026-10-16T12:08:58.617148+00:00",
   "operation": "copy; originals preserved",
-  "image_file_count": 3763,
-  "unique_image_content_count": 2004,
-  "supporting_file_count": 833,
-  "image_bytes": 1177427809,
+  "image_file_count": 3932,
+  "unique_image_content_count": 2069,
+  "supporting_file_count": 854,
+  "image_bytes": 1262710547,
   "symmetric_walk_runtime_applied": true,
   "files": [
     {
@@ -14002,6 +14002,13 @@
     },
     {
       "kind": "image",
+      "source": "Source/GeneratedOriginals/exec-8214250d-000a-46eb-b81b-13311b390ff4.png",
+      "archive_path": "GeneratedOriginals/exec-8214250d-000a-46eb-b81b-13311b390ff4.png",
+      "bytes": 1607442,
+      "sha256": "d917083a4321e5eef6dcb146f2f42b6510d7b4f504e23f85a0d470a8f41741e0"
+    },
+    {
+      "kind": "image",
       "source": "Source/GeneratedOriginals/exec-82a714f5-0aec-40b8-a0f3-1233a838c0ee.png",
       "archive_path": "GeneratedOriginals/exec-82a714f5-0aec-40b8-a0f3-1233a838c0ee.png",
       "bytes": 967407,
@@ -14251,6 +14258,13 @@
       "archive_path": "GeneratedOriginals/exec-ec4d289f-a152-4111-a8da-c985b5f92660.png",
       "bytes": 1346869,
       "sha256": "ce467da01ed99105aadeb580d2ee1d02c8f9cceed0c79368730bebcec593936a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/GeneratedOriginals/exec-f288fee1-d830-4865-8b2c-ebe9516bb28b.png",
+      "archive_path": "GeneratedOriginals/exec-f288fee1-d830-4865-8b2c-ebe9516bb28b.png",
+      "bytes": 1398183,
+      "sha256": "f899244f8a9edf6ec82936a454405843f73ea74522aef217bfaa779caa7432eb"
     },
     {
       "kind": "image",
@@ -21667,6 +21681,748 @@
     },
     {
       "kind": "supporting",
+      "source": "Source/MonsterTransformation-v53/Audit/benchmark-eight-monster.json",
+      "archive_path": "MonsterTransformation-v53/Audit/benchmark-eight-monster.json",
+      "bytes": 870,
+      "sha256": "fd2ecee2400ca01fd21559f55ea970a02b110397187ab32318d45033d663cfa1"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/MonsterTransformation-v53/Audit/benchmark-eight-monster.log",
+      "archive_path": "MonsterTransformation-v53/Audit/benchmark-eight-monster.log",
+      "bytes": 317,
+      "sha256": "7a11f3e19f62f62f4d806c96b648aaad97c7fdabb10dcadf54a1f3b21c220594"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/MonsterTransformation-v53/Audit/benchmark-eight-normal.json",
+      "archive_path": "MonsterTransformation-v53/Audit/benchmark-eight-normal.json",
+      "bytes": 871,
+      "sha256": "e304dc9370b5ed5142957f307e2f8bfb4cb2bbca15b29d1636449c015bbbf7ad"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/MonsterTransformation-v53/Audit/benchmark-eight-normal.log",
+      "archive_path": "MonsterTransformation-v53/Audit/benchmark-eight-normal.log",
+      "bytes": 317,
+      "sha256": "9114b268240adc4e844bbebe993147165ab25b4ca00b2491a15c8bf0e52f127f"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/MonsterTransformation-v53/Audit/build-app.log",
+      "archive_path": "MonsterTransformation-v53/Audit/build-app.log",
+      "bytes": 618,
+      "sha256": "c80cd278859adfc8ea4a64d3e5ebaea07a2a346a95de16605793c8ca78d57208"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/MonsterTransformation-v53/Audit/live-app-memory.json",
+      "archive_path": "MonsterTransformation-v53/Audit/live-app-memory.json",
+      "bytes": 263,
+      "sha256": "88de32e4896e169b4cf362fe164dfc0d901783cf180bc6ec24a9ca1e5b3c8bb4"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/MonsterTransformation-v53/Audit/memory-eight-monster.json",
+      "archive_path": "MonsterTransformation-v53/Audit/memory-eight-monster.json",
+      "bytes": 2340,
+      "sha256": "4db954e5927eae104aa8743b2715ba343d19b1fe4b54d15ac1eafdbc740d6363"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/MonsterTransformation-v53/Audit/memory-eight-normal.json",
+      "archive_path": "MonsterTransformation-v53/Audit/memory-eight-normal.json",
+      "bytes": 2334,
+      "sha256": "dad59cf44fb0cf07f0d91846fb3dd6e05b3f555310124073cd537296aaa7aad3"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/MonsterTransformation-v53/Audit/monster-checks-cli.log",
+      "archive_path": "MonsterTransformation-v53/Audit/monster-checks-cli.log",
+      "bytes": 2700,
+      "sha256": "fe476b82fcacac8e0ac7ad77865a89e19cf75630854436870cc4f371ab5c6101"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/MonsterTransformation-v53/Audit/packaged-self-test.log",
+      "archive_path": "MonsterTransformation-v53/Audit/packaged-self-test.log",
+      "bytes": 70455,
+      "sha256": "cb55f90913ab64c43dcebdfeee4cc48326608478376e727bc23a3088dec02106"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/MonsterTransformation-v53/Audit/render-final.log",
+      "archive_path": "MonsterTransformation-v53/Audit/render-final.log",
+      "bytes": 96,
+      "sha256": "bcefc291fd400d6eb9d31572dc6469f361775046a91c63066b46916cfcb24518"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/MonsterTransformation-v53/Audit/render.log",
+      "archive_path": "MonsterTransformation-v53/Audit/render.log",
+      "bytes": 96,
+      "sha256": "bcefc291fd400d6eb9d31572dc6469f361775046a91c63066b46916cfcb24518"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/MonsterTransformation-v53/Audit/resource-preservation.json",
+      "archive_path": "MonsterTransformation-v53/Audit/resource-preservation.json",
+      "bytes": 1331,
+      "sha256": "b1ce956a0114b2b7970e29c794833877ee1a44b6ca4e9c5b867473d14636fccf"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/MonsterTransformation-v53/Audit/verification.json",
+      "archive_path": "MonsterTransformation-v53/Audit/verification.json",
+      "bytes": 842,
+      "sha256": "6506a0503c077d220eaa8f6c1f83c6ffbb57df4c53a9d1a469f932d3dc261c8f"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/MonsterTransformation-v53/ExtractRig.swift",
+      "archive_path": "MonsterTransformation-v53/ExtractRig.swift",
+      "bytes": 2036,
+      "sha256": "46a3129dab62a9c55539dbfc44e3b8c521da79d57d735306137471434c834b9c"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Final/Atlases/action-0-12.png",
+      "archive_path": "MonsterTransformation-v53/Final/Atlases/action-0-12.png",
+      "bytes": 235268,
+      "sha256": "bb942331eebbb2fec15906949e35230d65842d68029394b19b73d49a3e0de12a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Final/Atlases/action-1-12.png",
+      "archive_path": "MonsterTransformation-v53/Final/Atlases/action-1-12.png",
+      "bytes": 237622,
+      "sha256": "ceff525718fd265e52e5af37c68005b8fa24bf4b177fbd6be72052b5ba2b6416"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Final/Atlases/action-10-12.png",
+      "archive_path": "MonsterTransformation-v53/Final/Atlases/action-10-12.png",
+      "bytes": 297151,
+      "sha256": "aabbceef45e904e4be05d2e81984ea7fce4511468e42932115fdce545397958c"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Final/Atlases/action-2-12.png",
+      "archive_path": "MonsterTransformation-v53/Final/Atlases/action-2-12.png",
+      "bytes": 206299,
+      "sha256": "b1f15ae1b8203e2ca333fe90ac5a2e0613d0b673159db47f860617d6b7379129"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Final/Atlases/action-3-12.png",
+      "archive_path": "MonsterTransformation-v53/Final/Atlases/action-3-12.png",
+      "bytes": 278950,
+      "sha256": "aa65d5c13bfc0c44db7960aea9f1a09b852bccb722abdc63e68a0eaae281980a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Final/Atlases/action-4-12.png",
+      "archive_path": "MonsterTransformation-v53/Final/Atlases/action-4-12.png",
+      "bytes": 198706,
+      "sha256": "ce63f97f45914acdf21352dca87490432f6a230558a3bf1d5d0d21bec38ed0a7"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Final/Atlases/action-5-12.png",
+      "archive_path": "MonsterTransformation-v53/Final/Atlases/action-5-12.png",
+      "bytes": 201456,
+      "sha256": "bf1a7338cfbc17f5e1adcdccee8c756ba28dde3e60f9c5c42973b2160cef9eac"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Final/Atlases/action-6-12.png",
+      "archive_path": "MonsterTransformation-v53/Final/Atlases/action-6-12.png",
+      "bytes": 210209,
+      "sha256": "acaf749f962c891d28918cd4a5dfd652518e72e1320ff19e6ce5cccdac404d90"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Final/Atlases/action-7-12.png",
+      "archive_path": "MonsterTransformation-v53/Final/Atlases/action-7-12.png",
+      "bytes": 192712,
+      "sha256": "202cbd699db5ae5862e2542679a601fe9447d521869c096e78b16a61e6916d43"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Final/Atlases/action-8-12.png",
+      "archive_path": "MonsterTransformation-v53/Final/Atlases/action-8-12.png",
+      "bytes": 220616,
+      "sha256": "96dfdb191f2192c6ab2a7dee7e8f178bd842be20ddab594ecbb8c0d9101eeb35"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Final/Atlases/action-9-12.png",
+      "archive_path": "MonsterTransformation-v53/Final/Atlases/action-9-12.png",
+      "bytes": 225697,
+      "sha256": "dad4069ebb896a14ee3f4fec5e54f05f5e628e7d12b6676e6a900b832dc6caa4"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Final/Atlases/sleep-12.png",
+      "archive_path": "MonsterTransformation-v53/Final/Atlases/sleep-12.png",
+      "bytes": 480108,
+      "sha256": "94ef0dce9bcd11c5ea6d2a5a0f4427c7263cf029adfb18698b4d488aab3933ce"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Final/Atlases/walk-down-24.png",
+      "archive_path": "MonsterTransformation-v53/Final/Atlases/walk-down-24.png",
+      "bytes": 1020066,
+      "sha256": "4f017c71c4425e9cdc8237dbf01961ddf14195e53185b013e49ed66369493bdc"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Final/Atlases/walk-down-left-24.png",
+      "archive_path": "MonsterTransformation-v53/Final/Atlases/walk-down-left-24.png",
+      "bytes": 1009406,
+      "sha256": "bb41032570ef77079a18516f0a9d6e16fa258958a0e3a7e350152ee7e68c9fb8"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Final/Atlases/walk-down-right-24.png",
+      "archive_path": "MonsterTransformation-v53/Final/Atlases/walk-down-right-24.png",
+      "bytes": 1012841,
+      "sha256": "9d886301ae5c1f225377d6f02c2a6faf7cca69a64eee4dd629d41683939b480b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Final/Atlases/walk-left-24.png",
+      "archive_path": "MonsterTransformation-v53/Final/Atlases/walk-left-24.png",
+      "bytes": 873696,
+      "sha256": "038bc78e70761db287d78d5f5773a9ef3a1eaca9c85b66f4eaa143ba9fb77dd2"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Final/Atlases/walk-right-24.png",
+      "archive_path": "MonsterTransformation-v53/Final/Atlases/walk-right-24.png",
+      "bytes": 873068,
+      "sha256": "8fff1b40d4f5f9eabf8c5a5fbde1604d1f5a235de393709db175d5eb59dbcbc7"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Final/Atlases/walk-up-24.png",
+      "archive_path": "MonsterTransformation-v53/Final/Atlases/walk-up-24.png",
+      "bytes": 884585,
+      "sha256": "738289d6ae95501318740a59860da5473b56aed3aa1602b64052db9b0e746a25"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Final/Atlases/walk-up-left-24.png",
+      "archive_path": "MonsterTransformation-v53/Final/Atlases/walk-up-left-24.png",
+      "bytes": 937265,
+      "sha256": "1c2133f662bd859fe7a8679eafea38e7a119893f7c5a6fd9fff7ad8140340394"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Final/Atlases/walk-up-right-24.png",
+      "archive_path": "MonsterTransformation-v53/Final/Atlases/walk-up-right-24.png",
+      "bytes": 938604,
+      "sha256": "d100a1f2d73ac2c563836869c516b1035310021cae35c34698f3ecb61651c75e"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Generated/monster-rig-atlas-v53.png",
+      "archive_path": "MonsterTransformation-v53/Generated/monster-rig-atlas-v53.png",
+      "bytes": 1607442,
+      "sha256": "d917083a4321e5eef6dcb146f2f42b6510d7b4f504e23f85a0d470a8f41741e0"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Generated/monster-sleep-v53.png",
+      "archive_path": "MonsterTransformation-v53/Generated/monster-sleep-v53.png",
+      "bytes": 1398183,
+      "sha256": "f899244f8a9edf6ec82936a454405843f73ea74522aef217bfaa779caa7432eb"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Iterations/01-first-render/action-0-12.png",
+      "archive_path": "MonsterTransformation-v53/Iterations/01-first-render/action-0-12.png",
+      "bytes": 235268,
+      "sha256": "bb942331eebbb2fec15906949e35230d65842d68029394b19b73d49a3e0de12a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Iterations/01-first-render/action-1-12.png",
+      "archive_path": "MonsterTransformation-v53/Iterations/01-first-render/action-1-12.png",
+      "bytes": 237622,
+      "sha256": "ceff525718fd265e52e5af37c68005b8fa24bf4b177fbd6be72052b5ba2b6416"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Iterations/01-first-render/action-10-12.png",
+      "archive_path": "MonsterTransformation-v53/Iterations/01-first-render/action-10-12.png",
+      "bytes": 297151,
+      "sha256": "aabbceef45e904e4be05d2e81984ea7fce4511468e42932115fdce545397958c"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Iterations/01-first-render/action-2-12.png",
+      "archive_path": "MonsterTransformation-v53/Iterations/01-first-render/action-2-12.png",
+      "bytes": 206299,
+      "sha256": "b1f15ae1b8203e2ca333fe90ac5a2e0613d0b673159db47f860617d6b7379129"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Iterations/01-first-render/action-3-12.png",
+      "archive_path": "MonsterTransformation-v53/Iterations/01-first-render/action-3-12.png",
+      "bytes": 278950,
+      "sha256": "aa65d5c13bfc0c44db7960aea9f1a09b852bccb722abdc63e68a0eaae281980a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Iterations/01-first-render/action-4-12.png",
+      "archive_path": "MonsterTransformation-v53/Iterations/01-first-render/action-4-12.png",
+      "bytes": 198706,
+      "sha256": "ce63f97f45914acdf21352dca87490432f6a230558a3bf1d5d0d21bec38ed0a7"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Iterations/01-first-render/action-5-12.png",
+      "archive_path": "MonsterTransformation-v53/Iterations/01-first-render/action-5-12.png",
+      "bytes": 201456,
+      "sha256": "bf1a7338cfbc17f5e1adcdccee8c756ba28dde3e60f9c5c42973b2160cef9eac"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Iterations/01-first-render/action-6-12.png",
+      "archive_path": "MonsterTransformation-v53/Iterations/01-first-render/action-6-12.png",
+      "bytes": 210209,
+      "sha256": "acaf749f962c891d28918cd4a5dfd652518e72e1320ff19e6ce5cccdac404d90"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Iterations/01-first-render/action-7-12.png",
+      "archive_path": "MonsterTransformation-v53/Iterations/01-first-render/action-7-12.png",
+      "bytes": 192712,
+      "sha256": "202cbd699db5ae5862e2542679a601fe9447d521869c096e78b16a61e6916d43"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Iterations/01-first-render/action-8-12.png",
+      "archive_path": "MonsterTransformation-v53/Iterations/01-first-render/action-8-12.png",
+      "bytes": 220616,
+      "sha256": "96dfdb191f2192c6ab2a7dee7e8f178bd842be20ddab594ecbb8c0d9101eeb35"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Iterations/01-first-render/action-9-12.png",
+      "archive_path": "MonsterTransformation-v53/Iterations/01-first-render/action-9-12.png",
+      "bytes": 225697,
+      "sha256": "dad4069ebb896a14ee3f4fec5e54f05f5e628e7d12b6676e6a900b832dc6caa4"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Iterations/01-first-render/actions.gif",
+      "archive_path": "MonsterTransformation-v53/Iterations/01-first-render/actions.gif",
+      "bytes": 518440,
+      "sha256": "7f894ef74eda2ca8df6c4fc24a21d6cdd0d7859daf6b9cb71250291a6a314bba"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Iterations/01-first-render/actions.png",
+      "archive_path": "MonsterTransformation-v53/Iterations/01-first-render/actions.png",
+      "bytes": 362854,
+      "sha256": "d614e65e4344244e34b1b3e266e366370a2b1f863f4606b43b60a98b5f71560e"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Iterations/01-first-render/eight-directions.gif",
+      "archive_path": "MonsterTransformation-v53/Iterations/01-first-render/eight-directions.gif",
+      "bytes": 1868005,
+      "sha256": "629fccb53aa0870b1aa61770f91d58967cd472d5f83f5f8e5f61082a010f7a9f"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Iterations/01-first-render/eight-directions.png",
+      "archive_path": "MonsterTransformation-v53/Iterations/01-first-render/eight-directions.png",
+      "bytes": 366911,
+      "sha256": "7c2977efc8daca8c3bbcf35d5d6740ba375f889c0f16480a87df5d88b13c7ad3"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Iterations/01-first-render/sleep-12.png",
+      "archive_path": "MonsterTransformation-v53/Iterations/01-first-render/sleep-12.png",
+      "bytes": 480108,
+      "sha256": "94ef0dce9bcd11c5ea6d2a5a0f4427c7263cf029adfb18698b4d488aab3933ce"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Iterations/01-first-render/transformation.gif",
+      "archive_path": "MonsterTransformation-v53/Iterations/01-first-render/transformation.gif",
+      "bytes": 25338,
+      "sha256": "d8f6a28645ca725667b936402228644974a5fa8a4e56e62c2a8fe587c621a824"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Iterations/01-first-render/walk-down-24.png",
+      "archive_path": "MonsterTransformation-v53/Iterations/01-first-render/walk-down-24.png",
+      "bytes": 1032244,
+      "sha256": "a17ed3205a94b05a665c5430ccc0fb4b427fcb02df15e171702d210874d899ed"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Iterations/01-first-render/walk-down-left-24.png",
+      "archive_path": "MonsterTransformation-v53/Iterations/01-first-render/walk-down-left-24.png",
+      "bytes": 1010693,
+      "sha256": "33f4cba5366114e6714256444a912fc8ea7df2cde67f2a781766ec1f17efd48b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Iterations/01-first-render/walk-down-right-24.png",
+      "archive_path": "MonsterTransformation-v53/Iterations/01-first-render/walk-down-right-24.png",
+      "bytes": 1009994,
+      "sha256": "1147a67f84b5203478ecb7bba2f1a911426f99252dee446dde5e7ba57126f6b9"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Iterations/01-first-render/walk-left-24.png",
+      "archive_path": "MonsterTransformation-v53/Iterations/01-first-render/walk-left-24.png",
+      "bytes": 886713,
+      "sha256": "d65f7b8d8655051191318e2afcddc640dc438cc93e797c58ab1099f3e66434e1"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Iterations/01-first-render/walk-right-24.png",
+      "archive_path": "MonsterTransformation-v53/Iterations/01-first-render/walk-right-24.png",
+      "bytes": 886632,
+      "sha256": "a91c35d3e45b25a397b991836e114e39a017a206e6351b767342fd00993645b1"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Iterations/01-first-render/walk-up-24.png",
+      "archive_path": "MonsterTransformation-v53/Iterations/01-first-render/walk-up-24.png",
+      "bytes": 908271,
+      "sha256": "8aaf68e4423a5a3db02cb8e450c16cc16542322e470efd1f305d979ee3b11756"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Iterations/01-first-render/walk-up-left-24.png",
+      "archive_path": "MonsterTransformation-v53/Iterations/01-first-render/walk-up-left-24.png",
+      "bytes": 955317,
+      "sha256": "14f8ee9be7302acf791ea8d16d0e58a680cbdd4f8d9b22b830e97d01a59fb27c"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Iterations/01-first-render/walk-up-right-24.png",
+      "archive_path": "MonsterTransformation-v53/Iterations/01-first-render/walk-up-right-24.png",
+      "bytes": 949232,
+      "sha256": "48ee013f57a24c9f8642f92c69a5c1268d15871fe909354a80b197433e7184d6"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Iterations/02-arm-layer-and-heels/action-0-12.png",
+      "archive_path": "MonsterTransformation-v53/Iterations/02-arm-layer-and-heels/action-0-12.png",
+      "bytes": 235268,
+      "sha256": "bb942331eebbb2fec15906949e35230d65842d68029394b19b73d49a3e0de12a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Iterations/02-arm-layer-and-heels/action-1-12.png",
+      "archive_path": "MonsterTransformation-v53/Iterations/02-arm-layer-and-heels/action-1-12.png",
+      "bytes": 237622,
+      "sha256": "ceff525718fd265e52e5af37c68005b8fa24bf4b177fbd6be72052b5ba2b6416"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Iterations/02-arm-layer-and-heels/action-10-12.png",
+      "archive_path": "MonsterTransformation-v53/Iterations/02-arm-layer-and-heels/action-10-12.png",
+      "bytes": 297151,
+      "sha256": "aabbceef45e904e4be05d2e81984ea7fce4511468e42932115fdce545397958c"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Iterations/02-arm-layer-and-heels/action-2-12.png",
+      "archive_path": "MonsterTransformation-v53/Iterations/02-arm-layer-and-heels/action-2-12.png",
+      "bytes": 206299,
+      "sha256": "b1f15ae1b8203e2ca333fe90ac5a2e0613d0b673159db47f860617d6b7379129"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Iterations/02-arm-layer-and-heels/action-3-12.png",
+      "archive_path": "MonsterTransformation-v53/Iterations/02-arm-layer-and-heels/action-3-12.png",
+      "bytes": 278950,
+      "sha256": "aa65d5c13bfc0c44db7960aea9f1a09b852bccb722abdc63e68a0eaae281980a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Iterations/02-arm-layer-and-heels/action-4-12.png",
+      "archive_path": "MonsterTransformation-v53/Iterations/02-arm-layer-and-heels/action-4-12.png",
+      "bytes": 198706,
+      "sha256": "ce63f97f45914acdf21352dca87490432f6a230558a3bf1d5d0d21bec38ed0a7"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Iterations/02-arm-layer-and-heels/action-5-12.png",
+      "archive_path": "MonsterTransformation-v53/Iterations/02-arm-layer-and-heels/action-5-12.png",
+      "bytes": 201456,
+      "sha256": "bf1a7338cfbc17f5e1adcdccee8c756ba28dde3e60f9c5c42973b2160cef9eac"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Iterations/02-arm-layer-and-heels/action-6-12.png",
+      "archive_path": "MonsterTransformation-v53/Iterations/02-arm-layer-and-heels/action-6-12.png",
+      "bytes": 210209,
+      "sha256": "acaf749f962c891d28918cd4a5dfd652518e72e1320ff19e6ce5cccdac404d90"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Iterations/02-arm-layer-and-heels/action-7-12.png",
+      "archive_path": "MonsterTransformation-v53/Iterations/02-arm-layer-and-heels/action-7-12.png",
+      "bytes": 192712,
+      "sha256": "202cbd699db5ae5862e2542679a601fe9447d521869c096e78b16a61e6916d43"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Iterations/02-arm-layer-and-heels/action-8-12.png",
+      "archive_path": "MonsterTransformation-v53/Iterations/02-arm-layer-and-heels/action-8-12.png",
+      "bytes": 220616,
+      "sha256": "96dfdb191f2192c6ab2a7dee7e8f178bd842be20ddab594ecbb8c0d9101eeb35"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Iterations/02-arm-layer-and-heels/action-9-12.png",
+      "archive_path": "MonsterTransformation-v53/Iterations/02-arm-layer-and-heels/action-9-12.png",
+      "bytes": 225697,
+      "sha256": "dad4069ebb896a14ee3f4fec5e54f05f5e628e7d12b6676e6a900b832dc6caa4"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Iterations/02-arm-layer-and-heels/actions.gif",
+      "archive_path": "MonsterTransformation-v53/Iterations/02-arm-layer-and-heels/actions.gif",
+      "bytes": 518440,
+      "sha256": "7f894ef74eda2ca8df6c4fc24a21d6cdd0d7859daf6b9cb71250291a6a314bba"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Iterations/02-arm-layer-and-heels/actions.png",
+      "archive_path": "MonsterTransformation-v53/Iterations/02-arm-layer-and-heels/actions.png",
+      "bytes": 362854,
+      "sha256": "d614e65e4344244e34b1b3e266e366370a2b1f863f4606b43b60a98b5f71560e"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Iterations/02-arm-layer-and-heels/eight-directions.gif",
+      "archive_path": "MonsterTransformation-v53/Iterations/02-arm-layer-and-heels/eight-directions.gif",
+      "bytes": 1893028,
+      "sha256": "d8b89659d74767576fc6ff6e145a52ce76c7bf758d53add27ff805ca1f79dfe5"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Iterations/02-arm-layer-and-heels/eight-directions.png",
+      "archive_path": "MonsterTransformation-v53/Iterations/02-arm-layer-and-heels/eight-directions.png",
+      "bytes": 364806,
+      "sha256": "77f430cf6144a2cf3918c3d7d890f66009aec5ca3e079586c752df53220e01a8"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Iterations/02-arm-layer-and-heels/sleep-12.png",
+      "archive_path": "MonsterTransformation-v53/Iterations/02-arm-layer-and-heels/sleep-12.png",
+      "bytes": 480108,
+      "sha256": "94ef0dce9bcd11c5ea6d2a5a0f4427c7263cf029adfb18698b4d488aab3933ce"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Iterations/02-arm-layer-and-heels/transformation.gif",
+      "archive_path": "MonsterTransformation-v53/Iterations/02-arm-layer-and-heels/transformation.gif",
+      "bytes": 25479,
+      "sha256": "9b274921ba0ccbdbd271f614f8585be8b1d9f9965b58527b0cc9c370668baf83"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Iterations/02-arm-layer-and-heels/walk-down-24.png",
+      "archive_path": "MonsterTransformation-v53/Iterations/02-arm-layer-and-heels/walk-down-24.png",
+      "bytes": 1031908,
+      "sha256": "42ff071be0a299afa44b1fb210e0cc84705ce73d906d0862982e0241ae0b90de"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Iterations/02-arm-layer-and-heels/walk-down-left-24.png",
+      "archive_path": "MonsterTransformation-v53/Iterations/02-arm-layer-and-heels/walk-down-left-24.png",
+      "bytes": 1021298,
+      "sha256": "78ed611f7bc78a82a81f999101c14fe23fe15d0a50397af3beb91ef4f46bcdaf"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Iterations/02-arm-layer-and-heels/walk-down-right-24.png",
+      "archive_path": "MonsterTransformation-v53/Iterations/02-arm-layer-and-heels/walk-down-right-24.png",
+      "bytes": 1025056,
+      "sha256": "875c35f20e459290cd99c269429a6b8bab20b5899b1559091d63c61740d363e0"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Iterations/02-arm-layer-and-heels/walk-left-24.png",
+      "archive_path": "MonsterTransformation-v53/Iterations/02-arm-layer-and-heels/walk-left-24.png",
+      "bytes": 886713,
+      "sha256": "d65f7b8d8655051191318e2afcddc640dc438cc93e797c58ab1099f3e66434e1"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Iterations/02-arm-layer-and-heels/walk-right-24.png",
+      "archive_path": "MonsterTransformation-v53/Iterations/02-arm-layer-and-heels/walk-right-24.png",
+      "bytes": 886632,
+      "sha256": "a91c35d3e45b25a397b991836e114e39a017a206e6351b767342fd00993645b1"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Iterations/02-arm-layer-and-heels/walk-up-24.png",
+      "archive_path": "MonsterTransformation-v53/Iterations/02-arm-layer-and-heels/walk-up-24.png",
+      "bytes": 892216,
+      "sha256": "a5bef40e81c97a7befb628519fb85c497bcff651313dbe3b456b862a491a1716"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Iterations/02-arm-layer-and-heels/walk-up-left-24.png",
+      "archive_path": "MonsterTransformation-v53/Iterations/02-arm-layer-and-heels/walk-up-left-24.png",
+      "bytes": 943878,
+      "sha256": "eac6ac31b3c89bcc761d1b8bcbf05cb33b9d652892568deb22727a17a9d88011"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Iterations/02-arm-layer-and-heels/walk-up-right-24.png",
+      "archive_path": "MonsterTransformation-v53/Iterations/02-arm-layer-and-heels/walk-up-right-24.png",
+      "bytes": 944499,
+      "sha256": "add9b0ab95e0201b4b34ad18ed08edf88d408d9a1c1fd0f9d97d520845975db5"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/MonsterTransformation-v53/Prompts/01-monster-rig.txt",
+      "archive_path": "MonsterTransformation-v53/Prompts/01-monster-rig.txt",
+      "bytes": 2947,
+      "sha256": "7a04d124a2cc27d9915a032923734d1745083a208a69795fbd9111576d1bdb1f"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/MonsterTransformation-v53/Prompts/02-monster-sleep.txt",
+      "archive_path": "MonsterTransformation-v53/Prompts/02-monster-sleep.txt",
+      "bytes": 1600,
+      "sha256": "a14c15b93b8d28d3e56d866b9de2e121b91f7f17803a4aef864100bc55f53ecc"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/MonsterTransformation-v53/README.txt",
+      "archive_path": "MonsterTransformation-v53/README.txt",
+      "bytes": 4394,
+      "sha256": "8027dfbd5c5a5b41a8cb2eb04d040c35f5e2351f1c9fc8d5919fa2c3293585bd"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Review/actions.gif",
+      "archive_path": "MonsterTransformation-v53/Review/actions.gif",
+      "bytes": 518440,
+      "sha256": "7f894ef74eda2ca8df6c4fc24a21d6cdd0d7859daf6b9cb71250291a6a314bba"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Review/actions.png",
+      "archive_path": "MonsterTransformation-v53/Review/actions.png",
+      "bytes": 362854,
+      "sha256": "d614e65e4344244e34b1b3e266e366370a2b1f863f4606b43b60a98b5f71560e"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Review/eight-directions.gif",
+      "archive_path": "MonsterTransformation-v53/Review/eight-directions.gif",
+      "bytes": 1876237,
+      "sha256": "34402e443e9755c307824278f94a0521a2617772ead40d32c7cd44e8c1b9eeb2"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Review/eight-directions.png",
+      "archive_path": "MonsterTransformation-v53/Review/eight-directions.png",
+      "bytes": 359871,
+      "sha256": "376014db9a78e44861465d69280b6410675785f556a5177827e33efe9aaf67af"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Review/transformation.gif",
+      "archive_path": "MonsterTransformation-v53/Review/transformation.gif",
+      "bytes": 25358,
+      "sha256": "d4b699a950d71b7565ff8ebfcbbf20cefc777b9855d4812ce7e7979527f13681"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Rig/hachiware-monster-rig-arm-v53.png",
+      "archive_path": "MonsterTransformation-v53/Rig/hachiware-monster-rig-arm-v53.png",
+      "bytes": 81243,
+      "sha256": "54f1d712b49b9b37ff61221310c0cc6f988db9b5eb517fa649531ccbfd3419c7"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Rig/hachiware-monster-rig-back-diagonal-v53.png",
+      "archive_path": "MonsterTransformation-v53/Rig/hachiware-monster-rig-back-diagonal-v53.png",
+      "bytes": 188937,
+      "sha256": "dddcab8724e18c3bb091f0942c3459775d830357784496f01ea0dfc4dd8ad8ff"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Rig/hachiware-monster-rig-back-v53.png",
+      "archive_path": "MonsterTransformation-v53/Rig/hachiware-monster-rig-back-v53.png",
+      "bytes": 230704,
+      "sha256": "c373fa066c8a247391ce38623be49b2954b195cc3012b7c7f19e53e3e36f8073"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Rig/hachiware-monster-rig-foot-v53.png",
+      "archive_path": "MonsterTransformation-v53/Rig/hachiware-monster-rig-foot-v53.png",
+      "bytes": 85447,
+      "sha256": "a5d2c6fb8eb2a83285e7cfae32221721657c36dffe54a8270843a7409e168972"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Rig/hachiware-monster-rig-front-diagonal-v53.png",
+      "archive_path": "MonsterTransformation-v53/Rig/hachiware-monster-rig-front-diagonal-v53.png",
+      "bytes": 247311,
+      "sha256": "361848cfa7efd605763d778682f3177f76672df5f505bba96e0f620cd1d2ba79"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Rig/hachiware-monster-rig-front-v53.png",
+      "archive_path": "MonsterTransformation-v53/Rig/hachiware-monster-rig-front-v53.png",
+      "bytes": 265579,
+      "sha256": "fb077880522b8dd4d715a403d7ef5a54426d4fefe840f19e8544730b9d457a98"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Rig/hachiware-monster-rig-side-v53.png",
+      "archive_path": "MonsterTransformation-v53/Rig/hachiware-monster-rig-side-v53.png",
+      "bytes": 214891,
+      "sha256": "c2c4443e9e4be97389a537714a8959c4cd414d6863320570a73592a75b25aab4"
+    },
+    {
+      "kind": "image",
+      "source": "Source/MonsterTransformation-v53/Rig/hachiware-monster-rig-tail-v53.png",
+      "archive_path": "MonsterTransformation-v53/Rig/hachiware-monster-rig-tail-v53.png",
+      "bytes": 159347,
+      "sha256": "1d7f155aa654d80ee6c454205110f6ea2fb4444315b5f6060a9e8e998feb18ea"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/MonsterTransformation-v53/Rig/registration.json",
+      "archive_path": "MonsterTransformation-v53/Rig/registration.json",
+      "bytes": 1931,
+      "sha256": "d25428d49d38ba5ad3fd204310e69b1c168b490502395abe35eeccc3593d76c6"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/MonsterTransformation-v53/references.json",
+      "archive_path": "MonsterTransformation-v53/references.json",
+      "bytes": 583,
+      "sha256": "024aea7cc77ba4d21cd7ea6a071c94f17b90f3f8f7bb3e0f4b769626f90a4480"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/MonsterTransformation-v53/runtime-assets.json",
+      "archive_path": "MonsterTransformation-v53/runtime-assets.json",
+      "bytes": 4603,
+      "sha256": "57924cd09a15787739a0240966b4317482a53f9c230a9e86113b7b0fef8006bf"
+    },
+    {
+      "kind": "supporting",
       "source": "Source/NearbyPickup-v20/README.txt",
       "archive_path": "NearbyPickup-v20/README.txt",
       "bytes": 2192,
@@ -23130,6 +23886,69 @@
     },
     {
       "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/hachiware-monster-rig-arm-v53.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/hachiware-monster-rig-arm-v53.png",
+      "bytes": 81243,
+      "sha256": "54f1d712b49b9b37ff61221310c0cc6f988db9b5eb517fa649531ccbfd3419c7"
+    },
+    {
+      "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/hachiware-monster-rig-back-diagonal-v53.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/hachiware-monster-rig-back-diagonal-v53.png",
+      "bytes": 188937,
+      "sha256": "dddcab8724e18c3bb091f0942c3459775d830357784496f01ea0dfc4dd8ad8ff"
+    },
+    {
+      "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/hachiware-monster-rig-back-v53.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/hachiware-monster-rig-back-v53.png",
+      "bytes": 230704,
+      "sha256": "c373fa066c8a247391ce38623be49b2954b195cc3012b7c7f19e53e3e36f8073"
+    },
+    {
+      "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/hachiware-monster-rig-foot-v53.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/hachiware-monster-rig-foot-v53.png",
+      "bytes": 85447,
+      "sha256": "a5d2c6fb8eb2a83285e7cfae32221721657c36dffe54a8270843a7409e168972"
+    },
+    {
+      "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/hachiware-monster-rig-front-diagonal-v53.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/hachiware-monster-rig-front-diagonal-v53.png",
+      "bytes": 247311,
+      "sha256": "361848cfa7efd605763d778682f3177f76672df5f505bba96e0f620cd1d2ba79"
+    },
+    {
+      "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/hachiware-monster-rig-front-v53.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/hachiware-monster-rig-front-v53.png",
+      "bytes": 265579,
+      "sha256": "fb077880522b8dd4d715a403d7ef5a54426d4fefe840f19e8544730b9d457a98"
+    },
+    {
+      "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/hachiware-monster-rig-side-v53.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/hachiware-monster-rig-side-v53.png",
+      "bytes": 214891,
+      "sha256": "c2c4443e9e4be97389a537714a8959c4cd414d6863320570a73592a75b25aab4"
+    },
+    {
+      "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/hachiware-monster-rig-tail-v53.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/hachiware-monster-rig-tail-v53.png",
+      "bytes": 159347,
+      "sha256": "1d7f155aa654d80ee6c454205110f6ea2fb4444315b5f6060a9e8e998feb18ea"
+    },
+    {
+      "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/hachiware-monster-sleep-v53.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/hachiware-monster-sleep-v53.png",
+      "bytes": 1398183,
+      "sha256": "f899244f8a9edf6ec82936a454405843f73ea74522aef217bfaa779caa7432eb"
+    },
+    {
+      "kind": "image",
       "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/hachiware-side-walk-24-joined-v14.png",
       "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/hachiware-side-walk-24-joined-v14.png",
       "bytes": 714270,
@@ -24110,6 +24929,69 @@
     },
     {
       "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/hachiware-monster-rig-arm-v53.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/hachiware-monster-rig-arm-v53.png",
+      "bytes": 81243,
+      "sha256": "54f1d712b49b9b37ff61221310c0cc6f988db9b5eb517fa649531ccbfd3419c7"
+    },
+    {
+      "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/hachiware-monster-rig-back-diagonal-v53.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/hachiware-monster-rig-back-diagonal-v53.png",
+      "bytes": 188937,
+      "sha256": "dddcab8724e18c3bb091f0942c3459775d830357784496f01ea0dfc4dd8ad8ff"
+    },
+    {
+      "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/hachiware-monster-rig-back-v53.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/hachiware-monster-rig-back-v53.png",
+      "bytes": 230704,
+      "sha256": "c373fa066c8a247391ce38623be49b2954b195cc3012b7c7f19e53e3e36f8073"
+    },
+    {
+      "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/hachiware-monster-rig-foot-v53.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/hachiware-monster-rig-foot-v53.png",
+      "bytes": 85447,
+      "sha256": "a5d2c6fb8eb2a83285e7cfae32221721657c36dffe54a8270843a7409e168972"
+    },
+    {
+      "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/hachiware-monster-rig-front-diagonal-v53.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/hachiware-monster-rig-front-diagonal-v53.png",
+      "bytes": 247311,
+      "sha256": "361848cfa7efd605763d778682f3177f76672df5f505bba96e0f620cd1d2ba79"
+    },
+    {
+      "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/hachiware-monster-rig-front-v53.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/hachiware-monster-rig-front-v53.png",
+      "bytes": 265579,
+      "sha256": "fb077880522b8dd4d715a403d7ef5a54426d4fefe840f19e8544730b9d457a98"
+    },
+    {
+      "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/hachiware-monster-rig-side-v53.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/hachiware-monster-rig-side-v53.png",
+      "bytes": 214891,
+      "sha256": "c2c4443e9e4be97389a537714a8959c4cd414d6863320570a73592a75b25aab4"
+    },
+    {
+      "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/hachiware-monster-rig-tail-v53.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/hachiware-monster-rig-tail-v53.png",
+      "bytes": 159347,
+      "sha256": "1d7f155aa654d80ee6c454205110f6ea2fb4444315b5f6060a9e8e998feb18ea"
+    },
+    {
+      "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/hachiware-monster-sleep-v53.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/hachiware-monster-sleep-v53.png",
+      "bytes": 1398183,
+      "sha256": "f899244f8a9edf6ec82936a454405843f73ea74522aef217bfaa779caa7432eb"
+    },
+    {
+      "kind": "image",
       "source": "Sources/ChiikawaCompanion/Resources/hachiware-side-walk-24-joined-v14.png",
       "archive_path": "Project/Sources/ChiikawaCompanion/Resources/hachiware-side-walk-24-joined-v14.png",
       "bytes": 714270,
@@ -24807,6 +25689,146 @@
       "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/AppIcon.icns",
       "bytes": 556776,
       "sha256": "9488e53f8fb8cf741b709c83782a9d9bb8eb39ea207e070fcf0ff8c7e9087b89"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/Monster/action-0-12.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Monster/action-0-12.png",
+      "bytes": 235268,
+      "sha256": "bb942331eebbb2fec15906949e35230d65842d68029394b19b73d49a3e0de12a"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/Monster/action-1-12.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Monster/action-1-12.png",
+      "bytes": 237622,
+      "sha256": "ceff525718fd265e52e5af37c68005b8fa24bf4b177fbd6be72052b5ba2b6416"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/Monster/action-10-12.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Monster/action-10-12.png",
+      "bytes": 297151,
+      "sha256": "aabbceef45e904e4be05d2e81984ea7fce4511468e42932115fdce545397958c"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/Monster/action-2-12.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Monster/action-2-12.png",
+      "bytes": 206299,
+      "sha256": "b1f15ae1b8203e2ca333fe90ac5a2e0613d0b673159db47f860617d6b7379129"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/Monster/action-3-12.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Monster/action-3-12.png",
+      "bytes": 278950,
+      "sha256": "aa65d5c13bfc0c44db7960aea9f1a09b852bccb722abdc63e68a0eaae281980a"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/Monster/action-4-12.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Monster/action-4-12.png",
+      "bytes": 198706,
+      "sha256": "ce63f97f45914acdf21352dca87490432f6a230558a3bf1d5d0d21bec38ed0a7"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/Monster/action-5-12.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Monster/action-5-12.png",
+      "bytes": 201456,
+      "sha256": "bf1a7338cfbc17f5e1adcdccee8c756ba28dde3e60f9c5c42973b2160cef9eac"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/Monster/action-6-12.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Monster/action-6-12.png",
+      "bytes": 210209,
+      "sha256": "acaf749f962c891d28918cd4a5dfd652518e72e1320ff19e6ce5cccdac404d90"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/Monster/action-7-12.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Monster/action-7-12.png",
+      "bytes": 192712,
+      "sha256": "202cbd699db5ae5862e2542679a601fe9447d521869c096e78b16a61e6916d43"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/Monster/action-8-12.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Monster/action-8-12.png",
+      "bytes": 220616,
+      "sha256": "96dfdb191f2192c6ab2a7dee7e8f178bd842be20ddab594ecbb8c0d9101eeb35"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/Monster/action-9-12.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Monster/action-9-12.png",
+      "bytes": 225697,
+      "sha256": "dad4069ebb896a14ee3f4fec5e54f05f5e628e7d12b6676e6a900b832dc6caa4"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/Monster/sleep-12.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Monster/sleep-12.png",
+      "bytes": 480108,
+      "sha256": "94ef0dce9bcd11c5ea6d2a5a0f4427c7263cf029adfb18698b4d488aab3933ce"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/Monster/walk-down-24.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Monster/walk-down-24.png",
+      "bytes": 1020066,
+      "sha256": "4f017c71c4425e9cdc8237dbf01961ddf14195e53185b013e49ed66369493bdc"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/Monster/walk-down-left-24.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Monster/walk-down-left-24.png",
+      "bytes": 1009406,
+      "sha256": "bb41032570ef77079a18516f0a9d6e16fa258958a0e3a7e350152ee7e68c9fb8"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/Monster/walk-down-right-24.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Monster/walk-down-right-24.png",
+      "bytes": 1012841,
+      "sha256": "9d886301ae5c1f225377d6f02c2a6faf7cca69a64eee4dd629d41683939b480b"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/Monster/walk-left-24.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Monster/walk-left-24.png",
+      "bytes": 873696,
+      "sha256": "038bc78e70761db287d78d5f5773a9ef3a1eaca9c85b66f4eaa143ba9fb77dd2"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/Monster/walk-right-24.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Monster/walk-right-24.png",
+      "bytes": 873068,
+      "sha256": "8fff1b40d4f5f9eabf8c5a5fbde1604d1f5a235de393709db175d5eb59dbcbc7"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/Monster/walk-up-24.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Monster/walk-up-24.png",
+      "bytes": 884585,
+      "sha256": "738289d6ae95501318740a59860da5473b56aed3aa1602b64052db9b0e746a25"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/Monster/walk-up-left-24.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Monster/walk-up-left-24.png",
+      "bytes": 937265,
+      "sha256": "1c2133f662bd859fe7a8679eafea38e7a119893f7c5a6fd9fff7ad8140340394"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/Monster/walk-up-right-24.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Monster/walk-up-right-24.png",
+      "bytes": 938604,
+      "sha256": "d100a1f2d73ac2c563836869c516b1035310021cae35c34698f3ecb61651c75e"
     },
     {
       "kind": "image",
@@ -25797,6 +26819,69 @@
     },
     {
       "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/hachiware-monster-rig-arm-v53.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/hachiware-monster-rig-arm-v53.png",
+      "bytes": 81243,
+      "sha256": "54f1d712b49b9b37ff61221310c0cc6f988db9b5eb517fa649531ccbfd3419c7"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/hachiware-monster-rig-back-diagonal-v53.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/hachiware-monster-rig-back-diagonal-v53.png",
+      "bytes": 188937,
+      "sha256": "dddcab8724e18c3bb091f0942c3459775d830357784496f01ea0dfc4dd8ad8ff"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/hachiware-monster-rig-back-v53.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/hachiware-monster-rig-back-v53.png",
+      "bytes": 230704,
+      "sha256": "c373fa066c8a247391ce38623be49b2954b195cc3012b7c7f19e53e3e36f8073"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/hachiware-monster-rig-foot-v53.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/hachiware-monster-rig-foot-v53.png",
+      "bytes": 85447,
+      "sha256": "a5d2c6fb8eb2a83285e7cfae32221721657c36dffe54a8270843a7409e168972"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/hachiware-monster-rig-front-diagonal-v53.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/hachiware-monster-rig-front-diagonal-v53.png",
+      "bytes": 247311,
+      "sha256": "361848cfa7efd605763d778682f3177f76672df5f505bba96e0f620cd1d2ba79"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/hachiware-monster-rig-front-v53.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/hachiware-monster-rig-front-v53.png",
+      "bytes": 265579,
+      "sha256": "fb077880522b8dd4d715a403d7ef5a54426d4fefe840f19e8544730b9d457a98"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/hachiware-monster-rig-side-v53.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/hachiware-monster-rig-side-v53.png",
+      "bytes": 214891,
+      "sha256": "c2c4443e9e4be97389a537714a8959c4cd414d6863320570a73592a75b25aab4"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/hachiware-monster-rig-tail-v53.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/hachiware-monster-rig-tail-v53.png",
+      "bytes": 159347,
+      "sha256": "1d7f155aa654d80ee6c454205110f6ea2fb4444315b5f6060a9e8e998feb18ea"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/hachiware-monster-sleep-v53.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/hachiware-monster-sleep-v53.png",
+      "bytes": 1398183,
+      "sha256": "f899244f8a9edf6ec82936a454405843f73ea74522aef217bfaa779caa7432eb"
+    },
+    {
+      "kind": "image",
       "source": "build/ChiikawaCompanion.app/Contents/Resources/hachiware-side-walk-24-joined-v14.png",
       "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/hachiware-side-walk-24-joined-v14.png",
       "bytes": 714270,
@@ -26737,8 +27822,8 @@
       "kind": "image",
       "source": "build/artwork/shared-home-designs-v29.png",
       "archive_path": "Project/build/artwork/shared-home-designs-v29.png",
-      "bytes": 919630,
-      "sha256": "e62cb2fc57049a0f89e667e505dff4d8e90707c5c405d2e25fb646b6590e3a72"
+      "bytes": 929013,
+      "sha256": "3f66c2bf201566fbe59d37b8f6a086291e3085c945fd548dce25f23117e84b1c"
     },
     {
       "kind": "image",
@@ -26751,8 +27836,8 @@
       "kind": "image",
       "source": "build/artwork/shared-home-sleep-v29.gif",
       "archive_path": "Project/build/artwork/shared-home-sleep-v29.gif",
-      "bytes": 315947,
-      "sha256": "4b8ef78a6ec84e939cc62bb538571000ad769b0b09cd182d0997a4dbe1b97882"
+      "bytes": 348436,
+      "sha256": "3d7dc3f9f45b8d81ff0df3d65a19051508c15f42ccf4fc038efbff95454f91a1"
     },
     {
       "kind": "image",
@@ -26791,10 +27876,185 @@
     },
     {
       "kind": "image",
+      "source": "build/monster/action-0-12.png",
+      "archive_path": "Project/build/monster/action-0-12.png",
+      "bytes": 235268,
+      "sha256": "bb942331eebbb2fec15906949e35230d65842d68029394b19b73d49a3e0de12a"
+    },
+    {
+      "kind": "image",
+      "source": "build/monster/action-1-12.png",
+      "archive_path": "Project/build/monster/action-1-12.png",
+      "bytes": 237622,
+      "sha256": "ceff525718fd265e52e5af37c68005b8fa24bf4b177fbd6be72052b5ba2b6416"
+    },
+    {
+      "kind": "image",
+      "source": "build/monster/action-10-12.png",
+      "archive_path": "Project/build/monster/action-10-12.png",
+      "bytes": 297151,
+      "sha256": "aabbceef45e904e4be05d2e81984ea7fce4511468e42932115fdce545397958c"
+    },
+    {
+      "kind": "image",
+      "source": "build/monster/action-2-12.png",
+      "archive_path": "Project/build/monster/action-2-12.png",
+      "bytes": 206299,
+      "sha256": "b1f15ae1b8203e2ca333fe90ac5a2e0613d0b673159db47f860617d6b7379129"
+    },
+    {
+      "kind": "image",
+      "source": "build/monster/action-3-12.png",
+      "archive_path": "Project/build/monster/action-3-12.png",
+      "bytes": 278950,
+      "sha256": "aa65d5c13bfc0c44db7960aea9f1a09b852bccb722abdc63e68a0eaae281980a"
+    },
+    {
+      "kind": "image",
+      "source": "build/monster/action-4-12.png",
+      "archive_path": "Project/build/monster/action-4-12.png",
+      "bytes": 198706,
+      "sha256": "ce63f97f45914acdf21352dca87490432f6a230558a3bf1d5d0d21bec38ed0a7"
+    },
+    {
+      "kind": "image",
+      "source": "build/monster/action-5-12.png",
+      "archive_path": "Project/build/monster/action-5-12.png",
+      "bytes": 201456,
+      "sha256": "bf1a7338cfbc17f5e1adcdccee8c756ba28dde3e60f9c5c42973b2160cef9eac"
+    },
+    {
+      "kind": "image",
+      "source": "build/monster/action-6-12.png",
+      "archive_path": "Project/build/monster/action-6-12.png",
+      "bytes": 210209,
+      "sha256": "acaf749f962c891d28918cd4a5dfd652518e72e1320ff19e6ce5cccdac404d90"
+    },
+    {
+      "kind": "image",
+      "source": "build/monster/action-7-12.png",
+      "archive_path": "Project/build/monster/action-7-12.png",
+      "bytes": 192712,
+      "sha256": "202cbd699db5ae5862e2542679a601fe9447d521869c096e78b16a61e6916d43"
+    },
+    {
+      "kind": "image",
+      "source": "build/monster/action-8-12.png",
+      "archive_path": "Project/build/monster/action-8-12.png",
+      "bytes": 220616,
+      "sha256": "96dfdb191f2192c6ab2a7dee7e8f178bd842be20ddab594ecbb8c0d9101eeb35"
+    },
+    {
+      "kind": "image",
+      "source": "build/monster/action-9-12.png",
+      "archive_path": "Project/build/monster/action-9-12.png",
+      "bytes": 225697,
+      "sha256": "dad4069ebb896a14ee3f4fec5e54f05f5e628e7d12b6676e6a900b832dc6caa4"
+    },
+    {
+      "kind": "image",
+      "source": "build/monster/actions.gif",
+      "archive_path": "Project/build/monster/actions.gif",
+      "bytes": 518440,
+      "sha256": "7f894ef74eda2ca8df6c4fc24a21d6cdd0d7859daf6b9cb71250291a6a314bba"
+    },
+    {
+      "kind": "image",
+      "source": "build/monster/actions.png",
+      "archive_path": "Project/build/monster/actions.png",
+      "bytes": 362854,
+      "sha256": "d614e65e4344244e34b1b3e266e366370a2b1f863f4606b43b60a98b5f71560e"
+    },
+    {
+      "kind": "image",
+      "source": "build/monster/eight-directions.gif",
+      "archive_path": "Project/build/monster/eight-directions.gif",
+      "bytes": 1876237,
+      "sha256": "34402e443e9755c307824278f94a0521a2617772ead40d32c7cd44e8c1b9eeb2"
+    },
+    {
+      "kind": "image",
+      "source": "build/monster/eight-directions.png",
+      "archive_path": "Project/build/monster/eight-directions.png",
+      "bytes": 359871,
+      "sha256": "376014db9a78e44861465d69280b6410675785f556a5177827e33efe9aaf67af"
+    },
+    {
+      "kind": "image",
+      "source": "build/monster/sleep-12.png",
+      "archive_path": "Project/build/monster/sleep-12.png",
+      "bytes": 480108,
+      "sha256": "94ef0dce9bcd11c5ea6d2a5a0f4427c7263cf029adfb18698b4d488aab3933ce"
+    },
+    {
+      "kind": "image",
+      "source": "build/monster/transformation.gif",
+      "archive_path": "Project/build/monster/transformation.gif",
+      "bytes": 25358,
+      "sha256": "d4b699a950d71b7565ff8ebfcbbf20cefc777b9855d4812ce7e7979527f13681"
+    },
+    {
+      "kind": "image",
+      "source": "build/monster/walk-down-24.png",
+      "archive_path": "Project/build/monster/walk-down-24.png",
+      "bytes": 1020066,
+      "sha256": "4f017c71c4425e9cdc8237dbf01961ddf14195e53185b013e49ed66369493bdc"
+    },
+    {
+      "kind": "image",
+      "source": "build/monster/walk-down-left-24.png",
+      "archive_path": "Project/build/monster/walk-down-left-24.png",
+      "bytes": 1009406,
+      "sha256": "bb41032570ef77079a18516f0a9d6e16fa258958a0e3a7e350152ee7e68c9fb8"
+    },
+    {
+      "kind": "image",
+      "source": "build/monster/walk-down-right-24.png",
+      "archive_path": "Project/build/monster/walk-down-right-24.png",
+      "bytes": 1012841,
+      "sha256": "9d886301ae5c1f225377d6f02c2a6faf7cca69a64eee4dd629d41683939b480b"
+    },
+    {
+      "kind": "image",
+      "source": "build/monster/walk-left-24.png",
+      "archive_path": "Project/build/monster/walk-left-24.png",
+      "bytes": 873696,
+      "sha256": "038bc78e70761db287d78d5f5773a9ef3a1eaca9c85b66f4eaa143ba9fb77dd2"
+    },
+    {
+      "kind": "image",
+      "source": "build/monster/walk-right-24.png",
+      "archive_path": "Project/build/monster/walk-right-24.png",
+      "bytes": 873068,
+      "sha256": "8fff1b40d4f5f9eabf8c5a5fbde1604d1f5a235de393709db175d5eb59dbcbc7"
+    },
+    {
+      "kind": "image",
+      "source": "build/monster/walk-up-24.png",
+      "archive_path": "Project/build/monster/walk-up-24.png",
+      "bytes": 884585,
+      "sha256": "738289d6ae95501318740a59860da5473b56aed3aa1602b64052db9b0e746a25"
+    },
+    {
+      "kind": "image",
+      "source": "build/monster/walk-up-left-24.png",
+      "archive_path": "Project/build/monster/walk-up-left-24.png",
+      "bytes": 937265,
+      "sha256": "1c2133f662bd859fe7a8679eafea38e7a119893f7c5a6fd9fff7ad8140340394"
+    },
+    {
+      "kind": "image",
+      "source": "build/monster/walk-up-right-24.png",
+      "archive_path": "Project/build/monster/walk-up-right-24.png",
+      "bytes": 938604,
+      "sha256": "d100a1f2d73ac2c563836869c516b1035310021cae35c34698f3ecb61651c75e"
+    },
+    {
+      "kind": "image",
       "source": "build/roster/kani/actions-preview.png",
       "archive_path": "Project/build/roster/kani/actions-preview.png",
-      "bytes": 248370,
-      "sha256": "541cfefc8e2bb802ba4f07e166c5bfc33bd3488da19d17fbd338da348508855b"
+      "bytes": 252692,
+      "sha256": "baff71d1750a2cb904b130c54e2f54b0d60cf091b9b30e35ec9bb20b8c879b85"
     },
     {
       "kind": "image",
@@ -26919,8 +28179,8 @@
       "kind": "image",
       "source": "build/roster/kurimanju/actions-preview.png",
       "archive_path": "Project/build/roster/kurimanju/actions-preview.png",
-      "bytes": 316120,
-      "sha256": "ba71c28e6ee188a357544e3fef1b2fba884ba7a83103cc7071d38cd721b4f0e3"
+      "bytes": 319806,
+      "sha256": "31cf68db221c19a8fc62168fa085884c870815c91450bab6db04b75a2a2dbcff"
     },
     {
       "kind": "image",
@@ -27087,8 +28347,8 @@
       "kind": "image",
       "source": "build/roster/momonga/actions-preview.png",
       "archive_path": "Project/build/roster/momonga/actions-preview.png",
-      "bytes": 344153,
-      "sha256": "099f15a2d798414095ab26796df57cea3984757d4814d67968d2f9c24db248b0"
+      "bytes": 348151,
+      "sha256": "61775128918592eb5b1d85159bc9e35d10d6657786c615d198877af99b894407"
     },
     {
       "kind": "image",
@@ -27255,8 +28515,8 @@
       "kind": "image",
       "source": "build/roster/rakko/actions-preview.png",
       "archive_path": "Project/build/roster/rakko/actions-preview.png",
-      "bytes": 263994,
-      "sha256": "7e19666671074032b010a0b637fde27b06b6ed9c313fd9f3ec6ebf22b3f8fe6f"
+      "bytes": 266423,
+      "sha256": "1e6fd9095439c7653cceb2d055287ceaf4c7562c405eb099ce5da525ca0163b8"
     },
     {
       "kind": "image",
@@ -27381,8 +28641,8 @@
       "kind": "image",
       "source": "build/roster/shisa/actions-preview.png",
       "archive_path": "Project/build/roster/shisa/actions-preview.png",
-      "bytes": 285875,
-      "sha256": "794922483fd4b2d05f9d7fbc83adfab0e8963d81a5b2c5f7d75ee968b015fdcc"
+      "bytes": 289110,
+      "sha256": "e4d7d5dd1252e2102ac673e4819f7660ee42ddc1d8fd01706a2d11251d6e2f39"
     },
     {
       "kind": "image",
@@ -27507,8 +28767,8 @@
       "kind": "image",
       "source": "build/roster/usagi/actions-preview.png",
       "archive_path": "Project/build/roster/usagi/actions-preview.png",
-      "bytes": 310777,
-      "sha256": "b51892fca343e628c13acdc73f343a79a4d711e0be48f4967a7617ce8ef264bd"
+      "bytes": 316194,
+      "sha256": "5b4354140ad59523985ee8cce056529499872bbd262d62e4fcfbe404445ba10c"
     },
     {
       "kind": "image",
@@ -27577,15 +28837,15 @@
       "kind": "image",
       "source": "build/roster/usagi/identity-motion.gif",
       "archive_path": "Project/build/roster/usagi/identity-motion.gif",
-      "bytes": 378090,
-      "sha256": "b03b96c8bf305a4a76bd7e600b8470af926eed6fc44e47d5e010505fad2b9aef"
+      "bytes": 382279,
+      "sha256": "9e0fb2e0bb37a8a83de324ad94a820c1f8da240354bce3da01dec7c1df09a814"
     },
     {
       "kind": "image",
       "source": "build/roster/usagi/identity-preview.png",
       "archive_path": "Project/build/roster/usagi/identity-preview.png",
-      "bytes": 291016,
-      "sha256": "c177a848fcf555c476570ca7e47471e95b7cfa6ae4689da1dc3cd6c42db23ae5"
+      "bytes": 295465,
+      "sha256": "35e31720912f7ab4227f8a2b5f16df4b878d0196fa9db4cf3594698d33275bdf"
     },
     {
       "kind": "image",
@@ -27696,8 +28956,8 @@
       "kind": "supporting",
       "source": "Source/README.txt",
       "archive_path": "README.txt",
-      "bytes": 11754,
-      "sha256": "efc65b17f6972726cbd7cc5c690334e2e8a9c1e056ec54ee9450753629242988"
+      "bytes": 12380,
+      "sha256": "9ca6a29c519c6cb591d9d37c618cdfa50fcb94ae3bc4980704f6008c84c4966d"
     },
     {
       "kind": "supporting",
@@ -30704,6 +31964,13 @@
     },
     {
       "kind": "image",
+      "source": "Source/Versions/099f15a2d7984140/build/roster/momonga/actions-preview.png",
+      "archive_path": "Versions/099f15a2d7984140/build/roster/momonga/actions-preview.png",
+      "bytes": 344153,
+      "sha256": "099f15a2d798414095ab26796df57cea3984757d4814d67968d2f9c24db248b0"
+    },
+    {
+      "kind": "image",
       "source": "Source/Versions/0e59fede58030d65/build/artwork/shared-home-designs-v29.png",
       "archive_path": "Versions/0e59fede58030d65/build/artwork/shared-home-designs-v29.png",
       "bytes": 904466,
@@ -30914,6 +32181,13 @@
     },
     {
       "kind": "image",
+      "source": "Source/Versions/4b8ef78a6ec84e93/build/artwork/shared-home-sleep-v29.gif",
+      "archive_path": "Versions/4b8ef78a6ec84e93/build/artwork/shared-home-sleep-v29.gif",
+      "bytes": 315947,
+      "sha256": "4b8ef78a6ec84e939cc62bb538571000ad769b0b09cd182d0997a4dbe1b97882"
+    },
+    {
+      "kind": "image",
       "source": "Source/Versions/4e71dfce17122d68/build/artwork/hachiware-side-cycle.png",
       "archive_path": "Versions/4e71dfce17122d68/build/artwork/hachiware-side-cycle.png",
       "bytes": 797456,
@@ -30939,6 +32213,13 @@
       "archive_path": "Versions/53a74564e3be5356/build/artwork/chiikawa-runtime-equipment-v23.png",
       "bytes": 1094011,
       "sha256": "53a74564e3be5356af8141ae7304eebfbef113d21bf5aa636a312e598fc59fc5"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/541cfefc8e2bb802/build/roster/kani/actions-preview.png",
+      "archive_path": "Versions/541cfefc8e2bb802/build/roster/kani/actions-preview.png",
+      "bytes": 248370,
+      "sha256": "541cfefc8e2bb802ba4f07e166c5bfc33bd3488da19d17fbd338da348508855b"
     },
     {
       "kind": "image",
@@ -31061,6 +32342,13 @@
     },
     {
       "kind": "image",
+      "source": "Source/Versions/794922483fd4b2d0/build/roster/shisa/actions-preview.png",
+      "archive_path": "Versions/794922483fd4b2d0/build/roster/shisa/actions-preview.png",
+      "bytes": 285875,
+      "sha256": "794922483fd4b2d05f9d7fbc83adfab0e8963d81a5b2c5f7d75ee968b015fdcc"
+    },
+    {
+      "kind": "image",
       "source": "Source/Versions/7c18fa3068724552/build/ChiikawaCompanion.app/Contents/Resources/Roster/usagi/sleep-12.png",
       "archive_path": "Versions/7c18fa3068724552/build/ChiikawaCompanion.app/Contents/Resources/Roster/usagi/sleep-12.png",
       "bytes": 71951,
@@ -31072,6 +32360,13 @@
       "archive_path": "Versions/7c18fa3068724552/build/roster/usagi/sleep-12.png",
       "bytes": 71951,
       "sha256": "7c18fa306872455272b5f8922f4e4313ebcec3f1d2f8c4ca510764741fc27d59"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/7e19666671074032/build/roster/rakko/actions-preview.png",
+      "archive_path": "Versions/7e19666671074032/build/roster/rakko/actions-preview.png",
+      "bytes": 263994,
+      "sha256": "7e19666671074032b010a0b637fde27b06b6ed9c313fd9f3ec6ebf22b3f8fe6f"
     },
     {
       "kind": "image",
@@ -31180,10 +32475,31 @@
     },
     {
       "kind": "image",
+      "source": "Source/Versions/b03b96c8bf305a4a/build/roster/usagi/identity-motion.gif",
+      "archive_path": "Versions/b03b96c8bf305a4a/build/roster/usagi/identity-motion.gif",
+      "bytes": 378090,
+      "sha256": "b03b96c8bf305a4a76bd7e600b8470af926eed6fc44e47d5e010505fad2b9aef"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/b51892fca343e628/build/roster/usagi/actions-preview.png",
+      "archive_path": "Versions/b51892fca343e628/build/roster/usagi/actions-preview.png",
+      "bytes": 310777,
+      "sha256": "b51892fca343e628c13acdc73f343a79a4d711e0be48f4967a7617ce8ef264bd"
+    },
+    {
+      "kind": "image",
       "source": "Source/Versions/b5886b3b92e64f69/build/artwork/hachiware-items-v11.gif",
       "archive_path": "Versions/b5886b3b92e64f69/build/artwork/hachiware-items-v11.gif",
       "bytes": 552903,
       "sha256": "b5886b3b92e64f69098fa740fc2127b6ceeb5a6ea34f397f7405e73e4f941d87"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/ba71c28e6ee188a3/build/roster/kurimanju/actions-preview.png",
+      "archive_path": "Versions/ba71c28e6ee188a3/build/roster/kurimanju/actions-preview.png",
+      "bytes": 316120,
+      "sha256": "ba71c28e6ee188a357544e3fef1b2fba884ba7a83103cc7071d38cd721b4f0e3"
     },
     {
       "kind": "image",
@@ -31198,6 +32514,13 @@
       "archive_path": "Versions/bf593e807bebc23b/build/roster/kani/actions-preview.png",
       "bytes": 233379,
       "sha256": "bf593e807bebc23b6a59f86b4f6400b68531b6e0014f88ada34721ad036aee53"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/c177a848fcf555c4/build/roster/usagi/identity-preview.png",
+      "archive_path": "Versions/c177a848fcf555c4/build/roster/usagi/identity-preview.png",
+      "bytes": 291016,
+      "sha256": "c177a848fcf555c476570ca7e47471e95b7cfa6ae4689da1dc3cd6c42db23ae5"
     },
     {
       "kind": "image",
@@ -31324,6 +32647,13 @@
       "archive_path": "Versions/e38bc78ea5ced5b4/build/artwork/chiikawa-runtime-equipment-v23.png",
       "bytes": 546838,
       "sha256": "e38bc78ea5ced5b4f85b7d102d14fc781ab02b3cc177dc4d7456992169d41ba2"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/e62cb2fc57049a0f/build/artwork/shared-home-designs-v29.png",
+      "archive_path": "Versions/e62cb2fc57049a0f/build/artwork/shared-home-designs-v29.png",
+      "bytes": 919630,
+      "sha256": "e62cb2fc57049a0f89e667e505dff4d8e90707c5c405d2e25fb646b6590e3a72"
     },
     {
       "kind": "image",
@@ -32180,8 +33510,8 @@
       "sha256": "8a42caa40e469a5ee00fa2b860d14756cc1fd73bc8fcf73332c50b87a92c9c3b"
     }
   ],
-  "updated_at": "2026-10-23T04:11:19.232763+00:00",
-  "latest_applied": "Source/CharacterSleep-v47",
+  "updated_at": "2026-10-23T04:43:42.196554+00:00",
+  "latest_applied": "Source/MonsterTransformation-v53",
   "applied_directions": [
     "down-left",
     "down-right"

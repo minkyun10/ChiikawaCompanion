@@ -11,6 +11,7 @@ struct HomeOccupant {
     let friend: Friend
     let routine: HomeRoutine
     var wakingStarted: Date? = nil
+    var hachiwareMonster = false
     var isPresent: Bool { routine.isInside || wakingStarted != nil }
 }
 
@@ -196,12 +197,18 @@ final class HomeArtwork {
                 pajamas.draw(in: Self.fitted(pajamas.size, in: pet))
             } else {
                 FriendArtwork.draw(occupant.friend, in: pet, time: time, walking: true, facing: -1,
-                                   walkPhase: entry * 2 * .pi, pose: .back)
+                                   walkPhase: entry * 2 * .pi, pose: .back,hachiwareMonster:occupant.hachiwareMonster)
             }
             NSGraphicsContext.restoreGraphicsState()
         }
         guard phase == .sleeping || phase == .entering else { return }
         let opacity = phase == .sleeping ? 1 : max(0, (entry - 0.45) / 0.55)
+        if occupant.friend == .hachiware && occupant.hachiwareMonster {
+            NSGraphicsContext.saveGraphicsState(); NSGraphicsContext.current?.cgContext.setAlpha(CGFloat(opacity))
+            HachiwareMonsterSprites.shared.drawSleep(in:bed,time:time)
+            NSGraphicsContext.restoreGraphicsState()
+            return
+        }
         guard let sleeper = occupant.friend == .chiikawa ? ChiikawaLifeSprites.shared.sleeper : sleeper else { return }
         var sleeping = Self.fitted(sleeper.size, in: bed)
         sleeping.size.height *= Self.breathingScale(time: time)
@@ -286,6 +293,7 @@ final class DesktopHome {
         if !panel.isVisible { panel.orderFrontRegardless() }
         panel.ignoresMouseEvents = !(panel.occlusionState.contains(.visible) && HomeGeometry.hit(mouse, in: panel.frame))
         let changed = view.style != style || view.occupants.map(\.friend) != occupants.map(\.friend)
+            || view.occupants.map(\.hachiwareMonster) != occupants.map(\.hachiwareMonster)
             || view.occupants.map(\.routine.phase) != occupants.map(\.routine.phase)
             || view.occupants.map(\.wakingStarted) != occupants.map(\.wakingStarted)
         view.style = style; view.occupants = occupants; view.now = now; view.time = time

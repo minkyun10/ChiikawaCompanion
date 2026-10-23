@@ -1,0 +1,27 @@
+{
+  "backingScale" : 2,
+  "date" : "2026-10-23",
+  "hachiwareMonster" : false,
+  "method" : "60 Hz main-run-loop callback plus synchronous displayIfNeeded on actual AppKit windows; not compositor-present FPS",
+  "results" : [
+    {
+      "callbackHz" : 59.99363127245033,
+      "characters" : 8,
+      "cpuPercentOfOneCore" : 29.571597506615955,
+      "intervalMaxms" : 18.733208416961133,
+      "intervalP95ms" : 18.423250061459839,
+      "intervalP99ms" : 18.639166723005474,
+      "over25msPercent" : 0,
+      "samples" : 603,
+      "workMaxms" : 5.2694582846015692,
+      "workP95ms" : 4.6670833835378289
+    }
+  ],
+  "scene" : "All owned ground props enabled; continuously walking; autonomous pickup\/rest\/activities and audio disabled; pointer away; no settings window",
+  "screenPoints" : [
+    1440,
+    794
+  ],
+  "secondsPerCount" : 10,
+  "warmupSeconds" : 2
+}
