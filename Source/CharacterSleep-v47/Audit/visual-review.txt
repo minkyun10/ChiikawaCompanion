@@ -1,0 +1,14 @@
+2026-10-23 — built-in image_gen originals and packaged app rendering reviewed.
+
+Usagi: approved pale-yellow face, two long pink-inner ears, curved eyebrows; one ear relaxes near the pillow.
+Kurimanju: smooth chestnut crown, tiny low side ears, nose and relaxed mouth; paw rests over the quilt.
+Momonga: white cheek tufts, round blue-inner ears, blue nose, large blue tail with white central stripe attached at the rump.
+Rakko: four-point star remains on anatomical right/viewer-left forehead; dark round ears, fur marks and white scarf retained.
+Shisa: orange curled mane, orange heart-curl eyebrows, short cream ears and orange tail visible.
+Kani: both notched pink crab pincers, pink headband, peach face and double eyebrows retained.
+
+All six are genuinely lying down with closed eyes, pillow, naturally draped quilt and mat. No standing-body rotation or generic rectangle blanket.
+All originals have transparent alpha. Fixed union viewport fits complete ears/tail/ornaments in the bed and removes unused canvas padding.
+Reviewed sleep-characters-v47.png, six individual 360x214 houses and both eight-occupant shared-house skins in sleep-shared-homes-v47.png. No cropped extremities or added houses.
+Twelve prebuilt frames share a 3.6-second anchored vertical breathing loop. Existing entry fade, 20-second rest, wake, fixed home position, audio and owner-specific item rules remain intact.
+The eight-occupant 360x214 house necessarily makes each sleeper small; geometry was intentionally kept unchanged.

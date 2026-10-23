@@ -1,0 +1,29 @@
+{
+  "previous_resource_count": 223,
+  "changed": [
+    "Roster/shisa/sleep-12.png",
+    "Roster/rakko/sleep-12.png",
+    "Roster/kani/sleep-12.png",
+    "Roster/kurimanju/sleep-12.png",
+    "Roster/momonga/sleep-12.png",
+    "Roster/usagi/sleep-12.png"
+  ],
+  "missing": [],
+  "expected_sleep_changes": [
+    "Roster/usagi/sleep-12.png",
+    "Roster/kurimanju/sleep-12.png",
+    "Roster/momonga/sleep-12.png",
+    "Roster/rakko/sleep-12.png",
+    "Roster/shisa/sleep-12.png",
+    "Roster/kani/sleep-12.png"
+  ],
+  "only_sleep_atlases_changed": true,
+  "new_sleep_sources": [
+    "kani-sleep-v47.png",
+    "kurimanju-sleep-v47.png",
+    "momonga-sleep-v47.png",
+    "rakko-sleep-v47.png",
+    "shisa-sleep-v47.png",
+    "usagi-sleep-v47.png"
+  ]
+}

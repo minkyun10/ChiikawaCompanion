@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-23",
+  "assets": [
+    {
+      "friend": "usagi",
+      "tool": "built-in image_gen",
+      "prompt": "Prompts/usagi.txt",
+      "original": "Generated/usagi-original.png",
+      "final": "Final/usagi-sleep-v47.png",
+      "sha256": "862f8acfffb2119904ef54b71091d665a420e538147d46a8201c29d83a385a08"
+    },
+    {
+      "friend": "kurimanju",
+      "tool": "built-in image_gen",
+      "prompt": "Prompts/kurimanju.txt",
+      "original": "Generated/kurimanju-original.png",
+      "final": "Final/kurimanju-sleep-v47.png",
+      "sha256": "b8143a4fcddc3e045eca4b90f3bbe7b86cb4b2e4a230c94ec99afa65f08cebba"
+    },
+    {
+      "friend": "momonga",
+      "tool": "built-in image_gen",
+      "prompt": "Prompts/momonga.txt",
+      "original": "Generated/momonga-original.png",
+      "final": "Final/momonga-sleep-v47.png",
+      "sha256": "859ee13e518bbcd7e20c77995d80e242d1db11c5acf18e897279c5b0ed3a4b20"
+    },
+    {
+      "friend": "rakko",
+      "tool": "built-in image_gen",
+      "prompt": "Prompts/rakko.txt",
+      "original": "Generated/rakko-original.png",
+      "final": "Final/rakko-sleep-v47.png",
+      "sha256": "25c2e63b677f036597322eeff7a0ec1807fed4a26dd9fc8d474dff777d2e387d"
+    },
+    {
+      "friend": "shisa",
+      "tool": "built-in image_gen",
+      "prompt": "Prompts/shisa.txt",
+      "original": "Generated/shisa-original.png",
+      "final": "Final/shisa-sleep-v47.png",
+      "sha256": "1eb3d2045b54bfcee9b1ac3e32272e320a8ba517ddd7a736f889d388ade8fb45"
+    },
+    {
+      "friend": "kani",
+      "tool": "built-in image_gen",
+      "prompt": "Prompts/kani.txt",
+      "original": "Generated/kani-original.png",
+      "final": "Final/kani-sleep-v47.png",
+      "sha256": "96aac62c671bef5c91e823b61fed2bf597d80e63bd40b21de0a5e3e71a19cd83"
+    }
+  ]
+}

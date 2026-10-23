@@ -1,0 +1,9 @@
+[0/1] Planning build
+Building for production...
+[0/5] Write sources
+[1/5] Copying Resources
+[2/5] Write swift-version--1AB21518FC5DEDBE.txt
+[4/6] Compiling ChiikawaCompanion ActivitySpotChecks.swift
+[4/6] Write Objects.LinkFileList
+[5/6] Linking ChiikawaCompanion
+Build complete! (36.45s)

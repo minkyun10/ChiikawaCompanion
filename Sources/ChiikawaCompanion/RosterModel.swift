@@ -137,7 +137,7 @@ enum RosterAction: String, CaseIterable {
     }
     static let selectable: [Self] = [.keepsake]
     var duration: TimeInterval { self == .wake ? 0.96 : 2.4 }
-    var cycle: TimeInterval { self == .attack ? 1.2 : self == .wake ? 0.96 : self == .pickup ? 0.65 : 2.4 }
+    var cycle: TimeInterval { self == .attack ? 1.2 : self == .wake ? 0.96 : self == .pickup ? 0.65 : self == .sleep ? 3.6 : 2.4 }
 }
 
 struct RosterVisual {

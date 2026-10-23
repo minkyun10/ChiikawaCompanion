@@ -12,6 +12,7 @@ final class RosterNativeRig {
     let expressions: [RosterAction: NSImage]
     let usagiFace: UsagiFace?
     let newFace: NewFriendFace?
+    lazy var sleepingArtwork = RosterSleepArtwork(friend: friend)
     let paper: NSColor
     let ink = NSColor(hex: 0x3A3025)
     var height: CGFloat { friend == .usagi ? 270 : 194 }
@@ -215,17 +216,14 @@ final class RosterNativeRig {
         }
     }
     func action(_ action: RosterAction, phase: Double) -> NSBitmapImageRep {
-        let size = action == .attack ? NSSize(width: 440,height: canvas.height) : action == .sleep ? NSSize(width: 256,height: 180) : canvas
+        let size = action == .attack ? NSSize(width: 440,height: canvas.height) : action == .sleep ? RosterSleepArtwork.canvas : canvas
         return Self.bitmap(size) {
             guard RosterAction.available(for: friend).contains(action) else { return }
             let context = NSGraphicsContext.current!.cgContext
             if action == .attack { context.translateBy(x: 120,y: 0) }
             if action == .sleep {
-                NSColor(hex: 0x9EA77B).setFill(); NSBezierPath(roundedRect: NSRect(x: 10,y: 32,width: 236,height: 80),xRadius: 16,yRadius: 16).fill()
-                context.saveGState(); context.translateBy(x: 117,y: 80); context.rotate(by: .pi/2);context.scaleBy(x: 0.62,y: 0.62);context.translateBy(x: -128,y: -height/2-44)
-                drawBody(.sleep,y:44,phase:phase); context.restoreGState()
-                friend.color.withAlphaComponent(0.95).setFill(); let blanket=NSBezierPath(roundedRect: NSRect(x: 148,y: 36,width: 96,height: 78),xRadius: 13,yRadius: 13)
-                blanket.fill(); ink.setStroke(); blanket.lineWidth=3.5;blanket.stroke();return
+                sleepingArtwork?.draw(phase: phase)
+                return
             }
             let y: CGFloat = 44+(action == .pickup ? -8*CGFloat(sin(.pi*phase)) : action == .wake ? 4*CGFloat(sin(.pi*phase)) : 0)
             for x: CGFloat in [113,143] { drawFoot(x:x,y:37) }
@@ -353,6 +351,7 @@ final class RosterSprites {
     var walks: [ChiikawaDirection:[NSImage]] = [:]
     var actions: [RosterAction:[NSImage]] = [:]
     var registration: AttackRegistration?
+    private(set) var sleepViewport = NSRect(origin: .zero, size: RosterSleepArtwork.canvas)
     private(set) var usesBundledAtlases = false
     var isReady: Bool { ChiikawaDirection.allCases.allSatisfy { walks[$0]?.count == 24 } && RosterAction.available(for: friend).allSatisfy {actions[$0]?.count == 12} && (!friend.canUseWeapon || registration != nil) }
     private init(friend: Friend) {
@@ -366,6 +365,7 @@ final class RosterSprites {
         }
         usesBundledAtlases = loadBundledAtlases()
         if !usesBundledAtlases {
+        guard rig.sleepingArtwork != nil else { return }
         for (pose,left,right) in [(HachiwarePose.front,ChiikawaDirection.down,nil),(.back,.up,nil),(.side,.left,.right),(.frontDiagonal,.downLeft,.downRight),(.backDiagonal,.upLeft,.upRight)] as [(HachiwarePose,ChiikawaDirection,ChiikawaDirection?)] {
             let frames=(0..<24).map {rig.walk(pose,phase:Double($0)/24)}
             walks[left]=frames.map(image)
@@ -376,6 +376,7 @@ final class RosterSprites {
         }
         for action in RosterAction.available(for: friend) {actions[action]=(0..<12).map {image(rig.action(action,phase:Double($0)/12))}}
         }
+        registerSleepViewport()
         guard friend.canUseWeapon else { return }
         let rect=rig.bodyRect(.front,y:44)
         let reference=AttackBodyMetrics(head:rect,feet:34,alpha:CGRect(origin:.zero,size:friend.canvasSize),size:friend.canvasSize)
@@ -408,11 +409,40 @@ final class RosterSprites {
         }
         walks=loadedWalks;actions=loadedActions;return true
     }
+    private func registerSleepViewport() {
+        guard let frames = actions[.sleep], frames.count == 12 else { return }
+        var bounds = NSRect.null
+        // The widest inhaled frame and the resting frame share one fixed crop.
+        // Registration happens once; drawing never scans alpha or opens PNGs.
+        for index in [0, 6] {
+            guard let data = frames[index].tiffRepresentation,
+                  let bitmap = NSBitmapImageRep(data: data) else { continue }
+            var left = bitmap.pixelsWide, top = bitmap.pixelsHigh, right = -1, bottom = -1
+            for y in 0..<bitmap.pixelsHigh { for x in 0..<bitmap.pixelsWide
+                where (bitmap.colorAt(x: x, y: y)?.alphaComponent ?? 0) > 0.02 {
+                    left = min(left, x); right = max(right, x)
+                    top = min(top, y); bottom = max(bottom, y)
+                }
+            }
+            if right >= left && bottom >= top {
+                bounds = bounds.union(NSRect(x: left, y: bitmap.pixelsHigh-bottom-1,
+                    width: right-left+1, height: bottom-top+1))
+            }
+        }
+        if !bounds.isNull {
+            sleepViewport = bounds.insetBy(dx: -2, dy: -2).intersection(NSRect(origin: .zero, size: RosterSleepArtwork.canvas))
+        }
+    }
     func draw(action:RosterAction,in rect:NSRect,elapsed:Double) {
         guard let frames=actions[action],!frames.isEmpty else {return}
         let index=HachiwareSprites.frameIndex(phase:max(0,elapsed)/action.cycle*2 * .pi,count:12)
         let image=frames[index]
         if action == .attack, let registration {image.draw(in:registration.destination(frame:index,in:rect));return}
+        if action == .sleep {
+            let destination = HomeArtwork.fitted(sleepViewport.size, in: rect)
+            image.draw(in: destination, from: sleepViewport, operation: .sourceOver, fraction: 1)
+            return
+        }
         let scale=min(rect.width/image.size.width,rect.height/image.size.height)
         image.draw(in:NSRect(x:rect.midX-image.size.width*scale/2,y:rect.midY-image.size.height*scale/2,width:image.size.width*scale,height:image.size.height*scale))
     }

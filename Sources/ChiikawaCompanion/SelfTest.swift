@@ -235,6 +235,7 @@ enum SelfTest {
         runContinuousRoamingChecks { check($0, $1) }
         runSimpleOptionChecks { check($0, $1) }
         runRosterChecks { check($0, $1) }
+        runRosterSleepChecks { check($0, $1) }
         runHomeTests(desktop: desktop, now: now) { check($0, $1) }
         var performance = CompanionPerformance()
         performance.begin(.camera, now: now, pickingUp: true)

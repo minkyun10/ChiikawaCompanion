@@ -1,10 +1,10 @@
 {
   "created_at": "2026-10-16T12:08:58.617148+00:00",
   "operation": "copy; originals preserved",
-  "image_file_count": 3588,
-  "unique_image_content_count": 1913,
-  "supporting_file_count": 751,
-  "image_bytes": 1088419369,
+  "image_file_count": 3671,
+  "unique_image_content_count": 1939,
+  "supporting_file_count": 774,
+  "image_bytes": 1142503504,
   "symmetric_walk_runtime_applied": true,
   "files": [
     {
@@ -1070,6 +1070,426 @@
       "archive_path": "CharacterItemRules-v43/README.txt",
       "bytes": 2285,
       "sha256": "de1ae15129c7879d1f71452981738a7fd1c766f65ddaa414a81ab4007394fb13"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/CharacterSleep-v47/Audit/art-preservation.json",
+      "archive_path": "CharacterSleep-v47/Audit/art-preservation.json",
+      "bytes": 747,
+      "sha256": "98fbea8787e5ebdbe65503fd72a586699c547899680690aeda80662ea2e81c33"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/CharacterSleep-v47/Audit/build.log",
+      "archive_path": "CharacterSleep-v47/Audit/build.log",
+      "bytes": 377,
+      "sha256": "58460c59377a57f889643c4eb56e1b35a2aa0ac77b82d5df98880fc3858dad48"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/CharacterSleep-v47/Audit/bundle-before.json",
+      "archive_path": "CharacterSleep-v47/Audit/bundle-before.json",
+      "bytes": 22542,
+      "sha256": "b9c2db93e21927c4a744d339c5f01324dc43db973de3180ee561990507ece002"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/CharacterSleep-v47/Audit/codesign.log",
+      "archive_path": "CharacterSleep-v47/Audit/codesign.log",
+      "bytes": 205,
+      "sha256": "5e74fb993b3151c595f0d44681b4d2969571939df10ab27a65d8a6b1b2067b9b"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/CharacterSleep-v47/Audit/compile-final.log",
+      "archive_path": "CharacterSleep-v47/Audit/compile-final.log",
+      "bytes": 265,
+      "sha256": "c589eba0c658c94bfd45b39692f6e2bf7aa011b91a64a21fe9edaf6203f71e3a"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/CharacterSleep-v47/Audit/compile.log",
+      "archive_path": "CharacterSleep-v47/Audit/compile.log",
+      "bytes": 289,
+      "sha256": "6cbad5b7e944a6cf5b8121c4c9517ef661e4f925808d262fa36122a9f3a10373"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/CharacterSleep-v47/Audit/eight-companions.json",
+      "archive_path": "CharacterSleep-v47/Audit/eight-companions.json",
+      "bytes": 873,
+      "sha256": "f35863e882372786902f6c29a2ce219649129a5b4d48e1758a17c58715dc6695"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/CharacterSleep-v47/Audit/eight-companions.log",
+      "archive_path": "CharacterSleep-v47/Audit/eight-companions.log",
+      "bytes": 330,
+      "sha256": "3c700e8bc7b124cd568713ad9fc3cdd7bab531f6675304d901062a884abdcaa6"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/CharacterSleep-v47/Audit/final-app.json",
+      "archive_path": "CharacterSleep-v47/Audit/final-app.json",
+      "bytes": 562,
+      "sha256": "811d1f6887d439953453f58e8f05edad67c06467e5f3273dff465d1078ae8004"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/CharacterSleep-v47/Audit/render-review.log",
+      "archive_path": "CharacterSleep-v47/Audit/render-review.log",
+      "bytes": 80,
+      "sha256": "8df39624f777d328642af977ace9c7974244755fa50585f6e328dd1775e43d5b"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/CharacterSleep-v47/Audit/self-test.log",
+      "archive_path": "CharacterSleep-v47/Audit/self-test.log",
+      "bytes": 67710,
+      "sha256": "be213d8fac6481f08775b6651c4a2e1f88e3d79fbec3047ecb5b2051894d676b"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/CharacterSleep-v47/Audit/visual-review.txt",
+      "archive_path": "CharacterSleep-v47/Audit/visual-review.txt",
+      "bytes": 1510,
+      "sha256": "c1854a6f535a43b418d55b66a04b448b987bd11a7838219643fed1bec326b874"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/CharacterSleep-v47/Before/CaveHome.swift",
+      "archive_path": "CharacterSleep-v47/Before/CaveHome.swift",
+      "bytes": 16283,
+      "sha256": "0845a211dc0e2094b730b33b7f5177c44910fd54946538cd882e4238f8358dec"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/CharacterSleep-v47/Before/RosterArtwork.swift",
+      "archive_path": "CharacterSleep-v47/Before/RosterArtwork.swift",
+      "bytes": 35729,
+      "sha256": "d2a5211cd18a9546ae193951065ca2e0d8ea2c8a8ea0c06ab8972d414b35074d"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/CharacterSleep-v47/Before/RosterModel.swift",
+      "archive_path": "CharacterSleep-v47/Before/RosterModel.swift",
+      "bytes": 8057,
+      "sha256": "dadddcf51bedc1768378b64bb5136a5b572324b46373403bb9522bda4e48d8bc"
+    },
+    {
+      "kind": "image",
+      "source": "Source/CharacterSleep-v47/Before/kani-sleep-12.png",
+      "archive_path": "CharacterSleep-v47/Before/kani-sleep-12.png",
+      "bytes": 67602,
+      "sha256": "f589de57d8e7a751b35a77278ef2da3123904d6cc3e676949ca568a6f431f5de"
+    },
+    {
+      "kind": "image",
+      "source": "Source/CharacterSleep-v47/Before/kurimanju-sleep-12.png",
+      "archive_path": "CharacterSleep-v47/Before/kurimanju-sleep-12.png",
+      "bytes": 68717,
+      "sha256": "1b5e5b614803900bde450216c59c0ff75f82736cb01a2979c2cb8becc8626ce8"
+    },
+    {
+      "kind": "image",
+      "source": "Source/CharacterSleep-v47/Before/momonga-sleep-12.png",
+      "archive_path": "CharacterSleep-v47/Before/momonga-sleep-12.png",
+      "bytes": 71820,
+      "sha256": "f5ea79266e82744c16f963ecca49a2349355e6bd1fe1e86380beb077df13713b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/CharacterSleep-v47/Before/rakko-sleep-12.png",
+      "archive_path": "CharacterSleep-v47/Before/rakko-sleep-12.png",
+      "bytes": 71528,
+      "sha256": "82168d8d058bfad0f1fff84d23873bb18b200776b4a1744a9388e68a51aa19f6"
+    },
+    {
+      "kind": "image",
+      "source": "Source/CharacterSleep-v47/Before/shisa-sleep-12.png",
+      "archive_path": "CharacterSleep-v47/Before/shisa-sleep-12.png",
+      "bytes": 77427,
+      "sha256": "8fa3f06fe80c5ae1a776a770931469d1113292d78104ae78615b3d3978264e4b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/CharacterSleep-v47/Before/usagi-sleep-12.png",
+      "archive_path": "CharacterSleep-v47/Before/usagi-sleep-12.png",
+      "bytes": 70787,
+      "sha256": "331e7e7e27afa7c31770566e32e175689a24c5020b035d3cc993518421656b13"
+    },
+    {
+      "kind": "image",
+      "source": "Source/CharacterSleep-v47/Final/Native/kani/sleep-12.png",
+      "archive_path": "CharacterSleep-v47/Final/Native/kani/sleep-12.png",
+      "bytes": 357350,
+      "sha256": "6f5a48f9a048144d046a62252d0da51c3d7a7d463529aa49e137b807b1d2a138"
+    },
+    {
+      "kind": "image",
+      "source": "Source/CharacterSleep-v47/Final/Native/kurimanju/sleep-12.png",
+      "archive_path": "CharacterSleep-v47/Final/Native/kurimanju/sleep-12.png",
+      "bytes": 331344,
+      "sha256": "f32a8ad068cd5d5cde8b5b7c36ad24e20b3ec0a81712f3226847673b74d41e6f"
+    },
+    {
+      "kind": "image",
+      "source": "Source/CharacterSleep-v47/Final/Native/momonga/sleep-12.png",
+      "archive_path": "CharacterSleep-v47/Final/Native/momonga/sleep-12.png",
+      "bytes": 500412,
+      "sha256": "563808df3362969d13529cb8a793fb618abf86d9187c232c47093820f53eb6b3"
+    },
+    {
+      "kind": "image",
+      "source": "Source/CharacterSleep-v47/Final/Native/rakko/sleep-12.png",
+      "archive_path": "CharacterSleep-v47/Final/Native/rakko/sleep-12.png",
+      "bytes": 354771,
+      "sha256": "3ea3f68dd15ee469fb882bf9831afb2f4850efd22c558c4856bae41b4505aa97"
+    },
+    {
+      "kind": "image",
+      "source": "Source/CharacterSleep-v47/Final/Native/shisa/sleep-12.png",
+      "archive_path": "CharacterSleep-v47/Final/Native/shisa/sleep-12.png",
+      "bytes": 368552,
+      "sha256": "bb96ebc79f32f709dfb31b608c49efda0b766bb938ea35e719283ff0ef219c6e"
+    },
+    {
+      "kind": "image",
+      "source": "Source/CharacterSleep-v47/Final/Native/usagi/sleep-12.png",
+      "archive_path": "CharacterSleep-v47/Final/Native/usagi/sleep-12.png",
+      "bytes": 369311,
+      "sha256": "482ad082853bc4177e0a67cfa012122b99f7b5a642f11c19ab7b1bcd84f92104"
+    },
+    {
+      "kind": "image",
+      "source": "Source/CharacterSleep-v47/Final/kani-sleep-v47.png",
+      "archive_path": "CharacterSleep-v47/Final/kani-sleep-v47.png",
+      "bytes": 1047531,
+      "sha256": "96aac62c671bef5c91e823b61fed2bf597d80e63bd40b21de0a5e3e71a19cd83"
+    },
+    {
+      "kind": "image",
+      "source": "Source/CharacterSleep-v47/Final/kurimanju-sleep-v47.png",
+      "archive_path": "CharacterSleep-v47/Final/kurimanju-sleep-v47.png",
+      "bytes": 944405,
+      "sha256": "b8143a4fcddc3e045eca4b90f3bbe7b86cb4b2e4a230c94ec99afa65f08cebba"
+    },
+    {
+      "kind": "image",
+      "source": "Source/CharacterSleep-v47/Final/momonga-sleep-v47.png",
+      "archive_path": "CharacterSleep-v47/Final/momonga-sleep-v47.png",
+      "bytes": 1263631,
+      "sha256": "859ee13e518bbcd7e20c77995d80e242d1db11c5acf18e897279c5b0ed3a4b20"
+    },
+    {
+      "kind": "image",
+      "source": "Source/CharacterSleep-v47/Final/rakko-sleep-v47.png",
+      "archive_path": "CharacterSleep-v47/Final/rakko-sleep-v47.png",
+      "bytes": 1133019,
+      "sha256": "25c2e63b677f036597322eeff7a0ec1807fed4a26dd9fc8d474dff777d2e387d"
+    },
+    {
+      "kind": "image",
+      "source": "Source/CharacterSleep-v47/Final/shisa-sleep-v47.png",
+      "archive_path": "CharacterSleep-v47/Final/shisa-sleep-v47.png",
+      "bytes": 1053825,
+      "sha256": "1eb3d2045b54bfcee9b1ac3e32272e320a8ba517ddd7a736f889d388ade8fb45"
+    },
+    {
+      "kind": "image",
+      "source": "Source/CharacterSleep-v47/Final/usagi-sleep-v47.png",
+      "archive_path": "CharacterSleep-v47/Final/usagi-sleep-v47.png",
+      "bytes": 930054,
+      "sha256": "862f8acfffb2119904ef54b71091d665a420e538147d46a8201c29d83a385a08"
+    },
+    {
+      "kind": "image",
+      "source": "Source/CharacterSleep-v47/Generated/kani-original.png",
+      "archive_path": "CharacterSleep-v47/Generated/kani-original.png",
+      "bytes": 1047531,
+      "sha256": "96aac62c671bef5c91e823b61fed2bf597d80e63bd40b21de0a5e3e71a19cd83"
+    },
+    {
+      "kind": "image",
+      "source": "Source/CharacterSleep-v47/Generated/kurimanju-original.png",
+      "archive_path": "CharacterSleep-v47/Generated/kurimanju-original.png",
+      "bytes": 944405,
+      "sha256": "b8143a4fcddc3e045eca4b90f3bbe7b86cb4b2e4a230c94ec99afa65f08cebba"
+    },
+    {
+      "kind": "image",
+      "source": "Source/CharacterSleep-v47/Generated/momonga-original.png",
+      "archive_path": "CharacterSleep-v47/Generated/momonga-original.png",
+      "bytes": 1263631,
+      "sha256": "859ee13e518bbcd7e20c77995d80e242d1db11c5acf18e897279c5b0ed3a4b20"
+    },
+    {
+      "kind": "image",
+      "source": "Source/CharacterSleep-v47/Generated/rakko-original.png",
+      "archive_path": "CharacterSleep-v47/Generated/rakko-original.png",
+      "bytes": 1133019,
+      "sha256": "25c2e63b677f036597322eeff7a0ec1807fed4a26dd9fc8d474dff777d2e387d"
+    },
+    {
+      "kind": "image",
+      "source": "Source/CharacterSleep-v47/Generated/shisa-original.png",
+      "archive_path": "CharacterSleep-v47/Generated/shisa-original.png",
+      "bytes": 1053825,
+      "sha256": "1eb3d2045b54bfcee9b1ac3e32272e320a8ba517ddd7a736f889d388ade8fb45"
+    },
+    {
+      "kind": "image",
+      "source": "Source/CharacterSleep-v47/Generated/usagi-original.png",
+      "archive_path": "CharacterSleep-v47/Generated/usagi-original.png",
+      "bytes": 930054,
+      "sha256": "862f8acfffb2119904ef54b71091d665a420e538147d46a8201c29d83a385a08"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/CharacterSleep-v47/Prompts/kani.txt",
+      "archive_path": "CharacterSleep-v47/Prompts/kani.txt",
+      "bytes": 2510,
+      "sha256": "1601964e1d9d6aa682f31981595bc380828e2b9c31c54029b76878af9bbd2782"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/CharacterSleep-v47/Prompts/kurimanju.txt",
+      "archive_path": "CharacterSleep-v47/Prompts/kurimanju.txt",
+      "bytes": 2416,
+      "sha256": "75091f058da22225c2485837f317591b4a37f29119a6cf249ec2037bd0e60907"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/CharacterSleep-v47/Prompts/momonga.txt",
+      "archive_path": "CharacterSleep-v47/Prompts/momonga.txt",
+      "bytes": 2607,
+      "sha256": "d70e2440603bda9fda7300f93d914ca75b423c3497e4f0c86b2fe83102c39c09"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/CharacterSleep-v47/Prompts/rakko.txt",
+      "archive_path": "CharacterSleep-v47/Prompts/rakko.txt",
+      "bytes": 2461,
+      "sha256": "2dde34c519011186905d67a1c56edfd0570ae18d282dc1628de2626ad4e7cfad"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/CharacterSleep-v47/Prompts/shisa.txt",
+      "archive_path": "CharacterSleep-v47/Prompts/shisa.txt",
+      "bytes": 2474,
+      "sha256": "deac0210a95eafc8ac00dc7d09a537ac8a68879cabc9600b83fdd4bcc27d7e2d"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/CharacterSleep-v47/Prompts/usagi.txt",
+      "archive_path": "CharacterSleep-v47/Prompts/usagi.txt",
+      "bytes": 2470,
+      "sha256": "01a9690fb86aa0c3c341125a7285a842c811e0b45dca660486d3e31e10352fe8"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/CharacterSleep-v47/README.txt",
+      "archive_path": "CharacterSleep-v47/README.txt",
+      "bytes": 2028,
+      "sha256": "262e9ac8aa319260d6c14f6154247777178b9cb83c1399ed41c0b0b78d6f3e93"
+    },
+    {
+      "kind": "image",
+      "source": "Source/CharacterSleep-v47/References/chiikawa-sleep-v26.png",
+      "archive_path": "CharacterSleep-v47/References/chiikawa-sleep-v26.png",
+      "bytes": 313801,
+      "sha256": "c9bb0b5a5db990df3168b66f33c01bd1c96cc2ffe22114cb1b424cbc5baef100"
+    },
+    {
+      "kind": "image",
+      "source": "Source/CharacterSleep-v47/References/hachiware-sleep-v11.png",
+      "archive_path": "CharacterSleep-v47/References/hachiware-sleep-v11.png",
+      "bytes": 967407,
+      "sha256": "7705245172e3501d419c5b2cc144ef8e9dab9b7c938cc50c7bf0d80c5abb38ee"
+    },
+    {
+      "kind": "image",
+      "source": "Source/CharacterSleep-v47/References/kani-approved-front.png",
+      "archive_path": "CharacterSleep-v47/References/kani-approved-front.png",
+      "bytes": 158118,
+      "sha256": "a7a9d0abd1ff323200810d91f98a3426e601391723d2579f3ba317342c5f633f"
+    },
+    {
+      "kind": "image",
+      "source": "Source/CharacterSleep-v47/References/kurimanju-approved-front.png",
+      "archive_path": "CharacterSleep-v47/References/kurimanju-approved-front.png",
+      "bytes": 166876,
+      "sha256": "8908afdd84efb428137d015e2075c69b28a8ef177ab2e9598d5aac0958815557"
+    },
+    {
+      "kind": "image",
+      "source": "Source/CharacterSleep-v47/References/momonga-approved-front.png",
+      "archive_path": "CharacterSleep-v47/References/momonga-approved-front.png",
+      "bytes": 182059,
+      "sha256": "36c250fda19c39b6870eaffdd811549d637c04e306e091e61c4b3f9395d31c67"
+    },
+    {
+      "kind": "image",
+      "source": "Source/CharacterSleep-v47/References/momonga-rig-tail-v38.png",
+      "archive_path": "CharacterSleep-v47/References/momonga-rig-tail-v38.png",
+      "bytes": 82674,
+      "sha256": "3b833573b9ed71655b22eb8d4b1542f9f7595590b6cd6cdeab266389785e5bde"
+    },
+    {
+      "kind": "image",
+      "source": "Source/CharacterSleep-v47/References/rakko-approved-front.png",
+      "archive_path": "CharacterSleep-v47/References/rakko-approved-front.png",
+      "bytes": 205666,
+      "sha256": "c0b076f650d1ed810cc4f31cd7f229ae40a96aa3d404c46a46451de736825289"
+    },
+    {
+      "kind": "image",
+      "source": "Source/CharacterSleep-v47/References/shisa-approved-front.png",
+      "archive_path": "CharacterSleep-v47/References/shisa-approved-front.png",
+      "bytes": 185545,
+      "sha256": "c0c7898ebcd97999a9aa263eb8289ea54a77ea4aac8c8ee64f9743d7d0b12972"
+    },
+    {
+      "kind": "image",
+      "source": "Source/CharacterSleep-v47/References/usagi-approved-front.png",
+      "archive_path": "CharacterSleep-v47/References/usagi-approved-front.png",
+      "bytes": 153785,
+      "sha256": "617375b1ab73a723885b9bc2fa288e6577f6f289bdeff34925fb3f29c2b4ea8e"
+    },
+    {
+      "kind": "image",
+      "source": "Source/CharacterSleep-v47/Review/sleep-breathing-v47.gif",
+      "archive_path": "CharacterSleep-v47/Review/sleep-breathing-v47.gif",
+      "bytes": 911803,
+      "sha256": "ad82ccfae5b56617c590fbbbd18e057200b34ceb53bc2be86f7a2ec9f15be7bd"
+    },
+    {
+      "kind": "image",
+      "source": "Source/CharacterSleep-v47/Review/sleep-characters-v47.png",
+      "archive_path": "CharacterSleep-v47/Review/sleep-characters-v47.png",
+      "bytes": 463322,
+      "sha256": "c4c0c019d3f3ac9359183d8118edadc79ac879b8900dd9ba250ee84b08491260"
+    },
+    {
+      "kind": "image",
+      "source": "Source/CharacterSleep-v47/Review/sleep-individual-homes-v47.png",
+      "archive_path": "CharacterSleep-v47/Review/sleep-individual-homes-v47.png",
+      "bytes": 348369,
+      "sha256": "c86242d2f7d830cf12a2ef46ef87ff64ae9d6b891dd4ad12290ac8f589e531dd"
+    },
+    {
+      "kind": "image",
+      "source": "Source/CharacterSleep-v47/Review/sleep-shared-homes-v47.png",
+      "archive_path": "CharacterSleep-v47/Review/sleep-shared-homes-v47.png",
+      "bytes": 762847,
+      "sha256": "fdba877771eb3a592e88c624ac5d4f56760e2dde3aad017d7db5f67909af9958"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/CharacterSleep-v47/generation.json",
+      "archive_path": "CharacterSleep-v47/generation.json",
+      "bytes": 1793,
+      "sha256": "4d08ca812b2549896413081f1345f2ba9832f13de9a320854c2ff71338530288"
     },
     {
       "kind": "supporting",
@@ -13337,10 +13757,24 @@
     },
     {
       "kind": "image",
+      "source": "Source/GeneratedOriginals/exec-13848e06-920c-45a1-9abf-823f3581ee29.png",
+      "archive_path": "GeneratedOriginals/exec-13848e06-920c-45a1-9abf-823f3581ee29.png",
+      "bytes": 1133019,
+      "sha256": "25c2e63b677f036597322eeff7a0ec1807fed4a26dd9fc8d474dff777d2e387d"
+    },
+    {
+      "kind": "image",
       "source": "Source/GeneratedOriginals/exec-16822e68-e7f2-4224-a927-aa31090332b8.png",
       "archive_path": "GeneratedOriginals/exec-16822e68-e7f2-4224-a927-aa31090332b8.png",
       "bytes": 1532247,
       "sha256": "e524778ecb219d5e88fb16a28be080bf807b2a1383bc4e0bf6e52d8981230c34"
+    },
+    {
+      "kind": "image",
+      "source": "Source/GeneratedOriginals/exec-1db34814-9bc3-4c98-9223-ca4187815874.png",
+      "archive_path": "GeneratedOriginals/exec-1db34814-9bc3-4c98-9223-ca4187815874.png",
+      "bytes": 930054,
+      "sha256": "862f8acfffb2119904ef54b71091d665a420e538147d46a8201c29d83a385a08"
     },
     {
       "kind": "image",
@@ -13484,6 +13918,13 @@
     },
     {
       "kind": "image",
+      "source": "Source/GeneratedOriginals/exec-6fce227b-a50f-4b36-9eef-d2a41e5ea8ac.png",
+      "archive_path": "GeneratedOriginals/exec-6fce227b-a50f-4b36-9eef-d2a41e5ea8ac.png",
+      "bytes": 1053825,
+      "sha256": "1eb3d2045b54bfcee9b1ac3e32272e320a8ba517ddd7a736f889d388ade8fb45"
+    },
+    {
+      "kind": "image",
       "source": "Source/GeneratedOriginals/exec-73ffa3dc-0290-487b-95aa-ef872d1fccda.png",
       "archive_path": "GeneratedOriginals/exec-73ffa3dc-0290-487b-95aa-ef872d1fccda.png",
       "bytes": 1489955,
@@ -13526,6 +13967,13 @@
     },
     {
       "kind": "image",
+      "source": "Source/GeneratedOriginals/exec-814f69a7-d15e-4094-a091-8a11c8880d71.png",
+      "archive_path": "GeneratedOriginals/exec-814f69a7-d15e-4094-a091-8a11c8880d71.png",
+      "bytes": 1047531,
+      "sha256": "96aac62c671bef5c91e823b61fed2bf597d80e63bd40b21de0a5e3e71a19cd83"
+    },
+    {
+      "kind": "image",
       "source": "Source/GeneratedOriginals/exec-82a714f5-0aec-40b8-a0f3-1233a838c0ee.png",
       "archive_path": "GeneratedOriginals/exec-82a714f5-0aec-40b8-a0f3-1233a838c0ee.png",
       "bytes": 967407,
@@ -13544,6 +13992,13 @@
       "archive_path": "GeneratedOriginals/exec-9263a6c8-7195-411a-ad84-8641f4ed7549.png",
       "bytes": 1006414,
       "sha256": "166d5bc206b5d8e763844bac8ec259989143dca376e5dff2f5dcbb2837a4a7a2"
+    },
+    {
+      "kind": "image",
+      "source": "Source/GeneratedOriginals/exec-92911554-7870-40ba-b60b-be04d9436bad.png",
+      "archive_path": "GeneratedOriginals/exec-92911554-7870-40ba-b60b-be04d9436bad.png",
+      "bytes": 1263631,
+      "sha256": "859ee13e518bbcd7e20c77995d80e242d1db11c5acf18e897279c5b0ed3a4b20"
     },
     {
       "kind": "image",
@@ -13670,6 +14125,13 @@
       "archive_path": "GeneratedOriginals/exec-cf11baa1-de96-46d1-a3ab-ac17c85646ac.png",
       "bytes": 1081126,
       "sha256": "dcdc6b64c6fe5fd0d44395acf54993006d766446c30a4b4b69de06ecd4bcb274"
+    },
+    {
+      "kind": "image",
+      "source": "Source/GeneratedOriginals/exec-d0c834d6-6783-4601-ab0e-5ef55fb8e66b.png",
+      "archive_path": "GeneratedOriginals/exec-d0c834d6-6783-4601-ab0e-5ef55fb8e66b.png",
+      "bytes": 944405,
+      "sha256": "b8143a4fcddc3e045eca4b90f3bbe7b86cb4b2e4a230c94ec99afa65f08cebba"
     },
     {
       "kind": "image",
@@ -21877,6 +22339,13 @@
     },
     {
       "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/kani-sleep-v47.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/kani-sleep-v47.png",
+      "bytes": 1047531,
+      "sha256": "96aac62c671bef5c91e823b61fed2bf597d80e63bd40b21de0a5e3e71a19cd83"
+    },
+    {
+      "kind": "image",
       "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/kurimanju-expression-attack-v38.png",
       "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/kurimanju-expression-attack-v38.png",
       "bytes": 214821,
@@ -21965,6 +22434,13 @@
       "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/kurimanju-rig-side-v38.png",
       "bytes": 146196,
       "sha256": "b3628b86264a9091ac4bc971258d2c2f99ed952ceb618c1772a7bff6834a3c9e"
+    },
+    {
+      "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/kurimanju-sleep-v47.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/kurimanju-sleep-v47.png",
+      "bytes": 944405,
+      "sha256": "b8143a4fcddc3e045eca4b90f3bbe7b86cb4b2e4a230c94ec99afa65f08cebba"
     },
     {
       "kind": "image",
@@ -22066,6 +22542,13 @@
     },
     {
       "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/momonga-sleep-v47.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/momonga-sleep-v47.png",
+      "bytes": 1263631,
+      "sha256": "859ee13e518bbcd7e20c77995d80e242d1db11c5acf18e897279c5b0ed3a4b20"
+    },
+    {
+      "kind": "image",
       "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/rakko-rig-arm-v38.png",
       "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/rakko-rig-arm-v38.png",
       "bytes": 27557,
@@ -22143,6 +22626,13 @@
     },
     {
       "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/rakko-sleep-v47.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/rakko-sleep-v47.png",
+      "bytes": 1133019,
+      "sha256": "25c2e63b677f036597322eeff7a0ec1807fed4a26dd9fc8d474dff777d2e387d"
+    },
+    {
+      "kind": "image",
       "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/shisa-rig-arm-v38.png",
       "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/shisa-rig-arm-v38.png",
       "bytes": 26958,
@@ -22196,6 +22686,13 @@
       "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/shisa-rig-side-v38.png",
       "bytes": 161485,
       "sha256": "9e78f50502c849fc528b6c6bafbddb0acec3da709bd2736d7d02b0beaeb4e9ab"
+    },
+    {
+      "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/shisa-sleep-v47.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/shisa-sleep-v47.png",
+      "bytes": 1053825,
+      "sha256": "1eb3d2045b54bfcee9b1ac3e32272e320a8ba517ddd7a736f889d388ade8fb45"
     },
     {
       "kind": "image",
@@ -22343,6 +22840,13 @@
       "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/usagi-rig-side-v38.png",
       "bytes": 141421,
       "sha256": "9ac2c4f4892cf04c2200ed268bbb1696a6907a299b1cd76a24c1dae8f3718adc"
+    },
+    {
+      "kind": "image",
+      "source": ".build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/usagi-sleep-v47.png",
+      "archive_path": "Project/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/usagi-sleep-v47.png",
+      "bytes": 930054,
+      "sha256": "862f8acfffb2119904ef54b71091d665a420e538147d46a8201c29d83a385a08"
     },
     {
       "kind": "image",
@@ -22815,6 +23319,13 @@
     },
     {
       "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/kani-sleep-v47.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/kani-sleep-v47.png",
+      "bytes": 1047531,
+      "sha256": "96aac62c671bef5c91e823b61fed2bf597d80e63bd40b21de0a5e3e71a19cd83"
+    },
+    {
+      "kind": "image",
       "source": "Sources/ChiikawaCompanion/Resources/kurimanju-expression-attack-v38.png",
       "archive_path": "Project/Sources/ChiikawaCompanion/Resources/kurimanju-expression-attack-v38.png",
       "bytes": 214821,
@@ -22903,6 +23414,13 @@
       "archive_path": "Project/Sources/ChiikawaCompanion/Resources/kurimanju-rig-side-v38.png",
       "bytes": 146196,
       "sha256": "b3628b86264a9091ac4bc971258d2c2f99ed952ceb618c1772a7bff6834a3c9e"
+    },
+    {
+      "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/kurimanju-sleep-v47.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/kurimanju-sleep-v47.png",
+      "bytes": 944405,
+      "sha256": "b8143a4fcddc3e045eca4b90f3bbe7b86cb4b2e4a230c94ec99afa65f08cebba"
     },
     {
       "kind": "image",
@@ -23004,6 +23522,13 @@
     },
     {
       "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/momonga-sleep-v47.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/momonga-sleep-v47.png",
+      "bytes": 1263631,
+      "sha256": "859ee13e518bbcd7e20c77995d80e242d1db11c5acf18e897279c5b0ed3a4b20"
+    },
+    {
+      "kind": "image",
       "source": "Sources/ChiikawaCompanion/Resources/rakko-rig-arm-v38.png",
       "archive_path": "Project/Sources/ChiikawaCompanion/Resources/rakko-rig-arm-v38.png",
       "bytes": 27557,
@@ -23081,6 +23606,13 @@
     },
     {
       "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/rakko-sleep-v47.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/rakko-sleep-v47.png",
+      "bytes": 1133019,
+      "sha256": "25c2e63b677f036597322eeff7a0ec1807fed4a26dd9fc8d474dff777d2e387d"
+    },
+    {
+      "kind": "image",
       "source": "Sources/ChiikawaCompanion/Resources/shisa-rig-arm-v38.png",
       "archive_path": "Project/Sources/ChiikawaCompanion/Resources/shisa-rig-arm-v38.png",
       "bytes": 26958,
@@ -23134,6 +23666,13 @@
       "archive_path": "Project/Sources/ChiikawaCompanion/Resources/shisa-rig-side-v38.png",
       "bytes": 161485,
       "sha256": "9e78f50502c849fc528b6c6bafbddb0acec3da709bd2736d7d02b0beaeb4e9ab"
+    },
+    {
+      "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/shisa-sleep-v47.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/shisa-sleep-v47.png",
+      "bytes": 1053825,
+      "sha256": "1eb3d2045b54bfcee9b1ac3e32272e320a8ba517ddd7a736f889d388ade8fb45"
     },
     {
       "kind": "image",
@@ -23284,6 +23823,13 @@
     },
     {
       "kind": "image",
+      "source": "Sources/ChiikawaCompanion/Resources/usagi-sleep-v47.png",
+      "archive_path": "Project/Sources/ChiikawaCompanion/Resources/usagi-sleep-v47.png",
+      "bytes": 930054,
+      "sha256": "862f8acfffb2119904ef54b71091d665a420e538147d46a8201c29d83a385a08"
+    },
+    {
+      "kind": "image",
       "source": "build/AppIcon.iconset/icon_128x128.png",
       "archive_path": "Project/build/AppIcon.iconset/icon_128x128.png",
       "bytes": 12336,
@@ -23419,8 +23965,8 @@
       "kind": "image",
       "source": "build/ChiikawaCompanion.app/Contents/Resources/Roster/kani/sleep-12.png",
       "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Roster/kani/sleep-12.png",
-      "bytes": 67602,
-      "sha256": "f589de57d8e7a751b35a77278ef2da3123904d6cc3e676949ca568a6f431f5de"
+      "bytes": 357350,
+      "sha256": "6f5a48f9a048144d046a62252d0da51c3d7a7d463529aa49e137b807b1d2a138"
     },
     {
       "kind": "image",
@@ -23552,8 +24098,8 @@
       "kind": "image",
       "source": "build/ChiikawaCompanion.app/Contents/Resources/Roster/kurimanju/sleep-12.png",
       "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Roster/kurimanju/sleep-12.png",
-      "bytes": 68717,
-      "sha256": "1b5e5b614803900bde450216c59c0ff75f82736cb01a2979c2cb8becc8626ce8"
+      "bytes": 331344,
+      "sha256": "f32a8ad068cd5d5cde8b5b7c36ad24e20b3ec0a81712f3226847673b74d41e6f"
     },
     {
       "kind": "image",
@@ -23699,8 +24245,8 @@
       "kind": "image",
       "source": "build/ChiikawaCompanion.app/Contents/Resources/Roster/momonga/sleep-12.png",
       "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Roster/momonga/sleep-12.png",
-      "bytes": 71820,
-      "sha256": "f5ea79266e82744c16f963ecca49a2349355e6bd1fe1e86380beb077df13713b"
+      "bytes": 500412,
+      "sha256": "563808df3362969d13529cb8a793fb618abf86d9187c232c47093820f53eb6b3"
     },
     {
       "kind": "image",
@@ -23818,8 +24364,8 @@
       "kind": "image",
       "source": "build/ChiikawaCompanion.app/Contents/Resources/Roster/rakko/sleep-12.png",
       "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Roster/rakko/sleep-12.png",
-      "bytes": 71528,
-      "sha256": "82168d8d058bfad0f1fff84d23873bb18b200776b4a1744a9388e68a51aa19f6"
+      "bytes": 354771,
+      "sha256": "3ea3f68dd15ee469fb882bf9831afb2f4850efd22c558c4856bae41b4505aa97"
     },
     {
       "kind": "image",
@@ -23923,8 +24469,8 @@
       "kind": "image",
       "source": "build/ChiikawaCompanion.app/Contents/Resources/Roster/shisa/sleep-12.png",
       "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Roster/shisa/sleep-12.png",
-      "bytes": 77427,
-      "sha256": "8fa3f06fe80c5ae1a776a770931469d1113292d78104ae78615b3d3978264e4b"
+      "bytes": 368552,
+      "sha256": "bb96ebc79f32f709dfb31b608c49efda0b766bb938ea35e719283ff0ef219c6e"
     },
     {
       "kind": "image",
@@ -24056,8 +24602,8 @@
       "kind": "image",
       "source": "build/ChiikawaCompanion.app/Contents/Resources/Roster/usagi/sleep-12.png",
       "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Roster/usagi/sleep-12.png",
-      "bytes": 70787,
-      "sha256": "331e7e7e27afa7c31770566e32e175689a24c5020b035d3cc993518421656b13"
+      "bytes": 369311,
+      "sha256": "482ad082853bc4177e0a67cfa012122b99f7b5a642f11c19ab7b1bcd84f92104"
     },
     {
       "kind": "image",
@@ -24460,6 +25006,13 @@
     },
     {
       "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/kani-sleep-v47.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/kani-sleep-v47.png",
+      "bytes": 1047531,
+      "sha256": "96aac62c671bef5c91e823b61fed2bf597d80e63bd40b21de0a5e3e71a19cd83"
+    },
+    {
+      "kind": "image",
       "source": "build/ChiikawaCompanion.app/Contents/Resources/kurimanju-expression-attack-v38.png",
       "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/kurimanju-expression-attack-v38.png",
       "bytes": 214821,
@@ -24548,6 +25101,13 @@
       "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/kurimanju-rig-side-v38.png",
       "bytes": 146196,
       "sha256": "b3628b86264a9091ac4bc971258d2c2f99ed952ceb618c1772a7bff6834a3c9e"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/kurimanju-sleep-v47.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/kurimanju-sleep-v47.png",
+      "bytes": 944405,
+      "sha256": "b8143a4fcddc3e045eca4b90f3bbe7b86cb4b2e4a230c94ec99afa65f08cebba"
     },
     {
       "kind": "image",
@@ -24649,6 +25209,13 @@
     },
     {
       "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/momonga-sleep-v47.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/momonga-sleep-v47.png",
+      "bytes": 1263631,
+      "sha256": "859ee13e518bbcd7e20c77995d80e242d1db11c5acf18e897279c5b0ed3a4b20"
+    },
+    {
+      "kind": "image",
       "source": "build/ChiikawaCompanion.app/Contents/Resources/rakko-rig-arm-v38.png",
       "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/rakko-rig-arm-v38.png",
       "bytes": 27557,
@@ -24726,6 +25293,13 @@
     },
     {
       "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/rakko-sleep-v47.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/rakko-sleep-v47.png",
+      "bytes": 1133019,
+      "sha256": "25c2e63b677f036597322eeff7a0ec1807fed4a26dd9fc8d474dff777d2e387d"
+    },
+    {
+      "kind": "image",
       "source": "build/ChiikawaCompanion.app/Contents/Resources/shisa-rig-arm-v38.png",
       "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/shisa-rig-arm-v38.png",
       "bytes": 26958,
@@ -24779,6 +25353,13 @@
       "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/shisa-rig-side-v38.png",
       "bytes": 161485,
       "sha256": "9e78f50502c849fc528b6c6bafbddb0acec3da709bd2736d7d02b0beaeb4e9ab"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/shisa-sleep-v47.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/shisa-sleep-v47.png",
+      "bytes": 1053825,
+      "sha256": "1eb3d2045b54bfcee9b1ac3e32272e320a8ba517ddd7a736f889d388ade8fb45"
     },
     {
       "kind": "image",
@@ -24926,6 +25507,13 @@
       "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/usagi-rig-side-v38.png",
       "bytes": 141421,
       "sha256": "9ac2c4f4892cf04c2200ed268bbb1696a6907a299b1cd76a24c1dae8f3718adc"
+    },
+    {
+      "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/usagi-sleep-v47.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/usagi-sleep-v47.png",
+      "bytes": 930054,
+      "sha256": "862f8acfffb2119904ef54b71091d665a420e538147d46a8201c29d83a385a08"
     },
     {
       "kind": "image",
@@ -25246,8 +25834,8 @@
       "kind": "image",
       "source": "build/artwork/shared-home-designs-v29.png",
       "archive_path": "Project/build/artwork/shared-home-designs-v29.png",
-      "bytes": 904466,
-      "sha256": "0e59fede58030d65d7cfe9417e830cad71ff023d378557869496af1cd8dff12f"
+      "bytes": 919630,
+      "sha256": "e62cb2fc57049a0f89e667e505dff4d8e90707c5c405d2e25fb646b6590e3a72"
     },
     {
       "kind": "image",
@@ -25260,8 +25848,8 @@
       "kind": "image",
       "source": "build/artwork/shared-home-sleep-v29.gif",
       "archive_path": "Project/build/artwork/shared-home-sleep-v29.gif",
-      "bytes": 363767,
-      "sha256": "2f38b7fd22f6a423ebb7a3904285f01e79c4bb2058a1058a08f60468fdbffbeb"
+      "bytes": 315947,
+      "sha256": "4b8ef78a6ec84e939cc62bb538571000ad769b0b09cd182d0997a4dbe1b97882"
     },
     {
       "kind": "image",
@@ -25302,8 +25890,8 @@
       "kind": "image",
       "source": "build/roster/kani/actions-preview.png",
       "archive_path": "Project/build/roster/kani/actions-preview.png",
-      "bytes": 233379,
-      "sha256": "bf593e807bebc23b6a59f86b4f6400b68531b6e0014f88ada34721ad036aee53"
+      "bytes": 248370,
+      "sha256": "541cfefc8e2bb802ba4f07e166c5bfc33bd3488da19d17fbd338da348508855b"
     },
     {
       "kind": "image",
@@ -25379,8 +25967,8 @@
       "kind": "image",
       "source": "build/roster/kani/sleep-12.png",
       "archive_path": "Project/build/roster/kani/sleep-12.png",
-      "bytes": 67602,
-      "sha256": "f589de57d8e7a751b35a77278ef2da3123904d6cc3e676949ca568a6f431f5de"
+      "bytes": 357350,
+      "sha256": "6f5a48f9a048144d046a62252d0da51c3d7a7d463529aa49e137b807b1d2a138"
     },
     {
       "kind": "image",
@@ -25428,8 +26016,8 @@
       "kind": "image",
       "source": "build/roster/kurimanju/actions-preview.png",
       "archive_path": "Project/build/roster/kurimanju/actions-preview.png",
-      "bytes": 306045,
-      "sha256": "31a832917c313be3b06fdae2faf538eefff14015289e6844fd7fe9addf557e7e"
+      "bytes": 316120,
+      "sha256": "ba71c28e6ee188a357544e3fef1b2fba884ba7a83103cc7071d38cd721b4f0e3"
     },
     {
       "kind": "image",
@@ -25533,8 +26121,8 @@
       "kind": "image",
       "source": "build/roster/kurimanju/sleep-12.png",
       "archive_path": "Project/build/roster/kurimanju/sleep-12.png",
-      "bytes": 68717,
-      "sha256": "1b5e5b614803900bde450216c59c0ff75f82736cb01a2979c2cb8becc8626ce8"
+      "bytes": 331344,
+      "sha256": "f32a8ad068cd5d5cde8b5b7c36ad24e20b3ec0a81712f3226847673b74d41e6f"
     },
     {
       "kind": "image",
@@ -25596,8 +26184,8 @@
       "kind": "image",
       "source": "build/roster/momonga/actions-preview.png",
       "archive_path": "Project/build/roster/momonga/actions-preview.png",
-      "bytes": 321084,
-      "sha256": "3b217d7e96fc5883226ebe88926d607cdfef860996cd7ec73fd723decbc241f7"
+      "bytes": 344153,
+      "sha256": "099f15a2d798414095ab26796df57cea3984757d4814d67968d2f9c24db248b0"
     },
     {
       "kind": "image",
@@ -25701,8 +26289,8 @@
       "kind": "image",
       "source": "build/roster/momonga/sleep-12.png",
       "archive_path": "Project/build/roster/momonga/sleep-12.png",
-      "bytes": 71820,
-      "sha256": "f5ea79266e82744c16f963ecca49a2349355e6bd1fe1e86380beb077df13713b"
+      "bytes": 500412,
+      "sha256": "563808df3362969d13529cb8a793fb618abf86d9187c232c47093820f53eb6b3"
     },
     {
       "kind": "image",
@@ -25764,8 +26352,8 @@
       "kind": "image",
       "source": "build/roster/rakko/actions-preview.png",
       "archive_path": "Project/build/roster/rakko/actions-preview.png",
-      "bytes": 253297,
-      "sha256": "3c460ddae106f94cbfe926ad779a99775717688bb6c53cdbb2cba8718f027bda"
+      "bytes": 263994,
+      "sha256": "7e19666671074032b010a0b637fde27b06b6ed9c313fd9f3ec6ebf22b3f8fe6f"
     },
     {
       "kind": "image",
@@ -25841,8 +26429,8 @@
       "kind": "image",
       "source": "build/roster/rakko/sleep-12.png",
       "archive_path": "Project/build/roster/rakko/sleep-12.png",
-      "bytes": 71528,
-      "sha256": "82168d8d058bfad0f1fff84d23873bb18b200776b4a1744a9388e68a51aa19f6"
+      "bytes": 354771,
+      "sha256": "3ea3f68dd15ee469fb882bf9831afb2f4850efd22c558c4856bae41b4505aa97"
     },
     {
       "kind": "image",
@@ -25890,8 +26478,8 @@
       "kind": "image",
       "source": "build/roster/shisa/actions-preview.png",
       "archive_path": "Project/build/roster/shisa/actions-preview.png",
-      "bytes": 277007,
-      "sha256": "e6d562d1914ce2b341b1e56da7786816ecda71e98ce4d9cdfe9b67c0496fa6df"
+      "bytes": 285875,
+      "sha256": "794922483fd4b2d05f9d7fbc83adfab0e8963d81a5b2c5f7d75ee968b015fdcc"
     },
     {
       "kind": "image",
@@ -25967,8 +26555,8 @@
       "kind": "image",
       "source": "build/roster/shisa/sleep-12.png",
       "archive_path": "Project/build/roster/shisa/sleep-12.png",
-      "bytes": 77427,
-      "sha256": "8fa3f06fe80c5ae1a776a770931469d1113292d78104ae78615b3d3978264e4b"
+      "bytes": 368552,
+      "sha256": "bb96ebc79f32f709dfb31b608c49efda0b766bb938ea35e719283ff0ef219c6e"
     },
     {
       "kind": "image",
@@ -26016,8 +26604,8 @@
       "kind": "image",
       "source": "build/roster/usagi/actions-preview.png",
       "archive_path": "Project/build/roster/usagi/actions-preview.png",
-      "bytes": 295623,
-      "sha256": "91f6cc101b821c3932e35902c12eae1276ffcf8d47b557974dc1e9cd37439616"
+      "bytes": 310777,
+      "sha256": "b51892fca343e628c13acdc73f343a79a4d711e0be48f4967a7617ce8ef264bd"
     },
     {
       "kind": "image",
@@ -26086,15 +26674,15 @@
       "kind": "image",
       "source": "build/roster/usagi/identity-motion.gif",
       "archive_path": "Project/build/roster/usagi/identity-motion.gif",
-      "bytes": 321980,
-      "sha256": "d38d6a147ce8d605fba76adfd00aa0815f2ee8572207552d2878af0b577760b7"
+      "bytes": 378090,
+      "sha256": "b03b96c8bf305a4a76bd7e600b8470af926eed6fc44e47d5e010505fad2b9aef"
     },
     {
       "kind": "image",
       "source": "build/roster/usagi/identity-preview.png",
       "archive_path": "Project/build/roster/usagi/identity-preview.png",
-      "bytes": 275824,
-      "sha256": "75161b169eba4178a670e787df816970167533b73e7d6dae3aa2398e3e4a4198"
+      "bytes": 291016,
+      "sha256": "c177a848fcf555c476570ca7e47471e95b7cfa6ae4689da1dc3cd6c42db23ae5"
     },
     {
       "kind": "image",
@@ -26135,8 +26723,8 @@
       "kind": "image",
       "source": "build/roster/usagi/sleep-12.png",
       "archive_path": "Project/build/roster/usagi/sleep-12.png",
-      "bytes": 70787,
-      "sha256": "331e7e7e27afa7c31770566e32e175689a24c5020b035d3cc993518421656b13"
+      "bytes": 369311,
+      "sha256": "482ad082853bc4177e0a67cfa012122b99f7b5a642f11c19ab7b1bcd84f92104"
     },
     {
       "kind": "image",
@@ -29059,6 +29647,13 @@
     },
     {
       "kind": "image",
+      "source": "Source/Versions/0e59fede58030d65/build/artwork/shared-home-designs-v29.png",
+      "archive_path": "Versions/0e59fede58030d65/build/artwork/shared-home-designs-v29.png",
+      "bytes": 904466,
+      "sha256": "0e59fede58030d65d7cfe9417e830cad71ff023d378557869496af1cd8dff12f"
+    },
+    {
+      "kind": "image",
       "source": "Source/Versions/1214038f24f85005/build/artwork/hachiware-sprite-preview.png",
       "archive_path": "Versions/1214038f24f85005/build/artwork/hachiware-sprite-preview.png",
       "bytes": 266536,
@@ -29070,6 +29665,20 @@
       "archive_path": "Versions/193a75e2eb2c3cee/build/artwork/shared-home-designs-v29.png",
       "bytes": 900350,
       "sha256": "193a75e2eb2c3cee44eb649a07cf6b549801646a8d76d5863741ab522846bb49"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/1b5e5b614803900b/build/ChiikawaCompanion.app/Contents/Resources/Roster/kurimanju/sleep-12.png",
+      "archive_path": "Versions/1b5e5b614803900b/build/ChiikawaCompanion.app/Contents/Resources/Roster/kurimanju/sleep-12.png",
+      "bytes": 68717,
+      "sha256": "1b5e5b614803900bde450216c59c0ff75f82736cb01a2979c2cb8becc8626ce8"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/1b5e5b614803900b/build/roster/kurimanju/sleep-12.png",
+      "archive_path": "Versions/1b5e5b614803900b/build/roster/kurimanju/sleep-12.png",
+      "bytes": 68717,
+      "sha256": "1b5e5b614803900bde450216c59c0ff75f82736cb01a2979c2cb8becc8626ce8"
     },
     {
       "kind": "image",
@@ -29108,6 +29717,34 @@
     },
     {
       "kind": "image",
+      "source": "Source/Versions/2f38b7fd22f6a423/build/artwork/shared-home-sleep-v29.gif",
+      "archive_path": "Versions/2f38b7fd22f6a423/build/artwork/shared-home-sleep-v29.gif",
+      "bytes": 363767,
+      "sha256": "2f38b7fd22f6a423ebb7a3904285f01e79c4bb2058a1058a08f60468fdbffbeb"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/31a832917c313be3/build/roster/kurimanju/actions-preview.png",
+      "archive_path": "Versions/31a832917c313be3/build/roster/kurimanju/actions-preview.png",
+      "bytes": 306045,
+      "sha256": "31a832917c313be3b06fdae2faf538eefff14015289e6844fd7fe9addf557e7e"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/331e7e7e27afa7c3/build/ChiikawaCompanion.app/Contents/Resources/Roster/usagi/sleep-12.png",
+      "archive_path": "Versions/331e7e7e27afa7c3/build/ChiikawaCompanion.app/Contents/Resources/Roster/usagi/sleep-12.png",
+      "bytes": 70787,
+      "sha256": "331e7e7e27afa7c31770566e32e175689a24c5020b035d3cc993518421656b13"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/331e7e7e27afa7c3/build/roster/usagi/sleep-12.png",
+      "archive_path": "Versions/331e7e7e27afa7c3/build/roster/usagi/sleep-12.png",
+      "bytes": 70787,
+      "sha256": "331e7e7e27afa7c31770566e32e175689a24c5020b035d3cc993518421656b13"
+    },
+    {
+      "kind": "image",
       "source": "Source/Versions/3484a4f0532b9e6d/build/artwork/friends.png",
       "archive_path": "Versions/3484a4f0532b9e6d/build/artwork/friends.png",
       "bytes": 262741,
@@ -29136,10 +29773,24 @@
     },
     {
       "kind": "image",
+      "source": "Source/Versions/3b217d7e96fc5883/build/roster/momonga/actions-preview.png",
+      "archive_path": "Versions/3b217d7e96fc5883/build/roster/momonga/actions-preview.png",
+      "bytes": 321084,
+      "sha256": "3b217d7e96fc5883226ebe88926d607cdfef860996cd7ec73fd723decbc241f7"
+    },
+    {
+      "kind": "image",
       "source": "Source/Versions/3c16e669910b3b9c/build/artwork/chiikawa-attack-frames-v24.png",
       "archive_path": "Versions/3c16e669910b3b9c/build/artwork/chiikawa-attack-frames-v24.png",
       "bytes": 522211,
       "sha256": "3c16e669910b3b9cb24aa1752ca36a1323551da65d21c8e8cf938d38fdf356ba"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/3c460ddae106f94c/build/roster/rakko/actions-preview.png",
+      "archive_path": "Versions/3c460ddae106f94c/build/roster/rakko/actions-preview.png",
+      "bytes": 253297,
+      "sha256": "3c460ddae106f94cbfe926ad779a99775717688bb6c53cdbb2cba8718f027bda"
     },
     {
       "kind": "image",
@@ -29311,6 +29962,13 @@
     },
     {
       "kind": "image",
+      "source": "Source/Versions/75161b169eba4178/build/roster/usagi/identity-preview.png",
+      "archive_path": "Versions/75161b169eba4178/build/roster/usagi/identity-preview.png",
+      "bytes": 275824,
+      "sha256": "75161b169eba4178a670e787df816970167533b73e7d6dae3aa2398e3e4a4198"
+    },
+    {
+      "kind": "image",
       "source": "Source/Versions/752c763a706eec67/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/chiikawa-up-right-24.png",
       "archive_path": "Versions/752c763a706eec67/.build/arm64-apple-macosx/release/ChiikawaCompanion_ChiikawaCompanion.bundle/Resources/chiikawa-up-right-24.png",
       "bytes": 744901,
@@ -29360,6 +30018,20 @@
     },
     {
       "kind": "image",
+      "source": "Source/Versions/82168d8d058bfad0/build/ChiikawaCompanion.app/Contents/Resources/Roster/rakko/sleep-12.png",
+      "archive_path": "Versions/82168d8d058bfad0/build/ChiikawaCompanion.app/Contents/Resources/Roster/rakko/sleep-12.png",
+      "bytes": 71528,
+      "sha256": "82168d8d058bfad0f1fff84d23873bb18b200776b4a1744a9388e68a51aa19f6"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/82168d8d058bfad0/build/roster/rakko/sleep-12.png",
+      "archive_path": "Versions/82168d8d058bfad0/build/roster/rakko/sleep-12.png",
+      "bytes": 71528,
+      "sha256": "82168d8d058bfad0f1fff84d23873bb18b200776b4a1744a9388e68a51aa19f6"
+    },
+    {
+      "kind": "image",
       "source": "Source/Versions/8807334c1850588a/build/artwork/shared-home-sleep-v29.gif",
       "archive_path": "Versions/8807334c1850588a/build/artwork/shared-home-sleep-v29.gif",
       "bytes": 388944,
@@ -29371,6 +30043,27 @@
       "archive_path": "Versions/89e5b1c3dcc4c8a6/build/artwork/hachiware-sprite-preview.png",
       "bytes": 275669,
       "sha256": "89e5b1c3dcc4c8a66447e13aa9d081cd0b079cbe4fbf4268de345607cf6b7947"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/8fa3f06fe80c5ae1/build/ChiikawaCompanion.app/Contents/Resources/Roster/shisa/sleep-12.png",
+      "archive_path": "Versions/8fa3f06fe80c5ae1/build/ChiikawaCompanion.app/Contents/Resources/Roster/shisa/sleep-12.png",
+      "bytes": 77427,
+      "sha256": "8fa3f06fe80c5ae1a776a770931469d1113292d78104ae78615b3d3978264e4b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/8fa3f06fe80c5ae1/build/roster/shisa/sleep-12.png",
+      "archive_path": "Versions/8fa3f06fe80c5ae1/build/roster/shisa/sleep-12.png",
+      "bytes": 77427,
+      "sha256": "8fa3f06fe80c5ae1a776a770931469d1113292d78104ae78615b3d3978264e4b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/91f6cc101b821c39/build/roster/usagi/actions-preview.png",
+      "archive_path": "Versions/91f6cc101b821c39/build/roster/usagi/actions-preview.png",
+      "bytes": 295623,
+      "sha256": "91f6cc101b821c3932e35902c12eae1276ffcf8d47b557974dc1e9cd37439616"
     },
     {
       "kind": "image",
@@ -29444,6 +30137,13 @@
     },
     {
       "kind": "image",
+      "source": "Source/Versions/bf593e807bebc23b/build/roster/kani/actions-preview.png",
+      "archive_path": "Versions/bf593e807bebc23b/build/roster/kani/actions-preview.png",
+      "bytes": 233379,
+      "sha256": "bf593e807bebc23b6a59f86b4f6400b68531b6e0014f88ada34721ad036aee53"
+    },
+    {
+      "kind": "image",
       "source": "Source/Versions/c218124b1d4cd9b9/build/artwork/hachiware-walk.png",
       "archive_path": "Versions/c218124b1d4cd9b9/build/artwork/hachiware-walk.png",
       "bytes": 131964,
@@ -29490,6 +30190,13 @@
       "archive_path": "Versions/d358479d8d5e811e/build/artwork/friends.png",
       "bytes": 130750,
       "sha256": "d358479d8d5e811e4d92ef921ce2437356ec9be1da5bff246e27a1d55b67c63e"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/d38d6a147ce8d605/build/roster/usagi/identity-motion.gif",
+      "archive_path": "Versions/d38d6a147ce8d605/build/roster/usagi/identity-motion.gif",
+      "bytes": 321980,
+      "sha256": "d38d6a147ce8d605fba76adfd00aa0815f2ee8572207552d2878af0b577760b7"
     },
     {
       "kind": "image",
@@ -29563,6 +30270,13 @@
     },
     {
       "kind": "image",
+      "source": "Source/Versions/e6d562d1914ce2b3/build/roster/shisa/actions-preview.png",
+      "archive_path": "Versions/e6d562d1914ce2b3/build/roster/shisa/actions-preview.png",
+      "bytes": 277007,
+      "sha256": "e6d562d1914ce2b341b1e56da7786816ecda71e98ce4d9cdfe9b67c0496fa6df"
+    },
+    {
+      "kind": "image",
       "source": "Source/Versions/f1d17fa5e889ea93/build/roster/usagi/actions-preview.png",
       "archive_path": "Versions/f1d17fa5e889ea93/build/roster/usagi/actions-preview.png",
       "bytes": 485499,
@@ -29574,6 +30288,34 @@
       "archive_path": "Versions/f2d38d076d2d6f10/build/roster/momonga/actions-preview.png",
       "bytes": 558526,
       "sha256": "f2d38d076d2d6f103e053bda6f26b2708e5f05e8e0609f93fc16f23fab2a2fe0"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/f589de57d8e7a751/build/ChiikawaCompanion.app/Contents/Resources/Roster/kani/sleep-12.png",
+      "archive_path": "Versions/f589de57d8e7a751/build/ChiikawaCompanion.app/Contents/Resources/Roster/kani/sleep-12.png",
+      "bytes": 67602,
+      "sha256": "f589de57d8e7a751b35a77278ef2da3123904d6cc3e676949ca568a6f431f5de"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/f589de57d8e7a751/build/roster/kani/sleep-12.png",
+      "archive_path": "Versions/f589de57d8e7a751/build/roster/kani/sleep-12.png",
+      "bytes": 67602,
+      "sha256": "f589de57d8e7a751b35a77278ef2da3123904d6cc3e676949ca568a6f431f5de"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/f5ea79266e82744c/build/ChiikawaCompanion.app/Contents/Resources/Roster/momonga/sleep-12.png",
+      "archive_path": "Versions/f5ea79266e82744c/build/ChiikawaCompanion.app/Contents/Resources/Roster/momonga/sleep-12.png",
+      "bytes": 71820,
+      "sha256": "f5ea79266e82744c16f963ecca49a2349355e6bd1fe1e86380beb077df13713b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/f5ea79266e82744c/build/roster/momonga/sleep-12.png",
+      "archive_path": "Versions/f5ea79266e82744c/build/roster/momonga/sleep-12.png",
+      "bytes": 71820,
+      "sha256": "f5ea79266e82744c16f963ecca49a2349355e6bd1fe1e86380beb077df13713b"
     },
     {
       "kind": "image",
@@ -30381,8 +31123,8 @@
       "sha256": "8a42caa40e469a5ee00fa2b860d14756cc1fd73bc8fcf73332c50b87a92c9c3b"
     }
   ],
-  "updated_at": "2026-10-22T23:50:49.260717+00:00",
-  "latest_applied": "Source/Performance-v46",
+  "updated_at": "2026-10-23T01:03:36.565530+00:00",
+  "latest_applied": "Source/CharacterSleep-v47",
   "applied_directions": [
     "down-left",
     "down-right"

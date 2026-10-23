@@ -1,0 +1,8 @@
+{
+  "version": "0.24.0",
+  "build": "51",
+  "self_test_checks": 855,
+  "binary_sha256": "3b31a73ea3ce684a80b6d61d793406c039460f177770cbe355774012f9dfdafc",
+  "packaging": "Full build generated all six replacement sleep atlases; final viewport code compiled in compile-final.log, copied into the same bundle, and ad-hoc signed.",
+  "ui": "Updated app launched through CUA. All eight summon switches remained on. Settings closed; native source rendering reviewed in both house skins. Shared-home entry, sleeping, wake and audio isolation covered by self-tests."
+}

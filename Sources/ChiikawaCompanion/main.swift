@@ -106,6 +106,8 @@ if let index=args.firstIndex(of:"--benchmark-desktop"),index+1<args.count {
     print("\(count) roster checks passed.")
 } else if args.contains("--self-test") {
     SelfTest.run()
+} else if let index = args.firstIndex(of: "--render-sleep"), index + 1 < args.count {
+    SelfTest.renderSleepReview(to: args[index + 1])
 } else if let index = args.firstIndex(of: "--render-roster"), index + 1 < args.count {
     SelfTest.renderRoster(to: args[index + 1])
 } else if let index = args.firstIndex(of: "--render-artwork"), index + 1 < args.count {

@@ -152,9 +152,7 @@ final class HomeArtwork {
         if occupant.friend.isExpansion {
             let awake = occupant.wakingStarted.map { max(0, now.timeIntervalSince($0)) }
             let cycle = awake ?? time
-            let breath = awake == nil ? Self.breathingScale(time: time) : 1
             let target = bed.insetBy(dx: 2, dy: 1)
-            let breathing = NSRect(x: target.midX-target.width*breath/2, y: target.minY, width: target.width*breath, height: target.height*breath)
             let entry=min(1,max(0,elapsed/HomeRoutine.entryDuration))
             if phase == .entering && awake == nil {
                 let length=rect.width*CGFloat(0.32-entry*0.07)
@@ -167,7 +165,9 @@ final class HomeArtwork {
             }
             let opacity=awake != nil || phase == .sleeping ? 1:max(0,(entry-0.45)/0.55)
             NSGraphicsContext.saveGraphicsState();NSGraphicsContext.current?.cgContext.setAlpha(CGFloat(opacity))
-            RosterSprites.shared(occupant.friend).draw(action: awake == nil ? .sleep : .wake, in: breathing, elapsed: cycle)
+            // Expansion sleep atlases already contain their anchored breathing
+            // loop; applying a second whole-bed scale makes the mat drift.
+            RosterSprites.shared(occupant.friend).draw(action: awake == nil ? .sleep : .wake, in: target, elapsed: cycle)
             NSGraphicsContext.restoreGraphicsState()
             return
         }

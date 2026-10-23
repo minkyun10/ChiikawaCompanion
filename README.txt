@@ -32,6 +32,9 @@
   이동거리와 보행 위상을 연결하고 양발을 반 주기 차이로 움직입니다.
   공용 집은 Dock 위의 기존 하치와레 집 위치에 고정됩니다. 집 모양이 수면 상태를 초기화하지 않습니다.
   새로운 설정에서 소환할 때 위치 초기화를 강제로 실행하지 않습니다.
+  우사기·쿠리만쥬·모몽가·랏코·시사·카니는 전용 수면 원화로 눕습니다.
+  긴 귀·밤색 정수리·푸른 큰 꼬리·별과 목도리·주황 갈기·집게 장식을 각자 유지합니다.
+  12프레임/3.6초의 작은 숨쉬기 루프를 미리 생성하며, 수면 중 별도의 큰 PNG decoding은 하지 않습니다.
   카카오톡 알림 연동은 제거되어 있으며 접근성/알림 읽기/API 연결을 사용하지 않습니다.
 
 성능 (현재 Mac 측정)
@@ -65,6 +68,7 @@
 빌드 및 검수
   bash scripts/build.sh
   build/ChiikawaCompanion.app/Contents/MacOS/ChiikawaCompanion --self-test
+  build/ChiikawaCompanion.app/Contents/MacOS/ChiikawaCompanion --render-sleep /tmp/sleep-review
   build/ChiikawaCompanion.app/Contents/MacOS/ChiikawaCompanion --benchmark-desktop /tmp/desktop-benchmark.json
   추가 옵션: --benchmark-count 8 --benchmark-seconds 60 --benchmark-active
   benchmark는 격리된 임시 설정을 사용하며 사용자의 소환/소품 설정을 변경하지 않습니다.
@@ -78,4 +82,5 @@
   소유 아이템 규칙: Source/HachiwareExclusiveItems-v41, Source/CoreActivitiesOnly-v42, Source/CharacterItemRules-v43.
   랏코/시사/카니: Source/NewFriends-v45 (공식 출처·T-pose·전체 원화·모션 미리보기).
   현재 성능 최적화/간소화 및 이전 README: Source/Performance-v46.
+  6명 전용 수면 원화·prompt·집 안 배치 검수: Source/CharacterSleep-v47.
   원본 웹 문서·전체 참고 영상은 로컬 Source에 남기고 Git에서는 제외합니다.
