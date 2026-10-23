@@ -1,12 +1,12 @@
 {
   "created": "2026-10-23",
-  "status": "awaiting_user_appearance_approval",
+  "status": "approved_for_t_pose_generation",
   "tool": "built-in image_gen",
   "artwork": "Review/hachiware-dream-monster-appearance-v51.png",
   "prompt": "Prompts/01-appearance-approval.txt",
   "runtime_applied": false,
-  "t_pose_created": false,
-  "next_after_approval": "Create consistent T-pose and front/back/side character sheet using the approved appearance.",
+  "t_pose_created": true,
+  "next_after_approval": "T-pose and front/back/side sheet created in v52; runtime remains unchanged.",
   "visual_review": {
     "one_character": true,
     "full_body_visible": true,
@@ -21,5 +21,8 @@
     "Full-body drawing combines original face/detail references with official plush body proportions.",
     "This is generated fan-made interpretation, not an official model sheet.",
     "Fine fur contours and rear geometry need user confirmation before later turnaround generation."
-  ]
+  ],
+  "appearance_approved": "2026-10-23",
+  "approval_source": "User requested: t pose 생성",
+  "t_pose_output": "Source/HachiwareDreamMonsterTPose-v52"
 }

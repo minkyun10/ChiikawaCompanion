@@ -1,10 +1,10 @@
 {
   "created_at": "2026-10-16T12:08:58.617148+00:00",
   "operation": "copy; originals preserved",
-  "image_file_count": 3759,
-  "unique_image_content_count": 2002,
-  "supporting_file_count": 827,
-  "image_bytes": 1172473389,
+  "image_file_count": 3763,
+  "unique_image_content_count": 2004,
+  "supporting_file_count": 833,
+  "image_bytes": 1177427809,
   "symmetric_walk_runtime_applied": true,
   "files": [
     {
@@ -13813,6 +13813,13 @@
     },
     {
       "kind": "image",
+      "source": "Source/GeneratedOriginals/exec-2c5b4997-80d7-45d4-b705-1e17585aa314.png",
+      "archive_path": "GeneratedOriginals/exec-2c5b4997-80d7-45d4-b705-1e17585aa314.png",
+      "bytes": 1410010,
+      "sha256": "18d2c37e19359927e30cfa5dd77a7a4bfd5008b0dea944569f78984313d57a9b"
+    },
+    {
+      "kind": "image",
       "source": "Source/GeneratedOriginals/exec-2dc43ae2-b85b-4077-8be4-24d03f476624.png",
       "archive_path": "GeneratedOriginals/exec-2dc43ae2-b85b-4077-8be4-24d03f476624.png",
       "bytes": 1185769,
@@ -14254,6 +14261,13 @@
     },
     {
       "kind": "image",
+      "source": "Source/GeneratedOriginals/exec-f38aaf82-8088-458a-9439-c27632e524a0.png",
+      "archive_path": "GeneratedOriginals/exec-f38aaf82-8088-458a-9439-c27632e524a0.png",
+      "bytes": 1067200,
+      "sha256": "1b76451b4834d9310cd74d1d5dd8bdcea6355ca2065e78c185ed90d8c2c9a212"
+    },
+    {
+      "kind": "image",
       "source": "Source/GeneratedOriginals/exec-f8bd50ee-31c9-4bbc-b0c4-17d762e16b7c.png",
       "archive_path": "GeneratedOriginals/exec-f8bd50ee-31c9-4bbc-b0c4-17d762e16b7c.png",
       "bytes": 1584907,
@@ -14501,8 +14515,8 @@
       "kind": "supporting",
       "source": "Source/HachiwareDreamMonsterDesign-v51/README.txt",
       "archive_path": "HachiwareDreamMonsterDesign-v51/README.txt",
-      "bytes": 1828,
-      "sha256": "1ba62bec3823132e7a4255b6342a68abc3b271c5ca5f89008dc1bec05fcc5440"
+      "bytes": 1866,
+      "sha256": "c0bb874c4e813e51b727450abb36b5b3fb4e99b30a189193283d665e9f56f407"
     },
     {
       "kind": "image",
@@ -14522,8 +14536,8 @@
       "kind": "supporting",
       "source": "Source/HachiwareDreamMonsterDesign-v51/review-status.json",
       "archive_path": "HachiwareDreamMonsterDesign-v51/review-status.json",
-      "bytes": 992,
-      "sha256": "d1d3b4635cf81785279a07a44593ba4117f3face3f32941e57d95586081e2033"
+      "bytes": 1125,
+      "sha256": "df3278cb91a32e31d6f2297de6f866e58f24ee4a6bd8d14c65187dafd1294b62"
     },
     {
       "kind": "supporting",
@@ -14531,6 +14545,62 @@
       "archive_path": "HachiwareDreamMonsterDesign-v51/validation.json",
       "bytes": 486,
       "sha256": "9a7c9e67970da48b792eb74d6b3236deb6df50f36b299d14e96e0ff3f345d707"
+    },
+    {
+      "kind": "image",
+      "source": "Source/HachiwareDreamMonsterTPose-v52/Final/hachiware-dream-monster-front-t-pose-v52.png",
+      "archive_path": "HachiwareDreamMonsterTPose-v52/Final/hachiware-dream-monster-front-t-pose-v52.png",
+      "bytes": 1067200,
+      "sha256": "1b76451b4834d9310cd74d1d5dd8bdcea6355ca2065e78c185ed90d8c2c9a212"
+    },
+    {
+      "kind": "image",
+      "source": "Source/HachiwareDreamMonsterTPose-v52/Final/hachiware-dream-monster-three-view-v52.png",
+      "archive_path": "HachiwareDreamMonsterTPose-v52/Final/hachiware-dream-monster-three-view-v52.png",
+      "bytes": 1410010,
+      "sha256": "18d2c37e19359927e30cfa5dd77a7a4bfd5008b0dea944569f78984313d57a9b"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/HachiwareDreamMonsterTPose-v52/Prompts/01-front-t-pose.txt",
+      "archive_path": "HachiwareDreamMonsterTPose-v52/Prompts/01-front-t-pose.txt",
+      "bytes": 2424,
+      "sha256": "2063fb94ab7156717330cd5ab9b4101cac1c83de6e08317c638b869fa8cd6490"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/HachiwareDreamMonsterTPose-v52/Prompts/02-three-view-turnaround.txt",
+      "archive_path": "HachiwareDreamMonsterTPose-v52/Prompts/02-three-view-turnaround.txt",
+      "bytes": 3341,
+      "sha256": "d599ebd8e5275830e402bc91f36cd0f98450fe7df57e73f8a62003f975925bad"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/HachiwareDreamMonsterTPose-v52/README.txt",
+      "archive_path": "HachiwareDreamMonsterTPose-v52/README.txt",
+      "bytes": 1962,
+      "sha256": "ed00e300067723306a007d67367ffe817ff5eb686421a6c6ddd2408fd5ed7ce6"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/HachiwareDreamMonsterTPose-v52/generation-status.json",
+      "archive_path": "HachiwareDreamMonsterTPose-v52/generation-status.json",
+      "bytes": 1059,
+      "sha256": "6d024faa6467db67af261660b1434b6c1bfd551845d95a6783b66f8dc8365f67"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/HachiwareDreamMonsterTPose-v52/references.json",
+      "archive_path": "HachiwareDreamMonsterTPose-v52/references.json",
+      "bytes": 796,
+      "sha256": "9a845a25a09952dde65d5c18b452a7179053ddee5af6f27cfe9606a829081089"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/HachiwareDreamMonsterTPose-v52/validation.json",
+      "archive_path": "HachiwareDreamMonsterTPose-v52/validation.json",
+      "bytes": 1587,
+      "sha256": "66d70d494b82c85271c76704ef48d978275a18f2c86ae16e710aa71efaf6f4c5"
     },
     {
       "kind": "supporting",
@@ -32110,7 +32180,7 @@
       "sha256": "8a42caa40e469a5ee00fa2b860d14756cc1fd73bc8fcf73332c50b87a92c9c3b"
     }
   ],
-  "updated_at": "2026-10-23T02:18:44.832587+00:00",
+  "updated_at": "2026-10-23T04:11:19.232763+00:00",
   "latest_applied": "Source/CharacterSleep-v47",
   "applied_directions": [
     "down-left",
@@ -32120,5 +32190,5 @@
   "source_path_format": "repository-relative paths; generated originals are archived under Source/GeneratedOriginals",
   "latest_review": "Chiikawa-v22",
   "latest_research": "Source/HachiwareDreamMonster-v50",
-  "latest_design_review": "Source/HachiwareDreamMonsterDesign-v51"
+  "latest_design_review": "Source/HachiwareDreamMonsterTPose-v52"
 }

@@ -1,6 +1,6 @@
 괴물 하치와레 외형 컨펌 초안 — v51
 작성: 2026-10-23
-상태: 사용자 외형 승인 대기
+상태: 2026-10-23 사용자의 't pose 생성' 요청으로 외형 확정, v52에 T-pose 생성
 
 Review/hachiware-dream-monster-appearance-v51.png
   괴물 하치와레 한 명의 전신 외형 초안. 투명 배경 PNG.
@@ -27,5 +27,5 @@ Review/hachiware-dream-monster-appearance-v51.png
   컨펌용 초안이며 공식 모델 시트 또는 앱 적용용 최종 asset은 아니다.
 
 다음 단계
-  사용자가 이 외형을 확정하면 동일한 비율의 T-pose와 정면·후면·측면 시트를 생성한다.
-  이번 단계에서는 T-pose를 만들거나 앱의 기존 캐릭터·모션을 변경하지 않았다.
+  Source/HachiwareDreamMonsterTPose-v52에 T-pose와 정면·후면·측면 시트를 생성했다.
+  v51 외형 원본은 그대로 보존했다. 앱의 기존 캐릭터·모션은 변경하지 않았다.

@@ -1,0 +1,28 @@
+{
+  "created": "2026-10-23",
+  "status": "t_pose_and_three_view_created",
+  "tool": "built-in image_gen",
+  "appearance_approval": {
+    "source": "user message",
+    "text": "t pose 생성",
+    "date": "2026-10-23",
+    "design": "Source/HachiwareDreamMonsterDesign-v51"
+  },
+  "runtime_applied": false,
+  "final_files": [
+    "Final/hachiware-dream-monster-front-t-pose-v52.png",
+    "Final/hachiware-dream-monster-three-view-v52.png"
+  ],
+  "prompts": [
+    "Prompts/01-front-t-pose.txt",
+    "Prompts/02-three-view-turnaround.txt"
+  ],
+  "drafts_preserved": true,
+  "notes": [
+    "Front transparent PNG is the primary T-pose master.",
+    "Three-view sheet shows front/back/left profile at approximately the same drawing scale.",
+    "Profile forearms are foreshortened because they point toward/away from the camera in a T-pose.",
+    "Back and profile are generated interpretations of the approved appearance using the official plush rear as supplementary evidence.",
+    "Turnaround is not an official model sheet or a rigged animation asset."
+  ]
+}

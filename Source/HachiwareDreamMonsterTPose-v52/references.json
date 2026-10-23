@@ -1,0 +1,18 @@
+[
+  {
+    "role": "primary approved identity",
+    "path": "Source/HachiwareDreamMonsterDesign-v51/Review/hachiware-dream-monster-appearance-v51.png",
+    "sha256": "76d09f3ea48e99e4e6a74cd4e5dea52c2a863e8770993ab44c9861425b32ef02"
+  },
+  {
+    "role": "front T-pose master for turnaround generation",
+    "path": "Source/HachiwareDreamMonsterTPose-v52/Final/hachiware-dream-monster-front-t-pose-v52.png",
+    "sha256": "1b76451b4834d9310cd74d1d5dd8bdcea6355ca2065e78c185ed90d8c2c9a212"
+  },
+  {
+    "role": "supporting official back anatomy, not rendering style",
+    "path": "Source/HachiwareDreamMonster-v50/Merchandise/02-monster-back.jpg",
+    "page": "https://chiikawamarket.jp/products/4571609344117",
+    "sha256": "250cfd3c93c367503b70db25e362b617f9d4ea7f330eba570079315bc140869f"
+  }
+]

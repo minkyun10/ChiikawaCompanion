@@ -1,0 +1,55 @@
+{
+  "verified": "2026-10-23",
+  "tool": "built-in image_gen",
+  "pixel_editing_after_generation": false,
+  "images": [
+    {
+      "path": "Final/hachiware-dream-monster-front-t-pose-v52.png",
+      "generated_original": "Source/GeneratedOriginals/exec-f38aaf82-8088-458a-9439-c27632e524a0.png",
+      "size": [
+        1415,
+        1112
+      ],
+      "mode": "RGBA",
+      "sha256": "1b76451b4834d9310cd74d1d5dd8bdcea6355ca2065e78c185ed90d8c2c9a212",
+      "bytes": 1067200,
+      "decodes": true,
+      "identical_to_generated_original": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_pixel_count": 871973,
+      "visible_bounds_alpha_ge_8": [
+        45,
+        17,
+        1370,
+        1098
+      ]
+    },
+    {
+      "path": "Final/hachiware-dream-monster-three-view-v52.png",
+      "generated_original": "Source/GeneratedOriginals/exec-2c5b4997-80d7-45d4-b705-1e17585aa314.png",
+      "size": [
+        1983,
+        793
+      ],
+      "mode": "RGB",
+      "sha256": "18d2c37e19359927e30cfa5dd77a7a4bfd5008b0dea944569f78984313d57a9b",
+      "bytes": 1410010,
+      "decodes": true,
+      "identical_to_generated_original": true
+    }
+  ],
+  "visual_review": {
+    "front_arms_horizontal": true,
+    "two_arms_two_legs": true,
+    "front_four_claws_per_hand": true,
+    "front_three_claws_per_foot": true,
+    "front_back_and_left_profile_present": true,
+    "back_has_no_face": true,
+    "back_has_no_front_facing_heel_claws": true,
+    "side_arms_foreshortened_at_shoulder_height": true,
+    "same_general_body_type_and_palette": true
+  }
+}
