@@ -1,0 +1,14 @@
+Use case: identity-preserve
+Asset type: production USAGI animation rig sheet edit.
+Input images: Image 1 is the EXISTING animation rig sheet to EDIT in place. Image 2 is the corrected T-pose model: round body preserved, ears shortened to about two-thirds. Image 3 is the official small eye style reference.
+Keep EXACTLY Image 1's 1536x1024 canvas, all nine piece positions, body sizes and cell arrangement. Do not re-layout, auto-center or resize the pieces. All ink below the EAR ROOTS, including head contour, wide cheeks, rounded belly silhouette, tiny limb pieces, facial centers and tail positions, should retain Image 1 geometry. No slimming, pinched waist, long torso or thin limbs.
+ONLY correct the following:
+1. Shorten both rabbit ears by about 30% (retain 70% root-to-tip length) in all five bodies and the complete front T-pose. Keep the ear ROOTS and all head/body pixels at their original coordinates. Ear tips move down toward the ear roots. Leave transparent space where the longer ear tips used to be. Ear widths and pink inner panels retain the same shape and scale as in Image 2. Back and rear-diagonal ears are completely cream, with no pink.
+2. The small eyes should have a fearless slightly vacant unblinking Usagi stare, a touch of unruly confidence: simple small dark-brown round/oval eyes with restrained single white glints and a little lower crescent as in Image 3, not overlarge sparkling adorable doll eyes. Keep eye centers, sizes and eyebrow positions unchanged. Keep the cheerful tiny tongue-out w mouth. Kind, brave, loyal oddball, not villainous or angry.
+3. Actual clear transparent alpha background, no brown glow/halo. Flat cream-yellow fill and thin warm-brown rounded contours match the approved model in Image 2. Do not add shading.
+Layout unchanged from Image 1:
+Top row: front BODY ONLY, left side BODY ONLY, back BODY ONLY.
+Middle row: front-left diagonal BODY ONLY, back-left diagonal BODY ONLY, complete front T-pose.
+Bottom row: detached small cream arm/paw, detached tiny cream foot, overhead top view.
+First FIVE BODY ONLY pieces have no arms, legs or feet, and smooth closed outlines where limbs will attach. Complete T-pose has its original short arms/feet. Detached parts and overhead view otherwise unchanged.
+No text, labels, numbers, decorations, clothes, props, weapons, additional pieces, other characters or shadows. Do not change the head/cheek/belly silhouette or the source piece placement to fill the space freed by shorter ears.

@@ -1,0 +1,29 @@
+{
+  "status": "design-review-only; runtime artwork unchanged",
+  "initial": {
+    "front_below_ear_roots_ink_bounds": [
+      202,
+      166,
+      483,
+      450
+    ],
+    "front_ear_tip_y": 30
+  },
+  "candidate": {
+    "front_below_ear_roots_ink_bounds": [
+      202,
+      166,
+      484,
+      450
+    ],
+    "front_ear_tip_y": 71
+  },
+  "front_ear_root_reference_y": 165,
+  "front_ear_length_ratio": 0.6962962962962963,
+  "ear_shortening_percent": 30.37037037037037,
+  "notes": [
+    "Pixel bounds measure the front T-pose, including tiny arms and feet below the fixed ear-root line; this is an image measurement, not a guarantee about every generated pixel.",
+    "Initial approved body is the continuing anatomy authority. Do not normalize figures by ear-inclusive total height: it changes perceived body size.",
+    "The two rig-sheet drafts retain a background halo and are NOT selected for production. The final review choices are the six-view sheet and corrected two-arm sleeping illustration."
+  ]
+}

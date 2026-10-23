@@ -1,10 +1,10 @@
 {
   "created_at": "2026-10-16T12:08:58.617148+00:00",
   "operation": "copy; originals preserved",
-  "image_file_count": 3671,
-  "unique_image_content_count": 1939,
-  "supporting_file_count": 774,
-  "image_bytes": 1142503504,
+  "image_file_count": 3690,
+  "unique_image_content_count": 1945,
+  "supporting_file_count": 783,
+  "image_bytes": 1162649541,
   "symmetric_walk_runtime_applied": true,
   "files": [
     {
@@ -13785,6 +13785,13 @@
     },
     {
       "kind": "image",
+      "source": "Source/GeneratedOriginals/exec-22694bf6-2346-4235-baaf-3bfc8c7f60e0.png",
+      "archive_path": "GeneratedOriginals/exec-22694bf6-2346-4235-baaf-3bfc8c7f60e0.png",
+      "bytes": 829342,
+      "sha256": "939948e2a66e327cc2be6dd8ce6612bc07d73c1a933b5c376fdc3d84d0f3033f"
+    },
+    {
+      "kind": "image",
       "source": "Source/GeneratedOriginals/exec-22df1b21-81eb-44aa-b0c6-54ccadd02995.png",
       "archive_path": "GeneratedOriginals/exec-22df1b21-81eb-44aa-b0c6-54ccadd02995.png",
       "bytes": 1477971,
@@ -13953,6 +13960,13 @@
     },
     {
       "kind": "image",
+      "source": "Source/GeneratedOriginals/exec-7a14dbfc-2ed8-4ed6-b054-7a7ac96e069e.png",
+      "archive_path": "GeneratedOriginals/exec-7a14dbfc-2ed8-4ed6-b054-7a7ac96e069e.png",
+      "bytes": 1569153,
+      "sha256": "d533a3ff0e4292b16e4b5e4703d6a4c270fd6a3fb4f02e15df94f89097c29c25"
+    },
+    {
+      "kind": "image",
       "source": "Source/GeneratedOriginals/exec-7b06b31c-8bf1-4f51-82f5-717dd853c555.png",
       "archive_path": "GeneratedOriginals/exec-7b06b31c-8bf1-4f51-82f5-717dd853c555.png",
       "bytes": 1115737,
@@ -14065,10 +14079,24 @@
     },
     {
       "kind": "image",
+      "source": "Source/GeneratedOriginals/exec-adf4676b-98be-4909-a860-8db811bc7af4.png",
+      "archive_path": "GeneratedOriginals/exec-adf4676b-98be-4909-a860-8db811bc7af4.png",
+      "bytes": 1459124,
+      "sha256": "778c5bee7a84edd92ad7cf7a12bde169817e6267a9777950b063ac40681bbb4d"
+    },
+    {
+      "kind": "image",
       "source": "Source/GeneratedOriginals/exec-ae451544-a0d8-4cb2-b478-399f29f6d65a.png",
       "archive_path": "GeneratedOriginals/exec-ae451544-a0d8-4cb2-b478-399f29f6d65a.png",
       "bytes": 1529227,
       "sha256": "62b6858ce117b9bf7911e8ec8da00e5bb70734d99acea7fe83100967bd194e9e"
+    },
+    {
+      "kind": "image",
+      "source": "Source/GeneratedOriginals/exec-b3c953b4-b2c4-4e88-b5db-ba656aeebe2f.png",
+      "archive_path": "GeneratedOriginals/exec-b3c953b4-b2c4-4e88-b5db-ba656aeebe2f.png",
+      "bytes": 1544924,
+      "sha256": "53d01426b94db25d5ff9c15c78db7c5ff6d1d9d0a550bcb36a00cbb6c5db578e"
     },
     {
       "kind": "image",
@@ -14198,6 +14226,13 @@
     },
     {
       "kind": "image",
+      "source": "Source/GeneratedOriginals/exec-ea14fa4d-fd43-472b-8c1b-81de493cee4a.png",
+      "archive_path": "GeneratedOriginals/exec-ea14fa4d-fd43-472b-8c1b-81de493cee4a.png",
+      "bytes": 844467,
+      "sha256": "d5d931581416941b52c7f064edfd44cf1a75ad9d7d4c62d7baccdf7419d15f02"
+    },
+    {
+      "kind": "image",
       "source": "Source/GeneratedOriginals/exec-ec4d289f-a152-4111-a8da-c985b5f92660.png",
       "archive_path": "GeneratedOriginals/exec-ec4d289f-a152-4111-a8da-c985b5f92660.png",
       "bytes": 1346869,
@@ -14216,6 +14251,13 @@
       "archive_path": "GeneratedOriginals/exec-f8bd50ee-31c9-4bbc-b0c4-17d762e16b7c.png",
       "bytes": 1584907,
       "sha256": "83f5490f5489b56e54837d1ff956a15ddda931eba202c4468d76ba3482e726c1"
+    },
+    {
+      "kind": "image",
+      "source": "Source/GeneratedOriginals/exec-f9315efe-b7ea-45c4-8451-5c2380188e0c.png",
+      "archive_path": "GeneratedOriginals/exec-f9315efe-b7ea-45c4-8451-5c2380188e0c.png",
+      "bytes": 1436716,
+      "sha256": "3e4a6c5b9602923d068b5baffd0666d8b5c763682fc05187b45b0897d6bcd2f8"
     },
     {
       "kind": "image",
@@ -28751,6 +28793,160 @@
     },
     {
       "kind": "supporting",
+      "source": "Source/UsagiCharacter-v48/Audit/proportion-review.json",
+      "archive_path": "UsagiCharacter-v48/Audit/proportion-review.json",
+      "bytes": 1013,
+      "sha256": "50d44644c126c81e4d7d3a6d61b9702820ffd477d881549b423b29ff587ea140"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiCharacter-v48/Final/usagi-six-view-v48.png",
+      "archive_path": "UsagiCharacter-v48/Final/usagi-six-view-v48.png",
+      "bytes": 1544924,
+      "sha256": "53d01426b94db25d5ff9c15c78db7c5ff6d1d9d0a550bcb36a00cbb6c5db578e"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiCharacter-v48/Final/usagi-sleep-v48.png",
+      "archive_path": "UsagiCharacter-v48/Final/usagi-sleep-v48.png",
+      "bytes": 829342,
+      "sha256": "939948e2a66e327cc2be6dd8ce6612bc07d73c1a933b5c376fdc3d84d0f3033f"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiCharacter-v48/Generated/rig-draft-1.png",
+      "archive_path": "UsagiCharacter-v48/Generated/rig-draft-1.png",
+      "bytes": 1436716,
+      "sha256": "3e4a6c5b9602923d068b5baffd0666d8b5c763682fc05187b45b0897d6bcd2f8"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiCharacter-v48/Generated/rig-draft-2-not-selected.png",
+      "archive_path": "UsagiCharacter-v48/Generated/rig-draft-2-not-selected.png",
+      "bytes": 1459124,
+      "sha256": "778c5bee7a84edd92ad7cf7a12bde169817e6267a9777950b063ac40681bbb4d"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiCharacter-v48/Generated/sleep-draft-1.png",
+      "archive_path": "UsagiCharacter-v48/Generated/sleep-draft-1.png",
+      "bytes": 844467,
+      "sha256": "d5d931581416941b52c7f064edfd44cf1a75ad9d7d4c62d7baccdf7419d15f02"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiCharacter-v48/Generated/sleep-draft-2.png",
+      "archive_path": "UsagiCharacter-v48/Generated/sleep-draft-2.png",
+      "bytes": 829342,
+      "sha256": "939948e2a66e327cc2be6dd8ce6612bc07d73c1a933b5c376fdc3d84d0f3033f"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiCharacter-v48/Generated/t-pose-draft-1.png",
+      "archive_path": "UsagiCharacter-v48/Generated/t-pose-draft-1.png",
+      "bytes": 1569153,
+      "sha256": "d533a3ff0e4292b16e4b5e4703d6a4c270fd6a3fb4f02e15df94f89097c29c25"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiCharacter-v48/Generated/t-pose-draft-2.png",
+      "archive_path": "UsagiCharacter-v48/Generated/t-pose-draft-2.png",
+      "bytes": 1544924,
+      "sha256": "53d01426b94db25d5ff9c15c78db7c5ff6d1d9d0a550bcb36a00cbb6c5db578e"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/UsagiCharacter-v48/Prompts/rig-clean.txt",
+      "archive_path": "UsagiCharacter-v48/Prompts/rig-clean.txt",
+      "bytes": 971,
+      "sha256": "f9a5388a749c5b088de69a50a4a59fb0d7aa99b0681d1c71f7cb20b791ca0588"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/UsagiCharacter-v48/Prompts/rig.txt",
+      "archive_path": "UsagiCharacter-v48/Prompts/rig.txt",
+      "bytes": 2491,
+      "sha256": "f7d8764bfcc88830cc38b779e142908eac38ef8fab356320745e11d5bb508bd4"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/UsagiCharacter-v48/Prompts/sleep-fix.txt",
+      "archive_path": "UsagiCharacter-v48/Prompts/sleep-fix.txt",
+      "bytes": 1019,
+      "sha256": "54549893feb074bd61adf94129b2ac4020b9d9cafbb96b215ffe06aa4c7d9ae4"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/UsagiCharacter-v48/Prompts/sleep.txt",
+      "archive_path": "UsagiCharacter-v48/Prompts/sleep.txt",
+      "bytes": 2850,
+      "sha256": "a2cbddcb003ddc48117524792a09998cb643c6794b80dbdcc1bdab571c3a9145"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/UsagiCharacter-v48/Prompts/t-pose-fix.txt",
+      "archive_path": "UsagiCharacter-v48/Prompts/t-pose-fix.txt",
+      "bytes": 1337,
+      "sha256": "4b7f860071f2c10d73fab858e3d303815970532add0a78affe4058fa23156193"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/UsagiCharacter-v48/Prompts/t-pose.txt",
+      "archive_path": "UsagiCharacter-v48/Prompts/t-pose.txt",
+      "bytes": 2560,
+      "sha256": "5b4d7a50f17a469a92f124e4a6208fded9d02da2915b06d8b1017bc11e818d49"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/UsagiCharacter-v48/README.txt",
+      "archive_path": "UsagiCharacter-v48/README.txt",
+      "bytes": 1983,
+      "sha256": "f84e79092d6ed0b74080da9d82a8fc95fe65bb0d9916832d7c7f76833aebdf2c"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiCharacter-v48/References/initial-approved-six-view.png",
+      "archive_path": "UsagiCharacter-v48/References/initial-approved-six-view.png",
+      "bytes": 1268211,
+      "sha256": "97d59397f2d587494abec0522a8e59f5c98b474a1ef15315315a757c4a337c31"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiCharacter-v48/References/initial-rig-t-pose.png",
+      "archive_path": "UsagiCharacter-v48/References/initial-rig-t-pose.png",
+      "bytes": 158116,
+      "sha256": "439c13b444f82041aefb399f745609df74b77d76600a18f2ed3196f81c7490bf"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiCharacter-v48/References/official-usagi-face.png",
+      "archive_path": "UsagiCharacter-v48/References/official-usagi-face.png",
+      "bytes": 16685,
+      "sha256": "46b55d5d3f83476d0d3d433f1e9953753f11f62d38781f90dfba1f6b3238fdf5"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiCharacter-v48/References/official-usagi.png",
+      "archive_path": "UsagiCharacter-v48/References/official-usagi.png",
+      "bytes": 31253,
+      "sha256": "9eb8c221fc5c233cffa81e61120a51424d5f82c4996679b7c37b497da3810905"
+    },
+    {
+      "kind": "image",
+      "source": "Source/UsagiCharacter-v48/References/sleep-before-v47.png",
+      "archive_path": "UsagiCharacter-v48/References/sleep-before-v47.png",
+      "bytes": 930054,
+      "sha256": "862f8acfffb2119904ef54b71091d665a420e538147d46a8201c29d83a385a08"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/UsagiCharacter-v48/generation.json",
+      "archive_path": "UsagiCharacter-v48/generation.json",
+      "bytes": 421,
+      "sha256": "14e288e0258940763a1e2375a153c82d946cd704adea1d9a2bf48b66e9e084c7"
+    },
+    {
+      "kind": "supporting",
       "source": "Source/UsagiIdentity-v44/Audit/build.log",
       "archive_path": "UsagiIdentity-v44/Audit/build.log",
       "bytes": 522,
@@ -31123,8 +31319,8 @@
       "sha256": "8a42caa40e469a5ee00fa2b860d14756cc1fd73bc8fcf73332c50b87a92c9c3b"
     }
   ],
-  "updated_at": "2026-10-23T01:03:36.565530+00:00",
-  "latest_applied": "Source/CharacterSleep-v47",
+  "updated_at": "2026-10-23T01:19:48.366482+00:00",
+  "latest_applied": "Source/UsagiCharacter-v48",
   "applied_directions": [
     "down-left",
     "down-right"

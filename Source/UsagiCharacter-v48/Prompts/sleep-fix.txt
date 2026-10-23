@@ -1,0 +1,5 @@
+Use case: precise-object-edit
+Edit this transparent sleeping Usagi illustration. Anatomical cleanup ONLY. There are currently THREE arms/paws: a paw beside the left cheek/pillow, a paw at the lower middle beside the belly, and an extra paw sticking UPWARD from behind the torso at the upper middle-right.
+REMOVE ONLY that EXTRA upward-pointing paw behind the torso, and smoothly close its cream-yellow torso outline in its place. Keep EXACTLY TWO arms/paws: the existing left cheek/pillow paw and the existing lower-middle belly paw. Preserve both existing feet at the far right.
+Keep absolutely everything else unchanged: same ROUND CHUBBY wide head and belly, same body size and compact proportions, same shorter pink-inner ears, half-open upward-looking small eyes, original eyebrow positions, w-muzzle and tongue, pink cheeks, single tiny drool bead, same quilt/pillow/mat, same composition and transparent alpha.
+Do not add limbs or props. Do not narrow the waist or elongate the torso. No new text or background.

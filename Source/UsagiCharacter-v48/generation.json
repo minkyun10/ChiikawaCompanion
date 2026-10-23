@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-23",
+  "tool": "built-in image_gen",
+  "status": "design-review-only",
+  "prompt_set": "Prompts",
+  "selected": [
+    {
+      "path": "Final/usagi-six-view-v48.png",
+      "sha256": "53d01426b94db25d5ff9c15c78db7c5ff6d1d9d0a550bcb36a00cbb6c5db578e"
+    },
+    {
+      "path": "Final/usagi-sleep-v48.png",
+      "sha256": "939948e2a66e327cc2be6dd8ce6612bc07d73c1a933b5c376fdc3d84d0f3033f"
+    }
+  ]
+}

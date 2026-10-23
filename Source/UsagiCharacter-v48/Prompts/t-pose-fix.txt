@@ -1,0 +1,6 @@
+Use case: precise-object-edit
+Image 1 is the six-view Usagi sheet to correct. Image 2 is the initial approved model for exact anatomy reference. Preserve Image 1's character pixels below each ear root, faces, eye size, chubby head/body/limb shape, layouts, labels and colors.
+Only fix ear consistency:
+The front and back ears in Image 1 were shortened too much, to roughly half the original length. They need to be 70% of Image 2's root-to-tip length, NOT 50%. For the 1536x1024 canvas, the front view ear roots are around y=160 and original tips around y=30; put the new tips around y=68, giving about 92 pixels of upright visible ear. The back view ear roots are around y=165; tips should be around y=72. Retain original slim ear widths. Side and diagonal ear lengths should match this roughly 90-pixel root-to-tip length at the same character scale. Do not rescale any head/body to compensate.
+Also correct the rear-view ear colors: BACK T-POSE and BACK 3/4 must show cream-yellow ear backs only, absolutely no visible pink inner-ear panels. Other views retain pink interiors. Keep a consistent pair of medium-length rabbit ears, not short bear ears.
+Everything else exactly unchanged, including the full wide round belly and cheeks, tiny eyes, tongue-out smile, delicate brown linework, white background and the six existing labels.
