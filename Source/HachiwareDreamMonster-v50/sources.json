@@ -1,0 +1,283 @@
+[
+  {
+    "path": "Original/01-official-transformation-comparison.jpg",
+    "url": "https://pbs.twimg.com/media/HSykt84bYAArmE8.jpg",
+    "page": "https://x.com/ngnchiikawa/status/2102236239995031704",
+    "role": "변화 비교 · 큰 귀, 손발, 발톱, 파란 꼬리",
+    "previous_archive_path": "HachiwareTransformations-v49/References/Official/OriginalComic/parallel-stages-2102236239995031704-01.jpg",
+    "previous_sha256": "b1301ad3cbe90b062bbaddd34db552ae83f59da81270a1d56a6c433b502bc5fb",
+    "verified": "2026-10-23",
+    "content_type": "image/jpeg",
+    "bytes": 78806,
+    "sha256": "b1301ad3cbe90b062bbaddd34db552ae83f59da81270a1d56a6c433b502bc5fb",
+    "dimensions": [
+      1200,
+      871
+    ],
+    "use_as_character_reference": true
+  },
+  {
+    "path": "Original/02-official-monster-face-expressions.jpg",
+    "url": "https://pbs.twimg.com/media/GIeCzdqaQAA-_6l.jpg",
+    "page": "https://x.com/ngnchiikawa/status/1767525203222143077",
+    "role": "얼굴 · 검은 눈, 소용돌이 눈, 볼 옆 선",
+    "previous_archive_path": "HachiwareTransformations-v49/References/Official/OriginalComic/parallel-strong-1767525203222143077-01.jpg",
+    "previous_sha256": "314b5748919eb30f8fb95f3daea55d3d3d6b1f4d65eafc1e02ce9722c84c615e",
+    "verified": "2026-10-23",
+    "content_type": "image/jpeg",
+    "bytes": 55345,
+    "sha256": "314b5748919eb30f8fb95f3daea55d3d3d6b1f4d65eafc1e02ce9722c84c615e",
+    "dimensions": [
+      1200,
+      887
+    ],
+    "use_as_character_reference": true
+  },
+  {
+    "path": "Original/03-official-comic-body-claws-tail.jpg",
+    "url": "https://pbs.twimg.com/media/GH-rDNKaYAAGQri.jpg",
+    "page": "https://x.com/ngnchiikawa/status/1765317655823839639",
+    "role": "원작 동작 · 큰 손과 발톱, 옆·뒷모습 일부",
+    "previous_archive_path": "HachiwareTransformations-v49/References/Official/OriginalComic/parallel-strong-1765317655823839639-01.jpg",
+    "previous_sha256": "31d650c6a68afb6f3d9f235d23d6349ec91ef905961d9a02324d69c1db751e83",
+    "verified": "2026-10-23",
+    "content_type": "image/jpeg",
+    "bytes": 195358,
+    "sha256": "31d650c6a68afb6f3d9f235d23d6349ec91ef905961d9a02324d69c1db751e83",
+    "dimensions": [
+      843,
+      1200
+    ],
+    "use_as_character_reference": true
+  },
+  {
+    "path": "Anime/01-episode-380-transition.jpg",
+    "url": "https://www.anime-chiikawa.jp/images/episodes/380.jpg",
+    "page": "https://www.anime-chiikawa.jp/episode.html",
+    "role": "중간 변화 모습 · 애니 380화",
+    "previous_archive_path": "HachiwareTransformations-v49/References/Official/Anime/episode-380.jpg",
+    "previous_sha256": "91fe7f2677136699fa9b59f66b724eddd21e4ccdde51ed209b3bc31e13302cfa",
+    "verified": "2026-10-23",
+    "content_type": "image/jpeg",
+    "bytes": 135130,
+    "sha256": "91fe7f2677136699fa9b59f66b724eddd21e4ccdde51ed209b3bc31e13302cfa",
+    "dimensions": [
+      600,
+      338
+    ],
+    "use_as_character_reference": true
+  },
+  {
+    "path": "Anime/02-episode-381-monster.jpg",
+    "url": "https://www.anime-chiikawa.jp/images/episodes/381.jpg",
+    "page": "https://www.anime-chiikawa.jp/episode.html",
+    "role": "괴물 모습 · 애니 381화",
+    "previous_archive_path": "HachiwareTransformations-v49/References/Official/Anime/episode-381.jpg",
+    "previous_sha256": "e89b9a8590a9ab280eeed0774b66f63d430c9e58dfba90bb033391bb0c1dbf76",
+    "verified": "2026-10-23",
+    "content_type": "image/jpeg",
+    "bytes": 85150,
+    "sha256": "e89b9a8590a9ab280eeed0774b66f63d430c9e58dfba90bb033391bb0c1dbf76",
+    "dimensions": [
+      600,
+      338
+    ],
+    "use_as_character_reference": true
+  },
+  {
+    "path": "Merchandise/01-monster-front.jpg",
+    "url": "https://cdn.shopify.com/s/files/1/0626/7142/1681/files/4571609344117_1_33df2e96-b71b-4713-8929-83c9d584660c.jpg?v=1732164740",
+    "page": "https://chiikawamarket.jp/products/4571609344117",
+    "role": "괴물 모습 · 정면 전신, 입체 상품",
+    "previous_archive_path": "HachiwareTransformations-v49/References/Official/Market/parallel-strong-4571609344117-04.jpg",
+    "previous_sha256": "73d56f39b7cd0be9c43f448f1193eccf21a5815c3e264a0332d92bae2c227ba1",
+    "verified": "2026-10-23",
+    "content_type": "image/jpeg",
+    "bytes": 77464,
+    "sha256": "73d56f39b7cd0be9c43f448f1193eccf21a5815c3e264a0332d92bae2c227ba1",
+    "dimensions": [
+      1200,
+      1200
+    ],
+    "use_as_character_reference": true
+  },
+  {
+    "path": "Merchandise/02-monster-back.jpg",
+    "url": "https://cdn.shopify.com/s/files/1/0626/7142/1681/files/4571609344117_2.jpg?v=1732022529",
+    "page": "https://chiikawamarket.jp/products/4571609344117",
+    "role": "괴물 모습 · 뒷면과 큰 파란 꼬리, 입체 상품",
+    "previous_archive_path": "HachiwareTransformations-v49/References/Official/Market/parallel-strong-4571609344117-05.jpg",
+    "previous_sha256": "250cfd3c93c367503b70db25e362b617f9d4ea7f330eba570079315bc140869f",
+    "verified": "2026-10-23",
+    "content_type": "image/jpeg",
+    "bytes": 127451,
+    "sha256": "250cfd3c93c367503b70db25e362b617f9d4ea7f330eba570079315bc140869f",
+    "dimensions": [
+      1200,
+      1200
+    ],
+    "use_as_character_reference": true
+  },
+  {
+    "path": "Merchandise/03-monster-acrylic-art.jpg",
+    "url": "https://cdn.shopify.com/s/files/1/0626/7142/1681/files/4571609347347_1.jpg?v=1732023573",
+    "page": "https://chiikawamarket.jp/products/4571609347347",
+    "role": "2D 상품 그림 · 표정과 털 실루엣",
+    "previous_archive_path": "HachiwareTransformations-v49/References/Official/Market/parallel-strong-4571609347347-01.jpg",
+    "previous_sha256": "fb4b68d89409455193f26b13533676b945ceeeb3c2167d7ee8aeaa4f22e6d33b",
+    "verified": "2026-10-23",
+    "content_type": "image/jpeg",
+    "bytes": 139514,
+    "sha256": "fb4b68d89409455193f26b13533676b945ceeeb3c2167d7ee8aeaa4f22e6d33b",
+    "dimensions": [
+      1200,
+      1200
+    ],
+    "use_as_character_reference": true
+  },
+  {
+    "path": "Transition/01-fluffy-form-front.jpg",
+    "url": "https://cdn.shopify.com/s/files/1/0626/7142/1681/files/4571609344094_1_e85aac68-00f2-4856-8847-db2cccda32a6.jpg?v=1732071430",
+    "page": "https://chiikawamarket.jp/products/4571609344094",
+    "role": "중간 변화 모습 · 정면, 입체 상품",
+    "previous_archive_path": "HachiwareTransformations-v49/References/Official/Market/parallel-mid-4571609344094-05.jpg",
+    "previous_sha256": "9bdc47a1fa4853b25144904b6aff2ce66a51c01406e15e43d15fe87d9c266203",
+    "verified": "2026-10-23",
+    "content_type": "image/jpeg",
+    "bytes": 91059,
+    "sha256": "9bdc47a1fa4853b25144904b6aff2ce66a51c01406e15e43d15fe87d9c266203",
+    "dimensions": [
+      1200,
+      1200
+    ],
+    "use_as_character_reference": true
+  },
+  {
+    "path": "Transition/02-fluffy-form-back.jpg",
+    "url": "https://cdn.shopify.com/s/files/1/0626/7142/1681/files/4571609344094_2.jpg?v=1732021325",
+    "page": "https://chiikawamarket.jp/products/4571609344094",
+    "role": "중간 변화 모습 · 후면, 입체 상품",
+    "previous_archive_path": "HachiwareTransformations-v49/References/Official/Market/parallel-mid-4571609344094-06.jpg",
+    "previous_sha256": "3ae15a61af348935798e63d38426df8a3ac8da70b86a155b01e2be8bd8928af7",
+    "verified": "2026-10-23",
+    "content_type": "image/jpeg",
+    "bytes": 81158,
+    "sha256": "3ae15a61af348935798e63d38426df8a3ac8da70b86a155b01e2be8bd8928af7",
+    "dimensions": [
+      1200,
+      1200
+    ],
+    "use_as_character_reference": true
+  },
+  {
+    "path": "Merchandise/monster-memo-01.jpg",
+    "url": "https://cdn.shopify.com/s/files/1/0626/7142/1681/files/4571609347477_1.jpg?v=1732020952",
+    "page": "https://chiikawamarket.jp/products/4571609347477",
+    "role": "공식 2D 상품 그림 · 몸과 표정의 보조 자료",
+    "product_title": "ちいかわ パラレルワールド！？ パタパタメモ（強くなったハチワレ）",
+    "verified": "2026-10-23",
+    "content_type": "image/jpeg",
+    "bytes": 239699,
+    "sha256": "7e55d3f96a36ab338323f6b937b7fe65e31f22bf33b626eedb7bb79975a86218",
+    "dimensions": [
+      1200,
+      1200
+    ],
+    "use_as_character_reference": true
+  },
+  {
+    "path": "Merchandise/monster-memo-02.jpg",
+    "url": "https://cdn.shopify.com/s/files/1/0626/7142/1681/files/4571609347477_0.jpg?v=1732020952",
+    "page": "https://chiikawamarket.jp/products/4571609347477",
+    "role": "공식 2D 상품 그림 · 몸과 표정의 보조 자료",
+    "product_title": "ちいかわ パラレルワールド！？ パタパタメモ（強くなったハチワレ）",
+    "verified": "2026-10-23",
+    "content_type": "image/jpeg",
+    "bytes": 187463,
+    "sha256": "ce9ce35c6afc8172a72dbb7a0c512d6d430ec489505f21ed36d85478a1857545",
+    "dimensions": [
+      1200,
+      1200
+    ],
+    "use_as_character_reference": true
+  },
+  {
+    "path": "Merchandise/monster-memo-03.jpg",
+    "url": "https://cdn.shopify.com/s/files/1/0626/7142/1681/files/4571609347477_2.jpg?v=1732020952",
+    "page": "https://chiikawamarket.jp/products/4571609347477",
+    "role": "공식 2D 상품 그림 · 몸과 표정의 보조 자료",
+    "product_title": "ちいかわ パラレルワールド！？ パタパタメモ（強くなったハチワレ）",
+    "verified": "2026-10-23",
+    "content_type": "image/jpeg",
+    "bytes": 239151,
+    "sha256": "5c174e9016b70bf23a2bd4c841d8a7143549dd49cf761a86111eb2e5c4e194f0",
+    "dimensions": [
+      1200,
+      1200
+    ],
+    "use_as_character_reference": true
+  },
+  {
+    "path": "Merchandise/monster-memo-04.jpg",
+    "url": "https://cdn.shopify.com/s/files/1/0626/7142/1681/files/4571609347477_3.jpg?v=1732020952",
+    "page": "https://chiikawamarket.jp/products/4571609347477",
+    "role": "동일 상품의 관련 캐릭터 페이지 · 하치와레 외형 참고 제외",
+    "product_title": "ちいかわ パラレルワールド！？ パタパタメモ（強くなったハチワレ）",
+    "verified": "2026-10-23",
+    "content_type": "image/jpeg",
+    "bytes": 210364,
+    "sha256": "004a06b05e864f94d40b30cb1f02d3aceb71094aa010a7f14edd17ddd6afd155",
+    "dimensions": [
+      1200,
+      1200
+    ],
+    "use_as_character_reference": false
+  },
+  {
+    "path": "Merchandise/monster-memo-05.jpg",
+    "url": "https://cdn.shopify.com/s/files/1/0626/7142/1681/files/4571609347477_4.jpg?v=1732020952",
+    "page": "https://chiikawamarket.jp/products/4571609347477",
+    "role": "공식 2D 상품 그림 · 몸과 표정의 보조 자료",
+    "product_title": "ちいかわ パラレルワールド！？ パタパタメモ（強くなったハチワレ）",
+    "verified": "2026-10-23",
+    "content_type": "image/jpeg",
+    "bytes": 102871,
+    "sha256": "7cb54e89e48819207523ff74e55cb3efc08a37838b09ae7b9efdfc288c9d8857",
+    "dimensions": [
+      1200,
+      1200
+    ],
+    "use_as_character_reference": true
+  },
+  {
+    "path": "Merchandise/monster-towel-01.jpg",
+    "url": "https://cdn.shopify.com/s/files/1/0626/7142/1681/files/4571609347446.jpg?v=1732172897",
+    "page": "https://chiikawamarket.jp/products/4571609347446",
+    "role": "공식 2D 상품 그림 · 몸과 표정의 보조 자료",
+    "product_title": "ちいかわ パラレルワールド！？ ハンドタオル（強くなったハチワレ）",
+    "verified": "2026-10-23",
+    "content_type": "image/jpeg",
+    "bytes": 487625,
+    "sha256": "4915a2a8b6658c618cbd3eaa406a5c3ce57504fb73bfa9c3cc4bb831177b861c",
+    "dimensions": [
+      1200,
+      1200
+    ],
+    "use_as_character_reference": true
+  },
+  {
+    "path": "Anime/03-episode-381-official-media.jpg",
+    "url": "https://mezamashi.ismcdn.jp/mwimgs/1/3/1200xm/img_138e3204dfbde7ffa45847d29a5e33b9249413.jpg",
+    "page": "https://mezamashi.media/articles/-/350285",
+    "role": "방송사 공식 381화 대표 장면 · 고해상도",
+    "verified": "2026-10-23",
+    "content_type": "image/jpeg",
+    "bytes": 55669,
+    "sha256": "ae3a7484bc2dbdd1a544a2ca9321f84776e2ce96054f334f8ac455d7e967d838",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "use_as_character_reference": true
+  }
+]

@@ -1,10 +1,10 @@
 {
   "created_at": "2026-10-16T12:08:58.617148+00:00",
   "operation": "copy; originals preserved",
-  "image_file_count": 3740,
-  "unique_image_content_count": 1994,
-  "supporting_file_count": 808,
-  "image_bytes": 1167694466,
+  "image_file_count": 3757,
+  "unique_image_content_count": 2001,
+  "supporting_file_count": 822,
+  "image_bytes": 1170283743,
   "symmetric_walk_runtime_applied": true,
   "files": [
     {
@@ -14265,6 +14265,223 @@
       "archive_path": "GeneratedOriginals/exec-fa24089c-4473-4f75-b957-41506ce80da8.png",
       "bytes": 990161,
       "sha256": "e99767f16f0c5d6409a5cf0fa383a6084b0e66fe7a4d018a23ac088c3464382b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/HachiwareDreamMonster-v50/Anime/01-episode-380-transition.jpg",
+      "archive_path": "HachiwareDreamMonster-v50/Anime/01-episode-380-transition.jpg",
+      "bytes": 135130,
+      "sha256": "91fe7f2677136699fa9b59f66b724eddd21e4ccdde51ed209b3bc31e13302cfa"
+    },
+    {
+      "kind": "image",
+      "source": "Source/HachiwareDreamMonster-v50/Anime/02-episode-381-monster.jpg",
+      "archive_path": "HachiwareDreamMonster-v50/Anime/02-episode-381-monster.jpg",
+      "bytes": 85150,
+      "sha256": "e89b9a8590a9ab280eeed0774b66f63d430c9e58dfba90bb033391bb0c1dbf76"
+    },
+    {
+      "kind": "image",
+      "source": "Source/HachiwareDreamMonster-v50/Anime/03-episode-381-official-media.jpg",
+      "archive_path": "HachiwareDreamMonster-v50/Anime/03-episode-381-official-media.jpg",
+      "bytes": 55669,
+      "sha256": "ae3a7484bc2dbdd1a544a2ca9321f84776e2ce96054f334f8ac455d7e967d838"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/HachiwareDreamMonster-v50/HachiwareDreamMonster-references.zip",
+      "archive_path": "HachiwareDreamMonster-v50/HachiwareDreamMonster-references.zip",
+      "bytes": 2546770,
+      "sha256": "e316ee7d26fe3abb0e634d3c19a9add69d1581c53f3b03818201a2fb253eebdc"
+    },
+    {
+      "kind": "image",
+      "source": "Source/HachiwareDreamMonster-v50/Merchandise/01-monster-front.jpg",
+      "archive_path": "HachiwareDreamMonster-v50/Merchandise/01-monster-front.jpg",
+      "bytes": 77464,
+      "sha256": "73d56f39b7cd0be9c43f448f1193eccf21a5815c3e264a0332d92bae2c227ba1"
+    },
+    {
+      "kind": "image",
+      "source": "Source/HachiwareDreamMonster-v50/Merchandise/02-monster-back.jpg",
+      "archive_path": "HachiwareDreamMonster-v50/Merchandise/02-monster-back.jpg",
+      "bytes": 127451,
+      "sha256": "250cfd3c93c367503b70db25e362b617f9d4ea7f330eba570079315bc140869f"
+    },
+    {
+      "kind": "image",
+      "source": "Source/HachiwareDreamMonster-v50/Merchandise/03-monster-acrylic-art.jpg",
+      "archive_path": "HachiwareDreamMonster-v50/Merchandise/03-monster-acrylic-art.jpg",
+      "bytes": 139514,
+      "sha256": "fb4b68d89409455193f26b13533676b945ceeeb3c2167d7ee8aeaa4f22e6d33b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/HachiwareDreamMonster-v50/Merchandise/monster-memo-01.jpg",
+      "archive_path": "HachiwareDreamMonster-v50/Merchandise/monster-memo-01.jpg",
+      "bytes": 239699,
+      "sha256": "7e55d3f96a36ab338323f6b937b7fe65e31f22bf33b626eedb7bb79975a86218"
+    },
+    {
+      "kind": "image",
+      "source": "Source/HachiwareDreamMonster-v50/Merchandise/monster-memo-02.jpg",
+      "archive_path": "HachiwareDreamMonster-v50/Merchandise/monster-memo-02.jpg",
+      "bytes": 187463,
+      "sha256": "ce9ce35c6afc8172a72dbb7a0c512d6d430ec489505f21ed36d85478a1857545"
+    },
+    {
+      "kind": "image",
+      "source": "Source/HachiwareDreamMonster-v50/Merchandise/monster-memo-03.jpg",
+      "archive_path": "HachiwareDreamMonster-v50/Merchandise/monster-memo-03.jpg",
+      "bytes": 239151,
+      "sha256": "5c174e9016b70bf23a2bd4c841d8a7143549dd49cf761a86111eb2e5c4e194f0"
+    },
+    {
+      "kind": "image",
+      "source": "Source/HachiwareDreamMonster-v50/Merchandise/monster-memo-04.jpg",
+      "archive_path": "HachiwareDreamMonster-v50/Merchandise/monster-memo-04.jpg",
+      "bytes": 210364,
+      "sha256": "004a06b05e864f94d40b30cb1f02d3aceb71094aa010a7f14edd17ddd6afd155"
+    },
+    {
+      "kind": "image",
+      "source": "Source/HachiwareDreamMonster-v50/Merchandise/monster-memo-05.jpg",
+      "archive_path": "HachiwareDreamMonster-v50/Merchandise/monster-memo-05.jpg",
+      "bytes": 102871,
+      "sha256": "7cb54e89e48819207523ff74e55cb3efc08a37838b09ae7b9efdfc288c9d8857"
+    },
+    {
+      "kind": "image",
+      "source": "Source/HachiwareDreamMonster-v50/Merchandise/monster-towel-01.jpg",
+      "archive_path": "HachiwareDreamMonster-v50/Merchandise/monster-towel-01.jpg",
+      "bytes": 487625,
+      "sha256": "4915a2a8b6658c618cbd3eaa406a5c3ce57504fb73bfa9c3cc4bb831177b861c"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/HachiwareDreamMonster-v50/Metadata/broadcaster-source.json",
+      "archive_path": "HachiwareDreamMonster-v50/Metadata/broadcaster-source.json",
+      "bytes": 281,
+      "sha256": "b49e0a40aeb3cd69ff155e49e1b97e2d5ac972b1e818532aa27308f5c17e016c"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/HachiwareDreamMonster-v50/Metadata/official-post-1765317655823839639.json",
+      "archive_path": "HachiwareDreamMonster-v50/Metadata/official-post-1765317655823839639.json",
+      "bytes": 3561,
+      "sha256": "e1eb557d4f92f75f57c070cf8a4809eb73ec2242909d5fbeaebe57d10450eaf0"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/HachiwareDreamMonster-v50/Metadata/official-post-1767525203222143077.json",
+      "archive_path": "HachiwareDreamMonster-v50/Metadata/official-post-1767525203222143077.json",
+      "bytes": 3560,
+      "sha256": "e061c9be0d8108108fcd50952dc76cfcd6f846b0a3aa82c0eccc67b671114a78"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/HachiwareDreamMonster-v50/Metadata/official-post-2102236239995031704.json",
+      "archive_path": "HachiwareDreamMonster-v50/Metadata/official-post-2102236239995031704.json",
+      "bytes": 3548,
+      "sha256": "a725a60a9ebddcda639f51b9bcd8d63ed32621cb3a195768b7f628c43fc1e209"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/HachiwareDreamMonster-v50/Metadata/product-4571609344094.json",
+      "archive_path": "HachiwareDreamMonster-v50/Metadata/product-4571609344094.json",
+      "bytes": 11522,
+      "sha256": "641f6d59dba1ac36f79892ddeec32f8f9a2e9787de7c7c53716e71d996492f6d"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/HachiwareDreamMonster-v50/Metadata/product-4571609344117.json",
+      "archive_path": "HachiwareDreamMonster-v50/Metadata/product-4571609344117.json",
+      "bytes": 10923,
+      "sha256": "d5222a60f4b5438038c730525fe4e2735ab83961d5c93825d288c33057243dcd"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/HachiwareDreamMonster-v50/Metadata/product-4571609347347.json",
+      "archive_path": "HachiwareDreamMonster-v50/Metadata/product-4571609347347.json",
+      "bytes": 3909,
+      "sha256": "494df859b93ec672c70eb2c87ef7d48b0c933726d1af43eeb59d962a5cea0faa"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/HachiwareDreamMonster-v50/Metadata/product-4571609347446.json",
+      "archive_path": "HachiwareDreamMonster-v50/Metadata/product-4571609347446.json",
+      "bytes": 3928,
+      "sha256": "c4177f10f639513f46a5bc875cb15a89db5ea4ff903a3a83ed2f1203d0ae25e1"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/HachiwareDreamMonster-v50/Metadata/product-4571609347477.json",
+      "archive_path": "HachiwareDreamMonster-v50/Metadata/product-4571609347477.json",
+      "bytes": 5179,
+      "sha256": "bd8c086d70e1dd8e029f1f72e11f471976997491be13088f04e8ab0b8009ac21"
+    },
+    {
+      "kind": "image",
+      "source": "Source/HachiwareDreamMonster-v50/Original/01-official-transformation-comparison.jpg",
+      "archive_path": "HachiwareDreamMonster-v50/Original/01-official-transformation-comparison.jpg",
+      "bytes": 78806,
+      "sha256": "b1301ad3cbe90b062bbaddd34db552ae83f59da81270a1d56a6c433b502bc5fb"
+    },
+    {
+      "kind": "image",
+      "source": "Source/HachiwareDreamMonster-v50/Original/02-official-monster-face-expressions.jpg",
+      "archive_path": "HachiwareDreamMonster-v50/Original/02-official-monster-face-expressions.jpg",
+      "bytes": 55345,
+      "sha256": "314b5748919eb30f8fb95f3daea55d3d3d6b1f4d65eafc1e02ce9722c84c615e"
+    },
+    {
+      "kind": "image",
+      "source": "Source/HachiwareDreamMonster-v50/Original/03-official-comic-body-claws-tail.jpg",
+      "archive_path": "HachiwareDreamMonster-v50/Original/03-official-comic-body-claws-tail.jpg",
+      "bytes": 195358,
+      "sha256": "31d650c6a68afb6f3d9f235d23d6349ec91ef905961d9a02324d69c1db751e83"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/HachiwareDreamMonster-v50/README.txt",
+      "archive_path": "HachiwareDreamMonster-v50/README.txt",
+      "bytes": 3985,
+      "sha256": "12f1f6a4320107cd25a202f862da6193a7c40c64689e6f591f79fe013129c1be"
+    },
+    {
+      "kind": "image",
+      "source": "Source/HachiwareDreamMonster-v50/Transition/01-fluffy-form-front.jpg",
+      "archive_path": "HachiwareDreamMonster-v50/Transition/01-fluffy-form-front.jpg",
+      "bytes": 91059,
+      "sha256": "9bdc47a1fa4853b25144904b6aff2ce66a51c01406e15e43d15fe87d9c266203"
+    },
+    {
+      "kind": "image",
+      "source": "Source/HachiwareDreamMonster-v50/Transition/02-fluffy-form-back.jpg",
+      "archive_path": "HachiwareDreamMonster-v50/Transition/02-fluffy-form-back.jpg",
+      "bytes": 81158,
+      "sha256": "3ae15a61af348935798e63d38426df8a3ac8da70b86a155b01e2be8bd8928af7"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/HachiwareDreamMonster-v50/collect-references.py",
+      "archive_path": "HachiwareDreamMonster-v50/collect-references.py",
+      "bytes": 6828,
+      "sha256": "ea34a7beb289e32a5d8369500538ce58209ca69397126b6db8e2924e2488b925"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/HachiwareDreamMonster-v50/sources.json",
+      "archive_path": "HachiwareDreamMonster-v50/sources.json",
+      "bytes": 12104,
+      "sha256": "25aeeae28400917ceff83833ebcd523a96a85a24cfd36409a7a783de2814063d"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/HachiwareDreamMonster-v50/validation.json",
+      "archive_path": "HachiwareDreamMonster-v50/validation.json",
+      "bytes": 360,
+      "sha256": "a300a3d9676b8c7dbcc9f43060919fa49504fc2e64fad973b015b5b46172ac98"
     },
     {
       "kind": "supporting",
@@ -31844,7 +32061,7 @@
       "sha256": "8a42caa40e469a5ee00fa2b860d14756cc1fd73bc8fcf73332c50b87a92c9c3b"
     }
   ],
-  "updated_at": "2026-10-23T01:58:54.125427+00:00",
+  "updated_at": "2026-10-23T02:05:05.327269+00:00",
   "latest_applied": "Source/CharacterSleep-v47",
   "applied_directions": [
     "down-left",
@@ -31853,6 +32070,6 @@
   "previous_upward_diagonal_preserved": true,
   "source_path_format": "repository-relative paths; generated originals are archived under Source/GeneratedOriginals",
   "latest_review": "Chiikawa-v22",
-  "latest_research": "Source/HachiwareTransformations-v49",
+  "latest_research": "Source/HachiwareDreamMonster-v50",
   "latest_design_review": "Source/UsagiCharacter-v48"
 }

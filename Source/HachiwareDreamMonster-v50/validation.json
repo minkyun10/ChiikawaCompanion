@@ -1,0 +1,13 @@
+{
+  "verified": "2026-10-23",
+  "image_files": 17,
+  "unique_image_contents": 17,
+  "all_images_decode": true,
+  "previous_downloads_identical": true,
+  "generated_at": "2026-10-23T02:03:42.477486+00:00",
+  "failures": [],
+  "independent_sha256_check": true,
+  "independent_decode_check": true,
+  "character_reference_images": 16,
+  "context_only_images": 1
+}

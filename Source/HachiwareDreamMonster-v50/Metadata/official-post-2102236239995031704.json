@@ -1,0 +1,166 @@
+{
+  "__typename": "Tweet",
+  "favorite_count": 556678,
+  "lang": "qme",
+  "possibly_sensitive": false,
+  "created_at": "2026-09-22T03:19:11.000Z",
+  "display_text_range": [
+    0,
+    2
+  ],
+  "entities": {
+    "media": [
+      {
+        "display_url": "pic.x.com/tGxrEbd2bb",
+        "expanded_url": "https://x.com/ngnchiikawa/status/2102236239995031704/photo/1",
+        "indices": [
+          2,
+          25
+        ],
+        "url": "https://t.co/tGxrEbd2bb"
+      }
+    ]
+  },
+  "id_str": "2102236239995031704",
+  "text": "🙌 https://t.co/tGxrEbd2bb",
+  "user": {
+    "id_str": "1014973243164319744",
+    "name": "ちいかわ💫アニメ火金",
+    "screen_name": "ngnchiikawa",
+    "is_blue_verified": true,
+    "profile_image_shape": "Circle",
+    "verified": false,
+    "profile_image_url_https": "https://pbs.twimg.com/profile_images/1210137605234278400/IAozvMHj_normal.jpg"
+  },
+  "edit_control": {
+    "edit_tweet_ids": [
+      "2102236239995031704"
+    ],
+    "editable_until_msecs": "1790050751000",
+    "edits_remaining": "5",
+    "is_edit_eligible": true
+  },
+  "mediaDetails": [
+    {
+      "display_url": "pic.x.com/tGxrEbd2bb",
+      "expanded_url": "https://x.com/ngnchiikawa/status/2102236239995031704/photo/1",
+      "ext_media_availability": {
+        "status": "Available"
+      },
+      "indices": [
+        2,
+        25
+      ],
+      "media_url_https": "https://pbs.twimg.com/media/HSykt84bYAArmE8.jpg",
+      "original_info": {
+        "focus_rects": [
+          {
+            "h": 1120,
+            "w": 2000,
+            "x": 0,
+            "y": 0
+          },
+          {
+            "h": 1452,
+            "w": 1452,
+            "x": 0,
+            "y": 0
+          },
+          {
+            "h": 1452,
+            "w": 1274,
+            "x": 0,
+            "y": 0
+          },
+          {
+            "h": 1452,
+            "w": 726,
+            "x": 187,
+            "y": 0
+          },
+          {
+            "h": 1452,
+            "w": 2000,
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "height": 1452,
+        "width": 2000
+      },
+      "sizes": {
+        "large": {
+          "h": 1452,
+          "resize": "fit",
+          "w": 2000
+        },
+        "medium": {
+          "h": 871,
+          "resize": "fit",
+          "w": 1200
+        },
+        "small": {
+          "h": 494,
+          "resize": "fit",
+          "w": 680
+        },
+        "thumb": {
+          "h": 150,
+          "resize": "crop",
+          "w": 150
+        }
+      },
+      "type": "photo",
+      "url": "https://t.co/tGxrEbd2bb"
+    }
+  ],
+  "photos": [
+    {
+      "backgroundColor": {
+        "red": 204,
+        "green": 214,
+        "blue": 221
+      },
+      "cropCandidates": [
+        {
+          "h": 1120,
+          "w": 2000,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "h": 1452,
+          "w": 1452,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "h": 1452,
+          "w": 1274,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "h": 1452,
+          "w": 726,
+          "x": 187,
+          "y": 0
+        },
+        {
+          "h": 1452,
+          "w": 2000,
+          "x": 0,
+          "y": 0
+        }
+      ],
+      "expandedUrl": "https://x.com/ngnchiikawa/status/2102236239995031704/photo/1",
+      "url": "https://pbs.twimg.com/media/HSykt84bYAArmE8.jpg",
+      "width": 2000,
+      "height": 1452
+    }
+  ],
+  "conversation_count": 596,
+  "news_action_type": "conversation",
+  "isEdited": false,
+  "isStaleEdit": false
+}
