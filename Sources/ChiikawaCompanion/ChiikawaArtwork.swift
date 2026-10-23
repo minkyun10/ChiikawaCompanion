@@ -115,6 +115,7 @@ enum ChiikawaItemArtwork {
     static func draw(_ item: ChiikawaItem, in rect: NSRect, strap: Bool = true) {
         if item == .houseKey { ChiikawaLifeItemArtwork.drawKey(in: rect); return }
         if item == .stuffedToy { ChiikawaLifeItemArtwork.drawToy(in: rect); return }
+        if item == .pinkSasumata { SasumataArtwork.draw(in: rect, color: pink); return }
         guard let cg = NSGraphicsContext.current?.cgContext else { return }
         cg.saveGState(); cg.translateBy(x: rect.minX, y: rect.minY); cg.scaleBy(x: rect.width / 256, y: rect.height / 256)
         if item == .pochette {
@@ -129,17 +130,6 @@ enum ChiikawaItemArtwork {
             oval(NSRect(x: 85, y: 108, width: 9, height: 11), color: ink, line: 0)
             oval(NSRect(x: 163, y: 108, width: 9, height: 11), color: ink, line: 0)
             stroke([NSPoint(x: 116, y: 91), NSPoint(x: 128, y: 83), NSPoint(x: 140, y: 91)], width: 4, color: ink)
-        } else {
-            cg.translateBy(x: 128, y: 128); cg.rotate(by: -0.28); cg.translateBy(x: -128, y: -128)
-            stroke([NSPoint(x: 128, y: 20), NSPoint(x: 128, y: 178)], width: 17, color: ink)
-            stroke([NSPoint(x: 128, y: 20), NSPoint(x: 128, y: 178)], width: 10, color: pink)
-            stroke([NSPoint(x: 128, y: 20), NSPoint(x: 128, y: 43)], width: 9, color: .white)
-            let fork = NSBezierPath(); fork.move(to: NSPoint(x: 80, y: 227))
-            fork.curve(to: NSPoint(x: 176, y: 227), controlPoint1: NSPoint(x: 60, y: 153), controlPoint2: NSPoint(x: 196, y: 153))
-            fork.lineCapStyle = .round; fork.lineWidth = 22; ink.setStroke(); fork.stroke(); fork.lineWidth = 13; pink.setStroke(); fork.stroke()
-            for point in [NSPoint(x: 87, y: 216), NSPoint(x: 99, y: 191), NSPoint(x: 128, y: 185), NSPoint(x: 157, y: 191), NSPoint(x: 169, y: 216)] {
-                oval(NSRect(x: point.x - 5, y: point.y - 5, width: 10, height: 10), color: .white, line: 2)
-            }
         }
         cg.restoreGState()
     }
@@ -149,7 +139,7 @@ enum ChiikawaItemArtwork {
         if pose.canMirror && facing > 0 { cg.translateBy(x: 256, y: 0); cg.scaleBy(x: -1, y: 1) }
         let back = pose == .back || pose == .backDiagonal, side = pose == .side
         if item == .pinkSasumata {
-            if behind == back { draw(item, in: NSRect(x: back ? 165 : 151, y: 17, width: 90, height: 212)) }
+            if behind == back { draw(item, in: SasumataArtwork.carriedRect(back: back)) }
         } else if item == .pochette && !behind {
             let strap = [NSPoint(x: 78, y: 118), NSPoint(x: 174, y: 60)]
             stroke(strap, width: 8, color: ink); stroke(strap, width: 4, color: .white)

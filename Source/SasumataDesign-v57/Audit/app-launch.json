@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-23",
+  "version": "0.27.1",
+  "build": "56",
+  "gui_process_id": 21229,
+  "codesign_verified": true,
+  "packaged_self_tests_passed": 953,
+  "gui_restarted": true,
+  "physical_pointer_inspection_performed": false
+}

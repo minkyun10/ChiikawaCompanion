@@ -1,0 +1,64 @@
+{
+  "image_size": [
+    1200,
+    650
+  ],
+  "changed_pixels": 303,
+  "regions": [
+    {
+      "pixels": 78,
+      "bounds": [
+        711,
+        572,
+        723,
+        585
+      ]
+    },
+    {
+      "pixels": 47,
+      "bounds": [
+        802,
+        450,
+        810,
+        458
+      ]
+    },
+    {
+      "pixels": 48,
+      "bounds": [
+        806,
+        431,
+        814,
+        439
+      ]
+    },
+    {
+      "pixels": 44,
+      "bounds": [
+        815,
+        464,
+        823,
+        471
+      ]
+    },
+    {
+      "pixels": 43,
+      "bounds": [
+        834,
+        457,
+        841,
+        464
+      ]
+    },
+    {
+      "pixels": 43,
+      "bounds": [
+        845,
+        444,
+        853,
+        451
+      ]
+    }
+  ],
+  "changes_confined_to_held_weapon_cell": true
+}

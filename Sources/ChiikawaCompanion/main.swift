@@ -90,7 +90,9 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
 }
 
 let args = CommandLine.arguments
-if let index=args.firstIndex(of:"--render-rakko-sword"),index+1<args.count {
+if let index=args.firstIndex(of:"--render-sasumata"),index+1<args.count {
+    SelfTest.renderSasumataReview(to:args[index+1])
+} else if let index=args.firstIndex(of:"--render-rakko-sword"),index+1<args.count {
     SelfTest.renderRakkoSword(to:args[index+1])
 } else if let index=args.firstIndex(of:"--benchmark-desktop"),index+1<args.count {
     func value(_ flag:String)->String? {args.firstIndex(of:flag).flatMap{$0+1<args.count ? args[$0+1]:nil}}

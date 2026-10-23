@@ -32,7 +32,8 @@ final class HachiwareActions {
             parts.append((crop, NSRect(x: left, y: top, width: right - left + 1, height: bottom - top + 1)))
         }
         let bodyHeight = parts.prefix(3).map { $0.1.height }.sorted()[1]
-        for (image, bounds) in parts {
+        for (index, part) in parts.enumerated() {
+            let (image, bounds) = part
             let bitmap = NSBitmapImageRep(bitmapDataPlanes: nil, pixelsWide: 256, pixelsHigh: 256,
                 bitsPerSample: 8, samplesPerPixel: 4, hasAlpha: true, isPlanar: false,
                 colorSpaceName: .deviceRGB, bytesPerRow: 1024, bitsPerPixel: 32)!
@@ -44,6 +45,9 @@ final class HachiwareActions {
                 y: 20 - (CGFloat(image.height) - bounds.maxY) * scale,
                 width: CGFloat(image.width) * scale, height: CGFloat(image.height) * scale)
             NSImage(cgImage: image, size: NSSize(width: image.width, height: image.height)).draw(in: drawRect)
+            if index == HachiwareAction.sasumata.rawValue {
+                SasumataArtwork.drawHeldPoseDetails(in: drawRect)
+            }
             context.flushGraphics(); NSGraphicsContext.restoreGraphicsState()
             frames.append(NSImage(cgImage: bitmap.cgImage!, size: NSSize(width: 256, height: 256)))
         }
@@ -101,6 +105,7 @@ enum ItemArtwork {
         ink.setStroke(); p.lineWidth = width; p.stroke()
     }
     static func draw(_ item: CompanionItem, in rect: NSRect, time: Double = 0, strap: Bool = true) {
+        if item == .sasumata { SasumataArtwork.draw(in: rect, color: SasumataArtwork.skyBlue); return }
         guard let cg = NSGraphicsContext.current?.cgContext else { return }
         cg.saveGState(); cg.translateBy(x: rect.minX, y: rect.minY)
         cg.scaleBy(x: rect.width / 256, y: rect.height / 256)
@@ -130,12 +135,7 @@ enum ItemArtwork {
             box(NSRect(x: 57, y: 88, width: 10, height: 42), radius: 1, fill: NSColor(hex: 0x6C4833))
             for y in [123, 129, 135] { path([NSPoint(x: 61, y: y), NSPoint(x: 219, y: y)], width: 1.8, color: ink) }
         case .sasumata:
-            cg.translateBy(x: 128, y: 128); cg.rotate(by: -0.33); cg.translateBy(x: -128, y: -128)
-            line([NSPoint(x: 128, y: 24), NSPoint(x: 128, y: 174)], width: 12)
-            let fork = NSBezierPath(); fork.move(to: NSPoint(x: 88, y: 227))
-            fork.curve(to: NSPoint(x: 168, y: 227), controlPoint1: NSPoint(x: 71, y: 157), controlPoint2: NSPoint(x: 185, y: 157))
-            fork.lineCapStyle = .round; fork.lineWidth = 23; ink.setStroke(); fork.stroke()
-            fork.lineWidth = 13; blue.setStroke(); fork.stroke()
+            break // Drawn in the shared, character-coloured accessory path above.
         }
         cg.restoreGState()
     }
@@ -149,7 +149,7 @@ enum ItemArtwork {
         let back = pose == .back || pose == .backDiagonal
         let side = pose == .side
         if behind {
-            if back && item == .sasumata { draw(item, in: NSRect(x: 153, y: 16, width: 105, height: 224)) }
+            if back && item == .sasumata { draw(item, in: SasumataArtwork.carriedRect(back: true)) }
         } else if back {
             if item != .sasumata {
                 if item == .camera {
@@ -168,7 +168,7 @@ enum ItemArtwork {
             case .guitar:
                 draw(item, in: NSRect(x: side ? 32 : 51, y: 22, width: side ? 150 : 170, height: 135))
             case .sasumata:
-                draw(item, in: NSRect(x: 121, y: 17, width: 121, height: 215))
+                draw(item, in: SasumataArtwork.carriedRect(back: false))
             }
         }
         cg.restoreGState()

@@ -1,0 +1,26 @@
+시각 및 회귀 검수 기록 — 2026-10-23
+
+최종 PNG 확인
+  Review/weapon-comparison.png: 두 도형의 실루엣·기울기·흰 돌기 5개·흰 손잡이 끝이 동일하며 색만 다름.
+  Review/armed-eight-directions.png: 앞·뒤·좌·우·대각선에서 무기와 몸의 연결, 흰 디테일, 뒤쪽 layer 확인.
+  Review/held-and-attacks.png: 기존 들기 자세에 흰 디테일 표시. 일반 양 캐릭터 공격 및 괴물 공격의 흰 장식 확인.
+  캐릭터 원본이나 공격 원화를 새로 생성하지 않았다.
+
+픽셀/리소스 비교
+  64px와 256px 네이티브 색상 변형은 alpha가 동일하다. 흰 core와 색상 구분 검사를 통과했다.
+  모든 방향/양쪽 facing/앞뒤 layer의 장착 무기도 같은 alpha와 비율을 사용한다.
+  v7 표현 시트 전후 차이는 무기 위 여섯 부분의 303픽셀뿐이다. 다른 자세와 신체 픽셀은 동일하다.
+  기존 234개 실행 이미지 중 무기 장식이 바뀐 괴물 action-6/action-10 두 atlas만 변경됐다.
+  나머지 232개(일반 원화·걷기·공격·수면·아이콘)는 hash가 같다. 추가/삭제 리소스 없음.
+  기존 artwork preview 47개는 그대로이고 하치와레 장착/표정/아이템 preview 3개만 변경됐다.
+  치이카와의 모든 기존 preview는 hash가 같다.
+
+초기 검사 조건 보정
+  self-test-first.log / self-test-02-colour-check.log의 실패는 새 비교 검사의 조건 오류다.
+  작은 64px 그림의 white core 수에 맞지 않는 면적 하한을 적용했고,
+  두 색 모두 blue channel이 0xBC인데 그 channel만으로 색 차이를 찾았다.
+  흰 가장자리의 antialias 혼합을 허용하며 core를 비교하고, red channel로 실제 색 차이를 검사하도록 수정했다.
+  도형이나 캐릭터를 검사 통과 목적으로 바꾸지 않았다.
+
+실행
+  전체 검사 후 최종 app bundle을 다시 실행하며, 5회 클릭 등 별도 실제 포인터 검수를 수행했다고 기록하지 않는다.

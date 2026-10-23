@@ -1,10 +1,10 @@
 {
   "created_at": "2026-10-16T12:08:58.617148+00:00",
   "operation": "copy; originals preserved",
-  "image_file_count": 3945,
-  "unique_image_content_count": 2079,
-  "supporting_file_count": 894,
-  "image_bytes": 1264701728,
+  "image_file_count": 3964,
+  "unique_image_content_count": 2090,
+  "supporting_file_count": 914,
+  "image_bytes": 1272848317,
   "symmetric_walk_runtime_applied": true,
   "files": [
     {
@@ -25862,8 +25862,8 @@
       "kind": "image",
       "source": "build/ChiikawaCompanion.app/Contents/Resources/Monster/action-10-12.png",
       "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Monster/action-10-12.png",
-      "bytes": 297151,
-      "sha256": "aabbceef45e904e4be05d2e81984ea7fce4511468e42932115fdce545397958c"
+      "bytes": 302222,
+      "sha256": "177548d127e7e218aeb1d227c8928d165295dfbc181ca90c7fdb660866cec474"
     },
     {
       "kind": "image",
@@ -25897,8 +25897,8 @@
       "kind": "image",
       "source": "build/ChiikawaCompanion.app/Contents/Resources/Monster/action-6-12.png",
       "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Monster/action-6-12.png",
-      "bytes": 210209,
-      "sha256": "acaf749f962c891d28918cd4a5dfd652518e72e1320ff19e6ce5cccdac404d90"
+      "bytes": 214332,
+      "sha256": "899267788baec2277cae82e8bcc98f7d3946bdc25065fa0ed149a8c372840c4d"
     },
     {
       "kind": "image",
@@ -27843,8 +27843,8 @@
       "kind": "image",
       "source": "build/artwork/hachiware-equipped-directions-v11.png",
       "archive_path": "Project/build/artwork/hachiware-equipped-directions-v11.png",
-      "bytes": 583384,
-      "sha256": "b05323d89f4ded4008682dda8aa4ecb31bf0ad03002312120ea38364c334a98a"
+      "bytes": 584092,
+      "sha256": "9b7aa249c436c872fc7a77b5e6b117f9a120150158865835ba9d9fe08e53cb27"
     },
     {
       "kind": "image",
@@ -27857,8 +27857,8 @@
       "kind": "image",
       "source": "build/artwork/hachiware-expressions-v11.png",
       "archive_path": "Project/build/artwork/hachiware-expressions-v11.png",
-      "bytes": 451935,
-      "sha256": "71309900abc75f15becdc7f339510bd084b568505e5c5675df5b251e15d5b322"
+      "bytes": 452275,
+      "sha256": "b17c3633df427ea4dae4ad309c3d90de0b690c9816789724c7c408a1c32bbcf3"
     },
     {
       "kind": "image",
@@ -27885,8 +27885,8 @@
       "kind": "image",
       "source": "build/artwork/hachiware-items-v11.gif",
       "archive_path": "Project/build/artwork/hachiware-items-v11.gif",
-      "bytes": 550859,
-      "sha256": "863cf17650a351eeb4ec8af250f279c743215f66f5cb17c71111ac360f3fcb2a"
+      "bytes": 549074,
+      "sha256": "6859bc102193c08726d56805c8ef86dd681ae7664dd7b6cbe52188c2cc3c3e02"
     },
     {
       "kind": "image",
@@ -28053,8 +28053,8 @@
       "kind": "image",
       "source": "build/monster/action-10-12.png",
       "archive_path": "Project/build/monster/action-10-12.png",
-      "bytes": 297151,
-      "sha256": "aabbceef45e904e4be05d2e81984ea7fce4511468e42932115fdce545397958c"
+      "bytes": 302222,
+      "sha256": "177548d127e7e218aeb1d227c8928d165295dfbc181ca90c7fdb660866cec474"
     },
     {
       "kind": "image",
@@ -28088,8 +28088,8 @@
       "kind": "image",
       "source": "build/monster/action-6-12.png",
       "archive_path": "Project/build/monster/action-6-12.png",
-      "bytes": 210209,
-      "sha256": "acaf749f962c891d28918cd4a5dfd652518e72e1320ff19e6ce5cccdac404d90"
+      "bytes": 214332,
+      "sha256": "899267788baec2277cae82e8bcc98f7d3946bdc25065fa0ed149a8c372840c4d"
     },
     {
       "kind": "image",
@@ -28116,15 +28116,15 @@
       "kind": "image",
       "source": "build/monster/actions.gif",
       "archive_path": "Project/build/monster/actions.gif",
-      "bytes": 518440,
-      "sha256": "7f894ef74eda2ca8df6c4fc24a21d6cdd0d7859daf6b9cb71250291a6a314bba"
+      "bytes": 519728,
+      "sha256": "2c2fcab88a682149b7bb72faf206fb7f0fb55242d4f8b534191ebe4d18ad24c2"
     },
     {
       "kind": "image",
       "source": "build/monster/actions.png",
       "archive_path": "Project/build/monster/actions.png",
-      "bytes": 362854,
-      "sha256": "d614e65e4344244e34b1b3e266e366370a2b1f863f4606b43b60a98b5f71560e"
+      "bytes": 364767,
+      "sha256": "03c4b0550ed7380e802cd16950821470f101c52a72448afdc15bd3dc7ac6d9dc"
     },
     {
       "kind": "image",
@@ -29124,8 +29124,8 @@
       "kind": "supporting",
       "source": "Source/README.txt",
       "archive_path": "README.txt",
-      "bytes": 13633,
-      "sha256": "557cdfdb08738573ae8854fb0c656a96208502191755f88b01e6043927f54cfc"
+      "bytes": 13996,
+      "sha256": "f9714e22e2889517c7e0c8967174788adb3e2daccd6f21def0d13cc005602d98"
     },
     {
       "kind": "supporting",
@@ -29413,6 +29413,216 @@
       "archive_path": "RestoredChiikawaHome-v29/validation.json",
       "bytes": 643,
       "sha256": "01654dbe26e494289b8f2f440e21852132fe1f57e58f36af50a19f613dc83a25"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/SasumataDesign-v57/Audit/app-launch.json",
+      "archive_path": "SasumataDesign-v57/Audit/app-launch.json",
+      "bytes": 235,
+      "sha256": "26ec5d4ef27ea3a82c469db5f4912ace94ffc321dabf6debeb6470640fc264bb"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/SasumataDesign-v57/Audit/artwork-preservation.json",
+      "archive_path": "SasumataDesign-v57/Audit/artwork-preservation.json",
+      "bytes": 1784,
+      "sha256": "f454f645f0fcb840ff2efa55ff213c0b493175531410d3b7fc0f86d8575eb83c"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/SasumataDesign-v57/Audit/before-resources.json",
+      "archive_path": "SasumataDesign-v57/Audit/before-resources.json",
+      "bytes": 23577,
+      "sha256": "6161a2e9b2891bddb51e37304dea52a26f73301346c06715bafb1637d66e17f7"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/SasumataDesign-v57/Audit/body-measurements.json",
+      "archive_path": "SasumataDesign-v57/Audit/body-measurements.json",
+      "bytes": 1018,
+      "sha256": "4a5b023d4eb9b7c745dcda3344d584e77c8c2bcd8345fdecbfbd96863f7fd85f"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/SasumataDesign-v57/Audit/build-app.log",
+      "archive_path": "SasumataDesign-v57/Audit/build-app.log",
+      "bytes": 618,
+      "sha256": "833fb011851183354e8705d23c38e072cc22365e8b762b8fa43840a08c64ac9c"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/SasumataDesign-v57/Audit/build-checks.log",
+      "archive_path": "SasumataDesign-v57/Audit/build-checks.log",
+      "bytes": 265,
+      "sha256": "f3809cececf3fb72794bfa56802a5b2f6da6ff6c703c61ebd406b54a2fad6039"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/SasumataDesign-v57/Audit/build-final.log",
+      "archive_path": "SasumataDesign-v57/Audit/build-final.log",
+      "bytes": 618,
+      "sha256": "0c026664c77574c567ef0c6feeb82dde97b6e54daeac779a3dc5a1caaa81cfac"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/SasumataDesign-v57/Audit/codesign.log",
+      "archive_path": "SasumataDesign-v57/Audit/codesign.log",
+      "bytes": 58,
+      "sha256": "ab70ec29757774b7097e746489023d86204c92a81d4684f49d7c2e9c25548aa8"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/SasumataDesign-v57/Audit/held-pose-pixel-comparison.json",
+      "archive_path": "SasumataDesign-v57/Audit/held-pose-pixel-comparison.json",
+      "bytes": 796,
+      "sha256": "1684b316b21c6051056459785dce7a8ba7e6e0f37e1a3adfb6806a8d044a75ba"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/SasumataDesign-v57/Audit/render-review.log",
+      "archive_path": "SasumataDesign-v57/Audit/render-review.log",
+      "bytes": 93,
+      "sha256": "13a89da357d814794e8debaf73da90ccefe47fcee1b9029b55763a919ca8f5b4"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/SasumataDesign-v57/Audit/resource-preservation.json",
+      "archive_path": "SasumataDesign-v57/Audit/resource-preservation.json",
+      "bytes": 188,
+      "sha256": "e89f71dc1209171e1034d47cb30a1bdc9f52d0dcf0c4b9b9c850aea6a53b893f"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/SasumataDesign-v57/Audit/review-notes.txt",
+      "archive_path": "SasumataDesign-v57/Audit/review-notes.txt",
+      "bytes": 2032,
+      "sha256": "27e502bb7603faf0568f4b9d44409da96799ec88b77ca71e9e3a0d25915c2ed1"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/SasumataDesign-v57/Audit/self-test-02-colour-check.log",
+      "archive_path": "SasumataDesign-v57/Audit/self-test-02-colour-check.log",
+      "bytes": 11162,
+      "sha256": "94025851323a7426c5ab4bb09e44ec3b40a7b9c4d2a90ef3b7fb0d3598359ba1"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/SasumataDesign-v57/Audit/self-test-final.log",
+      "archive_path": "SasumataDesign-v57/Audit/self-test-final.log",
+      "bytes": 76028,
+      "sha256": "4d379f88023d2c3327395d591b59716af5b5fe8bf2ebc0e717174493acecd9b9"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/SasumataDesign-v57/Audit/self-test-first.log",
+      "archive_path": "SasumataDesign-v57/Audit/self-test-first.log",
+      "bytes": 11136,
+      "sha256": "8f744a5df70b6eb29b29778af8bca574262e9d0c8ca71bdc6bc2e1800510f37e"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/SasumataDesign-v57/README.txt",
+      "archive_path": "SasumataDesign-v57/README.txt",
+      "bytes": 2371,
+      "sha256": "3dc117e8f49412070f9ec93c6c0b64a00f575ce728516ff4f683de9cd9f0dfa3"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/SasumataDesign-v57/References/ChiikawaArtwork-before.swift.txt",
+      "archive_path": "SasumataDesign-v57/References/ChiikawaArtwork-before.swift.txt",
+      "bytes": 10275,
+      "sha256": "683ed83fce9bbce59174487967c8fde8b9abbc5e5e35723de0166417dc889af1"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/SasumataDesign-v57/References/CompanionArtwork-before.swift.txt",
+      "archive_path": "SasumataDesign-v57/References/CompanionArtwork-before.swift.txt",
+      "bytes": 11295,
+      "sha256": "de7426e8c924bf11e6c55109da00da6ba7ce1b396777c3f09666d7a5a97527fb"
+    },
+    {
+      "kind": "image",
+      "source": "Source/SasumataDesign-v57/References/chiikawa-attack-v24.png",
+      "archive_path": "SasumataDesign-v57/References/chiikawa-attack-v24.png",
+      "bytes": 621376,
+      "sha256": "926974f55679babb9a21fe46c518a26c9efa5dc525168ec7102b51d37978a538"
+    },
+    {
+      "kind": "image",
+      "source": "Source/SasumataDesign-v57/References/hachiware-actions-v7.png",
+      "archive_path": "SasumataDesign-v57/References/hachiware-actions-v7.png",
+      "bytes": 1307884,
+      "sha256": "920b8add1d3402f1e0b522967aac31060589e9d3d234c4b0c0a7fe3ebd026111"
+    },
+    {
+      "kind": "image",
+      "source": "Source/SasumataDesign-v57/References/hachiware-attack-v19.png",
+      "archive_path": "SasumataDesign-v57/References/hachiware-attack-v19.png",
+      "bytes": 617800,
+      "sha256": "2335ccafc5d948f77e7f2b9b57a6c1567b61621507d9793921f108f7edf8f528"
+    },
+    {
+      "kind": "image",
+      "source": "Source/SasumataDesign-v57/References/hachiware-expressions-before.png",
+      "archive_path": "SasumataDesign-v57/References/hachiware-expressions-before.png",
+      "bytes": 451935,
+      "sha256": "71309900abc75f15becdc7f339510bd084b568505e5c5675df5b251e15d5b322"
+    },
+    {
+      "kind": "image",
+      "source": "Source/SasumataDesign-v57/Review/01-initial/armed-eight-directions.png",
+      "archive_path": "SasumataDesign-v57/Review/01-initial/armed-eight-directions.png",
+      "bytes": 418963,
+      "sha256": "3b4bd49eb956d482c5a07ba2eba8fb6a72116bbe74582e080ee0990bc5efaa82"
+    },
+    {
+      "kind": "image",
+      "source": "Source/SasumataDesign-v57/Review/01-initial/held-and-attacks.png",
+      "archive_path": "SasumataDesign-v57/Review/01-initial/held-and-attacks.png",
+      "bytes": 375679,
+      "sha256": "6bb7fc1ff0d52faf2074fe6490b8e795ed1a63fe9a5adcf2f4380507544d1995"
+    },
+    {
+      "kind": "image",
+      "source": "Source/SasumataDesign-v57/Review/01-initial/weapon-comparison.png",
+      "archive_path": "SasumataDesign-v57/Review/01-initial/weapon-comparison.png",
+      "bytes": 30198,
+      "sha256": "1cfb55ee187b07f2c2045518367773b53f02c0891ef7d56eaf1e4f1066f77a1e"
+    },
+    {
+      "kind": "image",
+      "source": "Source/SasumataDesign-v57/Review/armed-eight-directions.png",
+      "archive_path": "SasumataDesign-v57/Review/armed-eight-directions.png",
+      "bytes": 413833,
+      "sha256": "1ef5b746ea9ad8c552c2e6c2f62a7469b060f5cf743416040e5ce2741b4e1f33"
+    },
+    {
+      "kind": "image",
+      "source": "Source/SasumataDesign-v57/Review/held-and-attacks.png",
+      "archive_path": "SasumataDesign-v57/Review/held-and-attacks.png",
+      "bytes": 375679,
+      "sha256": "6bb7fc1ff0d52faf2074fe6490b8e795ed1a63fe9a5adcf2f4380507544d1995"
+    },
+    {
+      "kind": "image",
+      "source": "Source/SasumataDesign-v57/Review/weapon-comparison.png",
+      "archive_path": "SasumataDesign-v57/Review/weapon-comparison.png",
+      "bytes": 30198,
+      "sha256": "1cfb55ee187b07f2c2045518367773b53f02c0891ef7d56eaf1e4f1066f77a1e"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/SasumataDesign-v57/SasumataArtwork.swift.txt",
+      "archive_path": "SasumataDesign-v57/SasumataArtwork.swift.txt",
+      "bytes": 2596,
+      "sha256": "e45b3e29d87040fbf95d6941416a5eeaf5b6ef98b59fdf3e731a9ad4e852eb05"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/SasumataDesign-v57/SasumataReview.swift.txt",
+      "archive_path": "SasumataDesign-v57/SasumataReview.swift.txt",
+      "bytes": 7133,
+      "sha256": "fa566773ae2f428acd530bf044ce52a79830d64f1fe8ffa243699f53c362b04e"
     },
     {
       "kind": "image",
@@ -32636,6 +32846,13 @@
     },
     {
       "kind": "image",
+      "source": "Source/Versions/71309900abc75f15/build/artwork/hachiware-expressions-v11.png",
+      "archive_path": "Versions/71309900abc75f15/build/artwork/hachiware-expressions-v11.png",
+      "bytes": 451935,
+      "sha256": "71309900abc75f15becdc7f339510bd084b568505e5c5675df5b251e15d5b322"
+    },
+    {
+      "kind": "image",
       "source": "Source/Versions/72682c6d36577958/build/ChiikawaCompanion.app/Contents/Resources/Roster/momonga/vomit-12.png",
       "archive_path": "Versions/72682c6d36577958/build/ChiikawaCompanion.app/Contents/Resources/Roster/momonga/vomit-12.png",
       "bytes": 197360,
@@ -32741,6 +32958,13 @@
     },
     {
       "kind": "image",
+      "source": "Source/Versions/7f894ef74eda2ca8/build/monster/actions.gif",
+      "archive_path": "Versions/7f894ef74eda2ca8/build/monster/actions.gif",
+      "bytes": 518440,
+      "sha256": "7f894ef74eda2ca8df6c4fc24a21d6cdd0d7859daf6b9cb71250291a6a314bba"
+    },
+    {
+      "kind": "image",
       "source": "Source/Versions/82168d8d058bfad0/build/ChiikawaCompanion.app/Contents/Resources/Roster/rakko/sleep-12.png",
       "archive_path": "Versions/82168d8d058bfad0/build/ChiikawaCompanion.app/Contents/Resources/Roster/rakko/sleep-12.png",
       "bytes": 71528,
@@ -32752,6 +32976,13 @@
       "archive_path": "Versions/82168d8d058bfad0/build/roster/rakko/sleep-12.png",
       "bytes": 71528,
       "sha256": "82168d8d058bfad0f1fff84d23873bb18b200776b4a1744a9388e68a51aa19f6"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/863cf17650a351ee/build/artwork/hachiware-items-v11.gif",
+      "archive_path": "Versions/863cf17650a351ee/build/artwork/hachiware-items-v11.gif",
+      "bytes": 550859,
+      "sha256": "863cf17650a351eeb4ec8af250f279c743215f66f5cb17c71111ac360f3fcb2a"
     },
     {
       "kind": "image",
@@ -32825,10 +33056,38 @@
     },
     {
       "kind": "image",
+      "source": "Source/Versions/aabbceef45e904e4/build/ChiikawaCompanion.app/Contents/Resources/Monster/action-10-12.png",
+      "archive_path": "Versions/aabbceef45e904e4/build/ChiikawaCompanion.app/Contents/Resources/Monster/action-10-12.png",
+      "bytes": 297151,
+      "sha256": "aabbceef45e904e4be05d2e81984ea7fce4511468e42932115fdce545397958c"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/aabbceef45e904e4/build/monster/action-10-12.png",
+      "archive_path": "Versions/aabbceef45e904e4/build/monster/action-10-12.png",
+      "bytes": 297151,
+      "sha256": "aabbceef45e904e4be05d2e81984ea7fce4511468e42932115fdce545397958c"
+    },
+    {
+      "kind": "image",
       "source": "Source/Versions/ab40babb2b8de90c/build/artwork/hachiware-side-cycle.png",
       "archive_path": "Versions/ab40babb2b8de90c/build/artwork/hachiware-side-cycle.png",
       "bytes": 816408,
       "sha256": "ab40babb2b8de90c687efc960e24ddc7db2fcc1a6a34bfe4389050f78b85aef5"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/acaf749f962c891d/build/ChiikawaCompanion.app/Contents/Resources/Monster/action-6-12.png",
+      "archive_path": "Versions/acaf749f962c891d/build/ChiikawaCompanion.app/Contents/Resources/Monster/action-6-12.png",
+      "bytes": 210209,
+      "sha256": "acaf749f962c891d28918cd4a5dfd652518e72e1320ff19e6ce5cccdac404d90"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/acaf749f962c891d/build/monster/action-6-12.png",
+      "archive_path": "Versions/acaf749f962c891d/build/monster/action-6-12.png",
+      "bytes": 210209,
+      "sha256": "acaf749f962c891d28918cd4a5dfd652518e72e1320ff19e6ce5cccdac404d90"
     },
     {
       "kind": "image",
@@ -32850,6 +33109,13 @@
       "archive_path": "Versions/b03b96c8bf305a4a/build/roster/usagi/identity-motion.gif",
       "bytes": 378090,
       "sha256": "b03b96c8bf305a4a76bd7e600b8470af926eed6fc44e47d5e010505fad2b9aef"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/b05323d89f4ded40/build/artwork/hachiware-equipped-directions-v11.png",
+      "archive_path": "Versions/b05323d89f4ded40/build/artwork/hachiware-equipped-directions-v11.png",
+      "bytes": 583384,
+      "sha256": "b05323d89f4ded4008682dda8aa4ecb31bf0ad03002312120ea38364c334a98a"
     },
     {
       "kind": "image",
@@ -32962,6 +33228,13 @@
       "archive_path": "Versions/d4731c5d6b80e3bd/build/artwork/friends.png",
       "bytes": 129798,
       "sha256": "d4731c5d6b80e3bd731a1b718e57145b1f738e29614b4489cd4b873c180f53d9"
+    },
+    {
+      "kind": "image",
+      "source": "Source/Versions/d614e65e4344244e/build/monster/actions.png",
+      "archive_path": "Versions/d614e65e4344244e/build/monster/actions.png",
+      "bytes": 362854,
+      "sha256": "d614e65e4344244e34b1b3e266e366370a2b1f863f4606b43b60a98b5f71560e"
     },
     {
       "kind": "image",
@@ -33881,8 +34154,8 @@
       "sha256": "8a42caa40e469a5ee00fa2b860d14756cc1fd73bc8fcf73332c50b87a92c9c3b"
     }
   ],
-  "updated_at": "2026-10-23T08:22:31.260690+00:00",
-  "latest_applied": "Source/GiantHachiware-v56",
+  "updated_at": "2026-10-23T08:41:21.458017+00:00",
+  "latest_applied": "Source/SasumataDesign-v57",
   "applied_directions": [
     "down-left",
     "down-right"
