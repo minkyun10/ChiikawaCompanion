@@ -1,0 +1,22 @@
+{
+  "verified": "2026-10-23",
+  "downloaded_source_files": 65,
+  "image_files": 50,
+  "unique_image_hashes": 49,
+  "curated_references": 15,
+  "all_hashes_match": true,
+  "all_images_decode": true,
+  "all_selected_paths_resolve": true,
+  "categories": {
+    "wand-giant": 6,
+    "fairy-dream": 8,
+    "parallel-world": 8,
+    "magical-costume": 2,
+    "magical-costume-bad-version": 1,
+    "magical-strong-product": 4,
+    "parallel-mid": 7,
+    "parallel-strong": 13,
+    "parallel-stages": 1
+  },
+  "runtime_changes": false
+}

@@ -1,10 +1,10 @@
 {
   "created_at": "2026-10-16T12:08:58.617148+00:00",
   "operation": "copy; originals preserved",
-  "image_file_count": 3690,
-  "unique_image_content_count": 1945,
-  "supporting_file_count": 783,
-  "image_bytes": 1162649541,
+  "image_file_count": 3740,
+  "unique_image_content_count": 1994,
+  "supporting_file_count": 808,
+  "image_bytes": 1167694466,
   "symmetric_walk_runtime_applied": true,
   "files": [
     {
@@ -14307,6 +14307,531 @@
       "archive_path": "HachiwareExclusiveItems-v41/README.txt",
       "bytes": 1976,
       "sha256": "5a2bda224401bd2e9214002496609a883ffb85e6b0a80155f4d9bbd1d51543ac"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/HachiwareTransformations-v49/Metadata/episodes-current.json",
+      "archive_path": "HachiwareTransformations-v49/Metadata/episodes-current.json",
+      "bytes": 2151,
+      "sha256": "900b10ef1484709b8a41b8677af5818d34a3320ea8ee3077ffddea983e58bfb7"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/HachiwareTransformations-v49/Metadata/episodes-history.json",
+      "archive_path": "HachiwareTransformations-v49/Metadata/episodes-history.json",
+      "bytes": 38624,
+      "sha256": "b85579ede789ca46864e144c0ae2c71625483a8b8148bb3e5f326d57f069e32b"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/HachiwareTransformations-v49/Metadata/official-post-1302210937236013059.json",
+      "archive_path": "HachiwareTransformations-v49/Metadata/official-post-1302210937236013059.json",
+      "bytes": 2054,
+      "sha256": "3854b0d5065e6b53a557d98d541c8cc3901212cd4ffe01020efd7012f582a9dd"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/HachiwareTransformations-v49/Metadata/official-post-1302963721396867072.json",
+      "archive_path": "HachiwareTransformations-v49/Metadata/official-post-1302963721396867072.json",
+      "bytes": 2065,
+      "sha256": "dbd805fd754c49b7688bbb51401e319f9fae2cf827dfe94c71c4aad172d4ed7b"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/HachiwareTransformations-v49/Metadata/official-post-1765317655823839639.json",
+      "archive_path": "HachiwareTransformations-v49/Metadata/official-post-1765317655823839639.json",
+      "bytes": 2070,
+      "sha256": "9c01004175b893783285675469ffe9c29291cf2fa1c78f337429b6d8ac6cb98d"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/HachiwareTransformations-v49/Metadata/official-post-1767525203222143077.json",
+      "archive_path": "HachiwareTransformations-v49/Metadata/official-post-1767525203222143077.json",
+      "bytes": 2069,
+      "sha256": "f72d7d0bbb8a5529ed5934bd710a817a60139613ea0c57907c54b655b2e476da"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/HachiwareTransformations-v49/Metadata/official-post-2102236239995031704.json",
+      "archive_path": "HachiwareTransformations-v49/Metadata/official-post-2102236239995031704.json",
+      "bytes": 2057,
+      "sha256": "2958426df9f19a914901bf0dfa78e8f36cd6acb9efec2dd60cc642e9d6647f4b"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/HachiwareTransformations-v49/Metadata/product-4570189191586.json",
+      "archive_path": "HachiwareTransformations-v49/Metadata/product-4570189191586.json",
+      "bytes": 5187,
+      "sha256": "bce5250805de97fe1adcb4ad9e13117fd9d704c2c4ad3b6b37966af0161fc133"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/HachiwareTransformations-v49/Metadata/product-4571609344094.json",
+      "archive_path": "HachiwareTransformations-v49/Metadata/product-4571609344094.json",
+      "bytes": 10920,
+      "sha256": "708c1359753a51241738a3d60ee4d3dd9765a725de26c7c80bec5d2886990942"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/HachiwareTransformations-v49/Metadata/product-4571609344117.json",
+      "archive_path": "HachiwareTransformations-v49/Metadata/product-4571609344117.json",
+      "bytes": 10430,
+      "sha256": "47c9878dd81b01172a897eaed82f78f6ad6b849f4d24be89e2c0c14a0472f185"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/HachiwareTransformations-v49/Metadata/product-4571609347347.json",
+      "archive_path": "HachiwareTransformations-v49/Metadata/product-4571609347347.json",
+      "bytes": 3206,
+      "sha256": "6f8ad81c425de32f7367bcdbc02288c1ce42a13edcd8d815815e576d9b45f72f"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/HachiwareTransformations-v49/Metadata/product-4571609366843.json",
+      "archive_path": "HachiwareTransformations-v49/Metadata/product-4571609366843.json",
+      "bytes": 3321,
+      "sha256": "ea40e99c28e5db0ad52090016abdcfafbc08f1d3f91a1862def6da253752ae8e"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/HachiwareTransformations-v49/Metadata/product-4571609413776.json",
+      "archive_path": "HachiwareTransformations-v49/Metadata/product-4571609413776.json",
+      "bytes": 10833,
+      "sha256": "0584ceb99e3288054c0543ed5e8ac995770f8b9bf124da60b88144037d015802"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/HachiwareTransformations-v49/Metadata/product-4573256438690.json",
+      "archive_path": "HachiwareTransformations-v49/Metadata/product-4573256438690.json",
+      "bytes": 2778,
+      "sha256": "a08d3520c5ac41ad409dfcf91f9addd178b30eec183abf30270b94aa6d1fdecf"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/HachiwareTransformations-v49/Metadata/product-4979274946726.json",
+      "archive_path": "HachiwareTransformations-v49/Metadata/product-4979274946726.json",
+      "bytes": 3999,
+      "sha256": "731d844d14b730b7b79b1132bef410b8c436b67de7dc52fddcf7d61a15955296"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/HachiwareTransformations-v49/README.txt",
+      "archive_path": "HachiwareTransformations-v49/README.txt",
+      "bytes": 6346,
+      "sha256": "3f845799630f0e60fe6b49a76ae5dc44fde7c5a4eea8de439a46018f305159b8"
+    },
+    {
+      "kind": "image",
+      "source": "Source/HachiwareTransformations-v49/References/Official/Anime/episode-036.jpg",
+      "archive_path": "HachiwareTransformations-v49/References/Official/Anime/episode-036.jpg",
+      "bytes": 40728,
+      "sha256": "a2bf78d27427032a4d0d7f097b17a716e80717ea127bbd28ad433ff513fc3906"
+    },
+    {
+      "kind": "image",
+      "source": "Source/HachiwareTransformations-v49/References/Official/Anime/episode-037.jpg",
+      "archive_path": "HachiwareTransformations-v49/References/Official/Anime/episode-037.jpg",
+      "bytes": 29195,
+      "sha256": "85b1a3a8459e90e4aef362d5185072ef30e1319c76889da04f257e709fb180bf"
+    },
+    {
+      "kind": "image",
+      "source": "Source/HachiwareTransformations-v49/References/Official/Anime/episode-038.jpg",
+      "archive_path": "HachiwareTransformations-v49/References/Official/Anime/episode-038.jpg",
+      "bytes": 41628,
+      "sha256": "5732f0ecb65bd9da6d24cd4f146e1ff077a5f9ac2a3c04d613a3236dee12da24"
+    },
+    {
+      "kind": "image",
+      "source": "Source/HachiwareTransformations-v49/References/Official/Anime/episode-039.jpg",
+      "archive_path": "HachiwareTransformations-v49/References/Official/Anime/episode-039.jpg",
+      "bytes": 61032,
+      "sha256": "9b214268847b1136700b428bc8436693e20e598fb6d9313f5b551d4ec6ce02e1"
+    },
+    {
+      "kind": "image",
+      "source": "Source/HachiwareTransformations-v49/References/Official/Anime/episode-172.jpg",
+      "archive_path": "HachiwareTransformations-v49/References/Official/Anime/episode-172.jpg",
+      "bytes": 48859,
+      "sha256": "b96a825a029dc1308e1a272dcf78e41f5133355ea1e333276cc491f75c53bbde"
+    },
+    {
+      "kind": "image",
+      "source": "Source/HachiwareTransformations-v49/References/Official/Anime/episode-173.jpg",
+      "archive_path": "HachiwareTransformations-v49/References/Official/Anime/episode-173.jpg",
+      "bytes": 74662,
+      "sha256": "172176b685f93c0210a1927aadcdab555a4e57342ca8e43ef108c937bda7dad3"
+    },
+    {
+      "kind": "image",
+      "source": "Source/HachiwareTransformations-v49/References/Official/Anime/episode-174.jpg",
+      "archive_path": "HachiwareTransformations-v49/References/Official/Anime/episode-174.jpg",
+      "bytes": 64900,
+      "sha256": "82d0887945369460d4241571831b321e341d6a712360d241962c5246c632eb3b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/HachiwareTransformations-v49/References/Official/Anime/episode-175.jpg",
+      "archive_path": "HachiwareTransformations-v49/References/Official/Anime/episode-175.jpg",
+      "bytes": 93620,
+      "sha256": "daeee824c3d30997ebafeb2178a21dbeef5a5206bc40054e04a23e3bd92b793e"
+    },
+    {
+      "kind": "image",
+      "source": "Source/HachiwareTransformations-v49/References/Official/Anime/episode-176.jpg",
+      "archive_path": "HachiwareTransformations-v49/References/Official/Anime/episode-176.jpg",
+      "bytes": 60798,
+      "sha256": "b8adb038dd88dc77ac46be5f67e9f103dece4eb15773c4b357f4505072e52675"
+    },
+    {
+      "kind": "image",
+      "source": "Source/HachiwareTransformations-v49/References/Official/Anime/episode-177.jpg",
+      "archive_path": "HachiwareTransformations-v49/References/Official/Anime/episode-177.jpg",
+      "bytes": 35612,
+      "sha256": "f26f4f65d465500eca00d3fe47545702e3616304261684a19411ed9487c49764"
+    },
+    {
+      "kind": "image",
+      "source": "Source/HachiwareTransformations-v49/References/Official/Anime/episode-375.jpg",
+      "archive_path": "HachiwareTransformations-v49/References/Official/Anime/episode-375.jpg",
+      "bytes": 87587,
+      "sha256": "81fe2b5cc1dc27a2bef1d17a941deab795186cff28c445193eb2ab4abcb07fa1"
+    },
+    {
+      "kind": "image",
+      "source": "Source/HachiwareTransformations-v49/References/Official/Anime/episode-376.jpg",
+      "archive_path": "HachiwareTransformations-v49/References/Official/Anime/episode-376.jpg",
+      "bytes": 69060,
+      "sha256": "052d2c22d46c88e920da6f50b66549af45453423020041d016e25d08fe14abfa"
+    },
+    {
+      "kind": "image",
+      "source": "Source/HachiwareTransformations-v49/References/Official/Anime/episode-377.jpg",
+      "archive_path": "HachiwareTransformations-v49/References/Official/Anime/episode-377.jpg",
+      "bytes": 47214,
+      "sha256": "a48aacd3fca4aca168448453ea5364cb8666e4f4af1529ac67b39750e07a931b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/HachiwareTransformations-v49/References/Official/Anime/episode-378.jpg",
+      "archive_path": "HachiwareTransformations-v49/References/Official/Anime/episode-378.jpg",
+      "bytes": 64271,
+      "sha256": "05c20ab4af2be8bb12b13e426081b4bee74fb31c49df71e6b33bdaf016e4a6ea"
+    },
+    {
+      "kind": "image",
+      "source": "Source/HachiwareTransformations-v49/References/Official/Anime/episode-379.jpg",
+      "archive_path": "HachiwareTransformations-v49/References/Official/Anime/episode-379.jpg",
+      "bytes": 113206,
+      "sha256": "2c958250de565c6d54d38352c75e6e76257c8ca885ec76a7a6f9d946daecce8a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/HachiwareTransformations-v49/References/Official/Anime/episode-380.jpg",
+      "archive_path": "HachiwareTransformations-v49/References/Official/Anime/episode-380.jpg",
+      "bytes": 135130,
+      "sha256": "91fe7f2677136699fa9b59f66b724eddd21e4ccdde51ed209b3bc31e13302cfa"
+    },
+    {
+      "kind": "image",
+      "source": "Source/HachiwareTransformations-v49/References/Official/Anime/episode-381.jpg",
+      "archive_path": "HachiwareTransformations-v49/References/Official/Anime/episode-381.jpg",
+      "bytes": 85150,
+      "sha256": "e89b9a8590a9ab280eeed0774b66f63d430c9e58dfba90bb033391bb0c1dbf76"
+    },
+    {
+      "kind": "image",
+      "source": "Source/HachiwareTransformations-v49/References/Official/Anime/episode-382.jpg",
+      "archive_path": "HachiwareTransformations-v49/References/Official/Anime/episode-382.jpg",
+      "bytes": 89059,
+      "sha256": "e39e68db9972dee1cd4837d82b53e817cdef34e51b02891b7210f0e7fd925b78"
+    },
+    {
+      "kind": "image",
+      "source": "Source/HachiwareTransformations-v49/References/Official/Market/fairy-dream-4979274946726-01.jpg",
+      "archive_path": "HachiwareTransformations-v49/References/Official/Market/fairy-dream-4979274946726-01.jpg",
+      "bytes": 76376,
+      "sha256": "6c28acf0fe90c231ef7355986fb71b025c0c8e20ae85c8c7d7f52530f8d9d5f4"
+    },
+    {
+      "kind": "image",
+      "source": "Source/HachiwareTransformations-v49/References/Official/Market/fairy-dream-4979274946726-02.jpg",
+      "archive_path": "HachiwareTransformations-v49/References/Official/Market/fairy-dream-4979274946726-02.jpg",
+      "bytes": 251598,
+      "sha256": "87379296cfa51cedef4381f6b1e40c7c3b58dac76630f2bef718c96ec8fe4426"
+    },
+    {
+      "kind": "image",
+      "source": "Source/HachiwareTransformations-v49/References/Official/Market/magical-costume-4573256438690-01.jpg",
+      "archive_path": "HachiwareTransformations-v49/References/Official/Market/magical-costume-4573256438690-01.jpg",
+      "bytes": 75013,
+      "sha256": "ae9aa04ff162bdc33fdea282a949eeee5d9491502d5956e906f7ffc80f460394"
+    },
+    {
+      "kind": "image",
+      "source": "Source/HachiwareTransformations-v49/References/Official/Market/magical-costume-4573256438690-02.jpg",
+      "archive_path": "HachiwareTransformations-v49/References/Official/Market/magical-costume-4573256438690-02.jpg",
+      "bytes": 84506,
+      "sha256": "d97541ce72c5be5a33aafdbd55a84d2f2a846b71b73a2764ee2eec38a974ee37"
+    },
+    {
+      "kind": "image",
+      "source": "Source/HachiwareTransformations-v49/References/Official/Market/magical-costume-bad-version-4571609366843-01.jpg",
+      "archive_path": "HachiwareTransformations-v49/References/Official/Market/magical-costume-bad-version-4571609366843-01.jpg",
+      "bytes": 166842,
+      "sha256": "ae11ee60f4385719251423badf168e62415a20ba9e9243ce5c7759552e1f85b3"
+    },
+    {
+      "kind": "image",
+      "source": "Source/HachiwareTransformations-v49/References/Official/Market/magical-strong-product-4571609413776-01.jpg",
+      "archive_path": "HachiwareTransformations-v49/References/Official/Market/magical-strong-product-4571609413776-01.jpg",
+      "bytes": 56741,
+      "sha256": "6e517d62f7a342bc895d4545841c30aa2712ae9c023d783b0c2eaddadb7bd22c"
+    },
+    {
+      "kind": "image",
+      "source": "Source/HachiwareTransformations-v49/References/Official/Market/magical-strong-product-4571609413776-02.jpg",
+      "archive_path": "HachiwareTransformations-v49/References/Official/Market/magical-strong-product-4571609413776-02.jpg",
+      "bytes": 84914,
+      "sha256": "2bbc98b8a2ddd05766b66d1c69ceea612e33e8785dca728b16951cd97924e78b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/HachiwareTransformations-v49/References/Official/Market/magical-strong-product-4571609413776-03.jpg",
+      "archive_path": "HachiwareTransformations-v49/References/Official/Market/magical-strong-product-4571609413776-03.jpg",
+      "bytes": 60893,
+      "sha256": "9b0f5d1542744b49ff2af7bac49a43563d8698931bb160611b0422f68ff96ba1"
+    },
+    {
+      "kind": "image",
+      "source": "Source/HachiwareTransformations-v49/References/Official/Market/magical-strong-product-4571609413776-04.jpg",
+      "archive_path": "HachiwareTransformations-v49/References/Official/Market/magical-strong-product-4571609413776-04.jpg",
+      "bytes": 81525,
+      "sha256": "9047c868ee5a94299ae5ad44bf25468c65255bd6b86bb16b900822f55e5ad291"
+    },
+    {
+      "kind": "image",
+      "source": "Source/HachiwareTransformations-v49/References/Official/Market/parallel-mid-4571609344094-01.jpg",
+      "archive_path": "HachiwareTransformations-v49/References/Official/Market/parallel-mid-4571609344094-01.jpg",
+      "bytes": 101141,
+      "sha256": "84e96aad00792c50c6922c0ba0da39491b33b794b0d734c2f5af6200f5b54040"
+    },
+    {
+      "kind": "image",
+      "source": "Source/HachiwareTransformations-v49/References/Official/Market/parallel-mid-4571609344094-02.jpg",
+      "archive_path": "HachiwareTransformations-v49/References/Official/Market/parallel-mid-4571609344094-02.jpg",
+      "bytes": 103090,
+      "sha256": "d14aa659418e31dbf97e49f5b28501a2b22d19aeeffbe259f2f5d85287754178"
+    },
+    {
+      "kind": "image",
+      "source": "Source/HachiwareTransformations-v49/References/Official/Market/parallel-mid-4571609344094-03.jpg",
+      "archive_path": "HachiwareTransformations-v49/References/Official/Market/parallel-mid-4571609344094-03.jpg",
+      "bytes": 154476,
+      "sha256": "71ecfb9aa8d406a1923c025c1206cfcf0c6e9a2106ac76d6c3ec33f4c315201d"
+    },
+    {
+      "kind": "image",
+      "source": "Source/HachiwareTransformations-v49/References/Official/Market/parallel-mid-4571609344094-04.jpg",
+      "archive_path": "HachiwareTransformations-v49/References/Official/Market/parallel-mid-4571609344094-04.jpg",
+      "bytes": 100516,
+      "sha256": "fed069bbaa291d515de4249fcc902723dbe1c07ba66933c646f90d0130af1ebd"
+    },
+    {
+      "kind": "image",
+      "source": "Source/HachiwareTransformations-v49/References/Official/Market/parallel-mid-4571609344094-05.jpg",
+      "archive_path": "HachiwareTransformations-v49/References/Official/Market/parallel-mid-4571609344094-05.jpg",
+      "bytes": 91059,
+      "sha256": "9bdc47a1fa4853b25144904b6aff2ce66a51c01406e15e43d15fe87d9c266203"
+    },
+    {
+      "kind": "image",
+      "source": "Source/HachiwareTransformations-v49/References/Official/Market/parallel-mid-4571609344094-06.jpg",
+      "archive_path": "HachiwareTransformations-v49/References/Official/Market/parallel-mid-4571609344094-06.jpg",
+      "bytes": 81158,
+      "sha256": "3ae15a61af348935798e63d38426df8a3ac8da70b86a155b01e2be8bd8928af7"
+    },
+    {
+      "kind": "image",
+      "source": "Source/HachiwareTransformations-v49/References/Official/Market/parallel-mid-4571609344094-07.jpg",
+      "archive_path": "HachiwareTransformations-v49/References/Official/Market/parallel-mid-4571609344094-07.jpg",
+      "bytes": 195660,
+      "sha256": "dddc697cc792af18d293fe8fd9cb3f18e7ff4f4056c7730bf06263069abaabc8"
+    },
+    {
+      "kind": "image",
+      "source": "Source/HachiwareTransformations-v49/References/Official/Market/parallel-strong-4570189191586-01.jpg",
+      "archive_path": "HachiwareTransformations-v49/References/Official/Market/parallel-strong-4570189191586-01.jpg",
+      "bytes": 102207,
+      "sha256": "0374222d9e7588345e733cfbdb820c4791798d037458f8258a93770fc7d1eedd"
+    },
+    {
+      "kind": "image",
+      "source": "Source/HachiwareTransformations-v49/References/Official/Market/parallel-strong-4570189191586-02.jpg",
+      "archive_path": "HachiwareTransformations-v49/References/Official/Market/parallel-strong-4570189191586-02.jpg",
+      "bytes": 44713,
+      "sha256": "4196d68d31061e08cd73e01f006bbc8178d9268bac4e6881e10276b10199c5cd"
+    },
+    {
+      "kind": "image",
+      "source": "Source/HachiwareTransformations-v49/References/Official/Market/parallel-strong-4571609344117-01.jpg",
+      "archive_path": "HachiwareTransformations-v49/References/Official/Market/parallel-strong-4571609344117-01.jpg",
+      "bytes": 85295,
+      "sha256": "8c8208e11e6d9137a004dabefdb89161e89e2768a094e16700b2d47346d0100e"
+    },
+    {
+      "kind": "image",
+      "source": "Source/HachiwareTransformations-v49/References/Official/Market/parallel-strong-4571609344117-02.jpg",
+      "archive_path": "HachiwareTransformations-v49/References/Official/Market/parallel-strong-4571609344117-02.jpg",
+      "bytes": 100483,
+      "sha256": "a25fef2e64768ad930551d020abbfb2fb347ea93da85d8dc4603595041c28406"
+    },
+    {
+      "kind": "image",
+      "source": "Source/HachiwareTransformations-v49/References/Official/Market/parallel-strong-4571609344117-03.jpg",
+      "archive_path": "HachiwareTransformations-v49/References/Official/Market/parallel-strong-4571609344117-03.jpg",
+      "bytes": 142289,
+      "sha256": "6eb5ab973e7195e41a98017f75d63289d212bf72ada37c85be0235b9921d6319"
+    },
+    {
+      "kind": "image",
+      "source": "Source/HachiwareTransformations-v49/References/Official/Market/parallel-strong-4571609344117-04.jpg",
+      "archive_path": "HachiwareTransformations-v49/References/Official/Market/parallel-strong-4571609344117-04.jpg",
+      "bytes": 77464,
+      "sha256": "73d56f39b7cd0be9c43f448f1193eccf21a5815c3e264a0332d92bae2c227ba1"
+    },
+    {
+      "kind": "image",
+      "source": "Source/HachiwareTransformations-v49/References/Official/Market/parallel-strong-4571609344117-05.jpg",
+      "archive_path": "HachiwareTransformations-v49/References/Official/Market/parallel-strong-4571609344117-05.jpg",
+      "bytes": 127451,
+      "sha256": "250cfd3c93c367503b70db25e362b617f9d4ea7f330eba570079315bc140869f"
+    },
+    {
+      "kind": "image",
+      "source": "Source/HachiwareTransformations-v49/References/Official/Market/parallel-strong-4571609344117-06.jpg",
+      "archive_path": "HachiwareTransformations-v49/References/Official/Market/parallel-strong-4571609344117-06.jpg",
+      "bytes": 195660,
+      "sha256": "dddc697cc792af18d293fe8fd9cb3f18e7ff4f4056c7730bf06263069abaabc8"
+    },
+    {
+      "kind": "image",
+      "source": "Source/HachiwareTransformations-v49/References/Official/Market/parallel-strong-4571609347347-01.jpg",
+      "archive_path": "HachiwareTransformations-v49/References/Official/Market/parallel-strong-4571609347347-01.jpg",
+      "bytes": 139514,
+      "sha256": "fb4b68d89409455193f26b13533676b945ceeeb3c2167d7ee8aeaa4f22e6d33b"
+    },
+    {
+      "kind": "image",
+      "source": "Source/HachiwareTransformations-v49/References/Official/Market/parallel-strong-4571609347347-02.jpg",
+      "archive_path": "HachiwareTransformations-v49/References/Official/Market/parallel-strong-4571609347347-02.jpg",
+      "bytes": 223456,
+      "sha256": "c90c32050c9cd632639f8cd8e69a1eda466c011eeb61053135351764fb631da6"
+    },
+    {
+      "kind": "image",
+      "source": "Source/HachiwareTransformations-v49/References/Official/Market/parallel-strong-4571609347347-03.jpg",
+      "archive_path": "HachiwareTransformations-v49/References/Official/Market/parallel-strong-4571609347347-03.jpg",
+      "bytes": 93123,
+      "sha256": "d1affa30953b73d585e8b6de2f1da1bee825eb1186bed2d723dd9bd9d3d3de8a"
+    },
+    {
+      "kind": "image",
+      "source": "Source/HachiwareTransformations-v49/References/Official/OriginalComic/parallel-stages-2102236239995031704-01.jpg",
+      "archive_path": "HachiwareTransformations-v49/References/Official/OriginalComic/parallel-stages-2102236239995031704-01.jpg",
+      "bytes": 78806,
+      "sha256": "b1301ad3cbe90b062bbaddd34db552ae83f59da81270a1d56a6c433b502bc5fb"
+    },
+    {
+      "kind": "image",
+      "source": "Source/HachiwareTransformations-v49/References/Official/OriginalComic/parallel-strong-1765317655823839639-01.jpg",
+      "archive_path": "HachiwareTransformations-v49/References/Official/OriginalComic/parallel-strong-1765317655823839639-01.jpg",
+      "bytes": 195358,
+      "sha256": "31d650c6a68afb6f3d9f235d23d6349ec91ef905961d9a02324d69c1db751e83"
+    },
+    {
+      "kind": "image",
+      "source": "Source/HachiwareTransformations-v49/References/Official/OriginalComic/parallel-strong-1767525203222143077-01.jpg",
+      "archive_path": "HachiwareTransformations-v49/References/Official/OriginalComic/parallel-strong-1767525203222143077-01.jpg",
+      "bytes": 55345,
+      "sha256": "314b5748919eb30f8fb95f3daea55d3d3d6b1f4d65eafc1e02ce9722c84c615e"
+    },
+    {
+      "kind": "image",
+      "source": "Source/HachiwareTransformations-v49/References/Official/OriginalComic/wand-giant-1302210937236013059-01.jpg",
+      "archive_path": "HachiwareTransformations-v49/References/Official/OriginalComic/wand-giant-1302210937236013059-01.jpg",
+      "bytes": 171546,
+      "sha256": "7152dbf0bce8e188ea28d55a96d1d4643f84420b84558bc21441a7df4279ec90"
+    },
+    {
+      "kind": "image",
+      "source": "Source/HachiwareTransformations-v49/References/Official/OriginalComic/wand-giant-1302963721396867072-01.jpg",
+      "archive_path": "HachiwareTransformations-v49/References/Official/OriginalComic/wand-giant-1302963721396867072-01.jpg",
+      "bytes": 204996,
+      "sha256": "5e2e638cb6ff28a02899e0d85861e998ff7a2c85b55a6c6c9fd5c81079d5bf1e"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/HachiwareTransformations-v49/collect-references.py",
+      "archive_path": "HachiwareTransformations-v49/collect-references.py",
+      "bytes": 5750,
+      "sha256": "3c8ade53b742570d09011ff5bb94cecfba0c0f3074f8b0698486922e61b98ba3"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/HachiwareTransformations-v49/collection-status.json",
+      "archive_path": "HachiwareTransformations-v49/collection-status.json",
+      "bytes": 209,
+      "sha256": "aa7311bc3554053c0caa3227acc801859837a807f6e4f91c24eb95ae686c7888"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/HachiwareTransformations-v49/episode-index.json",
+      "archive_path": "HachiwareTransformations-v49/episode-index.json",
+      "bytes": 1698,
+      "sha256": "81ef3cd57955e5634a245d0ded245b995eb337a0e76d511c7e1be15c38e6b48f"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/HachiwareTransformations-v49/forms.json",
+      "archive_path": "HachiwareTransformations-v49/forms.json",
+      "bytes": 5679,
+      "sha256": "ae90af2ab1f4b1035bbb78d471e4185885466b465f0d87c74856d6de244934f7"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/HachiwareTransformations-v49/official-post-index.json",
+      "archive_path": "HachiwareTransformations-v49/official-post-index.json",
+      "bytes": 1897,
+      "sha256": "cb390d7c81865fe18c749423a66d4a1ea4d9c8cca9f0c08f91efe830c5fa9f99"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/HachiwareTransformations-v49/product-index.json",
+      "archive_path": "HachiwareTransformations-v49/product-index.json",
+      "bytes": 3096,
+      "sha256": "b4979f928e68f2f1106a13d37776ff12cb3df7a40492c5d437f263e261fe6d43"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/HachiwareTransformations-v49/reference-index.json",
+      "archive_path": "HachiwareTransformations-v49/reference-index.json",
+      "bytes": 2617,
+      "sha256": "ff60c6972c8c24b6530071f9e90e7c5156cc385c3acf179a35a1d4c7cd1268a2"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/HachiwareTransformations-v49/sources.json",
+      "archive_path": "HachiwareTransformations-v49/sources.json",
+      "bytes": 30292,
+      "sha256": "8c40a2b8386579faf520d137f222407094f69c15e203604aed23f677f2ac879a"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/HachiwareTransformations-v49/validation.json",
+      "archive_path": "HachiwareTransformations-v49/validation.json",
+      "bytes": 528,
+      "sha256": "955c09ae50407429c73d6dd484342dfec564f28d0f2abf26293f064d8219c7d0"
     },
     {
       "kind": "supporting",
@@ -31319,13 +31844,15 @@
       "sha256": "8a42caa40e469a5ee00fa2b860d14756cc1fd73bc8fcf73332c50b87a92c9c3b"
     }
   ],
-  "updated_at": "2026-10-23T01:19:48.366482+00:00",
-  "latest_applied": "Source/UsagiCharacter-v48",
+  "updated_at": "2026-10-23T01:58:54.125427+00:00",
+  "latest_applied": "Source/CharacterSleep-v47",
   "applied_directions": [
     "down-left",
     "down-right"
   ],
   "previous_upward_diagonal_preserved": true,
   "source_path_format": "repository-relative paths; generated originals are archived under Source/GeneratedOriginals",
-  "latest_review": "Chiikawa-v22"
+  "latest_review": "Chiikawa-v22",
+  "latest_research": "Source/HachiwareTransformations-v49",
+  "latest_design_review": "Source/UsagiCharacter-v48"
 }

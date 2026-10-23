@@ -1,0 +1,77 @@
+[
+  {
+    "priority": 1,
+    "path": "References/Official/OriginalComic/parallel-stages-2102236239995031704-01.jpg",
+    "role": "최우선 · 중간 모습과 강해진 모습의 공식 비교 그림"
+  },
+  {
+    "priority": 2,
+    "path": "References/Official/OriginalComic/parallel-strong-1767525203222143077-01.jpg",
+    "role": "정면 얼굴·큰 눈·볼 옆 선·파란 꼬리"
+  },
+  {
+    "priority": 3,
+    "path": "References/Official/OriginalComic/parallel-strong-1765317655823839639-01.jpg",
+    "role": "원작 · 몸통/손발/발톱 · 옆·뒷모습 일부 · 힘을 쓰는 표정"
+  },
+  {
+    "priority": 4,
+    "path": "References/Official/Anime/episode-380.jpg",
+    "role": "애니 · 복슬복슬해진 중간 모습의 얼굴"
+  },
+  {
+    "priority": 5,
+    "path": "References/Official/Anime/episode-381.jpg",
+    "role": "애니 · 강해진 모습의 얼굴과 꼬리"
+  },
+  {
+    "priority": 6,
+    "path": "References/Official/Market/parallel-strong-4571609344117-04.jpg",
+    "role": "공식 입체 상품 · 정면 전신"
+  },
+  {
+    "priority": 7,
+    "path": "References/Official/Market/parallel-strong-4571609344117-05.jpg",
+    "role": "공식 입체 상품 · 후면과 큰 파란 꼬리"
+  },
+  {
+    "priority": 8,
+    "path": "References/Official/Market/parallel-mid-4571609344094-05.jpg",
+    "role": "중간 모습 · 정면 전신"
+  },
+  {
+    "priority": 9,
+    "path": "References/Official/Market/parallel-mid-4571609344094-06.jpg",
+    "role": "중간 모습 · 후면과 작은 꼬리"
+  },
+  {
+    "priority": 10,
+    "path": "References/Official/OriginalComic/wand-giant-1302210937236013059-01.jpg",
+    "role": "지팡이 편 · 외형 변화가 시작되는 문맥"
+  },
+  {
+    "priority": 11,
+    "path": "References/Official/OriginalComic/wand-giant-1302963721396867072-01.jpg",
+    "role": "지팡이 편 · 커진 손발과 크기 대비"
+  },
+  {
+    "priority": 12,
+    "path": "References/Official/Anime/episode-173.jpg",
+    "role": "요정 모습 · 파란 모자와 옷, 흰 날개"
+  },
+  {
+    "priority": 13,
+    "path": "References/Official/Market/magical-costume-4573256438690-01.jpg",
+    "role": "마지컬 의상 · 리본·별·프릴"
+  },
+  {
+    "priority": 14,
+    "path": "References/Official/Market/magical-costume-bad-version-4571609366843-01.jpg",
+    "role": "마지컬 나쁜 버전 · 의상과 표정 차이"
+  },
+  {
+    "priority": 15,
+    "path": "References/Official/Market/magical-strong-product-4571609413776-02.jpg",
+    "role": "보조 · 마지컬 상품의 엎드린 몸. 코/볼 색은 원작과 혼합 금지"
+  }
+]
