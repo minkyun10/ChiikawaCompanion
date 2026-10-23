@@ -8,6 +8,8 @@ extension SelfTest {
               "monster transform requires five distinct completed clicks")
         check(trigger.click(at:10) && trigger.isMonster && trigger.clicks.isEmpty,
               "the fifth click at the inclusive ten-second boundary transforms and consumes the window")
+        check(trigger.scale(at:10) == 1 && abs(trigger.scale(at:10.325)-5.5)<0.000001 && trigger.scale(at:11)==10,
+              "monster grows smoothly from one to ten times width and height over the existing crossfade")
         check(trigger.returnsAt == 40,"the fifth click starts one thirty-second monster lifetime")
         for time in [10.1,11,12,13,39.9] { _ = trigger.click(at:time) }
         check(trigger.isMonster && trigger.clicks.isEmpty && trigger.returnsAt == 40,
@@ -19,6 +21,17 @@ extension SelfTest {
               "automatic return uses one bounded 650ms crossfade")
         check(trigger.monsterOpacity(at:40) == 1 && abs(trigger.monsterOpacity(at:40.325)-0.5)<0.000001
               && trigger.monsterOpacity(at:41) == 0,"the return fade begins at the visible monster and ends at normal artwork")
+        check(trigger.scale(at:40) == 10 && abs(trigger.scale(at:40.325)-5.5)<0.000001 && trigger.scale(at:41)==1,
+              "automatic return smoothly shrinks from ten times to normal size")
+        let logical=NSRect(x:-600,y:240,width:132,height:150)
+        let huge=CharacterScaleGeometry.frame(for:logical,scale:10)
+        check(huge.size == NSSize(width:1320,height:1500)
+              && abs(huge.midX-logical.midX)<0.000001
+              && abs(huge.minY+ItemWorld.contactOffset.y*10-(logical.minY+ItemWorld.contactOffset.y))<0.000001,
+              "giant geometry preserves the same ground contact on negative-coordinate displays without fitting to screen height")
+        var giantGait=WalkingGait()
+        giantGait.recordMovement(from:.zero,to:NSPoint(x:627,y:0),artworkScale:10)
+        check(abs(giantGait.phase-2 * .pi)<0.000001,"ten-times larger feet take one gait cycle per ten-times larger actual stride")
         check(!trigger.advance(at:41),"later ticks never restart a completed return fade")
         for n in 0..<5 { _ = trigger.click(at:42+Double(n)) }
         check(trigger.isMonster && trigger.returnsAt == 76,"a fresh five-click sequence can transform again after automatic return")
@@ -103,14 +116,36 @@ extension SelfTest {
         check(desktop.hachiwareTransformation.isMonster && actor.view.hachiwareMonster,
               "five actual view mouse-down/up pairs transform despite the shared drag-start callback")
         check(actor.panel.frame == frame && actor.gait.phase == phase && actor.motion.destination == destination,
-              "transformation preserves desktop origin, actor size, current route and distance-based gait")
+              "the fifth click preserves the ground anchor, route and gait before gradual growth begins")
         check(desktop.itemWorld.equipped == .sasumata && desktop.itemWorld.ground == ground,
               "transformation keeps equipment and independent ground-item coordinates")
         check(desktop.chiikawaActor?.view.hachiwareMonster == false,"other companions never inherit the monster form")
-        actor.view.transformationProgress = 1; actor.view.action = .attack; actor.panel.orderFrontRegardless()
+        _ = desktop.updateHachiwareTransformation(at:desktop.hachiwareTransformation.returnsAt!-29)
+        check(actor.panel.frame.size == NSSize(width:1320,height:1500)
+              && actor.view.bounds.size == actor.panel.frame.size && actor.movementFrame == frame,
+              "completed monster transformation is exactly ten times wider and taller with an unchanged logical footprint")
+        let giantCenter=NSPoint(x:actor.panel.frame.midX,y:actor.panel.frame.midY)
+        check(!actor.movementFrame.contains(giantCenter) && actor.pointerIsHovering(at:giantCenter,armed:false,canReach:true),
+              "visible giant body outside the old small rectangle receives hover at its actual scaled position")
+        let anchor=actor.movementFrame
+        for n in 0...60 { actor.setPresentationScale(1+9*CGFloat(n)/60) }
+        for n in 0...60 { actor.setPresentationScale(10-9*CGFloat(n)/60) }
+        check(actor.movementFrame == anchor && actor.panel.frame.size == Friend.hachiware.actorSize,
+              "repeated native growth/shrink updates do not accumulate anchor rounding or size drift")
+        actor.setPresentationScale(10)
+        let visualOrigin=actor.panel.frame.origin
+        actor.panel.setFrameOrigin(NSPoint(x:visualOrigin.x+24,y:visualOrigin.y+12))
+        check(abs(actor.movementFrame.minX-anchor.minX-24)<0.01 && abs(actor.movementFrame.minY-anchor.minY-12)<0.01,
+              "native window drag translation moves the logical ground contact by the same distance")
+        actor.setMovementOrigin(anchor.origin)
+        check(actor.movementFrame == anchor && desktop.itemWorld.ground == ground,
+              "repositioning a giant preserves the footprint and independent ground props")
+        actor.view.action = .attack; actor.panel.orderFrontRegardless()
         actor.attackOverlay.update(actor:actor)
         check(actor.attackOverlay.view.hachiwareMonster && actor.view.attackUsesOverlay,
               "armed hover overlay selects the monster attack instead of the original Hachiware atlas")
+        check(actor.attackOverlay.view.body.size == NSSize(width:1320,height:1500),
+              "the actual attack overlay receives the same ten-times body size instead of shrinking the giant")
         actor.view.action = nil; actor.attackOverlay.update(actor:actor)
         let deadline = desktop.hachiwareTransformation.returnsAt!
         for index in 0..<8 { desktop.handleCharacterClick(actor,monotonicTime:deadline-1+Double(index)*0.01) }
@@ -118,13 +153,13 @@ extension SelfTest {
               "live dialogue clicks during monster form leave its fixed deadline intact")
         actor.dismissBubble()
         let bubbleUntil = actor.bubbleUntil, dialogueID = desktop.lastClickDialogueID, voiceStatus = state.voiceStatus
-        let returnFrame = actor.panel.frame, returnPhase = actor.gait.phase, returnDestination = actor.motion.destination
+        let returnFrame = actor.movementFrame, returnPhase = actor.gait.phase, returnDestination = actor.motion.destination
         actor.view.action = .attack; actor.view.actionTime = 0.4
         check(desktop.updateHachiwareTransformation(at:deadline) && !actor.view.hachiwareMonster,
               "the live controller starts automatic return at the deadline")
-        check(actor.panel.frame == returnFrame && actor.gait.phase == returnPhase && actor.motion.destination == returnDestination
+        check(actor.movementFrame == returnFrame && actor.gait.phase == returnPhase && actor.motion.destination == returnDestination
               && desktop.itemWorld.equipped == .sasumata && desktop.itemWorld.ground == ground,
-              "automatic return preserves desktop origin, body size, gait, route, equipment and ground props")
+              "automatic return preserves its ground anchor, gait, route, equipment and ground props while shrinking")
         check(actor.view.action == .attack && actor.view.actionTime == 0.4,
               "automatic return preserves the active attack and its animation time")
         check(actor.bubble == nil && actor.bubbleUntil == bubbleUntil && desktop.lastClickDialogueID == dialogueID
@@ -133,7 +168,13 @@ extension SelfTest {
         actor.attackOverlay.update(actor:actor)
         check(!actor.view.attackUsesOverlay && !actor.attackOverlay.panel.isVisible,
               "the attack overlay yields to the body crossfade while returning")
+        _ = desktop.updateHachiwareTransformation(at:deadline+0.325)
+        print("OBSERVATION: return midpoint window=\(actor.panel.frame.size), logical=\(actor.movementFrame), anchor=\(returnFrame)")
+        check(abs(actor.panel.frame.width-726)<=1 && abs(actor.panel.frame.height-825)<=1 && actor.movementFrame == returnFrame,
+              "the live return reaches the midpoint scale within native pixel rounding without moving its ground anchor")
         _ = desktop.updateHachiwareTransformation(at:deadline+1); actor.attackOverlay.update(actor:actor)
+        check(actor.panel.frame.size == Friend.hachiware.actorSize && actor.movementFrame == returnFrame,
+              "the return blend restores normal physical size at the same ground anchor")
         check(!actor.attackOverlay.view.hachiwareMonster && actor.view.attackUsesOverlay,
               "the existing attack resumes with normal artwork at the same body scale after the fade")
         actor.view.action = nil; actor.attackOverlay.update(actor:actor)
@@ -168,15 +209,15 @@ extension SelfTest {
         for index in 0..<5 { desktop.handleCharacterClick(actor,monotonicTime:sleepDeadline+2+Double(index)) }
         let walkingDeadline = desktop.hachiwareTransformation.returnsAt!
         state.roaming = true; state.walkingFriends.insert(.hachiware); state.expressive = false
-        actor.dismissBubble(); actor.motion.destination = NSPoint(x:bounds.maxX-actor.panel.frame.width,y:bounds.maxY-actor.panel.frame.height)
-        let walkingOrigin = actor.panel.frame.origin
+        actor.dismissBubble(); actor.motion.destination = NSPoint(x:bounds.maxX-actor.movementFrame.width,y:bounds.maxY-actor.movementFrame.height)
+        let walkingOrigin = actor.movementFrame.origin
         // AppKit may round the first sub-point displacement to zero. Check a
         // short continuous segment, as the existing roaming regression does.
         for index in 1...6 {
             desktop.tick(now:now.addingTimeInterval(Double(index)/60),pointer:NSPoint(x:-10000,y:-10000),
                          pointerCanReachCharacter:false,monotonicTime:walkingDeadline+Double(index-1)/60)
         }
-        let moved = hypot(actor.panel.frame.minX-walkingOrigin.x,actor.panel.frame.minY-walkingOrigin.y)
+        let moved = hypot(actor.movementFrame.minX-walkingOrigin.x,actor.movementFrame.minY-walkingOrigin.y)
         check(!desktop.hachiwareTransformation.isMonster && actor.motion.isWalking && moved>0 && moved<8,
               "walking continues through automatic return with only normal continuous displacement")
         for index in 0..<5 { desktop.handleCharacterClick(actor,monotonicTime:walkingDeadline+2+Double(index)) }

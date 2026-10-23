@@ -1,0 +1,30 @@
+{
+  "verified": "2026-10-23",
+  "normalSizePoints": [
+    132,
+    150
+  ],
+  "fullMonsterSizePoints": [
+    1320,
+    1500
+  ],
+  "scaleOfEachDimension": 10,
+  "midpointSizePoints": [
+    726,
+    825
+  ],
+  "nativeMidpointRoundingTolerancePoints": 1,
+  "logicalFootprintPoints": [
+    132,
+    150
+  ],
+  "contactInNormalFootprintPoints": [
+    66,
+    30
+  ],
+  "transitionSeconds": 0.65,
+  "returnAfterSeconds": 30,
+  "walkingStridePointsPerFullCycle": 627,
+  "normalWalkingStridePointsPerFullCycle": 62.7,
+  "newArtworkGenerated": false
+}

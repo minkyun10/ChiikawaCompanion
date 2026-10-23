@@ -7,6 +7,7 @@ struct HachiwareTransformation {
     static let clickWindow: TimeInterval = 10
     static let transitionDuration: TimeInterval = 0.65
     static let monsterDuration: TimeInterval = 30
+    static let monsterScale = 10.0
     private(set) var isMonster = false
     private(set) var clicks: [TimeInterval] = []
     private(set) var changedAt: TimeInterval?
@@ -48,5 +49,8 @@ struct HachiwareTransformation {
     func monsterOpacity(at time: TimeInterval) -> Double {
         let target = isMonster ? 1.0:0.0
         return transitionFromMonster+(target-transitionFromMonster)*progress(at:time)
+    }
+    func scale(at time: TimeInterval) -> CGFloat {
+        CGFloat(1+(Self.monsterScale-1)*monsterOpacity(at:time))
     }
 }

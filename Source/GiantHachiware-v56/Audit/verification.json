@@ -1,0 +1,52 @@
+{
+  "verified": "2026-10-23",
+  "version": "0.27.0",
+  "build": 55,
+  "packagedChecks": 949,
+  "monsterChecks": 65,
+  "normalSizePoints": [
+    132,
+    150
+  ],
+  "monsterSizePoints": [
+    1320,
+    1500
+  ],
+  "scaleOfEachDimension": 10,
+  "transitionSeconds": 0.65,
+  "monsterLifetimeSeconds": 30,
+  "existingRuntimeImagesUnchanged": 234,
+  "newArtworkGenerated": false,
+  "codeSignatureVerified": true,
+  "newAppRunning": true,
+  "logicalMovementFootprintPoints": [
+    132,
+    150
+  ],
+  "inputPolicy": "Click and hover normalize the actual enlarged window to the existing silhouette masks. Attack uses the same enlarged body frame. Drag and world routes use the stable ground footprint.",
+  "coverage": [
+    "exact native ten-times window and view bounds",
+    "same ground contact and route after growth",
+    "hover on the visible giant outside the old small rectangle",
+    "native repeated growth/shrink without rounding drift",
+    "native window drag translation",
+    "enlarged attack overlay body",
+    "650ms midpoint shrink and normal-size restoration",
+    "walking during automatic return",
+    "sleeping and hidden-character timeout",
+    "existing 8-companion ownership, audio, items and rest regressions"
+  ],
+  "nativeMidpointObservation": {
+    "requestedSizePoints": [
+      726,
+      825
+    ],
+    "observedSizePoints": [
+      727,
+      826
+    ],
+    "roundingTolerancePoints": 1,
+    "groundAnchorUnchanged": true
+  },
+  "manualBoundary": "CUA confirmed the launched app, eight retained summon switches and closed the settings window. Native AppKit fixtures verified the enlarged window and pointer geometry. A separate physical-pointer five-click desktop review was not claimed."
+}

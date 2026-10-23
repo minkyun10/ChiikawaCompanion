@@ -3,7 +3,7 @@
   "operation": "copy; originals preserved",
   "image_file_count": 3945,
   "unique_image_content_count": 2079,
-  "supporting_file_count": 881,
+  "supporting_file_count": 894,
   "image_bytes": 1264701728,
   "symmetric_walk_runtime_applied": true,
   "files": [
@@ -14300,6 +14300,97 @@
       "archive_path": "GeneratedOriginals/exec-fa24089c-4473-4f75-b957-41506ce80da8.png",
       "bytes": 990161,
       "sha256": "e99767f16f0c5d6409a5cf0fa383a6084b0e66fe7a4d018a23ac088c3464382b"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/GiantHachiware-v56/Audit/before-resources.json",
+      "archive_path": "GiantHachiware-v56/Audit/before-resources.json",
+      "bytes": 23577,
+      "sha256": "3f01bdd8b4804d7fa277718e71f286f70454a220e142171ff92dc855616efb76"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/GiantHachiware-v56/Audit/build-app.log",
+      "archive_path": "GiantHachiware-v56/Audit/build-app.log",
+      "bytes": 618,
+      "sha256": "8f23955393c1c408e96dee3778a878e16ee39535f1ae5430e7714b2b70ddb608"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/GiantHachiware-v56/Audit/build-cli.log",
+      "archive_path": "GiantHachiware-v56/Audit/build-cli.log",
+      "bytes": 265,
+      "sha256": "5989d816f9e20c9e17eb24604bbc3ba5b698cb12953980f17d5b2277a4425063"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/GiantHachiware-v56/Audit/build-rounding-check.log",
+      "archive_path": "GiantHachiware-v56/Audit/build-rounding-check.log",
+      "bytes": 323,
+      "sha256": "910370da214ed9d6ce4efd7939c8b2d21225ad7ef449b485c90cf2ec998e23a3"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/GiantHachiware-v56/Audit/codesign-verification.txt",
+      "archive_path": "GiantHachiware-v56/Audit/codesign-verification.txt",
+      "bytes": 115,
+      "sha256": "baab449a0b0ab555ce651e77797c41039de5e14d747a956a2d3c6efac284f2a8"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/GiantHachiware-v56/Audit/monster-checks-initial.log",
+      "archive_path": "GiantHachiware-v56/Audit/monster-checks-initial.log",
+      "bytes": 4425,
+      "sha256": "8f1d5814429e611d5ac19faf0324423285eb52cacc28148be2a5fdcdbec8c2f8"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/GiantHachiware-v56/Audit/monster-checks.log",
+      "archive_path": "GiantHachiware-v56/Audit/monster-checks.log",
+      "bytes": 5379,
+      "sha256": "63ed217367be716c1a176610632dce7bf1581db4b8b341beadb6dfac5bbcedd1"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/GiantHachiware-v56/Audit/packaged-self-test.log",
+      "archive_path": "GiantHachiware-v56/Audit/packaged-self-test.log",
+      "bytes": 75591,
+      "sha256": "718d335d823875c13661d14e7db496432c2e647120ac73c8ecf1a25627153c5a"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/GiantHachiware-v56/Audit/resource-preservation.json",
+      "archive_path": "GiantHachiware-v56/Audit/resource-preservation.json",
+      "bytes": 149,
+      "sha256": "652ce19288f1101452b6167303e5d88b17dbe4fe2f38bc5f9fb2ee0cd5bfcfa1"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/GiantHachiware-v56/Audit/verification.json",
+      "archive_path": "GiantHachiware-v56/Audit/verification.json",
+      "bytes": 1717,
+      "sha256": "c8da325b877636117162e3d21bde8fc05c2289fcaec8480298b6c5bd0c0ddc2c"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/GiantHachiware-v56/CharacterScale.swift",
+      "archive_path": "GiantHachiware-v56/CharacterScale.swift",
+      "bytes": 2692,
+      "sha256": "7ca43c5efb80c4992c77066a71c1c6b837511a39aa81141ca5582826a8fff987"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/GiantHachiware-v56/README.txt",
+      "archive_path": "GiantHachiware-v56/README.txt",
+      "bytes": 2808,
+      "sha256": "658b15cf0b426d2772a36b489590c761b4c71035f75006c2fd31c2573dde1675"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/GiantHachiware-v56/Review/geometry.json",
+      "archive_path": "GiantHachiware-v56/Review/geometry.json",
+      "bytes": 544,
+      "sha256": "9766d1b2fcc1b651542f563babb09540e3c2c09bf84431aae6531ccf0aa07d60"
     },
     {
       "kind": "image",
@@ -29033,8 +29124,8 @@
       "kind": "supporting",
       "source": "Source/README.txt",
       "archive_path": "README.txt",
-      "bytes": 13262,
-      "sha256": "680e4327b1c42b77e45580c239f423ecbbec024ee29e859543c192342cd00639"
+      "bytes": 13633,
+      "sha256": "557cdfdb08738573ae8854fb0c656a96208502191755f88b01e6043927f54cfc"
     },
     {
       "kind": "supporting",
@@ -33790,8 +33881,8 @@
       "sha256": "8a42caa40e469a5ee00fa2b860d14756cc1fd73bc8fcf73332c50b87a92c9c3b"
     }
   ],
-  "updated_at": "2026-10-23T07:36:33.260450+00:00",
-  "latest_applied": "Source/RakkoSword-v55",
+  "updated_at": "2026-10-23T08:22:31.260690+00:00",
+  "latest_applied": "Source/GiantHachiware-v56",
   "applied_directions": [
     "down-left",
     "down-right"

@@ -1,6 +1,10 @@
 import AppKit
 
 final class FriendPanel: NSPanel {
+    var allowsOffscreenExtent = false
+    override func constrainFrameRect(_ frameRect: NSRect, to screen: NSScreen?) -> NSRect {
+        allowsOffscreenExtent ? frameRect:super.constrainFrameRect(frameRect,to:screen)
+    }
     override var canBecomeKey: Bool { false }
     override var canBecomeMain: Bool { false }
     override func orderOut(_ sender: Any?) {
@@ -83,6 +87,7 @@ final class DesktopFriendView: NSView {
     var hachiwareMonster = false
     var transformationProgress = 1.0
     var monsterOpacity = 0.0
+    var dragFrameOffset = NSPoint.zero
     var isDragging = false
     var onClick: (() -> Void)?
     var onToggleWalking: (() -> Void)?
@@ -169,7 +174,8 @@ final class DesktopFriendView: NSView {
         onDragStart?()
         isDragging = true; moved = false
         downPoint = NSEvent.mouseLocation
-        downOrigin = window?.frame.origin ?? .zero
+        let origin=window?.frame.origin ?? .zero
+        downOrigin=NSPoint(x:origin.x-dragFrameOffset.x,y:origin.y-dragFrameOffset.y)
     }
     override func mouseDragged(with event: NSEvent) {
         guard let window else { return }
@@ -178,8 +184,9 @@ final class DesktopFriendView: NSView {
         if abs(dx) + abs(dy) > 4 { moved = true }
         let screen = NSScreen.screens.first { $0.frame.contains(mouse) } ?? NSScreen.main
         let origin = NSPoint(x: downOrigin.x + dx, y: downOrigin.y + dy)
-        window.setFrameOrigin(DesktopGeometry.clamp(origin, size: window.frame.size,
-                                                    to: screen?.visibleFrame ?? NSRect(x: 0, y: 0, width: 1280, height: 720)))
+        let clamped=DesktopGeometry.clamp(origin,size:friend.actorSize,
+            to:screen?.visibleFrame ?? NSRect(x:0,y:0,width:1280,height:720))
+        window.setFrameOrigin(NSPoint(x:clamped.x+dragFrameOffset.x,y:clamped.y+dragFrameOffset.y))
     }
     override func mouseUp(with event: NSEvent) {
         isDragging = false
@@ -204,6 +211,9 @@ final class FriendActor {
     var lastGreeting: String?
     var clickReaction = ChiikawaReaction.happy
     var armedHoverContact: CharacterPointerMask?
+    var presentationScale: CGFloat = 1
+    var scaleMovementFrame: NSRect?
+    var scaleWindowFrame: NSRect?
 
     init(friend: Friend, index: Int) {
         self.friend = friend
@@ -275,7 +285,7 @@ final class FriendActor {
     }
     func positionBubble() {
         guard let bubble else { return }
-        let screen = panel.screen ?? NSScreen.main
+        let screen = movementScreen ?? NSScreen.main
         let desired = NSPoint(x: panel.frame.midX - bubble.frame.width / 2, y: panel.frame.maxY + 5)
         bubble.setFrameOrigin(DesktopGeometry.clamp(desired, size: bubble.frame.size,
                                                    to: screen?.visibleFrame ?? panel.frame))
@@ -392,7 +402,7 @@ final class DesktopController {
                 self?.itemTarget = nil
                 if let self, let actor, self.triggerNearbyActivity(actor, now: Date()) { return }
                 if let self, let actor {
-                    let contact = ItemWorld.contactPoint(origin: actor.panel.frame.origin)
+                    let contact = ItemWorld.contactPoint(origin: actor.movementFrame.origin)
                     if hypot(contact.x - self.home.entrance.x, contact.y - self.home.entrance.y) <= 24 {
                         // A deliberate drop at the doorway overrides the automatic-entry cooldown.
                         let now = Date()
@@ -490,10 +500,10 @@ final class DesktopController {
         guard let screen = NSScreen.main ?? NSScreen.screens.first else { return }
         let visible = screen.visibleFrame
         for (index, actor) in actors.enumerated() {
-            let size = actor.panel.frame.size
+            let size = actor.movementFrame.size
             let origin = RoamingMotion.target(in: visible, size: size,
                                               xFraction: 0.08 + CGFloat(index) * 0.84 / CGFloat(max(1, Friend.developmentRoster.count - 1)), yFraction: 0.28)
-            actor.panel.setFrameOrigin(origin)
+            actor.setMovementOrigin(origin)
             actor.armedHoverContact = nil; actor.wasHovered = false
             actor.motion.retarget()
             actor.motion.destination = RoamingMotion.target(in: visible, size: size, xFraction: 0.8, yFraction: 0.72)
@@ -503,10 +513,10 @@ final class DesktopController {
     private func screenLayoutChanged() {
         let frames = NSScreen.screens.map(\.visibleFrame)
         for actor in actors {
-            let current = actor.panel.frame.origin
-            let repaired = DesktopGeometry.repairedOrigin(current, size: actor.panel.frame.size, visibleFrames: frames)
+            let current = actor.movementFrame.origin
+            let repaired = DesktopGeometry.repairedOrigin(current, size: actor.movementFrame.size, visibleFrames: frames)
             if repaired != current {
-                actor.panel.setFrameOrigin(repaired)
+                actor.setMovementOrigin(repaired)
                 actor.motion.retarget()
             }
         }
@@ -548,7 +558,7 @@ final class DesktopController {
         guard actor.friend == .hachiware, actor.dailyPerformance.action(now: now) == nil, !actor.view.isDragging,
               now >= actor.bubbleUntil, homeRoutine.phase == .outside,
               itemWorld.requested == nil || activityWorld.requested != nil else { return false }
-        let contact = ItemWorld.contactPoint(origin: actor.panel.frame.origin)
+        let contact = ItemWorld.contactPoint(origin: actor.movementFrame.origin)
         activityWorld.observe(contact: contact)
         let dragged = Set(desktopActivitySpots.filter { $0.value.view.isDragging }.map(\.key))
         guard let spot = activityWorld.encounter(contact: contact, automatic: state.automaticActivities, now: now, excluding: dragged) else { return false }
@@ -584,8 +594,8 @@ final class DesktopController {
               !actor.view.isDragging, !homeRoutine.isInside,
               desktopItems[item]?.view.isDragging == false,
               DesktopGeometry.hit(point, in: actor.panel.frame),
-              let bounds = actor.panel.screen?.visibleFrame ?? NSScreen.main?.visibleFrame,
-              itemWorld.equip(item, at: actor.panel.frame.origin, bounds: bounds, now: now) else { return false }
+              let bounds = actor.movementScreen?.visibleFrame ?? NSScreen.main?.visibleFrame,
+              itemWorld.equip(item, at: actor.movementFrame.origin, bounds: bounds, now: now) else { return false }
         stopDailyAction()
         if homeRoutine.phase == .returning { wakeFromHome(now: now) }
         itemTarget = nil; actor.motion.retarget()
@@ -601,8 +611,8 @@ final class DesktopController {
         return true
     }
     func dropItem() {
-        guard let actor = hachiwareActor, let bounds = actor.panel.screen?.visibleFrame ?? NSScreen.main?.visibleFrame else { return }
-        let point = ItemWorld.contactPoint(origin: actor.panel.frame.origin)
+        guard let actor = hachiwareActor, let bounds = actor.movementScreen?.visibleFrame ?? NSScreen.main?.visibleFrame else { return }
+        let point = ItemWorld.contactPoint(origin: actor.movementFrame.origin)
         itemWorld.drop(at: NSPoint(x: point.x + 88, y: point.y), bounds: bounds, now: Date())
         actor.performance.cancel(now: Date()); itemWorld.requested = nil; itemTarget = nil
         actor.motion.retarget()
@@ -611,7 +621,7 @@ final class DesktopController {
     }
     @discardableResult
     func pickUpItem(_ item: CompanionItem, for actor: FriendActor, bounds: NSRect, now: Date) -> Bool {
-        guard actor.friend == .hachiware, itemWorld.pickUp(item,from:actor.panel.frame.origin,bounds:bounds,now:now) else { return false }
+        guard actor.friend == .hachiware, itemWorld.pickUp(item,from:actor.movementFrame.origin,bounds:bounds,now:now) else { return false }
         actor.motion.retarget(); itemTarget = nil
         if state.expressive { actor.performance.begin(item,now:now,pickingUp:true) }
         state.itemStatus = "\(item.name)를 주웠어요"
@@ -645,6 +655,7 @@ final class DesktopController {
             actor.view.hachiwareMonster = hachiwareTransformation.isMonster
             actor.view.transformationProgress = hachiwareTransformation.progress(at:time)
             actor.view.monsterOpacity = hachiwareTransformation.monsterOpacity(at:time)
+            actor.setPresentationScale(hachiwareTransformation.scale(at:time))
             if returned || actor.view.transformationProgress < 1 { actor.view.needsDisplay = true }
         }
         // Automatic return changes presentation only: no dialogue, audio,
@@ -685,7 +696,7 @@ final class DesktopController {
     }
     func playDailyAction(_ action: HachiwareAction, at sourceSpot: ActivitySpot? = nil, now: Date = Date()) {
         guard action.isDaily, let actor = hachiwareActor else { return }
-        let contact = ItemWorld.contactPoint(origin: actor.panel.frame.origin)
+        let contact = ItemWorld.contactPoint(origin: actor.movementFrame.origin)
         let spot = sourceSpot ?? activityWorld.nearbySource(for: action, contact: contact)
         if let spot, !activityWorld.hasArrived(at: spot, contact: contact) {
             seekActivitySpot(spot, now: now); return
@@ -740,13 +751,13 @@ final class DesktopController {
         if let actor = hachiwareActor {
             if wasInside {
                 let visible = home.panel.screen?.visibleFrame ?? NSScreen.main?.visibleFrame ?? home.panel.frame
-                actor.panel.setFrameOrigin(DesktopGeometry.clamp(ItemWorld.destination(for: home.entrance),
-                    size: actor.panel.frame.size, to: visible))
+                actor.setMovementOrigin(DesktopGeometry.clamp(ItemWorld.destination(for: home.entrance),
+                    size: actor.movementFrame.size, to: visible))
             }
             actor.motion.retarget(); actor.performance.cancel(now: now)
             // Step away before considering the doorway again. Waking never scatters props.
             if state.isWalking(.hachiware) && wasInside {
-                actor.motion.destination = NSPoint(x: actor.panel.frame.minX - 180, y: actor.panel.frame.minY + 55)
+                actor.motion.destination = NSPoint(x: actor.movementFrame.minX - 180, y: actor.movementFrame.minY + 55)
             }
         }
         itemTarget = nil; publishHome()
@@ -760,7 +771,7 @@ final class DesktopController {
         guard actor.friend == .hachiware, !actor.view.isDragging, now >= actor.bubbleUntil,
               activityWorld.requested == nil,
               actor.dailyPerformance.action(now: now) == nil,
-              homeRoutine.arrive(contact: ItemWorld.contactPoint(origin: actor.panel.frame.origin),
+              homeRoutine.arrive(contact: ItemWorld.contactPoint(origin: actor.movementFrame.origin),
                                  entrance: home.entrance, now: now) else { return false }
         // Only the carried item moves: the other desktop props retain their world coordinates.
         let visible = home.panel.screen?.visibleFrame ?? NSScreen.main?.visibleFrame ?? home.panel.frame
@@ -840,7 +851,7 @@ final class DesktopController {
                                                    dragging: actor.view.isDragging,
                                                    dialogueUntil: actor.bubbleUntil, now: now)
             if activity == .dragging || activity == .speaking { stopDailyAction() }
-            activityWorld.observe(contact: ItemWorld.contactPoint(origin: actor.panel.frame.origin))
+            activityWorld.observe(contact: ItemWorld.contactPoint(origin: actor.movementFrame.origin))
             if activity == .walking || activity == .idle { _ = triggerNearbyActivity(actor, now: now) }
             let dailyAction = actor.dailyPerformance.action(now: now)
             if homeVisible && activity == .walking && itemWorld.requested == nil
@@ -857,8 +868,8 @@ final class DesktopController {
                 actor.performance.begin(item, now: now, pickingUp: false)
             }
             var action = dailyAction ?? (state.expressive ? actor.performance.action(now: now) : nil)
-            if activity == .walking && action == nil, let screen = actor.panel.screen ?? NSScreen.main {
-                let frame = actor.panel.frame
+            if activity == .walking && action == nil, let screen = actor.movementScreen ?? NSScreen.main {
+                let frame = actor.movementFrame
                 let draggedItems = Set(desktopItems.filter { $0.value.view.isDragging }.map(\.key))
                 let followingRoute = homeRoutine.phase == .returning || activityWorld.requested != nil
                 let nearbyItem = followingRoute ? nil : itemWorld.nearbyTarget(from:frame.origin,
@@ -894,15 +905,15 @@ final class DesktopController {
                         ? screen.visibleFrame.union(home.panel.screen?.visibleFrame ?? screen.visibleFrame) : screen.visibleFrame
                     let position = actor.motion.advance(from: frame.origin, dt: dt, bounds: travelBounds, size: frame.size,
                         stoppingDistance: activityWorld.requested == nil ? 5 : ActivitySpotWorld.stoppingDistance)
-                    actor.panel.setFrameOrigin(position)
+                    actor.setMovementOrigin(position)
                 }
                 // AppKit can round or constrain the requested position. Animate only the
                 // displacement actually shown on screen, including its diagonal component.
-                actor.gait.recordMovement(from: frame.origin, to: actor.panel.frame.origin)
+                actor.gait.recordMovement(from:frame.origin,to:actor.movementFrame.origin,artworkScale:actor.presentationScale)
                 _ = enterHomeIfReached(actor, now: now)
                 if triggerNearbyActivity(actor, now: now) { action = actor.dailyPerformance.action(now: now) }
                 if action == nil && !homeRoutine.isInside && !followingRoute,
-                   let nearbyItem = itemWorld.nearbyTarget(from:actor.panel.frame.origin,
+                   let nearbyItem = itemWorld.nearbyTarget(from:actor.movementFrame.origin,
                        automatic:state.automaticItems,now:now,excluding:draggedItems),
                    pickUpItem(nearbyItem,for:actor,bounds:screen.visibleFrame,now:now) {
                     action = state.expressive ? actor.performance.action(now:now) : nil

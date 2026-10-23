@@ -125,6 +125,7 @@ final class AttackOverlay {
             if panel.isVisible { panel.orderOut(nil) }; lastFrame=nil; return
         }
         let body = actor.panel.frame
+        panel.allowsOffscreenExtent=actor.presentationScale>1
         let extent = registration.extent(in: body)
         if panel.frame != extent { panel.setFrame(extent,display: false) }
         let localBody=NSRect(x: body.minX-extent.minX,y: body.minY-extent.minY,width: body.width,height: body.height)

@@ -36,8 +36,8 @@ struct WalkingGait {
 
     var phase: Double { Double(distanceWalked / Self.distancePerCycle) * 2 * .pi }
 
-    mutating func recordMovement(from start: NSPoint, to end: NSPoint) {
-        distanceWalked += hypot(end.x - start.x, end.y - start.y)
+    mutating func recordMovement(from start: NSPoint, to end: NSPoint, artworkScale: CGFloat = 1) {
+        distanceWalked += hypot(end.x - start.x, end.y - start.y)/max(1,artworkScale)
     }
 }
 

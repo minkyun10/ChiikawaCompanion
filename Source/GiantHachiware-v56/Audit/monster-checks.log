@@ -1,0 +1,67 @@
+PASS: monster transform requires five distinct completed clicks
+PASS: the fifth click at the inclusive ten-second boundary transforms and consumes the window
+PASS: monster grows smoothly from one to ten times width and height over the existing crossfade
+PASS: the fifth click starts one thirty-second monster lifetime
+PASS: clicks in monster form neither toggle back nor extend the return deadline
+PASS: automatic return cannot fire before its deadline
+PASS: the inclusive thirty-second deadline returns exactly once and clears pending clicks
+PASS: automatic return uses one bounded 650ms crossfade
+PASS: the return fade begins at the visible monster and ends at normal artwork
+PASS: automatic return smoothly shrinks from ten times to normal size
+PASS: giant geometry preserves the same ground contact on negative-coordinate displays without fitting to screen height
+PASS: ten-times larger feet take one gait cycle per ten-times larger actual stride
+PASS: later ticks never restart a completed return fade
+PASS: a fresh five-click sequence can transform again after automatic return
+PASS: invalid timer timestamps cannot end or corrupt an active transformation
+PASS: a delayed tick starts the return fade when rendering resumes instead of skipping it
+PASS: expired oldest clicks cannot trigger a late transformation
+PASS: five still-valid clicks in the rolling window transform
+PASS: clock reversal starts a new click sequence
+PASS: invalid timestamps never accumulate
+PASS: monster has all eight 24-frame walks, eleven 12-frame actions and sleeping frames
+PASS: packaged monster decodes prebuilt atlases without rig rendering
+PASS: down contains twenty-four chronological, nonduplicate monster walk drawings
+PASS: up contains twenty-four chronological, nonduplicate monster walk drawings
+PASS: left contains twenty-four chronological, nonduplicate monster walk drawings
+PASS: right contains twenty-four chronological, nonduplicate monster walk drawings
+PASS: down-left contains twenty-four chronological, nonduplicate monster walk drawings
+PASS: down-right contains twenty-four chronological, nonduplicate monster walk drawings
+PASS: up-left contains twenty-four chronological, nonduplicate monster walk drawings
+PASS: up-right contains twenty-four chronological, nonduplicate monster walk drawings
+PASS: both monster feet follow the same stance/swing path with an exact half-cycle offset
+PASS: monster sleep includes anchored breathing instead of a static normal-character fallback
+PASS: monster attack retains the walking body scale in every frame
+PASS: the monster spear uses a separate wide viewport
+PASS: every monster action frame contains its own artwork, including camera/guitar/weapon/study/eat/vomit
+PASS: monster body stays a pointer target in walking and attack poses
+PASS: monster fixture starts with Hachiware's existing equipped weapon
+PASS: five actual view mouse-down/up pairs transform despite the shared drag-start callback
+PASS: the fifth click preserves the ground anchor, route and gait before gradual growth begins
+PASS: transformation keeps equipment and independent ground-item coordinates
+PASS: other companions never inherit the monster form
+PASS: completed monster transformation is exactly ten times wider and taller with an unchanged logical footprint
+PASS: visible giant body outside the old small rectangle receives hover at its actual scaled position
+PASS: repeated native growth/shrink updates do not accumulate anchor rounding or size drift
+PASS: native window drag translation moves the logical ground contact by the same distance
+PASS: repositioning a giant preserves the footprint and independent ground props
+PASS: armed hover overlay selects the monster attack instead of the original Hachiware atlas
+PASS: the actual attack overlay receives the same ten-times body size instead of shrinking the giant
+PASS: live dialogue clicks during monster form leave its fixed deadline intact
+PASS: the live controller starts automatic return at the deadline
+PASS: automatic return preserves its ground anchor, gait, route, equipment and ground props while shrinking
+PASS: automatic return preserves the active attack and its animation time
+PASS: automatic return creates no unsolicited bubble or sound and does not alter click dialogue
+PASS: the attack overlay yields to the body crossfade while returning
+OBSERVATION: return midpoint window=(727.0, 826.0), logical=(523.0, 494.0, 132.0, 150.0), anchor=(523.0, 494.0, 132.0, 150.0)
+PASS: the live return reaches the midpoint scale within native pixel rounding without moving its ground anchor
+PASS: the return blend restores normal physical size at the same ground anchor
+PASS: the existing attack resumes with normal artwork at the same body scale after the fade
+PASS: clicking another character breaks the consecutive Hachiware sequence
+PASS: dragging Hachiware breaks the five-click sequence
+PASS: the single shared house retains the monster identity and appearance during sleep
+PASS: the real tick returns a sleeping monster without waking it or moving its home
+PASS: sleeping artwork shares the same continuous 650ms return blend
+PASS: the sleeping return reaches normal Hachiware without a residual monster frame
+PASS: walking continues through automatic return with only normal continuous displacement
+PASS: the return clock also advances while Hachiware is hidden
+65 monster checks passed.
