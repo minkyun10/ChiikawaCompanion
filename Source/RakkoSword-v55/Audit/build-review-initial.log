@@ -1,0 +1,20 @@
+[0/1] Planning build
+Building for production...
+[0/4] Write sources
+[1/4] Write swift-version--1AB21518FC5DEDBE.txt
+[3/5] Compiling ChiikawaCompanion ActivitySpotChecks.swift
+/Users/minkyun_park/Documents/ChiikawaCompanion/Sources/ChiikawaCompanion/RakkoSwordChecks.swift:57:87: error: 'offsetBy' is inaccessible due to 'fileprivate' protection level
+55 |               "the real sword drag callback equips Rakko immediately even with automatic pickup disabled")
+56 |         let parfait=RosterProp(owner:.rakko,kind:.keepsake), parfaitPosition=rakko.world.ground[parfait]
+57 |         actor.view.onDragStart?();actor.panel.setFrameOrigin(actor.panel.frame.origin.offsetBy(dx:42,dy:30));actor.view.onDragEnd?()
+   |                                                                                       `- error: 'offsetBy' is inaccessible due to 'fileprivate' protection level
+58 |         check(rakko.world.equipped == prop && rakko.world.ground[parfait] == parfaitPosition,
+59 |               "dragging an armed Rakko moves only Rakko and preserves the independent parfait coordinates")
+
+/Users/minkyun_park/Documents/ChiikawaCompanion/Sources/ChiikawaCompanion/ContinuousRoamingChecks.swift:137:10: note: 'offsetBy(dx:dy:)' declared here
+135 |
+136 | private extension NSPoint {
+137 |     func offsetBy(dx: CGFloat, dy: CGFloat) -> NSPoint { NSPoint(x: x + dx, y: y + dy) }
+    |          `- note: 'offsetBy(dx:dy:)' declared here
+138 | }
+139 |

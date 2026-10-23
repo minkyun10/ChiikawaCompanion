@@ -1,0 +1,233 @@
+{
+  "verified": "2026-10-23",
+  "space": "Original 256-point canvas; x coordinates in attack atlas include the fixed 120-point viewport offset. Bounds include pixels above native y=150.",
+  "standingUpperAlpha": [
+    43,
+    212,
+    20
+  ],
+  "standingWarmFur": [
+    47,
+    207,
+    23
+  ],
+  "attacks": [
+    {
+      "frame": 1,
+      "upperAlpha": [
+        163,
+        332,
+        20
+      ],
+      "warmFur": [
+        167,
+        327,
+        23
+      ],
+      "warmFurRemovingViewportOffset": [
+        47,
+        207,
+        23
+      ]
+    },
+    {
+      "frame": 2,
+      "upperAlpha": [
+        163,
+        332,
+        20
+      ],
+      "warmFur": [
+        167,
+        327,
+        23
+      ],
+      "warmFurRemovingViewportOffset": [
+        47,
+        207,
+        23
+      ]
+    },
+    {
+      "frame": 3,
+      "upperAlpha": [
+        163,
+        332,
+        20
+      ],
+      "warmFur": [
+        167,
+        327,
+        23
+      ],
+      "warmFurRemovingViewportOffset": [
+        47,
+        207,
+        23
+      ]
+    },
+    {
+      "frame": 4,
+      "upperAlpha": [
+        163,
+        332,
+        20
+      ],
+      "warmFur": [
+        167,
+        327,
+        23
+      ],
+      "warmFurRemovingViewportOffset": [
+        47,
+        207,
+        23
+      ]
+    },
+    {
+      "frame": 5,
+      "upperAlpha": [
+        163,
+        332,
+        20
+      ],
+      "warmFur": [
+        167,
+        327,
+        23
+      ],
+      "warmFurRemovingViewportOffset": [
+        47,
+        207,
+        23
+      ]
+    },
+    {
+      "frame": 6,
+      "upperAlpha": [
+        163,
+        332,
+        20
+      ],
+      "warmFur": [
+        167,
+        327,
+        23
+      ],
+      "warmFurRemovingViewportOffset": [
+        47,
+        207,
+        23
+      ]
+    },
+    {
+      "frame": 7,
+      "upperAlpha": [
+        163,
+        332,
+        20
+      ],
+      "warmFur": [
+        167,
+        327,
+        23
+      ],
+      "warmFurRemovingViewportOffset": [
+        47,
+        207,
+        23
+      ]
+    },
+    {
+      "frame": 8,
+      "upperAlpha": [
+        68,
+        332,
+        20
+      ],
+      "warmFur": [
+        167,
+        327,
+        23
+      ],
+      "warmFurRemovingViewportOffset": [
+        47,
+        207,
+        23
+      ]
+    },
+    {
+      "frame": 9,
+      "upperAlpha": [
+        94,
+        332,
+        20
+      ],
+      "warmFur": [
+        167,
+        327,
+        23
+      ],
+      "warmFurRemovingViewportOffset": [
+        47,
+        207,
+        23
+      ]
+    },
+    {
+      "frame": 10,
+      "upperAlpha": [
+        108,
+        332,
+        20
+      ],
+      "warmFur": [
+        168,
+        327,
+        23
+      ],
+      "warmFurRemovingViewportOffset": [
+        48,
+        207,
+        23
+      ]
+    },
+    {
+      "frame": 11,
+      "upperAlpha": [
+        104,
+        332,
+        20
+      ],
+      "warmFur": [
+        167,
+        327,
+        23
+      ],
+      "warmFurRemovingViewportOffset": [
+        47,
+        207,
+        23
+      ]
+    },
+    {
+      "frame": 12,
+      "upperAlpha": [
+        86,
+        332,
+        20
+      ],
+      "warmFur": [
+        167,
+        327,
+        23
+      ],
+      "warmFurRemovingViewportOffset": [
+        47,
+        207,
+        23
+      ]
+    }
+  ],
+  "finding": "Upper alpha includes the raised blade in frames 8-12. Warm-fur width, center and crown remain the same within one source pixel. Final native acceptance separately measures registered, downscaled drawings with a two-desktop-pixel limit."
+}

@@ -87,7 +87,7 @@ final class ArmedPointerArtwork {
                     walkPhase: (Double(index) + 0.25) / Double(count) * 2 * .pi, pose: pose,
                     equipped: friend == .hachiware && armed ? .sasumata : nil,
                     chiikawaItem: friend == .chiikawa ? .pinkSasumata : nil,
-                    rosterVisual: friend == .usagi ? RosterVisual(equipped: .weapon) : nil,
+                    rosterVisual: friend.isExpansion && friend.canUseWeapon && armed ? RosterVisual(equipped: .weapon) : nil,
                     hachiwareMonster:monster)
             }
         }

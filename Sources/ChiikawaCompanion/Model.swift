@@ -145,8 +145,16 @@ final class AppState: ObservableObject {
     init(defaults: UserDefaults = .standard) {
         self.defaults = defaults
         let decodedRosterOptions = defaults.data(forKey: "rosterOptionsV38").flatMap { try? JSONDecoder().decode([Friend: RosterOptions].self, from: $0) } ?? [:]
-        let restoredRosterOptions = decodedRosterOptions.reduce(into: [Friend: RosterOptions]()) {
+        var restoredRosterOptions = decodedRosterOptions.reduce(into: [Friend: RosterOptions]()) {
             $0[$1.key] = $1.value.normalized(for: $1.key)
+        }
+        if !defaults.bool(forKey: "rakkoSwordV55Installed") {
+            // Extend an enabled inventory once; retain an explicitly disabled
+            // master switch and every existing rest/audio/visibility choice.
+            if var options = restoredRosterOptions[.rakko], !options.items.isEmpty {
+                options.items.insert(.weapon); restoredRosterOptions[.rakko] = options
+            }
+            defaults.set(true, forKey: "rakkoSwordV55Installed")
         }
         rosterOptions = restoredRosterOptions
         if let data = try? JSONEncoder().encode(restoredRosterOptions) {

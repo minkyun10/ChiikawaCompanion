@@ -1,0 +1,9 @@
+[0/1] Planning build
+Building for production...
+[0/2] Write swift-version--1AB21518FC5DEDBE.txt
+Build complete! (0.18s)
+Artwork rendered.
+Monster: 8 × 24 walk frames, 11 × 12 actions, 12 sleep frames and review animations exported.
+Native roster sheets and cycle previews exported.
+/Users/minkyun_park/Documents/ChiikawaCompanion/build/ChiikawaCompanion.app: replacing existing signature
+Built: /Users/minkyun_park/Documents/ChiikawaCompanion/build/ChiikawaCompanion.app

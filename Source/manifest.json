@@ -1,10 +1,10 @@
 {
   "created_at": "2026-10-16T12:08:58.617148+00:00",
   "operation": "copy; originals preserved",
-  "image_file_count": 3932,
-  "unique_image_content_count": 2069,
-  "supporting_file_count": 863,
-  "image_bytes": 1262710547,
+  "image_file_count": 3945,
+  "unique_image_content_count": 2079,
+  "supporting_file_count": 881,
+  "image_bytes": 1264701728,
   "symmetric_walk_runtime_applied": true,
   "files": [
     {
@@ -26294,6 +26294,13 @@
     },
     {
       "kind": "image",
+      "source": "build/ChiikawaCompanion.app/Contents/Resources/Roster/rakko/attack-12.png",
+      "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Roster/rakko/attack-12.png",
+      "bytes": 269534,
+      "sha256": "c0f8976d00bf6ace03a639c1fe166411eb0d3775eaaab298bdc41bcb601602e0"
+    },
+    {
+      "kind": "image",
       "source": "build/ChiikawaCompanion.app/Contents/Resources/Roster/rakko/down-24.png",
       "archive_path": "Project/build/ChiikawaCompanion.app/Contents/Resources/Roster/rakko/down-24.png",
       "bytes": 893102,
@@ -28578,8 +28585,15 @@
       "kind": "image",
       "source": "build/roster/rakko/actions-preview.png",
       "archive_path": "Project/build/roster/rakko/actions-preview.png",
-      "bytes": 266423,
-      "sha256": "1e6fd9095439c7653cceb2d055287ceaf4c7562c405eb099ce5da525ca0163b8"
+      "bytes": 316933,
+      "sha256": "939a9e0abd01fcfaaa19a0c9cb2fab24ec2af41a49aa13bc191361b0e96cf576"
+    },
+    {
+      "kind": "image",
+      "source": "build/roster/rakko/attack-12.png",
+      "archive_path": "Project/build/roster/rakko/attack-12.png",
+      "bytes": 269534,
+      "sha256": "c0f8976d00bf6ace03a639c1fe166411eb0d3775eaaab298bdc41bcb601602e0"
     },
     {
       "kind": "image",
@@ -29019,8 +29033,204 @@
       "kind": "supporting",
       "source": "Source/README.txt",
       "archive_path": "README.txt",
-      "bytes": 12698,
-      "sha256": "9964ebf0b4550f6bb052d1f7c060c016f57cb4184b18de860a3efb7a453384d7"
+      "bytes": 13262,
+      "sha256": "680e4327b1c42b77e45580c239f423ecbbec024ee29e859543c192342cd00639"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/RakkoSword-v55/Audit/atlas-identity.json",
+      "archive_path": "RakkoSword-v55/Audit/atlas-identity.json",
+      "bytes": 316,
+      "sha256": "f36e8e2fdaa021be4625cc1f4a92b2128fcdf6f92210257320f25ad515413161"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/RakkoSword-v55/Audit/before-runtime-resources.json",
+      "archive_path": "RakkoSword-v55/Audit/before-runtime-resources.json",
+      "bytes": 23477,
+      "sha256": "96ec0f019dabbba62d6c44146a6a9aa817a2cf643e5f9c58a153627d8e854f36"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/RakkoSword-v55/Audit/build-app.log",
+      "archive_path": "RakkoSword-v55/Audit/build-app.log",
+      "bytes": 473,
+      "sha256": "cf2eae354ed59f56b3ee08fe39a27076c8951335d5804ef240b1dab6026c6d75"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/RakkoSword-v55/Audit/build-check-fix.log",
+      "archive_path": "RakkoSword-v55/Audit/build-check-fix.log",
+      "bytes": 323,
+      "sha256": "4c474d5c6211f0ce85f41f2d3cc04f708c20b972c5d33440a8a36ff812239cb2"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/RakkoSword-v55/Audit/build-cli.log",
+      "archive_path": "RakkoSword-v55/Audit/build-cli.log",
+      "bytes": 265,
+      "sha256": "d37dee3d6bdb21fe3642e804bcb603da6f9d355ecd30157105c75578f3a1bf70"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/RakkoSword-v55/Audit/build-owner-fixture.log",
+      "archive_path": "RakkoSword-v55/Audit/build-owner-fixture.log",
+      "bytes": 323,
+      "sha256": "c5e1ed56754de9a644417a8e3b91e2891a05003dbdec70d46035a5b5c0e6cccc"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/RakkoSword-v55/Audit/build-review-initial.log",
+      "archive_path": "RakkoSword-v55/Audit/build-review-initial.log",
+      "bytes": 1447,
+      "sha256": "5db820f50c3a8cc4e07b7393f8153bc11fed52c6e0846be3949c9ae4d0f7862a"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/RakkoSword-v55/Audit/build-review.log",
+      "archive_path": "RakkoSword-v55/Audit/build-review.log",
+      "bytes": 345,
+      "sha256": "a467c79813cf0eab25e28e9b88b6faa9b941b9df722c943549d53b883eb40504"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/RakkoSword-v55/Audit/codesign-verification.txt",
+      "archive_path": "RakkoSword-v55/Audit/codesign-verification.txt",
+      "bytes": 122,
+      "sha256": "f6a713ececa13529f70085d57e5950daaa20cda8a76de813b4ee6a837a1052e2"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/RakkoSword-v55/Audit/head-measurement.json",
+      "archive_path": "RakkoSword-v55/Audit/head-measurement.json",
+      "bytes": 3555,
+      "sha256": "def55ce3258884d10f475b5744d7fe778b24be5e9ea933de8d6e0690a105cc48"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/RakkoSword-v55/Audit/packaged-self-test-initial.log",
+      "archive_path": "RakkoSword-v55/Audit/packaged-self-test-initial.log",
+      "bytes": 57286,
+      "sha256": "6510869fbd8a217d70ac57fe956f10dced497854f1286f8451e493c340243231"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/RakkoSword-v55/Audit/packaged-self-test-owner-fixture.log",
+      "archive_path": "RakkoSword-v55/Audit/packaged-self-test-owner-fixture.log",
+      "bytes": 64052,
+      "sha256": "51fe63659a60266fa4ac5e9733cb7ba7c29f9a67919b79ecdf9876f8088bc56b"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/RakkoSword-v55/Audit/packaged-self-test.log",
+      "archive_path": "RakkoSword-v55/Audit/packaged-self-test.log",
+      "bytes": 74322,
+      "sha256": "e6029dd70290b9da8506e8f4b9b1705dc43c687974458b5fa653ceeedec770d6"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/RakkoSword-v55/Audit/resource-preservation.json",
+      "archive_path": "RakkoSword-v55/Audit/resource-preservation.json",
+      "bytes": 193,
+      "sha256": "573a5acc394371bab261b92b2745f8008783b0e542bab69c95c8897768b6760f"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/RakkoSword-v55/Audit/verification.json",
+      "archive_path": "RakkoSword-v55/Audit/verification.json",
+      "bytes": 2557,
+      "sha256": "2f19715ca5cbe661c9c7510d7d38dda7cd1574827a705eb4c417b235db51ac26"
+    },
+    {
+      "kind": "image",
+      "source": "Source/RakkoSword-v55/Final/attack-12.png",
+      "archive_path": "RakkoSword-v55/Final/attack-12.png",
+      "bytes": 269534,
+      "sha256": "c0f8976d00bf6ace03a639c1fe166411eb0d3775eaaab298bdc41bcb601602e0"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/RakkoSword-v55/README.txt",
+      "archive_path": "RakkoSword-v55/README.txt",
+      "bytes": 3824,
+      "sha256": "f447ed7b5c2acdc61e0a6764e0a5982e9761fa9a1ed8763b4286b4e25d6f109a"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/RakkoSword-v55/RakkoSword.swift",
+      "archive_path": "RakkoSword-v55/RakkoSword.swift",
+      "bytes": 5652,
+      "sha256": "35caadaa5df0381fc11621ff3c3bdb3d3867c394f4fd256f766e9241d4c00c03"
+    },
+    {
+      "kind": "image",
+      "source": "Source/RakkoSword-v55/References/rakko-sheathed-front.jpeg",
+      "archive_path": "RakkoSword-v55/References/rakko-sheathed-front.jpeg",
+      "bytes": 6573,
+      "sha256": "321144b8fdeec35a722bf7e7e748570f2aa15970db033e08496bdf808a333a2f"
+    },
+    {
+      "kind": "image",
+      "source": "Source/RakkoSword-v55/References/rakko-sword-details.webp",
+      "archive_path": "RakkoSword-v55/References/rakko-sword-details.webp",
+      "bytes": 23076,
+      "sha256": "23fe51cc41d4ca0f686ac72fd25ddbb40023460c591e704f7478cd92647872cc"
+    },
+    {
+      "kind": "image",
+      "source": "Source/RakkoSword-v55/References/rakko-sword-over-shoulder.jpeg",
+      "archive_path": "RakkoSword-v55/References/rakko-sword-over-shoulder.jpeg",
+      "bytes": 11178,
+      "sha256": "af17a71c0072ec30f8e72fe20e7057e4702b2eb507a01df6a53c8ead1c35d980"
+    },
+    {
+      "kind": "image",
+      "source": "Source/RakkoSword-v55/Review/armed-eight-directions.png",
+      "archive_path": "RakkoSword-v55/Review/armed-eight-directions.png",
+      "bytes": 417961,
+      "sha256": "e664927430181de12ae0ea85c9d6a47d20cf58621ea7dd139964bc0d7fa1df16"
+    },
+    {
+      "kind": "image",
+      "source": "Source/RakkoSword-v55/Review/attack-12.png",
+      "archive_path": "RakkoSword-v55/Review/attack-12.png",
+      "bytes": 269534,
+      "sha256": "c0f8976d00bf6ace03a639c1fe166411eb0d3775eaaab298bdc41bcb601602e0"
+    },
+    {
+      "kind": "image",
+      "source": "Source/RakkoSword-v55/Review/attack-preview.png",
+      "archive_path": "RakkoSword-v55/Review/attack-preview.png",
+      "bytes": 69582,
+      "sha256": "45d34506e3e8d78b524656e15c3d181daeb2832472624c588203d9140631f8d1"
+    },
+    {
+      "kind": "image",
+      "source": "Source/RakkoSword-v55/Review/attack.gif",
+      "archive_path": "RakkoSword-v55/Review/attack.gif",
+      "bytes": 48090,
+      "sha256": "bd5dd638702d91b8fc80d9930b8c73adfbadde4f007331456d7cf000cd69945d"
+    },
+    {
+      "kind": "image",
+      "source": "Source/RakkoSword-v55/Review/sheathed-item.png",
+      "archive_path": "RakkoSword-v55/Review/sheathed-item.png",
+      "bytes": 4476,
+      "sha256": "30bd0645fc1425b5ddd83791f699901292f4d5b39b832073859fc766ba5297a2"
+    },
+    {
+      "kind": "image",
+      "source": "Source/RakkoSword-v55/Review/sword-details.png",
+      "archive_path": "RakkoSword-v55/Review/sword-details.png",
+      "bytes": 15176,
+      "sha256": "43d222c545e97f35d0c18d968f8f14ccfb54923979483599599773a850f2747c"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/RakkoSword-v55/references.json",
+      "archive_path": "RakkoSword-v55/references.json",
+      "bytes": 999,
+      "sha256": "ca3088613ea1b75d3cad907aced57a69277b73d084c19e09817359da1c94ed63"
     },
     {
       "kind": "supporting",
@@ -32069,6 +32279,13 @@
     },
     {
       "kind": "image",
+      "source": "Source/Versions/1e6fd9095439c765/build/roster/rakko/actions-preview.png",
+      "archive_path": "Versions/1e6fd9095439c765/build/roster/rakko/actions-preview.png",
+      "bytes": 266423,
+      "sha256": "1e6fd9095439c7653cceb2d055287ceaf4c7562c405eb099ce5da525ca0163b8"
+    },
+    {
+      "kind": "image",
       "source": "Source/Versions/1ecc13bdbe93e61f/build/ChiikawaCompanion.app/Contents/Resources/Roster/usagi/laugh-12.png",
       "archive_path": "Versions/1ecc13bdbe93e61f/build/ChiikawaCompanion.app/Contents/Resources/Roster/usagi/laugh-12.png",
       "bytes": 195551,
@@ -33573,8 +33790,8 @@
       "sha256": "8a42caa40e469a5ee00fa2b860d14756cc1fd73bc8fcf73332c50b87a92c9c3b"
     }
   ],
-  "updated_at": "2026-10-23T06:32:40.609735+00:00",
-  "latest_applied": "Source/MonsterAutoReturn-v54",
+  "updated_at": "2026-10-23T07:36:33.260450+00:00",
+  "latest_applied": "Source/RakkoSword-v55",
   "applied_directions": [
     "down-left",
     "down-right"

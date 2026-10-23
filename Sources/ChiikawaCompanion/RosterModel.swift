@@ -2,7 +2,7 @@ import AppKit
 
 extension Friend {
     static let expansionOrder: [Friend] = [.usagi, .kurimanju, .momonga, .rakko, .shisa, .kani]
-    var isNewSingleItemFriend: Bool { self == .rakko || self == .shisa || self == .kani }
+    var usesNewFriendRig: Bool { self == .rakko || self == .shisa || self == .kani }
     var keepsakeActionTitle: String {
         switch self {
         case .rakko: return "파르페 먹기"
@@ -12,7 +12,7 @@ extension Friend {
         }
     }
     var isExpansion: Bool { Self.expansionOrder.contains(self) }
-    var canUseWeapon: Bool { self == .hachiware || self == .chiikawa || self == .usagi }
+    var canUseWeapon: Bool { self == .hachiware || self == .chiikawa || self == .usagi || self == .rakko }
     var canvasSize: NSSize { self == .usagi ? NSSize(width: 256, height: 360) : NSSize(width: 256, height: 256) }
     var actorSize: NSSize { self == .usagi ? NSSize(width: 132, height: 210) : NSSize(width: 132, height: 150) }
     var voiceActor: String {
@@ -36,13 +36,13 @@ enum RosterItemKind: String, CaseIterable, Codable, Identifiable {
     case weapon, keepsake
     static func available(for friend: Friend) -> [Self] {
         guard friend.isExpansion else { return [] }
-        return friend == .usagi ? [.weapon, .keepsake] : [.keepsake]
+        return friend.canUseWeapon ? [.weapon, .keepsake] : [.keepsake]
     }
     var id: String { rawValue }
     var symbol: String { self == .weapon ? "sparkles" : "star" }
     func name(for friend: Friend) -> String {
         switch self {
-        case .weapon: return "노란 토벌봉"
+        case .weapon: return friend == .rakko ? "검과 칼집" : "노란 토벌봉"
         case .keepsake:
             switch friend {
             case .usagi: return "푸딩"

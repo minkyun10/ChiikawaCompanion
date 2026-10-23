@@ -1,0 +1,31 @@
+{
+  "collected": "2026-10-23",
+  "items": [
+    {
+      "file": "References/rakko-sheathed-front.jpeg",
+      "sha256": "321144b8fdeec35a722bf7e7e748570f2aa15970db033e08496bdf808a333a2f",
+      "bytes": 6573,
+      "origin": "User-supplied reference attachment, 2026-10-23"
+    },
+    {
+      "file": "References/rakko-sword-details.webp",
+      "sha256": "23fe51cc41d4ca0f686ac72fd25ddbb40023460c591e704f7478cd92647872cc",
+      "bytes": 23076,
+      "origin": "User-supplied reference attachment, 2026-10-23"
+    },
+    {
+      "file": "References/rakko-sword-over-shoulder.jpeg",
+      "sha256": "af17a71c0072ec30f8e72fe20e7057e4702b2eb507a01df6a53c8ead1c35d980",
+      "bytes": 11178,
+      "origin": "User-supplied reference attachment, 2026-10-23"
+    }
+  ],
+  "designDetails": [
+    "brown tapered scabbard",
+    "cream wrapped grip",
+    "white cross guard and pommel",
+    "broad silver blade with faceted tip",
+    "small blade engraving",
+    "sheathed over shoulder while walking"
+  ]
+}

@@ -8,7 +8,7 @@ extension SelfTest {
             check(RecordingCatalog.resourceURL(file: "absent-optional-voice.json") == nil,
                   "packaged missing voice stays absent without searching the development checkout")
         }
-        for friend in Friend.expansionOrder.filter(\.isNewSingleItemFriend) {
+        for friend in Friend.expansionOrder.filter(\.usesNewFriendRig) {
         guard let rig = RosterSprites.shared(friend).rig, let face = rig.newFace else {
             check(false, "New friend loads its registered body and facial rig"); continue
         }
@@ -33,7 +33,7 @@ extension SelfTest {
             }
             check(unchangedOutsideFace && silhouetteUnchanged,
                   "\(friend.name) \(action.rawValue): ears, brow arches, cheeks and body pixels stay identical across facial changes")
-            if [.laugh, .surprised, .sleep, .wake].contains(action) {
+            if [.laugh, .surprised, .sleep, .wake].contains(action) || (friend == .rakko && action == .attack) {
                 check(faceDiffers, "\(friend.name) \(action.rawValue): the facial region visibly changes on the fixed body")
             }
         }

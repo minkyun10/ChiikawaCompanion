@@ -10,7 +10,7 @@ final class NewFriendFace {
     let ink = NSColor(hex: 0x51342B)
 
     init?(friend: Friend, body: NSImage) {
-        guard friend.isNewSingleItemFriend, let data = body.tiffRepresentation,
+        guard friend.usesNewFriendRig, let data = body.tiffRepresentation,
               let source = NSBitmapImageRep(data: data) else { return nil }
         self.friend = friend; self.source = source
         switch friend {
@@ -48,6 +48,22 @@ final class NewFriendFace {
                height:area.height/CGFloat(source.pixelsHigh)*body.height)
     }
     func draw(_ action: RosterAction, phase: Double, in body: NSRect) {
+        if friend == .rakko && action == .attack {
+            // A focused, level gaze suits Rakko. Keep the small closed mouth,
+            // star scar, cheeks and cape exactly as in the approved body.
+            for index in 1...2 {
+                let rect = destination(areas[index],in:body)
+                patches[index].draw(in:rect)
+                let eye = NSBezierPath(ovalIn:NSRect(x:rect.minX+3,y:rect.midY-5,width:rect.width-6,height:9))
+                ink.setFill(); eye.fill()
+                NSColor(hex:0xFFFBEB).setFill()
+                NSBezierPath(ovalIn:NSRect(x:rect.midX-3,y:rect.midY,width:7,height:2.7)).fill()
+                let brow = NSBezierPath(); brow.move(to:NSPoint(x:rect.minX+3,y:rect.maxY-2+(index == 1 ? 1:0)))
+                brow.line(to:NSPoint(x:rect.maxX-3,y:rect.maxY-2+(index == 1 ? 0:1)))
+                brow.lineWidth=1.8; brow.lineCapStyle = .round; ink.setStroke(); brow.stroke()
+            }
+            return
+        }
         guard [.laugh,.surprised,.sleep,.wake,.keepsake].contains(action) else { return }
         let blink = action == .sleep || (action == .wake && phase < 0.25)
             || (action == .keepsake && phase > 0.78 && phase < 0.93)

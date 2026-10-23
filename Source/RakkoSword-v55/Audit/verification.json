@@ -1,0 +1,52 @@
+{
+  "verified": "2026-10-23",
+  "version": "0.26.0",
+  "build": 54,
+  "packagedChecks": 937,
+  "runtimeApplied": true,
+  "launchedUpdatedApp": true,
+  "codeSignatureVerified": true,
+  "existingRuntimeImagesUnchanged": 233,
+  "newRuntimeImages": [
+    "Roster/rakko/attack-12.png"
+  ],
+  "reviewAndPackagedAtlasPixelsIdentical": true,
+  "providedReferencesArchived": 3,
+  "newImagegenOriginals": 0,
+  "artworkMethod": "Existing approved raster body and native rig; new reference-based native sword/scabbard line art. Only the registered eye regions change for the attack.",
+  "runtimePolicy": "One owned sword and one parfait; the existing master item switch controls both. Disabled item settings stay disabled; existing enabled inventories gain the sword once.",
+  "coverage": [
+    "12 distinct attack frames",
+    "actual registered head size, center and crown",
+    "eight armed walking directions",
+    "ground sword seek and real drag-end callback",
+    "owner-specific handover",
+    "item swapping and independent coordinates",
+    "stable six-second hover over the extended weapon",
+    "attack-only hover without walking-frame mixing",
+    "one-display-update release",
+    "no automatic voice playback",
+    "shared-house equipment drop and sleep",
+    "fresh/legacy/off/hidden preference migration",
+    "item switch off/on and no duplicate props"
+  ],
+  "manualReview": {
+    "nativeArtwork": "All eight carried directions, twelve attack frames, scabbard and blade detail viewed.",
+    "settings": "CUA verified all eight companions remain on; Rakko retains the two existing options, item switch on and unverified voice disabled. Settings window closed afterward.",
+    "desktopPointer": "Validated by native AppKit/WindowServer automated tests. No claim of an additional CUA physical-pointer drag/hover check."
+  },
+  "auditHistory": [
+    {
+      "file": "build-review-initial.log",
+      "finding": "A test-only NSPoint helper was fileprivate in another file. The fixture now constructs its point directly."
+    },
+    {
+      "file": "packaged-self-test-initial.log",
+      "finding": "The upper alpha bounding box counted the raised blade as head width. Final acceptance measures the actual rendered warm head region; native measurements retained the same crown and width within one source pixel."
+    },
+    {
+      "file": "packaged-self-test-owner-fixture.log",
+      "finding": "Two autonomously walking fixture actors overlapped at a wrong-owner drop point. The fixture now separates recipients before checking rejection."
+    }
+  ]
+}

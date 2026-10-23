@@ -36,7 +36,7 @@ final class RosterNativeRig {
         }
         self.rightBodies=rightBodies
         var expressions: [RosterAction: NSImage] = [:]
-        for action in [RosterAction.laugh,.attack,.surprised,.sleep] where friend != .usagi && !friend.isNewSingleItemFriend && RosterAction.available(for: friend).contains(action) {
+        for action in [RosterAction.laugh,.attack,.surprised,.sleep] where friend != .usagi && !friend.usesNewFriendRig && RosterAction.available(for: friend).contains(action) {
             if let image = HachiwareSprites.assetURL(named: "\(friend.rawValue)-expression-\(action.rawValue)-v38").flatMap(NSImage.init(contentsOf:)) { expressions[action] = image }
         }
         self.tail = friend == .momonga ? load("tail") : nil
@@ -184,7 +184,7 @@ final class RosterNativeRig {
             context.restoreGState()
             let swing = CGFloat(cos(2 * .pi*phase))*0.10
             let near = root(pose,y: y,right: false), far = root(pose,y: y,right: true)
-            if pose != .backDiagonal && !(friend.isNewSingleItemFriend && pose == .side) { paw(root: far,rotation: -swing,right: true) }
+            if pose != .backDiagonal && !(friend.usesNewFriendRig && pose == .side) { paw(root: far,rotation: -swing,right: true) }
             paw(root: near,rotation: swing,right: false)
         }
     }
@@ -227,10 +227,15 @@ final class RosterNativeRig {
             }
             let y: CGFloat = 44+(action == .pickup ? -8*CGFloat(sin(.pi*phase)) : action == .wake ? 4*CGFloat(sin(.pi*phase)) : 0)
             for x: CGFloat in [113,143] { drawFoot(x:x,y:37) }
+            if friend == .rakko && action == .attack {
+                context.saveGState(); context.translateBy(x:201,y:144); context.rotate(by:-0.16)
+                RakkoSwordArtwork.sheathed(in:NSRect(x:-14,y:-108,width:28,height:132),swordInside:false)
+                context.restoreGState()
+            }
             drawBody(action,y:y,phase:phase)
             let left = root(.front,y: y,right: false), right = root(.front,y: y,right: true)
             let wave = CGFloat(sin(2 * .pi*phase))
-            if friend.isNewSingleItemFriend {
+            if friend.usesNewFriendRig {
                 drawNewFriendGesture(action,left:left,right:right,wave:wave,phase:phase)
                 return
             }
@@ -271,6 +276,10 @@ final class RosterNativeRig {
 
     private func drawNewFriendGesture(_ action: RosterAction, left: NSPoint, right: NSPoint,
                                       wave: CGFloat, phase: Double) {
+        if friend == .rakko && action == .attack {
+            rakkoSwordGesture(left:left,right:right,phase:phase)
+            return
+        }
         guard action == .keepsake else {
             let lift: CGFloat = action == .wave ? 1.5 : action == .laugh || action == .wake ? 0.9 : 0.2
             paw(root:left,rotation:-lift+wave*0.18,right:false)
@@ -486,6 +495,12 @@ enum RosterArtwork {
         guard let frame=sprites.walks[direction]?[index] else {return}
         let behind=shown == .back || shown == .backDiagonal
         let paintPhase=walking ? Double(index)/24*2 * .pi : 0
+        if visual.equipped == .weapon && friend == .rakko {
+            RakkoSwordArtwork.carried(pose:shown,facing:facing,phase:paintPhase,destination:destination,scale:scale,foreground:false)
+            frame.draw(in:destination)
+            RakkoSwordArtwork.carried(pose:shown,facing:facing,phase:paintPhase,destination:destination,scale:scale,foreground:true)
+            return
+        }
         if let kind=visual.equipped,behind {drawEquipment(kind,friend:friend,destination:destination,scale:scale,facing:facing,pose:shown,phase:paintPhase)}
         frame.draw(in:destination)
         if let kind=visual.equipped,!behind {drawEquipment(kind,friend:friend,destination:destination,scale:scale,facing:facing,pose:shown,phase:paintPhase)}
@@ -494,7 +509,7 @@ enum RosterArtwork {
 
 enum RosterItemArtwork {
     private static let generatedItems: [Friend: NSImage] = Dictionary(uniqueKeysWithValues:
-        Friend.expansionOrder.filter(\.isNewSingleItemFriend).compactMap { friend in
+        Friend.expansionOrder.filter(\.usesNewFriendRig).compactMap { friend in
             HachiwareSprites.assetURL(named:"\(friend.rawValue)-rig-item-v38").flatMap(NSImage.init(contentsOf:)).map { (friend,$0) }
         })
     static func flower(in rect: NSRect) {
@@ -540,6 +555,10 @@ enum RosterItemArtwork {
     }
     static func draw(_ kind:RosterItemKind,friend:Friend,in rect:NSRect) {
         guard RosterItemKind.available(for: friend).contains(kind) else { return }
+        if kind == .weapon && friend == .rakko {
+            RakkoSwordArtwork.sheathed(in:HomeArtwork.fitted(NSSize(width:40,height:160),in:rect))
+            return
+        }
         if kind == .keepsake, let image=generatedItems[friend] {
             let scale=min(rect.width/image.size.width,rect.height/image.size.height)
             image.draw(in:NSRect(x:rect.midX-image.size.width*scale/2,y:rect.midY-image.size.height*scale/2,width:image.size.width*scale,height:image.size.height*scale))

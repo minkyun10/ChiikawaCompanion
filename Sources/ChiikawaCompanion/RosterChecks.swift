@@ -17,7 +17,7 @@ extension SelfTest {
         let migrated = AppState(defaults: migrationDefaults)
         for friend in Friend.expansionOrder {
             let options = migrated.options(for: friend)
-            let expected: Set<RosterItemKind> = friend == .usagi ? [.weapon] : []
+            let expected: Set<RosterItemKind> = friend.canUseWeapon ? [.weapon] : []
             check(options.items == expected && !options.automaticItems && !options.automaticRest && !options.voice,
                   "\(friend.name): old item and activity settings migrate without resetting retained preferences")
             migrated.updateOptions(friend) { $0.items.insert(.weapon) }
@@ -31,9 +31,9 @@ extension SelfTest {
         check(["guitar", "camera"].allSatisfy { RosterItemKind(rawValue: $0) == nil }
               && ["guitar", "camera", "vomit", "study", "eat"].allSatisfy { RosterAction(rawValue: $0) == nil },
               "expansion commands cannot represent cameras, guitars or retired daily actions")
-        check(Set(Friend.developmentRoster.filter(\.canUseWeapon)) == [.hachiware, .chiikawa, .usagi]
-              && RosterProp.allCases.filter { $0.kind == .weapon }.map(\.owner) == [.usagi],
-              "only Hachiware, Chiikawa and Usagi have weapons in their respective catalogs")
+        check(Set(Friend.developmentRoster.filter(\.canUseWeapon)) == [.hachiware, .chiikawa, .usagi, .rakko]
+              && RosterProp.allCases.filter { $0.kind == .weapon }.map(\.owner) == [.usagi,.rakko],
+              "only Hachiware, Chiikawa, Usagi and Rakko have weapons in their respective catalogs")
         let suite = "RosterChecks-\(UUID().uuidString)", defaults = UserDefaults(suiteName: suite)!
         defer { defaults.removePersistentDomain(forName: suite) }
         defaults.set(["chiikawa"], forKey: "visibleFriends")
@@ -135,7 +135,14 @@ extension SelfTest {
                 var result=NSRect.null
                 for y in 0..<rep.pixelsHigh {for x in 0..<rep.pixelsWide {
                     let yy=size.height-1-CGFloat(y)
-                    if yy>=cutoff && (rep.colorAt(x:x,y:y)?.alphaComponent ?? 0)>0.5 {
+                    guard let color=rep.colorAt(x:x,y:y),color.alphaComponent>0.5 else {continue}
+                    // A raised silver blade enters the head's vertical band.
+                    // Measure Rakko's warm fur, excluding the blade, cream grip
+                    // and brown scabbard, in the actual registered drawing.
+                    let head=friend != .rakko || (color.redComponent>0.90 && color.greenComponent>0.76
+                        && color.blueComponent<0.90 && color.redComponent-color.blueComponent>0.11
+                        && color.greenComponent-color.blueComponent>0.07)
+                    if yy>=cutoff && head {
                         result=result.union(NSRect(x:x,y:Int(yy),width:1,height:1))
                     }
                 }}
@@ -167,6 +174,12 @@ extension SelfTest {
             actor.view.onDragStart?(); actor.panel.setFrameOrigin(start); actor.view.onDragEnd?()
             check(companion.world.ground==ground && actor.motion.destination==nil,
                   prefix+"actual drag callbacks reset only the route and preserve prop positions")
+            // The long walking fixture also moves Hachiware. Keep the two
+            // recipients apart before testing a drop on the wrong owner;
+            // overlapping bodies would make that point a valid own-body drop.
+            let otherOwner=desktop.hachiwareActor!
+            otherOwner.panel.setFrameOrigin(RoamingMotion.target(in:bounds,size:otherOwner.panel.frame.size,
+                xFraction:actor.panel.frame.midX<bounds.midX ? 0.9:0.05,yFraction:0.08))
             let center=actor.panel.frame.center
             check(!companion.receive(.keepsake,at:desktop.hachiwareActor!.panel.frame.center,now:date()),
                   prefix+"a prop dropped on a different owner is rejected")
@@ -224,7 +237,7 @@ extension SelfTest {
             let beforeAudio=voiceStarts
             for _ in 0..<30 {tick(mouse:actor.panel.frame.center,reachable:true)}
             check(voiceStarts==beforeAudio,prefix+"autonomous movement and armed hover never start audio")
-            if !friend.isNewSingleItemFriend {
+            if !friend.usesNewFriendRig {
             check(companion.catalog.isValid && companion.catalog.clips.count == 4,
                   prefix+"four authentic credited actor-demo excerpts load from bundled resources")
             check(companion.catalog.clips.allSatisfy { clip in
@@ -243,8 +256,9 @@ extension SelfTest {
                 companion.previewVoice();companion.clicked(now:date())
                 check(companion.catalog.clips.isEmpty && companion.voice.player == nil && voiceStarts == starts,
                       prefix+"unverified voices remain unavailable and clicks use local captions only")
-                check(RosterItemKind.available(for:friend) == [.keepsake] && !friend.canUseWeapon,
-                      prefix+"exactly one characteristic item and no weapon are registered")
+                let expected: [RosterItemKind] = friend == .rakko ? [.weapon,.keepsake] : [.keepsake]
+                check(RosterItemKind.available(for:friend) == expected,
+                      prefix+"the characteristic item remains available alongside only its explicitly allowed weapon")
             }
             var previous:String?, noRepeat=true, captions=true
             for _ in 0..<100 {

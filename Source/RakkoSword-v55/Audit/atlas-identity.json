@@ -1,0 +1,14 @@
+{
+  "verified": "2026-10-23",
+  "reviewSize": [
+    2640,
+    512
+  ],
+  "packagedSize": [
+    2640,
+    512
+  ],
+  "pixelsIdentical": true,
+  "reviewSHA256": "c0f8976d00bf6ace03a639c1fe166411eb0d3775eaaab298bdc41bcb601602e0",
+  "packagedSHA256": "c0f8976d00bf6ace03a639c1fe166411eb0d3775eaaab298bdc41bcb601602e0"
+}
