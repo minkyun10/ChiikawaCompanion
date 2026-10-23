@@ -1,0 +1,39 @@
+{
+  "verified": "2026-10-23",
+  "version": "0.25.1",
+  "build": 53,
+  "packagedChecks": 908,
+  "targetedPackagedChecks": 53,
+  "runtimeApplied": true,
+  "launchedUpdatedApp": true,
+  "codeSignatureVerified": true,
+  "runtimeImageFilesUnchanged": 233,
+  "automaticTestsIncludeRealViewMouseDownUp": true,
+  "manualDesktopReview": "pending_user_unavailable",
+  "manualDesktopReviewBoundary": "Mac is unlocked. CUA can inspect the shared house and settings, but cannot select the separate desktop character window. User was asked to check the click transformation and 30-second return and answered that checking is difficult at present. No manual pass is claimed.",
+  "preferencesRestored": {
+    "visibleCharacters": 8,
+    "hachiwareItems": "on"
+  },
+  "clickBehavior": "Five consecutive Hachiware clicks inside an inclusive rolling 10-second window enter monster form. Other-character clicks or dragging interrupt a pending normal-form sequence.",
+  "returnBehavior": "A fixed deadline 30 seconds after the fifth click begins a 650ms return blend. Further monster-form clicks neither toggle back nor extend the deadline. Automatic return leaves dialogue, audio, route, position, gait, item ownership and active attack/rest state alone.",
+  "coverage": [
+    "inclusive trigger boundary",
+    "late clicks rejected",
+    "fixed deadline, extra clicks ignored",
+    "automatic fade and delayed tick",
+    "re-entry after return",
+    "invalid timestamps",
+    "all 24 chronological frames per direction",
+    "same left/right foot path",
+    "attack body scale and overlay handoff",
+    "real view mouse-down/up trigger",
+    "preserved position, route, gait and independent item coordinates",
+    "no automatic voice or bubble",
+    "sleeping return through actual tick with continuous blend",
+    "walking continues through actual tick without teleporting",
+    "hidden-character timeout"
+  ],
+  "initialFixtureFailure": "Initial native CLI walk check assumed the first sub-point AppKit move changes the window origin. The final check measures six continuous ticks to account for normal native coordinate rounding; all final packaged tests passed.",
+  "artwork": "No new artwork. All 233 packaged image files have identical SHA-256 hashes to v53. Original references, generated artwork, parts and atlases remain in Source/MonsterTransformation-v53 and earlier folders."
+}

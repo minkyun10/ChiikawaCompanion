@@ -15,7 +15,8 @@ enum DesktopBenchmark {
         state.characterVoice=false;state.chiikawaVoice=false
         for friend in Friend.expansionOrder {state.updateOptions(friend){$0.automaticItems=automaticItems;$0.automaticRest=false;$0.voice=false}}
         let desktop=DesktopController(state:state,startTimer:false)
-        if monster, let actor = desktop.hachiwareActor { for _ in 0..<5 { desktop.handleCharacterClick(actor) } }
+        let formTime = ProcessInfo.processInfo.systemUptime
+        if monster, let actor = desktop.hachiwareActor { for _ in 0..<5 { desktop.handleCharacterClick(actor,monotonicTime:formTime) } }
         let bounds=NSScreen.main!.visibleFrame
         var results:[[String:Any]]=[]
         func cpu()->Double {
@@ -37,7 +38,10 @@ enum DesktopBenchmark {
             let start=CACurrentMediaTime(),measure=start+2,end=measure+seconds,cpuStart=cpu()
             let timer=Timer(timeInterval:DesktopActivity.updateInterval,repeats:true) { _ in
                 let began=CACurrentMediaTime()
-                desktop.tick(pointer:NSPoint(x:-10000,y:-10000),pointerCanReachCharacter:false)
+                // Keep a requested monster benchmark in that form for every
+                // count/duration; movement and drawing still use real elapsed time.
+                desktop.tick(pointer:NSPoint(x:-10000,y:-10000),pointerCanReachCharacter:false,
+                             monotonicTime:monster ? formTime+1:ProcessInfo.processInfo.systemUptime)
                 // Include pending view drawing, not only movement scheduling.
                 for window in NSApp.windows where window.isVisible { window.displayIfNeeded() }
                 let finished=CACurrentMediaTime()
@@ -62,6 +66,7 @@ enum DesktopBenchmark {
         }
         let report:[String:Any]=["date":"2026-10-23","secondsPerCount":seconds,"warmupSeconds":2,
             "hachiwareMonster":monster,
+            "formClock":monster ? "Held one second after transformation for a fixed monster scene":"Live monotonic time",
             "screenPoints":[bounds.width,bounds.height],"backingScale":NSScreen.main!.backingScaleFactor,
             "method":"60 Hz main-run-loop callback plus synchronous displayIfNeeded on actual AppKit windows; not compositor-present FPS",
             "scene":automaticItems ? "All eight characters with owned props and autonomous pickup/activities enabled; rest/audio disabled to keep cast visible; pointer away; no settings window" : "All owned ground props enabled; continuously walking; autonomous pickup/rest/activities and audio disabled; pointer away; no settings window",

@@ -1,0 +1,8 @@
+{
+  "verified": "2026-10-23",
+  "imageCount": 233,
+  "missingBaseline": [],
+  "changed": [],
+  "unchanged": 233,
+  "scope": "All current runtime image files compared with the v53 archive before v54 archive refresh."
+}

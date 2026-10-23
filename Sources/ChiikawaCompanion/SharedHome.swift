@@ -7,7 +7,8 @@ extension DesktopController {
             let waking = actor.friend == .chiikawa ? chiikawaWakingAt : expansions[actor.friend]?.wakingAt
             guard routine.isInside || waking != nil else { return nil }
             return HomeOccupant(friend: actor.friend, routine: routine, wakingStarted: waking,
-                                hachiwareMonster:actor.friend == .hachiware && hachiwareTransformation.isMonster)
+                                hachiwareMonster:actor.friend == .hachiware && hachiwareTransformation.isMonster,
+                                monsterOpacity:actor.friend == .hachiware ? actor.view.monsterOpacity:nil)
         }
     }
 

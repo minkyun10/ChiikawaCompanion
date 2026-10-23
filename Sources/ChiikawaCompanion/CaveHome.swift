@@ -12,6 +12,8 @@ struct HomeOccupant {
     let routine: HomeRoutine
     var wakingStarted: Date? = nil
     var hachiwareMonster = false
+    var monsterOpacity: Double? = nil
+    var visibleMonsterOpacity: Double { monsterOpacity ?? (hachiwareMonster ? 1:0) }
     var isPresent: Bool { routine.isInside || wakingStarted != nil }
 }
 
@@ -196,26 +198,33 @@ final class HomeArtwork {
             if occupant.friend == .chiikawa, let pajamas = ChiikawaLifeSprites.shared.pajamas {
                 pajamas.draw(in: Self.fitted(pajamas.size, in: pet))
             } else {
-                FriendArtwork.draw(occupant.friend, in: pet, time: time, walking: true, facing: -1,
-                                   walkPhase: entry * 2 * .pi, pose: .back,hachiwareMonster:occupant.hachiwareMonster)
+                let blend = occupant.friend == .hachiware ? occupant.visibleMonsterOpacity : 0
+                for (monster, alpha) in [(false,1-blend),(true,blend)] where alpha > 0 {
+                    NSGraphicsContext.saveGraphicsState()
+                    NSGraphicsContext.current?.cgContext.setAlpha(CGFloat((1-max(0,entry-0.4)/0.6)*alpha))
+                    FriendArtwork.draw(occupant.friend, in: pet, time: time, walking: true, facing: -1,
+                                       walkPhase: entry * 2 * .pi, pose: .back,hachiwareMonster:monster)
+                    NSGraphicsContext.restoreGraphicsState()
+                }
             }
             NSGraphicsContext.restoreGraphicsState()
         }
         guard phase == .sleeping || phase == .entering else { return }
         let opacity = phase == .sleeping ? 1 : max(0, (entry - 0.45) / 0.55)
-        if occupant.friend == .hachiware && occupant.hachiwareMonster {
-            NSGraphicsContext.saveGraphicsState(); NSGraphicsContext.current?.cgContext.setAlpha(CGFloat(opacity))
+        let monsterBlend = occupant.friend == .hachiware ? occupant.visibleMonsterOpacity : 0
+        if monsterBlend > 0 {
+            NSGraphicsContext.saveGraphicsState(); NSGraphicsContext.current?.cgContext.setAlpha(CGFloat(opacity*monsterBlend))
             HachiwareMonsterSprites.shared.drawSleep(in:bed,time:time)
             NSGraphicsContext.restoreGraphicsState()
-            return
         }
+        guard monsterBlend < 1 else { return }
         guard let sleeper = occupant.friend == .chiikawa ? ChiikawaLifeSprites.shared.sleeper : sleeper else { return }
         var sleeping = Self.fitted(sleeper.size, in: bed)
         sleeping.size.height *= Self.breathingScale(time: time)
-        sleeper.draw(in: sleeping, from: .zero, operation: .sourceOver, fraction: opacity)
+        sleeper.draw(in: sleeping, from: .zero, operation: .sourceOver, fraction: opacity*(1-monsterBlend))
         for index in 0..<3 {
             let rise = (time / 3 + Double(index) / 3).truncatingRemainder(dividingBy: 1)
-            let alpha = sin(rise * .pi) * 0.8 * opacity
+            let alpha = sin(rise * .pi) * 0.8 * opacity*(1-monsterBlend)
             ("z" as NSString).draw(at: NSPoint(x: bed.minX + bed.width * 0.15 + CGFloat(rise) * 18,
                                                y: bed.maxY - 4 + CGFloat(rise) * 31),
                 withAttributes: [.font: NSFont.systemFont(ofSize: 11 + CGFloat(rise) * 5, weight: .semibold),

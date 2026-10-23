@@ -3,7 +3,7 @@
   "operation": "copy; originals preserved",
   "image_file_count": 3932,
   "unique_image_content_count": 2069,
-  "supporting_file_count": 854,
+  "supporting_file_count": 863,
   "image_bytes": 1262710547,
   "symmetric_walk_runtime_applied": true,
   "files": [
@@ -21681,6 +21681,69 @@
     },
     {
       "kind": "supporting",
+      "source": "Source/MonsterAutoReturn-v54/Audit/build-app.log",
+      "archive_path": "MonsterAutoReturn-v54/Audit/build-app.log",
+      "bytes": 618,
+      "sha256": "9bd6f85e2e604e015d3c7a6f277a4db042bed35e63b6c83e5ab3e412f4f83337"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/MonsterAutoReturn-v54/Audit/build-cli.log",
+      "archive_path": "MonsterAutoReturn-v54/Audit/build-cli.log",
+      "bytes": 265,
+      "sha256": "70d483754db27918068fd6c34570bb360104efb3f239c198827e47f6b64f0491"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/MonsterAutoReturn-v54/Audit/codesign-verification.txt",
+      "archive_path": "MonsterAutoReturn-v54/Audit/codesign-verification.txt",
+      "bytes": 122,
+      "sha256": "7183f80df34ebc22d948d901c0f7806aa77ec128844a93be0ab4eda6d842cf2a"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/MonsterAutoReturn-v54/Audit/monster-checks-cli-initial.log",
+      "archive_path": "MonsterAutoReturn-v54/Audit/monster-checks-cli-initial.log",
+      "bytes": 3951,
+      "sha256": "6c12fbb5c42d0c6ced64dfb6778c9cce75ca10bafb11cbad9d3151112b10b7ab"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/MonsterAutoReturn-v54/Audit/monster-checks-packaged.log",
+      "archive_path": "MonsterAutoReturn-v54/Audit/monster-checks-packaged.log",
+      "bytes": 4108,
+      "sha256": "70c88d3e0689c549bd3b2e536e62e9fa99310344a7ae6c4cf2ce8b3efb7df3f2"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/MonsterAutoReturn-v54/Audit/packaged-self-test.log",
+      "archive_path": "MonsterAutoReturn-v54/Audit/packaged-self-test.log",
+      "bytes": 71793,
+      "sha256": "c6b99a246e4d8643b84213f51e22f11968594b0ac6b40a0fb101c4375d782c6e"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/MonsterAutoReturn-v54/Audit/resource-preservation.json",
+      "archive_path": "MonsterAutoReturn-v54/Audit/resource-preservation.json",
+      "bytes": 218,
+      "sha256": "12e5fdf94855ed8ea5d37a281392c5404ab1b30195c31aa8ac8e2a7f428e52ce"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/MonsterAutoReturn-v54/Audit/verification.json",
+      "archive_path": "MonsterAutoReturn-v54/Audit/verification.json",
+      "bytes": 2371,
+      "sha256": "1fa65817e8104025a4155854a526eff798411979d9f5ebd40431a66d5a4d48be"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/MonsterAutoReturn-v54/README.txt",
+      "archive_path": "MonsterAutoReturn-v54/README.txt",
+      "bytes": 2382,
+      "sha256": "f4030c8bfc03851feb3e80367375f7ad77ee68a655f66205da966eb06d6ec1da"
+    },
+    {
+      "kind": "supporting",
       "source": "Source/MonsterTransformation-v53/Audit/benchmark-eight-monster.json",
       "archive_path": "MonsterTransformation-v53/Audit/benchmark-eight-monster.json",
       "bytes": 870,
@@ -22306,8 +22369,8 @@
       "kind": "supporting",
       "source": "Source/MonsterTransformation-v53/README.txt",
       "archive_path": "MonsterTransformation-v53/README.txt",
-      "bytes": 4394,
-      "sha256": "8027dfbd5c5a5b41a8cb2eb04d040c35f5e2351f1c9fc8d5919fa2c3293585bd"
+      "bytes": 4550,
+      "sha256": "37d60f30d39e4d28c2979f96a671858cc4084edc2077b05befca95b32ff66172"
     },
     {
       "kind": "image",
@@ -28956,8 +29019,8 @@
       "kind": "supporting",
       "source": "Source/README.txt",
       "archive_path": "README.txt",
-      "bytes": 12380,
-      "sha256": "9ca6a29c519c6cb591d9d37c618cdfa50fcb94ae3bc4980704f6008c84c4966d"
+      "bytes": 12698,
+      "sha256": "9964ebf0b4550f6bb052d1f7c060c016f57cb4184b18de860a3efb7a453384d7"
     },
     {
       "kind": "supporting",
@@ -33510,8 +33573,8 @@
       "sha256": "8a42caa40e469a5ee00fa2b860d14756cc1fd73bc8fcf73332c50b87a92c9c3b"
     }
   ],
-  "updated_at": "2026-10-23T04:43:42.196554+00:00",
-  "latest_applied": "Source/MonsterTransformation-v53",
+  "updated_at": "2026-10-23T06:32:40.609735+00:00",
+  "latest_applied": "Source/MonsterAutoReturn-v54",
   "applied_directions": [
     "down-left",
     "down-right"

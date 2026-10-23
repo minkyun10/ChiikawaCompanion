@@ -626,11 +626,8 @@ final class DesktopController {
             actor.performance.cancel(now:Date()); actor.armedHoverContact = nil
             actor.view.action = nil; actor.view.actionTime = nil
             actor.view.attackUsesOverlay = false; actor.attackOverlay.panel.orderOut(nil)
-            actor.view.hachiwareMonster = hachiwareTransformation.isMonster
-            actor.view.transformationProgress = 0
-            actor.view.monsterOpacity = hachiwareTransformation.monsterOpacity(at:monotonicTime)
-            actor.view.needsDisplay = true
-            actor.say(hachiwareTransformation.isMonster ? "강해진 하치와레!" : "다시 하치와레!",now:Date(),
+            updateHachiwareTransformation(at:monotonicTime)
+            actor.say("강해진 하치와레!",now:Date(),
                       duration:HachiwareTransformation.transitionDuration)
             return
         }
@@ -640,6 +637,19 @@ final class DesktopController {
         } else if actor.friend == .chiikawa {
             sayChiikawa()
         }
+    }
+    @discardableResult
+    func updateHachiwareTransformation(at time: TimeInterval) -> Bool {
+        let returned = hachiwareTransformation.advance(at:time)
+        if let actor = hachiwareActor {
+            actor.view.hachiwareMonster = hachiwareTransformation.isMonster
+            actor.view.transformationProgress = hachiwareTransformation.progress(at:time)
+            actor.view.monsterOpacity = hachiwareTransformation.monsterOpacity(at:time)
+            if returned || actor.view.transformationProgress < 1 { actor.view.needsDisplay = true }
+        }
+        // Automatic return changes presentation only: no dialogue, audio,
+        // cancellation of an activity, route reset, or item movement.
+        return returned
     }
     func presentClickDialogue(_ selected: ClickDialogue, for actor: FriendActor) {
         guard actor.friend == .hachiware else { actor.say(selected.text, now: Date()); return }
@@ -764,9 +774,11 @@ final class DesktopController {
     private func publishEquipment() {
         if state.equippedItem != itemWorld.equipped { state.equippedItem = itemWorld.equipped }
     }
-    func tick(now: Date = Date(), pointer: NSPoint? = nil, pointerCanReachCharacter: Bool? = nil) {
+    func tick(now: Date = Date(), pointer: NSPoint? = nil, pointerCanReachCharacter: Bool? = nil,
+              monotonicTime: TimeInterval = ProcessInfo.processInfo.systemUptime) {
         let dt = min(max(0, now.timeIntervalSince(lastTick)), 0.06)
         lastTick = now
+        updateHachiwareTransformation(at:monotonicTime)
         let time = now.timeIntervalSince(started), mouse = pointer ?? NSEvent.mouseLocation
         recordedVoice.setVolume(state.characterVolume)
         chiikawaVoice.setVolume(state.characterVolume)
@@ -897,8 +909,6 @@ final class DesktopController {
                 }
             } else { actor.motion.stop() }
             actor.view.time = time + actor.phase
-            actor.view.transformationProgress = hachiwareTransformation.progress(at:ProcessInfo.processInfo.systemUptime)
-            actor.view.monsterOpacity = hachiwareTransformation.monsterOpacity(at:ProcessInfo.processInfo.systemUptime)
             actor.view.walking = actor.motion.isWalking
             actor.view.facing = actor.motion.facing
             actor.view.walkPhase = actor.gait.phase
