@@ -1,0 +1,25 @@
+{
+  "created": "2026-10-23",
+  "status": "awaiting_user_appearance_approval",
+  "tool": "built-in image_gen",
+  "artwork": "Review/hachiware-dream-monster-appearance-v51.png",
+  "prompt": "Prompts/01-appearance-approval.txt",
+  "runtime_applied": false,
+  "t_pose_created": false,
+  "next_after_approval": "Create consistent T-pose and front/back/side character sheet using the approved appearance.",
+  "visual_review": {
+    "one_character": true,
+    "full_body_visible": true,
+    "large_ears_and_swirl_eyes": true,
+    "mint_claws_and_blue_tail": true,
+    "limbs_connected": true,
+    "two_arms_two_legs": true,
+    "hand_claws_each": 4,
+    "foot_claws_each": 3
+  },
+  "inferred_design_notes": [
+    "Full-body drawing combines original face/detail references with official plush body proportions.",
+    "This is generated fan-made interpretation, not an official model sheet.",
+    "Fine fur contours and rear geometry need user confirmation before later turnaround generation."
+  ]
+}

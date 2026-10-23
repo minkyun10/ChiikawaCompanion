@@ -1,0 +1,30 @@
+[
+  {
+    "path": "Source/HachiwareDreamMonster-v50/Original/01-official-transformation-comparison.jpg",
+    "role": "primary · 작가 공식 그림: 얼굴, 귀, 발톱, 꼬리",
+    "source_page": "https://x.com/ngnchiikawa/status/2102236239995031704",
+    "verified": "2026-10-23",
+    "sha256": "b1301ad3cbe90b062bbaddd34db552ae83f59da81270a1d56a6c433b502bc5fb"
+  },
+  {
+    "path": "Source/HachiwareDreamMonster-v50/Original/02-official-monster-face-expressions.jpg",
+    "role": "primary · 작가 공식 얼굴 표정",
+    "source_page": "https://x.com/ngnchiikawa/status/1767525203222143077",
+    "verified": "2026-10-23",
+    "sha256": "314b5748919eb30f8fb95f3daea55d3d3d6b1f4d65eafc1e02ce9722c84c615e"
+  },
+  {
+    "path": "Source/HachiwareDreamMonster-v50/Merchandise/01-monster-front.jpg",
+    "role": "supporting · 공식 상품 정면: 몸 비율과 팔다리",
+    "source_page": "https://chiikawamarket.jp/products/4571609344117",
+    "verified": "2026-10-23",
+    "sha256": "73d56f39b7cd0be9c43f448f1193eccf21a5815c3e264a0332d92bae2c227ba1"
+  },
+  {
+    "path": "Source/HachiwareDreamMonster-v50/Merchandise/02-monster-back.jpg",
+    "role": "supporting · 공식 상품 후면: 꼬리",
+    "source_page": "https://chiikawamarket.jp/products/4571609344117",
+    "verified": "2026-10-23",
+    "sha256": "250cfd3c93c367503b70db25e362b617f9d4ea7f330eba570079315bc140869f"
+  }
+]

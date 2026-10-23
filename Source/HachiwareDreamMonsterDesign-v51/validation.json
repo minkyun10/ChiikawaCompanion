@@ -1,0 +1,28 @@
+{
+  "size": [
+    1207,
+    1303
+  ],
+  "mode": "RGBA",
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "all_alpha_bounds": [
+    33,
+    8,
+    1206,
+    1303
+  ],
+  "visible_alpha_bounds_at_8_of_255": [
+    34,
+    23,
+    1175,
+    1283
+  ],
+  "transparent_pixels": 758227,
+  "visible_character_not_clipped": true,
+  "faint_alpha_noise_reaches_bottom_edge": true,
+  "copy_matches_generated_original": true,
+  "sha256": "76d09f3ea48e99e4e6a74cd4e5dea52c2a863e8770993ab44c9861425b32ef02"
+}

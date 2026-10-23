@@ -1,10 +1,10 @@
 {
   "created_at": "2026-10-16T12:08:58.617148+00:00",
   "operation": "copy; originals preserved",
-  "image_file_count": 3757,
-  "unique_image_content_count": 2001,
-  "supporting_file_count": 822,
-  "image_bytes": 1170283743,
+  "image_file_count": 3759,
+  "unique_image_content_count": 2002,
+  "supporting_file_count": 827,
+  "image_bytes": 1172473389,
   "symmetric_walk_runtime_applied": true,
   "files": [
     {
@@ -13743,6 +13743,13 @@
     },
     {
       "kind": "image",
+      "source": "Source/GeneratedOriginals/exec-0dec4aba-6e07-469e-8b55-77627f51d6e3.png",
+      "archive_path": "GeneratedOriginals/exec-0dec4aba-6e07-469e-8b55-77627f51d6e3.png",
+      "bytes": 1094823,
+      "sha256": "76d09f3ea48e99e4e6a74cd4e5dea52c2a863e8770993ab44c9861425b32ef02"
+    },
+    {
+      "kind": "image",
       "source": "Source/GeneratedOriginals/exec-0e7ff6f6-d3e2-43d4-8098-c81ef97fdebc.png",
       "archive_path": "GeneratedOriginals/exec-0e7ff6f6-d3e2-43d4-8098-c81ef97fdebc.png",
       "bytes": 1436137,
@@ -14482,6 +14489,48 @@
       "archive_path": "HachiwareDreamMonster-v50/validation.json",
       "bytes": 360,
       "sha256": "a300a3d9676b8c7dbcc9f43060919fa49504fc2e64fad973b015b5b46172ac98"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/HachiwareDreamMonsterDesign-v51/Prompts/01-appearance-approval.txt",
+      "archive_path": "HachiwareDreamMonsterDesign-v51/Prompts/01-appearance-approval.txt",
+      "bytes": 3667,
+      "sha256": "8b64f7f5fa2450b3946a4bcac080880b8e2d693e448d845e83baf408e9a8f569"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/HachiwareDreamMonsterDesign-v51/README.txt",
+      "archive_path": "HachiwareDreamMonsterDesign-v51/README.txt",
+      "bytes": 1828,
+      "sha256": "1ba62bec3823132e7a4255b6342a68abc3b271c5ca5f89008dc1bec05fcc5440"
+    },
+    {
+      "kind": "image",
+      "source": "Source/HachiwareDreamMonsterDesign-v51/Review/hachiware-dream-monster-appearance-v51.png",
+      "archive_path": "HachiwareDreamMonsterDesign-v51/Review/hachiware-dream-monster-appearance-v51.png",
+      "bytes": 1094823,
+      "sha256": "76d09f3ea48e99e4e6a74cd4e5dea52c2a863e8770993ab44c9861425b32ef02"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/HachiwareDreamMonsterDesign-v51/references.json",
+      "archive_path": "HachiwareDreamMonsterDesign-v51/references.json",
+      "bytes": 1396,
+      "sha256": "d46e0c05c61754f6787c2300aebd2ee06c537ba5df4b8cc611436be7d173ffb2"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/HachiwareDreamMonsterDesign-v51/review-status.json",
+      "archive_path": "HachiwareDreamMonsterDesign-v51/review-status.json",
+      "bytes": 992,
+      "sha256": "d1d3b4635cf81785279a07a44593ba4117f3face3f32941e57d95586081e2033"
+    },
+    {
+      "kind": "supporting",
+      "source": "Source/HachiwareDreamMonsterDesign-v51/validation.json",
+      "archive_path": "HachiwareDreamMonsterDesign-v51/validation.json",
+      "bytes": 486,
+      "sha256": "9a7c9e67970da48b792eb74d6b3236deb6df50f36b299d14e96e0ff3f345d707"
     },
     {
       "kind": "supporting",
@@ -32061,7 +32110,7 @@
       "sha256": "8a42caa40e469a5ee00fa2b860d14756cc1fd73bc8fcf73332c50b87a92c9c3b"
     }
   ],
-  "updated_at": "2026-10-23T02:05:05.327269+00:00",
+  "updated_at": "2026-10-23T02:18:44.832587+00:00",
   "latest_applied": "Source/CharacterSleep-v47",
   "applied_directions": [
     "down-left",
@@ -32071,5 +32120,5 @@
   "source_path_format": "repository-relative paths; generated originals are archived under Source/GeneratedOriginals",
   "latest_review": "Chiikawa-v22",
   "latest_research": "Source/HachiwareDreamMonster-v50",
-  "latest_design_review": "Source/UsagiCharacter-v48"
+  "latest_design_review": "Source/HachiwareDreamMonsterDesign-v51"
 }
